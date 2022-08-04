@@ -928,12 +928,17 @@ h6:first-child {
 }
 ._1mb2uol {
   color: #222222 !important;
-  margin: auto !important;
+  margin: auto;
   padding-left: 16px !important;
   padding-right: 16px !important;
   margin-top: 48px !important;
   max-width: 1064px !important;
-  margin-bottom: 32px !important;
+  margin-bottom: 96px;
+}
+@media (min-width: 744px) {
+  ._1mb2uol {
+    margin-bottom: 32px;
+  }
 }
 ._fjxhrpz {
   display: none !important;
@@ -12186,4 +12191,208 @@ html.scrollbar-gutter[class][class] {
 
 .atm_1r72ff3_t94yts:not(:focus) {
   width: 1px;
+}
+._1tt196k {
+  -webkit-box-align: center !important;
+  display: flex;
+  align-items: center !important;
+  border-top: 1px solid rgb(235, 235, 235) !important;
+  position: fixed !important;
+  bottom: -60px !important;
+  height: 125px !important;
+  left: 0px !important;
+  right: 0px !important;
+  padding-bottom: 60px !important;
+  contain: paint !important;
+  background: rgb(255, 255, 255) !important;
+  transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    visibility 0.2s ease 0s !important;
+  z-index: 1 !important;
+}
+@supports (margin-bottom: env(safe-area-inset-bottom)) {
+  ._1tt196k {
+    margin-bottom: env(safe-area-inset-bottom) !important;
+    padding-left: env(safe-area-inset-left) !important;
+    padding-right: env(safe-area-inset-right) !important;
+  }
+}
+@media (min-width: 744px) {
+  ._1tt196k {
+    display: none;
+  }
+}
+._h0klba {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: start !important;
+  flex: 1 0 auto !important;
+  align-items: flex-start !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0px auto !important;
+  max-width: 560px !important;
+}
+._45o9ez {
+  -webkit-box-align: center !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: vertical !important;
+  display: flex !important;
+  flex: 1 1 0px !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  background-color: transparent !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border: 0px !important;
+  max-width: 20% !important;
+  min-width: 0px !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  padding: 0px 2px !important;
+}
+._jro6t0 {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+._tbbnrnx {
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  color: rgb(176, 176, 176) !important;
+  position: relative !important;
+}
+._1yqbv3i {
+  font-size: 10px !important;
+  line-height: 12px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  font-weight: 600 !important;
+  overflow-wrap: break-word !important;
+  color: rgb(113, 113, 113) !important;
+}
+@supports (overflow: clip) {
+  ._1yqbv3i {
+    overflow: clip !important;
+  }
+}
+
+._1i7ccu91 {
+  position: relative !important;
+  z-index: 0 !important;
+  min-height: calc(100vh + 65px) !important;
+}
+@supports (padding: env(safe-area-inset-bottom)) {
+  ._1i7ccu91 {
+    padding-left: env(safe-area-inset-left) !important;
+    padding-right: env(safe-area-inset-right) !important;
+  }
+}
+@media (min-width: 744px) {
+  ._1i7ccu91 {
+    display: none;
+  }
+}
+._1ynbv25 {
+  display: block !important;
+}
+._s8pn9w {
+  background: white !important;
+  position: sticky !important;
+  transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s !important;
+  top: 0px !important;
+  z-index: 4 !important;
+}
+._s8pn9w::before {
+  inset: -100px 0px 0px !important;
+  box-shadow: rgb(0 0 0 / 16%) 0px -2px 8px !important;
+  content: '' !important;
+  display: block !important;
+  opacity: 0.01 !important;
+  position: absolute !important;
+  transition: opacity 150ms ease-out 0s !important;
+  pointer-events: none !important;
+}
+._2b0qwl {
+  -webkit-box-align: center !important;
+  background: white !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 64px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+._1o4zwko {
+  margin-right: auto !important;
+  overflow: hidden !important;
+}
+._1dxtmbip {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px -8px !important;
+  position: relative !important;
+  text-align: center !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--c-zdwk-p) !important;
+  line-height: var(--j-p-z-kco) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  outline: none !important;
+  padding: 8px !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  background: transparent !important;
+  color: var(--f-k-smk-x) !important;
+  text-decoration: none !important;
+}
+._1ran6xy {
+  -webkit-box-align: center !important;
+  flex: 1 1 0% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0px 8px !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: rgb(34, 34, 34) !important;
+  max-width: 100% !important;
+}
+._zzdavs {
+  padding-right: 8px !important;
+}
+._1s0b0yb {
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  color: rgb(34, 34, 34) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+.c1yo0219.dir.dir-ltr {
+  display: none;
+}
+@media (min-width: 744px) {
+  .c1yo0219.dir.dir-ltr {
+    display: block;
+  }
 }
