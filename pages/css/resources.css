@@ -413,7 +413,7 @@ h6:first-child {
   vertical-align: middle !important;
 }
 ._10ejfg4u {
-  display: table-cell !important;
+  display: table-cell;
   width: 100% !important;
   vertical-align: middle !important;
 }
@@ -929,9 +929,6 @@ h6:first-child {
 ._14i3z6h:focus {
   outline: 0px !important;
 }
-._88xxct {
-  display: none !important;
-}
 @media print {
   ._88xxct {
     display: block !important;
@@ -943,7 +940,6 @@ h6:first-child {
   }
 }
 ._y9cbsa {
-  white-space: pre-line !important;
   max-width: 100% !important;
   font-size: var(--tl-font-size, 14px) !important;
   font-weight: var(--tl-font-weight, 400) !important;
@@ -1586,8 +1582,8 @@ h6:first-child {
   }
 }
 ._c8r9ep {
-  border-top: 1px solid #b0b0b0 !important;
-  margin-top: 32px !important;
+  border-top: 1px solid #b0b0b0;
+  margin-top: 32px;
 }
 ._19gabji {
   -webkit-box-pack: justify !important;
@@ -1864,7 +1860,7 @@ h6:first-child {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
-@media (max-width: 1127px) {
+@media (min-width: 744px) {
   ._7s3ukx {
     -ms-grid-columns: 1fr 1fr 1fr !important;
     grid-template-columns: 1fr 1fr 1fr !important;
@@ -6033,4 +6029,70 @@ h6:first-child {
   border-color: var(--f-k-smk-x) !important;
   background: var(--f-mkcy-f) !important;
   color: var(--f-k-smk-x) !important;
+}
+._10ejfg4u {
+  visibility: hidden;
+}
+.gallery-lg {
+  display: none;
+}
+
+@media (min-width: 744px) {
+  ._10ejfg4u {
+    visibility: visible;
+  }
+  .search-bar-xs {
+    display: none;
+  }
+  ._1ynbv25 {
+    display: none;
+  }
+  .gallery-lg {
+    display: block;
+  }
+}
+._3uceys {
+  display: flex !important;
+  height: 100% !important;
+  list-style: none !important;
+  overflow: auto hidden !important;
+  padding-left: 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+  min-width: 100% !important;
+  scroll-snap-type: x mandatory !important;
+}
+._1w7e1y2 {
+  border-style: solid !important;
+  border-color: transparent !important;
+  scroll-snap-align: start !important;
+  scroll-snap-stop: always !important;
+}
+._1yfus1e {
+  height: 100% !important;
+}
+._3uceys::-webkit-scrollbar {
+  width: 0;
+}
+.hero-wrapper {
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+._h1mu4a section ._88xxct {
+  display: none;
+}
+@media (min-width: 744px) {
+  .hero-wrapper {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+  ._h1mu4a section ._88xxct {
+    display: block;
+  }
+}
+@media (max-width: 744px) {
+  .topic-item-2 {
+    border-top: 0;
+    margin-top: 0;
+  }
 }
