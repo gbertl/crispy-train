@@ -15,14 +15,23 @@ document.querySelector('._1ku51f04').addEventListener('click', (e) => {
     document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.333333)';
   } else if (counter === 1) {
     document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.5)';
+  } else if (counter === 2) {
+    document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.666667)';
+  } else if (counter === 3) {
+    document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.833333)';
   }
 
   // show back button
   document.querySelector('._13ea8wp').classList.remove('d-none');
 
+  if (counter === 3) {
+    document.querySelector('._3hmsj').innerText = 'Finish';
+  }
+
   counter++;
 });
 
+// back button
 document.querySelector('._13ea8wp').addEventListener('click', (e) => {
   e.preventDefault();
   document
@@ -37,9 +46,18 @@ document.querySelector('._13ea8wp').addEventListener('click', (e) => {
     document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.166667)';
   } else if (counter === 2) {
     document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.333333)';
+  } else if (counter === 3) {
+    document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.5)';
+  } else if (counter === 4) {
+    document.querySelector('._1rcz3vn').style.transform = 'scaleX(0.666667)';
+  }
+
+  if (counter === 4) {
+    document.querySelector('._3hmsj').innerText = 'Next';
   }
 
   counter--;
+
   if (counter === 0) {
     document.querySelector('._13ea8wp').classList.add('d-none');
   }
