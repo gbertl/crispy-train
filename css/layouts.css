@@ -1,0 +1,178 @@
+/* Remaining styles for header and footer, which are defined in page-specific css */
+
+/* Header */
+._1wzp0xs {
+  background-color: currentcolor !important;
+  border-radius: 50% !important;
+  display: block !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+._1f7hhcdo {
+  background-color: var(--ihf-tp-q) !important;
+  box-shadow: 0 0 0 1.5px var(--f-mkcy-f) !important;
+  position: absolute !important;
+  z-index: 1 !important;
+  border-radius: 500px !important;
+  color: var(--f-mkcy-f) !important;
+  font-size: var(--hr-k-udr) !important;
+  font-weight: var(--h-oqhch) !important;
+  height: 1rem !important;
+  min-width: 1rem !important;
+  left: 100% !important;
+  line-height: 16px !important;
+  margin-left: -14px !important;
+  padding: 0px 0.3125rem !important;
+  text-align: center !important;
+  top: -2px !important;
+}
+@supports (--a: a) {
+  ._1f7hhcdo {
+    background-color: var(--header_brand-color, var(--ihf-tp-q)) !important;
+  }
+}
+/* /Header */
+/* Footer */
+._1tt196k {
+  -webkit-box-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+  border-top: 1px solid rgb(235, 235, 235) !important;
+  position: fixed !important;
+  bottom: -60px !important;
+  height: 125px !important;
+  left: 0px !important;
+  right: 0px !important;
+  padding-bottom: 60px !important;
+  contain: paint !important;
+  background: rgb(255, 255, 255) !important;
+  transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    visibility 0.2s ease 0s !important;
+  z-index: 1 !important;
+}
+@supports (margin-bottom: env(safe-area-inset-bottom)) {
+  ._1tt196k {
+    margin-bottom: env(safe-area-inset-bottom) !important;
+    padding-left: env(safe-area-inset-left) !important;
+    padding-right: env(safe-area-inset-right) !important;
+  }
+}
+._h0klba {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: start !important;
+  flex: 1 0 auto !important;
+  align-items: flex-start !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0px auto !important;
+  max-width: 560px !important;
+}
+._45o9ez {
+  -webkit-box-align: center !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: vertical !important;
+  display: flex !important;
+  flex: 1 1 0px !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  background-color: transparent !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border: 0px !important;
+  max-width: 20% !important;
+  min-width: 0px !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  padding: 0px 2px !important;
+}
+._jro6t0 {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
+._tbbnrnx {
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  color: rgb(176, 176, 176) !important;
+  position: relative !important;
+}
+._1yqbv3i {
+  font-size: 10px !important;
+  line-height: 12px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  font-weight: 600 !important;
+  overflow-wrap: break-word !important;
+  color: rgb(113, 113, 113) !important;
+}
+@supports (overflow: clip) {
+  ._1yqbv3i {
+    overflow: clip !important;
+  }
+}
+._1e1aumhl {
+  -webkit-box-align: center !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: vertical !important;
+  display: flex !important;
+  flex: 1 1 0px !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  background-color: transparent !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border: 0px !important;
+  max-width: 20% !important;
+  min-width: 0px !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  padding: 0px 2px !important;
+  color: rgb(255, 56, 92) !important;
+}
+._s4tclwz {
+  font-size: 10px !important;
+  line-height: 12px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  font-weight: 600 !important;
+  overflow-wrap: break-word !important;
+  color: rgb(34, 34, 34) !important;
+}
+@supports (overflow: clip) {
+  ._s4tclwz {
+    overflow: clip !important;
+  }
+}
+._jgit7bg {
+  -webkit-box-align: center !important;
+  -webkit-box-pack: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 2px !important;
+  position: relative !important;
+  color: rgb(255, 56, 92) !important;
+}
+/* /Footer */
