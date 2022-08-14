@@ -117,6 +117,51 @@
   background: #ffff;
 }
 /* /Header */
+
+/* Footer mobile */
+._v3p47v {
+  bottom: 0px !important;
+  left: 0px !important;
+  position: fixed !important;
+  right: 0px !important;
+  z-index: 1999 !important;
+}
+._7ve50m {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  align-items: center !important;
+  background-color: rgb(255, 255, 255) !important;
+  border-top: 1px solid rgb(221, 221, 221) !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 16px 24px !important;
+}
+._1ku51f04 {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--iw-ehf-f) !important;
+  line-height: var(---s-l-myu) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  outline: none !important;
+  padding: 14px 24px !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  background: var(--f-k-smk-x) !important;
+  color: var(--f-mkcy-f) !important;
+  contain: paint !important;
+}
+/* /Footer mobile */
+
 /* Footer */
 ._1tt196k {
   -webkit-box-align: center !important;
