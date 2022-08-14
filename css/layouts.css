@@ -1,5 +1,87 @@
 /* Remaining styles for header and footer, which are defined in page-specific css */
 
+/* Header Mobile */
+._s8pn9w {
+  background: white !important;
+  position: sticky !important;
+  transition: -ms-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
+    transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s !important;
+  top: 0px !important;
+  z-index: 4 !important;
+}
+._s8pn9w::before {
+  inset: -100px 0px 0px !important;
+  box-shadow: rgb(0 0 0 / 16%) 0px -2px 8px !important;
+  content: '' !important;
+  display: block !important;
+  opacity: 0.01 !important;
+  position: absolute !important;
+  transition: opacity 150ms ease-out 0s !important;
+  pointer-events: none !important;
+}
+._2b0qwl {
+  -webkit-box-align: center !important;
+  background: white !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 64px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+._1o4zwko {
+  margin-right: auto !important;
+  overflow: hidden !important;
+}
+._1dxtmbip {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px -8px !important;
+  position: relative !important;
+  text-align: center !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--c-zdwk-p) !important;
+  line-height: var(--j-p-z-kco) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  outline: none !important;
+  padding: 8px !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  background: transparent !important;
+  color: var(--f-k-smk-x) !important;
+  text-decoration: none !important;
+}
+._1ran6xy {
+  -webkit-box-align: center !important;
+  flex: 1 1 0% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0px 8px !important;
+  background-color: transparent !important;
+  border: none !important;
+  color: rgb(34, 34, 34) !important;
+  max-width: 100% !important;
+}
+._zzdavs {
+  padding-right: 8px !important;
+}
+._1s0b0yb {
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  color: rgb(34, 34, 34) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+/* Header mobile */
+
 /* Header */
 ._1wzp0xs {
   background-color: currentcolor !important;
