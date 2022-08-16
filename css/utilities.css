@@ -6,6 +6,10 @@
   width: 100% !important;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
 @media (min-width: 744px) {
   .d-md-block {
     display: block !important;
