@@ -1,4 +1,4 @@
-const tabs = ({ buttonId, panelId, parentId }) => {
+const handleTab = ({ buttonId, panelId, parentId }) => {
   document.querySelectorAll(`[id^='${buttonId}']`).forEach((el) => {
     el.addEventListener('click', (e) => {
       const parent = e.target.closest(`#${parentId}`);
@@ -20,6 +20,22 @@ const tabs = ({ buttonId, panelId, parentId }) => {
       parent
         .querySelector(`#${e.target.getAttribute('aria-controls')}`)
         .removeAttribute('hidden');
+    });
+  });
+};
+
+const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
+  document.querySelectorAll(btnOpenSelector).forEach((element) => {
+    element.addEventListener('click', () => {
+      document.body.classList.add('overflow-y-hidden');
+      document.querySelector(modalSelector).classList.remove('d-none');
+    });
+  });
+
+  document.querySelectorAll(btnCloseSelector).forEach((element) => {
+    element.addEventListener('click', () => {
+      document.body.classList.remove('overflow-y-hidden');
+      document.querySelector(modalSelector).classList.add('d-none');
     });
   });
 };
