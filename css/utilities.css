@@ -10,6 +10,10 @@
   display: none !important;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 @media (min-width: 744px) {
   .d-md-block {
     display: block !important;
