@@ -21,3 +21,15 @@ document.querySelectorAll('.reviews-tab-item').forEach((tabItem, idx) => {
     });
   });
 });
+
+//leave public response
+document.querySelector('.leave-response').addEventListener('click', (e) => {
+  e.preventDefault();
+  e.target.closest('.response-block').classList.add('toggled');
+});
+document
+  .querySelector('#submit-public-response')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+    e.target.closest('.response-block').classList.remove('toggled');
+  });
