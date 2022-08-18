@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/utilities.css" />
     <link rel="stylesheet" href="css/invite-friends.css" />
     <link rel="stylesheet" href="../css/layouts.css" />
+    <link rel="stylesheet" href="../css/components.css" />
     <title>Airbnb Coupon Codes: Invite Your Friends</title>
   </head>
   <body class="with-new-header">
@@ -169,7 +170,11 @@
                       </div>
                     </div>
                     <div class="_1cvivhm">
-                      <button type="button" class="_snbhip0">
+                      <button
+                        type="button"
+                        class="_snbhip0"
+                        id="show-more-details-button"
+                      >
                         Show more details
                       </button>
                     </div>
@@ -771,5 +776,117 @@
         </div>
       </div>
     </div>
+
+    <!-- Show more details modal -->
+    <div dir="ltr" id="show-details-modal" class="d-none">
+      <div class="_n0520t">
+        <div class="_1sjmvoc">
+          <div class="_13nncl3">
+            <div
+              role="dialog"
+              aria-labelledby="dls-modal__referrals-tracker-modal"
+              class="_1tnlies"
+            >
+              <section>
+                <div class="_wpwi48">
+                  <div class="_152qbzi">
+                    <button
+                      type="button"
+                      class="_1rp5252"
+                      id="show-details-modal__close"
+                      aria-busy="false"
+                      style="padding: 20px; margin: -20px"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        role="img"
+                        aria-hidden="false"
+                        aria-label="Close"
+                        focusable="false"
+                        style="
+                          height: 16px;
+                          width: 16px;
+                          display: block;
+                          fill: rgb(118, 118, 118);
+                        "
+                      >
+                        <path
+                          d="m23.25 24c-.19 0-.38-.07-.53-.22l-10.72-10.72-10.72 10.72c-.29.29-.77.29-1.06 0s-.29-.77 0-1.06l10.72-10.72-10.72-10.72c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l10.72 10.72 10.72-10.72c.29-.29.77-.29 1.06 0s .29.77 0 1.06l-10.72 10.72 10.72 10.72c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="_11qg6v7y">
+                    <h1
+                      id="dls-modal__referrals-tracker-modal"
+                      tabindex="-1"
+                      elementtiming="LCP-target"
+                      class="_14i3z6h"
+                    >
+                      <div class="_s1tlw0m">People you’ve invited</div>
+                    </h1>
+                    <div class="_czm8crp">
+                      The travel credit you earn can be used to book your next
+                      home or experience on Airbnb.
+                    </div>
+                  </div>
+                  <section>
+                    <div>
+                      <div role="tablist" class="_csc5ey">
+                        <div class="_36rlri">
+                          <button
+                            type="button"
+                            class="_1yrhm7tp"
+                            role="tab"
+                            aria-selected="true"
+                            aria-busy="false"
+                            aria-current="page"
+                          >
+                            Pending
+                          </button>
+                        </div>
+                        <div class="_36rlri">
+                          <button
+                            type="button"
+                            class="_6v5uk23"
+                            role="tab"
+                            aria-selected="false"
+                            aria-busy="false"
+                          >
+                            Available
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div
+                        style="margin-top: 16px; margin-bottom: 24px"
+                        id="available-panel"
+                        class="d-none"
+                      >
+                        <section>
+                          <h2
+                            tabindex="-1"
+                            elementtiming="LCP-target"
+                            class="_14i3z6h"
+                          >
+                            <div class="_18hrqvin">₱0</div>
+                          </h2>
+                          <div class="_czm8crp">Available credits</div>
+                        </section>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Show more details modal -->
+
+    <script src="js/invite-friends.js" defer></script>
   </body>
 </html>

@@ -18,6 +18,10 @@
   margin-bottom: 0.5rem !important;
 }
 
+.flip-vertical {
+  transform: rotate(180deg);
+}
+
 @media (min-width: 744px) {
   .d-md-block {
     display: block !important;
