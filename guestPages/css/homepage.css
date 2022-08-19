@@ -14487,3 +14487,17 @@ html.scrollbar-gutter[class][class] {
     text-decoration: underline !important;
   }
 }
+
+@media (max-width: 744px) {
+  .place-type-check {
+    margin-right: 0 !important;
+    margin-left: 16px !important;
+  }
+
+  .property-type-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0px, 1fr)) !important;
+    grid-template-rows: repeat(2, auto) !important;
+    gap: 16px !important;
+  }
+}

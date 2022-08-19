@@ -952,7 +952,7 @@
   cursor: pointer !important;
 }
 ._7ytxmo {
-  margin-right: 16px !important;
+  margin-right: 16px;
 }
 ._10ndlvp {
   position: relative !important;
@@ -1178,10 +1178,10 @@
   border-radius: inherit !important;
 }
 ._19dpbcv {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  grid-template-rows: repeat(1, auto) !important;
-  gap: 16px !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 16px;
 }
 ._1doy7q3 {
   display: inline-block !important;

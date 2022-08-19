@@ -50,3 +50,9 @@ document.querySelector('#addguests-btn').addEventListener('click', () => {
     .classList.replace('b174x59c', 'b1odri3w');
   document.querySelector('#search-who').classList.remove('d-none');
 });
+
+handleModal({
+  btnOpenSelector: '._njezmzv',
+  modalSelector: '#filter-modal',
+  btnCloseSelector: '._oda838',
+});
