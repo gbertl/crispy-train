@@ -34,6 +34,10 @@
   overflow-x: hidden;
 }
 
+.translateY-15 {
+  transform: translateY(15px);
+}
+
 @media (min-width: 744px) {
   .d-md-block {
     display: block !important;
