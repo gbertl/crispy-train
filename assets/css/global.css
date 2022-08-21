@@ -23100,3 +23100,12 @@ h6:first-child {
 ._1h75pd34:hover {
   box-shadow: var(--e-swdx-p) !important;
 }
+@media (min-width: 1128px) {
+  .d-lg-block {
+    display: block !important;
+  }
+
+  .d-lg-none {
+    display: none !important;
+  }
+}
