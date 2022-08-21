@@ -43,6 +43,34 @@ export const cleanPages = () => {
     .pipe(dest('dist'));
 };
 
+export const cleanRel = () => {
+  return src([
+    'assets/css/pages/releases-1.css',
+    'assets/css/pages/releases.css',
+  ])
+    .pipe(
+      postcss([
+        purgeCss({ content: ['releases.html', 'assets/js/pages/releases.js'] }),
+      ])
+    )
+    .pipe(
+      cleanCss({
+        format: 'beautify',
+        level: {
+          2: {
+            all: false,
+            mergeAdjacentRules: true,
+            overrideProperties: true,
+            removeEmpty: true,
+            removeDuplicateRules: true,
+          },
+        },
+      })
+    )
+    .pipe(concat('releases.css'))
+    .pipe(dest('dist'));
+};
+
 const watchAll = () => {
   watch(['**/*.html', '**/*.css', '**/*.js'], reload);
 };
