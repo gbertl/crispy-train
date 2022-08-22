@@ -42,7 +42,7 @@
 )!important;
   --dls19-brand-gradient-accent: #FF385C!important
 }
-._1f41ax74 {
+.header__brand {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   outline: 0!important;
@@ -62,18 +62,18 @@
   transition: color 250ms!important;
   color: var(--ihf-tp-q)!important
 }
-._1f41ax74::-moz-focus-inner {
+.header__brand::-moz-focus-inner {
   border: none!important;
   padding: 0!important;
   margin: 0!important
 }
-._1f41ax74:focus::-moz-focus-inner {
+.header__brand:focus::-moz-focus-inner {
   border: none!important
 }
-._1f41ax74:-moz-focusring {
+.header__brand:-moz-focusring {
   outline: 0!important
 }
-._1f41ax74::before {
+.header__brand::before {
   border-radius: var(--i-g-gvoq)!important;
   bottom: 8px!important;
   content: ''!important;
@@ -82,42 +82,42 @@
   right: -8px!important;
   top: 8px!important
 }
-._1f41ax74:focus-visible::before {
+.header__brand:focus-visible::before {
   -webkit-transition: box-shadow .2s!important;
   -moz-transition: box-shadow .2s!important;
   transition: box-shadow .2s!important;
   box-shadow: 0 0 0 2px var(--f-k-smk-x),0 0 0 4px var(--f-mkcy-f)!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1f41ax74:focus-visible::before {
+  .header__brand:focus-visible::before {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
   }
 }
-._1f41ax74:focus[data-focus-visible-added]::before {
+.header__brand:focus[data-focus-visible-added]::before {
   -webkit-transition: box-shadow .2s!important;
   -moz-transition: box-shadow .2s!important;
   transition: box-shadow .2s!important;
   box-shadow: 0 0 0 2px var(--f-k-smk-x),0 0 0 4px var(--f-mkcy-f)!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1f41ax74:focus[data-focus-visible-added]::before {
+  .header__brand:focus[data-focus-visible-added]::before {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
   }
 }
-._1grlqto {
+.header__logo-lg {
   display: none!important
 }
 @media (min-width:1128px) {
-  ._1grlqto {
+  .header__logo-lg {
     display: block!important
   }
 }
 @media (min-width:1128px) {
-  ._17ctt5 {
+  .header__logo {
     display: none!important
   }
 }
@@ -803,7 +803,7 @@
     transition: none!important
   }
 }
-._vuzcgs {
+.header__nav {
   -webkit-box-pack: end!important;
   -ms-flex-pack: end!important;
   -webkit-box-align: center!important;
