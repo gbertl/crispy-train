@@ -4343,7 +4343,7 @@
 ._e296pg {
   position: relative !important;
 }
-._oda838 {
+.btn-close {
   appearance: none !important;
   display: inline-block !important;
   border-radius: 50% !important;
@@ -4358,7 +4358,7 @@
   background: 0 0 !important;
   transition: -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s !important;
 }
-._oda838::before {
+.btn-close::before {
   content: '' !important;
   display: block !important;
   position: absolute !important;
@@ -4370,12 +4370,12 @@
   border-radius: 50% !important;
 }
 @media (hover: hover) {
-  ._oda838:hover::before {
+  .btn-close:hover::before {
     background: #f7f7f7 !important;
   }
 }
 @media (hover: hover) {
-  ._oda838:hover {
+  .btn-close:hover {
     color: #000 !important;
   }
 }

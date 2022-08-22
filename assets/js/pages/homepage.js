@@ -1,7 +1,7 @@
 handleModal({
   btnOpenSelector: '#filter-btn',
   modalSelector: '#filter-modal',
-  btnCloseSelector: '._oda838',
+  btnCloseSelector: '.btn-close',
 });
 
 document.querySelector('#anywhere-btn').addEventListener('click', () => {
@@ -54,5 +54,5 @@ document.querySelector('#addguests-btn').addEventListener('click', () => {
 handleModal({
   btnOpenSelector: '._njezmzv',
   modalSelector: '#filter-modal',
-  btnCloseSelector: '._oda838',
+  btnCloseSelector: '.btn-close',
 });

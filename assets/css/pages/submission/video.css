@@ -2013,7 +2013,7 @@ body {
   justify-content: space-between!important;
   flex-wrap: wrap!important
 }
-._oda838 {
+.btn-close {
   appearance: none!important;
   display: inline-block!important;
   border-radius: 50%!important;
@@ -2028,7 +2028,7 @@ body {
   background: 0 0!important;
   transition: -ms-transform .25s,-webkit-transform .25s,transform .25s!important
 }
-._oda838::before {
+.btn-close::before {
   content: ''!important;
   display: block!important;
   position: absolute!important;
@@ -2633,7 +2633,7 @@ body {
 ._149pqlo {
   margin-right: 12px!important
 }
-._1dj2p4gk {
+.btn-outline {
   cursor: pointer!important;
   display: inline-block!important;
   margin: 0!important;

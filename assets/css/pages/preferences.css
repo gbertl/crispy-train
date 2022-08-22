@@ -2705,7 +2705,7 @@
     right: var(--spacing-select-arrow-margin-outside, 16px) !important;
   }
 }
-._kt3i5a4 {
+.btn-secondary {
   display: inline-block !important;
   margin: 0 !important;
   position: relative !important;
@@ -2733,7 +2733,7 @@
   color: #fff !important;
 }
 @supports (--custom: properties) {
-  ._kt3i5a4 {
+  .btn-secondary {
     border-radius: var(--border-button-border-radius, 4px) !important;
     font-size: var(--font-button-font-size, 16px) !important;
     line-height: var(--font-button-line-height, 24px) !important;
