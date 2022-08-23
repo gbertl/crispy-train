@@ -23057,3 +23057,135 @@ select[disabled] {
   text-align: inherit !important;
   outline: 0 !important;
 }
+
+/* Start Filter Price Menu */
+
+._zsuhfum {
+  position: absolute !important;
+  display: none !important;
+  top: 54px !important;
+  z-index: 2001 !important;
+  background: rgb(255, 255, 255) !important;
+  border: 0.5px solid rgba(118, 118, 118, 0.28) !important;
+  border-radius: 12px !important;
+  box-shadow: rgb(0 0 0 / 15%) 0px 10px 37px !important;
+  overflow: hidden !important;
+  max-width: 848px !important;
+  white-space: normal !important;
+  visibility: visible !important;
+  left: 0px !important;
+  right: auto !important;
+}
+
+._7yfwnp:focus-within + ._zsuhfum {
+  display: inline-block !important;
+}
+
+._15kke0s {
+  max-width: 848px !important;
+  overflow: auto !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  ._15kke0s {
+    max-height: 360px !important;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  ._15kke0s {
+    max-height: 420px !important;
+  }
+}
+
+/* Price Menu Body */
+
+._h9eo3p {
+  max-height: calc(100vh - 220px) !important;
+  overflow: hidden auto !important;
+  padding: 20px !important;
+}
+
+._h9eo3p {
+  max-height: calc(100vh - 220px) !important;
+  overflow: hidden auto !important;
+  padding: 20px !important;
+}
+
+._ztxgz4 {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Price Menu Footer */
+
+._pwbsgx {
+  padding: 12px 14px !important;
+  border-top: 1px solid rgb(235, 235, 235) !important;
+}
+
+._1qbrhv4 {
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+}
+
+._za4ekfm:disabled {
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+  border: none !important;
+  background: transparent !important;
+  color: var(--j-qkgmf) !important;
+}
+
+._za4ekfm:active {
+  transform: scale(0.96) !important;
+  border: none !important;
+  background: var(---pc-g-v-g) !important;
+  color: var(--bgxgx) !important;
+}
+
+@media (hover: hover) {
+  ._za4ekfm:hover {
+    border: none !important;
+    background: var(---pc-g-v-g) !important;
+    color: var(--bgxgx) !important;
+  }
+}
+
+._ls0e43 {
+  margin-left: auto !important;
+}
+
+._1lerwp6l {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0px !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--c-zdwk-p) !important;
+  line-height: var(--j-p-z-kco) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  outline: none !important;
+  padding: 8px 16px !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  background: var(--f-k-smk-x) !important;
+  color: var(--f-mkcy-f) !important;
+}
