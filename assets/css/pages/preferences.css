@@ -2438,7 +2438,7 @@
   margin-left: auto !important;
   padding-left: 24px !important;
 }
-._17y21tl {
+.form__switch-secondary {
   appearance: none !important;
   height: 32px !important;
   width: 48px !important;
@@ -2454,7 +2454,7 @@
   -webkit-tap-highlight-color: transparent !important;
 }
 @supports (--custom: properties) {
-  ._17y21tl {
+  .form__switch-secondary {
     height: var(--size-switch-size, 32px) !important;
     width: var(--size-switch-background-width, 48px) !important;
     background-color: var(--color-accent-bg-gray, #f2f2f2) !important;

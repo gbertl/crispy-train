@@ -11,7 +11,7 @@ handleModal({
 });
 
 handleModal({
-  btnOpenSelector: '._1yf4i4f',
+  btnOpenSelector: '.form__check-input',
   btnCloseSelector: '.btn-close',
   modalSelector: '#unsubscribe-modal',
 });
