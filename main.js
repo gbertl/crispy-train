@@ -133,9 +133,9 @@ let sitemap = [
   },
 ];
 
-let containerDivs = [];
-
 const updateContainer = (sitemapLocal) => {
+  let containerDivs = [];
+
   sitemapLocal.forEach((map) => {
     const h1 = document.createElement('h1');
     const h1Text = document.createTextNode(map.title);
@@ -166,3 +166,22 @@ const updateContainer = (sitemapLocal) => {
 };
 
 updateContainer(sitemap);
+
+document.querySelector('.input-search').addEventListener('keyup', (e) => {
+  const value = e.target.value.trim();
+
+  if (!!value) {
+    updateContainer(
+      sitemap
+        .map((map) => {
+          return {
+            ...map,
+            urls: map.urls.filter((url) => url.includes(value)),
+          };
+        })
+        .filter((map) => map.urls.length)
+    );
+  } else {
+    updateContainer(sitemap);
+  }
+});
