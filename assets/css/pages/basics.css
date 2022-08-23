@@ -2785,7 +2785,7 @@ body {
   background: var(--f-mkcy-f)!important;
   color: var(--f-k-smk-x)!important
 }
-._vxvq8x {
+.modal__container {
   -webkit-box-pack: center!important;
   -webkit-box-align: end!important;
   -webkit-box-direction: normal!important;
@@ -2800,7 +2800,7 @@ body {
   align-items: flex-end!important;
   justify-content: center!important
 }
-._pa35zs {
+.modal__close {
   position: absolute!important;
   display: flex!important;
   top: 16px!important;
@@ -2847,7 +2847,7 @@ body {
   flex: 0 0 16px!important;
   text-align: left!important
 }
-._9t7ktw {
+.modal__heading {
   -webkit-box-flex: 0!important;
   overflow: hidden!important;
   flex: 0 1 auto!important;
@@ -2867,7 +2867,7 @@ body {
   overflow: hidden!important;
   text-overflow: ellipsis!important
 }
-._12kfhdn {
+.modal__body {
   padding: 24px!important;
   flex: 1 1 auto!important;
   overflow-y: auto!important;
@@ -2918,7 +2918,7 @@ body {
   font-weight: 400!important;
   margin-left: 16px!important
 }
-._zgc1p6 {
+.modal__footer {
   -webkit-box-pack: justify!important;
   -webkit-box-align: center!important;
   display: flex!important;

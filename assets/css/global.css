@@ -21626,7 +21626,7 @@ h6:first-child {
     background-color: var(--header_brand-color, var(--ihf-tp-q)) !important;
   }
 }
-._1t0jy5tw {
+.modal__backdrop {
   z-index: 2000 !important;
   position: fixed !important;
   inset: 0 !important;
@@ -21638,11 +21638,11 @@ h6:first-child {
   animation-name: keyframe_15p0df !important;
 }
 @media (min-width: 744px) {
-  ._1t0jy5tw {
+  .modal__backdrop {
     background: rgb(34, 34, 34, 0.6) !important;
   }
 }
-._vxvq8x {
+.modal__container {
   -webkit-box-pack: center !important;
   -webkit-box-align: end !important;
   -webkit-box-direction: normal !important;
@@ -21658,7 +21658,7 @@ h6:first-child {
   justify-content: center !important;
 }
 @supports (max-height: -webkit-fill-available) {
-  ._vxvq8x {
+  .modal__container {
     max-height: max(
       -webkit-fill-available,
       calc(var(--vh, 1vh) * 100)
@@ -21666,7 +21666,7 @@ h6:first-child {
   }
 }
 @media (min-width: 744px) and (min-height: 475px) {
-  ._vxvq8x {
+  .modal__container {
     -webkit-box-align: center !important;
     padding: 40px !important;
     align-items: center !important;
@@ -21723,7 +21723,7 @@ h6:first-child {
     border-radius: 12px !important;
   }
 }
-._pa35zs {
+.modal__close {
   position: absolute !important;
   display: flex !important;
   top: 16px !important;
@@ -21731,7 +21731,7 @@ h6:first-child {
   z-index: 1 !important;
 }
 @media (min-width: 744px) {
-  ._pa35zs {
+  .modal__close {
     top: 24px !important;
   }
 }
@@ -21764,7 +21764,7 @@ h6:first-child {
 ._e296pg {
   position: relative !important;
 }
-._12kfhdn {
+.modal__body {
   padding: 24px !important;
   flex: 1 1 auto !important;
   overflow-y: auto !important;
@@ -21783,7 +21783,7 @@ h6:first-child {
   line-height: 24px !important;
   color: #222 !important;
 }
-._zgc1p6 {
+.modal__footer {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
   display: flex !important;
@@ -21868,7 +21868,7 @@ h6:first-child {
     border-radius: 12px !important;
   }
 }
-._1b0cy6g {
+.modal__header {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
   display: flex !important;
@@ -21884,11 +21884,11 @@ h6:first-child {
   font-weight: 800 !important;
 }
 @media (min-width: 744px) {
-  ._1b0cy6g {
+  .modal__header {
     min-height: 64px !important;
   }
 }
-._9t7ktw {
+.modal__heading {
   -webkit-box-flex: 0 !important;
   overflow: hidden !important;
   flex: 0 1 auto !important;
