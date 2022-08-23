@@ -38,52 +38,129 @@ handleModal({
     btnCloseSelector: '._oda838',
 });
 
-document.querySelector('#anywhere-btn').addEventListener('click', () => {
-    document.querySelector('.cxy853f').classList.replace('cxy853f', 'cn7o9ly');
-    document.querySelector('.lr5v90m').classList.replace('lr5v90m', 'l1h6eamc');
-    document.querySelector('.b1t24mo5').classList.replace('b1t24mo5', 'b12rw3s8');
-    document
-        .querySelector('#search-tabpanel')
-        .classList.replace('c1oqx6sn', 'ceyij5b');
-    document.querySelector('.ix85u26').classList.replace('ix85u26', 'i1eek2sl');
-    document.querySelector('.bu69x9v').classList.replace('bu69x9v', 'b14gupvm');
-    document.querySelector('.c8th90').classList.add('d-none');
-    document.querySelector('#search-btn-text').classList.remove('d-none');
-    document.querySelector('#search-backdrop').classList.remove('d-none');
-    document.querySelector('.p1jg7hjv').classList.add('p5mmcz9');
-});
+const toggleModal = (type) => {
 
-document.querySelector('#anyweek-btn').addEventListener('click', () => {
-    document.querySelector('.cxy853f').classList.replace('cxy853f', 'cn7o9ly');
-    document.querySelector('.lr5v90m').classList.replace('lr5v90m', 'l1h6eamc');
-    document.querySelector('.b1t24mo5').classList.replace('b1t24mo5', 'b12rw3s8');
-    document.querySelector('.b174x59c').classList.replace('b174x59c', 'b1odri3w');
-    document.querySelector('#search-backdrop').classList.remove('d-none');
-    document.querySelector('#anyweek-panel').classList.remove('d-none');
-    document
-        .querySelector('#search-tabpanel')
-        .classList.replace('c1oqx6sn', 'ceyij5b');
-    document.querySelector('#search-btn-text').classList.remove('d-none');
-    document.querySelector('.c8th90').classList.add('d-none');
-    document.querySelector('.bu69x9v').classList.replace('bu69x9v', 'b14gupvm');
-});
+    switch (type) {
+        case 'addguests':
+            const whoButton = document.querySelector('[data-testid=structured-search-input-field-guests-button]').classList
+            whoButton.contains('b174x59c')
+                ? whoButton.replace('b174x59c', 'b1odri3w')
+                : whoButton.replace('b1odri3w', 'b174x59c')
 
-document.querySelector('#addguests-btn').addEventListener('click', () => {
-    document.querySelector('.cxy853f').classList.replace('cxy853f', 'cn7o9ly');
-    document.querySelector('.lr5v90m').classList.replace('lr5v90m', 'l1h6eamc');
-    document.querySelector('.b1t24mo5').classList.replace('b1t24mo5', 'b12rw3s8');
-    document
-        .querySelector('#search-tabpanel')
-        .classList.replace('c1oqx6sn', 'ceyij5b');
-    document.querySelector('#search-backdrop').classList.remove('d-none');
-    document.querySelector('#search-btn-text').classList.remove('d-none');
-    document.querySelector('.c8th90').classList.add('d-none');
-    document.querySelector('.bu69x9v').classList.replace('bu69x9v', 'b14gupvm');
-    document
-        .querySelector('[data-testid=structured-search-input-field-guests-button]')
-        .classList.replace('b174x59c', 'b1odri3w');
-    document.querySelector('#search-who').classList.remove('d-none');
-});
+            const searchWho = document.querySelector('#search-who').classList
+            searchWho.contains('d-none')
+                ? searchWho.remove('d-none')
+                : searchWho.add('d-none')
+            break;
+
+        case 'anyweek':
+            const checkInButton = document.querySelectorAll('.b174x59c, .b1odri3w')[0].classList
+            checkInButton.contains('b174x59c')
+                ? checkInButton.replace('b174x59c', 'b1odri3w')
+                : checkInButton.replace('b1odri3w', 'b174x59c')
+
+            const anyweekPanel = document.querySelector('#anyweek-panel').classList
+            anyweekPanel.contains('d-none')
+                ? anyweekPanel.remove('d-none')
+                : anyweekPanel.add('d-none')
+            break;
+
+        case 'anywhere':
+            const anywhereLabel = document.querySelectorAll('.ix85u26, .i1eek2sl')
+                .forEach((target) => {
+                    const classList = target.classList
+                    classList.contains('ix85u26')
+                        ? classList.replace('ix85u26', 'i1eek2sl')
+                        : classList.replace('i1eek2sl', 'ix85u26')
+                })
+
+            const content = document.querySelector('.p1jg7hjv').classList
+            content.contains('p5mmcz9')
+                ? content.remove('p5mmcz9')
+                : content.add('p5mmcz9')
+            break;
+
+        default:
+            return;
+    }
+
+    const header = document.querySelectorAll('.cxy853f, .cn7o9ly')
+        .forEach((target) => {
+            const classList = target.classList
+            classList.contains('cxy853f')
+                ? classList.replace('cxy853f', 'cn7o9ly')
+                : classList.replace('cn7o9ly', 'cxy853f')
+        })
+
+    const filters = document.querySelectorAll('.lr5v90m, .l1h6eamc')
+        .forEach((target) => {
+            const classList = target.classList
+            classList.contains('lr5v90m')
+                ? classList.replace('lr5v90m', 'l1h6eamc')
+                : classList.replace('l1h6eamc', 'lr5v90m')
+        })
+
+    const filtersWrapper = document.querySelectorAll('.b1t24mo5, .b12rw3s8')
+        .forEach((target) => {
+            const classList = target.classList
+            classList.contains('b1t24mo5')
+                ? classList.replace('b1t24mo5', 'b12rw3s8')
+                : classList.replace('b12rw3s8', 'b1t24mo5')
+        })
+
+    const searchTablPanel = document.querySelector('#search-tabpanel').classList
+    searchTablPanel.contains('c1oqx6sn')
+        ? searchTablPanel.replace('c1oqx6sn', 'ceyij5b')
+        : searchTablPanel.replace('ceyij5b', 'c1oqx6sn')
+
+    const searchButton = document.querySelectorAll('.bu69x9v, .b14gupvm')
+        .forEach((target) => {
+            const classList = target.classList
+            classList.contains('bu69x9v')
+                ? classList.replace('bu69x9v', 'b14gupvm')
+                : classList.replace('b14gupvm', 'bu69x9v')
+        })
+
+    const searchButtonIcon = document.querySelector('#search-btn-text').classList
+    searchButtonIcon.contains('d-none')
+        ? searchButtonIcon.remove('d-none')
+        : searchButtonIcon.add('d-none')
+
+    const searchButtonhText = document.querySelector('.c8th90').classList
+    searchButtonhText.contains('d-none')
+        ? searchButtonhText.remove('d-none')
+        : searchButtonhText.add('d-none')
+
+    const searchBackdrop = document.querySelector('#search-backdrop').classList
+    searchBackdrop.contains('d-none')
+        ? searchBackdrop.remove('d-none')
+        : searchBackdrop.add('d-none')
+}
+
+let tabId = null
+document.querySelectorAll('#anywhere-btn, #anyweek-btn, #addguests-btn')
+    .forEach((target) => {
+        target.addEventListener('click', (e) => {
+            const id = tabId = e.currentTarget.id.split('-')[0]
+
+            toggleModal(tabId)
+        });
+    })
+
+document.addEventListener('click', (e) => {
+    const modalBody = document.querySelector('.h1wqqi3k')
+    if (!modalBody.contains(e.target) || e.target.classList.contains('o8h0gdx')) {
+        toggleModal(tabId)
+        tabId = null
+    }
+})
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && tabId) {
+        toggleModal(tabId)
+        tabId = null
+    }
+})
 
 handleModal({
     btnOpenSelector: '._njezmzv',
