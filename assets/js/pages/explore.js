@@ -31,13 +31,6 @@ nextButton.addEventListener('click', () => {
     container.scrollBy({ top: 0, left: +500, behavior: 'smooth' })
 })
 
-
-handleModal({
-    btnOpenSelector: '#filter-btn',
-    modalSelector: '#filter-modal',
-    btnCloseSelector: '._oda838',
-});
-
 const toggleModal = (type) => {
 
     switch (type) {
@@ -161,9 +154,3 @@ document.addEventListener('keydown', (e) => {
         tabId = null
     }
 })
-
-handleModal({
-    btnOpenSelector: '._njezmzv',
-    modalSelector: '#filter-modal',
-    btnCloseSelector: '._oda838',
-});
