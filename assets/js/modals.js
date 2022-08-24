@@ -3,8 +3,8 @@ const modals = document.querySelectorAll('[data-modal]')
 modals.forEach((e) => {
     const modal = document.querySelector(e.dataset.modal)
 
-    const openModal = () => modal.classList.add('d-md-block')
-    const closeModal = () => modal.classList.remove('d-md-block')
+    const openModal = () => modal.classList.remove('d-none')
+    const closeModal = () => modal.classList.add('d-none')
 
     e.addEventListener('click', (e) => {
         e.preventDefault()
