@@ -2486,14 +2486,14 @@ body {
   font-size: 12px!important;
   color: #767676!important
 }
-._1lerwp6l:disabled {
+.btn-dark--small:disabled {
   cursor: not-allowed!important;
   opacity: 1!important;
   border: none!important;
   background: var(--j-qkgmf)!important;
   color: var(--f-mkcy-f)!important
 }
-._1lerwp6l {
+.btn-dark--small {
   cursor: pointer!important;
   display: inline-block!important;
   margin: 0!important;
@@ -3007,7 +3007,7 @@ body {
   text-overflow: ellipsis!important;
   white-space: nowrap!important
 }
-._yrzsibu {
+.form__input {
   width: 100%!important;
   border: none!important;
   outline: 0!important;
@@ -3110,11 +3110,11 @@ body {
   color: #fff!important;
   border-color: #222!important
 }
-._smt4n2a {
+.form__check-input--checked {
   position: absolute!important;
   opacity: 0!important
 }
-._smt4n2a:disabled + [data-checkbox] {
+.form__check-input--checked:disabled + [data-checkbox] {
   cursor: not-allowed!important;
   background: #ddd!important;
   color: #fff!important;

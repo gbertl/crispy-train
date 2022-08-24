@@ -1096,7 +1096,7 @@
   --save-button_height: calc(24px + var(--fgg-f-l-a));
   --save-button_width: calc(24px + var(--fgg-f-l-a));
 }
-.bq05a0m[class][class] {
+.btn-wishlist[class][class] {
   display: inline-block;
   position: relative;
   -webkit-text-decoration: none;
@@ -1107,7 +1107,7 @@
   font-family: inherit;
   touch-action: manipulation;
 }
-.dir.bq05a0m[class][class] {
+.dir.btn-wishlist[class][class] {
   cursor: pointer;
   margin: 0;
   text-align: center;
@@ -1120,10 +1120,10 @@
   padding-right: 8px;
   background: #d3d3d3;
 }
-.bq05a0m[class][class]:disabled {
+.btn-wishlist[class][class]:disabled {
   opacity: 0.3;
 }
-.dir.bq05a0m[class][class]:disabled {
+.dir.btn-wishlist[class][class]:disabled {
   cursor: not-allowed;
 }
 .vq7srz5[class][class] {
@@ -3706,7 +3706,7 @@
 .dir-rtl.fp36fst[class][class] {
   margin-right: 12px;
 }
-.c13cw3wj[class][class] {
+.header__brand[class][class] {
   outline: 0;
   align-items: center;
   display: inline-flex;
@@ -3715,62 +3715,62 @@
   vertical-align: middle;
   z-index: 1;
 }
-.dir.c13cw3wj[class][class] {
+.dir.header__brand[class][class] {
   transition: color 250ms;
 }
-.dir.c13cw3wj[class][class]::-moz-focus-inner {
+.dir.header__brand[class][class]::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.c13cw3wj[class][class]:focus::-moz-focus-inner {
+.dir.header__brand[class][class]:focus::-moz-focus-inner {
   border: none;
 }
-.c13cw3wj[class][class]:-moz-focusring {
+.header__brand[class][class]:-moz-focusring {
   outline: 0;
 }
-.c13cw3wj[class][class]::before {
+.header__brand[class][class]::before {
   bottom: 8px;
   content: '';
   position: absolute;
   top: 8px;
 }
-.dir.c13cw3wj[class][class]::before {
+.dir.header__brand[class][class]::before {
   border-radius: var(--i-g-gvoq);
   left: -8px;
   right: -8px;
 }
-.dir.c13cw3wj[class][class]:focus-visible::before {
+.dir.header__brand[class][class]:focus-visible::before {
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.c13cw3wj[class][class]:focus-visible::before {
+  .dir.header__brand[class][class]:focus-visible::before {
     transition: none;
   }
 }
-.dir.c13cw3wj[class][class]:focus[data-focus-visible-added]::before {
+.dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.c13cw3wj[class][class]:focus[data-focus-visible-added]::before {
+  .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
     transition: none;
   }
 }
 .cbavvlr[class][class] {
   color: var(--ihf-tp-q);
 }
-.l10sdlqs[class][class] {
+.header__logo-lg[class][class] {
   display: none;
 }
 @media (min-width: 1128px) {
-  .l10sdlqs[class][class] {
+  .header__logo-lg[class][class] {
     display: block;
   }
 }
 @media (min-width: 1128px) {
-  .bpe4snb[class][class] {
+  .header__logo[class][class] {
     display: none;
   }
 }
@@ -4608,7 +4608,7 @@
     overflow: clip !important;
   }
 }
-._1b2klj3 {
+.pagination-bullet-wrapper {
   -webkit-box-pack: center !important;
   -webkit-box-align: end !important;
   align-items: flex-end !important;
@@ -4621,7 +4621,7 @@
     -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
     transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
 }
-._4o74ccl {
+.pagination-bullet--active {
   background: #fff !important;
   border-radius: 50% !important;
   height: 6px !important;
@@ -4632,7 +4632,7 @@
   width: 6px !important;
   opacity: 1 !important;
 }
-._1k9ksvh {
+.pagination-bullet {
   background: #fff !important;
   border-radius: 50% !important;
   height: 6px !important;
@@ -4662,7 +4662,7 @@
     background: var(--color-clear, transparent) !important;
   }
 }
-._1d3iagv {
+.btn-nav {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   appearance: none !important;
@@ -4686,7 +4686,7 @@
   height: 32px !important;
 }
 @media (hover: hover) {
-  ._1d3iagv:hover {
+  .btn-nav:hover {
     border-color: rgba(0, 0, 0, 0.08) !important;
     background-color: #fff !important;
     color: #000 !important;
