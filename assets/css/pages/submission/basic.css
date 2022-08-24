@@ -3024,7 +3024,7 @@ body {
   text-overflow: ellipsis!important;
   white-space: nowrap!important
 }
-._yrzsibu {
+.form__input {
   width: 100%!important;
   border: none!important;
   outline: 0!important;
@@ -3127,11 +3127,11 @@ body {
   color: #fff!important;
   border-color: #222!important
 }
-._smt4n2a {
+.form__check-input--checked {
   position: absolute!important;
   opacity: 0!important
 }
-._smt4n2a:disabled + [data-checkbox] {
+.form__check-input--checked:disabled + [data-checkbox] {
   cursor: not-allowed!important;
   background: #ddd!important;
   color: #fff!important;
