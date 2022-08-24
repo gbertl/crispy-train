@@ -1,7 +1,7 @@
 let counter = 0;
 
 // next button: show next section and hides current
-document.querySelector('._1ku51f04').addEventListener('click', (e) => {
+document.querySelector('.btn-dark').addEventListener('click', (e) => {
   e.preventDefault();
   document
     .querySelectorAll('#site-content > section')

@@ -378,7 +378,7 @@
   color: #222!important;
   margin-top: 16px!important
 }
-._14i3z6h {
+.heading {
   color: inherit!important;
   font-size: 1em!important;
   font-weight: inherit!important;
@@ -386,7 +386,7 @@
   margin: 0!important;
   padding: 0!important
 }
-._14i3z6h:focus {
+.heading:focus {
   outline: 0!important
 }
 ._2w4rf6 {
@@ -732,7 +732,7 @@
   margin-left: 0!important;
   margin-right: 0!important
 }
-._1ku51f04 {
+.btn-dark {
   cursor: pointer!important;
   display: inline-block!important;
   margin: 0!important;
@@ -762,64 +762,64 @@
   color: var(--f-mkcy-f)!important;
   contain: paint!important
 }
-._1ku51f04:focus-visible {
+.btn-dark:focus-visible {
   outline: 0!important;
   -webkit-transition: box-shadow .2s!important;
   -moz-transition: box-shadow .2s!important;
   transition: box-shadow .2s!important;
   box-shadow: 0 0 0 2px rgba(255,255,255,.8),0 0 0 4px var(--f-k-smk-x)!important
 }
-._1ku51f04:focus-visible::-moz-focus-inner {
+.btn-dark:focus-visible::-moz-focus-inner {
   border: none!important;
   padding: 0!important;
   margin: 0!important
 }
-._1ku51f04:focus-visible:focus::-moz-focus-inner {
+.btn-dark:focus-visible:focus::-moz-focus-inner {
   border: none!important
 }
-._1ku51f04:focus-visible:-moz-focusring {
+.btn-dark:focus-visible:-moz-focusring {
   outline: 0!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1ku51f04:focus-visible {
+  .btn-dark:focus-visible {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
   }
 }
-._1ku51f04:focus[data-focus-visible-added] {
+.btn-dark:focus[data-focus-visible-added] {
   outline: 0!important;
   -webkit-transition: box-shadow .2s!important;
   -moz-transition: box-shadow .2s!important;
   transition: box-shadow .2s!important;
   box-shadow: 0 0 0 2px rgba(255,255,255,.8),0 0 0 4px var(--f-k-smk-x)!important
 }
-._1ku51f04:focus[data-focus-visible-added]::-moz-focus-inner {
+.btn-dark:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none!important;
   padding: 0!important;
   margin: 0!important
 }
-._1ku51f04:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.btn-dark:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none!important
 }
-._1ku51f04:focus[data-focus-visible-added]:-moz-focusring {
+.btn-dark:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1ku51f04:focus[data-focus-visible-added] {
+  .btn-dark:focus[data-focus-visible-added] {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
   }
 }
 @media (hover:hover) {
-  ._1ku51f04:hover {
+  .btn-dark:hover {
     border: none!important;
     background: var(--bgxgx)!important;
     color: var(--f-mkcy-f)!important
   }
 }
-._1ku51f04:active {
+.btn-dark:active {
   -webkit-transform: scale(.96)!important;
   -ms-transform: scale(.96)!important;
   transform: scale(.96)!important;
@@ -827,7 +827,7 @@
   background: var(--bgxgx)!important;
   color: var(--f-mkcy-f)!important
 }
-._1ku51f04:disabled {
+.btn-dark:disabled {
   cursor: not-allowed!important;
   opacity: 1!important;
   border: none!important;
@@ -835,7 +835,7 @@
   color: var(--f-mkcy-f)!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1ku51f04 {
+  .btn-dark {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
@@ -2049,7 +2049,7 @@
 ._1xykmvt:nth-child(n) label {
   margin: 0!important
 }
-._jro6t0 {
+.d-flex {
   display: flex!important
 }
 ._7ytxmo {

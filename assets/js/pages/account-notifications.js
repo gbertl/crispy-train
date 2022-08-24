@@ -6,12 +6,12 @@ handleTab({
 
 handleModal({
   btnOpenSelector: '._15rpys7s',
-  btnCloseSelector: '._oda838',
+  btnCloseSelector: '.btn-close',
   modalSelector: '#edit-modal',
 });
 
 handleModal({
-  btnOpenSelector: '._1yf4i4f',
-  btnCloseSelector: '._oda838',
+  btnOpenSelector: '.form__check-input',
+  btnCloseSelector: '.btn-close',
   modalSelector: '#unsubscribe-modal',
 });
