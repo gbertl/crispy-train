@@ -47,8 +47,14 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
   modals.forEach((e) => {
     const modal = document.querySelector(e.dataset.modal);
 
-    const openModal = () => modal.classList.remove('d-none');
-    const closeModal = () => modal.classList.add('d-none');
+    const openModal = () => {
+      document.body.classList.add('overflow-y-hidden')
+      modal.classList.remove('d-none')
+    };
+    const closeModal = () => {
+      document.body.classList.remove('overflow-y-hidden')
+      modal.classList.add('d-none')
+    };
 
     e.addEventListener('click', (e) => {
       e.preventDefault();
