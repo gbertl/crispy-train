@@ -16086,9 +16086,11 @@ select[disabled] {
   }
 }
 @media (-webkit-max-device-pixel-ratio: 2) {
+  /* clean-css ignore:start */
   .dir.vmfx3gj[class][class] {
     border: 0.5px solid rgb(0 0 0 / 0.3);
   }
+  /* clean-css ignore:end */
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.vmfx3gj[class][class]:focus-visible {
@@ -19897,9 +19899,11 @@ h3:first-child {
   cursor: not-allowed;
 }
 @media (-webkit-max-device-pixel-ratio: 2) {
+  /* clean-css ignore:start */
   .dir.vmfx3gj[class][class] {
     border: 0.5px solid rgb(0 0 0 / 0.3);
   }
+  /* clean-css ignore:end */
 }
 .vmfx3gj[class][class]:focus-visible {
   outline: 0;
