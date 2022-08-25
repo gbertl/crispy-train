@@ -15205,16 +15205,12 @@ select[disabled] {
     align-items: center !important;
   }
 }
-._upim4d,
-.modal__backdrop {
+._upim4d{
   display: none !important;
 }
 @media (min-width: 744px) {
   ._upim4d {
     display: contents !important;
-  }
-  .modal__backdrop {
-    display: flex !important;
   }
 }
 .form__check-input--checked {

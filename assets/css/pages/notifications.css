@@ -1840,10 +1840,12 @@
     flex: 1 1 0% !important;
   }
 }
-@media (min-width: 375px) @supports (--custom: properties) {
+@supports (--custom: properties) {
+@media (min-width: 375px) {
   ._yycu7ci {
     flex: 1 1 0% !important;
   }
+}
 }
 ._emfufws {
   height: 100% !important;
