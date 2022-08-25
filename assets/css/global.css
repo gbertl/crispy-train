@@ -346,6 +346,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-break: strict;
+  overflow-x: hidden;
 }
 [lang='ko'] body {
   word-break: keep-all;
