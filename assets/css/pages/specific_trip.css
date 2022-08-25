@@ -4686,16 +4686,10 @@ body {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-@media (min-width: 1128px) {
+@media (min-width: 375px) {
   ._le6wlg {
-    padding-left: var(--gp-padding-largeAndAbove, 80px) !important;
-    padding-right: var(--gp-padding-largeAndAbove, 80px) !important;
-  }
-}
-@media (min-width: 950px) {
-  ._le6wlg {
-    padding-left: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
-    padding-right: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
+    padding-left: var(--gp-padding-smallAndAbove, 24px) !important;
+    padding-right: var(--gp-padding-smallAndAbove, 24px) !important;
   }
 }
 @media (min-width: 744px) {
@@ -4704,10 +4698,16 @@ body {
     padding-right: var(--gp-padding-mediumAndAbove, 40px) !important;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 950px) {
   ._le6wlg {
-    padding-left: var(--gp-padding-smallAndAbove, 24px) !important;
-    padding-right: var(--gp-padding-smallAndAbove, 24px) !important;
+    padding-left: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
+    padding-right: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
+  }
+}
+@media (min-width: 1128px) {
+  ._le6wlg {
+    padding-left: var(--gp-padding-largeAndAbove, 80px) !important;
+    padding-right: var(--gp-padding-largeAndAbove, 80px) !important;
   }
 }
 .dir-ltr.plmw1e5[class][class] {
