@@ -8323,15 +8323,9 @@ h6:first-child {
     justify-content: space-between !important;
   }
 }
-.d-none {
-  display: none !important;
-}
 @media (min-width: 1200px) {
   .d-lg-flex {
     display: flex !important;
-  }
-  .d-lg-none {
-    display: none !important;
   }
 }
 .mw-100 {
@@ -8819,12 +8813,6 @@ h6:first-child {
 @media (min-width: 744px) {
   .w-md-auto {
     width: auto !important;
-  }
-  .d-lg-block {
-    display: block !important;
-  }
-  .d-md-none {
-    display: none !important;
   }
 }
 ._1w7e1y2 {
