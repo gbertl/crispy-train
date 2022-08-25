@@ -423,7 +423,9 @@ body {
   -moz-appearance: none !important;
   appearance: none !important;
   background: 0 0 !important;
+  /* clean-css ignore:start */
   border: 1px solid var(--j-qkgmf) !important;
+  /* clean-css ignore:end */
   color: var(--f-k-smk-x) !important;
   cursor: pointer !important;
   display: -webkit-inline-box !important;
