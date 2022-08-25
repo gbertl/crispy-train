@@ -2832,13 +2832,6 @@
     --explore_padding-inline: 80px
   }
 }
-.n1p4yt3r[class][class] {
-  padding-block-start: var(--explore-nav_padding-block-start);
-  position: sticky;
-  top: calc(80px - var(--explore-nav_padding-block-start,0px));
-  width: 100%;
-  z-index: 9
-}
 .n1p4yt3r[class][class]::after {
   content: '';
   display: block;
