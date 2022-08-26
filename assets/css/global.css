@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: Circular;
   unicode-range: U+0000-03FF,U+0500-058F,U+0700-074F,U+0780-FAFF,U+FE00-FE6F,U+FF00-EFFFF,U+FFFFE-10FFFF;
@@ -148,7 +149,9 @@
   font-weight: 400;
   font-style: normal
 }
+/* /Fonts */
 
+/* Animations */
 @keyframes keyframe_127wuha {
   from {
     opacity: 0;
@@ -491,7 +494,9 @@
     transform: none
   }
 }
+/* /Animations */
 
+/* Root */
 :root {
   --h-l-f-om-o: 4px;
   --go-h-jh-l: 8px;
@@ -577,7 +582,9 @@
   --g-lm-u-p: normal;
   --mq-yk-l: 0.04em
 }
+/* /Root */
 
+/* Base */
 *,
 :after,
 :before {
@@ -608,7 +615,9 @@ body {
   line-break: strict;
   overflow-x: hidden
 }
+/* /Base */
 
+/* Utilities */
 .d-none {
   display: none!important
 }
@@ -668,7 +677,9 @@ body {
     display: none!important
   }
 }
+/* /Utilities */
 
+/* Modals */
 .modal__backdrop {
   z-index: 2000!important;
   position: fixed!important;
@@ -707,6 +718,7 @@ body {
     min-height: 64px!important
   }
 }
+/* /Modals */
 
 ._1mqc21n {
   margin-left: 16px!important
