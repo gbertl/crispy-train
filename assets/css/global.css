@@ -1,153 +1,531 @@
 /* Fonts */
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF,U+0500-058F,U+0700-074F,U+0780-FAFF,U+FE00-FE6F,U+FF00-EFFFF,U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 400;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF,U+0500-058F,U+0700-074F,U+0780-FAFF,U+FE00-FE6F,U+FF00-EFFFF,U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 600;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0000-03FF,U+0500-058F,U+0700-074F,U+0780-FAFF,U+FE00-FE6F,U+FF00-EFFFF,U+FFFFE-10FFFF;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
   font-weight: 800;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   unicode-range: U+0400-04FF;
   font-weight: 400;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-e02d5d2c18cb1adb5f60fba73ec84b85.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-c2fc5b3551254c57abcddb6ae3846011.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-e02d5d2c18cb1adb5f60fba73ec84b85.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-c2fc5b3551254c57abcddb6ae3846011.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   unicode-range: U+0400-04FF;
   font-weight: 600;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   unicode-range: U+0400-04FF;
   font-weight: 800;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0590-05FF,U+FB00-FB4F;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
   font-weight: 400;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0590-05FF,U+FB00-FB4F;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
   font-weight: 600;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0590-05FF,U+FB00-FB4F;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
   font-weight: 800;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0600-06FF,U+0750-077F;
+  unicode-range: U+0600-06FF, U+0750-077F;
   font-weight: 400;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-a3069642fff439a4487060181f843c27.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-6de797f6b9ddbf3ce640d1318a77d85e.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-a3069642fff439a4487060181f843c27.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-6de797f6b9ddbf3ce640d1318a77d85e.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0600-06FF,U+0750-077F;
+  unicode-range: U+0600-06FF, U+0750-077F;
   font-weight: 600;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
-  unicode-range: U+0600-06FF,U+0750-077F;
+  unicode-range: U+0600-06FF, U+0750-077F;
   font-weight: 800;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   unicode-range: U+F0000-FFFFD;
   font-weight: 400;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   unicode-range: U+F0000-FFFFD;
   font-weight: 600;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   unicode-range: U+F0000-FFFFD;
   font-weight: 800;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   font-weight: 400;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   font-weight: 600;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Circular;
   font-weight: 800;
   font-style: normal;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff) format('woff');
-  font-display: swap
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff)
+      format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: Airmoji_Standalone;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2) format('woff2'),url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff) format('woff');
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
 }
 @font-face {
   font-family: Airglyphs;
-  src: url(https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff) format('woff'),url(https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf) format('truetype');
+  src: url(https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff)
+      format('woff'),
+    url(https://a0.muscache.com/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf)
+      format('truetype');
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
+} 
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: 600;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-weight: 800;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0400-04FF;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-e02d5d2c18cb1adb5f60fba73ec84b85.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Book-c2fc5b3551254c57abcddb6ae3846011.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0400-04FF;
+  font-weight: 600;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-f0e661ba5740e054d7c1faad5984c994.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Medium-4e2e45a7189b6b9cf46bb33f5fe04c09.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0400-04FF;
+  font-weight: 800;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-b218e811576428a4ca3d2f9e1b00b734.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Cyrillic-Bold-82361954a2330f09187cfbccc2641ce9.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-bfb9bf9044f18924e522d3e6076a47b3.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Book-892a3f9af9d7160255f294e56b3462f3.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-weight: 600;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-a9d129489532402b6c34cd92039341ef.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Medium-640ac52058359cd8dd430d9ad7d9c29e.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-weight: 800;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-f5ec4bf512fae9f82edd69290cef53ff.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Hebrew-Bold-2825ca14347a2d0c257c0306165f448e.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-a3069642fff439a4487060181f843c27.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Book-6de797f6b9ddbf3ce640d1318a77d85e.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-weight: 600;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-726e07fb1271351070ed63c892598211.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Medium-0ad3304a4ceb8b4ba992872376c6fee2.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-weight: 800;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-9129550a5028e0f85441bf1bbfacc1e4.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/cereal-beta-v1/Airbnb_Cereal-Arabic-Bold-16ec9f0279388cccbedb6a1d95ac4d9d.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+F0000-FFFFD;
+  font-weight: 400;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+F0000-FFFFD;
+  font-weight: 600;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  unicode-range: U+F0000-FFFFD;
+  font-weight: 800;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 600;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Medium-4bc8dafd2e0fd8914bf4d5edce9acd24.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Circular;
+  font-weight: 800;
+  font-style: normal;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff)
+      format('woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: Airmoji_Standalone;
+  src: url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-368a4dfb2060306905d934709d7356f8.woff2)
+      format('woff2'),
+    url(/airbnb/static/airbnb-dls-web/build/fonts/airmojix-Regular-e0adf0d9735aee379296283c36fa3840.woff)
+      format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Airglyphs;
+  src: url(/airbnb/static/airbnb-o2/fonts/airglyphs-be20c9b0c13510b6107aebbce24dd022.woff)
+      format('woff'),
+    url(/airbnb/static/airbnb-o2/fonts/airglyphs-fc011caafdf66b9fee9518f73cf0a97d.ttf)
+      format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: swiper-icons;
+  src: url('data:application/font-woff;charset=utf-8;base64,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')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Cereal;
+  font-weight: 300;
+  src: url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Lt.woff2?cfb671c4)
+      format('woff2'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Lt.woff?542488b9)
+      format('woff'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Lt.eot?9a3b3656)
+      format('eot');
+}
+@font-face {
+  font-family: Cereal;
+  font-weight: 400;
+  src: url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Bk.woff2?e849748a)
+      format('woff2'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Bk.woff?6e81c07f)
+      format('woff'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Bk.eot?48b1d44b)
+      format('eot');
+}
+@font-face {
+  font-family: Cereal;
+  font-weight: 500;
+  src: url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Md.woff2?aa2d47eb)
+      format('woff2'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Md.woff?a4885a20)
+      format('woff'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Md.eot?a99ce419)
+      format('eot');
+}
+@font-face {
+  font-family: Cereal;
+  font-weight: 600;
+  src: url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Bd.woff2?b422e783)
+      format('woff2'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Bd.woff?7d39989d)
+      format('woff'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Bd.eot?0e6547a7)
+      format('eot');
+}
+@font-face {
+  font-family: Cereal;
+  font-weight: 700;
+  src: url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_XBd.woff2?6877179a)
+      format('woff2'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_XBd.woff?af8f6d6c)
+      format('woff'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_XBd.eot?7734d3f6)
+      format('eot');
+}
+@font-face {
+  font-family: Cereal;
+  font-weight: 800;
+  src: url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Blk.woff2?4cd26492)
+      format('woff2'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Blk.woff?8b920e3f)
+      format('woff'),
+    url(/wp-content/themes/presser/dist/fonts/AirbnbCereal_W_Blk.eot?28a88acb)
+      format('eot');
+}
+@font-face {
+  font-family: vcpb-plugin-icons;
+  src: url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_icons_v2/fonts/vcpb-plugin-icons.eot?f6ud62);
+  src: url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_icons_v2/fonts/vcpb-plugin-icons.eot?f6ud62#iefix)
+      format('embedded-opentype'),
+    url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_icons_v2/fonts/vcpb-plugin-icons.ttf?f6ud62)
+      format('truetype'),
+    url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_icons_v2/fonts/vcpb-plugin-icons.woff?f6ud62)
+      format('woff'),
+    url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_icons_v2/fonts/vcpb-plugin-icons.svg?f6ud62#vcpb-plugin-icons)
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: vc_grid_v1;
+  src: url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_grid/vc_grid_v1.eot?-9hbgac);
+  src: url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_grid/vc_grid_v1.eot?#iefix-9hbgac)
+      format('embedded-opentype'),
+    url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_grid/vc_grid_v1.woff?-9hbgac)
+      format('woff'),
+    url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_grid/vc_grid_v1.ttf?-9hbgac)
+      format('truetype'),
+    url(/wp-content/themes/presser/resources/assets/styles/../fonts/vc_grid/vc_grid_v1.svg?-9hbgac#vc_grid_v1)
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: swiper-icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url('data:application/font-woff;charset=utf-8;base64,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')
+    format('woff');
 }
 /* /Fonts */
 
