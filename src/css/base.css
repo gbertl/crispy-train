@@ -1,3 +1,21 @@
+*,
+:after,
+:before {
+  -ms-flex: 0 1 auto
+}
+*,
+:after,
+:before,
+hr,
+hr:after,
+hr:before,
+input[type=search],
+input[type=search]:after,
+input[type=search]:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
 body {
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
   font-size: 14px;

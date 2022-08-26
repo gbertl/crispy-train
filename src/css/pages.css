@@ -52513,12 +52513,6 @@ body {
     text-rendering: optimizeLegibility
   }
 }
-*,
-:after,
-:before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit
-}
 a {
   color: #222;
   text-decoration: underline;
@@ -65589,11 +65583,6 @@ html :where(img[class*=wp-image-]) {
  * under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
-*,
-:after,
-:before {
-  -ms-flex: 0 1 auto
-}
 article,
 aside,
 details,
@@ -65813,19 +65802,6 @@ table {
   h3 {
     page-break-after: avoid
   }
-}
-*,
-:after,
-:before,
-hr,
-hr:after,
-hr:before,
-input[type=search],
-input[type=search]:after,
-input[type=search]:before {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box
 }
 a:focus {
   outline: #333 dotted thin;
@@ -82491,12 +82467,6 @@ screen and (-ms-high-contrast:none) {
     font-family: var(--font-font_family,Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif)!important;
     text-decoration: var(--font-link-text-decoration,none)!important
   }
-}
-*,
-:after,
-:before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box
 }
 @media (min-width:744px) {
   ._siy8gh {
@@ -130714,14 +130684,6 @@ body {
   padding: 0;
   position: absolute;
   width: 1px
-}
-*,
-:after,
-:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -ms-flex: 0 1 auto
 }
 ._l7ztla {
   margin-top: 0!important;
