@@ -7485,43 +7485,143 @@ fieldset[disabled] .btn {
 
 /* Modals */
 .modal__backdrop {
-  z-index: 2000!important;
-  position: fixed!important;
-  inset: 0!important;
-  overflow-y: auto!important;
-  background: rgb(34,34,34,.6)!important;
-  animation-duration: .4s!important;
-  animation-iteration-count: 1!important;
-  animation-fill-mode: both!important;
-  animation-name: keyframe_15p0df!important
+  z-index: 2000 !important;
+  position: fixed !important;
+  inset: 0 !important;
+  overflow-y: auto !important;
+  background: rgb(34, 34, 34, 0.6) !important;
+  animation-duration: 0.4s !important;
+  animation-iteration-count: 1 !important;
+  animation-fill-mode: both !important;
+  animation-name: keyframe_15p0df !important;
 }
-@media (min-width:744px) {
+@media (min-width: 744px) {
   .modal__backdrop {
-    background: rgb(34,34,34,.6)!important
+    background: rgb(34, 34, 34, 0.6) !important;
   }
 }
-@supports (max-height:-webkit-fill-available) {
+.modal,
+.modal-container {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.modal[aria-hidden='true'] {
+  display: none;
+}
+.modal[aria-hidden='false'] {
+  opacity: 1;
+}
+.modal[aria-hidden='true'] {
+  z-index: -1;
+}
+@media (max-width: 743px) {
+  .modal {
+    background: 0 0;
+  }
+}
+.modal__container {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: end !important;
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: horizontal !important;
+  z-index: 2000 !important;
+  position: fixed !important;
+  inset: 0 !important;
+  max-height: calc(var(--vh, 1vh) * 100) !important;
+  padding-top: calc(12px + env(safe-area-inset-top, 0)) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+}
+@supports (max-height: -webkit-fill-available) {
   .modal__container {
-    max-height: max(-webkit-fill-available,calc(var(--vh,1vh) * 100))!important
+    max-height: max(
+      -webkit-fill-available,
+      calc(var(--vh, 1vh) * 100)
+    ) !important;
   }
 }
-@media (min-width:744px) and (min-height:475px) {
+@media (min-width: 744px) and (min-height: 475px) {
   .modal__container {
-    -webkit-box-align: center!important;
-    padding: 40px!important;
-    align-items: center!important
+    -webkit-box-align: center !important;
+    padding: 40px !important;
+    align-items: center !important;
   }
 }
-@media (min-width:744px) {
+.modal__close {
+  position: absolute !important;
+  display: flex !important;
+  top: 16px !important;
+  left: 24px !important;
+  z-index: 1 !important;
+}
+@media (min-width: 744px) {
   .modal__close {
-    top: 24px!important
+    top: 24px !important;
   }
 }
-@media (min-width:744px) {
+.modal__header {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 0 24px !important;
+  min-height: 48px !important;
+  border-bottom: 0 !important;
+  color: #222 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 800 !important;
+}
+@media (min-width: 744px) {
   .modal__header {
-    min-height: 64px!important
+    min-height: 64px !important;
   }
 }
+.modal__heading {
+  -webkit-box-flex: 0 !important;
+  overflow: hidden !important;
+  flex: 0 1 auto !important;
+  text-align: center !important;
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+.modal__body {
+  padding: 24px !important;
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+  outline: 0 !important;
+}
+.modal__footer {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  border-top: 1px solid #ebebeb !important;
+  padding: 16px 24px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
 /* /Modals */
 
 ._1mqc21n {
