@@ -58,4 +58,24 @@
     display: none!important
   }
 }
+.container {
+  max-width: 1760px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 80px;
+  padding-left: 80px
+}
+@media (max-width:1127.98px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px
+  }
+}
+@media (max-width:743.98px) {
+  .container {
+    padding-right: 24px;
+    padding-left: 24px
+  }
+}
 /* /Utilities */
