@@ -1,78 +1,41 @@
 import pkg from 'gulp';
-const { src, dest, watch, series } = pkg;
-import browserSync from 'browser-sync';
-const bs = browserSync.create();
-import cleanCss from 'gulp-clean-css';
-import purgeCss from '@fullhuman/postcss-purgecss';
-import postcss from 'gulp-postcss';
+// const { src, dest, watch, series } = pkg;
+const { src, dest, series } = pkg;
+// import browserSync from 'browser-sync';
+// const bs = browserSync.create();
+// import cleanCss from 'gulp-clean-css';
+// import purgeCss from '@fullhuman/postcss-purgecss';
+// import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
 
-const serve = (cb) => {
-  bs.init({
-    server: {
-      baseDir: './',
-    },
-    open: false,
-    notify: false,
-  });
-  cb();
-};
+// const serve = (cb) => {
+//   bs.init({
+//     server: {
+//       baseDir: './',
+//     },
+//     open: false,
+//     notify: false,
+//   });
+//   cb();
+// };
 
-const reload = (cb) => {
-  bs.reload();
-  cb();
-};
+// const reload = (cb) => {
+//   bs.reload();
+//   cb();
+// };
 
-export const cleanPages = () => {
-  return src('assets/css/pages/**/*.css')
-    .pipe(postcss([purgeCss({ content: ['**/*.html', '**/*.js'] })]))
-    .pipe(
-      cleanCss({
-        format: 'beautify',
-        level: {
-          2: {
-            all: false,
-            mergeAdjacentRules: true,
-            overrideProperties: true,
-            removeEmpty: true,
-            removeDuplicateRules: true,
-          },
-        },
-      })
-    )
-    .pipe(dest('dist'));
-};
-
-export const cleanRel = () => {
+export const globalStyles = () => {
   return src([
-    'assets/css/pages/releases-1.css',
-    'assets/css/pages/releases.css',
+    'src/css/layouts/**/*.css',
+    'src/css/components/**/*.css',
+    'src/css/global.css',
   ])
-    .pipe(
-      postcss([
-        purgeCss({ content: ['releases.html', 'assets/js/pages/releases.js'] }),
-      ])
-    )
-    .pipe(
-      cleanCss({
-        format: 'beautify',
-        level: {
-          2: {
-            all: false,
-            mergeAdjacentRules: true,
-            overrideProperties: true,
-            removeEmpty: true,
-            removeDuplicateRules: true,
-          },
-        },
-      })
-    )
-    .pipe(concat('releases.css'))
-    .pipe(dest('dist'));
+    .pipe(concat('global.css'))
+    .pipe(dest('assets/css'));
 };
 
-const watchAll = () => {
-  watch(['**/*.html', '**/*.css', '**/*.js'], reload);
+export const pageStyles = () => {
+  return src('src/css/pages.css').pipe(dest('assets/css'));
 };
 
-export default series(serve, watchAll);
+export const build = series(globalStyles, pageStyles);
