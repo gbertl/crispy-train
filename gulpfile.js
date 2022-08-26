@@ -26,6 +26,11 @@ import concat from 'gulp-concat';
 
 export const globalStyles = () => {
   return src([
+    'src/css/fonts.css',
+    'src/css/animations.css',
+    'src/css/root.css',
+    'src/css/base.css',
+    'src/css/utilities.css',
     'src/css/layouts/**/*.css',
     'src/css/components/**/*.css',
     'src/css/global.css',

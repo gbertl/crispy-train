@@ -1,0 +1,38 @@
+.modal__backdrop {
+  z-index: 2000!important;
+  position: fixed!important;
+  inset: 0!important;
+  overflow-y: auto!important;
+  background: rgb(34,34,34,.6)!important;
+  animation-duration: .4s!important;
+  animation-iteration-count: 1!important;
+  animation-fill-mode: both!important;
+  animation-name: keyframe_15p0df!important
+}
+@media (min-width:744px) {
+  .modal__backdrop {
+    background: rgb(34,34,34,.6)!important
+  }
+}
+@supports (max-height:-webkit-fill-available) {
+  .modal__container {
+    max-height: max(-webkit-fill-available,calc(var(--vh,1vh) * 100))!important
+  }
+}
+@media (min-width:744px) and (min-height:475px) {
+  .modal__container {
+    -webkit-box-align: center!important;
+    padding: 40px!important;
+    align-items: center!important
+  }
+}
+@media (min-width:744px) {
+  .modal__close {
+    top: 24px!important
+  }
+}
+@media (min-width:744px) {
+  .modal__header {
+    min-height: 64px!important
+  }
+}
