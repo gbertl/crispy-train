@@ -903,7 +903,7 @@
     transform: scale(1.1);
   }
 }
-@keyframes fade-in-swcqrz4 {
+@keyframes fade-in-explore-card__nav-btn-wrapper {
   from {
     opacity: 0;
   }
@@ -1722,7 +1722,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in-swcqrz4 {
+@-webkit-keyframes fade-in-explore-card__nav-btn-wrapper {
   from {
     opacity: 0;
   }
@@ -7248,7 +7248,7 @@ fieldset[disabled] .btn {
     ) !important;
   }
 }
-.btn-wishlist[class][class] {
+.explore-card__save-btn[class][class] {
   display: inline-block;
   position: relative;
   -webkit-text-decoration: none;
@@ -7259,7 +7259,7 @@ fieldset[disabled] .btn {
   font-family: inherit;
   touch-action: manipulation;
 }
-.dir.btn-wishlist[class][class] {
+.dir.explore-card__save-btn[class][class] {
   cursor: pointer;
   margin: 0;
   text-align: center;
@@ -7272,10 +7272,10 @@ fieldset[disabled] .btn {
   padding-right: 8px;
   background: #d3d3d3;
 }
-.btn-wishlist[class][class]:disabled {
+.explore-card__save-btn[class][class]:disabled {
   opacity: 0.3;
 }
-.dir.btn-wishlist[class][class]:disabled {
+.dir.explore-card__save-btn[class][class]:disabled {
   cursor: not-allowed;
 }
 @media (hover: hover) {
