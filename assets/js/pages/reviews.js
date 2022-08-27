@@ -25,7 +25,7 @@ document.querySelector('.btn-dark').addEventListener('click', (e) => {
   document.querySelector('._13ea8wp').classList.remove('d-none');
 
   if (counter === 3) {
-    document.querySelector('._3hmsj').innerText = 'Finish';
+    document.querySelector('.box-border').innerText = 'Finish';
   }
 
   counter++;
@@ -53,7 +53,7 @@ document.querySelector('._13ea8wp').addEventListener('click', (e) => {
   }
 
   if (counter === 4) {
-    document.querySelector('._3hmsj').innerText = 'Next';
+    document.querySelector('.box-border').innerText = 'Next';
   }
 
   counter--;
