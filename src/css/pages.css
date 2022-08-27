@@ -10263,12 +10263,12 @@ select[disabled] {
   text-transform: uppercase;
   font-weight: var(--h-oqhch);
 }
-.dir.vq7srz5[class][class]:focus-visible {
+.dir.btn-save[class][class]:focus-visible {
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.vq7srz5[class][class]:focus-visible {
+  .dir.btn-save[class][class]:focus-visible {
     transition: none;
   }
 }
@@ -43696,7 +43696,7 @@ tr.show-desktop {
   --save-button_height: calc(24px + var(--fgg-f-l-a));
   --save-button_width: calc(24px + var(--fgg-f-l-a));
 }
-.vq7srz5[class][class] {
+.btn-save[class][class] {
   font-family: var(--e-ls-qkw);
   font-size: var(--iw-ehf-f);
   line-height: var(---s-l-myu);
@@ -43722,7 +43722,7 @@ tr.show-desktop {
   width: calc(24px + var(--fgg-f-l-a));
   height: calc(24px + var(--fgg-f-l-a));
 }
-.dir.vq7srz5[class][class] {
+.dir.btn-save[class][class] {
   border-width: 1px;
   background-color: transparent;
   border-radius: 50%;
@@ -43733,59 +43733,59 @@ tr.show-desktop {
   padding: 2px 0 0;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.vq7srz5[class][class] {
+  .dir.btn-save[class][class] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.vq7srz5[class][class]::-moz-focus-inner {
+.dir.btn-save[class][class]::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.vq7srz5[class][class]:focus::-moz-focus-inner {
+.dir.btn-save[class][class]:focus::-moz-focus-inner {
   border: none;
 }
-.vq7srz5[class][class]:-moz-focusring {
+.btn-save[class][class]:-moz-focusring {
   outline: 0;
 }
-.dir.vq7srz5[class][class]:focus-visible {
+.dir.btn-save[class][class]:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.vq7srz5[class][class]:focus-visible {
+  .dir.btn-save[class][class]:focus-visible {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.vq7srz5[class][class]:focus[data-focus-visible-added] {
+.dir.btn-save[class][class]:focus[data-focus-visible-added] {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.vq7srz5[class][class]:focus[data-focus-visible-added] {
+  .dir.btn-save[class][class]:focus[data-focus-visible-added] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.vq7srz5[class][class]:active {
+.dir.btn-save[class][class]:active {
   -webkit-transform: scale(0.96);
   -ms-transform: scale(0.96);
   transform: scale(0.96);
 }
-.vq7srz5[class][class]:disabled {
+.btn-save[class][class]:disabled {
   opacity: 1;
 }
-.dir.vq7srz5[class][class]:focus-visible {
+.dir.btn-save[class][class]:focus-visible {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.dir.vq7srz5[class][class]:focus[data-focus-visible-added] {
+.dir.btn-save[class][class]:focus[data-focus-visible-added] {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.dir.vq7srz5[class][class]:active {
+.dir.btn-save[class][class]:active {
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
   transform: scale(0.92);
