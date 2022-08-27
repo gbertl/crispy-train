@@ -7,6 +7,7 @@ const { src, dest, series } = pkg;
 // import purgeCss from '@fullhuman/postcss-purgecss';
 // import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
+// import purgecss from 'gulp-purgecss';
 
 // const serve = (cb) => {
 //   bs.init({
@@ -44,3 +45,11 @@ export const pageStyles = () => {
 };
 
 export const build = series(globalStyles, pageStyles);
+
+// export const removeStyles = () => {
+//   return src('src/css/framework-module-alpha.css')
+//     .pipe(purgecss({
+//       content: ['./explore-additional.html']
+//     }))
+//     .pipe(dest('build/css'))
+// }

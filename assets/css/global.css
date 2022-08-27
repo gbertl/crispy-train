@@ -10379,3 +10379,24 @@ button[data-testid=cypress-headernav-profile]:focus + .c3i7glo[class][class] {
     transition: none
   }
 }
+
+.explore-card-column-row {
+  -webkit-box-direction: normal !important;
+  -webkit-box-orient: horizontal !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-flex-direction: row !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+
+.explore-card-column-item {
+  width: 100% !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
