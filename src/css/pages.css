@@ -12320,7 +12320,7 @@ h3:first-child {
     }
   }
 }
-.s1yvqyx7[class][class] {
+.card__carousel[class][class] {
   --mis: var(--contentscroller_scroller_margin-inline-start);
   --mie: var(--contentscroller_scroller_margin-inline-end);
   grid-area: var(--contentscroller_scroller_grid-area, scroller);
@@ -12330,7 +12330,7 @@ h3:first-child {
   margin-inline-end: var(--mie, calc(-1 * var(--contentscroller_peek, 32px)));
   place-self: var(--contentscroller_scroller_place-self, auto);
 }
-.c14whb16[class][class] {
+.card__carousel-slides[class][class] {
   contain: var(--contentscroller_contain);
   contain-intrinsic-size: var(--contentscroller_contain-intrinsic-size);
   content-visibility: var(--contentscroller_content-visibility);
@@ -34125,7 +34125,7 @@ tr.show-desktop {
     animation-duration: 0s;
   }
 }
-.c14whb16[class][class] {
+.card__carousel-slides[class][class] {
   contain: var(--contentscroller_contain);
   contain-intrinsic-size: var(--contentscroller_contain-intrinsic-size);
   content-visibility: var(--contentscroller_content-visibility);
@@ -42557,23 +42557,23 @@ tr.show-desktop {
   white-space: nowrap;
 }
 @supports not (aspect-ratio: 1 / 1) {
-  .cw9aemg[class][class] {
+  .card__carousel-slides-wrapper[class][class] {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
   }
-  .dir-ltr.cw9aemg[class][class] {
+  .dir-ltr.card__carousel-slides-wrapper[class][class] {
     left: 0;
     right: 0;
   }
-  .dir-rtl.cw9aemg[class][class] {
+  .dir-rtl.card__carousel-slides-wrapper[class][class] {
     right: 0;
     left: 0;
   }
 }
-.s1yvqyx7[class][class] {
+.card__carousel[class][class] {
   grid-area: var(--contentscroller_scroller_grid-area, scroller);
   margin-block-start: var(--contentscroller_scroller_margin-block-start, unset);
   margin-block-end: var(--contentscroller_scroller_margin-block-end, unset);
@@ -42587,7 +42587,7 @@ tr.show-desktop {
   );
   place-self: var(--contentscroller_scroller_place-self, auto);
 }
-.c18vjgz6[class][class] {
+.card__controls-wrapper[class][class] {
   grid-area: var(--contentscroller_controls_grid-area, header);
   margin-block-start: var(--contentscroller_controls_margin-block-start, unset);
   margin-block-end: var(--contentscroller_controls_margin-block-end, unset);
@@ -42600,7 +42600,7 @@ tr.show-desktop {
   pointer-events: var(--contentscroller_controls_pointer-events);
   z-index: var(--contentscroller_controls_z-index, auto);
 }
-.c14whb16[class][class] {
+.card__carousel-slides[class][class] {
   contain: var(--contentscroller_contain);
   contain-intrinsic-size: var(--contentscroller_contain-intrinsic-size);
   content-visibility: var(--contentscroller_content-visibility);
@@ -42645,12 +42645,12 @@ tr.show-desktop {
   scrollbar-width: none;
   touch-action: var(--contentscroller_touch-action, pan-x pan-y pinch-zoom);
 }
-.dir.c14whb16[class][class] {
+.dir.card__carousel-slides[class][class] {
   margin: 0;
 }
 @supports (-webkit-scroll-behavior: smooth) or (-moz-scroll-behavior: smooth) or
   (-ms-scroll-behavior: smooth) or (scroll-behavior: smooth) {
-  .c14whb16[class][class] {
+  .card__carousel-slides[class][class] {
     -webkit-scroll-snap-type: var(
       --contentscroller_scrollsnaptype,
       inline mandatory
@@ -42666,7 +42666,7 @@ tr.show-desktop {
     scroll-snap-type: var(--contentscroller_scrollsnaptype, inline mandatory);
   }
 }
-.c14whb16[class][class] > :nth-child(n) {
+.card__carousel-slides[class][class] > :nth-child(n) {
   -webkit-scroll-snap-align: var(--contentscroller_scrollsnapalign, start);
   -moz-scroll-snap-align: var(--contentscroller_scrollsnapalign, start);
   -ms-scroll-snap-align: var(--contentscroller_scrollsnapalign, start);
@@ -43462,7 +43462,7 @@ tr.show-desktop {
   --contentscroller_contain: layout paint size style;
   --contentscroller_overflow: visible hidden;
 }
-.rfexzly[class][class] {
+.card__carousel__item[class][class] {
   display: block;
   color: transparent;
 }
@@ -44258,43 +44258,43 @@ tr.show-desktop {
   white-space: nowrap;
 }
 @supports (aspect-ratio: 1 / 1) {
-  .awuxh4x[class][class] {
+  .card__carousel-wrapper[class][class] {
     aspect-ratio: var(--aspect_ratio_wrapper-ratio, unset);
   }
 }
 @supports not (aspect-ratio: 1 / 1) {
-  .awuxh4x[class][class] {
+  .card__carousel-wrapper[class][class] {
     position: var(--aspect_ratio_wrapper-position_fallback, unset);
   }
-  .dir.awuxh4x[class][class] {
+  .dir.card__carousel-wrapper[class][class] {
     padding-top: var(--aspect_ratio_wrapper-padding_fallback, 0);
   }
 }
-.cw9aemg[class][class] {
+.card__carousel-slides-wrapper[class][class] {
   height: 100%;
   min-width: 0;
   position: unset;
 }
 @supports not (aspect-ratio: 1 / 1) {
-  .cw9aemg[class][class] {
+  .card__carousel-slides-wrapper[class][class] {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
   }
-  .dir.cw9aemg[class][class] {
+  .dir.card__carousel-slides-wrapper[class][class] {
     left: 0;
     right: 0;
   }
 }
-.s1yvqyx7[class][class] {
+.card__carousel[class][class] {
   grid-area: var(--contentscroller_scroller_grid-area, scroller);
   margin-block-start: var(--contentscroller_scroller_margin-block-start, unset);
   margin-block-end: var(--contentscroller_scroller_margin-block-end, unset);
   place-self: var(--contentscroller_scroller_place-self, auto);
 }
-.dir.s1yvqyx7[class][class] {
+.dir.card__carousel[class][class] {
   margin-inline-start: var(
     --contentscroller_scroller_margin-inline-start,
     calc(-1 * var(--contentscroller_peek, 32px))
@@ -44304,7 +44304,7 @@ tr.show-desktop {
     calc(-1 * var(--contentscroller_peek, 32px))
   );
 }
-.c18vjgz6[class][class] {
+.card__controls-wrapper[class][class] {
   grid-area: var(--contentscroller_controls_grid-area, header);
   margin-block-start: var(--contentscroller_controls_margin-block-start, unset);
   margin-block-end: var(--contentscroller_controls_margin-block-end, unset);
@@ -44312,7 +44312,7 @@ tr.show-desktop {
   pointer-events: var(--contentscroller_controls_pointer-events);
   z-index: var(--contentscroller_controls_z-index, auto);
 }
-.dir.c18vjgz6[class][class] {
+.dir.card__controls-wrapper[class][class] {
   margin-inline-start: var(
     --contentscroller_controls_margin-inline-start,
     unset
@@ -44326,7 +44326,7 @@ tr.show-desktop {
     'header' 'scroller' 'footer' / minmax(0, 1fr)
   );
 }
-.c14whb16[class][class] {
+.card__carousel-slides[class][class] {
   contain: var(--contentscroller_contain);
   contain-intrinsic-size: var(--contentscroller_contain-intrinsic-size);
   content-visibility: var(--contentscroller_content-visibility);
@@ -44354,7 +44354,7 @@ tr.show-desktop {
   scrollbar-width: none;
   touch-action: var(--contentscroller_touch-action, pan-x pan-y pinch-zoom);
 }
-.dir.c14whb16[class][class] {
+.dir.card__carousel-slides[class][class] {
   margin: 0;
   padding-inline-start: var(
     --contentscroller_padding-inline-start,
@@ -44366,14 +44366,14 @@ tr.show-desktop {
   );
 }
 @supports (scroll-behavior: smooth) {
-  .c14whb16[class][class] {
+  .card__carousel-slides[class][class] {
     scroll-snap-type: var(--contentscroller_scrollsnaptype, inline mandatory);
   }
 }
-.c14whb16[class][class]::-webkit-scrollbar {
+.card__carousel-slides[class][class]::-webkit-scrollbar {
   display: none;
 }
-.c14whb16[class][class] > :nth-child(n) {
+.card__carousel-slides[class][class] > :nth-child(n) {
   scroll-snap-align: var(--contentscroller_scrollsnapalign, start);
   scroll-snap-stop: var(--contentscroller_scrollsnapstop, normal);
 }
