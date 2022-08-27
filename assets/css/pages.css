@@ -2163,7 +2163,7 @@
     display: inherit !important;
   }
 }
-._1jo4hgw {
+.pricing__info {
   -webkit-box-lines: var(
     --pricing-guest-display-price-flex-wrap,
     wrap
@@ -45802,7 +45802,7 @@ tr.show-desktop {
     flex-start
   ) !important;
 }
-._14y1gc {
+.pricing {
   font-size: var(--pricing-guest-primary-line-font-size, 16px) !important;
   line-height: var(--pricing-guest-primary-line-line-height, 20px) !important;
   overflow: var(--pricing-guest-primary-line-overflow, initial) !important;
@@ -45811,7 +45811,7 @@ tr.show-desktop {
     inherit
   ) !important;
 }
-._1jo4hgw {
+.pricing__info {
   -webkit-box-pack: var(
     --pricing-guest-display-price-alignment,
     flex-start
@@ -45827,13 +45827,13 @@ tr.show-desktop {
   ) !important;
   flex-wrap: var(--pricing-guest-display-price-flex-wrap, wrap) !important;
 }
-._tyxjp1 {
+.pricing__unit-price {
   font-weight: var(
     --pricing-guest-primary-line-unit-price-font-weight,
     800
   ) !important;
 }
-._r1nvod {
+.pricing__quantity {
   white-space: nowrap !important;
   font-weight: 400 !important;
   font-size: var(
