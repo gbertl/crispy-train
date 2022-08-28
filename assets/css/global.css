@@ -4317,6 +4317,12 @@ select[disabled] {
     position: static !important;
   }
 }
+.table-container {
+  display: table !important;
+  position: relative !important;
+  height: 100% !important;
+  width: 100% !important;
+}
 /* /Utilities */
 
 /* Footer */
