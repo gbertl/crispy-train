@@ -4323,6 +4323,10 @@ select[disabled] {
   height: 100% !important;
   width: 100% !important;
 }
+.cell-middle {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
 /* /Utilities */
 
 /* Footer */
