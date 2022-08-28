@@ -4305,6 +4305,18 @@ select[disabled] {
 .w-100 {
   width: 100% !important;
 }
+.img-full {
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .img-full {
+    height: 100% !important;
+    width: 100% !important;
+    position: static !important;
+  }
+}
 /* /Utilities */
 
 /* Footer */

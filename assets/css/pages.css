@@ -50903,17 +50903,6 @@ tr.show-desktop {
 ._e2l2kr::-webkit-media-text-track-display {
   top: 77.5% !important;
 }
-.img-full {
-  height: 0 !important;
-  width: 0 !important;
-  position: absolute !important;
-}
-@supports (object-fit: cover) {
-  .img-full {
-    height: 100% !important;
-    width: 100% !important;
-  }
-}
 ._1l7cdtx {
   -webkit-box-direction: reverse !important;
   -webkit-box-orient: horizontal !important;
@@ -54300,18 +54289,6 @@ textarea {
 .img-middle {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
-}
-.img-full {
-  height: 0 !important;
-  width: 0 !important;
-  position: absolute !important;
-}
-@supports (object-fit: cover) {
-  .img-full {
-    height: 100% !important;
-    width: 100% !important;
-    position: static !important;
-  }
 }
 ._hi9sy {
   color: #717171 !important;
