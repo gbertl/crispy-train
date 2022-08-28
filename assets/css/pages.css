@@ -6129,13 +6129,13 @@
   box-shadow: rgb(255 255 255 / 80%) 0 0 0 2px !important;
 }
 
-.base-card-media-ratio {
+.card__media {
   position: relative !important;
   width: 100% !important;
   z-index: 0 !important;
   padding-top: var(--dls-basecard-padding-top) !important;
 }
-.base-card-media-container {
+.card__media-container {
   position: absolute !important;
   top: 0 !important;
   bottom: 0 !important;
@@ -8372,11 +8372,11 @@ select[disabled] {
   display: flex !important;
 }
 @media (min-width: 744px) {
-  ._1kklevk {
+  .card__media-rounded {
     border-radius: 12px !important;
   }
 }
-._w429hp {
+.img-container {
   height: 100% !important;
   width: 100% !important;
   position: relative !important;
@@ -8626,7 +8626,7 @@ select[disabled] {
 ._uhlm2 {
   display: block !important;
 }
-._1kklevk {
+.card__media-rounded {
   border-radius: 8px !important;
   height: 100% !important;
   overflow: hidden !important;
@@ -23777,7 +23777,7 @@ _qgvrjoy {
     display: none !important;
   }
 }
-._1szwzht {
+.card__media-container {
   position: absolute !important;
   top: 0 !important;
   bottom: 0 !important;
@@ -45677,13 +45677,13 @@ tr.show-desktop {
     border-bottom: 1px solid #ebebeb !important;
   }
 }
-._1mx6kqf {
+.card__media {
   position: relative !important;
   width: 100% !important;
   z-index: 0 !important;
   padding-top: var(--dls-basecard-padding-top) !important;
 }
-._1szwzht {
+.card__media-container {
   position: absolute !important;
   inset: 0 !important;
   height: 100% !important;
@@ -57759,7 +57759,7 @@ a:hover {
   color: #484848 !important;
 }
 
-.image-container {
+.img-container {
   height: 100% !important;
   position: relative !important;
   width: 100% !important;
@@ -58408,14 +58408,14 @@ a:hover {
   }
 }
 
-.base-card-media-ratio {
+.card__media {
   position: relative !important;
   width: 100% !important;
   z-index: 0 !important;
   padding-top: var(--dls-basecard-padding-top) !important;
 }
 
-.base-card-media-container {
+.card__media-container {
   position: absolute !important;
   top: 0px !important;
   bottom: 0px !important;
@@ -58425,7 +58425,7 @@ a:hover {
   width: 100% !important;
 }
 
-.base-card-media-rounded {
+.card__media-rounded {
   border-radius: 8px !important;
   height: 100% !important;
   overflow: hidden !important;
@@ -58433,7 +58433,7 @@ a:hover {
 }
 
 @media (min-width: 744px) {
-  .base-card-media-rounded {
+  .card__media-rounded {
     border-radius: 12px !important;
   }
 }
