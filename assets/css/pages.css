@@ -8381,106 +8381,6 @@ select[disabled] {
   width: 100% !important;
   position: relative !important;
 }
-.featured-card__img-wrapper {
-  position: absolute !important;
-  inset: 0 !important;
-}
-.featured-card__overlay {
-  position: absolute !important;
-  inset: 0 !important;
-  padding: 24px 0 16px !important;
-}
-.featured-card__overlay-text {
-  position: relative !important;
-  display: block !important;
-  text-align: center !important;
-}
-.featured-card__overlay-subtitle {
-  position: absolute !important;
-  width: 100% !important;
-  margin: 0 auto !important;
-  top: -36px !important;
-}
-.featured-card__overlay-title {
-  position: relative !important;
-  font-size: 32px !important;
-  line-height: 36px !important;
-  letter-spacing: normal !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Helvetica Neue', sans-serif !important;
-  text-transform: uppercase !important;
-  color: #484848 !important;
-  padding-top: 6px !important;
-  padding-bottom: 6px !important;
-  font-weight: 800 !important;
-  white-space: nowrap !important;
-}
-@media (min-width: 744px) {
-  .featured-card__overlay-title {
-    font-size: 46px !important;
-    line-height: 52px !important;
-    letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-      'Helvetica Neue', sans-serif !important;
-    color: #484848 !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-}
-@media (min-width: 1128px) {
-  .featured-card__overlay-title {
-    font-size: 32px !important;
-    line-height: 36px !important;
-    letter-spacing: normal !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-      'Helvetica Neue', sans-serif !important;
-    color: #484848 !important;
-    padding-top: 6px !important;
-    padding-bottom: 6px !important;
-  }
-}
-.featured-card__underline-wrapper {
-  position: absolute !important;
-  right: 0 !important;
-  left: 10% !important;
-  top: 100% !important;
-  width: 80% !important;
-  margin-top: -25px !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-@media (min-width: 744px) {
-  .featured-card__underline-wrapper {
-    margin-top: -40px !important;
-  }
-}
-@media (min-width: 1128px) {
-  .featured-card__underline-wrapper {
-    margin-top: -25px !important;
-  }
-}
-.featured-card__title {
-  margin: 0 !important;
-  word-wrap: break-word !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 800 !important;
-  line-height: 1.3333333333333333em !important;
-  color: #484848 !important;
-}
-.featured-card__title-uppercase {
-  text-transform: uppercase !important;
-  font-size: 12px !important;
-}
-@media (min-width: 1128px) {
-  .featured-card__text-wrapper {
-    width: 85% !important;
-  }
-}
-.featured-card__letter-spacing {
-  letter-spacing: 0.2px !important;
-}
 ._ttoj70 {
   display: inline-block !important;
   text-align: left !important;
@@ -8622,9 +8522,6 @@ select[disabled] {
   display: inline-block !important;
   white-space: normal !important;
   vertical-align: top !important;
-}
-.featured-card {
-  display: block !important;
 }
 .card__media-rounded {
   border-radius: 8px !important;
@@ -18292,16 +18189,6 @@ h3:first-child {
   font-weight: 600 !important;
   line-height: 1.375em !important;
   color: inherit !important;
-}
-.featured-card__text {
-  margin: 0 !important;
-  word-wrap: break-word !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  line-height: 1.2857142857142858em !important;
-  color: #484848 !important;
 }
 ._ylytgbo {
   margin: 0 !important;
@@ -52899,16 +52786,6 @@ tr.show-desktop {
   position: absolute !important;
   text-align: center !important;
   transform: translateX(-50%) !important;
-}
-.featured-card__text {
-  margin: 0 !important;
-  overflow-wrap: break-word !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Helvetica Neue', sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 400 !important;
-  line-height: 1.28571em !important;
-  color: #484848 !important;
 }
 ._vgark8 {
   bottom: -7px !important;
