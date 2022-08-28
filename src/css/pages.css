@@ -58210,26 +58210,26 @@ a:hover {
   display: block !important;
 }
 
-.base-nav-card-overline-text {
+.entry-card__subtitle {
   text-transform: uppercase !important;
   font-size: 12px !important;
 }
 
 @media (min-width: 1128px) {
-  .base-nav-card-text-content {
+  .entry-card__text {
     width: 85% !important;
   }
 }
 
-.base-nav-card-title-spacing {
+.entry-card__title {
   letter-spacing: -0.25px !important;
 }
 
-.base-nav-card-text-spacing {
+.entry-card__letter-spacing {
   letter-spacing: 0.2px !important;
 }
 
-.entry-nav-card-image-content {
+.entry-card__lite-image-wrapper {
   position: absolute !important;
   top: 50% !important;
   -webkit-transform: translateY(-50%) !important;
@@ -58238,7 +58238,7 @@ a:hover {
   width: 100% !important;
 }
 
-.entry-nav-card-image-overlay {
+.entry-card__img-overlay {
   position: absolute !important;
   top: 0px !important;
   left: 0px !important;
@@ -58248,7 +58248,7 @@ a:hover {
   text-align: center !important;
 }
 
-.entry-nav-card-image-overlay-title {
+.entry-card__img-overlay-title {
   font-size: 36px !important;
   font-weight: 800 !important;
   letter-spacing: 0px !important;
