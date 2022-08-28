@@ -8381,27 +8381,27 @@ select[disabled] {
   width: 100% !important;
   position: relative !important;
 }
-._1smmk5k {
+.featured-card__img-wrapper {
   position: absolute !important;
   inset: 0 !important;
 }
-._1xewjau {
+.featured-card__overlay {
   position: absolute !important;
   inset: 0 !important;
   padding: 24px 0 16px !important;
 }
-._q8lfwc {
+.featured-card__overlay-text {
   position: relative !important;
   display: block !important;
   text-align: center !important;
 }
-._nz0jox {
+.featured-card__overlay-subtitle {
   position: absolute !important;
   width: 100% !important;
   margin: 0 auto !important;
   top: -36px !important;
 }
-._o65zer {
+.featured-card__overlay-title {
   position: relative !important;
   font-size: 32px !important;
   line-height: 36px !important;
@@ -8416,7 +8416,7 @@ select[disabled] {
   white-space: nowrap !important;
 }
 @media (min-width: 744px) {
-  ._o65zer {
+  .featured-card__overlay-title {
     font-size: 46px !important;
     line-height: 52px !important;
     letter-spacing: normal !important;
@@ -8428,7 +8428,7 @@ select[disabled] {
   }
 }
 @media (min-width: 1128px) {
-  ._o65zer {
+  .featured-card__overlay-title {
     font-size: 32px !important;
     line-height: 36px !important;
     letter-spacing: normal !important;
@@ -8439,7 +8439,7 @@ select[disabled] {
     padding-bottom: 6px !important;
   }
 }
-._k0cckg {
+.featured-card__underline-wrapper {
   position: absolute !important;
   right: 0 !important;
   left: 10% !important;
@@ -8450,16 +8450,16 @@ select[disabled] {
   margin-right: 0 !important;
 }
 @media (min-width: 744px) {
-  ._k0cckg {
+  .featured-card__underline-wrapper {
     margin-top: -40px !important;
   }
 }
 @media (min-width: 1128px) {
-  ._k0cckg {
+  .featured-card__underline-wrapper {
     margin-top: -25px !important;
   }
 }
-._1xxanas2 {
+.featured-card__title {
   margin: 0 !important;
   word-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -8469,16 +8469,16 @@ select[disabled] {
   line-height: 1.3333333333333333em !important;
   color: #484848 !important;
 }
-._1xndkt {
+.featured-card__title-uppercase {
   text-transform: uppercase !important;
   font-size: 12px !important;
 }
 @media (min-width: 1128px) {
-  ._wbsbxz {
+  .featured-card__text-wrapper {
     width: 85% !important;
   }
 }
-._1jj7gf6 {
+.featured-card__letter-spacing {
   letter-spacing: 0.2px !important;
 }
 ._ttoj70 {
@@ -8623,7 +8623,7 @@ select[disabled] {
   white-space: normal !important;
   vertical-align: top !important;
 }
-._uhlm2 {
+.featured-card {
   display: block !important;
 }
 .card__media-rounded {
@@ -18293,7 +18293,7 @@ h3:first-child {
   line-height: 1.375em !important;
   color: inherit !important;
 }
-._1jlnvra2 {
+.featured-card__text {
   margin: 0 !important;
   word-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -33484,7 +33484,7 @@ tr.show-desktop {
   line-height: 1.28571em !important;
   color: #484848 !important;
 }
-._djxl322 {
+.table-container {
   display: table !important;
   position: relative !important;
   height: 100% !important;
@@ -52909,7 +52909,7 @@ tr.show-desktop {
   text-align: center !important;
   transform: translateX(-50%) !important;
 }
-._1jlnvra2 {
+.featured-card__text {
   margin: 0 !important;
   overflow-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -53129,7 +53129,7 @@ tr.show-desktop {
   position: relative !important;
   height: 100% !important;
 }
-._ni9axhe {
+.cell-middle {
   display: table-cell !important;
   vertical-align: middle !important;
 }
@@ -54433,13 +54433,13 @@ textarea {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
 }
-._9ofhsl {
+.img-full {
   height: 0 !important;
   width: 0 !important;
   position: absolute !important;
 }
 @supports (object-fit: cover) {
-  ._9ofhsl {
+  .img-full {
     height: 100% !important;
     width: 100% !important;
     position: static !important;
