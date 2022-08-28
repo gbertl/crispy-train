@@ -23470,7 +23470,7 @@ _qgvrjoy {
   display: flex !important;
   text-transform: uppercase !important;
 }
-._12mkq2ny {
+.btn-light {
   cursor: pointer !important;
   display: inline-block !important;
   margin: 0 !important;
@@ -23500,64 +23500,64 @@ _qgvrjoy {
   color: var(--f-k-smk-x) !important;
   background: var(--f-mkcy-f) !important;
 }
-._12mkq2ny:focus-visible {
+.btn-light:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
-._12mkq2ny:focus-visible::-moz-focus-inner {
+.btn-light:focus-visible::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-._12mkq2ny:focus-visible:focus::-moz-focus-inner {
+.btn-light:focus-visible:focus::-moz-focus-inner {
   border: none !important;
 }
-._12mkq2ny:focus-visible:-moz-focusring {
+.btn-light:focus-visible:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._12mkq2ny:focus-visible {
+  .btn-light:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-._12mkq2ny:focus[data-focus-visible-added] {
+.btn-light:focus[data-focus-visible-added] {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
-._12mkq2ny:focus[data-focus-visible-added]::-moz-focus-inner {
+.btn-light:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-._12mkq2ny:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.btn-light:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none !important;
 }
-._12mkq2ny:focus[data-focus-visible-added]:-moz-focusring {
+.btn-light:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._12mkq2ny:focus[data-focus-visible-added] {
+  .btn-light:focus[data-focus-visible-added] {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  ._12mkq2ny:hover {
+  .btn-light:hover {
     border: none !important;
     color: var(--f-k-smk-x) !important;
     background: var(--d-nc-lt-s) !important;
   }
 }
-._12mkq2ny:active {
+.btn-light:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
@@ -23565,7 +23565,7 @@ _qgvrjoy {
   background: var(--d-nc-lt-s) !important;
   color: var(--f-k-smk-x) !important;
 }
-._12mkq2ny:disabled {
+.btn-light:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
@@ -23573,7 +23573,7 @@ _qgvrjoy {
   color: #878787 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._12mkq2ny {
+  .btn-light {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
