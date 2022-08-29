@@ -9332,6 +9332,243 @@ fieldset[disabled] .btn {
 }
 /* /Header filter */
 
+/* Hero banner */
+.hero-banner {
+  position: relative !important;
+  width: 100% !important;
+  height: 400px !important;
+}
+@media (min-width: 1128px) {
+  .hero-banner {
+    height: 480px !important;
+  }
+}
+.hero-banner__content {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+.hero-banner__content-wrapper {
+  position: relative !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  margin-top: 0 !important;
+  max-width: 100% !important;
+}
+@media (min-width: 1128px) {
+  .hero-banner__content-wrapper {
+    margin-top: 64px !important;
+    margin-bottom: 64px !important;
+  }
+}
+@media (min-width: 744px) {
+  .hero-banner__content-wrapper {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (max-width: 743px) {
+  .hero-banner__content-wrapper {
+    margin-top: -44px !important;
+  }
+}
+.hero-banner__description-text {
+  margin: auto !important;
+  max-width: 280px !important;
+  font-size: 18px !important;
+}
+.hero-banner__button-text {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  text-transform: uppercase !important;
+  line-height: 32px !important;
+}
+.hero-banner__button-icon {
+  padding-left: 6px !important;
+  position: relative !important;
+  top: 1px !important;
+}
+.hero-banner__button {
+  display: inline-block !important;
+  margin: 0 !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  -webkit-transition-property: background, border-color, color !important;
+  -moz-transition-property: background, border-color, color !important;
+  transition-property: background, border-color, color !important;
+  -webkit-transition-duration: 0.2s !important;
+  transition-duration: 0.2s !important;
+  -webkit-transition-timing-function: ease-out !important;
+  transition-timing-function: ease-out !important;
+  width: auto !important;
+  cursor: pointer !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  text-transform: undefined !important;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  font-weight: 600 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  min-width: 48.54101966249685px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16) !important;
+  background: #fff !important;
+  border-color: transparent !important;
+  color: #484848 !important;
+}
+.hero-banner__button::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.hero-banner__button:focus::-moz-focus-inner {
+  border: 1px dotted #000 !important;
+}
+.hero-banner__button:-moz-focusring {
+  outline-color: #000 !important;
+}
+.hero-banner__button:disabled {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-color: transparent !important;
+  color: #484848 !important;
+}
+.hero-banner__button:focus {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 255, 255, 0.7) !important;
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+}
+.hero-banner__button:focus::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.hero-banner__button:focus:focus::-moz-focus-inner {
+  border: none !important;
+}
+.hero-banner__button:focus:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-banner__button:focus {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.hero-banner__button:hover {
+  background: #fff !important;
+  border-color: transparent !important;
+  color: #484848 !important;
+}
+.hero-banner__button:active {
+  background: #e2e2e2 !important;
+  border-color: transparent !important;
+  color: #484848 !important;
+}
+@supports (--custom: properties) {
+  .hero-banner__button {
+    border-radius: var(--border-button-small-border-radius, 4px) !important;
+    font-size: var(--font-button-small-font-size, 14px) !important;
+    line-height: var(--font-button-small-line-height, 22px) !important;
+    letter-spacing: var(--font-button-small-letter-spacing, normal) !important;
+    font-family: var(
+      --font-button-small-font-family,
+      Circular,
+      -apple-system,
+      BlinkMacSystemFont,
+      Roboto,
+      Helvetica Neue,
+      sans-serif
+    ) !important;
+    text-transform: var(
+      --font-button-small-text-transform,
+      undefined
+    ) !important;
+    padding-top: var(--spacing-button-small-vertical, 6px) !important;
+    padding-bottom: var(--spacing-button-small-vertical, 6px) !important;
+    font-weight: var(--font-book-font-weight, 600) !important;
+    border-width: var(--border-button-small-border-width, 1px) !important;
+    padding-left: var(--spacing-button-small-horizontal, 15px) !important;
+    padding-right: var(--spacing-button-small-horizontal, 15px) !important;
+    box-shadow: var(
+      --shadow-button-level2-box-shadow,
+      0 1px 4px rgba(0, 0, 0, 0.16)
+    ) !important;
+    background: var(--color-buttons-inverse-color, #fff) !important;
+    border-color: var(--color-buttons-inverse-border, transparent) !important;
+    color: var(--color-buttons-inverse-text, #484848) !important;
+  }
+  .hero-banner__button:disabled {
+    background: var(
+      --color-buttons-inverse-disabled-color,
+      rgba(255, 255, 255, 0.3)
+    ) !important;
+    border-color: var(
+      --color-buttons-inverse-disabled-border,
+      transparent
+    ) !important;
+    color: var(--color-buttons-inverse-disabled-text, #484848) !important;
+  }
+  .hero-banner__button:hover {
+    background: var(--color-buttons-inverse-hover-color, #fff) !important;
+    border-color: var(
+      --color-buttons-inverse-hover-border,
+      transparent
+    ) !important;
+    color: var(--color-buttons-inverse-hover-text, #484848) !important;
+  }
+  .hero-banner__button:active {
+    background: var(--color-buttons-inverse-active-color, #e2e2e2) !important;
+    border-color: var(
+      --color-buttons-inverse-active-border,
+      transparent
+    ) !important;
+    color: var(--color-buttons-inverse-active-text, #484848) !important;
+  }
+}
+.hero-banner__button-wrapper {
+  margin: 0 !important;
+  word-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1.3333333333333333em !important;
+  letter-spacing: 0.08333333333333333em !important;
+  color: #484848 !important;
+}
+.hero-banner__description {
+  margin: 0 !important;
+  word-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.375em !important;
+  color: #484848 !important;
+}
+.hero-banner__content-bg {
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+/* /Hero banner */
+
 /* Modals */
 .modal__backdrop {
   z-index: 2000 !important;
