@@ -7927,7 +7927,115 @@ fieldset[disabled] .btn {
   background: var(--f-k-smk-x) !important;
   color: var(--f-mkcy-f) !important;
 }
-
+.btn-light {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0 !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--c-zdwk-p) !important;
+  line-height: var(--j-p-z-kco) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  border-width: 1px !important;
+  outline: 0 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  -webkit-transition: box-shadow 0.2s, -webkit-transform 0.1s, transform 0.1s !important;
+  -moz-transition: box-shadow 0.2s, transform 0.1s !important;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  color: var(--f-k-smk-x) !important;
+  background: var(--f-mkcy-f) !important;
+}
+.btn-light:focus-visible {
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+}
+.btn-light:focus-visible::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.btn-light:focus-visible:focus::-moz-focus-inner {
+  border: none !important;
+}
+.btn-light:focus-visible:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-light:focus-visible {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.btn-light:focus[data-focus-visible-added] {
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+}
+.btn-light:focus[data-focus-visible-added]::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.btn-light:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+  border: none !important;
+}
+.btn-light:focus[data-focus-visible-added]:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-light:focus[data-focus-visible-added] {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+@media (hover: hover) {
+  .btn-light:hover {
+    border: none !important;
+    color: var(--f-k-smk-x) !important;
+    background: var(--d-nc-lt-s) !important;
+  }
+}
+.btn-light:active {
+  -webkit-transform: scale(0.96) !important;
+  -ms-transform: scale(0.96) !important;
+  transform: scale(0.96) !important;
+  border: none !important;
+  background: var(--d-nc-lt-s) !important;
+  color: var(--f-k-smk-x) !important;
+}
+.btn-light:disabled {
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+  border: none !important;
+  background: #4a4a4a !important;
+  color: #878787 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-light {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
 /* /Buttons */
 
 /* Card */
