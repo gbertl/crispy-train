@@ -9167,6 +9167,171 @@ fieldset[disabled] .btn {
 
 /* /Forms */
 
+/* Header filter */
+.header-filter__wrappper[class][class] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: var(--chipsbar_chip-width);
+  gap: var(--h-x-sf-jw);
+}
+@media (min-width: 744px) {
+  .header-filter__wrappper[class][class] {
+    gap: var(--fgg-f-l-a);
+  }
+}
+.header-filter__wrappper--active[class][class] {
+  min-width: revert;
+}
+.header-filter__icon[class][class] {
+  max-width: 100%;
+  width: var(--chipsbar-chip-image_size, 24px);
+  height: auto;
+  filter: contrast(calc(13 / 44));
+}
+.dir.header-filter__icon[class][class] {
+  transition: filter 0.2s, transform 0.2s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header-filter__icon[class][class] {
+    transition-duration: 0;
+  }
+}
+.header-filter__label[class][class] {
+  white-space: nowrap;
+  position: relative;
+}
+.header-filter__label[class][class]::after {
+  position: absolute;
+  content: '';
+  inset-inline: 0;
+  height: 2px;
+  top: calc(100% + 12px);
+  opacity: 0;
+}
+.dir.header-filter__label[class][class]::after {
+  transition: opacity 0.2s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header-filter__label[class][class]::after {
+    transition: none;
+  }
+}
+.header-filter__text[class][class] {
+  display: inline-block;
+}
+.dir.header-filter__text[class][class] {
+  transition: transform 0.2s;
+}
+.header-filter[class][class] {
+  border: 1px solid #000;
+  background-color: #fff;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-size: var(--f-cv-j-j-p);
+  line-height: var(--f-l-h-bac);
+  color: var(--fo-jk-r-s);
+  font-weight: var(--jx-zk-pv);
+  width: max-content;
+  -webkit-tap-highlight-color: transparent;
+}
+.dir.header-filter[class][class] {
+  cursor: pointer;
+  text-align: center;
+  border-radius: var(--go-h-jh-l);
+  background-color: unset;
+  border: unset;
+  padding: 4px 0 14px;
+  margin: 12px 0 0;
+  transition: box-shadow 0.2s, color 0.2s;
+}
+.dir.header-filter[class][class]:disabled {
+  cursor: not-allowed;
+}
+.dir.header-filter[class][class]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.dir.header-filter[class][class]:focus::-moz-focus-inner {
+  border: none;
+}
+.header-filter[class][class]:-moz-focusring {
+  outline: 0;
+}
+.header-filter[class][class]:focus-visible {
+  color: var(--bgxgx);
+}
+.dir.header-filter[class][class]:focus-visible {
+  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255 255 255 / 0.8);
+}
+.header-filter[class][class]:focus-visible .header-filter__icon[class][class] {
+  filter: contrast(1);
+}
+@media (hover: hover) {
+  .header-filter[class][class]:hover {
+    color: var(--bgxgx);
+  }
+  .header-filter[class][class]:hover .header-filter__icon[class][class] {
+    filter: contrast(1);
+  }
+  .header-filter[class][class]:hover
+    .header-filter__label[class][class]::after {
+    opacity: 1;
+  }
+  .dir.header-filter[class][class]:hover
+    .header-filter__label[class][class]::after {
+    background-color: var(--j-qkgmf);
+  }
+}
+.header-filter[class][class]:active {
+  color: var(--bgxgx);
+}
+.header-filter[class][class]:active .header-filter__icon[class][class] {
+  filter: contrast(1);
+}
+.dir.header-filter[class][class]:active .header-filter__icon[class][class] {
+  transform: scale(0.96);
+}
+.dir.header-filter[class][class]:active .header-filter__text[class][class] {
+  transform: scale(0.96) translateY(-1px);
+}
+.header-filter[class][class]:active .header-filter__label[class][class]::after {
+  opacity: 1;
+}
+.dir.header-filter[class][class]:active
+  .header-filter__label[class][class]::after {
+  background-color: var(--j-qkgmf);
+}
+.header-filter--active[class][class] {
+  background-color: #000;
+  color: #fff;
+  color: var(--bgxgx);
+}
+.dir.header-filter--active[class][class] {
+  background-color: unset;
+  cursor: default;
+}
+.header-filter--active[class][class] .header-filter__icon[class][class] {
+  filter: contrast(1);
+}
+.header-filter--active[class][class]
+  .header-filter__label[class][class]::after {
+  opacity: 1;
+}
+.dir.header-filter--active[class][class]
+  .header-filter__label[class][class]::after {
+  background-color: var(--bgxgx);
+}
+@media (hover: hover) {
+  .dir.header-filter--active[class][class]:hover
+    .header-filter__label[class][class]::after {
+    background-color: var(--bgxgx);
+  }
+}
+/* /Header filter */
+
 /* Modals */
 .modal__backdrop {
   z-index: 2000 !important;
