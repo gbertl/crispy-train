@@ -1288,36 +1288,6 @@ fieldset[disabled] .btn {
     ) !important;
   }
 }
-.explore-card__save-btn[class][class] {
-  display: inline-block;
-  position: relative;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  width: auto;
-  color: #000;
-  font-size: 14px;
-  font-family: inherit;
-  touch-action: manipulation;
-}
-.dir.explore-card__save-btn[class][class] {
-  cursor: pointer;
-  margin: 0;
-  text-align: center;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background: #d3d3d3;
-}
-.explore-card__save-btn[class][class]:disabled {
-  opacity: 0.3;
-}
-.dir.explore-card__save-btn[class][class]:disabled {
-  cursor: not-allowed;
-}
 @media (hover: hover) {
   .btn-close:hover::before {
     background: #f7f7f7 !important;
