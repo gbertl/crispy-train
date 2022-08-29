@@ -7998,6 +7998,109 @@ fieldset[disabled] .btn {
     transition: none !important;
   }
 }
+.dir.btn-save[class][class]:focus-visible {
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.btn-save[class][class]:focus-visible {
+    transition: none;
+  }
+}
+.btn-save[class][class] {
+  font-family: var(--e-ls-qkw);
+  font-size: var(--iw-ehf-f);
+  line-height: var(---s-l-myu);
+  font-weight: var(--jx-zk-pv);
+  border-radius: var(--go-h-jh-l);
+  outline: 0;
+  padding: 14px 24px;
+  -webkit-transition: box-shadow 0.2s, -webkit-transform 0.1s;
+  transition: box-shadow 0.2s, transform 0.1s;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: var(--f-k-smk-x);
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: calc(24px + var(--fgg-f-l-a));
+  height: calc(24px + var(--fgg-f-l-a));
+}
+.dir.btn-save[class][class] {
+  border-width: 1px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: transform 0.25s;
+  transition: transform 0.25s;
+  margin: -2px 0 0;
+  padding: 2px 0 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.btn-save[class][class] {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.dir.btn-save[class][class]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.dir.btn-save[class][class]:focus::-moz-focus-inner {
+  border: none;
+}
+.btn-save[class][class]:-moz-focusring {
+  outline: 0;
+}
+.dir.btn-save[class][class]:focus-visible {
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.btn-save[class][class]:focus-visible {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.dir.btn-save[class][class]:focus[data-focus-visible-added] {
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.btn-save[class][class]:focus[data-focus-visible-added] {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.dir.btn-save[class][class]:active {
+  -webkit-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  transform: scale(0.96);
+}
+.btn-save[class][class]:disabled {
+  opacity: 1;
+}
+.dir.btn-save[class][class]:focus-visible {
+  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
+}
+.dir.btn-save[class][class]:focus[data-focus-visible-added] {
+  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
+}
+.dir.btn-save[class][class]:active {
+  -webkit-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  transform: scale(0.92);
+}
 /* /Buttons */
 
 /* Card */
@@ -8757,28 +8860,14 @@ fieldset[disabled] .btn {
   padding-right: 8px !important;
 }
 .explore-card__save-btn[class][class] {
-  display: inline-block;
   position: relative;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: auto;
-  color: #000;
-  font-size: 14px;
-  font-family: inherit;
   touch-action: manipulation;
 }
 .dir.explore-card__save-btn[class][class] {
   cursor: pointer;
-  margin: 0;
   text-align: center;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background: #d3d3d3;
 }
 .explore-card__save-btn[class][class]:disabled {
   opacity: 0.3;
@@ -11794,12 +11883,6 @@ button[data-testid=cypress-headernav-profile]:focus + .c3i7glo[class][class] {
     .dir.ln2bl2p[class][class]:focus-visible {
       transition: none
     }
-  }
-}
-@media (prefers-reduced-motion:reduce) {
-  .dir.btn-save[class][class]:focus-visible {
-    -webkit-transition: none;
-    transition: none
   }
 }
 

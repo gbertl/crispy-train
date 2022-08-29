@@ -2198,10 +2198,4 @@ button[data-testid=cypress-headernav-profile]:focus + .c3i7glo[class][class] {
     }
   }
 }
-@media (prefers-reduced-motion:reduce) {
-  .dir.btn-save[class][class]:focus-visible {
-    -webkit-transition: none;
-    transition: none
-  }
-}
 
