@@ -4775,6 +4775,90 @@ select[disabled] {
   position: relative !important;
   min-height: 100vh !important;
 }
+.display-image-wrapper {
+  display: inline-block !important;
+  vertical-align: bottom !important;
+  min-height: 1px !important;
+  position: relative !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.image-container {
+  height: 100% !important;
+  position: relative !important;
+  width: 100% !important;
+}
+.image-container::after {
+  background-color: #000 !important;
+  bottom: 0 !important;
+  content: '' !important;
+  left: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  -webkit-transition-duration: 0s !important;
+  transition-duration: 0s !important;
+  -webkit-transition-property: opacity !important;
+  -moz-transition-property: opacity !important;
+  transition-property: opacity !important;
+  -webkit-transition-timing-function: ease-out !important;
+  transition-timing-function: ease-out !important;
+  z-index: 2 !important;
+}
+.image-container:hover::after {
+  opacity: 0.15 !important;
+  -webkit-transition-duration: 0.3s !important;
+  transition-duration: 0.3s !important;
+}
+.video-display {
+  display: block !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.video-display::-webkit-media-text-track-display {
+  top: 77.5% !important;
+}
+.border-bottom-muted {
+  border-bottom: 1px solid #ebebeb !important;
+}
+.inherit-hide-print {
+  display: inherit !important;
+}
+@media print {
+  .inherit-hide-print {
+    display: none !important;
+  }
+}
+.overflow-hidden {
+  overflow: hidden !important;
+}
+.va-top-nowrap {
+  display: table-cell !important;
+  vertical-align: top !important;
+  white-space: nowrap !important;
+}
+.va-middle-vh {
+  display: table-cell !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+  width: 100% !important;
+}
+.va-container-vv {
+  display: table !important;
+  position: relative !important;
+  height: 100% !important;
+}
+.va-top {
+  display: table-cell !important;
+  vertical-align: top !important;
+}
+.va-top-h {
+  display: table-cell !important;
+  width: 100% !important;
+  vertical-align: top !important;
+}
 /* /Utilities */
 
 /* Footer */
