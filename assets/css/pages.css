@@ -41017,11 +41017,11 @@ tr.show-desktop {
   font-size: 16px !important;
   line-height: 20px !important;
 }
-._cfvh61 {
+.inherit-hide-print {
   display: inherit !important;
 }
 @media print {
-  ._cfvh61 {
+  .inherit-hide-print {
     display: none !important;
   }
 }
