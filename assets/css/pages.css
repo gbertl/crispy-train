@@ -26300,12 +26300,12 @@ html :where(img[class*='wp-image-']) {
   height: 100% !important;
   width: 100% !important;
 }
-._1emsdka {
+.image-container {
   height: 100% !important;
   position: relative !important;
   width: 100% !important;
 }
-._1emsdka::after {
+.image-container::after {
   background-color: #000 !important;
   bottom: 0 !important;
   content: '' !important;
@@ -26324,7 +26324,7 @@ html :where(img[class*='wp-image-']) {
   transition-timing-function: ease-out !important;
   z-index: 2 !important;
 }
-._1emsdka:hover::after {
+.image-container:hover::after {
   opacity: 0.15 !important;
   -webkit-transition-duration: 0.3s !important;
   transition-duration: 0.3s !important;
@@ -40556,7 +40556,7 @@ tr.show-desktop {
     overflow-y: clip !important;
   }
 }
-._1trgpf1 {
+.image-container {
   height: 100% !important;
   position: relative !important;
   width: 100% !important;
