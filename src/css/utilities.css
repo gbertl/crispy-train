@@ -116,6 +116,9 @@
 .ml2 {
   margin-left: 16px;
 }
+.mr2 {
+  margin-right: 16px;
+}
 .p2 {
   padding: 16px;
 }
@@ -846,5 +849,9 @@
   content: ' ' !important;
   display: table !important;
   clear: both !important;
+}
+
+.cursor-pointer {
+  	cursor: pointer;
 }
 /* /Utilities */
