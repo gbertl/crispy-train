@@ -834,4 +834,17 @@
 .inline {
   display: inline !important;
 }
+.row-condensed {
+  margin-left: -4px !important;
+  margin-right: -4px !important;
+}
+.row-condensed:before {
+  content: ' ' !important;
+  display: table !important;
+}
+.row-condensed:after {
+  content: ' ' !important;
+  display: table !important;
+  clear: both !important;
+}
 /* /Utilities */
