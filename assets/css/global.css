@@ -4089,6 +4089,13 @@ select[disabled] {
     display: none !important;
   }
 }
+
+@media (min-width: 1440px) {
+  .d-xl-block {
+    display: block !important;
+  }
+}
+
 .container {
   max-width: 1760px;
   width: 100%;
@@ -4345,7 +4352,7 @@ select[disabled] {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
 }
-.lite-image__wrapper {
+.lite-image__container {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
   -webkit-box-align: center !important;
@@ -4365,7 +4372,7 @@ select[disabled] {
   -webkit-justify-content: center !important;
   justify-content: center !important;
 }
-.lite-image__default {
+.lite-image__default-static {
   top: 0 !important;
   bottom: 0 !important;
   left: 0 !important;
@@ -4375,7 +4382,7 @@ select[disabled] {
   position: absolute !important;
 }
 @supports (object-fit: cover) {
-  .lite-image__default {
+  .lite-image__default-static {
     height: 100% !important;
     width: 100% !important;
     position: static !important;
@@ -7998,16 +8005,16 @@ fieldset[disabled] .btn {
     transition: none !important;
   }
 }
-.dir.btn-save[class][class]:focus-visible {
+.dir.btn-wishlist-bordered[class][class]:focus-visible {
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-save[class][class]:focus-visible {
+  .dir.btn-wishlist-bordered[class][class]:focus-visible {
     transition: none;
   }
 }
-.btn-save[class][class] {
+.btn-wishlist-bordered[class][class] {
   font-family: var(--e-ls-qkw);
   font-size: var(--iw-ehf-f);
   line-height: var(---s-l-myu);
@@ -8033,7 +8040,7 @@ fieldset[disabled] .btn {
   width: calc(24px + var(--fgg-f-l-a));
   height: calc(24px + var(--fgg-f-l-a));
 }
-.dir.btn-save[class][class] {
+.dir.btn-wishlist-bordered[class][class] {
   border-width: 1px;
   background-color: transparent;
   border-radius: 50%;
@@ -8044,59 +8051,59 @@ fieldset[disabled] .btn {
   padding: 2px 0 0;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-save[class][class] {
+  .dir.btn-wishlist-bordered[class][class] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.btn-save[class][class]::-moz-focus-inner {
+.dir.btn-wishlist-bordered[class][class]::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.btn-save[class][class]:focus::-moz-focus-inner {
+.dir.btn-wishlist-bordered[class][class]:focus::-moz-focus-inner {
   border: none;
 }
-.btn-save[class][class]:-moz-focusring {
+.btn-wishlist-bordered[class][class]:-moz-focusring {
   outline: 0;
 }
-.dir.btn-save[class][class]:focus-visible {
+.dir.btn-wishlist-bordered[class][class]:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-save[class][class]:focus-visible {
+  .dir.btn-wishlist-bordered[class][class]:focus-visible {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.btn-save[class][class]:focus[data-focus-visible-added] {
+.dir.btn-wishlist-bordered[class][class]:focus[data-focus-visible-added] {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-save[class][class]:focus[data-focus-visible-added] {
+  .dir.btn-wishlist-bordered[class][class]:focus[data-focus-visible-added] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.btn-save[class][class]:active {
+.dir.btn-wishlist-bordered[class][class]:active {
   -webkit-transform: scale(0.96);
   -ms-transform: scale(0.96);
   transform: scale(0.96);
 }
-.btn-save[class][class]:disabled {
+.btn-wishlist-bordered[class][class]:disabled {
   opacity: 1;
 }
-.dir.btn-save[class][class]:focus-visible {
+.dir.btn-wishlist-bordered[class][class]:focus-visible {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.dir.btn-save[class][class]:focus[data-focus-visible-added] {
+.dir.btn-wishlist-bordered[class][class]:focus[data-focus-visible-added] {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.dir.btn-save[class][class]:active {
+.dir.btn-wishlist-bordered[class][class]:active {
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
   transform: scale(0.92);
@@ -8508,7 +8515,7 @@ fieldset[disabled] .btn {
 .entry-card__letter-spacing {
   letter-spacing: 0.2px !important;
 }
-.entry-card__lite-image__wrapper {
+.entry-card__lite-image__container {
   position: absolute !important;
   top: 50% !important;
   -webkit-transform: translateY(-50%) !important;
@@ -8815,11 +8822,11 @@ fieldset[disabled] .btn {
 .dir-rtl.explore-card__controls-bg[class][class] {
   background: linear-gradient(-180deg, transparent 80%, rgba(0, 0, 0, 0.25));
 }
-.explore-card__save-btn-var[class][class] {
+.explore-card__btn-wishlist-wrapper-var[class][class] {
   --save-button_height: calc(24px + var(--fgg-f-l-a));
   --save-button_width: calc(24px + var(--fgg-f-l-a));
 }
-.explore-card__save-btn-wrapper[class][class] {
+.explore-card__btn-wishlist-wrapper-wrapper[class][class] {
   pointer-events: auto;
   height: var(--save-button_height, auto);
   width: var(--save-button_width, auto);
@@ -8859,20 +8866,20 @@ fieldset[disabled] .btn {
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
-.explore-card__save-btn[class][class] {
+.explore-card__btn-wishlist-wrapper[class][class] {
   position: relative;
   -webkit-text-decoration: none;
   text-decoration: none;
   touch-action: manipulation;
 }
-.dir.explore-card__save-btn[class][class] {
+.dir.explore-card__btn-wishlist-wrapper[class][class] {
   cursor: pointer;
   text-align: center;
 }
-.explore-card__save-btn[class][class]:disabled {
+.explore-card__btn-wishlist-wrapper[class][class]:disabled {
   opacity: 0.3;
 }
-.dir.explore-card__save-btn[class][class]:disabled {
+.dir.explore-card__btn-wishlist-wrapper[class][class]:disabled {
   cursor: not-allowed;
 }
 /* /Explore card */
@@ -10121,7 +10128,6 @@ fieldset[disabled] .btn {
 }
 ._16sb0g4v,
 ._h69t7tv,
-._i5m7e6w,
 ._pawvzww {
   display: none!important
 }
@@ -10159,11 +10165,6 @@ fieldset[disabled] .btn {
 @media (min-width:1440px) {
   ._1lo0c2q {
     display: none!important
-  }
-}
-@media (min-width:1440px) {
-  ._i5m7e6w {
-    display: block!important
   }
 }
 @media (min-width:744px) {
