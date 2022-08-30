@@ -1,6 +1,6 @@
 import pkg from 'gulp';
-// const { src, dest, watch, series } = pkg;
-const { src, dest, series } = pkg;
+const { src, dest, watch, series } = pkg;
+// const { src, dest, series } = pkg;
 // import browserSync from 'browser-sync';
 // const bs = browserSync.create();
 // import cleanCss from 'gulp-clean-css';
@@ -45,6 +45,12 @@ export const pageStyles = () => {
 };
 
 export const build = series(globalStyles, pageStyles);
+
+export const watchAll = () => {
+  watch('src/**/*.css', series(globalStyles, pageStyles));
+};
+
+export default series(globalStyles, pageStyles, watchAll);
 
 // export const removeStyles = () => {
 //   return src('src/css/framework-module-alpha.css')
