@@ -1394,26 +1394,26 @@
   grid-column: 1/-1
 }
 @media (min-width:744px) {
-  ._f6kkd8 {
+  .explore-filter-menu__body {
     min-width: 400px!important
   }
 }
-.dir.c2oqrum[class][class] {
+.dir.explore-filter-menu__price[class][class] {
   padding-top: var(--fgg-f-l-a)
 }
-.s1kx2c1w[class][class] {
+.explore-filter-menu__price-title[class][class] {
   font-size: var(--iw-ehf-f);
   line-height: var(---s-l-myu);
   font-weight: var(--e-y-j-d-v-j);
   color: var(--fo-jk-r-s)
 }
-.dir.s1kx2c1w[class][class] {
+.dir.explore-filter-menu__price-title[class][class] {
   padding-bottom: var(--f-fw-z-a-i)
 }
-.hc7m3le[class][class] {
+.explore-filter-menu__price-spinner[class][class] {
   width: 90%
 }
-.dir.hc7m3le[class][class] {
+.dir.explore-filter-menu__price-spinner[class][class] {
   margin: auto
 }
 ._1da2uww {
@@ -1449,7 +1449,7 @@
     top: 12px!important
   }
 }
-._14j14ohv {
+.explore-filter-menu__spinner-line {
   background-color: #ddd!important;
   position: relative!important;
   border-radius: 2px!important;
@@ -1457,7 +1457,7 @@
   top: 0!important;
   width: 100%!important
 }
-._ejkfvn {
+.explore-filter-menu__spinner {
   height: 15px!important;
   top: -2px!important;
   left: -2px!important;
@@ -1465,7 +1465,7 @@
   width: 100%!important;
   position: absolute!important
 }
-._wi5p4oq {
+.explore-filter-menu__spinner-control {
   width: var(--rheostat-handle_size,27px)!important;
   height: var(--rheostat-handle_size,27px)!important;
   padding: 1px 7px!important;
@@ -1481,7 +1481,7 @@
   --rheostat-handle_size: 32px!important;
   --rheostat-handle--active_transform: scale(1.25)!important
 }
-._1d7u7v5 {
+.explore-filter-menu__spinner__icon {
   display: grid!important;
   width: 100%!important;
   height: 100%!important;
@@ -1490,17 +1490,17 @@
   gap: 2px!important;
   place-content: center!important
 }
-._8gded8 {
+.explore-filter-menu__spinner__icon-line {
   height: 8px!important;
   width: 1px!important;
   background-color: #b0b0b0!important
 }
 @media (min-width:744px) {
-  ._8gded8 {
+  .explore-filter-menu__spinner__icon-line {
     height: 12px!important
   }
 }
-._3ck9kxg {
+.explore-filter-menu__spinner-line-length {
   background-color: #b0b0b0!important;
   position: absolute!important;
   border-radius: 2px!important;
