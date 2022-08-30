@@ -2032,4 +2032,164 @@ fieldset[disabled] .btn {
   -ms-transform: scale(0.92);
   transform: scale(0.92);
 }
+.btn-wishlist {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  display: inline-block !important;
+  border-radius: 50% !important;
+  border: none !important;
+  outline: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #222 !important;
+  cursor: pointer !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  position: relative !important;
+  background: 0 0 !important;
+  -webkit-transition: -webkit-transform 0.25s, transform 0.25s !important;
+  -moz-transition: transform 0.25s !important;
+  transition: -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s !important;
+}
+.btn-wishlist:focus-visible {
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  box-shadow: none !important;
+}
+.btn-wishlist:focus-visible::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.btn-wishlist:focus-visible:focus::-moz-focus-inner {
+  border: none !important;
+}
+.btn-wishlist:focus-visible:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-wishlist:focus-visible {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.btn-wishlist:focus-visible::before {
+  box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+  background: #f7f7f7 !important;
+}
+.btn-wishlist:focus[data-focus-visible-added] {
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  box-shadow: none !important;
+}
+.btn-wishlist:focus[data-focus-visible-added]::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.btn-wishlist:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+  border: none !important;
+}
+.btn-wishlist:focus[data-focus-visible-added]:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-wishlist:focus[data-focus-visible-added] {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.btn-wishlist:focus[data-focus-visible-added]::before {
+  box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+  background: #f7f7f7 !important;
+}
+.btn-wishlist:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  color: #ddd !important;
+}
+.btn-wishlist:disabled::before {
+  background: 0 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-wishlist {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+@media (hover: hover) {
+  .btn-wishlist:hover {
+    color: #000 !important;
+  }
+  .btn-wishlist:hover::before {
+    background: #f7f7f7 !important;
+  }
+}
+.btn-wishlist:active {
+  color: #000 !important;
+  -webkit-transform: scale(0.92) !important;
+  -ms-transform: scale(0.92) !important;
+  transform: scale(0.92) !important;
+}
+.btn-wishlist:active::before {
+  background: #f7f7f7 !important;
+}
+.btn-wishlist::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.btn-wishlist:focus::-moz-focus-inner {
+  border: none !important;
+}
+.btn-wishlist:-moz-focusring {
+  outline: 0 !important;
+}
+.btn-wishlist::before {
+  content: '' !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+@media (hover: hover) {
+  .btn-wishlist:hover {
+    color: #000 !important;
+  }
+}
+@media (hover: hover) {
+  .btn-wishlist:hover::before {
+    background: #f7f7f7 !important;
+  }
+}
+.btn-wishlist {
+  appearance: none !important;
+  display: inline-block !important;
+  border-radius: 50% !important;
+  border: none !important;
+  outline: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #222 !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  position: relative !important;
+  background: 0 0 !important;
+  transition: -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s !important;
 /* /Buttons */
+}

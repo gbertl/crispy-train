@@ -1,0 +1,96 @@
+/* Next card */
+.next-card__time-list[class][class] {
+  scrollbar-width: none;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-padding: 50%;
+  scroll-snap-type: x mandatory;
+}
+.dir.next-card__time-list[class][class] {
+  padding: 0;
+}
+.dir-ltr.next-card__time-list[class][class] {
+  margin: var(--margin-top, 0) var(--margin-right, 0) var(--margin-bottom, 0)
+    var(--margin-left, 0);
+}
+.next-card__time-list[class][class]::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 744px) {
+  .next-card__time-list[class][class] {
+    overflow: visible;
+  }
+}
+.next-card__time-item[class][class] {
+  scroll-snap-align: center;
+}
+.dir.next-card__time-item[class][class] {
+  margin-bottom: var(--fgg-f-l-a);
+}
+.dir-ltr.next-card__time-item[class][class] {
+  margin-right: 6px;
+}
+.dir-ltr.next-card__time-item[class][class]:last-child {
+  margin-right: 0;
+}
+.next-card__btn[class][class] {
+  color: var(--f-k-smk-x);
+  font-weight: var(--jx-zk-pv);
+  white-space: nowrap;
+}
+.dir.next-card__btn[class][class] {
+  background: var(--f-mkcy-f);
+  border-radius: var(--i-g-gvoq);
+  box-shadow: var(--availability-list-item_box-shadow);
+  padding: var(--b-y-unon);
+}
+@media (min-width: 744px) {
+  .dir.next-card__btn[class][class] {
+    border-radius: var(--go-h-jh-l);
+    padding-top: var(--fgg-f-l-a);
+    padding-bottom: var(--fgg-f-l-a);
+  }
+}
+.next-card__btn-text-size[class][class] {
+  font-size: var(--f-cv-j-j-p);
+  line-height: var(--f-l-h-bac);
+}
+.next-card[class][class] {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.dir.next-card[class][class] {
+  border: 1px solid var(--j-qkgmf);
+  border-radius: var(--i-g-gvoq);
+  padding: var(--b-y-unon);
+}
+.dir-ltr.next-card[class][class] {
+  padding-right: var(--jaa-ni-h);
+}
+.next-card__media[class][class] {
+  width: 123px;
+}
+.next-card__body[class][class] {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.dir-ltr.next-card__body[class][class] {
+  margin-left: var(--jaa-ni-h);
+}
+.next-card__btn-wishlist-wrapper[class][class] {
+  display: flex;
+  align-self: flex-end;
+  height: 20px;
+}
+.dir.next-card__btn-wishlist-wrapper[class][class] {
+  margin-bottom: var(--h-x-sf-jw);
+}
+.next-card__price-info[class][class] {
+  font-size: var(--c-zdwk-p);
+  line-height: var(--j-p-z-kco);
+}
+/* /Next card */
