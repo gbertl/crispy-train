@@ -73,7 +73,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     });
 
     document.addEventListener('click', (e) => {
-      const modalBody = modal.querySelector('.contents');
+      const modalBody = modal.querySelector('._z4lmgp');
       if (!modalBody.contains(e.target) && !e.target.closest('[data-modal]')) {
         closeModal();
       }
