@@ -4580,7 +4580,7 @@
 .stretched-link-rounder:-moz-focusring {
   outline: 0 !important;
 }
-.expanded-link {
+.meet-host-card {
   background: 0 0 !important;
   border: none !important;
   color: inherit !important;
@@ -5653,46 +5653,46 @@
     text-align: center !important;
   }
 }
-.grouped-nav-listing-card-image-container {
+.meet-host-card__lite-image-wrapper {
   border-radius: 8px !important;
   margin-bottom: 8px !important;
   overflow: hidden !important;
 }
 @media (min-width: 744px) {
-  .grouped-nav-listing-card-image-container {
+  .meet-host-card__lite-image-wrapper {
     border-radius: 12px !important;
   }
 }
 @media (min-width: 1128px) {
-  .grouped-nav-listing-card-image-container {
+  .meet-host-card__lite-image-wrapper {
     margin-bottom: 24px !important;
   }
 }
-.grouped-nav-listing-card-title {
+.meet-host-card__title {
   font-size: 16px !important;
   line-height: 20px !important;
   font-weight: 800 !important;
   margin-bottom: 4px !important;
 }
 @media (min-width: 1128px) {
-  .grouped-nav-listing-card-title {
+  .meet-host-card__title {
     font-size: 18px !important;
     line-height: 24px !important;
   }
 }
-.grouped-nav-listing-card-subtitle {
+.meet-host-card__subtitle {
   margin-bottom: 4px !important;
 }
 @media (min-width: 1128px) {
-  .grouped-nav-listing-card-subtitle {
+  .meet-host-card__subtitle {
     margin-bottom: 8px !important;
   }
 }
-.grouped-nav-listing-card-text {
+.meet-host-card__text {
   display: none !important;
 }
 @media (min-width: 1128px) {
-  .grouped-nav-listing-card-text {
+  .meet-host-card__text {
     font-size: 16px !important;
     line-height: 24px !important;
     display: block !important;
