@@ -30818,7 +30818,7 @@ html :where(img[class*='wp-image-']) {
   margin: 0 auto !important;
   max-width: 560px !important;
 }
-._1i7ccu91 {
+.page-shell-mobile {
   position: relative !important;
   z-index: 0 !important;
   min-height: -webkit-calc(100vh + 65px) !important;
@@ -31183,10 +31183,10 @@ html :where(img[class*='wp-image-']) {
     ) !important;
   }
 }
-._mwt4r90:before {
+.page-container:before {
   display: table !important;
 }
-._mwt4r90:after {
+.page-container:after {
   clear: both !important;
   display: table !important;
 }
@@ -33114,19 +33114,19 @@ tr.show-desktop {
     transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility 0.2s !important;
   z-index: 1 !important;
 }
-._1i7ccu91 {
+.page-shell-mobile {
   position: relative !important;
   z-index: 0 !important;
   min-height: calc(100vh + 65px) !important;
 }
 @supports (padding: env(safe-area-inset-bottom)) {
-  ._1i7ccu91 {
+  .page-shell-mobile {
     padding-left: env(safe-area-inset-left) !important;
     padding-right: env(safe-area-inset-right) !important;
   }
 }
 @media (min-width: 744px) {
-  ._1i7ccu91 {
+  .page-shell-mobile {
     display: none;
   }
 }
@@ -40465,29 +40465,29 @@ tr.show-desktop {
 ._18tkw86 {
   margin-bottom: 24px !important;
 }
-._mwt4r90 {
+.page-container {
   margin-left: auto !important;
   margin-right: auto !important;
   width: auto !important;
   padding-right: 24px !important;
   padding-left: 24px !important;
 }
-._mwt4r90:before {
+.page-container:before {
   content: '' !important;
   display: table !important;
 }
-._mwt4r90:after {
+.page-container:after {
   clear: both !important;
   content: '' !important;
   display: table !important;
 }
 @media (min-width: 744px) {
-  ._mwt4r90 {
+  .page-container {
     max-width: 696px !important;
   }
 }
 @media (min-width: 1128px) {
-  ._mwt4r90 {
+  .page-container {
     max-width: 1080px !important;
   }
 }
@@ -44459,10 +44459,10 @@ tr.show-desktop {
   height: 100% !important;
   position: unset !important;
 }
-._is5jnq {
+.page-shell-max-lg-plus {
   --page-shell-max-content-width: 1440px !important;
 }
-._16grqhk {
+.page-shell {
   position: relative !important;
   min-height: 100vh !important;
 }
