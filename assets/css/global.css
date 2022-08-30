@@ -4144,6 +4144,9 @@ select[disabled] {
 .ml2 {
   margin-left: 16px;
 }
+.mr2 {
+  margin-right: 16px;
+}
 .p2 {
   padding: 16px;
 }
@@ -4874,6 +4877,10 @@ select[disabled] {
   content: ' ' !important;
   display: table !important;
   clear: both !important;
+}
+
+.cursor-pointer {
+  	cursor: pointer;
 }
 /* /Utilities */
 
@@ -13126,12 +13133,12 @@ fieldset[disabled] .btn {
   font-weight: 600!important;
   padding-bottom: 24px!important
 }
-._q4izx9 {
+.explore-filter-menu__list-item {
   padding-top: 12px!important;
   padding-bottom: 12px!important
 }
 @media (min-width:744px) {
-  ._q4izx9 {
+  .explore-filter-menu__list-item {
     min-width: 320px!important
   }
 }

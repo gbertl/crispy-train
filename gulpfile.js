@@ -1,6 +1,6 @@
 import pkg from 'gulp';
-const { src, dest, watch, series } = pkg;
-// const { src, dest, series } = pkg;
+// const { src, dest, watch, series } = pkg;
+const { src, dest, series, task, watch } = pkg;
 // import browserSync from 'browser-sync';
 // const bs = browserSync.create();
 // import cleanCss from 'gulp-clean-css';
@@ -59,3 +59,8 @@ export default series(globalStyles, pageStyles, watchAll);
 //     }))
 //     .pipe(dest('build/css'))
 // }
+
+
+task('watch', () => {
+  watch('./src/**/*.css', build);
+})
