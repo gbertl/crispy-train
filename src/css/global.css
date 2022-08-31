@@ -1416,7 +1416,7 @@
 .dir.explore-filter-menu__price-spinner[class][class] {
   margin: auto
 }
-._1da2uww {
+.spinner-chart {
   -webkit-box-align: end!important;
   -webkit-box-pack: justify!important;
   position: relative!important;
@@ -1427,12 +1427,12 @@
   align-items: flex-end!important
 }
 @media (min-width:1128px) {
-  ._1da2uww {
+  .spinner-chart {
     margin-top: 0!important;
     top: 19px!important
   }
 }
-._1bf80wz8 {
+.spinner-chart__bar {
   display: inline-block!important;
   border-top-left-radius: 1px!important;
   border-top-right-radius: 1px!important;
@@ -1440,12 +1440,12 @@
   margin-right: 1px!important;
   background: #b0b0b0!important
 }
-._sh9qj2d {
+.spinner-chart__line-wrapper {
   position: relative!important;
   overflow: visible!important
 }
 @media (min-width:1128px) {
-  ._sh9qj2d {
+  .spinner-chart__line-wrapper {
     top: 12px!important
   }
 }
@@ -1544,20 +1544,20 @@
   height: 2px!important;
   top: 0!important
 }
-.i15dzz3r[class][class] {
+.spinner-chart__input[class][class] {
   display: flex;
   justify-content: center;
   align-items: center
 }
-.dir.iy39vcr[class][class] {
+.dir.spinner-chart__input-wrapper[class][class] {
   margin-top: var(--ikx-k-pe)
 }
 @media (min-width:744px) {
-  .dir.iy39vcr[class][class] {
+  .dir.spinner-chart__input-wrapper[class][class] {
     margin-top: 36px
   }
 }
-.dir.sqef0rt[class][class] {
+.dir.spinner-chart__input-space[class][class] {
   margin: var(--fgg-f-l-a)
 }
 ._egiopl {
@@ -1804,7 +1804,7 @@
 .lnq7699[class][class] {
   display: flex
 }
-._1ubyg61 {
+.explore-filter-menu__switch {
   -webkit-box-align: center!important;
   -webkit-box-pack: justify!important;
   color: #222!important;
@@ -1816,17 +1816,17 @@
   align-items: center!important
 }
 @media (min-width:744px) {
-  ._1ubyg61 {
+  .explore-filter-menu__switch {
     min-width: 320px!important
   }
 }
-._67jjmd {
+.explore-filter-menu__switch-title {
   display: inline-block!important;
   font-weight: 400!important;
   font-size: 16px!important;
   line-height: 20px!important
 }
-._6gg9ez {
+.form__switch-label {
   padding-top: 4px!important;
   font-size: 14px!important;
   line-height: 18px!important;
