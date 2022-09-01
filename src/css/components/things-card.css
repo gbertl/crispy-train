@@ -1,0 +1,48 @@
+/* Things Card */
+.things-card__title[class][class] {
+  color: var(--f-k-smk-x);
+  font-size: var(--fy-rs-ca);
+  line-height: var(--d-ar-t-o-n);
+  font-weight: var(--jx-zk-pv);
+  display: block;
+}
+.things-card[class][class] {
+  display: block;
+}
+.dir.things-card__inner[class][class] {
+  padding: 25px;
+}
+.things-card__position[class][class] {
+  position: relative;
+}
+.things-card__outer[class][class] {
+  outline: 0;
+}
+.dir.things-card__outer[class][class] {
+  border-radius: inherit;
+  margin-top: 1px;
+}
+.dir.things-card__outer[class][class]::-moz-focus-inner {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.dir.things-card__outer[class][class]:focus::-moz-focus-inner {
+  border: none;
+}
+.things-card__outer[class][class]:-moz-focusring {
+  outline: 0;
+}
+.things-card__z-index[class][class] {
+  z-index: 1;
+}
+.dir.things-card__outer[class][class]:focus-visible {
+  transition: box-shadow 0.2s;
+  box-shadow: 0 0 0 2px var(--f-k-smk-x);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.things-card__outer[class][class]:focus-visible {
+    transition: none;
+  }
+}
+/* /Things Card */
