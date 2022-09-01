@@ -2552,4 +2552,42 @@ fieldset[disabled] .btn {
   font-size: 14px !important;
   line-height: 18px !important;
 }
+.filter-btn[class][class] {
+  display: none;
+}
+@media (min-width: 744px) {
+  .filter-btn[class][class] {
+    --chipsbar_separator-height: 32px;
+    display: grid;
+    flex: 0 0 auto;
+    min-width: calc(48px + var(--ikx-k-pe));
+    place-items: center;
+    position: relative;
+  }
+  @supports (flex-basis: fit-content) {
+    .filter-btn[class][class] {
+      flex-basis: fit-content;
+    }
+  }
+}
+.dir-ltr.filter-btn__wrapper[class][class] {
+  padding-left: var(--ikx-k-pe);
+}
+.filter-btn__inline-relative[class][class] {
+  display: inline-block;
+  position: relative;
+}
+.filter-btn__wrapper-space-between[class][class] .btn-filter-label[class][class] {
+  gap: var(--fgg-f-l-a);
+}
+.dir.filter-btn__wrapper-space-between[class][class] .btn-filter-label[class][class] {
+  padding-left: var(--jaa-ni-h);
+  padding-right: var(--jaa-ni-h);
+}
+.filter-btn__wrapper-space-between[class][class] .btn-filter__text[class][class] {
+  display: block;
+}
+.dir.filter-btn__wrapper-space-between[class][class] .btn-filter__text[class][class] {
+  transform: translateY(-1px);
+}
 /* /Buttons */
