@@ -292,7 +292,7 @@
     transform: scale(0.05);
   }
 }
-@keyframes fade-in-portrait-card-media-overlay-control-wrapper {
+@keyframes fade-in-card-long__overlay-control-wrapper {
   from {
     opacity: 0;
   }
@@ -300,7 +300,7 @@
     opacity: 1;
   }
 }
-@keyframes zoomIn-portrait-card-slide-zoom {
+@keyframes zoomIn-card-long__slide-zoom {
   from {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1147,7 +1147,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in-portrait-card-media-overlay-control-wrapper {
+@-webkit-keyframes fade-in-card-long__overlay-control-wrapper {
   from {
     opacity: 0;
   }
@@ -1155,7 +1155,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes zoomIn-portrait-card-slide-zoom {
+@-webkit-keyframes zoomIn-card-long__slide-zoom {
   from {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
