@@ -70,13 +70,6 @@
   line-height: 20px !important;
   font-weight: 400 !important;
 }
-.spinner-chart__input-label {
-  position: relative !important;
-  -webkit-flex: 1 !important;
-  -ms-flex: 1 1 0% !important;
-  flex: 1 !important;
-  padding: 0 !important;
-}
 .spinner-chart__input-currency-text {
   padding-top: 26px !important;
   padding-left: 12px !important;
@@ -123,11 +116,6 @@
 .spinner-chart__input-currency {
   display: flex !important;
   opacity: 1 !important;
-}
-.spinner-chart__input-label {
-  position: relative !important;
-  flex: 1 1 0% !important;
-  padding: 0 !important;
 }
 .spinner-chart__input-title-text {
   max-width: 100% !important;
