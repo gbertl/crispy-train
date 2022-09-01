@@ -14072,7 +14072,7 @@ h3:first-child {
   position: relative !important;
   outline: 0 !important;
 }
-._snbhip0:active {
+.btn-light:active {
   transform: scale(0.96) !important;
   border-color: var(--bgxgx) !important;
   background: var(---pc-g-v-g) !important;
@@ -36631,7 +36631,7 @@ tr.show-desktop {
 ._jwti9r:last-child {
   margin-bottom: 0 !important;
 }
-._snbhip0 {
+.btn-light {
   cursor: pointer !important;
   display: inline-block;
   margin: 0 !important;
@@ -36662,7 +36662,7 @@ tr.show-desktop {
   color: var(--f-k-smk-x) !important;
   width: 100% !important;
 }
-._snbhip0:focus-visible {
+.btn-light:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
@@ -36671,25 +36671,25 @@ tr.show-desktop {
   border-color: var(--f-k-smk-x) !important;
   color: var(--f-k-smk-x) !important;
 }
-._snbhip0:focus-visible::-moz-focus-inner {
+.btn-light:focus-visible::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-._snbhip0:focus-visible:focus::-moz-focus-inner {
+.btn-light:focus-visible:focus::-moz-focus-inner {
   border: none !important;
 }
-._snbhip0:focus-visible:-moz-focusring {
+.btn-light:focus-visible:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._snbhip0:focus-visible {
+  .btn-light:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-._snbhip0:focus[data-focus-visible-added] {
+.btn-light:focus[data-focus-visible-added] {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
@@ -36698,32 +36698,32 @@ tr.show-desktop {
   border-color: var(--f-k-smk-x) !important;
   color: var(--f-k-smk-x) !important;
 }
-._snbhip0:focus[data-focus-visible-added]::-moz-focus-inner {
+.btn-light:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-._snbhip0:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.btn-light:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none !important;
 }
-._snbhip0:focus[data-focus-visible-added]:-moz-focusring {
+.btn-light:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._snbhip0:focus[data-focus-visible-added] {
+  .btn-light:focus[data-focus-visible-added] {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  ._snbhip0:hover {
+  .btn-light:hover {
     border-color: var(--bgxgx) !important;
     background: var(---pc-g-v-g) !important;
     color: var(--f-k-smk-x) !important;
   }
 }
-._snbhip0:active {
+.btn-light:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
@@ -36731,7 +36731,7 @@ tr.show-desktop {
   background: var(---pc-g-v-g) !important;
   color: var(--f-k-smk-x) !important;
 }
-._snbhip0:disabled {
+.btn-light:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border-color: var(--j-qkgmf) !important;
@@ -36739,7 +36739,7 @@ tr.show-desktop {
   color: var(--j-qkgmf) !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._snbhip0 {
+  .btn-light {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
