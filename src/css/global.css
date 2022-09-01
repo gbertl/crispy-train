@@ -1393,55 +1393,6 @@
 .c12z5wi8[class][class] {
   grid-column: 1/-1
 }
-.spinner-chart {
-  -webkit-box-align: end!important;
-  -webkit-box-pack: justify!important;
-  position: relative!important;
-  top: 6px!important;
-  margin: 24px 2px 6px!important;
-  display: flex!important;
-  justify-content: space-between!important;
-  align-items: flex-end!important
-}
-@media (min-width:1128px) {
-  .spinner-chart {
-    margin-top: 0!important;
-    top: 19px!important
-  }
-}
-.spinner-chart__bar {
-  display: inline-block!important;
-  border-top-left-radius: 1px!important;
-  border-top-right-radius: 1px!important;
-  flex: 1 1 0%!important;
-  margin-right: 1px!important;
-  background: #b0b0b0!important
-}
-.spinner-chart__line-wrapper {
-  position: relative!important;
-  overflow: visible!important
-}
-@media (min-width:1128px) {
-  .spinner-chart__line-wrapper {
-    top: 12px!important
-  }
-}
-.spinner-chart__input[class][class] {
-  display: flex;
-  justify-content: center;
-  align-items: center
-}
-.dir.spinner-chart__input-wrapper[class][class] {
-  margin-top: var(--ikx-k-pe)
-}
-@media (min-width:744px) {
-  .dir.spinner-chart__input-wrapper[class][class] {
-    margin-top: 36px
-  }
-}
-.dir.spinner-chart__input-space[class][class] {
-  margin: var(--fgg-f-l-a)
-}
 ._egiopl {
   font-size: 22px!important;
   line-height: 26px!important;
