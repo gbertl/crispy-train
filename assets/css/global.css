@@ -211,7 +211,7 @@
       format('truetype');
   font-weight: 400;
   font-style: normal;
-} 
+}
 @font-face {
   font-family: Circular;
   unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
@@ -2686,7 +2686,7 @@ input[type='search']:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-html, 
+html,
 body{
   height: 100%;
   margin: 0;
@@ -10083,7 +10083,7 @@ fieldset[disabled] .btn {
   background: var(--f-k-smk-x) !important;
   color: var(--f-mkcy-f) !important;
 }
-.btn-light {
+.btn-light-small {
   cursor: pointer !important;
   display: inline-block !important;
   margin: 0 !important;
@@ -10113,64 +10113,64 @@ fieldset[disabled] .btn {
   color: var(--f-k-smk-x) !important;
   background: var(--f-mkcy-f) !important;
 }
-.btn-light:focus-visible {
+.btn-light-small:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
-.btn-light:focus-visible::-moz-focus-inner {
+.btn-light-small:focus-visible::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.btn-light:focus-visible:focus::-moz-focus-inner {
+.btn-light-small:focus-visible:focus::-moz-focus-inner {
   border: none !important;
 }
-.btn-light:focus-visible:-moz-focusring {
+.btn-light-small:focus-visible:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn-light:focus-visible {
+  .btn-light-small:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.btn-light:focus[data-focus-visible-added] {
+.btn-light-small:focus[data-focus-visible-added] {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
-.btn-light:focus[data-focus-visible-added]::-moz-focus-inner {
+.btn-light-small:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.btn-light:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.btn-light-small:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none !important;
 }
-.btn-light:focus[data-focus-visible-added]:-moz-focusring {
+.btn-light-small:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn-light:focus[data-focus-visible-added] {
+  .btn-light-small:focus[data-focus-visible-added] {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  .btn-light:hover {
+  .btn-light-small:hover {
     border: none !important;
     color: var(--f-k-smk-x) !important;
     background: var(--d-nc-lt-s) !important;
   }
 }
-.btn-light:active {
+.btn-light-small:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
@@ -10178,7 +10178,7 @@ fieldset[disabled] .btn {
   background: var(--d-nc-lt-s) !important;
   color: var(--f-k-smk-x) !important;
 }
-.btn-light:disabled {
+.btn-light-small:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
@@ -10186,7 +10186,7 @@ fieldset[disabled] .btn {
   color: #878787 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn-light {
+  .btn-light-small {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
