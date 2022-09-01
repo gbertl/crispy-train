@@ -10503,7 +10503,7 @@ h3:first-child {
   animation-timing-function: ease !important;
   overflow: scroll hidden !important;
 }
-._4h7qxrh {
+.header-search__date-options-wrapper {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
   padding-right: 40px !important;
@@ -10511,19 +10511,19 @@ h3:first-child {
   white-space: nowrap !important;
   display: flex !important;
 }
-._o1ze55 {
+.header-search__date-option-exact-dates {
   display: inline-block !important;
   margin-left: 40px !important;
 }
-._e5a5cx {
+.header-search__date-option-text {
   padding: 0 2px !important;
   font-size: 12px !important;
 }
-._15d5hz0 {
+.header-search__date-option {
   display: inline-block !important;
   margin-left: 10px !important;
 }
-._1i4a5vz {
+.header-search__date-option-icon {
   display: inline-block !important;
   position: relative !important;
   top: 4px !important;
@@ -41089,7 +41089,7 @@ tr.show-desktop {
   display: flex !important;
   justify-content: space-between !important;
 }
-._12i6oakv {
+.header-search__date-btn-selected {
   cursor: pointer !important;
   text-align: center !important;
   border: 1px solid #222 !important;
@@ -41125,7 +41125,7 @@ tr.show-desktop {
   color: #222 !important;
   border-color: #222 !important;
 }
-._12i6oakv::after,
+.header-search__date-btn-selected::after,
 ._1vwho579::after {
   content: '' !important;
   width: calc(100% + 2px) !important;
