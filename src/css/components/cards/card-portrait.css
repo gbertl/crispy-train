@@ -1,0 +1,97 @@
+/* Card Portrait */
+.card-portrait__media-container {
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: -webkit-radial-gradient(white, #000);
+  mask-image: -webkit-radial-gradient(white, #000);
+  -webkit-mask-image: -webkit-radial-gradient(white, #000);
+}
+@supports (overflow: clip) {
+  .card-portrait__media-container {
+    overflow: clip;
+  }
+}
+.card-portrait__media-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.dir.card-portrait__media-container::after {
+  border-radius: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dir-ltr.card-portrait__media-container::after {
+  left: 0;
+  right: 0;
+}
+.dir-ltr.card-portrait__rounded-bl {
+  border-bottom-left-radius: var(--media-container_border-radius);
+}
+.dir-ltr.card-portrait__rounded-br {
+  border-bottom-right-radius: var(--media-container_border-radius);
+}
+.dir-ltr.card-portrait__rounded-tl {
+  border-top-left-radius: var(--media-container_border-radius);
+}
+.dir-ltr.card-portrait__rounded-tr {
+  border-top-right-radius: var(--media-container_border-radius);
+}
+.card-portrait {
+  font-weight: var(--e-y-j-d-v-j);
+  color: var(--f-k-smk-x);
+  position: relative;
+}
+.card-portrait--inactive {
+  opacity: 0.6;
+}
+.card-portrait__link {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  outline: 0;
+}
+.dir.card-portrait__link {
+  border-radius: var(--i-g-gvoq);
+}
+.dir-ltr.card-portrait__link {
+  left: 0;
+}
+.dir.card-portrait__link::-moz-focus-inner {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.dir.card-portrait__link:focus::-moz-focus-inner {
+  border: none;
+}
+.card-portrait__link:-moz-focusring {
+  outline: 0;
+}
+.card-portrait__link:focus-visible {
+  transition: box-shadow 0.2s;
+}
+.dir.card-portrait__link:focus-visible {
+  -webkit-transition: box-shadow 0.2s;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-portrait__link:focus-visible {
+    transition: none;
+  }
+  .dir.card-portrait__link:focus-visible {
+    -webkit-transition: none;
+  }
+}
+.dir.card-portrait__media {
+  margin-bottom: var(--fgg-f-l-a);
+}
+@media (min-width: 744px) {
+  .dir.card-portrait__media {
+    margin-bottom: 10px;
+  }
+}
+/* /Card Portrait */
