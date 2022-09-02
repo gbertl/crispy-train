@@ -9995,7 +9995,7 @@ h3:first-child {
   display: grid;
   grid-template-columns: 100%;
 }
-.c1pbo4kt[class][class] {
+.card__slides_item_wrapper[class][class] {
   flex-direction: column;
   grid-area: 1/1/2/2;
   height: 100%;
@@ -10003,18 +10003,18 @@ h3:first-child {
   opacity: 0;
   z-index: 2;
 }
-.dir.c1pbo4kt[class][class] {
+.dir.card__slides_item_wrapper[class][class] {
   margin: 0;
   padding-top: 0;
 }
 .card__slides-content[class][class] {
   grid-area: 1/1/2/2;
 }
-.cikyho8[class][class] {
+.card__slides_item_wrapper-visibility[class][class] {
   display: none;
 }
 @supports (content-visibility: hidden) {
-  .cikyho8[class][class] {
+  .card__slides_item_wrapper-visibility[class][class] {
     content-visibility: hidden;
     display: flex;
   }
