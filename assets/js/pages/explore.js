@@ -36,9 +36,9 @@ const toggleModal = (type) => {
     switch (type) {
         case 'addguests':
             const whoButton = document.querySelector('[data-testid=structured-search-input-field-guests-button]').classList
-            whoButton.contains('b174x59c')
-                ? whoButton.replace('b174x59c', 'b1odri3w')
-                : whoButton.replace('b1odri3w', 'b174x59c')
+            whoButton.contains('header__search-tabs-filter-btn-container-inactive')
+                ? whoButton.replace('header__search-tabs-filter-btn-container-inactive', 'header__search-tabs-filter-btn-container-active')
+                : whoButton.replace('header__search-tabs-filter-btn-container-active', 'header__search-tabs-filter-btn-container-inactive')
 
             const searchWho = document.querySelector('#search-who').classList
             searchWho.contains('hidden')
@@ -47,10 +47,10 @@ const toggleModal = (type) => {
             break;
 
         case 'anyweek':
-            const checkInButton = document.querySelectorAll('.b174x59c, .b1odri3w')[0].classList
-            checkInButton.contains('b174x59c')
-                ? checkInButton.replace('b174x59c', 'b1odri3w')
-                : checkInButton.replace('b1odri3w', 'b174x59c')
+            const checkInButton = document.querySelectorAll('.header__search-tabs-filter-btn-container-inactive, .header__search-tabs-filter-btn-container-active')[0].classList
+            checkInButton.contains('header__search-tabs-filter-btn-container-inactive')
+                ? checkInButton.replace('header__search-tabs-filter-btn-container-inactive', 'header__search-tabs-filter-btn-container-active')
+                : checkInButton.replace('header__search-tabs-filter-btn-container-active', 'header__search-tabs-filter-btn-container-inactive')
 
             const anyweekPanel = document.querySelector('#anyweek-panel').classList
             anyweekPanel.contains('hidden')
@@ -59,59 +59,59 @@ const toggleModal = (type) => {
             break;
 
         case 'anywhere':
-            const anywhereLabel = document.querySelectorAll('.ix85u26, .i1eek2sl')
+            const anywhereLabel = document.querySelectorAll('.header__search-tabs-filter-where-hide, .header__search-tabs-filter-where-show')
                 .forEach((target) => {
                     const classList = target.classList
-                    classList.contains('ix85u26')
-                        ? classList.replace('ix85u26', 'i1eek2sl')
-                        : classList.replace('i1eek2sl', 'ix85u26')
+                    classList.contains('header__search-tabs-filter-where-hide')
+                        ? classList.replace('header__search-tabs-filter-where-hide', 'header__search-tabs-filter-where-show')
+                        : classList.replace('header__search-tabs-filter-where-show', 'header__search-tabs-filter-where-hide')
                 })
 
-            const content = document.querySelector('.p1jg7hjv').classList
-            content.contains('p5mmcz9')
-                ? content.remove('p5mmcz9')
-                : content.add('p5mmcz9')
+            const content = document.querySelector('.header__search-tabs-filter-where-body').classList
+            content.contains('header__search-tabs-filter-where-body-show')
+                ? content.remove('header__search-tabs-filter-where-body-show')
+                : content.add('header__search-tabs-filter-where-body-show')
             break;
 
         default:
             return;
     }
 
-    const header = document.querySelectorAll('.cxy853f, .cn7o9ly')
+    const header = document.querySelectorAll('.header__search-tabs-hide, .header__search-tabs-show')
         .forEach((target) => {
             const classList = target.classList
-            classList.contains('cxy853f')
-                ? classList.replace('cxy853f', 'cn7o9ly')
-                : classList.replace('cn7o9ly', 'cxy853f')
+            classList.contains('header__search-tabs-hide')
+                ? classList.replace('header__search-tabs-hide', 'header__search-tabs-show')
+                : classList.replace('header__search-tabs-show', 'header__search-tabs-hide')
         })
 
-    const filters = document.querySelectorAll('.lr5v90m, .l1h6eamc')
+    const filters = document.querySelectorAll('.header__search-content, .l1h6eamc')
         .forEach((target) => {
             const classList = target.classList
-            classList.contains('lr5v90m')
-                ? classList.replace('lr5v90m', 'l1h6eamc')
-                : classList.replace('l1h6eamc', 'lr5v90m')
+            classList.contains('header__search-content')
+                ? classList.replace('header__search-content', 'l1h6eamc')
+                : classList.replace('l1h6eamc', 'header__search-content')
         })
 
-    const filtersWrapper = document.querySelectorAll('.b1t24mo5, .b12rw3s8')
+    const filtersWrapper = document.querySelectorAll('.header__search-tabs-content-transition-hide, .header__search-tabs-content-transition-show')
         .forEach((target) => {
             const classList = target.classList
-            classList.contains('b1t24mo5')
-                ? classList.replace('b1t24mo5', 'b12rw3s8')
-                : classList.replace('b12rw3s8', 'b1t24mo5')
+            classList.contains('header__search-tabs-content-transition-hide')
+                ? classList.replace('header__search-tabs-content-transition-hide', 'header__search-tabs-content-transition-show')
+                : classList.replace('header__search-tabs-content-transition-show', 'header__search-tabs-content-transition-hide')
         })
 
     const searchTablPanel = document.querySelector('#search-tabpanel').classList
-    searchTablPanel.contains('c1oqx6sn')
-        ? searchTablPanel.replace('c1oqx6sn', 'ceyij5b')
-        : searchTablPanel.replace('ceyij5b', 'c1oqx6sn')
+    searchTablPanel.contains('header__search-tabs-filter-hide')
+        ? searchTablPanel.replace('header__search-tabs-filter-hide', 'header__search-tabs-filter-show')
+        : searchTablPanel.replace('header__search-tabs-filter-show', 'header__search-tabs-filter-hide')
 
-    const searchButton = document.querySelectorAll('.bu69x9v, .b14gupvm')
+    const searchButton = document.querySelectorAll('.header__search-tabs-filter-searchBtn-hide, .header__search-tabs-filter-searchBtn-show')
         .forEach((target) => {
             const classList = target.classList
-            classList.contains('bu69x9v')
-                ? classList.replace('bu69x9v', 'b14gupvm')
-                : classList.replace('b14gupvm', 'bu69x9v')
+            classList.contains('header__search-tabs-filter-searchBtn-hide')
+                ? classList.replace('header__search-tabs-filter-searchBtn-hide', 'header__search-tabs-filter-searchBtn-show')
+                : classList.replace('header__search-tabs-filter-searchBtn-show', 'header__search-tabs-filter-searchBtn-hide')
         })
 
     const searchButtonIcon = document.querySelector('#search-btn-text').classList
@@ -119,7 +119,7 @@ const toggleModal = (type) => {
         ? searchButtonIcon.remove('hidden')
         : searchButtonIcon.add('hidden')
 
-    const searchButtonhText = document.querySelector('.c8th90').classList
+    const searchButtonhText = document.querySelector('.header__search-tabs-filter-searchBtn-content').classList
     searchButtonhText.contains('hidden')
         ? searchButtonhText.remove('hidden')
         : searchButtonhText.add('hidden')
@@ -142,7 +142,7 @@ document.querySelectorAll('#anywhere-btn, #anyweek-btn, #addguests-btn')
 
 document.addEventListener('click', (e) => {
     const modalBody = document.querySelector('.h1wqqi3k')
-    if (!modalBody.contains(e.target) || e.target.classList.contains('o8h0gdx')) {
+    if (!modalBody.contains(e.target) || e.target.classList.contains('header__search-backdrop')) {
         toggleModal(tabId)
         tabId = null
     }
