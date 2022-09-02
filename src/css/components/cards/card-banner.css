@@ -1,5 +1,5 @@
-/* New card */
-.new-card__container {
+/* Card Banner */
+.card-banner__container {
   display: block !important;
   border-radius: 12px !important;
   border: 0 !important;
@@ -13,18 +13,18 @@
   height: calc(1.25 * (100vw - 80px)) !important;
 }
 @media (min-width: 744px) {
-  .new-card__container {
+  .card-banner__container {
     height: 330px !important;
   }
 }
-.new-card__img-wrapper {
+.card-banner__img-wrapper {
   position: absolute !important;
   bottom: -1px !important;
   right: -1px !important;
   left: -1px !important;
   top: -1px !important;
 }
-.new-card__body {
+.card-banner__body {
   -webkit-box-align: start !important;
   -ms-flex-align: start !important;
   -webkit-box-direction: normal !important;
@@ -45,44 +45,44 @@
   padding: 20px !important;
 }
 @media (min-width: 744px) {
-  .new-card__body {
+  .card-banner__body {
     padding: 24px !important;
   }
 }
-.new-card__heading {
+.card-banner__heading {
   -webkit-flex: 1 !important;
   -ms-flex: 1 1 0% !important;
   flex: 1 !important;
 }
 @media (min-width: 744px) {
-  .new-card__heading {
+  .card-banner__heading {
     width: 300px !important;
   }
 }
 @media (min-width: 1128px) {
-  .new-card__heading {
+  .card-banner__heading {
     width: 235px !important;
   }
 }
-.new-card__subtitle {
+.card-banner__subtitle {
   font-size: 12px !important;
   line-height: 16px !important;
   font-weight: 400 !important;
   margin-bottom: 2px !important;
 }
-.new-card__title {
+.card-banner__title {
   font-size: 22px !important;
   line-height: 26px !important;
   font-weight: 600 !important;
   letter-spacing: -0.2px !important;
 }
 @media (min-width: 1440px) {
-  .new-card__title {
+  .card-banner__title {
     font-size: 26px !important;
     line-height: 30px !important;
   }
 }
-.dir.new-card[class][class] {
+.dir.card-banner[class][class] {
   cursor: pointer;
 }
-/* /New card */
+/* /Card Banner */
