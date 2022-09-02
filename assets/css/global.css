@@ -15595,12 +15595,12 @@ button[data-testid=cypress-headernav-profile]:focus + .c3i7glo[class][class] {
   }
 }
 @media (min-width:744px) {
-  .dir.card__location--click[class][class]:focus-visible {
+  .dir.card__location-click[class][class]:focus-visible {
     transition: box-shadow .2s;
     box-shadow: 0 0 0 2px rgba(255,255,255,.8),0 0 0 4px var(--f-k-smk-x)
   }
   @media (prefers-reduced-motion:reduce) {
-    .dir.card__location--click[class][class]:focus-visible {
+    .dir.card__location-click[class][class]:focus-visible {
       transition: none
     }
   }
