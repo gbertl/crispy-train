@@ -1,5 +1,5 @@
-/* Other Card */
-.other-card {
+/* Card Horizontal Basic */
+.card-horizontal-basic {
   -webkit-box-align: center !important;
   font-size: 16px !important;
   line-height: 20px !important;
@@ -8,17 +8,17 @@
   align-items: center !important;
   border-radius: 12px !important;
 }
-.other-card:focus-visible {
+.card-horizontal-basic:focus-visible {
   outline: 0 !important;
   transition: box-shadow 0.2s !important;
   box-shadow: rgb(0 0 0) 0 0 0 2px, rgb(255 255 255) 0 0 0 4px !important;
 }
 @media (min-width: 1128px) {
-  .other-card {
+  .card-horizontal-basic {
     border-radius: 8px !important;
   }
 }
-.other-card__media {
+.card-horizontal-basic__media {
   position: relative !important;
   background-color: #ddd !important;
   overflow: hidden !important;
@@ -28,32 +28,32 @@
   margin-right: 12px !important;
 }
 @media (min-width: 744px) {
-  .other-card__media {
+  .card-horizontal-basic__media {
     margin-right: 16px !important;
   }
 }
 @media (min-width: 1128px) {
-  .other-card__media {
+  .card-horizontal-basic__media {
     flex: 0 0 64px !important;
     height: 64px !important;
     border-radius: 8px !important;
   }
 }
-.other-card__body {
+.card-horizontal-basic__body {
   -webkit-box-flex: 1 !important;
   flex-grow: 1 !important;
   display: flex !important;
   flex-wrap: wrap !important;
   overflow-x: hidden !important;
 }
-.other-card__text {
+.card-horizontal-basic__text {
   flex: 0 1 100% !important;
   text-overflow: ellipsis !important;
   overflow: hidden !important;
   white-space: nowrap !important;
   padding-bottom: 2px !important;
 }
-.other-card__text:last-child {
+.card-horizontal-basic__text:last-child {
   padding-bottom: 0 !important;
 }
-/* /Other Card */
+/* /Card Horizontal Basic */
