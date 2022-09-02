@@ -1,20 +1,20 @@
-/* Entry card */
-.entry-card__subtitle {
+/* Card Alt 5 */
+.card-alt-5__subtitle {
   text-transform: uppercase !important;
   font-size: 12px !important;
 }
 @media (min-width: 1128px) {
-  .entry-card__text {
+  .card-alt-5__text {
     width: 85% !important;
   }
 }
-.entry-card__title {
+.card-alt-5__title {
   letter-spacing: -0.25px !important;
 }
-.entry-card__letter-spacing {
+.card-alt-5__letter-spacing {
   letter-spacing: 0.2px !important;
 }
-.entry-card__lite-image__container {
+.card-alt-5__lite-image-container {
   position: absolute !important;
   top: 50% !important;
   -webkit-transform: translateY(-50%) !important;
@@ -22,7 +22,7 @@
   transform: translateY(-50%) !important;
   width: 100% !important;
 }
-.entry-card__img-overlay {
+.card-alt-5__img-overlay {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -31,11 +31,11 @@
   padding: 0 15% !important;
   text-align: center !important;
 }
-.entry-card__img-overlay-title {
+.card-alt-5__img-overlay-title {
   font-size: 36px !important;
   font-weight: 800 !important;
   letter-spacing: 0 !important;
   line-height: 40px !important;
   text-shadow: 0 0 60px rgba(0, 0, 0, 0.4) !important;
 }
-/* /Entry card */
+/* /Card Alt 5 */
