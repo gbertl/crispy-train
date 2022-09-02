@@ -7727,7 +7727,7 @@ select[disabled] {
     ) !important;
   }
 }
-._le6wlg {
+.section-container {
   -webkit-box-lines: multiple !important;
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
@@ -24454,14 +24454,14 @@ html :where(img[class*='wp-image-']) {
 }
 
 @media (min-width: 1440px) {
-  ._le6wlg {
+  .section-container {
     max-width: none !important;
     padding-left: var(--gp-padding-xlargeAndAbove, 80px) !important;
     padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
   }
 }
 @media print {
-  ._le6wlg {
+  .section-container {
     max-width: 100% !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -39459,7 +39459,7 @@ tr.show-desktop {
     display: none !important;
   }
 }
-._le6wlg {
+.section-container {
   -webkit-box-lines: multiple !important;
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
@@ -39484,25 +39484,25 @@ tr.show-desktop {
   margin-right: 0 !important;
 }
 @media (min-width: 375px) {
-  ._le6wlg {
+  .section-container {
     padding-left: var(--gp-padding-smallAndAbove, 24px) !important;
     padding-right: var(--gp-padding-smallAndAbove, 24px) !important;
   }
 }
 @media (min-width: 744px) {
-  ._le6wlg {
+  .section-container {
     padding-left: var(--gp-padding-mediumAndAbove, 40px) !important;
     padding-right: var(--gp-padding-mediumAndAbove, 40px) !important;
   }
 }
 @media (min-width: 950px) {
-  ._le6wlg {
+  .section-container {
     padding-left: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
     padding-right: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
   }
 }
 @media (min-width: 1128px) {
-  ._le6wlg {
+  .section-container {
     padding-left: var(--gp-padding-largeAndAbove, 80px) !important;
     padding-right: var(--gp-padding-largeAndAbove, 80px) !important;
   }
