@@ -28,14 +28,14 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
   document.querySelectorAll(btnOpenSelector).forEach((element) => {
     element.addEventListener('click', () => {
       document.body.classList.add('overflow-y-hidden');
-      document.querySelector(modalSelector).classList.remove('d-none');
+      document.querySelector(modalSelector).classList.remove('hidden');
     });
   });
 
   document.querySelectorAll(btnCloseSelector).forEach((element) => {
     element.addEventListener('click', () => {
       document.body.classList.remove('overflow-y-hidden');
-      document.querySelector(modalSelector).classList.add('d-none');
+      document.querySelector(modalSelector).classList.add('hidden');
     });
   });
 };
@@ -49,11 +49,11 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     const openModal = () => {
       document.body.classList.add('overflow-y-hidden')
-      modal.classList.remove('d-none')
+      modal.classList.remove('hidden')
     };
     const closeModal = () => {
       document.body.classList.remove('overflow-y-hidden')
-      modal.classList.add('d-none')
+      modal.classList.add('hidden')
     };
 
     e.addEventListener('click', (e) => {

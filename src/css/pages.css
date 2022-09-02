@@ -6492,9 +6492,7 @@
 .dir.card-portrait__btn-play:focus-visible {
   background: rgba(255, 255, 255, 0.16);
 }
-.relative {
-  position: relative;
-}
+
 .card-portrait__overlay {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6600,9 +6598,7 @@
   animation-timing-function: ease-out;
 }
 
-.relative {
-  position: relative;
-}
+
 .card-portrait__carousel {
   position: absolute;
   bottom: 0;
@@ -28790,7 +28786,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 @media (min-width: 1200px) {
-  .d-lg-flex {
+  .flex-lg {
     display: flex !important;
   }
 }
@@ -47512,9 +47508,7 @@ tr.show-desktop {
 .atm_vv_1q9ccgz {
   white-space: nowrap;
 }
-.atm_9s_glywfm {
-  display: none;
-}
+
 .d13up9z1[class][class] {
   width: 8px;
   height: 8px;
@@ -47849,9 +47843,7 @@ tr.show-desktop {
   padding-bottom: 12px !important;
   flex: 0 0 50% !important;
 }
-.atm_9s_1txwivl {
-  display: flex;
-}
+
 ._1oj8hra {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
@@ -49521,9 +49513,7 @@ a:hover {
   font-weight: 600 !important;
   text-decoration: underline !important;
 }
-._1u9fru1 {
-  display: none !important;
-}
+
 ._xtka45 {
   height: 220px !important;
 }
@@ -49802,9 +49792,7 @@ a:hover {
 .dir.atm_gi_idpfg4 {
   margin: 0;
 }
-.atm_mk_h2mmj6 {
-  position: relative;
-}
+
 .dir.atm_r3_1h6ojuz {
   text-align: center;
 }
@@ -49911,9 +49899,7 @@ a:hover {
 .atm_vy_1osqo2v {
   width: 100%;
 }
-.atm_9s_1ulexfb {
-  display: block;
-}
+
 .dir.atm_705yyq_idpfg4:not(:focus) {
   border: 0;
 }
@@ -51592,9 +51578,7 @@ a:hover {
   color: var(--f-mkcy-f) !important;
   width: 100% !important;
 }
-._e296pg {
-  position: relative !important;
-}
+
 ._qx2ic59 {
   -webkit-box-align: center !important;
   cursor: pointer !important;

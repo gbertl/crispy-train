@@ -5,10 +5,10 @@ document.querySelector('.btn-dark').addEventListener('click', (e) => {
   e.preventDefault();
   document
     .querySelectorAll('#site-content > section')
-    [counter].classList.add('d-none');
+    [counter].classList.add('hidden');
   document
     .querySelectorAll('#site-content > section')
-    [counter + 1].classList.remove('d-none');
+    [counter + 1].classList.remove('hidden');
 
   // update scale in progressbar
   if (counter === 0) {
@@ -22,7 +22,7 @@ document.querySelector('.btn-dark').addEventListener('click', (e) => {
   }
 
   // show back button
-  document.querySelector('._13ea8wp').classList.remove('d-none');
+  document.querySelector('._13ea8wp').classList.remove('hidden');
 
   if (counter === 3) {
     document.querySelector('.box-border').innerText = 'Finish';
@@ -36,10 +36,10 @@ document.querySelector('._13ea8wp').addEventListener('click', (e) => {
   e.preventDefault();
   document
     .querySelectorAll('#site-content > section')
-    [counter].classList.add('d-none');
+    [counter].classList.add('hidden');
   document
     .querySelectorAll('#site-content > section')
-    [counter - 1].classList.remove('d-none');
+    [counter - 1].classList.remove('hidden');
 
   // update scale in progressbar
   if (counter === 1) {
@@ -59,6 +59,6 @@ document.querySelector('._13ea8wp').addEventListener('click', (e) => {
   counter--;
 
   if (counter === 0) {
-    document.querySelector('._13ea8wp').classList.add('d-none');
+    document.querySelector('._13ea8wp').classList.add('hidden');
   }
 });

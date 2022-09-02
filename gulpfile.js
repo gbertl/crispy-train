@@ -54,8 +54,8 @@ export const watchMainStyles = () => {
   watch(['assets/css/**/*.css', './explore.html'], reload)
 }
 
-// export default series(globalStyles, pageStyles, watchAll);
-export default series(serve, watchMainStyles)
+export default series(globalStyles, pageStyles, watchAll);
+// export default series(serve, watchMainStyles)
 
 
 // export const removeStyles = () => {
