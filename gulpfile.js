@@ -1,29 +1,29 @@
 import pkg from 'gulp';
 // const { src, dest, watch, series } = pkg;
 const { src, dest, series, task, watch } = pkg;
-// import browserSync from 'browser-sync';
-// const bs = browserSync.create();
+import browserSync from 'browser-sync';
+const bs = browserSync.create();
 // import cleanCss from 'gulp-clean-css';
 // import purgeCss from '@fullhuman/postcss-purgecss';
 // import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
 // import purgecss from 'gulp-purgecss';
 
-// const serve = (cb) => {
-//   bs.init({
-//     server: {
-//       baseDir: './',
-//     },
-//     open: false,
-//     notify: false,
-//   });
-//   cb();
-// };
+const serve = (cb) => {
+  bs.init({
+    server: {
+      baseDir: './',
+    },
+    open: false,
+    notify: false,
+  });
+  cb();
+};
 
-// const reload = (cb) => {
-//   bs.reload();
-//   cb();
-// };
+const reload = (cb) => {
+  bs.reload();
+  cb();
+};
 
 export const globalStyles = () => {
   return src([
@@ -50,7 +50,13 @@ export const watchAll = () => {
   watch('src/**/*.css', series(globalStyles, pageStyles));
 };
 
-export default series(globalStyles, pageStyles, watchAll);
+export const watchMainStyles = () => {
+  watch(['assets/css/**/*.css', './explore.html'], reload)
+}
+
+// export default series(globalStyles, pageStyles, watchAll);
+export default series(serve, watchMainStyles)
+
 
 // export const removeStyles = () => {
 //   return src('src/css/framework-module-alpha.css')

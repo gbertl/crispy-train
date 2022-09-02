@@ -4177,7 +4177,7 @@
   border: 0;
   padding: 0;
 }
-.portrait-card-media-content-height {
+.relative-height {
   height: 100%;
 }
 .portrait-card-overline-compact {
@@ -6280,12 +6280,12 @@
     overflow: clip;
   }
 }
-.portrait-card-container {
+.card-long {
   font-weight: var(--e-y-j-d-v-j);
   color: var(--f-k-smk-x);
   position: relative;
 }
-.portrait-card-link {
+.card-long__link {
   display: block;
   height: 100%;
   position: absolute;
@@ -6293,35 +6293,35 @@
   width: 100%;
   outline: 0;
 }
-.dir.portrait-card-link {
+.dir.card-long__link {
   border-radius: var(--i-g-gvoq);
 }
-.dir-ltr.portrait-card-link {
+.dir-ltr.card-long__link {
   left: 0;
 }
-.dir.portrait-card-link::-moz-focus-inner {
+.dir.card-long__link::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.portrait-card-link:focus::-moz-focus-inner {
+.dir.card-long__link:focus::-moz-focus-inner {
   border: none;
 }
-.portrait-card-link:-moz-focusring {
+.card-long__link:-moz-focusring {
   outline: 0;
 }
-.portrait-card-link:focus-visible {
+.card-long__link:focus-visible {
   transition: box-shadow 0.2s;
 }
-.dir.portrait-card-link:focus-visible {
+.dir.card-long__link:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .portrait-card-link:focus-visible {
+  .card-long__link:focus-visible {
     transition: none;
   }
-  .dir.portrait-card-link:focus-visible {
+  .dir.card-long__link:focus-visible {
     -webkit-transition: none;
   }
 }
@@ -6333,7 +6333,7 @@
     margin-bottom: 10px;
   }
 }
-.portrait-card-media-overlay-control-play-button {
+.card-long__btn-play {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -6347,7 +6347,7 @@
   color: var(--f-mkcy-f);
   pointer-events: all;
 }
-.dir.portrait-card-media-overlay-control-play-button {
+.dir.card-long__btn-play {
   border-radius: 50%;
   border: 0;
   margin: 0;
@@ -6357,94 +6357,94 @@
   background: 0 0;
   -webkit-transition: transform 0.25s;
 }
-.portrait-card-media-overlay-control-play-button:focus-visible {
+.card-long__btn-play:focus-visible {
   outline: 0;
   transition: box-shadow 0.2s;
 }
-.dir.portrait-card-media-overlay-control-play-button:focus-visible {
+.dir.card-long__btn-play:focus-visible {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 255, 255, 0.7);
   -webkit-transition: box-shadow 0.2s;
 }
-.dir.portrait-card-media-overlay-control-play-button:focus-visible::-moz-focus-inner {
+.dir.card-long__btn-play:focus-visible::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.portrait-card-media-overlay-control-play-button:focus-visible:focus::-moz-focus-inner {
+.dir.card-long__btn-play:focus-visible:focus::-moz-focus-inner {
   border: none;
 }
-.portrait-card-media-overlay-control-play-button:focus-visible:-moz-focusring {
+.card-long__btn-play:focus-visible:-moz-focusring {
   outline: 0;
 }
-.portrait-card-media-overlay-control-play-button:disabled {
+.card-long__btn-play:disabled {
   opacity: 0.5;
   color: graytext;
 }
-.dir.portrait-card-media-overlay-control-play-button:disabled {
+.dir.card-long__btn-play:disabled {
   cursor: not-allowed;
 }
 @media (prefers-reduced-motion: reduce) {
-  .portrait-card-media-overlay-control-play-button {
+  .card-long__btn-play {
     transition: none;
   }
-  .dir.portrait-card-media-overlay-control-play-button {
+  .dir.card-long__btn-play {
     -webkit-transition: none;
   }
 }
-.portrait-card-media-overlay-control-play-button:hover {
+.card-long__btn-play:hover {
   color: var(--bgxgx);
 }
-.dir.portrait-card-media-overlay-control-play-button:hover::before {
+.dir.card-long__btn-play:hover::before {
   background: var(---pc-g-v-g);
 }
-.portrait-card-media-overlay-control-play-button:active {
+.card-long__btn-play:active {
   color: var(--bgxgx);
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
 }
-.dir.portrait-card-media-overlay-control-play-button:active {
+.dir.card-long__btn-play:active {
   transform: scale(0.92);
 }
-.dir.portrait-card-media-overlay-control-play-button:active::before {
+.dir.card-long__btn-play:active::before {
   background: var(---pc-g-v-g);
 }
-.dir.portrait-card-media-overlay-control-play-button::-moz-focus-inner {
+.dir.card-long__btn-play::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.portrait-card-media-overlay-control-play-button:focus::-moz-focus-inner {
+.dir.card-long__btn-play:focus::-moz-focus-inner {
   border: none;
 }
-.portrait-card-media-overlay-control-play-button:-moz-focusring {
+.card-long__btn-play:-moz-focusring {
   outline: 0;
 }
-.portrait-card-media-overlay-control-play-button:focus-visible {
+.card-long__btn-play:focus-visible {
   transition: box-shadow 0.2s;
 }
-.dir.portrait-card-media-overlay-control-play-button:focus-visible {
+.dir.card-long__btn-play:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   box-shadow: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .portrait-card-media-overlay-control-play-button:focus-visible {
+  .card-long__btn-play:focus-visible {
     transition: none;
   }
-  .dir.portrait-card-media-overlay-control-play-button:focus-visible {
+  .dir.card-long__btn-play:focus-visible {
     -webkit-transition: none;
   }
 }
-.dir.portrait-card-media-overlay-control-play-button:focus-visible::before {
+.dir.card-long__btn-play:focus-visible::before {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
   background: var(---pc-g-v-g);
 }
-.portrait-card-media-overlay-control-play-button:disabled {
+.card-long__btn-play:disabled {
   color: var(--j-qkgmf);
 }
-.dir.portrait-card-media-overlay-control-play-button:disabled::before {
+.dir.card-long__btn-play:disabled::before {
   background: 0 0;
 }
-.portrait-card-media-overlay-control-play-button::before {
+.card-long__btn-play::before {
   content: '';
   display: block;
   position: absolute;
@@ -6452,50 +6452,50 @@
   width: 32px;
   height: 32px;
 }
-.dir.portrait-card-media-overlay-control-play-button::before {
+.dir.card-long__btn-play::before {
   border-radius: 50%;
 }
-.dir-ltr.portrait-card-media-overlay-control-play-button::before {
+.dir-ltr.card-long__btn-play::before {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.portrait-card-media-overlay-control-play-button::before {
+.card-long__btn-play::before {
   width: 32px;
   height: 32px;
 }
-.portrait-card-media-overlay-control-play-button:hover {
+.card-long__btn-play:hover {
   color: var(--f-mkcy-f);
 }
-.portrait-card-media-overlay-control-play-button:hover::before {
+.card-long__btn-play:hover::before {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.portrait-card-media-overlay-control-play-button:hover::before {
+.dir.card-long__btn-play:hover::before {
   background: rgba(255, 255, 255, 0.16);
 }
-.portrait-card-media-overlay-control-play-button:active {
+.card-long__btn-play:active {
   color: var(--f-mkcy-f);
 }
-.portrait-card-media-overlay-control-play-button:active::before {
+.card-long__btn-play:active::before {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.portrait-card-media-overlay-control-play-button:active::before {
+.dir.card-long__btn-play:active::before {
   background: rgba(255, 255, 255, 0.16);
 }
-.portrait-card-media-overlay-control-play-button:focus-visible {
+.card-long__btn-play:focus-visible {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.portrait-card-media-overlay-control-play-button:focus-visible {
+.dir.card-long__btn-play:focus-visible {
   background: rgba(255, 255, 255, 0.16);
 }
-.portrait-card-media-overlay-control-play-icon {
+.relative {
   position: relative;
 }
-.portrait-card-media-overlay {
+.card-long__overlay {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6512,11 +6512,11 @@
   top: 0;
   pointer-events: none;
 }
-.dir-ltr.portrait-card-media-overlay {
+.dir-ltr.card-long__overlay {
   left: 0;
   right: 0;
 }
-.portrait-card-media-overlay-top-row {
+.card-long__overlay-top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6526,36 +6526,36 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.dir.portrait-card-media-overlay-top-row {
+.dir.card-long__overlay-top {
   padding: var(--media-overlay_top-row-padding);
 }
-.portrait-card-media-overlay-save-wrapper {
+.card-long__btn-save-wrapper {
   pointer-events: auto;
 }
-.dir.portrait-card-media-overlay-save-wrapper {
+.dir.card-long__btn-save-wrapper {
   margin-top: -5px;
 }
-.dir-ltr.portrait-card-media-overlay-save-wrapper {
+.dir-ltr.card-long__btn-save-wrapper {
   margin-right: -3px;
 }
-.portrait-card-media-overlay-control-wrapper-compact {
+.card-long__control-wrapper {
   visibility: hidden;
 }
-.dir.portrait-card-media-overlay-control-wrapper-compact {
+.dir.card-long__control-wrapper {
   padding: 10px 15px;
 }
-.portrait-card-media-overlay-control-wrapper-visible {
+.fade-in {
   opacity: 1;
   visibility: visible;
 }
 
-.portrait-card-slide-content {
+.card-long__slides {
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.portrait-card-slide {
+.card-long__slide {
   opacity: 0;
   position: absolute;
   bottom: -2px;
@@ -6564,46 +6564,46 @@
   -webkit-transition-property: opacity;
   -webkit-transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-.dir.portrait-card-slide {
+.dir.card-long__slide {
   transition-duration: 250ms;
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-.dir-ltr.portrait-card-slide {
+.dir-ltr.card-long__slide {
   left: -2px;
   right: -2px;
 }
-.portrait-card-slide-active {
+.card-long__slide--active {
   opacity: 1;
   -webkit-transition-duration: 250ms;
   -webkit-transition-timing-function: ease-out;
 }
-.dir.portrait-card-slide-active {
+.dir.card-long__slide--active {
   transition-duration: 250ms;
   transition-timing-function: ease-out;
 }
-.portrait-card-slide-transform {
+.card-long__slide--grow {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
 }
-.dir.portrait-card-slide-transform {
+.dir.card-long__slide--grow {
   transform: scale(1.1);
 }
-.dir-ltr.portrait-card-slide-zoom {
+.dir-ltr.card-long__slide-zoom {
   -webkit-animation-duration: 2.5s;
   animation-duration: 2.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-name: zoomIn-portrait-card-slide-zoom;
-  animation-name: zoomIn-portrait-card-slide-zoom;
+  -webkit-animation-name: zoomIn-card-long__slide-zoom;
+  animation-name: zoomIn-card-long__slide-zoom;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
 }
 
-.portrait-card-media-content {
+.relative {
   position: relative;
 }
-.portrait-card-slider {
+.card-long__carousel {
   position: absolute;
   bottom: 0;
   top: 0;
@@ -6612,20 +6612,20 @@
   -webkit-transition-property: opacity, transform;
   -webkit-transition-timing-function: ease-out;
 }
-.dir.portrait-card-slider {
+.dir.card-long__carousel {
   transition-duration: 0.2s;
   transition-property: opacity, transform;
   transition-timing-function: ease-out;
 }
-.dir-ltr.portrait-card-slider {
+.dir-ltr.card-long__carousel {
   left: 0;
   right: 0;
 }
-.portrait-card-slider-show {
+.card-long__carousel--show {
   opacity: 1;
   -webkit-transition-duration: 250ms;
 }
-.dir.portrait-card-slider-show {
+.dir.card-long__carousel--show {
   transition-duration: 250ms;
 }
 .portrait-card-overline {
@@ -6667,13 +6667,13 @@
     overflow: clip;
   }
 }
-.portrait-card-media-gradient {
+.card-long__overlay-bottom {
   position: absolute;
   bottom: 0;
   height: 46px;
   width: 100%;
 }
-.dir-ltr.portrait-card-media-gradient {
+.dir-ltr.card-long__overlay-bottom {
   background: linear-gradient(
     360deg,
     rgba(0, 0, 0, 0.5) 0,
@@ -6705,7 +6705,7 @@
   font-weight: var(--h-oqhch);
 }
 
-.portrait-card-media-overlay-btn {
+.card__btn {
   display: inline-block;
   position: relative;
   -webkit-text-decoration: none;
@@ -6716,7 +6716,7 @@
   font-family: inherit;
   touch-action: manipulation;
 }
-.dir.portrait-card-media-overlay-btn {
+.dir.card__btn {
   cursor: pointer;
   margin: 0;
   text-align: center;
@@ -6727,17 +6727,17 @@
   padding-bottom: 4px;
   background: #d3d3d3;
 }
-.dir-ltr.portrait-card-media-overlay-btn {
+.dir-ltr.card__btn {
   padding-left: 8px;
   padding-right: 8px;
 }
-.portrait-card-media-overlay-btn:disabled {
+.card__btn:disabled {
   opacity: 0.3;
 }
-.dir.portrait-card-media-overlay-btn:disabled {
+.dir.card__btn:disabled {
   cursor: not-allowed;
 }
-.portrait-card-media-overlay-save-btn {
+.card__btn-save {
   font-family: var(--e-ls-qkw);
   font-size: var(--iw-ehf-f);
   line-height: var(---s-l-myu);
@@ -6759,7 +6759,7 @@
   width: calc(24px + var(--fgg-f-l-a));
   height: calc(24px + var(--fgg-f-l-a));
 }
-.dir.portrait-card-media-overlay-save-btn {
+.dir.card__btn-save {
   border-radius: var(--go-h-jh-l);
   border-width: 1px;
   padding: 14px 24px;
@@ -6771,57 +6771,57 @@
   padding: var(--d-b-mrdy) 0 0 0;
 }
 @media (prefers-reduced-motion: reduce) {
-  .portrait-card-media-overlay-save-btn {
+  .card__btn-save {
     transition: none;
   }
-  .dir.portrait-card-media-overlay-save-btn {
+  .dir.card__btn-save {
     -webkit-transition: none;
   }
 }
-.dir.portrait-card-media-overlay-save-btn::-moz-focus-inner {
+.dir.card__btn-save::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.portrait-card-media-overlay-save-btn:focus::-moz-focus-inner {
+.dir.card__btn-save:focus::-moz-focus-inner {
   border: none;
 }
-.portrait-card-media-overlay-save-btn:-moz-focusring {
+.card__btn-save:-moz-focusring {
   outline: 0;
 }
-.portrait-card-media-overlay-save-btn:focus-visible {
+.card__btn-save:focus-visible {
   transition: box-shadow 0.2s;
 }
-.dir.portrait-card-media-overlay-save-btn:focus-visible {
+.dir.card__btn-save:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .portrait-card-media-overlay-save-btn:focus-visible {
+  .card__btn-save:focus-visible {
     transition: none;
   }
-  .dir.portrait-card-media-overlay-save-btn:focus-visible {
+  .dir.card__btn-save:focus-visible {
     -webkit-transition: none;
   }
 }
-.portrait-card-media-overlay-save-btn:active {
+.card__btn-save:active {
   -webkit-transform: scale(0.96);
   -ms-transform: scale(0.96);
 }
-.dir.portrait-card-media-overlay-save-btn:active {
+.dir.card__btn-save:active {
   transform: scale(0.96);
 }
-.portrait-card-media-overlay-save-btn:disabled {
+.card__btn-save:disabled {
   opacity: 1;
 }
-.dir.portrait-card-media-overlay-save-btn:focus-visible {
+.dir.card__btn-save:focus-visible {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.portrait-card-media-overlay-save-btn:active {
+.card__btn-save:active {
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
 }
-.dir.portrait-card-media-overlay-save-btn:active {
+.dir.card__btn-save:active {
   transform: scale(0.92);
 }
 [type='email'],
@@ -53167,7 +53167,7 @@ a:hover {
 
 @media (min-width:744px) {}
 
-@-webkit-keyframes fade-in-portrait-card-media-overlay-control-wrapper {
+@-webkit-keyframes fade-in-card-long__overlay-control-wrapper {
   from {
     opacity: 0;
   }
@@ -53177,7 +53177,7 @@ a:hover {
   }
 }
 
-@-webkit-keyframes zoomIn-portrait-card-slide-zoom {
+@-webkit-keyframes zoomIn-card-long__slide-zoom {
   from {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -53203,7 +53203,7 @@ a:hover {
   }
 }
 
-@keyframes zoomIn-portrait-card-slide-zoom {
+@keyframes zoomIn-card-long__slide-zoom {
   from {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -53217,7 +53217,7 @@ a:hover {
   }
 }
 
-@keyframes fade-in-portrait-card-media-overlay-control-wrapper {
+@keyframes fade-in-card-long__overlay-control-wrapper {
   from {
     opacity: 0;
   }
@@ -53227,7 +53227,7 @@ a:hover {
   }
 }
 
-@keyframes fade-in-portrait-card-media-overlay-control-wrapper {
+@keyframes fade-in-card-long__overlay-control-wrapper {
   from {
     opacity: 0;
   }
@@ -53237,7 +53237,7 @@ a:hover {
   }
 }
 
-@keyframes zoomIn-portrait-card-slide-zoom {
+@keyframes zoomIn-card-long__slide-zoom {
   from {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);

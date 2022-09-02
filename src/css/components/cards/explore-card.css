@@ -159,7 +159,7 @@
   --contentscroller_scrollsnapstop: always;
   --contentscroller_visible-items: 1;
 }
-.explore-card__carousel-item[class][class] {
+.explore-card__slide[class][class] {
   display: block;
   color: transparent;
 }
@@ -279,11 +279,11 @@
 .dir-rtl.explore-card__controls-bg[class][class] {
   background: linear-gradient(-180deg, transparent 80%, rgba(0, 0, 0, 0.25));
 }
-.explore-card__btn-wishlist-wrapper-var[class][class] {
+.explore-card__btn-save-wrapper-var[class][class] {
   --save-button_height: calc(24px + var(--fgg-f-l-a));
   --save-button_width: calc(24px + var(--fgg-f-l-a));
 }
-.explore-card__btn-wishlist-wrapper-wrapper[class][class] {
+.explore-card__btn-save-wrapper[class][class] {
   pointer-events: auto;
   height: var(--save-button_height, auto);
   width: var(--save-button_width, auto);
@@ -323,20 +323,20 @@
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
-.explore-card__btn-wishlist-wrapper[class][class] {
+.explore-card__btn-save[class][class] {
   position: relative;
   -webkit-text-decoration: none;
   text-decoration: none;
   touch-action: manipulation;
 }
-.dir.explore-card__btn-wishlist-wrapper[class][class] {
+.dir.explore-card__btn-save[class][class] {
   cursor: pointer;
   text-align: center;
 }
-.explore-card__btn-wishlist-wrapper[class][class]:disabled {
+.explore-card__btn-save[class][class]:disabled {
   opacity: 0.3;
 }
-.dir.explore-card__btn-wishlist-wrapper[class][class]:disabled {
+.dir.explore-card__btn-save[class][class]:disabled {
   cursor: not-allowed;
 }
 /* /Explore card */

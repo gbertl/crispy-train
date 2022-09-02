@@ -1929,16 +1929,16 @@ fieldset[disabled] .btn {
     transition: none !important;
   }
 }
-.dir.btn-wishlist-bordered[class][class]:focus-visible {
+.dir.btn-save-bordered[class][class]:focus-visible {
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-wishlist-bordered[class][class]:focus-visible {
+  .dir.btn-save-bordered[class][class]:focus-visible {
     transition: none;
   }
 }
-.btn-wishlist-bordered[class][class] {
+.btn-save-bordered[class][class] {
   font-family: var(--e-ls-qkw);
   font-size: var(--iw-ehf-f);
   line-height: var(---s-l-myu);
@@ -1964,7 +1964,7 @@ fieldset[disabled] .btn {
   width: calc(24px + var(--fgg-f-l-a));
   height: calc(24px + var(--fgg-f-l-a));
 }
-.dir.btn-wishlist-bordered[class][class] {
+.dir.btn-save-bordered[class][class] {
   border-width: 1px;
   background-color: transparent;
   border-radius: 50%;
@@ -1975,64 +1975,64 @@ fieldset[disabled] .btn {
   padding: 2px 0 0;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-wishlist-bordered[class][class] {
+  .dir.btn-save-bordered[class][class] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.btn-wishlist-bordered[class][class]::-moz-focus-inner {
+.dir.btn-save-bordered[class][class]::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.btn-wishlist-bordered[class][class]:focus::-moz-focus-inner {
+.dir.btn-save-bordered[class][class]:focus::-moz-focus-inner {
   border: none;
 }
-.btn-wishlist-bordered[class][class]:-moz-focusring {
+.btn-save-bordered[class][class]:-moz-focusring {
   outline: 0;
 }
-.dir.btn-wishlist-bordered[class][class]:focus-visible {
+.dir.btn-save-bordered[class][class]:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-wishlist-bordered[class][class]:focus-visible {
+  .dir.btn-save-bordered[class][class]:focus-visible {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.btn-wishlist-bordered[class][class]:focus[data-focus-visible-added] {
+.dir.btn-save-bordered[class][class]:focus[data-focus-visible-added] {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.btn-wishlist-bordered[class][class]:focus[data-focus-visible-added] {
+  .dir.btn-save-bordered[class][class]:focus[data-focus-visible-added] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.btn-wishlist-bordered[class][class]:active {
+.dir.btn-save-bordered[class][class]:active {
   -webkit-transform: scale(0.96);
   -ms-transform: scale(0.96);
   transform: scale(0.96);
 }
-.btn-wishlist-bordered[class][class]:disabled {
+.btn-save-bordered[class][class]:disabled {
   opacity: 1;
 }
-.dir.btn-wishlist-bordered[class][class]:focus-visible {
+.dir.btn-save-bordered[class][class]:focus-visible {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.dir.btn-wishlist-bordered[class][class]:focus[data-focus-visible-added] {
+.dir.btn-save-bordered[class][class]:focus[data-focus-visible-added] {
   box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
-.dir.btn-wishlist-bordered[class][class]:active {
+.dir.btn-save-bordered[class][class]:active {
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
   transform: scale(0.92);
 }
-.btn-wishlist {
+.btn-save {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
@@ -2052,108 +2052,108 @@ fieldset[disabled] .btn {
   -moz-transition: transform 0.25s !important;
   transition: -ms-transform 0.25s, -webkit-transform 0.25s, transform 0.25s !important;
 }
-.btn-wishlist:focus-visible {
+.btn-save:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
   box-shadow: none !important;
 }
-.btn-wishlist:focus-visible::-moz-focus-inner {
+.btn-save:focus-visible::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.btn-wishlist:focus-visible:focus::-moz-focus-inner {
+.btn-save:focus-visible:focus::-moz-focus-inner {
   border: none !important;
 }
-.btn-wishlist:focus-visible:-moz-focusring {
+.btn-save:focus-visible:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn-wishlist:focus-visible {
+  .btn-save:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.btn-wishlist:focus-visible::before {
+.btn-save:focus-visible::before {
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
   background: #f7f7f7 !important;
 }
-.btn-wishlist:focus[data-focus-visible-added] {
+.btn-save:focus[data-focus-visible-added] {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
   box-shadow: none !important;
 }
-.btn-wishlist:focus[data-focus-visible-added]::-moz-focus-inner {
+.btn-save:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.btn-wishlist:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.btn-save:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none !important;
 }
-.btn-wishlist:focus[data-focus-visible-added]:-moz-focusring {
+.btn-save:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn-wishlist:focus[data-focus-visible-added] {
+  .btn-save:focus[data-focus-visible-added] {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.btn-wishlist:focus[data-focus-visible-added]::before {
+.btn-save:focus[data-focus-visible-added]::before {
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
   background: #f7f7f7 !important;
 }
-.btn-wishlist:disabled {
+.btn-save:disabled {
   opacity: 0.5 !important;
   cursor: not-allowed !important;
   color: #ddd !important;
 }
-.btn-wishlist:disabled::before {
+.btn-save:disabled::before {
   background: 0 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn-wishlist {
+  .btn-save {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  .btn-wishlist:hover {
+  .btn-save:hover {
     color: #000 !important;
   }
-  .btn-wishlist:hover::before {
+  .btn-save:hover::before {
     background: #f7f7f7 !important;
   }
 }
-.btn-wishlist:active {
+.btn-save:active {
   color: #000 !important;
   -webkit-transform: scale(0.92) !important;
   -ms-transform: scale(0.92) !important;
   transform: scale(0.92) !important;
 }
-.btn-wishlist:active::before {
+.btn-save:active::before {
   background: #f7f7f7 !important;
 }
-.btn-wishlist::-moz-focus-inner {
+.btn-save::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.btn-wishlist:focus::-moz-focus-inner {
+.btn-save:focus::-moz-focus-inner {
   border: none !important;
 }
-.btn-wishlist:-moz-focusring {
+.btn-save:-moz-focusring {
   outline: 0 !important;
 }
-.btn-wishlist::before {
+.btn-save::before {
   content: '' !important;
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
@@ -2168,16 +2168,16 @@ fieldset[disabled] .btn {
   height: 48px !important;
 }
 @media (hover: hover) {
-  .btn-wishlist:hover {
+  .btn-save:hover {
     color: #000 !important;
   }
 }
 @media (hover: hover) {
-  .btn-wishlist:hover::before {
+  .btn-save:hover::before {
     background: #f7f7f7 !important;
   }
 }
-.btn-wishlist {
+.btn-save {
   appearance: none !important;
   display: inline-block !important;
   border-radius: 50% !important;
