@@ -41,9 +41,9 @@ const toggleModal = (type) => {
                 : whoButton.replace('b1odri3w', 'b174x59c')
 
             const searchWho = document.querySelector('#search-who').classList
-            searchWho.contains('d-none')
-                ? searchWho.remove('d-none')
-                : searchWho.add('d-none')
+            searchWho.contains('hidden')
+                ? searchWho.remove('hidden')
+                : searchWho.add('hidden')
             break;
 
         case 'anyweek':
@@ -53,9 +53,9 @@ const toggleModal = (type) => {
                 : checkInButton.replace('b1odri3w', 'b174x59c')
 
             const anyweekPanel = document.querySelector('#anyweek-panel').classList
-            anyweekPanel.contains('d-none')
-                ? anyweekPanel.remove('d-none')
-                : anyweekPanel.add('d-none')
+            anyweekPanel.contains('hidden')
+                ? anyweekPanel.remove('hidden')
+                : anyweekPanel.add('hidden')
             break;
 
         case 'anywhere':
@@ -115,19 +115,19 @@ const toggleModal = (type) => {
         })
 
     const searchButtonIcon = document.querySelector('#search-btn-text').classList
-    searchButtonIcon.contains('d-none')
-        ? searchButtonIcon.remove('d-none')
-        : searchButtonIcon.add('d-none')
+    searchButtonIcon.contains('hidden')
+        ? searchButtonIcon.remove('hidden')
+        : searchButtonIcon.add('hidden')
 
     const searchButtonhText = document.querySelector('.c8th90').classList
-    searchButtonhText.contains('d-none')
-        ? searchButtonhText.remove('d-none')
-        : searchButtonhText.add('d-none')
+    searchButtonhText.contains('hidden')
+        ? searchButtonhText.remove('hidden')
+        : searchButtonhText.add('hidden')
 
     const searchBackdrop = document.querySelector('#search-backdrop').classList
-    searchBackdrop.contains('d-none')
-        ? searchBackdrop.remove('d-none')
-        : searchBackdrop.add('d-none')
+    searchBackdrop.contains('hidden')
+        ? searchBackdrop.remove('hidden')
+        : searchBackdrop.add('hidden')
 }
 
 let tabId = null

@@ -7,15 +7,15 @@ document.querySelectorAll('button[role=tab]').forEach((el) => {
 
     document
       .querySelectorAll('div[role=tabpanel]')
-      .forEach((el) => el.classList.add('d-none'));
+      .forEach((el) => el.classList.add('hidden'));
     document
       .getElementById(this.getAttribute('aria-controls'))
-      .classList.remove('d-none');
+      .classList.remove('hidden');
   });
 });
 
 document.querySelector('#filter-menu').addEventListener('click', function () {
   this.classList.toggle('_1arxx82');
   this.classList.toggle('_1ym0gspv');
-  document.querySelector('#filter-menu-dropdown').classList.toggle('d-none');
+  document.querySelector('#filter-menu-dropdown').classList.toggle('hidden');
 });

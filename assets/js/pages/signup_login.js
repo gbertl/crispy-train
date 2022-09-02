@@ -1,20 +1,20 @@
 document.querySelectorAll('.continue-btn-email').forEach((el) => {
   el.addEventListener('click', (e) => {
     const parent = e.target.closest('[data-application=true]');
-    parent.querySelector('.email-form').classList.remove('d-none');
-    parent.querySelector('.phone-form').classList.add('d-none');
-    parent.querySelector('.continue-btn-phone').classList.remove('d-none');
-    parent.querySelector('.continue-btn-email').classList.add('d-none');
+    parent.querySelector('.email-form').classList.remove('hidden');
+    parent.querySelector('.phone-form').classList.add('hidden');
+    parent.querySelector('.continue-btn-phone').classList.remove('hidden');
+    parent.querySelector('.continue-btn-email').classList.add('hidden');
   });
 });
 
 document.querySelectorAll('.continue-btn-phone').forEach((el) => {
   el.addEventListener('click', (e) => {
     const parent = e.target.closest('[data-application=true]');
-    parent.querySelector('.phone-form').classList.remove('d-none');
-    parent.querySelector('.email-form').classList.add('d-none');
-    parent.querySelector('.continue-btn-email').classList.remove('d-none');
-    parent.querySelector('.continue-btn-phone').classList.add('d-none');
+    parent.querySelector('.phone-form').classList.remove('hidden');
+    parent.querySelector('.email-form').classList.add('hidden');
+    parent.querySelector('.continue-btn-email').classList.remove('hidden');
+    parent.querySelector('.continue-btn-phone').classList.add('hidden');
   });
 });
 
@@ -34,15 +34,15 @@ document.querySelectorAll('form').forEach((form) => {
 
     const targetForm = formList[formType];
 
-    loginSignup.classList.add('d-none');
+    loginSignup.classList.add('hidden');
 
-    targetForm.classList.remove('d-none');
+    targetForm.classList.remove('hidden');
 
     targetForm
       .querySelector('[data-testid="panel-header-button"]')
       .addEventListener('click', (e) => {
-        targetForm.classList.add('d-none');
-        loginSignup.classList.remove('d-none');
+        targetForm.classList.add('hidden');
+        loginSignup.classList.remove('hidden');
       });
   });
 });
@@ -55,7 +55,7 @@ document.querySelectorAll('form').forEach((form) => {
       if (!el.hasAttribute('data-user-session')) {
         return el.remove();
       }
-      el.classList.remove('d-none');
+      el.classList.remove('hidden');
     });
   }
 
