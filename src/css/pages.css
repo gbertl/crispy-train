@@ -9789,7 +9789,7 @@ h3:first-child {
     height: 80px;
   }
 }
-.n1p4yt3r[class][class] {
+.header-filter__container[class][class] {
   padding-block-start: var(--explore-nav_padding-block-start);
   position: sticky;
   top: calc(70px - var(--explore-nav_padding-block-start, 0px));
@@ -9797,7 +9797,7 @@ h3:first-child {
   z-index: 9;
 }
 @media (min-width: 744px) {
-  .n1p4yt3r[class][class] {
+  .header-filter__container[class][class] {
     top: calc(80px - var(--explore-nav_padding-block-start, 0px));
   }
 }
@@ -9851,7 +9851,7 @@ h3:first-child {
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
 }
-.w17rkehr[class][class] {
+.header-filter__container-bg[class][class] {
   --chipsbar_height: 74px;
   --chipsbar_chip-spacing: 16px;
   --chipsbar_chip-width: 64px;
@@ -9864,11 +9864,11 @@ h3:first-child {
   --contentscroller_auto-columns: max-content;
   --contentscroller_scrollsnaptype: none;
 }
-.dir.w17rkehr[class][class] {
+.dir.header-filter__container-bg[class][class] {
   background-color: var(--f-mkcy-f);
 }
 @media (min-width: 744px) {
-  .w17rkehr[class][class] {
+  .header-filter__container-bg[class][class] {
     --chipsbar_box-shadow: unset;
     --chipsbar_chip-spacing: 32px;
     --chipsbar_chip-width: 56px;
@@ -9876,7 +9876,7 @@ h3:first-child {
     --contentscroller_scroller_margin-inline-start: 0;
   }
 }
-.w17rkehr[class][class]::after {
+.header-filter__container-bg[class][class]::after {
   content: '';
   display: block;
   position: absolute;
@@ -9884,7 +9884,7 @@ h3:first-child {
   bottom: 0;
   z-index: -1;
 }
-.dir.w17rkehr[class][class]::after {
+.dir.header-filter__container-bg[class][class]::after {
   left: 0;
   right: 0;
   box-shadow: var(--chipsbar_box-shadow, unset);
@@ -9991,7 +9991,7 @@ h3:first-child {
 .t1uqc5yt[class][class] {
   display: inline-block;
 }
-.c4mnd7m[class][class] {
+.card__slides-item[class][class] {
   display: grid;
   grid-template-columns: 100%;
 }
@@ -10007,7 +10007,7 @@ h3:first-child {
   margin: 0;
   padding-top: 0;
 }
-.c1l1h97y[class][class] {
+.card__slides-content[class][class] {
   grid-area: 1/1/2/2;
 }
 .cikyho8[class][class] {
@@ -17285,7 +17285,7 @@ h3:first-child {
     --explore_padding-inline: 80px;
   }
 }
-.n1p4yt3r[class][class]::after {
+.header-filter__container[class][class]::after {
   content: '';
   display: block;
   position: absolute;
@@ -17293,7 +17293,7 @@ h3:first-child {
   bottom: 0;
   z-index: -1;
 }
-.dir.n1p4yt3r[class][class]::after {
+.dir.header-filter__container[class][class]::after {
   right: 0;
   left: 0;
   box-shadow: none;
