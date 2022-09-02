@@ -31,7 +31,7 @@
   padding-top: 8px!important
 }
 ._16sb0g4v,
-._h69t7tv,
+.hidden__md,
 ._pawvzww {
   display: none!important
 }
@@ -52,7 +52,7 @@
   }
 }
 @media (min-width:744px) {
-  ._h69t7tv {
+  .hidden__md {
     display: block!important
   }
 }
@@ -1508,7 +1508,7 @@
   line-height: 18px!important;
   width: 58px!important
 }
-._1n9ev8k3::after {
+.explore-filter__text-hidden::after {
   content: ''!important;
   width: calc(100% + 2px)!important;
   height: calc(100% + 2px)!important;
@@ -2021,12 +2021,12 @@ button[data-testid=cypress-headernav-profile]:focus + .c3i7glo[class][class] {
   }
 }
 @media (min-width:744px) {
-  .dir.card__location-click[class][class]:focus-visible {
+  .dir.click_card[class][class]:focus-visible {
     transition: box-shadow .2s;
     box-shadow: 0 0 0 2px rgba(255,255,255,.8),0 0 0 4px var(--f-k-smk-x)
   }
   @media (prefers-reduced-motion:reduce) {
-    .dir.card__location-click[class][class]:focus-visible {
+    .dir.click_card[class][class]:focus-visible {
       transition: none
     }
   }
