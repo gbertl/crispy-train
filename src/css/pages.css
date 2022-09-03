@@ -37034,7 +37034,7 @@ tr.show-desktop {
 ._1ouw2w0 {
   padding-bottom: 16px !important;
 }
-._1e5q4qoz {
+.app-theme__save-btn {
   cursor: pointer !important;
   display: inline-block !important;
   margin: 0 -8px !important;
@@ -37064,7 +37064,7 @@ tr.show-desktop {
   color: var(--f-k-smk-x) !important;
   text-decoration: underline !important;
 }
-._1e5q4qoz:focus-visible {
+.app-theme__save-btn:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
@@ -37074,25 +37074,25 @@ tr.show-desktop {
   background: var(---pc-g-v-g) !important;
   color: var(--f-k-smk-x) !important;
 }
-._1e5q4qoz:focus-visible::-moz-focus-inner {
+.app-theme__save-btn:focus-visible::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-._1e5q4qoz:focus-visible:focus::-moz-focus-inner {
+.app-theme__save-btn:focus-visible:focus::-moz-focus-inner {
   border: none !important;
 }
-._1e5q4qoz:focus-visible:-moz-focusring {
+.app-theme__save-btn:focus-visible:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._1e5q4qoz:focus-visible {
+  .app-theme__save-btn:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-._1e5q4qoz:focus[data-focus-visible-added] {
+.app-theme__save-btn:focus[data-focus-visible-added] {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
@@ -37102,32 +37102,32 @@ tr.show-desktop {
   background: var(---pc-g-v-g) !important;
   color: var(--f-k-smk-x) !important;
 }
-._1e5q4qoz:focus[data-focus-visible-added]::-moz-focus-inner {
+.app-theme__save-btn:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-._1e5q4qoz:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.app-theme__save-btn:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none !important;
 }
-._1e5q4qoz:focus[data-focus-visible-added]:-moz-focusring {
+.app-theme__save-btn:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._1e5q4qoz:focus[data-focus-visible-added] {
+  .app-theme__save-btn:focus[data-focus-visible-added] {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  ._1e5q4qoz:hover {
+  .app-theme__save-btn:hover {
     border: none !important;
     background: var(---pc-g-v-g) !important;
     color: var(--bgxgx) !important;
   }
 }
-._1e5q4qoz:active {
+.app-theme__save-btn:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
@@ -37135,7 +37135,7 @@ tr.show-desktop {
   background: var(---pc-g-v-g) !important;
   color: var(--bgxgx) !important;
 }
-._1e5q4qoz:disabled {
+.app-theme__save-btn:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
@@ -37143,7 +37143,7 @@ tr.show-desktop {
   color: var(--j-qkgmf) !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  ._1e5q4qoz {
+  .app-theme__save-btn {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
@@ -51448,32 +51448,32 @@ a:hover {
 .dir.s1h14t79[class][class] {
   -webkit-transition: none;
 }
-._1hhecre {
+.app-theme__container {
   height: 100vh !important;
   position: relative !important;
   overflow: hidden !important;
   color: #222 !important;
 }
 @media (max-width: 744px) {
-  ._gjnbsm {
+  .app-theme__wrapper {
     display: none !important;
   }
 }
-._gjnbsm {
+.app-theme__wrapper {
   left: 0 !important;
   transition: left 0.3s !important;
 }
-._1cjyrsr {
+.app-theme__nav {
   width: calc(100% - 60px) !important;
   max-width: 260px !important;
   z-index: 3001 !important;
 }
 @media (min-width: 375px) {
-  ._1cjyrsr {
+  .app-theme__nav {
     width: 260px !important;
   }
 }
-._1utw96k5 {
+.app-theme__nav-container {
   left: 0 !important;
   position: absolute !important;
   z-index: 11 !important;
@@ -51486,43 +51486,43 @@ a:hover {
   max-width: 260px !important;
 }
 @media (min-width: 375px) {
-  ._1utw96k5 {
+  .app-theme__nav-container {
     width: 260px !important;
   }
 }
-._1ok79xh {
+.app-theme__nav-wrapper {
   height: 100% !important;
   overflow: hidden auto !important;
   padding: 16px 16px 0 !important;
 }
 @media (min-width: 375px) {
-  ._1ok79xh {
+  .app-theme__nav-wrapper {
     padding: 16px 24px 0 !important;
   }
 }
 @media (min-width: 1128px) {
-  ._1ok79xh {
+  .app-theme__nav-wrapper {
     animation-name: keyframe_1dl9c3r !important;
     animation-duration: 0.8s !important;
     animation-timing-function: ease !important;
     animation-fill-mode: forwards !important;
   }
 }
-._2mc3e2 {
+.app-theme__logo-wrapper {
   -webkit-box-pack: justify !important;
   display: flex !important;
   justify-content: space-between !important;
   flex-wrap: wrap !important;
 }
-._1a1hrnn {
+.app-theme__save-btn-wrapper {
   margin-left: 0 !important;
 }
 @media (min-width: 375px) {
-  ._1a1hrnn {
+  .app-theme__save-btn-wrapper {
     margin-left: 16px !important;
   }
 }
-._1e5q4qoz {
+.app-theme__save-btn {
   cursor: pointer !important;
   display: inline-block !important;
   margin: 0 -8px !important;
@@ -51545,7 +51545,7 @@ a:hover {
   color: var(--f-k-smk-x) !important;
   text-decoration: underline !important;
 }
-._7x5ntq {
+.app-theme__header-h2 {
   margin: 32px 0 !important;
   font-weight: 600 !important;
   word-break: break-word !important;
@@ -51579,7 +51579,7 @@ a:hover {
   width: 100% !important;
 }
 
-._qx2ic59 {
+.app-theme__sidebar-menu {
   -webkit-box-align: center !important;
   cursor: pointer !important;
   border-radius: 16px !important;
@@ -51591,21 +51591,21 @@ a:hover {
   flex-wrap: wrap !important;
   outline: 0 !important;
 }
-._1rw28r4l {
+.app-theme__sidebar-expandable-menus {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
-._19qnm18 {
+.app-theme__sidebar-expandable-ul {
   padding-left: 0 !important;
   margin-block-start: 0 !important;
   margin-bottom: 0 !important;
   list-style: none !important;
 }
-._1vtamo0 {
+.app-theme__sidebar-expandable-li {
   margin: -8px -8px 16px 8px !important;
 }
-._o7xaku5 {
+.app-theme__sidebar-expandable-button {
   cursor: pointer !important;
   position: relative !important;
   touch-action: manipulation !important;
@@ -51641,7 +51641,7 @@ a:hover {
   box-shadow: rgb(34 34 34) 0 0 0 2px !important;
   border: 1px solid !important;
 }
-._cwxj1a {
+.app-theme__sidebar-expandable-text {
   flex: 1 1 0% !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -51649,11 +51649,11 @@ a:hover {
   margin-right: 8px !important;
 }
 @media (min-width: 375px) {
-  ._cwxj1a {
+  .app-theme__sidebar-expandable-text {
     margin-right: 0 !important;
   }
 }
-._1o9iciw {
+.app-theme__sidebar-expandable-text-wrapper {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
   border-radius: 16px !important;
@@ -51663,7 +51663,7 @@ a:hover {
   justify-content: space-between !important;
   flex-wrap: wrap !important;
 }
-._1lr0a4 {
+.app-theme__sidebar-expandable-icon-wrapper {
   display: flex !important;
   flex: 0 0 auto !important;
   margin-left: 0 !important;
@@ -51684,7 +51684,7 @@ a:hover {
   line-height: 12px !important;
 }
 @media (min-width: 375px) {
-  ._1lr0a4 {
+  .app-theme__sidebar-expandable-icon-wrapper {
     margin-left: 8px !important;
   }
 }
@@ -51700,12 +51700,12 @@ a:hover {
   outline: 0 !important;
   cursor: not-allowed !important;
 }
-._126gvgmd {
+.app-theme__sidebar-menu-icon {
   display: flex !important;
   flex: 0 0 auto !important;
   margin-right: 8px !important;
 }
-._bxm33j {
+.app-theme__sidebar-menu-text {
   flex: 1 1 0% !important;
   font-weight: 600 !important;
   font-size: 14px !important;
