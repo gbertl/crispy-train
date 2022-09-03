@@ -13397,7 +13397,7 @@ h3:first-child {
   min-width: 100% !important;
   display: flex !important;
 }
-.text-highlightdir dir-ltr {
+.text_highlight dir dir-ltr {
   border: 0;
   padding: 0;
 }
@@ -24773,7 +24773,7 @@ html :where(img[class*='wp-image-']) {
   transition: var(--magic_transition);
   transition-delay: var(--magic_delay, 0s);
 }
-.c1yo0219[class][class]::before {
+.display__flex[class][class]::before {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27062,7 +27062,7 @@ html :where(img[class*='wp-image-']) {
   display: flex !important;
   justify-content: flex-end !important;
 }
-.c1yo0219[class][class]::after {
+.display__flex[class][class]::after {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30969,8 +30969,8 @@ tr.show-desktop {
 ._9bezani:focus[data-focus-visible-added]:after {
   border-width: 2px !important;
 }
-.c1yo0219[class][class]::after,
-.c1yo0219[class][class]::before {
+.display__flex[class][class]::after,
+.display__flex[class][class]::before {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33914,11 +33914,11 @@ tr.show-desktop {
 .dir.d750e13:is(*, #x#x) {
   cursor: not-allowed;
 }
-.c1yo0219:is(*, #x#x)::before {
+.display__flex:is(*, #x#x)::before {
   display: flex;
   content: '';
 }
-.c1yo0219:is(*, #x#x)::after {
+.display__flex:is(*, #x#x)::after {
   display: flex;
   content: '';
 }
@@ -49450,8 +49450,8 @@ textarea {
     outline: 0 !important;
   }
 }
-.c1yo0219[class][class]::after,
-.c1yo0219[class][class]::before {
+.display__flex[class][class]::after,
+.display__flex[class][class]::before {
   display: flex;
   content: '';
 }
@@ -49715,7 +49715,7 @@ a:hover {
 .dir.p1ss0zvq[class][class] {
   background: #fff;
 }
-.c1yo0219[class][class]::before {
+.display__flex[class][class]::before {
   display: flex;
   content: '';
 }
@@ -49725,7 +49725,7 @@ a:hover {
 .h1i0omnt[class][class] {
   contain: paint;
 }
-.c1yo0219[class][class]::after {
+.display__flex[class][class]::after {
   display: flex;
   content: '';
 }
