@@ -7,11 +7,11 @@ const handleTab = ({ buttonId, panelId, parentId }) => {
         .querySelectorAll(`[id^='${buttonId}'][aria-selected=true]`)
         .forEach((el) => {
           el.setAttribute('aria-selected', false);
-          el.classList.replace('_fd0fliz', '_tns11i');
+          el.classList.replace('tab__list-btn-primary', 'tab__list-btn-secondary');
         });
 
       e.target.setAttribute('aria-selected', true);
-      e.target.classList.replace('_tns11i', '_fd0fliz');
+      e.target.classList.replace('tab__list-btn-secondary', 'tab__list-btn-primary');
 
       // first set all to hidden then remove hidden on current tab
       parent
