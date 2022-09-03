@@ -14649,7 +14649,7 @@ fieldset[disabled] .btn {
     overflow: clip!important
   }
 }
-._gpfii59 {
+.header__nav-profile-badge {
   background-color: var(--ihf-tp-q)!important;
   box-shadow: 0 0 0 1.5px var(--f-mkcy-f)!important;
   position: absolute!important;
@@ -14671,7 +14671,7 @@ fieldset[disabled] .btn {
   animation-timing-function: cubic-bezier(.175,.885,.35,1.1)!important
 }
 @supports (--a:a) {
-  ._gpfii59 {
+  .header__nav-profile-badge {
     background-color: var(--header_brand-color,var(--ihf-tp-q))!important
   }
 }
