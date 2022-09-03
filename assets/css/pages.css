@@ -39920,10 +39920,10 @@ tr.show-desktop {
     overflow: clip;
   }
 }
-.card__location-secondary[class][class] {
+.explore-cards-details__description[class][class] {
   grid-column: 1/-1;
 }
-.card__location-grid[class][class] {
+.explore-cards-details-wrapper[class][class] {
   display: grid;
   gap: var(--card-content-grid_gap, var(--h-x-sf-jw));
   grid-template-columns: var(
