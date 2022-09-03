@@ -14416,7 +14416,7 @@ fieldset[disabled] .btn {
   flex-shrink: 0!important;
   width: 100%!important
 }
-.explore-section-header-container {
+.explore-section-heading-container {
   color: #222!important;
   display: -webkit-box!important;
   display: -moz-box!important;
@@ -14424,7 +14424,7 @@ fieldset[disabled] .btn {
   display: -webkit-flex!important;
   display: flex!important
 }
-.explore-section-header-content {
+.explore-section-heading-content {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   display: -webkit-box!important;
@@ -14436,7 +14436,7 @@ fieldset[disabled] .btn {
   align-items: center!important;
   margin-bottom: 16px!important
 }
-.explore-section-header-leading-text {
+.explore-section-heading-leading-text {
   -webkit-box-flex: 1!important;
   -ms-flex-positive: 1!important;
   -webkit-box-align: center!important;
@@ -14452,7 +14452,7 @@ fieldset[disabled] .btn {
   flex-grow: 1!important;
   margin-bottom: 16px!important
 }
-.explore-section-header-trailing-image {
+.explore-section-heading-trailing-image {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   -webkit-box-pack: end!important;
@@ -14476,28 +14476,28 @@ fieldset[disabled] .btn {
   -webkit-align-items: center!important;
   align-items: center!important
 }
-.explore-section-header-trailing-image-height {
+.explore-section-heading-trailing-image-height {
   height: 64px!important
 }
-.explore-section-header {
+.explore-section-heading {
   font-family: Avenir,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif!important;
   font-weight: 400!important;
   width: 100%!important;
   margin-bottom: 8px!important
 }
-.explore-section-header-title {
+.explore-section-heading-title {
   font-weight: 600!important;
   margin-bottom: 0!important;
   font-size: 22px!important;
   line-height: 26px!important
 }
-.explore-section-header-text {
+.explore-section-heading-text {
   font-size: 14px!important;
   line-height: 20px!important;
   margin-top: 4px!important
 }
 @media (min-width:744px) {
-  .explore-section-header-text {
+  .explore-section-heading-text {
     font-size: 16px!important;
     line-height: 24px!important
   }
