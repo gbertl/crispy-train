@@ -38837,37 +38837,37 @@ tr.show-desktop {
   -ms-break-inside: avoid !important;
   break-inside: avoid !important;
 }
-.explore__show-more-click:focus {
+.explore-click:focus {
   color: inherit !important;
   text-decoration: underline !important;
 }
-.explore__show-more-click:visited {
+.explore-click:visited {
   color: #222 !important;
   text-decoration: underline !important;
 }
 @media (hover: hover) {
-  .explore__show-more-click:hover {
+  .explore-click:hover {
     cursor: pointer !important;
     color: #000 !important;
     text-decoration: underline !important;
   }
 }
-.explore__show-more-click:active {
+.explore-click:active {
   color: #717171 !important;
   text-decoration: underline !important;
 }
-.explore__show-more-click::-moz-focus-inner {
+.explore-click::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.explore__show-more-click:focus::-moz-focus-inner {
+.explore-click:focus::-moz-focus-inner {
   border: none !important;
 }
-.explore__show-more-click:-moz-focusring {
+.explore-click:-moz-focusring {
   outline: 0 !important;
 }
-.explore__show-more-click:focus-visible {
+.explore-click:focus-visible {
   color: #222 !important;
   text-decoration: underline !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -38876,13 +38876,13 @@ tr.show-desktop {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .explore__show-more-click:focus-visible {
+  .explore-click:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.explore__show-more-click:focus[data-focus-visible-added] {
+.explore-click:focus[data-focus-visible-added] {
   color: #222 !important;
   text-decoration: underline !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -38891,17 +38891,17 @@ tr.show-desktop {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .explore__show-more-click:focus[data-focus-visible-added] {
+  .explore-click:focus[data-focus-visible-added] {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.explore__show-more-click:disabled {
+.explore-click:disabled {
   color: #ddd !important;
   text-decoration: underline !important;
 }
-.explore__show-more-click:disabled:hover {
+.explore-click:disabled:hover {
   text-decoration: underline !important;
 }
 ._jan9qal {
@@ -49606,7 +49606,7 @@ a:hover {
   flex: 0 0 auto !important;
   padding-right: 8px !important;
 }
-.explore__show-more-click {
+.explore-click {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
