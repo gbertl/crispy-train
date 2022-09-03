@@ -1,4 +1,4 @@
-const container = document.querySelector('._dx8zwa')
+const container = document.querySelector('.new_scrollable')
 
 const prevButton = document.querySelector('button[aria-label="Previous New this week"]')
 const nextButton = document.querySelector('button[aria-label="Next New this week"]')
