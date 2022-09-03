@@ -6254,7 +6254,7 @@ select[disabled] {
     flex: 1 0 140px !important;
   }
 }
-._1douprn {
+.header__nav-spacer {
   -webkit-flex: 0 1 auto !important;
   -ms-flex: 0 1 auto !important;
   flex: 0 1 auto !important;
@@ -6273,7 +6273,7 @@ select[disabled] {
     flex: 1 0 140px !important;
   }
 }
-._1o0em9y {
+.page-shell__navbar {
   height: 80px !important;
 }
 .header__brand {
@@ -15237,7 +15237,7 @@ fieldset[disabled] .btn {
     text-decoration: underline!important
   }
 }
-._1h75pd34 {
+.header__nav-profile-btn {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   -webkit-appearance: none!important;
@@ -15279,14 +15279,14 @@ fieldset[disabled] .btn {
   z-index: 1!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1h75pd34 {
+  .header__nav-profile-btn {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
   }
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1h75pd34:focus-visible {
+  .header__nav-profile-btn:focus-visible {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
@@ -15539,7 +15539,7 @@ fieldset[disabled] .btn {
   }
 }
 @media (prefers-reduced-motion:reduce) {
-  .dir.c1jdlqzl[class][class]:focus-visible::before {
+  .dir.header__nav-btn-container[class][class]:focus-visible::before {
     transition: none
   }
 }

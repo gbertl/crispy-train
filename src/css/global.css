@@ -1663,7 +1663,7 @@
     text-decoration: underline!important
   }
 }
-._1h75pd34 {
+.header__nav-profile-btn {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   -webkit-appearance: none!important;
@@ -1705,14 +1705,14 @@
   z-index: 1!important
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1h75pd34 {
+  .header__nav-profile-btn {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
   }
 }
 @media (prefers-reduced-motion:reduce) {
-  ._1h75pd34:focus-visible {
+  .header__nav-profile-btn:focus-visible {
     -webkit-transition: none!important;
     -moz-transition: none!important;
     transition: none!important
@@ -1965,7 +1965,7 @@
   }
 }
 @media (prefers-reduced-motion:reduce) {
-  .dir.c1jdlqzl[class][class]:focus-visible::before {
+  .dir.header__nav-btn-container[class][class]:focus-visible::before {
     transition: none
   }
 }
