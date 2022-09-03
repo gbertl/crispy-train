@@ -7377,13 +7377,13 @@ select[disabled] {
   margin-right: 16px !important;
   white-space: nowrap !important;
 }
-._3d8119q {
+.explore__list-card-container {
   display: inline-block !important;
   vertical-align: top !important;
   white-space: normal !important;
 }
 @media (min-width: 1285px) and (max-width: 1659px) {
-  ._3d8119q {
+  .explore__list-card-container {
     width: 33.3333% !important;
   }
 }
@@ -7594,7 +7594,7 @@ select[disabled] {
   color: inherit !important;
 }
 @media (min-width: 910px) and (max-width: 1284px) {
-  ._3d8119q {
+  .explore__list-card-container {
     width: 50% !important;
   }
 }
@@ -40055,7 +40055,7 @@ tr.show-desktop {
   background-color: var(--pin-background-color, #febf46);
 }
 
-.c1aqm3wp[class][class] {
+.explore__carousel-card[class][class] {
   position: relative;
 }
 .l1d1x245[class][class] {
