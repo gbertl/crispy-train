@@ -10391,24 +10391,24 @@ h3:first-child {
     border-color: #000 !important;
   }
 }
-._u02imw {
+.header__search-tabs-filter-body-date {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
-._1g5twx {
+.header__search-tabs-filter-body-date-tabs-space {
   padding-bottom: 6px !important;
 }
-._1kyyc1p {
+.header__search-tabs-filter-body-date-tabs {
   background-color: #ebebeb !important;
   border-radius: 100px !important;
   padding-left: 4px !important;
   padding-right: 4px !important;
   display: flex !important;
 }
-._1rzjy36 {
+.header__search-tabs-filter-body-date-tabs-container {
   display: grid !important;
   grid-auto-columns: 1fr !important;
   grid-auto-flow: column !important;
@@ -10416,7 +10416,7 @@ h3:first-child {
   max-width: 400px !important;
   min-width: 303px !important;
 }
-._d09hfbg {
+.header__search-tabs-filter-body-date-tabs-active {
   border-radius: 100px !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -10440,7 +10440,7 @@ h3:first-child {
   box-shadow: rgb(0 0 0 / 8%) 0 1px 2px, rgb(0 0 0 / 5%) 0 4px 12px !important;
   cursor: default !important;
 }
-._19471dk {
+.header__search-tabs-filter-body-date-tabs-btn {
   border-radius: 100px !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -10462,7 +10462,7 @@ h3:first-child {
   position: relative !important;
   outline: 0 !important;
 }
-._19471dk:last-child {
+.header__search-tabs-filter-body-date-tabs-btn:last-child {
   margin-right: 0 !important;
 }
 .explore-filter__date-text {
@@ -17711,13 +17711,13 @@ h3:first-child {
     flex: var(--query-input_flex, 1.5 0 0%);
   }
 }
-.d10vztq8[class][class] {
+.header__search-tabs-filter-body-date-container[class][class] {
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dir.d10vztq8[class][class] {
+.dir.header__search-tabs-filter-body-date-container[class][class] {
   padding: 18px 28px 10px;
 }
 .gf0pxjh[class][class] {
