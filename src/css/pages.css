@@ -1610,14 +1610,6 @@
   overflow-y: auto !important;
   -webkit-overflow-scrolling: touch !important;
 }
-.main_content__header-action-dot-icon-wrapper {
-  display: inline !important;
-}
-@media (min-width: 744px) {
-  .main_content__header-action-dot-icon-wrapper {
-    display: none !important;
-  }
-}
 .main_content__header-date-wrapper {
   display: none !important;
 }
