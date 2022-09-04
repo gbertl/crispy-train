@@ -78,13 +78,13 @@
   }
 }
 @media (min-width: 1128px) {
-  .block-lg {
+  .block-xl {
     display: block !important;
   }
-  .hidden-lg {
+  .hidden-xl {
     display: none !important;
   }
-  .inline-block-lg {
+  .inline-block-xl {
     display: inline-block !important;
   }
 }
@@ -749,7 +749,7 @@
     display: none;
   }
 }
-.page-shell-max-lg-plus {
+.page-shell-max-xl-plus {
   --page-shell-max-content-width: 1440px !important;
 }
 .page-shell {

@@ -66,11 +66,11 @@
   }
 }
 @media (min-width:1128px) {
-  .col-lg-3 {
+  .col-xl-3 {
     width: 25%;
     float: left
   }
-  .col-lg-6 {
+  .col-xl-6 {
     width: 50%;
     float: left
   }
@@ -88,19 +88,19 @@
     grid-column: span 4
   }
 }
-.col-lg-3 {
+.col-xl-3 {
   position: relative
 }
 @media (min-width:1128px) {
-  .col-lg-3 {
+  .col-xl-3 {
     grid-column: span 3
   }
 }
-.col-lg-6 {
+.col-xl-6 {
   position: relative
 }
 @media (min-width:1128px) {
-  .col-lg-6 {
+  .col-xl-6 {
     grid-column: span 6
   }
 }
