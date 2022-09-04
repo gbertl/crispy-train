@@ -1,4 +1,16 @@
 /* Utilities */
+.contents {
+  display: contents !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.block {
+  display: block !important;
+}
+.inline {
+  display: inline !important;
+}
 .hidden {
   display: none !important;
 }
@@ -88,15 +100,6 @@
     padding-right: 24px;
     padding-left: 24px;
   }
-}
-.contents {
-  display: contents !important;
-}
-.inline-block {
-  display: inline-block !important;
-}
-.block {
-  display: block !important;
 }
 .relative {
   position: relative;
@@ -830,9 +833,6 @@
   display: table-cell !important;
   width: 100% !important;
   vertical-align: top !important;
-}
-.inline {
-  display: inline !important;
 }
 .row-condensed {
   margin-left: -4px !important;
