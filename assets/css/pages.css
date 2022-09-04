@@ -1651,14 +1651,6 @@
   opacity: 0 !important;
   left: -10000px !important;
 }
-.main_content__header-date--prev-btns {
-  display: inline !important;
-}
-@media (min-width: 1128px) {
-  .main_content__header-date--prev-btns {
-    display: none !important;
-  }
-}
 .main_content__header-date--next-btns {
   margin-left: 24px !important;
   margin-right: 8px !important;
