@@ -982,11 +982,11 @@
   background-color: #f7f7f7 !important;
   box-shadow: rgb(235 235 235) 0 0 0 1px inset !important;
 }
-.main_content__details-form-host-select:disabled {
+.form__select:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
 }
-.main_content__details-form-host-select {
+.form__select {
   min-height: 56px !important;
   width: 100% !important;
   border: none !important;
