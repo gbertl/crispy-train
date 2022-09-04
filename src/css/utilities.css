@@ -69,6 +69,15 @@
     margin-bottom: 16px !important;
   }
 }
+@media (min-width: 950px) {
+  .flex-row-full-width {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+  .block-lg {
+    display: block !important;
+  }
+}
 @media (max-width: 1127px) {
   .mw-sm-50 {
     max-width: 50% !important;
@@ -559,12 +568,6 @@
   margin-right: auto !important;
 }
 @media (min-width: 744px) {
-  .flex-row-full-width {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-}
-@media (min-width: 950px) {
   .flex-row-full-width {
     padding-left: 40px !important;
     padding-right: 40px !important;
