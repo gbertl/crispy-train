@@ -4063,6 +4063,15 @@ select[disabled] {
 .translateY-15 {
   transform: translateY(15px);
 }
+@media (min-width: 375px) {
+  .flex-row-full-width {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  .block-sm {
+    display: block !important;
+  }
+}
 @media (min-width: 744px) {
   .block-md {
     display: block !important;
@@ -4576,12 +4585,6 @@ select[disabled] {
   padding-right: 24px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-}
-@media (min-width: 375px) {
-  .flex-row-full-width {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
 }
 @media (min-width: 744px) {
   .flex-row-full-width {
