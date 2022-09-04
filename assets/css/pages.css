@@ -1075,7 +1075,7 @@
   -webkit-box-align: stretch;
   align-items: stretch;
 }
-._a5dd69 {
+.calendar-section__container {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
   position: relative !important;
@@ -1101,14 +1101,14 @@
   box-sizing: inherit;
   -moz-box-sizing: inherit;
 }
-._vw9f2m {
+.calendar-section__month-day-header {
   -webkit-box-pack: center !important;
   border-bottom: 1px solid #ebebeb !important;
   flex: 1 0 0% !important;
   display: flex !important;
   justify-content: center !important;
 }
-._kw6iou6 {
+.calendar-section__month-day-text {
   font-size: 10px !important;
   line-height: 12px !important;
   color: #222 !important;
@@ -1121,7 +1121,7 @@
 .rbc-month-row + .rbc-month-row {
   border-top: 1px solid #ebebeb;
 }
-._qa8to9 {
+.calendar-section__month-view-day-table-data-wrapper {
   -webkit-box-pack: center !important;
   font-size: 12px !important;
   line-height: 16px !important;
@@ -1158,7 +1158,7 @@
   overflow: hidden;
   height: 100%;
 }
-._1ypqily {
+.calendar-section__month-view-day-table-data {
   border-width: 1px !important;
   flex: 1 0 0% !important;
   border-style: solid !important;
@@ -1460,7 +1460,7 @@
   user-select: none;
   z-index: 4;
 }
-._rc1aqhv {
+.calendar-section__month-view-detail {
   flex: 1 0 0% !important;
   border-style: solid !important;
   border-color: #222 !important;
@@ -1479,11 +1479,11 @@
   width: 100%;
 }
 @media (min-width: 1348px) {
-  ._ugyakgt {
+  .calendar-section__month-day-event-icon-wrapper {
     display: none !important;
   }
 }
-._ugyakgt {
+.calendar-section__month-day-event-icon-wrapper {
   padding-left: 6px !important;
 }
 ._z3inzmm {
@@ -1499,7 +1499,7 @@
   color: #fff !important;
   font-weight: 800 !important;
 }
-._1quckzp {
+.calendar-section__month-previous-day-overlay {
   -webkit-box-align: center !important;
   position: absolute;
   display: flex !important;
@@ -1509,7 +1509,7 @@
   width: 20px !important;
   height: 28px !important;
 }
-._5vnsql {
+.calendar-section__month-time-wrapper {
   -webkit-box-align: center !important;
   padding-left: 8px !important;
   padding-right: 8px !important;
@@ -1532,10 +1532,10 @@
   -ms-flex-direction: row;
   flex-direction: row;
 }
-._wu6inh {
+.calendar-section__month-day-event-qnty {
   font-weight: 400 !important;
 }
-._cod8x5 {
+.calendar-section__month-previous-day-text {
   -webkit-box-align: center !important;
   -webkit-box-pack: center !important;
   width: 28px !important;
@@ -1545,14 +1545,14 @@
   justify-content: center !important;
   align-items: center !important;
 }
-._1a55uetp {
+.calendar-section__month-view-empty-detail {
   border-width: 1px !important;
   flex: 1 0 0% !important;
   border-style: solid !important;
   border-color: transparent transparent transparent #ebebeb !important;
   background: #f7f7f7 !important;
 }
-._2ytifw0 {
+.calendar-section__month-previous-day-wrapper {
   -webkit-box-pack: center !important;
   font-size: 12px !important;
   line-height: 16px !important;
