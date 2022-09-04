@@ -1805,7 +1805,7 @@
     display: none !important;
   }
 }
-._1pmsz24 {
+.calendar-sideba__sched-event-wrapper {
   box-shadow: rgb(0 0 0 / 12%) 0 6px 16px !important;
   border-radius: 8px !important;
   border: 1px solid #ebebeb !important;
@@ -1814,13 +1814,13 @@
   min-height: 124px !important;
   position: relative !important;
 }
-._1oujxnw {
+.calendar-sideba__sched-event-desc-wrapper {
   text-align: left !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 1.2 !important;
 }
-._1n9ujnd {
+.calendar-sideba__sched-event-text-wrapper {
   -webkit-box-align: start !important;
   -webkit-box-pack: justify !important;
   -webkit-box-direction: normal !important;
@@ -1832,7 +1832,7 @@
   align-items: flex-start !important;
   height: 100% !important;
 }
-._1d2y1bv {
+.calendar-sideba__sched-event-note {
   color: #717171 !important;
   font-weight: 400 !important;
   font-size: 12px !important;
@@ -1860,12 +1860,12 @@
   width: 99% !important;
   z-index: 3 !important;
 }
-._1yqloi9 {
+.calendar-sideba__sched-event-desc-text-wrapper {
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 1.2 !important;
 }
-._18oyew7 {
+.calendar-sideba__sched-insight {
   padding: 12px 0 !important;
   border-width: 1px 0 0 !important;
   border-right-style: initial !important;
@@ -2014,17 +2014,17 @@
 .main_content__details-wrapper:focus {
   border: 2px solid #222 !important;
 }
-._qwh8zw {
+.calendar-sideba__header {
   padding-top: 16px !important;
   padding-bottom: 8px !important;
   font-weight: 600 !important;
   font-size: 22px !important;
   line-height: 26px !important;
 }
-._v72lrv {
+.calendar-sideba__sched-btn-wrapper {
   padding-top: 8px !important;
 }
-._10za72m2 {
+.calendar-sideba__sched-insight-date {
   margin: 0 !important;
   overflow-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -2034,14 +2034,14 @@
   line-height: 1.44444em !important;
   color: inherit !important;
 }
-._deeknj {
+.calendar-sideba__sched-insight-desc {
   color: #222 !important;
 }
-._yh3k1m {
+.calendar-sideba__sched-insight-show-mote {
   font-weight: 800 !important;
   color: #222 !important;
 }
-._54q55d {
+.calendar-sideba__sched-event-img-wrapper {
   position: absolute !important;
   right: 0 !important;
   top: 0 !important;
@@ -14921,7 +14921,7 @@ h3:first-child {
   font-size: 32px !important;
   line-height: 36px !important;
 }
-._l7kbrl {
+.calendar-sideba__sched-event-note-wrapper {
   text-align: left !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -31274,7 +31274,7 @@ tr.show-desktop {
   margin-right: 8px !important;
   margin-bottom: 8px !important;
 }
-._1ir6ymk {
+.calendar-sideba__qnty-sched {
   font-size: 14px !important;
   line-height: 18px !important;
 }
@@ -37031,7 +37031,7 @@ tr.show-desktop {
   transform-origin: 50% 100% !important;
   will-change: transform !important;
 }
-._1ouw2w0 {
+.calendar-sideba__sched-event {
   padding-bottom: 16px !important;
 }
 .app-theme__save-btn {
@@ -49382,7 +49382,7 @@ textarea {
   margin: 0 !important;
   padding-left: 16px !important;
 }
-._1p7iugi {
+.calendar-sideba__sched-event-time-wrapper {
   font-weight: 800 !important;
 }
 ._1tluusc {
