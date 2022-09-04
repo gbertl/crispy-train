@@ -930,11 +930,11 @@
     transition: none !important;
   }
 }
-.header__logo-lg {
+.header__logo-xl {
   display: none !important;
 }
 @media (min-width: 1128px) {
-  .header__logo-lg {
+  .header__logo-xl {
     display: block !important;
   }
 }
@@ -1010,11 +1010,11 @@
 .cbavvlr[class][class] {
   color: var(--ihf-tp-q);
 }
-.header__logo-lg[class][class] {
+.header__logo-xl[class][class] {
   display: none;
 }
 @media (min-width: 1128px) {
-  .header__logo-lg[class][class] {
+  .header__logo-xl[class][class] {
     display: block;
   }
 }

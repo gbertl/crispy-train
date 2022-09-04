@@ -46,7 +46,7 @@
   }
 }
 @media (min-width:744px) {
-  ._1udzt2s,
+  .page-shell-mobile__display-none,
   .hide-md {
     display: none!important
   }
@@ -294,14 +294,14 @@
 }
 @media (min-width:1128px) {
   .explore-value-props-section {
-    margin-bottom: max(0,-webkit-calc(var(--exp-pdw-lg-bot,40px) - var(--gp-section-bottom-margin,0)))!important;
-    margin-bottom: max(0,-moz-calc(var(--exp-pdw-lg-bot,40px) - var(--gp-section-bottom-margin,0)))!important;
-    margin-bottom: max(0,calc(var(--exp-pdw-lg-bot,40px) - var(--gp-section-bottom-margin,0)))!important;
-    margin-top: max(0,-webkit-calc(var(--exp-pdw-lg-top,0) - var(--gp-section-top-margin,0)))!important;
-    margin-top: max(0,-moz-calc(var(--exp-pdw-lg-top,0) - var(--gp-section-top-margin,0)))!important;
-    margin-top: max(0,calc(var(--exp-pdw-lg-top,0) - var(--gp-section-top-margin,0)))!important;
-    padding-left: var(--exp-pdw-lg-lead,0)!important;
-    padding-right: var(--exp-pdw-lg-trail,0)!important
+    margin-bottom: max(0,-webkit-calc(var(--exp-pdw-xl-bot,40px) - var(--gp-section-bottom-margin,0)))!important;
+    margin-bottom: max(0,-moz-calc(var(--exp-pdw-xl-bot,40px) - var(--gp-section-bottom-margin,0)))!important;
+    margin-bottom: max(0,calc(var(--exp-pdw-xl-bot,40px) - var(--gp-section-bottom-margin,0)))!important;
+    margin-top: max(0,-webkit-calc(var(--exp-pdw-xl-top,0) - var(--gp-section-top-margin,0)))!important;
+    margin-top: max(0,-moz-calc(var(--exp-pdw-xl-top,0) - var(--gp-section-top-margin,0)))!important;
+    margin-top: max(0,calc(var(--exp-pdw-xl-top,0) - var(--gp-section-top-margin,0)))!important;
+    padding-left: var(--exp-pdw-xl-lead,0)!important;
+    padding-right: var(--exp-pdw-xl-trail,0)!important
   }
 }
 .explore-value-props-container {
@@ -605,11 +605,11 @@
     display: none!important
   }
 }
-.explore-value-prop-items-lg-title {
+.explore-value-prop-items-xl-title {
   display: none!important
 }
 @media (min-width:1128px) {
-  .explore-value-prop-items-lg-title {
+  .explore-value-prop-items-xl-title {
     font-size: 22px!important;
     line-height: 26px!important;
     display: block!important;
@@ -842,7 +842,7 @@
   flex-shrink: 0!important;
   width: 100%!important
 }
-.explore-section-header-container {
+.explore-section-heading-container {
   color: #222!important;
   display: -webkit-box!important;
   display: -moz-box!important;
@@ -850,7 +850,7 @@
   display: -webkit-flex!important;
   display: flex!important
 }
-.explore-section-header-content {
+.explore-section-heading-content {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   display: -webkit-box!important;
@@ -862,7 +862,7 @@
   align-items: center!important;
   margin-bottom: 16px!important
 }
-.explore-section-header-leading-text {
+.explore-section-heading-leading-text {
   -webkit-box-flex: 1!important;
   -ms-flex-positive: 1!important;
   -webkit-box-align: center!important;
@@ -878,7 +878,7 @@
   flex-grow: 1!important;
   margin-bottom: 16px!important
 }
-.explore-section-header-trailing-image {
+.explore-section-heading-trailing-image {
   -webkit-box-align: center!important;
   -ms-flex-align: center!important;
   -webkit-box-pack: end!important;
@@ -902,28 +902,28 @@
   -webkit-align-items: center!important;
   align-items: center!important
 }
-.explore-section-header-trailing-image-height {
+.explore-section-heading-trailing-image-height {
   height: 64px!important
 }
-.explore-section-header {
+.explore-section-heading {
   font-family: Avenir,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif!important;
   font-weight: 400!important;
   width: 100%!important;
   margin-bottom: 8px!important
 }
-.explore-section-header-title {
+.explore-section-heading-title {
   font-weight: 600!important;
   margin-bottom: 0!important;
   font-size: 22px!important;
   line-height: 26px!important
 }
-.explore-section-header-text {
+.explore-section-heading-text {
   font-size: 14px!important;
   line-height: 20px!important;
   margin-top: 4px!important
 }
 @media (min-width:744px) {
-  .explore-section-header-text {
+  .explore-section-heading-text {
     font-size: 16px!important;
     line-height: 24px!important
   }
