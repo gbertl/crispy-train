@@ -4033,7 +4033,7 @@ select[disabled] {
 .flex {
   display: flex !important;
 }
-.hide-scrollbar::-webkit-scrollbar {
+.hidden-scrollbar::-webkit-scrollbar {
   display: none !important;
 }
 .overflow-y-hidden {
