@@ -5,13 +5,38 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="../assets/css/pages.css" />
-
     <title>Upcoming payments - Payments & payouts - Account - Airbnb</title>
   </head>
-  <body>
-    <div data-application="true" class='hidden-md'>
+  <body class="with-new-header">
+    <div id="site-skip-links">
+      <a
+        class="screen-reader-only screen-reader-only-focusable skip-to-content"
+        data-hook="skip-to-content"
+        href="#site-content"
+        >Skip to content</a
+      ><span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript
+      ><div
+        class="alert alert-with-icon alert-error no-js-alert"
+        data-nosnippet="true"
+      >
+        <i class="icon alert-icon icon-alert-alt"></i>We’re sorry, some parts of
+        the Airbnb website don’t work properly without JavaScript enabled.
+      </div></noscript
+    >
+    <div
+      id="flash-container"
+      class="flash-container"
+      role="alert"
+      aria-live="assertive"
+    ></div>
+    <div id="education-overlay-root"></div>
+    <!-- Mobile -->
+    <div data-application="true" class="hidden-md">
       <div dir="ltr">
-        <div data-theme="" class="t1bgcr6e">
+        <div data-theme="" class="app-theme">
           <div>
             <div>
               <div
@@ -20,9 +45,9 @@
                   --view-to-view-transition-element-visibility: hidden;
                 "
               >
-                <div class="_is5jnq">
-                  <div class="_16grqhk">
-                    <div class="_siy8gh"></div>
+                <div class="page-shell-max-xl-plus">
+                  <div class="page-shell">
+                    <div class="hidden block-md"></div>
                     <main id="site-content">
                       <nav
                         class="_1tt196k"
@@ -516,27 +541,29 @@
                   </div>
                   <div class="display__flex dir dir-ltr"></div>
                 </div>
-                <div class="t2pjd0h dir dir-ltr">
-                  <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                <div class="incoming__container dir dir-ltr">
+                  <div class="incoming__wrapper dir dir-ltr" data-testid="Incoming"></div>
                 </div>
                 <div
-                  class="t1nrbpkt dir dir-ltr"
+                  class="app-theme-visibility dir dir-ltr"
                   aria-hidden="true"
                   inert="true"
                 ></div>
               </div>
             </div>
           </div>
-          <div class="_b21f4g">
+          <div class="container__border-0">
             <div aria-live="polite" aria-atomic="true"></div>
             <div aria-live="assertive" aria-atomic="true"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Mobile -->
+    <!-- Desktop -->
     <div data-application="true" class="hidden block-md">
       <div dir="ltr">
-        <div data-theme="" class="t1bgcr6e">
+        <div data-theme="" class="app-theme">
           <div>
             <div>
               <div
@@ -545,18 +572,18 @@
                   --view-to-view-transition-element-visibility: hidden;
                 "
               >
-                <div class="_is5jnq">
-                  <div class="_16grqhk">
-                    <div class="_siy8gh">
+                <div class="page-shell-max-xl-plus">
+                  <div class="page-shell">
+                    <div class="hidden block-md">
                       <div class="display__flex dir dir-ltr">
-                        <header class="_ryjrtl9" data-reactroot="">
-                          <div class="_1mwcsjrg">
-                            <div class="_otdka">
+                        <header class="header" data-reactroot="">
+                          <div class="header__container">
+                            <div class="header__brand-wrapper">
                               <a
-                                class="_1f41ax74"
+                                class="header__brand"
                                 aria-label="Airbnb Homepage"
                                 href="/"
-                                ><div class="_1grlqto">
+                                ><div class="hidden block-xl">
                                   <svg
                                     width="102"
                                     height="32"
@@ -572,7 +599,7 @@
                                     ></path>
                                   </svg>
                                 </div>
-                                <div class="_17ctt5">
+                                <div class="header__logo">
                                   <svg
                                     width="30"
                                     height="32"
@@ -585,26 +612,26 @@
                                   </svg></div
                               ></a>
                             </div>
-                            <div class="_1douprn"></div>
-                            <div class="_19h9w7f">
-                              <nav class="_vuzcgs" aria-label="Profile">
-                                <div class="_176ugpa">
+                            <div class="header__nav-spacer"></div>
+                            <div class="header__nav-wrapper">
+                              <nav class="header__nav" aria-label="Profile">
+                                <div class="header__nav-btn-wrapper">
                                   <a
-                                    class="c1jdlqzl c177491c dir dir-ltr"
+                                    class="header__nav-btn-container header__nav-btn-container-color dir dir-ltr"
                                     href="/hosting"
-                                    ><div class="l1hgmivi dir dir-ltr">
+                                    ><div class="header__nav-btn-container-text dir dir-ltr">
                                       Switch to hosting
                                     </div></a
                                   >
                                   <div class="_1ubw29">
                                     <button
                                       type="button"
-                                      class="c1jdlqzl c177491c dir dir-ltr"
+                                      class="header__nav-btn-container header__nav-btn-container-color dir dir-ltr"
                                       aria-expanded="false"
                                       aria-label="Choose a language and currency"
                                     >
-                                      <div class="l1hgmivi dir dir-ltr">
-                                        <div class="_z5mecy" aria-hidden="true">
+                                      <div class="header__nav-btn-container-text dir dir-ltr">
+                                        <div class="header__nav-btn-container-icon-wrapper" aria-hidden="true">
                                           <svg
                                             viewBox="0 0 16 16"
                                             xmlns="http://www.w3.org/2000/svg"
@@ -627,16 +654,16 @@
                                     </button>
                                   </div>
                                 </div>
-                                <div class="_3hmsj">
-                                  <div class="_167wsvl">
+                                <div class="box-border">
+                                  <div class="header__nav-d-inline-relative">
                                     <button
                                       type="button"
-                                      class="_1h75pd34"
+                                      class="header__nav-profile-btn"
                                       aria-expanded="false"
-                                      aria-label="Main navigation menu. 3 notifications."
+                                      aria-label="Main navigation menu. 2 notifications."
                                       data-testid="cypress-headernav-profile"
                                     >
-                                      <div class="_3hmsj">
+                                      <div class="box-border">
                                         <svg
                                           viewBox="0 0 32 32"
                                           xmlns="http://www.w3.org/2000/svg"
@@ -660,14 +687,14 @@
                                           </g>
                                         </svg>
                                       </div>
-                                      <div class="_1xp7o8n">
+                                      <div class="header__nav-profile-img-wrapper">
                                         <img
-                                          class="_1wzp0xs"
+                                          class="header__nav-profile-img"
                                           src="https://a0.muscache.com/im/pictures/user/c23add77-bcfd-4bb9-895f-3e41eb3dc4ca.jpg?aki_policy=profile_medium"
                                           alt=""
                                         />
                                       </div>
-                                      <div class="_1f7hhcdo">3</div>
+                                      <div class="_1f7hhcdo">2</div>
                                     </button>
                                   </div>
                                 </div>
@@ -675,7 +702,7 @@
                             </div>
                           </div>
                         </header>
-                        <div class="_1o0em9y"></div>
+                        <div class="page-shell__navbar"></div>
                       </div>
                     </div>
                     <main id="site-content">
@@ -1131,180 +1158,180 @@
                     </main>
                   </div>
                   <div class="display__flex dir dir-ltr">
-                    <footer
-                      role="contentinfo"
-                      class="_1boqbzp"
-                      data-reactroot=""
-                    >
-                      <div class="_1s94zl78">
-                        <div class="_fyxf74">
-                          <section class="_1l3ys1i">
-                            <div class="_x6q4xl">
-                              <h3 class="_otc65q">Support</h3>
+                    <footer role="contentinfo" class="footer" data-reactroot="">
+                      <div class="footer__container">
+                        <div class="footer__links-wrapper">
+                          <section class="footer__links">
+                            <div class="footer__heading-wrapper">
+                              <h3 class="footer__heading">Support</h3>
                             </div>
-                            <ul class="_yuolfv">
-                              <li class="_wmuyow">
+                            <ul class="footer__links-list">
+                              <li class="footer__links-item">
                                 <a
                                   href="/help/home?from=footer"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Help Center</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/aircover" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/aircover" class="footer__link"
                                   >AirCover</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/trust" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/trust" class="footer__link"
                                   >Safety information</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/accessibility" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/accessibility" class="footer__link"
                                   >Supporting people with disabilities</a
                                 >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Cancellation options</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/d/covidsafety" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/d/covidsafety" class="footer__link"
                                   >Our COVID-19 Response</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/neighbors" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/neighbors" class="footer__link"
                                   >Report a neighborhood concern</a
                                 >
                               </li>
                             </ul>
                           </section>
-                          <section class="_1l3ys1i">
-                            <div class="_x6q4xl">
-                              <h3 class="_otc65q">Community</h3>
+                          <section class="footer__links">
+                            <div class="footer__heading-wrapper">
+                              <h3 class="footer__heading">Community</h3>
                             </div>
-                            <ul class="_yuolfv">
-                              <li class="_wmuyow">
+                            <ul class="footer__links-list">
+                              <li class="footer__links-item">
                                 <a
                                   href="https://www.airbnb.org?locale=en"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Airbnb.org: disaster relief housing</a
                                 >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   rel="noopener noreferrer"
                                   target="_blank"
                                   href="https://www.airbnb.org/refugees"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Support Afghan refugees</a
                                 >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   href="/against-discrimination"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Combating discrimination</a
                                 >
                               </li>
                             </ul>
                           </section>
-                          <section class="_1l3ys1i">
-                            <div class="_x6q4xl">
-                              <h3 class="_otc65q">Hosting</h3>
+                          <section class="footer__links">
+                            <div class="footer__heading-wrapper">
+                              <h3 class="footer__heading">Hosting</h3>
                             </div>
-                            <ul class="_yuolfv">
-                              <li class="_wmuyow">
+                            <ul class="footer__links-list">
+                              <li class="footer__links-item">
                                 <a
                                   href="/host/homes?from_footer=1"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Try hosting</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/aircover-for-hosts" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a
+                                  href="/aircover-for-hosts"
+                                  class="footer__link"
                                   >AirCover for Hosts</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/resources" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/resources" class="footer__link"
                                   >Explore hosting resources</a
                                 >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   href="/help/community?s=footer"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Visit our community forum</a
                                 >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   href="/help/responsible-hosting"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >How to host responsibly</a
                                 >
                               </li>
                             </ul>
                           </section>
-                          <section class="_1l3ys1i">
-                            <div class="_x6q4xl">
-                              <h3 class="_otc65q">Airbnb</h3>
+                          <section class="footer__links">
+                            <div class="footer__heading-wrapper">
+                              <h3 class="footer__heading">Airbnb</h3>
                             </div>
-                            <ul class="_yuolfv">
-                              <li class="_wmuyow">
-                                <a href="/press/news" class="_1e6wtwm5"
+                            <ul class="footer__links-list">
+                              <li class="footer__links-item">
+                                <a href="/press/news" class="footer__link"
                                   >Newsroom</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/2022-summer" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/2022-summer" class="footer__link"
                                   >Learn about new features</a
                                 >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   href="https://news.airbnb.com/what-makes-airbnb-airbnb"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Letter from our founders</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/careers" class="_1e6wtwm5">Careers</a>
+                              <li class="footer__links-item">
+                                <a href="/careers" class="footer__link"
+                                  >Careers</a
+                                >
                               </li>
-                              <li class="_wmuyow">
+                              <li class="footer__links-item">
                                 <a
                                   href="https://investors.airbnb.com"
-                                  class="_1e6wtwm5"
+                                  class="footer__link"
                                   >Investors</a
                                 >
                               </li>
-                              <li class="_wmuyow">
-                                <a href="/giftcards" class="_1e6wtwm5"
+                              <li class="footer__links-item">
+                                <a href="/giftcards" class="footer__link"
                                   >Gift cards</a
                                 >
                               </li>
                             </ul>
                           </section>
                         </div>
-                        <div class="_1wsqynx">
-                          <span class="a8jt5op dir dir-ltr"
+                        <div class="footer__copyright">
+                          <span class="text-highlight dir dir-ltr"
                             >Footer section</span
                           >
                           <section>
-                            <div class="_1udzt2s">
-                              <div class="_p03egf">
+                            <div class="page-shell-mobile__display-none">
+                              <div class="page-shell-mobile__mb-16">
                                 <div class="flex">
-                                  <span class="_19c5bku"
-                                    ><button type="button" class="_f2hxk3s">
-                                      <span class="a8jt5op dir dir-ltr"
+                                  <span class="page-shell-mobile__lang-wrapper"
+                                    ><button type="button" class="page-shell-mobile__lang-btn">
+                                      <span class="text-highlight dir dir-ltr"
                                         >Choose a language</span
-                                      ><span class="_14tkmhr"
+                                      ><span class="page-shell-mobile__lang-icon-wrapper"
                                         ><svg
                                           viewBox="0 0 16 16"
                                           xmlns="http://www.w3.org/2000/svg"
@@ -1321,55 +1348,56 @@
                                           <path
                                             d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
                                           ></path></svg></span
-                                      ><span class="_144l3kj"
+                                      ><span class="page-shell-mobile__lang-text"
                                         >English (US)</span
                                       >
                                     </button></span
-                                  ><span class="_19c5bku"
-                                    ><button type="button" class="_f2hxk3s">
-                                      <span class="a8jt5op dir dir-ltr"
+                                  ><span class="page-shell-mobile__lang-wrapper"
+                                    ><button type="button" class="page-shell-mobile__lang-btn">
+                                      <span class="text-highlight dir dir-ltr"
                                         >Choose a currency</span
-                                      ><span class="_14tkmhr"
-                                        ><span class="_pgfqnw">₱</span></span
-                                      ><span class="_144l3kj">PHP</span>
+                                      ><span class="page-shell-mobile__lang-icon-wrapper"
+                                        ><span class="page-shell-mobile__lang-icon-currency">₱</span></span
+                                      ><span class="page-shell-mobile__lang-text">PHP</span>
                                     </button></span
                                   >
                                 </div>
                               </div>
-                              <div class="_pd8gea">
-                                <div class="_wjo0ey">
-                                  <div class="_1br4kkl" dir="ltr">
+                              <div class="page-shell-mobile__footer">
+                                <div class="page-shell-mobile__footer-wrapper">
+                                  <div class="footer__copyright-text" dir="ltr">
                                     © 2022 Airbnb, Inc.
                                   </div>
-                                  <div class="_opoa3c">
-                                    <span class="_j8ldew"
-                                      ><span class="_15vc6yg" aria-hidden="true"
+                                  <div class="footer__utility">
+                                    <span class="hidden inline-block-xl"
+                                      ><span class="footer__utility-spacer" aria-hidden="true"
                                         >·</span
                                       ></span
                                     ><a
                                       href="/terms/privacy_policy"
-                                      class="_1e6wtwm5"
+                                      class="footer__link"
                                       >Privacy</a
-                                    ><span class="_15vc6yg" aria-hidden="true"
+                                    ><span class="footer__utility-spacer" aria-hidden="true"
                                       >·</span
-                                    ><a href="/terms" class="_1e6wtwm5">Terms</a
-                                    ><span class="_15vc6yg" aria-hidden="true"
+                                    ><a href="/terms" class="footer__link"
+                                      >Terms</a
+                                    ><span class="footer__utility-spacer" aria-hidden="true"
                                       >·</span
-                                    ><a href="/sitemaps/v2" class="_1e6wtwm5"
+                                    ><a href="/sitemaps/v2" class="footer__link"
                                       >Sitemap</a
                                     >
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="_15m7xnk">
-                              <div class="_1juxowe">
+                            <div class="hidden block-md hidden-xl">
+                              <div class="page-shell-mobile__footer-spacer-wrapper">
                                 <div class="flex">
-                                  <span class="_19c5bku"
-                                    ><button type="button" class="_f2hxk3s">
-                                      <span class="a8jt5op dir dir-ltr"
+                                  <span class="page-shell-mobile__lang-wrapper"
+                                    ><button type="button" class="page-shell-mobile__lang-btn">
+                                      <span class="text-highlight dir dir-ltr"
                                         >Choose a language</span
-                                      ><span class="_14tkmhr"
+                                      ><span class="page-shell-mobile__lang-icon-wrapper"
                                         ><svg
                                           viewBox="0 0 16 16"
                                           xmlns="http://www.w3.org/2000/svg"
@@ -1386,28 +1414,28 @@
                                           <path
                                             d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
                                           ></path></svg></span
-                                      ><span class="_144l3kj"
+                                      ><span class="page-shell-mobile__lang-text"
                                         >English (US)</span
                                       >
                                     </button></span
-                                  ><span class="_19c5bku"
-                                    ><button type="button" class="_f2hxk3s">
-                                      <span class="a8jt5op dir dir-ltr"
+                                  ><span class="page-shell-mobile__lang-wrapper"
+                                    ><button type="button" class="page-shell-mobile__lang-btn">
+                                      <span class="text-highlight dir dir-ltr"
                                         >Choose a currency</span
-                                      ><span class="_14tkmhr"
-                                        ><span class="_pgfqnw">₱</span></span
-                                      ><span class="_144l3kj">PHP</span>
+                                      ><span class="page-shell-mobile__lang-icon-wrapper"
+                                        ><span class="page-shell-mobile__lang-icon-currency">₱</span></span
+                                      ><span class="page-shell-mobile__lang-text">PHP</span>
                                     </button></span
                                   >
                                 </div>
-                                <div class="_xh0r19">
-                                  <ul class="_115qwnm">
-                                    <li class="_kdkpwk">
+                                <div class="footer__social-ml-32">
+                                  <ul class="footer__social">
+                                    <li class="footer__social-item">
                                       <a
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         href="https://www.facebook.com/airbnb"
-                                        class="_1vwyakty"
+                                        class="footer__social-link"
                                         ><svg
                                           viewBox="0 0 32 32"
                                           role="img"
@@ -1427,12 +1455,12 @@
                                           ></path></svg
                                       ></a>
                                     </li>
-                                    <li class="_kdkpwk">
+                                    <li class="footer__social-item">
                                       <a
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         href="https://twitter.com/airbnb"
-                                        class="_1vwyakty"
+                                        class="footer__social-link"
                                         ><svg
                                           viewBox="0 0 32 32"
                                           role="img"
@@ -1452,12 +1480,12 @@
                                           ></path></svg
                                       ></a>
                                     </li>
-                                    <li class="_kdkpwk">
+                                    <li class="footer__social-item">
                                       <a
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         href="https://instagram.com/airbnb"
-                                        class="_1vwyakty"
+                                        class="footer__social-link"
                                         ><svg
                                           viewBox="0 0 24 24"
                                           role="img"
@@ -1480,30 +1508,36 @@
                                   </ul>
                                 </div>
                               </div>
-                              <div class="_1sv27e6">
-                                <div class="_pd8gea">
-                                  <div class="_wjo0ey">
-                                    <div class="_1br4kkl" dir="ltr">
+                              <div class="flex-content-center">
+                                <div class="page-shell-mobile__footer">
+                                  <div class="page-shell-mobile__footer-wrapper">
+                                    <div
+                                      class="footer__copyright-text"
+                                      dir="ltr"
+                                    >
                                       © 2022 Airbnb, Inc.
                                     </div>
-                                    <div class="_opoa3c">
-                                      <span class="_j8ldew"
+                                    <div class="footer__utility">
+                                      <span
+                                        class="hidden inline-block-xl"
                                         ><span
-                                          class="_15vc6yg"
+                                          class="footer__utility-spacer"
                                           aria-hidden="true"
                                           >·</span
                                         ></span
                                       ><a
                                         href="/terms/privacy_policy"
-                                        class="_1e6wtwm5"
+                                        class="footer__link"
                                         >Privacy</a
-                                      ><span class="_15vc6yg" aria-hidden="true"
+                                      ><span class="footer__utility-spacer" aria-hidden="true"
                                         >·</span
-                                      ><a href="/terms" class="_1e6wtwm5"
+                                      ><a href="/terms" class="footer__link"
                                         >Terms</a
-                                      ><span class="_15vc6yg" aria-hidden="true"
+                                      ><span class="footer__utility-spacer" aria-hidden="true"
                                         >·</span
-                                      ><a href="/sitemaps/v2" class="_1e6wtwm5"
+                                      ><a
+                                        href="/sitemaps/v2"
+                                        class="footer__link"
                                         >Sitemap</a
                                       >
                                     </div>
@@ -1512,26 +1546,27 @@
                               </div>
                             </div>
                             <div class="_ar9stc">
-                              <div class="_pd8gea">
-                                <div class="_wjo0ey">
-                                  <div class="_1br4kkl" dir="ltr">
+                              <div class="page-shell-mobile__footer">
+                                <div class="page-shell-mobile__footer-wrapper">
+                                  <div class="footer__copyright-text" dir="ltr">
                                     © 2022 Airbnb, Inc.
                                   </div>
-                                  <div class="_opoa3c">
-                                    <span class="_j8ldew"
-                                      ><span class="_15vc6yg" aria-hidden="true"
+                                  <div class="footer__utility">
+                                    <span class="hidden inline-block-xl"
+                                      ><span class="footer__utility-spacer" aria-hidden="true"
                                         >·</span
                                       ></span
                                     ><a
                                       href="/terms/privacy_policy"
-                                      class="_1e6wtwm5"
+                                      class="footer__link"
                                       >Privacy</a
-                                    ><span class="_15vc6yg" aria-hidden="true"
+                                    ><span class="footer__utility-spacer" aria-hidden="true"
                                       >·</span
-                                    ><a href="/terms" class="_1e6wtwm5">Terms</a
-                                    ><span class="_15vc6yg" aria-hidden="true"
+                                    ><a href="/terms" class="footer__link"
+                                      >Terms</a
+                                    ><span class="footer__utility-spacer" aria-hidden="true"
                                       >·</span
-                                    ><a href="/sitemaps/v2" class="_1e6wtwm5"
+                                    ><a href="/sitemaps/v2" class="footer__link"
                                       >Sitemap</a
                                     >
                                   </div>
@@ -1539,11 +1574,11 @@
                               </div>
                               <div class="flex">
                                 <div class="flex">
-                                  <span class="_19c5bku"
-                                    ><button type="button" class="_f2hxk3s">
-                                      <span class="a8jt5op dir dir-ltr"
+                                  <span class="page-shell-mobile__lang-wrapper"
+                                    ><button type="button" class="page-shell-mobile__lang-btn">
+                                      <span class="text-highlight dir dir-ltr"
                                         >Choose a language</span
-                                      ><span class="_14tkmhr"
+                                      ><span class="page-shell-mobile__lang-icon-wrapper"
                                         ><svg
                                           viewBox="0 0 16 16"
                                           xmlns="http://www.w3.org/2000/svg"
@@ -1560,28 +1595,28 @@
                                           <path
                                             d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"
                                           ></path></svg></span
-                                      ><span class="_144l3kj"
+                                      ><span class="page-shell-mobile__lang-text"
                                         >English (US)</span
                                       >
                                     </button></span
-                                  ><span class="_19c5bku"
-                                    ><button type="button" class="_f2hxk3s">
-                                      <span class="a8jt5op dir dir-ltr"
+                                  ><span class="page-shell-mobile__lang-wrapper"
+                                    ><button type="button" class="page-shell-mobile__lang-btn">
+                                      <span class="text-highlight dir dir-ltr"
                                         >Choose a currency</span
-                                      ><span class="_14tkmhr"
-                                        ><span class="_pgfqnw">₱</span></span
-                                      ><span class="_144l3kj">PHP</span>
+                                      ><span class="page-shell-mobile__lang-icon-wrapper"
+                                        ><span class="page-shell-mobile__lang-icon-currency">₱</span></span
+                                      ><span class="page-shell-mobile__lang-text">PHP</span>
                                     </button></span
                                   >
                                 </div>
-                                <div class="_xh0r19">
-                                  <ul class="_115qwnm">
-                                    <li class="_kdkpwk">
+                                <div class="footer__social-ml-32">
+                                  <ul class="footer__social">
+                                    <li class="footer__social-item">
                                       <a
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         href="https://www.facebook.com/airbnb"
-                                        class="_1vwyakty"
+                                        class="footer__social-link"
                                         ><svg
                                           viewBox="0 0 32 32"
                                           role="img"
@@ -1601,12 +1636,12 @@
                                           ></path></svg
                                       ></a>
                                     </li>
-                                    <li class="_kdkpwk">
+                                    <li class="footer__social-item">
                                       <a
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         href="https://twitter.com/airbnb"
-                                        class="_1vwyakty"
+                                        class="footer__social-link"
                                         ><svg
                                           viewBox="0 0 32 32"
                                           role="img"
@@ -1626,12 +1661,12 @@
                                           ></path></svg
                                       ></a>
                                     </li>
-                                    <li class="_kdkpwk">
+                                    <li class="footer__social-item">
                                       <a
                                         rel="noopener noreferrer"
                                         target="_blank"
                                         href="https://instagram.com/airbnb"
-                                        class="_1vwyakty"
+                                        class="footer__social-link"
                                         ><svg
                                           viewBox="0 0 24 24"
                                           role="img"
@@ -1661,23 +1696,24 @@
                     </footer>
                   </div>
                 </div>
-                <div class="t2pjd0h dir dir-ltr">
-                  <div class="t6qlz27 dir dir-ltr" data-testid="Incoming"></div>
+                <div class="incoming__container dir dir-ltr">
+                  <div class="incoming__wrapper dir dir-ltr" data-testid="Incoming"></div>
                 </div>
                 <div
-                  class="t1nrbpkt dir dir-ltr"
+                  class="app-theme-visibility dir dir-ltr"
                   aria-hidden="true"
                   inert="true"
                 ></div>
               </div>
             </div>
           </div>
-          <div class="_b21f4g">
+          <div class="container__border-0">
             <div aria-live="polite" aria-atomic="true"></div>
             <div aria-live="assertive" aria-atomic="true"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- /Desktop -->
   </body>
 </html>
