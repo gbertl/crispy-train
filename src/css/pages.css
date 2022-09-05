@@ -20974,7 +20974,7 @@ full__margin-bottom {
   }
 }
 
-._ati8ih {
+.place__nearby-card-pricing {
   -webkit-box-align: var(
     --pricing-guest-display-price-alignment,
     flex-start
@@ -21002,13 +21002,13 @@ full__margin-bottom {
     flex-start
   ) !important;
 }
-._1ejys9v {
+.place__recommended-spacer-mb {
   background-color: #ddd !important;
   height: 1px !important;
   margin-bottom: 32px !important;
 }
 @media (min-width: 744px) {
-  ._1ejys9v {
+  .place__recommended-spacer-mb {
     margin-bottom: 24px !important;
   }
 }
@@ -21036,47 +21036,47 @@ full__margin-bottom {
   display: -webkit-flex !important;
   display: flex !important;
 }
-._3dgwah2 {
+.place__recommended-card {
   color: #222 !important;
   cursor: pointer !important;
   overflow: hidden !important;
   max-width: 170px !important;
 }
-._1jdnv4r {
+.place__recommended-card-img {
   border-radius: 4px !important;
   overflow: hidden !important;
   position: relative !important;
   width: 100% !important;
   height: 100% !important;
 }
-._14wp7tk {
+.place__recommended-heart-wrapper {
   position: absolute !important;
   right: 0 !important;
   top: 0 !important;
   padding: 11px !important;
   z-index: 1 !important;
 }
-._1rp5252 {
+.place__recommended-heart-btn {
   cursor: pointer !important;
   background-color: transparent !important;
   color: buttontext !important;
   border: 0 !important;
   display: block !important;
 }
-._1rp5252:active {
+.place__recommended-heart-btn:active {
   outline: 0 !important;
 }
-._1rp5252:disabled {
+.place__recommended-heart-btn:disabled {
   opacity: 0.5 !important;
   cursor: default !important;
   color: graytext !important;
 }
-._1q9ge52 {
+.place__recommended-card-details {
   outline: 0 !important;
   display: block !important;
   margin-top: 12px !important;
 }
-._66weonn {
+.place__recommended-category-text {
   display: block !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -21086,41 +21086,41 @@ full__margin-bottom {
   font-size: 10px !important;
   line-height: 12px !important;
 }
-._10i7u77 {
+.place__recommended-title-text {
   font-size: 16px !important;
   line-height: 20px !important;
 }
 @media (min-width: 1128px) {
-  ._10i7u77 {
+  .place__recommended-title-text {
     font-size: 18px !important;
     line-height: 22px !important;
   }
 }
-._1nfy29z {
+.place__recommended-title {
   margin-top: 4px !important;
   margin-bottom: 8px !important;
 }
-._1g4tb3x {
+.place__recommended-spacer {
   font-size: 14px !important;
   line-height: 18px !important;
   font-weight: 400 !important;
 }
-._2f5j8p {
+.place__recommended-no-ul {
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-._15bwml3 {
+.place__recommended-no-li {
   display: inline-block !important;
 }
-._15bwml3:before {
+.place__recommended-no-li:before {
   display: none !important;
 }
-._blc9xe {
+.place__map-card {
   border-radius: 16px !important;
   overflow: hidden !important;
 }
-._1714fbvx {
+.place__map-card-overlay {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 20px !important;
@@ -21128,7 +21128,7 @@ full__margin-bottom {
   margin-bottom: 24px !important;
 }
 @media (min-width: 1128px) {
-  ._1714fbvx {
+  .place__map-card-overlay {
     margin-left: 64px !important;
     margin-bottom: 64px !important;
   }
@@ -33883,7 +33883,7 @@ tr.show-desktop {
 .dir-rtl.atm_ll_exct8b:is(*, #x) {
   padding-left: 16px;
 }
-.dir.cngiwj8:is(*, #x#x) {
+.dir.place__map-card-detail:is(*, #x#x) {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -41222,7 +41222,7 @@ tr.show-desktop {
     background: var(--color-clear, transparent) !important;
   }
 }
-._ati8ih {
+.place__nearby-card-pricing {
   -webkit-box-align: var(
     --pricing-guest-display-price-alignment,
     flex-start
@@ -41997,7 +41997,7 @@ tr.show-desktop {
   color: #222 !important;
   margin-bottom: 5px !important;
 }
-._owkz1m {
+.place__recommended-no-text {
   font-size: 12px !important;
   line-height: 16px !important;
   color: #717171 !important;
@@ -49158,7 +49158,7 @@ textarea {
   padding-left: 16px !important;
   font-weight: 400 !important;
 }
-.dir.cngiwj8[class][class] {
+.dir.place__map-card-detail[class][class] {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -52280,7 +52280,7 @@ a:hover {
   pointer-events: none !important;
   color: #222 !important;
 }
-._klarpw {
+.place__recommended-no {
   margin-top: 8px !important;
 }
 .contact-host__border-top-color {
@@ -53656,7 +53656,7 @@ a:hover {
   font-weight: 800 !important;
   margin-bottom: 0 !important;
 }
-._2f5j8p {
+.place__recommended-no-ul {
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -56047,7 +56047,7 @@ a:hover {
   padding-bottom: 24px;
   border-radius: 1px;
 }
-.dir.cngiwj8[class][class] {
+.dir.place__map-card-detail[class][class] {
   padding-top: 16px;
   padding-bottom: 16px;
 }
