@@ -26,13 +26,20 @@ document.querySelectorAll('form').forEach((form) => {
 
     const parent = e.target.closest('[data-application=true]');
 
-    const loginSignup = parent.querySelector('[data-login-signup]');
+    const loginSignup = parent.querySelector('#login-signup');
     const formList = {
-      'phone-form': parent.querySelector('[data-confirm-number]'),
-      'email-form': parent.querySelector('[data-finish-signup]'),
+      'phone-form': {
+        'confirm-number': parent.querySelector('#confirm-number'),
+      },
+      'email-form': {
+        'email-login': parent.querySelector('#email-login'),
+        'email-signup': parent.querySelector('#finish-signup')
+      },
     };
 
-    const targetForm = formList[formType];
+    const formId = e.submitter.getAttribute('data-id')
+
+    const targetForm = formList[formType][formId];
 
     loginSignup.classList.add('hidden');
 
@@ -44,6 +51,23 @@ document.querySelectorAll('form').forEach((form) => {
         targetForm.classList.add('hidden');
         loginSignup.classList.remove('hidden');
       });
+
+    targetForm
+      .querySelectorAll('.more-options')
+      .forEach((e) => {
+        const moreOptions = parent.querySelector('#more-options')
+
+        moreOptions.querySelector('[data-testid="panel-header-button"]')
+          .addEventListener('click', (e) => {
+            targetForm.classList.remove('hidden')
+            moreOptions.classList.add('hidden')
+          })
+
+        e.addEventListener('click', (e) => {
+          targetForm.classList.add('hidden')
+          moreOptions.classList.remove('hidden')
+        })
+      })
   });
 });
 
