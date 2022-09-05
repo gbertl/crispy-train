@@ -18409,7 +18409,7 @@ h3:first-child {
     display: block !important;
   }
 }
-._cne99n {
+.confirm-pay__container {
   color: #222 !important;
   font-size: 16px !important;
   line-height: 20px !important;
@@ -18418,10 +18418,10 @@ h3:first-child {
   --gp-section-standard-padding: 32px !important;
   --gp-section-standard-padding-condensed: 24px !important;
 }
-._1b5xz5 {
+.confirm-pay__header-back {
   padding-right: 32px !important;
 }
-._1nobabx {
+.confirm-pay__header {
   -webkit-box-align: center !important;
   -webkit-box-direction: normal !important;
   -webkit-box-orient: horizontal !important;
@@ -18431,7 +18431,7 @@ h3:first-child {
   flex-direction: row !important;
   align-items: center !important;
 }
-._1ut2f7b {
+.confirm-pay__header-text {
   font-size: 32px !important;
   line-height: 36px !important;
   font-weight: 600 !important;
@@ -19303,7 +19303,7 @@ h3:first-child {
   -webkit-transition: transform 2s, opacity 2s;
   transform: scale(5);
 }
-._bdo76v7 {
+.confirm-pay__content-left {
   position: relative !important;
   width: 50% !important;
   margin-left: 0 !important;
@@ -19506,33 +19506,34 @@ h3:first-child {
     ) !important;
   }
 }
-._ai1he2 {
+.confirm-pay__content-right {
   position: relative !important;
   width: 41.6667% !important;
   margin-left: 8.33333% !important;
   margin-right: 0 !important;
 }
 @media (min-width: 744px) {
-  ._7efq7j {
+  .confirm-pay__content-right-wrapper {
     padding: 24px !important;
     border: 1px solid #ddd !important;
     border-radius: 12px !important;
+    background: #fff
   }
 }
-._13ty2nn {
+.confirm-pay__trip-detail-wrapper {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
   display: flex !important;
   flex-direction: column !important;
 }
 @media (min-width: 375px) {
-  ._13ty2nn {
+  .confirm-pay__trip-detail-wrapper {
     -webkit-box-direction: normal !important;
     -webkit-box-orient: horizontal !important;
     flex-direction: row !important;
   }
 }
-._1r6rda2 {
+.confirm-pay__trip-detail-img {
   -webkit-box-flex: 0 !important;
   width: 126px !important;
   height: 96px !important;
@@ -19542,12 +19543,12 @@ h3:first-child {
   border-radius: 8px !important;
 }
 @media (min-width: 744px) {
-  ._1r6rda2 {
+  .confirm-pay__trip-detail-img {
     width: 124px !important;
     height: 106px !important;
   }
 }
-._ul6qeb {
+.confirm-pay__trip-detail-text {
   -webkit-box-pack: justify !important;
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
@@ -19582,14 +19583,14 @@ h3:first-child {
     overflow: clip !important;
   }
 }
-._1l43ux5 {
+.confirm-pay__trip-detail-review {
   -webkit-box-align: center !important;
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: center !important;
   --dls19-brand-color: var(--f-k-smk-x) !important;
 }
-._1nh4eon {
+.confirm-pay__trip-detail-rate {
   margin-right: 8px !important;
 }
 .main-content__header-date--today {
@@ -19600,7 +19601,7 @@ h3:first-child {
     display: inline !important;
   }
 }
-._154iz1b2 {
+.confirm-pay__trip-detail-rate-wrapper {
   -webkit-box-align: center !important;
   align-items: center !important;
   display: flex !important;
@@ -19610,32 +19611,32 @@ h3:first-child {
   font-size: 12px !important;
   line-height: 16px !important;
 }
-._1lzlk52 {
+.confirm-pay__trip-detail-rate-icon {
   -webkit-box-align: center !important;
   align-items: center !important;
   display: flex !important;
   color: #ff385c !important;
 }
 @supports (--custom: properties) {
-  ._1lzlk52 {
+  .confirm-pay__trip-detail-rate-icon {
     color: var(--dls19-brand-color, #ff385c) !important;
   }
 }
-._2a6au1i {
+.confirm-pay__trip-detail-rate-text {
   color: #222 !important;
   padding-left: 4px !important;
   font-weight: 600 !important;
 }
-._15nqexk {
+.confirm-pay__trip-category-icon {
   color: var(--ihf-tp-q) !important;
   margin-left: 8px !important;
 }
 @supports (--custom: properties) {
-  ._15nqexk {
+  .confirm-pay__trip-category-icon {
     color: var(--dls19-brand-color, var(--ihf-tp-q)) !important;
   }
 }
-._ujvj6y {
+.confirm-pay__trip-category-text {
   font-size: 12px !important;
   line-height: 16px !important;
   padding-left: 4px !important;
@@ -19651,53 +19652,53 @@ h3:first-child {
     line-height: 20px !important;
   }
 }
-._1p752y2 {
+.confirm-pay__trip-logo {
   display: inline-block !important;
   line-height: 14px !important;
   position: relative !important;
 }
 @media (min-width: 744px) {
-  ._1p752y2 {
+  .confirm-pay__trip-logo {
     line-height: 16px !important;
   }
 }
-._hx27jd {
+.confirm-pay__trip-logo-img {
   width: auto !important;
   height: 11px !important;
   margin-right: 1px !important;
 }
 @media (min-width: 744px) {
-  ._hx27jd {
+  .confirm-pay__trip-logo-img {
     width: auto !important;
     height: 13px !important;
   }
 }
-._t65zql {
+.confirm-pay__price-accomodation {
   white-space: nowrap !important;
   font-size: 16px !important;
   line-height: 20px !important;
   color: #222 !important;
 }
-._64pbdv {
+.confirm-pay__service {
   margin-top: 16px !important;
 }
-._12hv04d {
+.confirm-pay__price-total {
   font-size: 16px !important;
   line-height: 20px !important;
   color: #222 !important;
   display: inline !important;
 }
 @media (min-width: 744px) {
-  ._12hv04d {
+  .confirm-pay__price-total {
     color: #222 !important;
   }
 }
-._jbgt15 {
+.confirm-pay__total-wrapper {
   border-bottom: 1px solid #ddd !important;
   margin-top: 24px !important;
   margin-bottom: 24px !important;
 }
-._1x5uynhu {
+.confirm-pay__total {
   font-size: 16px !important;
   line-height: 20px !important;
   color: #222 !important;
@@ -19705,18 +19706,18 @@ h3:first-child {
   font-weight: 600 !important;
 }
 @media (min-width: 744px) {
-  ._1x5uynhu {
+  .confirm-pay__total {
     color: #222 !important;
   }
 }
-._j1143kl {
+.confirm-pay__total-label {
   white-space: nowrap !important;
   font-size: 16px !important;
   line-height: 20px !important;
   color: #222 !important;
   font-weight: 600 !important;
 }
-._157uib4 {
+.footer__container-small {
   padding-top: 24px !important;
   padding-bottom: 24px !important;
   border-top: none !important;
@@ -19823,7 +19824,7 @@ h3:first-child {
   margin-top: -9px !important;
   height: 24px !important;
 }
-._37qdzt {
+.personal-info_list-item {
   -webkit-box-pack: start !important;
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
@@ -19838,7 +19839,7 @@ h3:first-child {
   display: flex !important;
   align-items: flex-start !important;
 }
-._142uhf7 {
+._r6zroz {
   max-width: 30% !important;
   word-break: break-word !important;
   text-align: right !important;
@@ -20151,7 +20152,7 @@ full__margin-bottom {
   line-height: 24px !important;
   color: #222 !important;
 }
-._37qdzt {
+.personal-info_list-item {
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
   -webkit-box-direction: normal !important;
@@ -24282,7 +24283,7 @@ html :where(img[class*='wp-image-']) {
   margin-right: auto !important;
   width: auto !important;
 }
-._1a5fl1v {
+.confirm-pay {
   --dls19-brand-color: #ff385c !important;
   --dls19-ui-brand-color: #222222 !important;
   --dls19-pdp-listing-title-weight: 600 !important;
@@ -24685,7 +24686,7 @@ html :where(img[class*='wp-image-']) {
   margin-left: 8.333333333333332% !important;
   margin-right: 0 !important;
 }
-._mubbvpq {
+.confirm-pay__content-right-container {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: var(--navigation-bar-offset, 80px) !important;
@@ -41235,11 +41236,11 @@ tr.show-desktop {
     flex-start
   ) !important;
 }
-._10d7v0r {
+.confirm-pay__price-wrapper {
   display: inline-flex !important;
   position: relative !important;
 }
-._101nvu7m {
+.confirm-pay__price-btn {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -59585,7 +59586,7 @@ label {
   margin-left: 8.333333333333332% !important;
   margin-right: 0 !important;
 }
-._mubbvpq {
+.confirm-pay__content-right-container {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: var(--navigation-bar-offset, 80px) !important;
