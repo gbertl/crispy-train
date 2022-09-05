@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <link rel="stylesheet" href="../dist/payment-modal.css" />
+  </head>
+  <body>
+    <!-- Add Payment Modal -->
+    <div dir="ltr">
+      <div class="modal__backdrop"></div>
+      <section>
+        <div class="modal__container" data-testid="modal-container">
+          <div class="contents">
+            <div
+              class="container__border-0"
+              aria-hidden="true"
+              tabindex="0"
+            ></div>
+            <div class="contents">
+              <div
+                role="dialog"
+                aria-label="Add card details"
+                aria-modal="true"
+                class="modal-dialog__content-wrapper"
+                style="position: relative"
+              >
+                <div class="modal__close">
+                  <button aria-label="Close" type="button" class="btn-close">
+                    <span class="relative"
+                      ><svg
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        role="presentation"
+                        focusable="false"
+                        style="
+                          display: block;
+                          fill: none;
+                          height: 16px;
+                          width: 16px;
+                          stroke: currentcolor;
+                          stroke-width: 3;
+                          overflow: visible;
+                        "
+                      >
+                        <path d="m6 6 20 20"></path>
+                        <path d="m26 6-20 20"></path></svg
+                    ></span>
+                  </button>
+                </div>
+                <header class="modal__header-container">
+                  <div class="modal__header-wrapper"></div>
+                  <div class="modal__heading">
+                    <h1
+                      tabindex="-1"
+                      class="heading"
+                      elementtiming="LCP-target"
+                    >
+                      <div class="modal__header-text">
+                        <div class="_b9qfkc2">Add card details</div>
+                      </div>
+                    </h1>
+                  </div>
+                  <div class="modal__heading-wrapper"></div>
+                </header>
+                <div class="_12kfhdn">
+                  <div style="margin-bottom: 16px">
+                    <section
+                      role="status"
+                      class="e1rue1xl i144hzgs dir dir-ltr"
+                    >
+                      <div class="ccmqn89 dir dir-ltr">
+                        <div class="c1mzlq0d dir dir-ltr">
+                          <svg
+                            viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            role="presentation"
+                            focusable="false"
+                            style="
+                              display: block;
+                              height: 16px;
+                              width: 16px;
+                              fill: currentcolor;
+                            "
+                          >
+                            <path
+                              d="m8 12c1.1045695 0 2 .8954305 2 2s-.8954305 2-2 2-2-.8954305-2-2 .8954305-2 2-2zm1.6-12v9.6h-3.2v-9.6z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="mbv7i5o dir dir-ltr">
+                        <h2
+                          tabindex="-1"
+                          class="_14i3z6h"
+                          elementtiming="LCP-target"
+                        >
+                          <div class="hk7fm8a dir dir-ltr">
+                            Let’s try that again
+                          </div>
+                        </h2>
+                        <div class="m1g17ezz h1q6ioub dir dir-ltr">
+                          Please check your payment details.
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div>
+                    <div class="inline-block" style="margin-left: 8px">
+                      <span role="img" aria-label="Mastercard"
+                        ><img
+                          src="https://a0.muscache.com/airbnb/static/packages/assets/frontend/legacy-shared/svgs/payments/logo_mastercard.f18379cf1f27d22abd9e9cf44085d149.svg"
+                          alt="Mastercard"
+                          height="9"
+                          aria-hidden="true"
+                      /></span>
+                    </div>
+                    <div class="inline-block" style="margin-left: 8px">
+                      <span role="img" aria-label="Visa Card"
+                        ><img
+                          src="https://a0.muscache.com/airbnb/static/packages/assets/frontend/legacy-shared/svgs/payments/logo_visa.0adea522bb26bd90821a8fade4911913.svg"
+                          alt="Visa Card"
+                          height="9"
+                          aria-hidden="true"
+                      /></span>
+                    </div>
+                    <div class="inline-block" style="margin-left: 8px">
+                      <span role="img" aria-label="American Express Card"
+                        ><img
+                          src="https://a0.muscache.com/airbnb/static/packages/assets/frontend/legacy-shared/svgs/payments/logo_amex.84088b520ca1b3384cb71398095627da.svg"
+                          alt="American Express Card"
+                          height="9"
+                          aria-hidden="true"
+                      /></span>
+                    </div>
+                    <div class="inline-block" style="margin-left: 8px">
+                      <span role="img" aria-label="Discover Card"
+                        ><img
+                          src="https://a0.muscache.com/airbnb/static/packages/assets/frontend/legacy-shared/svgs/payments/logo_discover.7f05c82f07d62a0f8a69d54dbcd7c8be.svg"
+                          alt="Discover Card"
+                          height="9"
+                          aria-hidden="true"
+                      /></span>
+                    </div>
+                  </div>
+                  <div style="margin-top: 16px">
+                    <div class="_64pbdv">
+                      <div class="_clw8y6">
+                        <iframe
+                          class="relative"
+                          name="payment-iframe"
+                          width="100%"
+                          height="250"
+                          frameborder="0"
+                          scrolling="no"
+                          seamless=""
+                          src="payment-form.html"
+                          title="Payments card input form"
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="_v0ipn8">
+                      <div class="_1jj61m9">
+                        <label class="_1yw7hpv" for="zipCode"
+                          ><div class="_1jn0ze9">
+                            <div class="_11hx67x">ZIP code</div>
+                          </div>
+                          <div dir="ltr">
+                            <div class="_js9i23">
+                              <input
+                                name="zipCode"
+                                errormessage=""
+                                class="_c5rhl5"
+                                id="zipCode"
+                                autocomplete="off"
+                                type="text"
+                                aria-describedby=""
+                                value=""
+                              />
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="_v0ipn8">
+                      <div class="_k8r05be">
+                        <label class="_1yw7hpv" for="zipCode"
+                          ><div class="_475dd78">
+                            <div class="_11hx67x">ZIP code</div>
+                          </div>
+                          <div dir="ltr">
+                            <div class="_fywymp7">
+                              <input
+                                name="zipCode"
+                                ariadescribedby="credit-card-zip-error"
+                                class="_c5rhl5"
+                                id="zipCode"
+                                autocomplete="off"
+                                type="text"
+                                aria-describedby=""
+                                value=""
+                                errormessage="Postal code is required"
+                                aria-invalid="true"
+                              />
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="_4l12l8">
+                        <div class="_1yhfti2" id="credit-card-zip-error">
+                          <span style="margin-right: 4px"
+                            ><svg
+                              viewBox="0 0 16 16"
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-label="Error"
+                              role="img"
+                              focusable="false"
+                              style="
+                                display: block;
+                                height: 16px;
+                                width: 16px;
+                                fill: currentcolor;
+                              "
+                            >
+                              <path
+                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 10.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm.8-6.6H7.2v5.2h1.6z"
+                              ></path></svg></span
+                          ><span class="_pgfqnw">This is required.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="_14yb6ke" role="button" tabindex="0">
+                      <label for="billing_country_selector" class="_13kgb0p"
+                        ><div class="_zhftk97">
+                          <div class="_11hx67x">Country/region</div>
+                        </div>
+                        <div class="_1ekxhnk" id="billing_country_selector">
+                          Philippines
+                        </div></label
+                      >
+                      <div class="_lmil0">
+                        <svg
+                          viewBox="0 0 18 18"
+                          role="presentation"
+                          aria-hidden="true"
+                          focusable="false"
+                          style="
+                            height: 16px;
+                            width: 16px;
+                            display: block;
+                            fill: currentcolor;
+                          "
+                        >
+                          <path
+                            d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="modal__footer">
+                  <div style="margin-top: 8px; margin-left: 8px">
+                    <div class="_h6avcp2">
+                      <button type="button" class="btn-link">Cancel</button>
+                    </div>
+                  </div>
+                  <div>
+                    <div data-testid="submit-button">
+                      <button type="button" class="btn-dark">
+                        <span class="_14d5b3i"
+                          ><span class="_3hmsj">Done</span></span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </footer>
+              </div>
+            </div>
+            <div
+              class="container__border-0"
+              aria-hidden="true"
+              tabindex="0"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <div class="container__border-0">
+        <div aria-live="polite" aria-atomic="true"></div>
+        <div aria-live="assertive" aria-atomic="true"></div>
+      </div>
+    </div>
+    <!-- /Add Payment Modal -->
+  </body>
+</html>
