@@ -211,11 +211,11 @@
                           >
                         </div>
                       </nav>
-                      <div tabindex="-1" class="_2x3iol">
-                        <div class="_ipnlcjr" data-testid="c3pi-position">
+                      <div tabindex="-1" class="privacy-sharing__container">
+                        <div class="inbox-container" data-testid="c3pi-position">
                           <div
                             aria-label="Messaging Page Main Contents"
-                            class="_61mw08"
+                            class="inbox-container__wrapper"
                           >
                             <section
                               id="inbox_panel"
@@ -224,14 +224,14 @@
                               tabindex="-1"
                               data-testid="orbital-panel-inbox"
                               aria-hidden="false"
-                              class="_yycu7ci"
+                              class="inbox-container__inbox-panel"
                               style="--orbital-panel-transition-duration: 500ms"
                             >
-                              <div class="_emfufws">
-                                <div class="_kmtf5mf">
-                                  <div class="_1va1e0om">
+                              <div class="inbox-container__inbox-panel-wrapper">
+                                <div class="inbox-container__inbox-panel-container">
+                                  <div class="inbox-container__inbox-panel-header">
                                     <div
-                                      class="_xt4xazc"
+                                      class="inbox-container__inbox-header-wrapper"
                                       data-testid="inbox-panel-toolbar-heading"
                                     >
                                       <section>
@@ -239,7 +239,7 @@
                                           data-shared-element-id="page-marquee"
                                           id="inbox_header"
                                           tabindex="-1"
-                                          class="_a39rzo3"
+                                          class="inbox-container__inbox-header-h1"
                                           elementtiming="LCP-target"
                                         >
                                           Inbox
@@ -249,7 +249,7 @@
                                     <button
                                       aria-label="show keyboard shortcuts"
                                       type="button"
-                                      class="_j8jvwx"
+                                      class="inbox-container__inbox-btn-overlay"
                                     >
                                       <span class="relative"
                                         ><svg
@@ -284,7 +284,7 @@
                                         <button
                                           data-testid="messaging.filtermenu"
                                           aria-label="Filter conversations. Current filter: All conversations"
-                                          class="_1arxx82"
+                                          class="inbox-container__inbox-btn-filter"
                                           aria-pressed="false"
                                           type="button"
                                           id="filter-menu"
@@ -328,14 +328,14 @@
                                         </button>
                                       </div>
                                       <div
-                                        class="_1ynftww9 hidden"
+                                        class="inbox-container__inbox-menu-filter hidden"
                                         id="filter-menu-dropdown"
                                         tabindex="-1"
                                       >
-                                        <div class="_7f3mm0">
+                                        <div class="inbox-container__menu-filter-wrapper">
                                           <button
                                             type="button"
-                                            class="_yy1t5kt"
+                                            class="inbox-container__menu-filter-btn"
                                             aria-label="All conversations in your guest inbox; Selected Filter"
                                             theme="[object Object]"
                                           >
@@ -347,7 +347,7 @@
                                         <div>
                                           <button
                                             type="button"
-                                            class="_yy1t5kt"
+                                            class="inbox-container__menu-filter-btn"
                                             aria-label="Archived conversations in your guest inbox (0 conversations)"
                                             theme="[object Object]"
                                           >
@@ -359,7 +359,7 @@
                                         <div>
                                           <button
                                             type="button"
-                                            class="_yy1t5kt"
+                                            class="inbox-container__menu-filter-btn"
                                             aria-label="Unread conversations in your guest inbox (1 conversation)"
                                             theme="[object Object]"
                                           >
@@ -373,7 +373,7 @@
                                   </div>
                                   <div
                                     role="tablist"
-                                    class="_dzl2kn"
+                                    class="inbox-container__tab-wrapper"
                                     data-testid="inbox-panel-tab-navigation"
                                   >
                                     <button
@@ -381,12 +381,12 @@
                                       aria-selected="false"
                                       aria-controls="panel-messages"
                                       type="button"
-                                      class="_6tvt8jj"
+                                      class="inbox-container__tab-btn"
                                     >
-                                      Messages<span class="_1sqnphj"
+                                      Messages<span class="inbox-container__tab-badge-wrapper"
                                         ><span
                                           aria-label="1 unread"
-                                          class="_3xpo1f"
+                                          class="inbox-container__tab-badge-count"
                                           >1</span
                                         ></span
                                       >
@@ -396,13 +396,13 @@
                                       aria-selected="true"
                                       aria-controls="panel-notifications"
                                       type="button"
-                                      class="_10br0yfc"
+                                      class="inbox-container__tab-notification"
                                     >
                                       Notifications
                                     </button>
                                   </div>
                                   <div
-                                    class="_dq8b48"
+                                    class="inbox-container__notification-panel"
                                     role="tabpanel"
                                     id="panel-notifications"
                                   >
@@ -412,9 +412,9 @@
                                         id="5250843878"
                                         aria-label="Add your work email to unlock extra perks for business trips, like simplified expensing."
                                         href="/account-settings/airbnb-for-work?s=dalrt#business-travel"
-                                        class="main_content__agenda-list-btn"
-                                        ><div class="_1nlq2tac">
-                                          <div class="_1hctbk4">
+                                        class="main-content__agenda-list-btn"
+                                        ><div class="inbox-container__notification-wrapper">
+                                          <div class="inbox-container__notification-profile">
                                             <div
                                               class="lite-image"
                                               style="
@@ -446,8 +446,8 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_1xs0m0s">
-                                            <div class="_5sp1ow">
+                                          <div class="inbox-container__notification-text-wrapper">
+                                            <div class="inbox-container__notification-text">
                                               Add your work email to unlock
                                               extra perks for business trips,
                                               like simplified expensing.
@@ -455,7 +455,7 @@
                                           </div>
                                         </div></a
                                       >
-                                      <div class="_1gtwurf">
+                                      <div class="inbox-container__notification-close">
                                         <button
                                           aria-label="Dismiss"
                                           aria-describedby="5250843878"
@@ -494,9 +494,9 @@
                                         id="5250843873"
                                         aria-label="Invite a friend, earn ₱1,200."
                                         href="/invite?r=39"
-                                        class="main_content__agenda-list-btn"
-                                        ><div class="_1nlq2tac">
-                                          <div class="_1hctbk4">
+                                        class="main-content__agenda-list-btn"
+                                        ><div class="inbox-container__notification-wrapper">
+                                          <div class="inbox-container__notification-profile">
                                             <div
                                               class="lite-image"
                                               style="
@@ -528,14 +528,14 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_1xs0m0s">
-                                            <div class="_5sp1ow">
+                                          <div class="inbox-container__notification-text-wrapper">
+                                            <div class="inbox-container__notification-text">
                                               Invite a friend, earn ₱1,200.
                                             </div>
                                           </div>
                                         </div></a
                                       >
-                                      <div class="_1gtwurf">
+                                      <div class="inbox-container__notification-close">
                                         <button
                                           aria-label="Dismiss"
                                           aria-describedby="5250843873"
@@ -570,11 +570,11 @@
                                     </div>
                                   </div>
                                   <div
-                                    class="_wlj5ur hidden"
+                                    class="inbox-container__messages-panel hidden"
                                     role="tabpanel"
                                     id="panel-messages"
                                   >
-                                    <div class="_1xheem">
+                                    <div class="inbox-container__messages-container">
                                       <div
                                         id="list_inbox"
                                         role="group"
@@ -584,24 +584,24 @@
                                       >
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1257117527"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="0"
                                               tabindex="0"
                                               href="/guest/inbox/1257117527?tab=messages&amp;ttype=host_referral"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Myrna; Messages.  Last Message Hi, Jose Angelo, Let me give you some ideas about hosting in Airbnb.  Being an AIRBNB host is very financially rewarding and an enjoyable one wherein you meet people and eventually gain friends not ju...; sent Tue. "
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_oc275mr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__message-img">
                                                       <div
                                                         class="img-middle"
                                                         style="
@@ -635,11 +635,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Myrna
                                                       </div>
@@ -648,7 +648,7 @@
                                                         >Myrna</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         Hi, Jose Angelo, Let me
                                                         give you some ideas
@@ -680,28 +680,28 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1256517898"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="1"
                                               tabindex="-1"
                                               href="/guest/inbox/1256517898?tab=messages&amp;ttype=inbound_cx"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Airbnb Support; Unread Messages.  Last Message Can you describe your issue in a few sentences? This will help our team understand what’s going on.   Please don’t include sensitive info like credit card numbers.; sent Mon. "
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_oc275mr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__message-img">
                                                       <div
                                                         class="img-middle"
                                                         style="
@@ -735,11 +735,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         <span class="calendar-sideba__sched-event-time-wrapper"
                                                           >Airbnb Support</span
@@ -750,7 +750,7 @@
                                                         >Airbnb Support</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         <span class="calendar-sideba__sched-event-time-wrapper"
                                                           >Can you describe your
@@ -781,28 +781,28 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1212735271"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="2"
                                               tabindex="-1"
                                               href="/guest/inbox/1212735271?tab=messages&amp;ttype=inbound_cx"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Airbnb Support; Messages.  Last Message Is it about this reservation?; sent Jun 25. "
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_oc275mr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__message-img">
                                                       <div
                                                         class="img-middle"
                                                         style="
@@ -836,11 +836,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Airbnb Support
                                                       </div>
@@ -849,7 +849,7 @@
                                                         >Airbnb Support</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         Is it about this
                                                         reservation?
@@ -865,29 +865,29 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1202977215"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="3"
                                               tabindex="-1"
                                               href="/guest/inbox/1202977215?tab=messages&amp;ttype=trip_channel"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Healing concert - 大阪市 and 1 other; Messages.  Last Message maraming salamat Jose-san !  yes contact us before you book. then check her schedule out. better next month.  (o^_^o)y Suzuki; sent Jun 13. Booking status is Booking completed"
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_j30xf7y">
-                                                      <div class="_6fi87sr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__messages-more-profile">
+                                                      <div class="inbox-container__more-profile-primary">
                                                         <div
                                                           class="img-middle"
                                                           style="
@@ -920,16 +920,16 @@
                                                           ></div>
                                                         </div>
                                                       </div>
-                                                      <div class="_17udoso">
+                                                      <div class="inbox-container__more-profile-overlay">
                                                         +1
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Healing concert<span
                                                           class="text__color-gray"
@@ -945,7 +945,7 @@
                                                         大阪市</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         maraming salamat
                                                         Jose-san ! yes contact
@@ -964,10 +964,10 @@
                                                         (o^_^o)y Suzuki</span
                                                       >
                                                     </div>
-                                                    <div class="_w8a1naz">
+                                                    <div class="inbox-container__message-status">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         <span class="text__color-gray"
                                                           >Booking
@@ -985,30 +985,30 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1202977220"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="4"
                                               tabindex="-1"
                                               href="/guest/inbox/1202977220?tab=messages&amp;ttype=trip_direct"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Kuniatsu - 大阪市 and 1 other; Messages.  Last Message Hi Jose Angelo-san ,  this slot will play without cello. please cancel right now if you expected cello sound.  or only me , the monk chanting with electric piano &amp; synth ,  sing with 三味線 ( 3 string-Ja...; sent Jun 12. Booking status is Booking completed"
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_j30xf7y">
-                                                      <div class="_6fi87sr">
-                                                        <div class="_1u5o7fe">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__messages-more-profile">
+                                                      <div class="inbox-container__more-profile-primary">
+                                                        <div class="inbox-container__secondary-profile-wrapper">
                                                           <div
                                                             class="img-middle"
                                                             style="
@@ -1042,8 +1042,8 @@
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="_1echw73e">
-                                                        <div class="_1u5o7fe">
+                                                      <div class="inbox-container__more-profile-secondary">
+                                                        <div class="inbox-container__secondary-profile-wrapper">
                                                           <div
                                                             class="img-middle"
                                                             style="
@@ -1079,11 +1079,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Kuniatsu<span
                                                           class="text__color-gray"
@@ -1098,7 +1098,7 @@
                                                         >Kuniatsu - 大阪市</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         Hi Jose Angelo-san ,
                                                         this slot will play
@@ -1125,10 +1125,10 @@
                                                         string-Ja...</span
                                                       >
                                                     </div>
-                                                    <div class="_w8a1naz">
+                                                    <div class="inbox-container__message-status">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         <span class="text__color-gray"
                                                           >Booking
@@ -1146,28 +1146,28 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1201769922"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="5"
                                               tabindex="-1"
                                               href="/guest/inbox/1201769922?tab=messages&amp;ttype=trip_direct"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Baishali - New York; Messages.  Last Message HI Baishali. Thanks for sending the file over. Really had a great time yesterday!   Promise to write the review soon.; sent Jun 12. Booking status is Booking completed"
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_oc275mr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__message-img">
                                                       <div
                                                         class="img-middle"
                                                         style="
@@ -1201,11 +1201,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Baishali<span
                                                           class="text__color-gray"
@@ -1221,7 +1221,7 @@
                                                         York</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         HI Baishali. Thanks for
                                                         sending the file over.
@@ -1239,10 +1239,10 @@
                                                         soon.</span
                                                       >
                                                     </div>
-                                                    <div class="_w8a1naz">
+                                                    <div class="inbox-container__message-status">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         <span class="text__color-gray"
                                                           >Booking
@@ -1260,28 +1260,28 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_12ty3s"
+                                          class="inbox-container__messages-list"
                                         >
                                           <div
                                             id="inbox_list_1087292536"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="6"
                                               tabindex="-1"
                                               href="/guest/inbox/1087292536?tab=messages&amp;ttype=home_booking"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Adrian - Baguio; Messages.  Last Message New event; sent 12/20/21. Booking status is Unavailable for Dec 21 – 23, 2021 stay"
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_oc275mr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__message-img">
                                                       <div
                                                         class="img-middle"
                                                         style="
@@ -1315,11 +1315,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Adrian<span
                                                           class="text__color-gray"
@@ -1334,7 +1334,7 @@
                                                         >Adrian - Baguio</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         New event
                                                       </div>
@@ -1343,10 +1343,10 @@
                                                         >New event</span
                                                       >
                                                     </div>
-                                                    <div class="_w8a1naz">
+                                                    <div class="inbox-container__message-status">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         <span class="text__color-gray"
                                                           >Unavailable</span
@@ -1369,31 +1369,31 @@
                                               </div>
                                             </div>
                                           </div>
-                                          <div class="_xu8x17"></div>
+                                          <div class="inbox-container__messages-divider"></div>
                                         </div>
                                         <div role="presentation">
                                           <span></span>
                                         </div>
                                         <div
                                           aria-current="false"
-                                          class="_yy1pozt"
+                                          class="inbox-container__messages-list-container"
                                         >
                                           <div
                                             id="inbox_list_1087665182"
-                                            class="_1iq7ga1"
+                                            class="inbox-container__messages-list-wrapper"
                                           >
                                             <a
                                               data-item-index="7"
                                               tabindex="-1"
                                               href="/guest/inbox/1087665182?tab=messages&amp;ttype=home_booking"
-                                              class="_bgr7ja"
+                                              class="inbox-container__messages-list-click"
                                               aria-label="Mark - Baguio; Messages.  Last Message Hi Angelo, do you already have QTPs?; sent 12/19/21. Booking status is Unavailable for Dec 21 – 23, 2021 stay"
                                             ></a>
                                             <div aria-hidden="true">
                                               <div>
-                                                <div class="_ignfsr">
-                                                  <div class="_vaj62s">
-                                                    <div class="_oc275mr">
+                                                <div class="inbox-container__message-wrapper">
+                                                  <div class="inbox-container__message-img-wrapper">
+                                                    <div class="inbox-container__message-img">
                                                       <div
                                                         class="img-middle"
                                                         style="
@@ -1427,11 +1427,11 @@
                                                       </div>
                                                     </div>
                                                   </div>
-                                                  <div class="_a0bx3p">
-                                                    <div class="_4n62wsl">
+                                                  <div class="inbox-container__message-text-wrapper">
+                                                    <div class="inbox-container__message-name-wrapper">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         Mark<span
                                                           class="text__color-gray"
@@ -1446,7 +1446,7 @@
                                                         >Mark - Baguio</span
                                                       >
                                                     </div>
-                                                    <div class="_1j2r3992">
+                                                    <div class="inbox-container__message-text-msg">
                                                       <div aria-hidden="true">
                                                         Hi Angelo, do you
                                                         already have QTPs?
@@ -1457,10 +1457,10 @@
                                                         already have QTPs?</span
                                                       >
                                                     </div>
-                                                    <div class="_w8a1naz">
+                                                    <div class="inbox-container__message-status">
                                                       <div
                                                         aria-hidden="true"
-                                                        class="_1xyfhitm"
+                                                        class="inbox-container__message-name-overlay"
                                                       >
                                                         <span class="text__color-gray"
                                                           >Unavailable</span
