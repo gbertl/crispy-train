@@ -47,17 +47,17 @@ document.querySelectorAll('form').forEach((form) => {
   });
 });
 
-(function getPage() {
-  const params = new URLSearchParams(window.location.search);
+// (function getPage() {
+//   const params = new URLSearchParams(window.location.search);
 
-  if (params.has('has_user_session')) {
-    return document.querySelectorAll('[data-application]').forEach((el) => {
-      if (!el.hasAttribute('data-user-session')) {
-        return el.remove();
-      }
-      el.classList.remove('hidden');
-    });
-  }
+//   if (params.has('has_user_session')) {
+//     return document.querySelectorAll('[data-application]').forEach((el) => {
+//       if (!el.hasAttribute('data-user-session')) {
+//         return el.remove();
+//       }
+//       el.classList.remove('hidden');
+//     });
+//   }
 
-  document.querySelector('[data-user-session]').remove();
-})();
+//   document.querySelector('[data-user-session]').remove();
+// })();
