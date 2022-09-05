@@ -60276,7 +60276,7 @@ label {
   margin-left: auto;
   margin-right: auto;
 }
-.mq5rv0q[class][class] {
+.max__width[class][class] {
   max-width: var(--gp-section-max-width, var(--maxWidth));
 }
 @keyframes animation-64e8c8 {
@@ -60428,7 +60428,7 @@ label {
   align-items: center !important;
   justify-content: center !important;
 }
-._91slf2a {
+.lite-image__default-static {
   top: 0 !important;
   bottom: 0 !important;
   left: 0 !important;
@@ -60438,7 +60438,7 @@ label {
   position: absolute !important;
 }
 @supports (object-fit: cover) {
-  ._91slf2a {
+  .lite-image__default-static {
     height: 100% !important;
     width: 100% !important;
     position: static !important;
@@ -60483,7 +60483,7 @@ label {
     background-color: var(--header_brand-color, var(--ihf-tp-q)) !important;
   }
 }
-._h0klba {
+.page-shell__menu {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
   -webkit-box-align: start !important;
@@ -60503,7 +60503,7 @@ label {
   margin: 0 auto !important;
   max-width: 560px !important;
 }
-._45o9ez {
+.page-shell__menu-item {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   -webkit-box-direction: normal !important;
@@ -60536,7 +60536,7 @@ label {
   hyphens: auto !important;
   padding: 0 2px !important;
 }
-._tbbnrnx {
+.page-shell__menu-item-icon-wrapper {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   -webkit-box-pack: center !important;
@@ -60556,7 +60556,7 @@ label {
   color: #b0b0b0 !important;
   position: relative !important;
 }
-._1yqbv3i {
+.page-shell__menu-item-text {
   font-size: 10px !important;
   line-height: 12px !important;
   overflow: hidden !important;
@@ -60569,11 +60569,11 @@ label {
   color: #717171 !important;
 }
 @supports (overflow: clip) {
-  ._1yqbv3i {
+  .page-shell__menu-item-text {
     overflow: clip !important;
   }
 }
-._le6wlg {
+.section-container {
   -webkit-box-lines: multiple !important;
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
@@ -60598,7 +60598,7 @@ label {
   margin-right: 0 !important;
 }
 @media (min-width: 375px) {
-  ._le6wlg {
+  .section-container {
     padding-left: var(--gp-padding-smallAndAbove, 24px) !important;
     padding-right: var(--gp-padding-smallAndAbove, 24px) !important;
   }
