@@ -4,8 +4,8 @@ const { src, dest, series, task, watch } = pkg;
 import browserSync from 'browser-sync';
 const bs = browserSync.create();
 // import cleanCss from 'gulp-clean-css';
-// import purgeCss from '@fullhuman/postcss-purgecss';
-// import postcss from 'gulp-postcss';
+import purgeCss from '@fullhuman/postcss-purgecss';
+import postcss from 'gulp-postcss';
 import concat from 'gulp-concat';
 // import purgecss from 'gulp-purgecss';
 
@@ -51,12 +51,23 @@ export const watchAll = () => {
 };
 
 export const watchMainStyles = () => {
-  watch(['assets/css/**/*.css', './explore.html'], reload)
-}
+  watch(['assets/css/**/*.css', './explore.html'], reload);
+};
 
 export default series(globalStyles, pageStyles, watchAll);
 // export default series(serve, watchMainStyles)
 
+export const purgeOne = () => {
+  return src('src/css/inline.css')
+    .pipe(
+      postcss([
+        purgeCss({
+          content: ['**/*.html', '**/*.js'],
+        }),
+      ])
+    )
+    .pipe(dest('dist'));
+};
 
 // export const removeStyles = () => {
 //   return src('src/css/framework-module-alpha.css')
@@ -66,7 +77,6 @@ export default series(globalStyles, pageStyles, watchAll);
 //     .pipe(dest('build/css'))
 // }
 
-
 task('watch', () => {
   watch('./src/**/*.css', build);
-})
+});
