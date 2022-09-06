@@ -34839,37 +34839,37 @@ tr.hide {
   -ms-break-inside: avoid !important;
   break-inside: avoid !important;
 }
-.explore-click:focus {
+.text-link:focus {
   color: inherit !important;
   text-decoration: underline !important;
 }
-.explore-click:visited {
+.text-link:visited {
   color: #222 !important;
   text-decoration: underline !important;
 }
 @media (hover: hover) {
-  .explore-click:hover {
+  .text-link:hover {
     cursor: pointer !important;
     color: #000 !important;
     text-decoration: underline !important;
   }
 }
-.explore-click:active {
+.text-link:active {
   color: #717171 !important;
   text-decoration: underline !important;
 }
-.explore-click::-moz-focus-inner {
+.text-link::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.explore-click:focus::-moz-focus-inner {
+.text-link:focus::-moz-focus-inner {
   border: none !important;
 }
-.explore-click:-moz-focusring {
+.text-link:-moz-focusring {
   outline: 0 !important;
 }
-.explore-click:focus-visible {
+.text-link:focus-visible {
   color: #222 !important;
   text-decoration: underline !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -34878,17 +34878,17 @@ tr.hide {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .explore-click:focus-visible {
+  .text-link:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.explore-click:disabled {
+.text-link:disabled {
   color: #ddd !important;
   text-decoration: underline !important;
 }
-.explore-click:disabled:hover {
+.text-link:disabled:hover {
   text-decoration: underline !important;
 }
 ._jan9qal {
@@ -44505,7 +44505,7 @@ a:hover {
   flex: 0 0 auto !important;
   padding-right: 8px !important;
 }
-.explore-click {
+.text-link {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -52006,11 +52006,11 @@ label {
     text-decoration: underline !important;
   }
 }
-._1sikdxcl:visited {
+.text-link:visited {
   color: #222 !important;
   text-decoration: underline !important;
 }
-._1sikdxcl {
+.text-link {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
