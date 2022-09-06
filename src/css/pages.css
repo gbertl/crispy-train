@@ -1,27 +1,6 @@
-/*! * O2.1
- * Copyright 2014 Airbnb, Inc
- *
- * Contains sources adapted from Twitter Bootstrap v3.0.0, which are available
- * under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
- */ /*! normalize.css v2.1.2 | MIT License | git.io/normalize */ /*! HTML5 Boilerplate v4.2.0 | MIT License | git.io/o6Vtiw */ /*!
-* Covalent for O2
-* Copyright 2014 Airbnb, Inc
-*/
-.text-ginormous {
-  font-size: 145px;
-}
 .brand.airbnb.center {
   float: none;
   margin: 7px auto 0;
-}
-.hr {
-  border-width: 1px 0 0 !important;
-  border-top: 1px solid #ddd !important;
-  margin: 0 !important;
-}
-.hr {
-  border-width: 1px 0 0 !important;
-  border-top: 1px solid #ddd !important;
 }
 .tab__on-wrapper {
   -webkit-box-pack: justify !important;
@@ -101,9 +80,6 @@
   .account-container {
     max-width: 1080px !important;
   }
-}
-.text-center {
-  text-align: center !important;
 }
 .account-container__deactivate {
   font-size: 14px !important;
@@ -52145,4 +52121,3 @@ label {
   flex: 1 1 auto !important;
   width: 100% !important;
 }
-

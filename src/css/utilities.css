@@ -1,4 +1,6 @@
-/* Utilities */
+/*! ------------------- */
+/*! Utility classes     */
+/*! ------------------- */
 .contents {
   display: contents !important;
 }
@@ -858,12 +860,22 @@
 }
 
 .cursor-pointer {
-  	cursor: pointer;
+  cursor: pointer;
 }
-.pointer-events-none{
+.pointer-events-none {
   pointer-events: none;
 }
-.mb-6	{
+.mb-6 {
   margin-bottom: 1.5rem; /* 24px */
 }
-/* /Utilities */
+.text-ginormous {
+  font-size: 145px;
+}
+.hr {
+  border-width: 1px 0 0 !important;
+  border-top: 1px solid #ddd !important;
+  margin: 0 !important;
+}
+.text-center {
+  text-align: center !important;
+}
