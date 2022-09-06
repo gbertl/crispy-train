@@ -4355,11 +4355,11 @@
     padding-right: 0 !important;
   }
 }
-.section-layout-container {
+.wrapper-full {
   height: 100%;
   width: 100%;
 }
-.dir-ltr.section-layout-container {
+.dir-ltr.wrapper-full {
   margin-left: auto;
   margin-right: auto;
 }
@@ -12659,7 +12659,7 @@ h3:first-child {
     grid-template-rows: repeat(1, 1fr);
   }
 }
-.t1fc0s08[class][class] {
+.wrapper-full[class][class] {
   height: 100%;
   width: 100%;
 }
@@ -29091,7 +29091,7 @@ html :where(img[class*='wp-image-']) {
     padding-bottom: env(safe-area-inset-bottom) !important;
   }
 }
-.dir.margin__auto-x[class][class] {
+.dir.wrapper-full[class][class] {
   margin-left: auto;
   margin-right: auto;
 }
@@ -33372,15 +33372,15 @@ tr.show-desktop {
 .t1yl78l8:is(*, #x#x) {
   position: fixed;
 }
-.margin__auto-x:is(*, #x#x) {
+.wrapper-full:is(*, #x#x) {
   height: 100%;
   width: 100%;
 }
-.dir-ltr.margin__auto-x:is(*, #x#x) {
+.dir-ltr.wrapper-full:is(*, #x#x) {
   margin-left: auto;
   margin-right: auto;
 }
-.dir-rtl.margin__auto-x:is(*, #x#x) {
+.dir-rtl.wrapper-full:is(*, #x#x) {
   margin-right: auto;
   margin-left: auto;
 }
@@ -51024,15 +51024,15 @@ a:hover {
   padding-bottom: var(--jhzm-v-t);
   box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
 }
-.margin__auto-x[class][class] {
+.wrapper-full[class][class] {
   height: 100%;
   width: 100%;
 }
-.dir-ltr.margin__auto-x[class][class] {
+.dir-ltr.wrapper-full[class][class] {
   margin-left: auto;
   margin-right: auto;
 }
-.dir-rtl.margin__auto-x[class][class] {
+.dir-rtl.wrapper-full[class][class] {
   margin-right: auto;
   margin-left: auto;
 }
@@ -52497,12 +52497,12 @@ a:hover {
   }
 }
 
-.section-layout-container {
+.wrapper-full {
   height: 100%;
   width: 100%;
 }
 
-.dir-ltr.section-layout-container {
+.dir-ltr.wrapper-full {
   margin-left: auto;
   margin-right: auto;
 }
@@ -56644,11 +56644,11 @@ a:hover {
   border-radius: 8px !important;
   background: #ddd !important;
 }
-.margin__auto-x[class][class] {
+.wrapper-full[class][class] {
   height: 100%;
   width: 100%;
 }
-.dir-ltr.margin__auto-x[class][class] {
+.dir-ltr.wrapper-full[class][class] {
   margin-left: auto;
   margin-right: auto;
 }
@@ -60269,11 +60269,11 @@ label {
   display: flex;
   content: '';
 }
-.plmw1e5[class][class] {
+.wrapper-full[class][class] {
   height: 100%;
   width: 100%;
 }
-.dir.plmw1e5[class][class] {
+.dir.wrapper-full[class][class] {
   margin-left: auto;
   margin-right: auto;
 }
