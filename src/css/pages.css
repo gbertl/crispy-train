@@ -40510,7 +40510,7 @@ tr.hide {
 ._7q0o8o4:focus {
   color: #222 !important;
 }
-.tab__on-btn-container {
+.btn-link-condensed {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -40535,37 +40535,37 @@ tr.hide {
   text-align: inherit !important;
   outline: 0 !important;
 }
-.tab__on-btn-container:focus {
+.btn-link-condensed:focus {
   color: inherit !important;
   text-decoration: underline !important;
 }
-.tab__on-btn-container:visited {
+.btn-link-condensed:visited {
   color: #222 !important;
   text-decoration: underline !important;
 }
 @media (hover: hover) {
-  .tab__on-btn-container:hover {
+  .btn-link-condensed:hover {
     cursor: pointer !important;
     color: #000 !important;
     text-decoration: underline !important;
   }
 }
-.tab__on-btn-container:active {
+.btn-link-condensed:active {
   color: #717171 !important;
   text-decoration: underline !important;
 }
-.tab__on-btn-container::-moz-focus-inner {
+.btn-link-condensed::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.tab__on-btn-container:focus::-moz-focus-inner {
+.btn-link-condensed:focus::-moz-focus-inner {
   border: none !important;
 }
-.tab__on-btn-container:-moz-focusring {
+.btn-link-condensed:-moz-focusring {
   outline: 0 !important;
 }
-.tab__on-btn-container:focus-visible {
+.btn-link-condensed:focus-visible {
   color: #222 !important;
   text-decoration: underline !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -40574,23 +40574,23 @@ tr.hide {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .tab__on-btn-container:focus-visible {
+  .btn-link-condensed:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.tab__on-btn-container:disabled {
+.btn-link-condensed:disabled {
   cursor: not-allowed !important;
   color: #ddd !important;
   text-decoration: underline !important;
 }
 @media (hover: hover) {
-  .tab__on-btn-container:disabled:hover {
+  .btn-link-condensed:disabled:hover {
     text-decoration: none !important;
   }
 }
-.tab__on-btn-container:disabled:hover {
+.btn-link-condensed:disabled:hover {
   text-decoration: underline !important;
 }
 ._1oj8hra {
@@ -45226,7 +45226,7 @@ a:hover {
   flex: 0 0 auto !important;
   padding-left: 24px !important;
 }
-.tab__on-btn-container {
+.btn-link-condensed {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -51979,7 +51979,7 @@ label {
   line-height: 16px !important;
   text-align: right !important;
 }
-._15rpys7s {
+.btn-link-condensed {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -52000,7 +52000,7 @@ label {
   outline: 0 !important;
 }
 @media (hover: hover) {
-  ._15rpys7s:hover {
+  .btn-link-condensed:hover {
     cursor: pointer !important;
     color: #000 !important;
     text-decoration: underline !important;
