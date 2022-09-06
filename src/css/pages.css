@@ -24746,7 +24746,7 @@ html :where(img[class*='wp-image-']) {
   transition: var(--magic_transition);
   transition-delay: var(--magic_delay, 0s);
 }
-.display__flex[class][class]::before {
+.flex-before-after[class][class]::before {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -27035,7 +27035,7 @@ html :where(img[class*='wp-image-']) {
   display: flex !important;
   justify-content: flex-end !important;
 }
-.display__flex[class][class]::after {
+.flex-before-after[class][class]::after {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30942,8 +30942,8 @@ tr.show-desktop {
 ._9bezani:focus[data-focus-visible-added]:after {
   border-width: 2px !important;
 }
-.display__flex[class][class]::after,
-.display__flex[class][class]::before {
+.flex-before-after[class][class]::after,
+.flex-before-after[class][class]::before {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33886,11 +33886,11 @@ tr.show-desktop {
 .dir.d750e13:is(*, #x#x) {
   cursor: not-allowed;
 }
-.display__flex:is(*, #x#x)::before {
+.flex-before-after:is(*, #x#x)::before {
   display: flex;
   content: '';
 }
-.display__flex:is(*, #x#x)::after {
+.flex-before-after:is(*, #x#x)::after {
   display: flex;
   content: '';
 }
@@ -49438,8 +49438,8 @@ textarea {
     outline: 0 !important;
   }
 }
-.display__flex[class][class]::after,
-.display__flex[class][class]::before {
+.flex-before-after[class][class]::after,
+.flex-before-after[class][class]::before {
   display: flex;
   content: '';
 }
@@ -49703,7 +49703,7 @@ a:hover {
 .dir.p1ss0zvq[class][class] {
   background: #fff;
 }
-.display__flex[class][class]::before {
+.flex-before-after[class][class]::before {
   display: flex;
   content: '';
 }
@@ -49713,7 +49713,7 @@ a:hover {
 .h1i0omnt[class][class] {
   contain: paint;
 }
-.display__flex[class][class]::after {
+.flex-before-after[class][class]::after {
   display: flex;
   content: '';
 }
@@ -57837,8 +57837,8 @@ a:hover {
   --g-lm-u-p: normal;
   --mq-yk-l: 0.04em;
 }
-.display__flex[class][class]::after,
-.display__flex[class][class]::before {
+.flex-before-after[class][class]::after,
+.flex-before-after[class][class]::before {
   display: flex;
   content: '';
 }
@@ -60264,8 +60264,8 @@ label {
   right: 0;
   left: 0;
 }
-.display__flex[class][class]::after,
-.display__flex[class][class]::before {
+.flex-before-after[class][class]::after,
+.flex-before-after[class][class]::before {
   display: flex;
   content: '';
 }
