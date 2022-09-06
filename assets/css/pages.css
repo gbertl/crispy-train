@@ -19509,7 +19509,7 @@ h3:first-child {
     padding: 24px !important;
     border: 1px solid #ddd !important;
     border-radius: 12px !important;
-    background: #fff
+    background: #fff;
   }
 }
 .confirm-pay__trip-detail-wrapper {
@@ -47526,7 +47526,8 @@ tr.show-desktop {
 .dir.d750e13[class][class] {
   cursor: not-allowed;
 }
-.place__tips-desc-text[class][class]:nth-child(1n) .focus-visible[class][class] {
+.place__tips-desc-text[class][class]:nth-child(1n)
+  .focus-visible[class][class] {
   outline: 2px solid var(--f-k-smk-x);
 }
 .text-highlight[class][class] {
@@ -60717,7 +60718,8 @@ label {
 }
 ._13a5kt53 {
   margin-bottom: 16px !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
   font-weight: 400 !important;
   font-color: #222222 !important;
   font-size: 16px !important;
@@ -60781,7 +60783,8 @@ label {
 ._gw4xx4 {
   color: rgb(34, 34, 34) !important;
   cursor: inherit !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-size: 16px !important;
   line-height: 20px !important;
 }
@@ -60804,7 +60807,8 @@ label {
 ._hi9sy {
   color: rgb(113, 113, 113) !important;
   margin-top: 4px !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   word-break: break-word !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -60819,3 +60823,4 @@ label {
   flex: 1 1 auto !important;
   width: 100% !important;
 }
+
