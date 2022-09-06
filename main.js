@@ -63,6 +63,7 @@ let sitemap = [
       'index.html',
       'profile.html',
       'resolutions.html',
+      'welcome_back.html',
     ],
   },
   {
@@ -101,6 +102,7 @@ let sitemap = [
       'payments/payment-methods.html',
       'payments/payout-methods.html',
       'payments/tax-info.html',
+      'payments/your-payments.html',
     ],
   },
   {
