@@ -296,7 +296,7 @@
   color: #ddd !important;
   text-decoration: none !important;
 }
-.link-underline {
+.text-link {
   font-size: inherit !important;
   font-family: inherit !important;
   font-style: inherit !important;
@@ -309,37 +309,37 @@
   text-align: inherit !important;
   outline: 0 !important;
 }
-.link-underline:focus {
+.text-link:focus {
   color: inherit !important;
   text-decoration: underline !important;
 }
-.link-underline:visited {
+.text-link:visited {
   color: #222 !important;
   text-decoration: underline !important;
 }
 @media (hover: hover) {
-  .link-underline:hover {
+  .text-link:hover {
     cursor: pointer !important;
     color: #000 !important;
     text-decoration: underline !important;
   }
 }
-.link-underline:active {
+.text-link:active {
   color: #717171 !important;
   text-decoration: underline !important;
 }
-.link-underline::-moz-focus-inner {
+.text-link::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.link-underline:focus::-moz-focus-inner {
+.text-link:focus::-moz-focus-inner {
   border: none !important;
 }
-.link-underline:-moz-focusring {
+.text-link:-moz-focusring {
   outline: 0 !important;
 }
-.link-underline:focus-visible {
+.text-link:focus-visible {
   color: #222 !important;
   text-decoration: underline !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -348,17 +348,17 @@
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .link-underline:focus-visible {
+  .text-link:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.link-underline:disabled {
+.text-link:disabled {
   color: #ddd !important;
   text-decoration: underline !important;
 }
-.link-underline:disabled:hover {
+.text-link:disabled:hover {
   text-decoration: underline !important;
 }
 .link {

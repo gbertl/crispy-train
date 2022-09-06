@@ -5,7 +5,7 @@ handleTab({
 });
 
 handleModal({
-  btnOpenSelector: '.tab__on-btn-container',
+  btnOpenSelector: '.btn-link-condensed',
   btnCloseSelector: '.btn-close',
   modalSelector: '#edit-modal',
 });

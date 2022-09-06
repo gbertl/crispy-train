@@ -1,5 +1,5 @@
 handleModal({
   btnCloseSelector: '.btn-close',
-  btnOpenSelector: '.tab__on-btn-container',
+  btnOpenSelector: '.btn-link-condensed',
   modalSelector: '#learn-more-modal',
 });
