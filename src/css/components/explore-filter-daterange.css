@@ -1,5 +1,5 @@
 /* Explore Filter Daterange */
-.calendar__date-next-month {
+.calendar__next-month {
   display: inline-block !important;
   vertical-align: top !important;
   min-height: 100% !important;
@@ -73,7 +73,7 @@
   position: absolute !important;
   left: 9px !important;
 }
-.calendar__date-prev-month {
+.calendar__prev-month {
   display: inline-block !important;
   vertical-align: top !important;
   min-height: 100% !important;
@@ -83,7 +83,7 @@
   pointer-events: none !important;
   visibility: hidden !important;
 }
-.calendar__date-current-month {
+.calendar__current-month {
   display: inline-block !important;
   vertical-align: top !important;
   min-height: 100% !important;
