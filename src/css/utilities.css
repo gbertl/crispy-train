@@ -879,3 +879,14 @@
 .text-center {
   text-align: center !important;
 }
+.w-full {
+  width: 100% !important;
+}
+.w-fit-content {
+  width: fit-content;
+}
+@media (min-width: 744px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
