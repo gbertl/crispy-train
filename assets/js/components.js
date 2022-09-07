@@ -74,7 +74,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     document.addEventListener('click', (e) => {
       const modalBody = modal.querySelector('.contents');
-      if (!modalBody.contains(e.target) && !e.target.closest('[data-modal]')) {
+      if ((modalBody && !modalBody.contains(e.target)) && !e.target.closest('[data-modal]')) {
         closeModal();
       }
     });
