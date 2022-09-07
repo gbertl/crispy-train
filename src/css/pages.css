@@ -602,10 +602,6 @@
 .relative {
   position: relative !important;
 }
-.calendar__days {
-  position: relative !important;
-  margin-left: 9px !important;
-}
 .main-content__calendar-header-wrapper {
   color: #757575 !important;
   position: absolute !important;
@@ -1712,7 +1708,7 @@
     display: inline !important;
   }
 }
-.calendar-sideba__sched-event-wrapper {
+.calendar-sidebar__sched-event-wrapper {
   box-shadow: rgb(0 0 0 / 12%) 0 6px 16px !important;
   border-radius: 8px !important;
   border: 1px solid #ebebeb !important;
@@ -1721,13 +1717,13 @@
   min-height: 124px !important;
   position: relative !important;
 }
-.calendar-sideba__sched-event-desc-wrapper {
+.calendar-sidebar__sched-event-desc-wrapper {
   text-align: left !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 1.2 !important;
 }
-.calendar-sideba__sched-event-text-wrapper {
+.calendar-sidebar__sched-event-text-wrapper {
   -webkit-box-align: start !important;
   -webkit-box-pack: justify !important;
   -webkit-box-direction: normal !important;
@@ -1739,7 +1735,7 @@
   align-items: flex-start !important;
   height: 100% !important;
 }
-.calendar-sideba__sched-event-note {
+.calendar-sidebar__sched-event-note {
   color: #717171 !important;
   font-weight: 400 !important;
   font-size: 12px !important;
@@ -1767,12 +1763,12 @@
   width: 99% !important;
   z-index: 3 !important;
 }
-.calendar-sideba__sched-event-desc-text-wrapper {
+.calendar-sidebar__sched-event-desc-text-wrapper {
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 1.2 !important;
 }
-.calendar-sideba__sched-insight {
+.calendar-sidebar__sched-insight {
   padding: 12px 0 !important;
   border-width: 1px 0 0 !important;
   border-right-style: initial !important;
@@ -1912,17 +1908,17 @@
 .main-content__details-wrapper:focus {
   border: 2px solid #222 !important;
 }
-.calendar-sideba__header {
+.calendar-sidebar__header {
   padding-top: 16px !important;
   padding-bottom: 8px !important;
   font-weight: 600 !important;
   font-size: 22px !important;
   line-height: 26px !important;
 }
-.calendar-sideba__sched-btn-wrapper {
+.pt-2 {
   padding-top: 8px !important;
 }
-.calendar-sideba__sched-insight-date {
+.calendar-sidebar__sched-insight-date {
   margin: 0 !important;
   overflow-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -1932,14 +1928,14 @@
   line-height: 1.44444em !important;
   color: inherit !important;
 }
-.calendar-sideba__sched-insight-desc {
+.calendar-sidebar__sched-insight-desc {
   color: #222 !important;
 }
-.calendar-sideba__sched-insight-show-mote {
+.calendar-sidebar__sched-insight-show-mote {
   font-weight: 800 !important;
   color: #222 !important;
 }
-.calendar-sideba__sched-event-img-wrapper {
+.calendar-sidebar__sched-event-img-wrapper {
   position: absolute !important;
   right: 0 !important;
   top: 0 !important;
@@ -3251,9 +3247,6 @@
   .main-content__news-container {
     width: 33.3333% !important;
   }
-}
-.w-full {
-  width: 100% !important;
 }
 .css-loader {
   -webkit-animation-direction: alternate !important;
@@ -13139,8 +13132,7 @@ h3:first-child {
   font-size: 32px !important;
   line-height: 36px !important;
 }
-.calendar-sideba__sched-event-note-wrapper {
-  text-align: left !important;
+.text-sm {
   font-size: 14px !important;
   line-height: 18px !important;
 }
@@ -17403,9 +17395,6 @@ h3:first-child {
 }
 .payment-methods__h-20 {
   height: 20px;
-}
-.w-fit-content {
-  width: fit-content;
 }
 .site-content__create-btn-wrap[class][class] {
   position: absolute;
@@ -24662,29 +24651,6 @@ html :where(img[class*='wp-image-']) {
   font-weight: 400 !important;
   text-decoration: line-through !important;
 }
-.explore-filter__date-text {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-pack: center !important;
-  -webkit-box-align: center !important;
-  margin-left: 1px !important;
-  margin-right: 1px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-direction: column !important;
-  border-radius: 100% !important;
-  position: relative !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-  font-weight: 600 !important;
-  color: #222 !important;
-  border: 1.5px solid #fff !important;
-}
-.explore-filter__date-text:hover {
-  background: #fff !important;
-  border: 1.5px solid #222 !important;
-}
 ._1g6en4tj {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
@@ -25979,11 +25945,6 @@ html :where(img[class*='wp-image-']) {
   font-size: 22px !important;
   line-height: 26px !important;
   margin-bottom: 8px !important;
-}
-@media (min-width: 744px) {
-  .w-md-auto {
-    width: auto !important;
-  }
 }
 .dir.i6or9bm[class][class] {
   border: 1px solid var(--j-qkgmf);
@@ -28022,7 +27983,7 @@ tr.hide {
   color: #222 !important;
   margin-bottom: 8px !important;
 }
-.calendar-sideba__qnty-sched {
+.text-sm {
   font-size: 14px !important;
   line-height: 18px !important;
 }
@@ -32143,7 +32104,7 @@ tr.hide {
   transform-origin: 50% 100% !important;
   will-change: transform !important;
 }
-.calendar-sideba__sched-event {
+.pb-4 {
   padding-bottom: 16px !important;
 }
 .app-theme__save-btn {
@@ -41431,7 +41392,7 @@ tr.hide {
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
-._13wkz77 {
+.pt-2 {
   padding-top: 8px !important;
 }
 .products-container__alert-warning-date-text {
@@ -43001,7 +42962,7 @@ textarea {
   margin: 0 !important;
   padding-left: 16px !important;
 }
-.calendar-sideba__sched-event-time-wrapper {
+.font-extrabold {
   font-weight: 800 !important;
 }
 .site-content__content-wrapper-rules-radio-grp {
@@ -50252,10 +50213,11 @@ label {
   touch-action: manipulation !important;
   position: relative !important;
   background: transparent !important;
-  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s,
+    transform 0.25s ease 0s !important;
 }
 ._oda838::before {
-  content: "" !important;
+  content: '' !important;
   display: block !important;
   position: absolute !important;
   top: 50% !important;
@@ -50283,7 +50245,8 @@ label {
   border-radius: var(--go-h-jh-l) !important;
   outline: none !important;
   padding: 8px !important;
-  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
   background: transparent !important;
@@ -50311,12 +50274,17 @@ label {
 }
 @media (min-width: 1128px) {
   .dir.sewcpu6[class][class] {
-    padding-bottom: calc(var(--spacingBottomLargeAndAbove, var(--spacingBottom)) * var(--fgg-f-l-a));
+    padding-bottom: calc(
+      var(--spacingBottomLargeAndAbove, var(--spacingBottom)) * var(--fgg-f-l-a)
+    );
   }
 }
 @media (min-width: 744px) {
   .dir.sewcpu6[class][class] {
-    padding-bottom: calc(var(--spacingBottomMediumAndAbove, var(--spacingBottom)) * var(--fgg-f-l-a));
+    padding-bottom: calc(
+      var(--spacingBottomMediumAndAbove, var(--spacingBottom)) *
+        var(--fgg-f-l-a)
+    );
   }
 }
 ._1i6g032 {
@@ -50376,19 +50344,20 @@ label {
   }
 }
 .dir.plmw1e5[class][class] {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mq5rv0q[class][class] {
-    max-width: var(--gp-section-max-width,var(--maxWidth));
+  max-width: var(--gp-section-max-width, var(--maxWidth));
 }
 .plmw1e5[class][class] {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 ._1838e91 {
   color: rgb(34, 34, 34) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -50479,7 +50448,7 @@ label {
 }
 ._1xh26pm2::after {
   border: 0px solid rgb(0, 0, 0) !important;
-  content: "" !important;
+  content: '' !important;
   display: block !important;
   pointer-events: none !important;
   position: absolute !important;
@@ -50491,7 +50460,7 @@ label {
 ._1emsdka::after {
   background-color: black !important;
   inset: 0px !important;
-  content: "" !important;
+  content: '' !important;
   opacity: 0 !important;
   pointer-events: none !important;
   position: absolute !important;
@@ -50688,13 +50657,15 @@ label {
   }
 }
 @media (min-width: 1128px) {
- ._4cdkw4 {
-   top: 24px !important;
- }
+  ._4cdkw4 {
+    top: 24px !important;
+  }
 }
 @media (min-width: 744px) {
   .dir.pxj7xmk[class][class] {
-    padding-bottom: calc(var(--computedBottomMediumAndAbove) * var(--fgg-f-l-a));
+    padding-bottom: calc(
+      var(--computedBottomMediumAndAbove) * var(--fgg-f-l-a)
+    );
     padding-top: calc(var(--computedTopMediumAndAbove) * var(--fgg-f-l-a));
   }
 }
@@ -50709,3 +50680,4 @@ label {
   font-size: 1em;
   font-weight: inherit;
   line-height: inherit;
+}
