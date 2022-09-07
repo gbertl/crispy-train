@@ -1,5 +1,5 @@
 /* Explore Filter Daterange */
-.explore-filter-daterange__date-next-month {
+.calendar__date-next-month {
   display: inline-block !important;
   vertical-align: top !important;
   min-height: 100% !important;
@@ -8,17 +8,17 @@
 .relative {
   position: relative !important;
 }
-.calendar__days {
+.calendar__week {
   position: relative !important;
   margin-left: 9px !important;
 }
-.explore-filter-daterange__days-content {
+.calendar__week-container {
   color: #222 !important;
   position: absolute !important;
   top: 62px !important;
   text-align: left !important;
 }
-.explore-filter-daterange__days-list {
+.calendar__weekdays {
   list-style: none !important;
   margin: 1px 0 !important;
   padding-left: 0 !important;
@@ -26,7 +26,7 @@
   font-size: 14px !important;
   line-height: 18px !important;
 }
-.explore-filter-daterange__days-item {
+.calendar__weekday {
   display: inline-block !important;
   text-align: center !important;
   font-size: 12px !important;
@@ -38,42 +38,42 @@
   margin-bottom: 6px !important;
 }
 @media (min-width: 744px) {
-  .explore-filter-daterange__days-item {
+  .calendar__weekday {
     margin-bottom: 0 !important;
   }
 }
-.explore-filter-daterange__date {
+.calendar__date {
   outline: 0 !important;
 }
-.explore-filter-daterange__date-controls {
+.calendar__controls {
   position: relative !important;
   z-index: 1 !important;
   height: 0 !important;
 }
-.explore-filter-daterange__date-controls-prev {
+.calendar__prev {
   position: absolute !important;
   bottom: -43px !important;
   left: 37px !important;
 }
-.explore-filter-daterange__date-controls-next {
+.calendar__next {
   position: absolute !important;
   bottom: -43px !important;
   right: 37px !important;
 }
-.explore-filter-daterange__date-wrapper {
+.calendar__date-wrapper {
   position: relative !important;
   overflow: hidden !important;
   border-radius: 3px !important;
   transition: height 0.2s ease-in-out !important;
 }
-.explore-filter-daterange__date-content {
+.calendar__date-content {
   background: 0 0 !important;
   text-align: left !important;
   z-index: 0 !important;
   position: absolute !important;
   left: 9px !important;
 }
-.explore-filter-daterange__date-prev-month {
+.calendar__date-prev-month {
   display: inline-block !important;
   vertical-align: top !important;
   min-height: 100% !important;
@@ -83,7 +83,7 @@
   pointer-events: none !important;
   visibility: hidden !important;
 }
-.explore-filter-daterange__date-current-month {
+.calendar__date-current-month {
   display: inline-block !important;
   vertical-align: top !important;
   min-height: 100% !important;
