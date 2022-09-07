@@ -42,45 +42,53 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
 // modal alternative
 (() => {
-  const modals = document.querySelectorAll('[data-modal]');
+  document.querySelectorAll('[data-modal]')
+    .forEach((e) => {
+      const modal = document.querySelector(e.dataset.modal);
+      const section = document.querySelector(e.dataset.lightbox);
 
-  modals.forEach((e) => {
-    const modal = document.querySelector(e.dataset.modal);
+      const openModal = () => {
+        document.body.classList.add('overflow-y-hidden')
+        modal.classList.remove('hidden')
+        section?.classList.remove('hidden')
+      };
+      const closeModal = () => {
+        document.body.classList.remove('overflow-y-hidden')
+        modal.classList.add('hidden')
+        section?.classList.add('hidden')
+      };
 
-    const openModal = () => {
-      document.body.classList.add('overflow-y-hidden')
-      modal.classList.remove('hidden')
-    };
-    const closeModal = () => {
-      document.body.classList.remove('overflow-y-hidden')
-      modal.classList.add('hidden')
-    };
+      e.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    e.addEventListener('click', (e) => {
-      e.preventDefault();
+        openModal();
 
-      openModal();
+        const buttonClose = modal.querySelectorAll('[data-button="close"]');
 
-      const buttonClose = modal.querySelectorAll('[data-button="close"]');
+        buttonClose.forEach((e) => {
+          e.addEventListener('click', (e) => {
+            event.preventDefault();
 
-      buttonClose.forEach((e) => {
-        e.addEventListener('click', (e) => {
-          event.preventDefault();
-
-          closeModal();
+            closeModal();
+          });
         });
+      });
+
+      document.addEventListener('click', (e) => {
+        const modalBody = modal.querySelector('.contents');
+        if ((modalBody && !modalBody.contains(e.target)) && !e.target.closest('[data-modal]')) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        e.key === 'Escape' && closeModal();
       });
     });
 
-    document.addEventListener('click', (e) => {
-      const modalBody = modal.querySelector('.contents');
-      if ((modalBody && !modalBody.contains(e.target)) && !e.target.closest('[data-modal]')) {
-        closeModal();
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      e.key === 'Escape' && closeModal();
-    });
-  });
+  document.querySelectorAll('[data-scroll]')
+    .forEach((e) => {
+      const view = document.querySelector(e.dataset.scroll)
+      e.addEventListener('click', () => view?.scrollIntoView({ behavior: 'smooth' }))
+    })
 })();
