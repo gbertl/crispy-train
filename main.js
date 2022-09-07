@@ -76,7 +76,7 @@ let sitemap = [
       'become-a-host/floor-plan.html',
       'become-a-host/intro.html',
       'become-a-host/legal.html',
-      'become-a-host/_location.html',
+      'become-a-host/location.html',
       'become-a-host/photos.html',
       'become-a-host/preview.html',
       'become-a-host/price.html',
