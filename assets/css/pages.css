@@ -1712,7 +1712,7 @@
     display: inline !important;
   }
 }
-.calendar-sideba__sched-event-wrapper {
+.calendar-sidebar__sched-event-wrapper {
   box-shadow: rgb(0 0 0 / 12%) 0 6px 16px !important;
   border-radius: 8px !important;
   border: 1px solid #ebebeb !important;
@@ -1721,13 +1721,13 @@
   min-height: 124px !important;
   position: relative !important;
 }
-.calendar-sideba__sched-event-desc-wrapper {
+.calendar-sidebar__sched-event-desc-wrapper {
   text-align: left !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 1.2 !important;
 }
-.calendar-sideba__sched-event-text-wrapper {
+.calendar-sidebar__sched-event-text-wrapper {
   -webkit-box-align: start !important;
   -webkit-box-pack: justify !important;
   -webkit-box-direction: normal !important;
@@ -1739,7 +1739,7 @@
   align-items: flex-start !important;
   height: 100% !important;
 }
-.calendar-sideba__sched-event-note {
+.calendar-sidebar__sched-event-note {
   color: #717171 !important;
   font-weight: 400 !important;
   font-size: 12px !important;
@@ -1767,12 +1767,12 @@
   width: 99% !important;
   z-index: 3 !important;
 }
-.calendar-sideba__sched-event-desc-text-wrapper {
+.calendar-sidebar__sched-event-desc-text-wrapper {
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 1.2 !important;
 }
-.calendar-sideba__sched-insight {
+.calendar-sidebar__sched-insight {
   padding: 12px 0 !important;
   border-width: 1px 0 0 !important;
   border-right-style: initial !important;
@@ -1912,7 +1912,7 @@
 .main-content__details-wrapper:focus {
   border: 2px solid #222 !important;
 }
-.calendar-sideba__header {
+.calendar-sidebar__header {
   padding-top: 16px !important;
   padding-bottom: 8px !important;
   font-weight: 600 !important;
@@ -1922,7 +1922,7 @@
 .pt-2 {
   padding-top: 8px !important;
 }
-.calendar-sideba__sched-insight-date {
+.calendar-sidebar__sched-insight-date {
   margin: 0 !important;
   overflow-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -1932,14 +1932,14 @@
   line-height: 1.44444em !important;
   color: inherit !important;
 }
-.calendar-sideba__sched-insight-desc {
+.calendar-sidebar__sched-insight-desc {
   color: #222 !important;
 }
-.calendar-sideba__sched-insight-show-mote {
+.calendar-sidebar__sched-insight-show-mote {
   font-weight: 800 !important;
   color: #222 !important;
 }
-.calendar-sideba__sched-event-img-wrapper {
+.calendar-sidebar__sched-event-img-wrapper {
   position: absolute !important;
   right: 0 !important;
   top: 0 !important;
