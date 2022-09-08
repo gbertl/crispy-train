@@ -6309,6 +6309,11 @@ select[disabled] {
     width: 33.3333% !important;
   }
 }
+@media (min-width: 1659px) {
+  .explore__list-card-container {
+    width: 26.3333% !important;
+  }
+}
 .feature__airbnb-li {
   border-style: solid !important;
   border-color: transparent !important;
