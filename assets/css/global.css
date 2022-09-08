@@ -4934,6 +4934,68 @@ select[disabled] {
 .relative {
   position: relative !important;
 }
+.section-container {
+  -webkit-box-lines: multiple !important;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  -webkit-box-align: stretch !important;
+  -ms-flex-align: stretch !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: stretch !important;
+  align-items: stretch !important;
+  -webkit-justify-content: flex-start !important;
+  justify-content: flex-start !important;
+  -webkit-flex-wrap: wrap !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  padding-left: var(--gp-padding-xsmallAndAbove, 24px) !important;
+  padding-right: var(--gp-padding-xsmallAndAbove, 24px) !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+@media print {
+  .section-container {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (min-width: 375px) {
+  .section-container {
+    padding-left: var(--gp-padding-smallAndAbove, 24px) !important;
+    padding-right: var(--gp-padding-smallAndAbove, 24px) !important;
+  }
+}
+@media (min-width: 744px) {
+  .section-container {
+    padding-left: var(--gp-padding-mediumAndAbove, 40px) !important;
+    padding-right: var(--gp-padding-mediumAndAbove, 40px) !important;
+  }
+}
+@media (min-width: 950px) {
+  .section-container {
+    padding-left: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
+    padding-right: var(--gp-padding-mediumPlusAndAbove, 40px) !important;
+  }
+}
+@media (min-width: 1128px) {
+  .section-container {
+    padding-left: var(--gp-padding-largeAndAbove, 80px) !important;
+    padding-right: var(--gp-padding-largeAndAbove, 80px) !important;
+  }
+}
+@media (min-width: 1440px) {
+  .section-container {
+    max-width: none !important;
+    padding-left: var(--gp-padding-xlargeAndAbove, 80px) !important;
+    padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
+  }
+}
 
 /*! ------------------- */
 /*! Footer              */
