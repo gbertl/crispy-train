@@ -17260,7 +17260,7 @@ fieldset[disabled] .btn {
   width: 100%!important;
   padding: 0!important
 }
-._1h52lk5 {
+.btn-card-badge {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid rgba(176,176,176,.5)!important;
@@ -17281,12 +17281,12 @@ fieldset[disabled] .btn {
   width: 100%!important
 }
 @media (hover:hover) {
-  ._1h52lk5:hover {
+  .btn-card-badge:hover {
     color: #000!important;
     border-color: #000!important
   }
 }
-._t7tlos {
+.btn-card-badge__inner {
   -webkit-box-pack: justify!important;
   -webkit-box-direction: normal!important;
   -webkit-box-orient: vertical!important;
@@ -17299,11 +17299,11 @@ fieldset[disabled] .btn {
   height: 100%!important;
   width: 100%!important
 }
-._9phhti {
+.size-8 {
   width: 32px!important;
   height: 32px!important
 }
-._w7zj3g {
+.btn-card-badge__title {
   font-weight: 600!important;
   font-size: 16px!important;
   line-height: 20px!important;
@@ -17311,7 +17311,7 @@ fieldset[disabled] .btn {
   padding-top: 24px!important;
   white-space: normal!important
 }
-._13as0oe {
+.btn-card-badge__container {
   -webkit-box-pack: center!important;
   position: relative!important;
   display: flex!important;
