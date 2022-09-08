@@ -47437,13 +47437,11 @@ a:hover {
 .img-full {
   height: 0 !important;
   width: 0 !important;
-  position: absolute !important;
 }
 @supports (object-fit: cover) {
   .img-full {
     height: 100% !important;
     width: 100% !important;
-    position: static !important;
   }
 }
 .img-middle {
@@ -50033,7 +50031,6 @@ body {
 .img-full {
   height: 0px !important;
   width: 0px !important;
-  position: absolute !important;
 }
 @supports (object-fit: cover) {
   .img-full {
