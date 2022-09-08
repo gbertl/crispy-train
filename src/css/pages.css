@@ -7667,7 +7667,7 @@ select[disabled] {
   -ms-grid-columns: repeat(5, 243px) !important;
   display: -ms-grid !important;
   display: grid !important;
-  grid-template-columns: repeat(5, 243px) !important;
+  grid-template-columns: repeat(auto-fit, minmax(243px, 1fr)) !important;
   grid-row-gap: 24px !important;
   grid-column-gap: 16px !important;
 }
@@ -50599,7 +50599,8 @@ body {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   color: rgb(255, 255, 255) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 20px !important;
@@ -50632,7 +50633,8 @@ body {
   border-radius: var(--go-h-jh-l) !important;
   outline: none !important;
   padding: 8px 16px !important;
-  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
   -webkit-tap-highlight-color: transparent !important;
   background: transparent !important;
   color: rgb(255, 255, 255) !important;
@@ -50675,7 +50677,8 @@ body {
   display: flex !important;
   flex: 0 0 auto !important;
   color: rgb(34, 34, 34) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 20px !important;
@@ -50694,7 +50697,8 @@ body {
   touch-action: manipulation !important;
   position: relative !important;
   background: transparent !important;
-  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s,
+    transform 0.25s ease 0s !important;
 }
 ._1kpe7lgb {
   contain: content !important;
@@ -50712,7 +50716,7 @@ body {
 }
 ._1kpe7lgb::after {
   background: rgb(0, 0, 0) !important;
-  content: "" !important;
+  content: '' !important;
   display: block !important;
   height: 100% !important;
   left: 0px !important;
@@ -50763,7 +50767,7 @@ body {
 ._vzls2v {
   height: 100% !important;
 }
-._vzls2v:nth-child(n)>div {
+._vzls2v:nth-child(n) > div {
   height: 100% !important;
 }
 ._1go630p {
@@ -50806,10 +50810,11 @@ body {
   touch-action: manipulation !important;
   position: relative !important;
   background: transparent !important;
-  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s,
+    transform 0.25s ease 0s !important;
 }
 ._1lotlmr::before {
-  content: "" !important;
+  content: '' !important;
   display: block !important;
   position: absolute !important;
   top: 50% !important;
@@ -50834,7 +50839,8 @@ body {
 }
 ._8gyrpf {
   color: rgb(34, 34, 34) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 600 !important;
   font-size: 18px !important;
   line-height: 24px !important;
@@ -50850,7 +50856,8 @@ body {
 }
 ._eeq7h0 {
   color: rgb(34, 34, 34) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 24px !important;
@@ -50913,7 +50920,8 @@ body {
   border-style: solid !important;
   outline: none !important;
   padding: 13px 23px !important;
-  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
   -webkit-tap-highlight-color: transparent !important;
   border-color: var(--f-k-smk-x) !important;
   background: var(--f-mkcy-f) !important;
@@ -50935,7 +50943,8 @@ body {
   font-weight: inherit !important;
   border-radius: 8px !important;
   outline: none !important;
-  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
   -webkit-tap-highlight-color: transparent !important;
   background: transparent !important;
   border: none !important;
@@ -50954,12 +50963,15 @@ body {
   justify-content: space-between;
 }
 .dir.h1e0znt6[class][class] {
-  padding-bottom: var(--carousel-section-container-header-padding-bottom, calc(3 * var(--fgg-f-l-a)));
+  padding-bottom: var(
+    --carousel-section-container-header-padding-bottom,
+    calc(3 * var(--fgg-f-l-a))
+  );
 }
 .p1tsgw40[class][class] {
-    align-items: center;
-    display: flex;
-    white-space: nowrap;
+  align-items: center;
+  display: flex;
+  white-space: nowrap;
 }
 .dir-ltr.p8cmq2p[class][class] {
   margin-right: calc(2 * var(--fgg-f-l-a));
@@ -50994,8 +51006,10 @@ body {
   align-items: center !important;
   justify-content: center !important;
   background-clip: padding-box !important;
-  box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px, rgb(0 0 0 / 18%) 0px 2px 4px !important;
-  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s, transform 0.25s ease 0s !important;
+  box-shadow: transparent 0px 0px 0px 1px, transparent 0px 0px 0px 4px,
+    rgb(0 0 0 / 18%) 0px 2px 4px !important;
+  transition: -ms-transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s,
+    transform 0.25s ease 0s !important;
   width: 32px !important;
   height: 32px !important;
 }
@@ -51014,7 +51028,8 @@ body {
 }
 ._evft92 {
   color: rgb(34, 34, 34) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 20px !important;
@@ -51022,7 +51037,8 @@ body {
 }
 ._4zdnhq {
   color: rgb(34, 34, 34) !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 18px !important;
@@ -52283,9 +52299,11 @@ body {
   outline: none !important;
   padding: 0px !important;
   margin: 0px !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   position: relative !important;
-  transition-property: -ms-transform, -webkit-transform, transform, background-color, border-color !important;
+  transition-property: -ms-transform, -webkit-transform, transform,
+    background-color, border-color !important;
   transition-duration: 0.15s !important;
   transition-timing-function: ease-in-out !important;
   border-radius: 16px !important;
@@ -52296,8 +52314,7 @@ body {
   background-color: rgb(247, 247, 247) !important;
   color: rgb(34, 34, 34) !important;
 }
-@media (hover: hover)
-{
+@media (hover: hover) {
   ._joxslpg:hover {
     color: rgb(0, 0, 0) !important;
     border-color: rgb(0, 0, 0) !important;
