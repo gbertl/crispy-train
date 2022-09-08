@@ -5001,6 +5001,11 @@ select[disabled] {
 /*! ------------------- */
 /*! Footer              */
 /*! ------------------- */
+.footer__links:not(last-child) {
+  padding-bottom: 24px !important;
+  margin-bottom: 24px !important;
+  border-bottom: 1px solid #ddd !important;
+}
 @media (min-width: 744px) {
   .footer__container {
     padding-left: 24px;
@@ -5033,11 +5038,6 @@ select[disabled] {
     margin-bottom: 0 !important;
     border-bottom: 0 !important;
   }
-}
-.footer__links:not(last-child) {
-  padding-bottom: 24px !important;
-  margin-bottom: 24px !important;
-  border-bottom: 1px solid #ddd !important;
 }
 @media (min-width: 1128px) {
   .footer__links {
