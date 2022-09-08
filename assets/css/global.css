@@ -4996,6 +4996,9 @@ select[disabled] {
     padding-right: var(--gp-padding-xlargeAndAbove, 80px) !important;
   }
 }
+.rounded-full {
+  border-radius: 50%;
+}
 
 /*! ------------------- */
 /*! Footer              */
