@@ -52278,8 +52278,241 @@ body {
     background-color: var(--color-loader-dots-light, #ffffff) !important;
   }
 }
-@media (min-width: 375px) {
-  .inline-sm {
-    display: inline !important;
+ ._b21f4g {
+   border: 0px !important;
+   clip: rect(0 0 0 0) !important;
+   -webkit-clip-path: inset(100%) !important;
+   clip-path: inset(100%) !important;
+   height: 1px !important;
+   overflow: hidden !important;
+   padding: 0px !important;
+   position: absolute !important;
+   white-space: nowrap !important;
+   width: 1px !important;
+   margin-top: -1px !important;
+ }
+ 
+ ._11rss4h {
+   background: rgb(255, 255, 255) !important;
+   box-shadow: rgb(0 0 0 / 12%) 0px 2px 4px !important;
+   height: 64px !important;
+   position: relative !important;
+   z-index: 2000 !important;
+ }
+ 
+ ._1k6out4d {
+   overflow: hidden !important;
+   position: absolute !important;
+   top: 64px !important;
+   bottom: 0px !important;
+   transform: translateY(-100%) !important;
+   width: 100% !important;
+   z-index: 1999 !important;
+   box-shadow: rgb(0 0 0 / 12%) 0px 2px 4px !important;
+   transition: box-shadow 0.4s ease 0s !important;
+ }
+ 
+ ._12d0llg5 {
+   -webkit-box-align: center !important;
+   text-align: justify !important;
+   line-height: 0 !important;
+   display: flex !important;
+   flex-wrap: wrap !important;
+   align-items: center !important;
+ }
+ 
+ ._qo24lwc {
+   -webkit-box-flex: 1 !important;
+   display: inline-block !important;
+   vertical-align: middle !important;
+   text-align: left !important;
+   flex-grow: 1 !important;
+ }
+ 
+ ._1iti0ju {
+   display: inline-block !important;
+   vertical-align: middle !important;
+ }
+ 
+ ._bzfhend {
+   -webkit-appearance: none !important;
+   -moz-appearance: none !important;
+   appearance: none !important;
+   background: transparent !important;
+   border: 0px !important;
+   cursor: pointer !important;
+   margin: 0px !important;
+   padding: 0px !important;
+   text-align: left !important;
+   -webkit-user-select: auto !important;
+   -moz-user-select: auto !important;
+   -ms-user-select: auto !important;
+   user-select: auto !important;
+   padding-top: 16px !important;
+   padding-bottom: 16px !important;
+   padding-right: 21px !important;
+   padding-left: 21px !important;
+   color: #008489 !important;
+   display: inline-block !important;
+   vertical-align: bottom !important;
+ }
+ 
+ ._vwled5 {
+   font-size: 23px !important;
+   letter-spacing: -0.58px !important;
+ }
+ 
+ .dir.a8jt5op[class][class] {
+   border: 0;
+   padding: 0;
+ }
+ .dir.a8jt5op[class][class] {
+   border: 0;
+   padding: 0;
+ }
+ .a8jt5op[class][class] {
+   -webkit-clip: rect(0 0 0 0);
+   clip: rect(0 0 0 0);
+   -webkit-clip-path: inset(100%);
+   clip-path: inset(100%);
+   height: 1px;
+   overflow: hidden;
+   overflow: clip;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+ }
+ .a8jt5op[class][class] {
+   -webkit-clip: rect(0 0 0 0);
+   clip: rect(0 0 0 0);
+   -webkit-clip-path: inset(100%);
+   clip-path: inset(100%);
+   height: 1px;
+   overflow: hidden;
+   overflow: clip;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+ }
+ 
+ ._jro6t0 {
+   display: -webkit-box !important;
+   display: -moz-box !important;
+   display: -ms-flexbox !important;
+   display: -webkit-flex !important;
+   display: flex !important;
+ }
+ 
+ ._rqfxvmb {
+   -ms-grid-row-align: center !important;
+   -ms-flex-item-align: center !important;
+   display: -webkit-inline-box !important;
+   display: -moz-inline-box !important;
+   display: -ms-inline-flexbox !important;
+   display: -webkit-inline-flex !important;
+   display: inline-flex !important;
+   -webkit-align-self: center !important;
+   align-self: center !important;
+ }
+ 
+ ._1ym4cfnq {
+   appearance: none !important;
+   background: transparent !important;
+   border: 0px !important;
+   cursor: pointer !important;
+   margin: 0px !important;
+   padding: 0px !important;
+   text-align: left !important;
+   user-select: auto !important;
+   height: 24px !important;
+   width: 24px !important;
+   position: relative !important;
+ }
+
+ ._1ym4cfnq::before {
+  background-color: rgb(72, 72, 72) !important;
+  display: block !important;
+  height: 1px !important;
+  position: absolute !important;
+  top: 11.5px !important;
+  width: 24px !important;
+  will-change: transform, opacity !important;
+  content: "" !important;
+  opacity: 1 !important;
+  transform: translateY(-6px) !important;
+  border-radius: 1px !important;
+  transition: -ms-transform 0.15s cubic-bezier(0.26, 0.86, 0.44, 0.985) 0.05s, -webkit-transform 0.15s, transform 0.15s, opacity 0.15s !important;
+}
+
+._1ym4cfnq::after {
+  background-color: rgb(72, 72, 72) !important;
+  display: block !important;
+  height: 1px !important;
+  position: absolute !important;
+  top: 11.5px !important;
+  width: 24px !important;
+  will-change: transform, opacity !important;
+  content: "" !important;
+  opacity: 1 !important;
+  transform: translateY(6px) !important;
+  border-radius: 1px !important;
+  transition: -ms-transform 0.15s cubic-bezier(0.26, 0.86, 0.44, 0.985) 0.05s, -webkit-transform 0.15s, transform 0.15s, opacity 0.15s !important;
+}
+
+._13ucsvw {
+  background-color: #484848 !important;
+  border-radius: 1px !important;
+  display: block !important;
+  height: 1px !important;
+  position: absolute !important;
+  top: 11.5px !important;
+  -webkit-transition: -webkit-transform 0.15s,transform 0.15s, opacity 0.15s !important;
+  -moz-transition: transform 0.15s, opacity 0.15s !important;
+  transition: -ms-transform 0.15s,-webkit-transform 0.15s,transform 0.15s, opacity 0.15s !important;
+  -webkit-transition-timing-function: cubic-bezier(0.26, 0.86, 0.44, 0.985) !important;
+  transition-timing-function: cubic-bezier(0.26, 0.86, 0.44, 0.985) !important;
+  width: 24px !important;
+  will-change: transform, opacity !important;
+}
+
+._12d0llg5::after {
+  content: "" !important;
+  display: inline-block !important;
+  vertical-align: top !important;
+  width: 100% !important;
+}
+
+ @media (min-width: 1128px) {
+  ._z4lmgp {
+    display: none !important;
+  }
+  .app-theme__navbar-wrapper {
+    display: flex !important;
+  }
+ }
+ 
+ @media (max-width: 1127px) {
+   .main-content__body-left {
+     display: none !important;
+   }
+   .inline-lg {
+     display: inline !important;
+   }
+   .main-content__header-date-categories-wrapper,
+   .main-content__header-question,
+   .app-theme__navbar-wrapper {
+     display: none !important;
+   }
+   ._z4lmgp {
+     display: contents !important;
+    }
+ }
+ 
+ @media (max-width: 743px) {
+  .schedule-details {
+    display: none;
+  }
+  .inline-lg {
+    display: none !important;
   }
 }
