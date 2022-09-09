@@ -52582,28 +52582,49 @@ body {
   color: var(--f-mkcy-f) !important;
 }
 
-@media (min-width: 1128px) {
- ._z4lmgp {
-   display: none !important;
- }
- .app-theme__navbar-wrapper {
-   display: flex !important;
- }
+.sotwrn[class][class] {
+  font-size: var(--c-zdwk-p);
+  line-height: var(--j-p-z-kco);
 }
 
-@media (max-width: 1127px) {
-  .main-content__body-left {
-    display: none !important;
-  }
-  .inline-lg {
-    display: inline !important;
-  }
-  .main-content__header-date-categories-wrapper,
-  .main-content__header-question,
-  .app-theme__navbar-wrapper {
-    display: none !important;
-  }
-  ._z4lmgp {
+.dir.bwkwbtz[class][class] {
+  padding-top: 8px;
+}
+
+._1dj2p4gk {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin: 0 !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: auto !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  font-family: var(--e-ls-qkw) !important;
+  font-size: var(--iw-ehf-f) !important;
+  line-height: var(---s-l-myu) !important;
+  font-weight: var(--jx-zk-pv) !important;
+  border-radius: var(--go-h-jh-l) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  outline: none !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  padding-left: 23px !important;
+  padding-right: 23px !important;
+  -webkit-transition: box-shadow 0.2s ease, -webkit-transform 0.1s ease, transform 0.1s ease !important;
+  -moz-transition: box-shadow 0.2s ease, transform 0.1s ease !important;
+  transition: box-shadow 0.2s ease, -ms-transform 0.1s ease, -webkit-transform 0.1s ease, transform 0.1s ease !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border-color: var(--f-k-smk-x) !important;
+  background: var(--f-mkcy-f) !important;
+  color: var(--f-k-smk-x) !important;
+}
+
+@media (min-width: 1128px) {
+  ._z4lmgp,
+  .sched-content-md {
     display: none !important;
   }
   .app-theme__navbar-wrapper {
@@ -52612,7 +52633,8 @@ body {
  }
  
  @media (max-width: 1127px) {
-   .main-content__body-left {
+   .main-content__body-left,
+   .sched-content-xl {
      display: none !important;
    }
    .inline-lg {
