@@ -43493,8 +43493,8 @@ a:hover {
   overflow: hidden !important;
   height: 100% !important;
   width: 100vw !important;
-  transition: left 0.5s !important;
-  left: min(100% - 55px, 260px) !important;
+  transition: left 300ms ease 0s !important;
+  /* left: min(100% - 55px, 260px) !important; */
 }
 @media (max-width: 744px) {
   .site-content__page-wrapper {
@@ -43503,7 +43503,7 @@ a:hover {
     overflow: hidden !important;
     height: 100% !important;
     width: 100vw !important;
-    transition: left 0.5s !important;
+    transition: left 300ms ease 0s !important;
     left: 0 !important;
   }
 }
@@ -43511,6 +43511,7 @@ a:hover {
   .site-content__page-wrapper {
     display: flex !important;
     width: calc(100vw - 260px) !important;
+    left: min(100% - 55px, 260px) !important;
   }
 }
 .site-content__page-container {
@@ -43519,7 +43520,7 @@ a:hover {
   overflow: hidden !important;
   width: 100vw !important;
   height: 100% !important;
-  transition: width 0.5s !important;
+  transition: width 300ms ease 0s !important;
 }
 @media (min-width: 744px) {
   .site-content__page-container {
@@ -53400,6 +53401,9 @@ body {
   .app-theme__navbar-wrapper {
     display: flex !important;
   }
+  .site-content__page-container {
+    width: calc(100vw - 260px) !important;
+  }
  }
  
  @media (max-width: 1127px) {
@@ -53418,6 +53422,19 @@ body {
    ._z4lmgp {
      display: contents !important;
     }
+    .app-theme__nav-container {
+      position: absolute !important;
+      z-index: 11 !important;
+      top: 0px !important;
+      height: 100% !important;
+      transition: left 0.5s ease 0s !important;
+      background-color: rgb(247, 247, 247) !important;
+      box-shadow: rgb(0 0 0 / 5%) -4px 0px 20px inset !important;
+      width: calc(100% - 55px) !important;
+      max-width: 260px !important;
+      left: -260px !important;
+      display: none !important;
+    }
  }
  
  @media (max-width: 743px) {
@@ -53430,5 +53447,16 @@ body {
   .sched-floating-btn {
     right: 24px !important;
     bottom: 24px !important;
+  }
+}
+
+@keyframes keyframe_1dl9c3r {
+  0% {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
