@@ -21177,8 +21177,8 @@ i.icon {
 @media (min-width: 600px) and (max-width: 781px) {
   .wp-block-columns:not(.is-not-stacked-on-mobile)
     > .wp-block-column:not(:only-child) {
-    flex-basis: calc(50% - var(--wp--style--block-gap, 2em) / 2) !important;
-    flex-grow: 0;
+    flex-basis: 0 !important;
+    flex-grow: 1;
   }
   .wp-block-columns:not(.is-not-stacked-on-mobile)
     > .wp-block-column:nth-child(2n) {
@@ -53644,4 +53644,37 @@ body {
     rgba(255, 255, 255, 0.9) 70%,
     rgb(255, 255, 255)
   ) !important;
+}
+
+.col-mdpl-4 {
+    grid-column: span 4;
+}
+
+.postTeaser__groupInner.row:after, 
+.postTeaser__groupInner.row:before,
+.siteFooter__main-row.row:after, 
+.siteFooter__main-row.row:before {
+  content: none;
+  /* display: table; */
+}
+
+.postTeaser__groupInner.row {
+  margin: 0 !important;
+}
+
+@media (min-width: 1128px) {
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+}
+
+.col-lg-6 {
+  position: relative;
+}
+
+@media (min-width: 782px) {
+  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:only-child) {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
 }
