@@ -41896,11 +41896,6 @@ tr.hide {
 ._1sxghm1:not(:last-child) {
   padding-bottom: 12px !important;
 }
-@media (min-width: 1128px) {
-  .site-content__page-wrapper-main {
-    width: calc((100vw - 260px) - 320px) !important;
-  }
-}
 .guest-container__text-header {
   margin-top: 0 !important;
   margin-bottom: 24px !important;
@@ -42342,6 +42337,11 @@ tr.hide {
 @media (min-width: 744px) {
   .site-content__page-wrapper-main {
     width: calc(100vw - 320px) !important;
+  }
+}
+@media (min-width: 1128px) {
+  .site-content__page-wrapper-main {
+    width: calc((100vw - 260px) - 320px) !important;
   }
 }
 ._dxiwe1 {
