@@ -1,26 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/pages.css" />
-    <!-- For nested folders -->
-    <link rel="stylesheet" href="../assets/css/global.css" />
-    <link rel="stylesheet" href="../assets/css/pages.css" />
 
-    <title>404 Page Not Found - Airbnb</title>
-  </head>
-  <body>
-    <header class="page-container page-container-responsive space-top-4">
-      <a href="/" class="icon icon-airbnb link-icon h2">
-        <span class="screen-reader-only"> Airbnb </span>
-        <img src="assets/images/404-logo.png" alt="" />
-        <!-- For nested -->
-        <img src="../assets/images/404-logo.png" alt="" />
-      </a>
-    </header>
-    <div class="page-container page-container-responsive">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/pages.css" />
+  <!-- For nested folders -->
+  <link rel="stylesheet" href="../assets/css/global.css" />
+  <link rel="stylesheet" href="../assets/css/pages.css" />
+
+  <title>404 Page Not Found - Airbnb</title>
+</head>
+
+<body>
+  <header class="press-release__header">
+    <div class="press-release__container">
+      <div class="header__backdrop">
+        <div id="skipnav">
+          <p class="skipnav">
+            <a href="#mainContent">Skip to main content</a>
+          </p>
+        </div>
+        <a class="press-release__logo" href="https://news.airbnb.com/" tabindex="-1"><span>Airbnb</span></a>
+        <a class="press-release__site" href="https://news.airbnb.com/">News</a>
+        <button class="press-release__site press-release__toggle" data-toggle="offcanvasRight">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="press-release__nav">
+        <ul id="menu-primary-navigation" class="nav">
+          <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20">
+            <a href="https://news.airbnb.com/about-us/">About us</a>
+          </li>
+          <li id="menu-item-2310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2310">
+            <a href="https://news.airbnb.com/media-assets/">Media assets</a>
+          </li>
+          <li id="menu-item-327003" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327003">
+            <a href="https://news.airbnb.com/product-releases/">Product releases</a>
+          </li>
+          <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17">
+            <a href="https://news.airbnb.com/contact/">Contact</a>
+          </li>
+        </ul>
+        <div class="languagePicker languagePicker--default has-submenu">
+          <button class="languagePicker__button" role="button"
+            aria-label="Select a language, pop-up button. Current language is English" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="languagePicker__buttonLanguage">English</span>
+          </button>
+
+          <ul class="languagePicker__modal">
+            <li class="lang-item lang-item-59 lang-item-en current-lang lang-item-first">
+              <a href="https://news.airbnb.com/2021-winter-release/" lang="en-US" aria-label="English language option">
+                English
+              </a>
+            </li>
+            <li class="lang-item lang-item-17863 lang-item-en-au lang-item-indented">
+              <a href="https://news.airbnb.com/en-au/airbnb-research-shows-aussies-are-set-to-live-anywhere/"
+                lang="en-AU" aria-label="AU and NZ subcategory of English language option">
+                AU and NZ
+              </a>
+            </li>
+            <li class="lang-item lang-item-17867 lang-item-en-in lang-item-indented">
+              <a href="https://news.airbnb.com/en-in/introducing-50-upgrades-and-innovations-across-our-entire-service/"
+                lang="en-US" aria-label="India subcategory of English language option">
+                India
+              </a>
+            </li>
+            <li class="lang-item lang-item-19520 lang-item-ms lang-item-indented">
+              <a href="https://news.airbnb.com/ms/introducing-50-upgrades-and-innovations-for-malaysian-hosts-and-guests/"
+                lang="ms-MY" aria-label="Malaysia subcategory of English language option">
+                Malaysia
+              </a>
+            </li>
+            <li class="lang-item lang-item-17871 lang-item-en-uk no-translation lang-item-indented">
+              <a href="https://news.airbnb.com/en-uk/" lang="en-GB"
+                aria-label="United Kingdom subcategory of English language option">
+                United Kingdom
+              </a>
+            </li>
+            <li class="lang-item lang-item-20274 lang-item-cs no-translation">
+              <a href="https://news.airbnb.com/cs/" lang="cs-CZ" aria-label="Čeština language option">
+                Čeština
+              </a>
+            </li>
+            <li class="lang-item lang-item-20035 lang-item-da no-translation">
+              <a href="https://news.airbnb.com/da/" lang="da-DK" aria-label="Dansk language option">
+                Dansk
+              </a>
+            </li>
+            <li class="lang-item lang-item-131 lang-item-de">
+              <a href="https://news.airbnb.com/de/airbnb-2021-winter-update-uber-50-upgrades-fur-unseren-gesamten-service/"
+                lang="de-DE" aria-label="Deutsch language option">
+                Deutsch
+              </a>
+            </li>
+            <li class="lang-item lang-item-20039 lang-item-ca no-translation">
+              <a href="https://news.airbnb.com/ca/" lang="ca" aria-label="Català language option">
+                Català
+              </a>
+            </li>
+            <li class="lang-item lang-item-8043 lang-item-ea no-translation">
+              <a href="https://news.airbnb.com/ea/" lang="es-419" aria-label="Español (América Latina) language option">
+                Español (América Latina)
+              </a>
+            </li>
+            <li class="lang-item lang-item-19516 lang-item-nl no-translation">
+              <a href="https://news.airbnb.com/nl/" lang="nl-NL" aria-label="Nederlands language option">
+                Nederlands
+              </a>
+            </li>
+            <li class="lang-item lang-item-139 lang-item-es">
+              <a href="https://news.airbnb.com/es/airbnb-presenta-mas-de-50-actualizaciones-e-innovaciones-en-sus-servicios/"
+                lang="es-ES" aria-label="Español (España) language option">
+                Español (España)
+              </a>
+            </li>
+            <li class="lang-item lang-item-62 lang-item-fr">
+              <a href="https://news.airbnb.com/fr/airbnb-lance-plus-de-50-fonctionnalites-et-ameliorations-sur-la-plateforme/"
+                lang="fr-FR" aria-label="Français language option">
+                Français
+              </a>
+            </li>
+            <li class="lang-item lang-item-135 lang-item-it">
+              <a href="https://news.airbnb.com/it/airbnb-winter-release-oltre-50-aggiornamenti-della-piattaforma/"
+                lang="it-IT" aria-label="Italiano language option">
+                Italiano
+              </a>
+            </li>
+            <li class="lang-item lang-item-1148 lang-item-br no-translation">
+              <a href="https://news.airbnb.com/br/" lang="pt-BR" aria-label="Português (Brasil) language option">
+                Português (Brasil)
+              </a>
+            </li>
+            <li class="lang-item lang-item-8047 lang-item-pt">
+              <a href="https://news.airbnb.com/pt/airbnb-apresenta-mais-de-50-atualizacoes-e-inovacoes-nos-seus-servicos/"
+                lang="pt-BR" aria-label="Português (Portugal) language option">
+                Português (Portugal)
+              </a>
+            </li>
+            <li class="lang-item lang-item-590 lang-item-zh no-translation">
+              <a href="https://news.airbnb.com/zh/" lang="zh-CN" aria-label="简体中文 language option">
+                简体中文
+              </a>
+            </li>
+            <li class="lang-item lang-item-19528 lang-item-zh-hk no-translation">
+              <a href="https://news.airbnb.com/zh-hk/" lang="zh-HK" aria-label="繁體中文 (香港) language option">
+                繁體中文 (香港)
+              </a>
+            </li>
+            <li class="lang-item lang-item-19524 lang-item-zh-tw no-translation">
+              <a href="https://news.airbnb.com/zh-tw/" lang="zh-TW" aria-label="繁體中文 (台灣) language option">
+                繁體中文 (台灣)
+              </a>
+            </li>
+            <li class="lang-item lang-item-1140 lang-item-ja">
+              <a href="https://news.airbnb.com/ja/airbnb%e3%80%81%e4%b8%96%e7%95%8c%e7%9a%84%e3%81%aa%e6%97%85%e8%a1%8c%e9%9c%80%e8%a6%81%e3%81%ae%e5%a4%89%e5%8c%96%e3%81%ab%e5%af%be%e5%bf%9c%e3%81%99%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e5%85%a8/"
+                lang="ja" aria-label="日本語 language option">
+                日本語
+              </a>
+            </li>
+            <li class="lang-item lang-item-1144 lang-item-ko">
+              <a href="https://news.airbnb.com/ko/2021-winter-release/" lang="ko-KR" aria-label="한국어 language option">
+                한국어
+              </a>
+            </li>
+            <li class="lang-item lang-item-6738 lang-item-th">
+              <a href="https://news.airbnb.com/th/airbnb-%e0%b8%9b%e0%b8%8f%e0%b8%b4%e0%b8%a7%e0%b8%b1%e0%b8%95%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b9%80%e0%b8%94%e0%b8%b4%e0%b8%99%e0%b8%97%e0%b8%b2%e0%b8%87%e0%b8%ad%e0%b8%b1%e0%b8%9e%e0%b9%80/"
+                lang="th" aria-label="ไทย language option">
+                ไทย
+              </a>
+            </li>
+            <li class="languagePicker__touchShim"></li>
+          </ul>
+        </div>
+        <form class="header__search" id="searchform" method="get" action="https://news.airbnb.com/">
+          <input class="header__searchInput" type="search" name="s" placeholder="What are you looking for?"
+            style="display: none">
+          <button type="submit" class="header__searchButton js-header__searchButton" aria-label="Search">
+            <span class="header__searchButtonLabel font-w-bold">Search</span>
+          </button>
+          <button type="button" class="header__closeSearchButton js-header__closeSearchButton" style="display: none">
+            <span class="header__closeSearchButtonLabel">Close Search</span>
+          </button>
+        </form>
+      </nav>
+    </div>
+  </header>
+  <!-- <div class="page-container page-container-responsive">
       <div class="row space-top-8 space-8">
         <div class="col-5 col-middle">
           <h1 class="text-jumbo text-ginormous">Oops!</h1>
@@ -58,6 +229,36 @@
           />
         </div>
       </div>
+    </div> -->
+  <div class="wrap" role="document">
+    <div class="content">
+      <main class="main" id="mainContent" tabindex="-1">
+
+        <div class="container FourZeroFourContent">
+          <div class="row error-404" style="padding: 80px 0;">
+            <div class="col-md-4 col-mdpl-7">
+              <h1 class="FourZeroFourContent__header">Oops!</h1>
+              <h2 class="FourZeroFourContent__subheader">We can't seem to find the page you're looking for.</h2>
+              <h6 class="FourZeroFourContent__subheader">Error code: 404</h6>
+              <p class="FourZeroFourContent__text">Here are some helpful links instead:</p>
+              <ul class="FourZeroFourContent__links">
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.airbnb.com/s/all?refinement_paths%5B%5D=%2Ffor_you">Search</a></li>
+                <li><a href="https://www.airbnb.com/help?from=footer">Help</a></li>
+                <li><a href="https://www.airbnb.com/host/homes">Hosting on Airbnb</a></li>
+                <li><a href="https://www.airbnb.com/trust">Trust &amp; Safety</a></li>
+              </ul>
+            </div>
+            <div class="col-mdpl-2 col-mdpl-5">
+              <img
+                src="https://a0.muscache.com/airbnb/static/error_pages/404-Airbnb_final-d652ff855b1335dd3eedc3baa8dc8b69.gif"
+                width="313" class="hide-sm" alt="Girl has dropped her ice cream.">
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -53653,7 +53653,9 @@ body {
 .postTeaser__groupInner.row:after, 
 .postTeaser__groupInner.row:before,
 .siteFooter__main-row.row:after, 
-.siteFooter__main-row.row:before {
+.siteFooter__main-row.row:before,
+.error-404.row:after, 
+.error-404.row:before {
   content: none;
   /* display: table; */
 }
@@ -53668,8 +53670,14 @@ body {
   }
 }
 
-.col-lg-6 {
-  position: relative;
+@media (min-width: 744px) {
+  .col-md-4 {
+      grid-column: span 4;
+  }
+
+  .col-mdpl-2 {
+    grid-column: span 2;
+  }
 }
 
 @media (min-width: 782px) {
@@ -53677,4 +53685,51 @@ body {
     flex-basis: 0;
     flex-grow: 1;
   }
+}
+
+@media (min-width: 950px) {
+  .col-mdpl-7 {
+    grid-column: span 7;
+  }
+
+  .col-mdpl-5 {
+    grid-column: span 5;
+  }
+}
+
+
+.col-mdpl-7,
+.col-mdpl-5,
+.col-lg-6,
+.col-md-4,
+.col-mdpl-2  {
+    position: relative;
+}
+
+.FourZeroFourContent__header {
+  color: #222;
+  font-size: 80px;
+}
+
+.FourZeroFourContent__subheader {
+  color: #222;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.FourZeroFourContent__text {
+  margin: 0 0 24px;
+  font-size: 18px;
+  color: #222;
+}
+
+.FourZeroFourContent__links {
+  overflow-wrap: break-word;
+}
+
+.FourZeroFourContent__links a {
+  font-size: 18px;
+  color: #222;
+  text-decoration: underline;
+  font-weight: 500;
 }
