@@ -52739,13 +52739,12 @@ body {
   background-color: #222;
 }
 
-
 @media (min-width: 844px) {
   .press-release__nav {
     height: 100%;
     float: right;
   }
-  .header .nav {
+  .press-release__header .nav {
     float: left;
     -webkit-transition: opacity .25s;
     -o-transition: opacity .25s;
@@ -52765,6 +52764,7 @@ body {
     text-align: center;
     float: left;
   }
+
   .press-release__toggle {
     display: none;
   }
@@ -52777,6 +52777,7 @@ body {
   }
 }
 
+
 @media (max-width: 843.98px) {
   .press-release__header .nav {
     padding: 24px;
@@ -52787,7 +52788,14 @@ body {
   }
 }
 
-@media (min-width: 1128px) {
+@media (max-width: 743.98px) {
+  .press-release__container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+ @media (min-width: 1128px) {
   ._z4lmgp,
   .sched-content-md {
     display: none !important;
@@ -52800,36 +52808,36 @@ body {
   }
  }
  
- @media (max-width: 1127px) {
-   .main-content__body-left,
-   .sched-content-xl {
-     display: none !important;
-   }
-   .inline-lg {
-     display: inline !important;
-   }
-   .main-content__header-date-categories-wrapper,
-   .main-content__header-question,
-   .app-theme__navbar-wrapper {
-     display: none !important;
-   }
-   ._z4lmgp {
-     display: contents !important;
-    }
-    .app-theme__nav-container {
-      position: absolute !important;
-      z-index: 11 !important;
-      top: 0px !important;
-      height: 100% !important;
-      transition: left 0.5s ease 0s !important;
-      background-color: rgb(247, 247, 247) !important;
-      box-shadow: rgb(0 0 0 / 5%) -4px 0px 20px inset !important;
-      width: calc(100% - 55px) !important;
-      max-width: 260px !important;
-      left: -260px !important;
-      display: none !important;
-    }
- }
+@media (max-width: 1127px) {
+  .main-content__body-left,
+  .sched-content-xl {
+    display: none !important;
+  }
+  .inline-lg {
+    display: inline !important;
+  }
+  .main-content__header-date-categories-wrapper,
+  .main-content__header-question,
+  .app-theme__navbar-wrapper {
+    display: none !important;
+  }
+  ._z4lmgp {
+    display: contents !important;
+  }
+  .app-theme__nav-container {
+    position: absolute !important;
+    z-index: 11 !important;
+    top: 0px !important;
+    height: 100% !important;
+    transition: left 0.5s ease 0s !important;
+    background-color: rgb(247, 247, 247) !important;
+    box-shadow: rgb(0 0 0 / 5%) -4px 0px 20px inset !important;
+    width: calc(100% - 55px) !important;
+    max-width: 260px !important;
+    left: -260px !important;
+    display: none !important;
+  }
+}
  
  @media (max-width: 743px) {
   .schedule-details {
