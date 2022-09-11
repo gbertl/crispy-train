@@ -4107,6 +4107,9 @@ select[disabled] {
   .block-lg {
     display: block !important;
   }
+  .hidden-lg {
+    display: none !important;
+  }
 }
 @media (max-width: 1127px) {
   .mw-sm-50 {
