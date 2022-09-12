@@ -246,7 +246,7 @@
   line-height: inherit !important;
   appearance: none !important;
 }
-.form__badge {
+.badge-dismissible {
   -webkit-box-align: center !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -256,7 +256,7 @@
   margin-right: 8px !important;
   margin-bottom: 8px !important;
 }
-.form__badge-btn {
+.badge-dismissible__icon {
   height: 16px !important;
   margin-left: 12px !important;
 }
@@ -446,7 +446,7 @@
     -webkit-transform 250ms ease-in-out, transform 250ms ease-in-out !important;
   border-color: #b0b0b0 !important;
 }
-.form__textarea {
+.textarea {
   color: inherit !important;
   display: block !important;
   min-width: 100% !important;

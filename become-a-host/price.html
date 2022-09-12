@@ -369,14 +369,14 @@
                         <span style="font-size: 0"></span>
                         <div class="become-a-host__right-price-container" id="FMP-target">
                           <div class="become-a-host__right-price-select">
-                            <div class="become-a-host__price-select-wrapper">
+                            <div class="counter-lg">
                               <button
-                                class="become-a-host__price-select-plus-minus"
+                                class="counter-lg__stepper"
                                 type="button"
                                 aria-label="Subtract"
                                 data-testid="undefined-decrease-button"
                               >
-                                <span class="header__search-tabs-filter-body-guests-icon"
+                                <span class="counter__icon"
                                   ><svg
                                     viewBox="0 0 32 32"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -396,8 +396,8 @@
                                     <path d="m2 16h28"></path></svg
                                 ></span>
                               </button>
-                              <div class="header__search-tabs-filter-body-guests-count">
-                                <div class="become-a-host__price-input-wrapper">
+                              <div class="counter__count">
+                                <div class="counter-lg__input-wrapper">
                                   <div class="site-content__content-menu-wrapper">
                                     <label
                                       class="input-field"
@@ -406,12 +406,12 @@
                                         >price per night</span
                                       >
                                       <div dir="ltr">
-                                        <div class="become-a-host__price-input-content">
+                                        <div class="counter-lg__input-inner">
                                           <input
                                             type="text"
                                             pattern="[0-9]*"
                                             placeholder="₱00"
-                                            class="become-a-host__price-input-textfield"
+                                            class="counter-lg__input"
                                             id="undefined-input"
                                             value="₱50000"
                                             autocomplete="off"
@@ -424,12 +424,12 @@
                                 </div>
                               </div>
                               <button
-                                class="become-a-host__price-select-plus-minus"
+                                class="counter-lg__stepper"
                                 type="button"
                                 aria-label="Add"
                                 data-testid="undefined-increase-button"
                               >
-                                <span class="header__search-tabs-filter-body-guests-icon"
+                                <span class="counter__icon"
                                   ><svg
                                     viewBox="0 0 32 32"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -593,9 +593,9 @@
                       <span class="text-highlight dir dir-ltr"
                         >Your progress: step 9 out of 10.</span
                       >
-                      <div class="become-a-host__footer-progress">
+                      <div class="progress-bar-bottom-alt">
                         <div
-                          class="become-a-host__footer-progress-bar"
+                          class="progress-bar-bottom-alt__bar"
                           style="
                             transition: transform 0.6s;
                             transform: translateX(82%);

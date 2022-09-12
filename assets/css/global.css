@@ -5002,6 +5002,9 @@ select[disabled] {
 .items-center {
   align-items: center;
 }
+.self-stretch {
+  align-self: stretch;
+}
 
 /*! ------------------- */
 /*! Footer              */
@@ -13269,7 +13272,7 @@ fieldset[disabled] .btn {
   line-height: inherit !important;
   appearance: none !important;
 }
-.form__badge {
+.badge-dismissible {
   -webkit-box-align: center !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -13279,7 +13282,7 @@ fieldset[disabled] .btn {
   margin-right: 8px !important;
   margin-bottom: 8px !important;
 }
-.form__badge-btn {
+.badge-dismissible__icon {
   height: 16px !important;
   margin-left: 12px !important;
 }
@@ -13469,7 +13472,7 @@ fieldset[disabled] .btn {
     -webkit-transform 250ms ease-in-out, transform 250ms ease-in-out !important;
   border-color: #b0b0b0 !important;
 }
-.form__textarea {
+.textarea {
   color: inherit !important;
   display: block !important;
   min-width: 100% !important;
@@ -17170,7 +17173,7 @@ fieldset[disabled] .btn {
   padding-top: 4px!important;
   padding-bottom: 4px!important
 }
-.form__badge-dark-active {
+.badge-dark-active {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid #222!important;
@@ -17190,14 +17193,14 @@ fieldset[disabled] .btn {
   color: #fff!important;
   font-weight: 800!important
 }
-.form__badge-dark-text {
+.badge-dark__text {
   font-weight: 400!important;
   font-size: 14px!important;
   line-height: 18px!important;
   width: 58px!important;
   padding: 0 6px!important
 }
-.form__badge-dark-active::after {
+.badge-dark-active::after {
   content: ''!important;
   width: calc(100% + 2px)!important;
   height: calc(100% + 2px)!important;
@@ -17210,7 +17213,7 @@ fieldset[disabled] .btn {
   border-width: 2px!important;
   border-radius: inherit!important
 }
-.form__badge-dark {
+.badge-dark {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid #ddd!important;
@@ -17229,7 +17232,7 @@ fieldset[disabled] .btn {
   font-size: 12px!important;
   line-height: 16px!important
 }
-.form__badge-dark-text {
+.badge-dark__text {
   font-weight: 400!important;
   font-size: 14px!important;
   line-height: 18px!important;
@@ -17261,7 +17264,7 @@ fieldset[disabled] .btn {
   width: 100%!important;
   padding: 0!important
 }
-.btn-card-badge {
+.btn-card {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid rgba(176,176,176,.5)!important;
@@ -17282,12 +17285,12 @@ fieldset[disabled] .btn {
   width: 100%!important
 }
 @media (hover:hover) {
-  .btn-card-badge:hover {
+  .btn-card:hover {
     color: #000!important;
     border-color: #000!important
   }
 }
-.btn-card-badge__inner {
+.btn-card__inner {
   -webkit-box-pack: justify!important;
   -webkit-box-direction: normal!important;
   -webkit-box-orient: vertical!important;
@@ -17304,7 +17307,7 @@ fieldset[disabled] .btn {
   width: 32px!important;
   height: 32px!important
 }
-.btn-card-badge__title {
+.btn-card__title {
   font-weight: 600!important;
   font-size: 16px!important;
   line-height: 20px!important;
@@ -17312,7 +17315,7 @@ fieldset[disabled] .btn {
   padding-top: 24px!important;
   white-space: normal!important
 }
-.btn-card-badge__container {
+.btn-card__container {
   -webkit-box-pack: center!important;
   position: relative!important;
   display: flex!important;
