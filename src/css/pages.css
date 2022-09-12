@@ -28132,12 +28132,12 @@ tr.hide {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
-.progress-bar__wrapper {
+.progress-bar-top {
   display: flex !important;
   width: 100% !important;
   background-color: #ddd !important;
 }
-.progress-bar__wrapper-span {
+.progress-bar-top__bar {
   height: 2px !important;
   background-color: #222 !important;
 }
@@ -30240,7 +30240,7 @@ tr.hide {
   font-size: 16px !important;
   line-height: 20px !important;
 }
-._107yoem {
+.progress-bar-bottom {
   position: fixed !important;
   bottom: 80px !important;
   left: 0 !important;
@@ -30268,13 +30268,13 @@ tr.hide {
     padding-right: 0 !important;
   }
 }
-._1adtjk3 {
+.progress-bar-bottom__inner {
   height: 2px !important;
   overflow: hidden !important;
   position: relative !important;
   width: 100% !important;
 }
-._1rcz3vn {
+.progress-bar-bottom__bar {
   width: 100% !important;
   height: 100% !important;
   left: 0 !important;
