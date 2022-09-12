@@ -13269,7 +13269,7 @@ fieldset[disabled] .btn {
   line-height: inherit !important;
   appearance: none !important;
 }
-.form__badge {
+.badge-dismissible {
   -webkit-box-align: center !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -13279,7 +13279,7 @@ fieldset[disabled] .btn {
   margin-right: 8px !important;
   margin-bottom: 8px !important;
 }
-.form__badge-btn {
+.badge-dismissible__icon {
   height: 16px !important;
   margin-left: 12px !important;
 }
@@ -17170,7 +17170,7 @@ fieldset[disabled] .btn {
   padding-top: 4px!important;
   padding-bottom: 4px!important
 }
-.form__badge-dark-active {
+.badge-dark-active {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid #222!important;
@@ -17190,14 +17190,14 @@ fieldset[disabled] .btn {
   color: #fff!important;
   font-weight: 800!important
 }
-.form__badge-dark-text {
+.badge-dark__text {
   font-weight: 400!important;
   font-size: 14px!important;
   line-height: 18px!important;
   width: 58px!important;
   padding: 0 6px!important
 }
-.form__badge-dark-active::after {
+.badge-dark-active::after {
   content: ''!important;
   width: calc(100% + 2px)!important;
   height: calc(100% + 2px)!important;
@@ -17210,7 +17210,7 @@ fieldset[disabled] .btn {
   border-width: 2px!important;
   border-radius: inherit!important
 }
-.form__badge-dark {
+.badge-dark {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid #ddd!important;
@@ -17229,7 +17229,7 @@ fieldset[disabled] .btn {
   font-size: 12px!important;
   line-height: 16px!important
 }
-.form__badge-dark-text {
+.badge-dark__text {
   font-weight: 400!important;
   font-size: 14px!important;
   line-height: 18px!important;

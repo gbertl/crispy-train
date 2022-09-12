@@ -30521,7 +30521,7 @@ tr.hide {
   margin-bottom: 8px !important;
 }
 @media (hover: hover) {
-  .guest-req__category-option-btn:hover {
+  .badge:hover {
     color: #000 !important;
     border-color: #000 !important;
   }
@@ -30540,7 +30540,7 @@ tr.hide {
   border-radius: inherit !important;
 }
 @media (hover: hover) {
-  .getting_set_up_improvement_btn:hover {
+  .badge-active:hover {
     color: #000 !important;
     border-color: #000 !important;
   }
@@ -42396,7 +42396,7 @@ tr.hide {
   flex-wrap: wrap !important;
   gap: 12px 8px !important;
 }
-.getting_set_up_improvement_btn {
+.badge-active {
   cursor: pointer !important;
   text-align: center !important;
   border: 1px solid #222 !important;
@@ -42417,7 +42417,7 @@ tr.hide {
   background-color: #f7f7f7 !important;
   color: #222 !important;
 }
-.guest-req__category-option-btn {
+.badge {
   cursor: pointer !important;
   text-align: center !important;
   border: 1px solid #ddd !important;
