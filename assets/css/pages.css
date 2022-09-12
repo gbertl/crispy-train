@@ -9252,7 +9252,7 @@ h3:first-child {
   min-width: 104px !important;
   margin-left: 5px !important;
 }
-.header__search-tabs-filter-body-guests-btn-content {
+.counter {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
   display: inline-flex !important;
@@ -9267,7 +9267,7 @@ h3:first-child {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     'Helvetica Neue', sans-serif !important;
 }
-.header__search-tabs-filter-body-guests-btn {
+.counter__stepper {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   -webkit-box-flex: 0 !important;
@@ -9293,7 +9293,7 @@ h3:first-child {
   background: #fff !important;
   border-radius: 50% !important;
 }
-.header__search-tabs-filter-body-guests-text {
+.counter__label {
   left: 0 !important;
   border: 0 !important;
   clip: rect(0, 0, 0, 0) !important;
@@ -37236,7 +37236,7 @@ tr.hide {
     font-weight: 600 !important;
   }
 }
-.header__search-tabs-filter-body-guests-btn-content {
+.counter {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   -webkit-box-align: center !important;
@@ -37259,7 +37259,7 @@ tr.hide {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif !important;
 }
-.header__search-tabs-filter-body-guests-btn {
+.counter__stepper {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
   -webkit-box-align: center !important;
@@ -37298,31 +37298,31 @@ tr.hide {
   background: #fff !important;
   border-radius: 50% !important;
 }
-.header__search-tabs-filter-body-guests-btn:disabled {
+.counter__stepper:disabled {
   cursor: not-allowed !important;
   color: #ebebeb !important;
   border-color: #ebebeb !important;
   background: #fff !important;
 }
 @media (hover: hover) {
-  .header__search-tabs-filter-body-guests-btn:hover {
+  .counter__stepper:hover {
     color: #222 !important;
     border-color: #222 !important;
     background: #fff !important;
   }
 }
-.header__search-tabs-filter-body-guests-btn::-moz-focus-inner {
+.counter__stepper::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.header__search-tabs-filter-body-guests-btn:focus::-moz-focus-inner {
+.counter__stepper:focus::-moz-focus-inner {
   border: none !important;
 }
-.header__search-tabs-filter-body-guests-btn:-moz-focusring {
+.counter__stepper:-moz-focusring {
   outline: 0 !important;
 }
-.header__search-tabs-filter-body-guests-btn:focus-visible {
+.counter__stepper:focus-visible {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
@@ -37332,18 +37332,18 @@ tr.hide {
   box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .header__search-tabs-filter-body-guests-btn:focus-visible {
+  .counter__stepper:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.header__search-tabs-filter-body-guests-btn:disabled:hover {
+.counter__stepper:disabled:hover {
   color: #ebebeb !important;
   border-color: #ebebeb !important;
   background: #fff !important;
 }
-.header__search-tabs-filter-body-guests-text {
+.counter__label {
   left: 0 !important;
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
@@ -39074,7 +39074,7 @@ tr.hide {
   width: 22px !important;
   padding: 5px !important;
 }
-.header__search-tabs-filter-body-guests-count {
+.counter__count {
   position: relative !important;
   color: inherit !important;
   font-family: inherit !important;
