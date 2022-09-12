@@ -37035,7 +37035,7 @@ tr.hide {
   flex-flow: row wrap !important;
   margin-top: 24px !important;
 }
-.become-a-host__right-card-btn {
+.btn-card-centered-active {
   -webkit-box-align: center !important;
   -webkit-box-pack: center !important;
   -webkit-box-direction: normal !important;
@@ -37063,18 +37063,18 @@ tr.hide {
   animation-name: keyframe_14ic1xm !important;
 }
 @media (min-width: 1128px) {
-  .become-a-host__right-card-btn {
+  .btn-card-centered-active {
     padding-top: 24px !important;
     padding-bottom: 40px !important;
   }
 }
 @media (min-width: 744px) {
-  .become-a-host__right-card-btn {
+  .btn-card-centered-active {
     margin: 0 8px 16px !important;
     flex: 0 1 calc(33% - 16px) !important;
   }
 }
-.become-a-host__right-card-img {
+.btn-card-centered__icon {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   width: 44px !important;
@@ -37084,12 +37084,12 @@ tr.hide {
   justify-content: center !important;
 }
 @media (min-width: 744px) {
-  .become-a-host__right-card-img {
+  .btn-card-centered__icon {
     width: 64px !important;
     height: 64px !important;
   }
 }
-.become-a-host__right-card-text {
+.btn-card-centered__title {
   font-size: 14px !important;
   line-height: 18px !important;
   font-weight: 600 !important;
@@ -37097,7 +37097,7 @@ tr.hide {
   text-align: center !important;
   margin: 0 20px !important;
 }
-.become-a-host__right-card-btn-b0 {
+.btn-card-centered {
   -webkit-box-align: center !important;
   -webkit-box-pack: center !important;
   -webkit-box-direction: normal !important;
@@ -37124,13 +37124,13 @@ tr.hide {
   animation-name: keyframe_14ic1xm !important;
 }
 @media (min-width: 1128px) {
-  .become-a-host__right-card-btn-b0 {
+  .btn-card-centered {
     padding-top: 24px !important;
     padding-bottom: 40px !important;
   }
 }
 @media (min-width: 744px) {
-  .become-a-host__right-card-btn-b0 {
+  .btn-card-centered {
     margin: 0 8px 16px !important;
     flex: 0 1 calc(33% - 16px) !important;
   }
@@ -55282,7 +55282,7 @@ body {
   font-weight: 800 !important;
   width: 100% !important;
 }
-.btn-card-badge-active {
+.btn-card-active {
   cursor: pointer !important;
   text-align: center !important;
   border: 1px solid rgb(34, 34, 34) !important;

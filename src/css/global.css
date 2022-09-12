@@ -1534,7 +1534,7 @@
   width: 100%!important;
   padding: 0!important
 }
-.btn-card-badge {
+.btn-card {
   cursor: pointer!important;
   text-align: center!important;
   border: 1px solid rgba(176,176,176,.5)!important;
@@ -1555,12 +1555,12 @@
   width: 100%!important
 }
 @media (hover:hover) {
-  .btn-card-badge:hover {
+  .btn-card:hover {
     color: #000!important;
     border-color: #000!important
   }
 }
-.btn-card-badge__inner {
+.btn-card__inner {
   -webkit-box-pack: justify!important;
   -webkit-box-direction: normal!important;
   -webkit-box-orient: vertical!important;
@@ -1577,7 +1577,7 @@
   width: 32px!important;
   height: 32px!important
 }
-.btn-card-badge__title {
+.btn-card__title {
   font-weight: 600!important;
   font-size: 16px!important;
   line-height: 20px!important;
@@ -1585,7 +1585,7 @@
   padding-top: 24px!important;
   white-space: normal!important
 }
-.btn-card-badge__container {
+.btn-card__container {
   -webkit-box-pack: center!important;
   position: relative!important;
   display: flex!important;
