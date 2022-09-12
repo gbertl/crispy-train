@@ -42,13 +42,13 @@
 }
 .dir.card-horizontal-outlined__btn[class][class] {
   background: var(--f-mkcy-f);
-  border-radius: var(--i-g-gvoq);
+  border-radius: var(--border-radius-lg);
   box-shadow: var(--availability-list-item_box-shadow);
   padding: var(--b-y-unon);
 }
 @media (min-width: 744px) {
   .dir.card-horizontal-outlined__btn[class][class] {
-    border-radius: var(--go-h-jh-l);
+    border-radius: var(--border-radius);
     padding-top: var(--fgg-f-l-a);
     padding-bottom: var(--fgg-f-l-a);
   }
@@ -64,7 +64,7 @@
 }
 .dir.card-horizontal-outlined[class][class] {
   border: 1px solid var(--j-qkgmf);
-  border-radius: var(--i-g-gvoq);
+  border-radius: var(--border-radius-lg);
   padding: var(--b-y-unon);
 }
 .dir-ltr.card-horizontal-outlined[class][class] {

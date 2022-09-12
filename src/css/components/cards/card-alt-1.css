@@ -176,7 +176,7 @@
   position: relative;
 }
 .dir.card-alt-1__media-container[class][class] {
-  border-radius: var(--media-container_border-radius, var(--i-g-gvoq));
+  border-radius: var(--media-container_border-radius, var(--border-radius-lg));
   background-color: var(--j-qkgmf);
 }
 @supports (overflow: clip) {
@@ -270,7 +270,7 @@
   position: relative;
 }
 .dir.card-alt-1[class][class] {
-  border-radius: var(--card-container_border-radius, var(--i-g-gvoq));
+  border-radius: var(--card-container_border-radius, var(--border-radius-lg));
   box-shadow: var(--card-container_box-shadow);
 }
 .dir-ltr.card-alt-1__controls-bg[class][class] {
