@@ -34177,16 +34177,17 @@ tr.hide {
 .dir.c14nl487[class][class] {
   padding: var(--ic-zlb-s);
 }
-@media (min-width: 744px) {
-  .c14nl487[class][class] {
-    align-items: flex-start;
-  }
-}
 .c14nl487[class][class] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   grid-column: span 1;
+}
+@media (min-width: 744px) {
+  .c14nl487[class][class] {
+    align-items: flex-start;
+  }
 }
 .dir.i1porrk5[class][class] {
   margin-top: var(--ic-zlb-s);
