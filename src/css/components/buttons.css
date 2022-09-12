@@ -1961,8 +1961,8 @@ fieldset[disabled] .btn {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: calc(24px + var(--fgg-f-l-a));
-  height: calc(24px + var(--fgg-f-l-a));
+  width: calc(24px + var(--spacer-3));
+  height: calc(24px + var(--spacer-3));
 }
 .dir.btn-save-bordered[class][class] {
   border-width: 1px;
@@ -2447,15 +2447,15 @@ fieldset[disabled] .btn {
   padding: 7px;
   color: buttontext;
   touch-action: manipulation;
-  min-width: var(--cw-a-a-u-a);
-  height: var(--cw-a-a-u-a);
+  min-width: var(--spacer-9);
+  height: var(--spacer-9);
   color: var(--f-k-smk-x);
 }
 .dir.btn-filter[class][class] {
   background-color: transparent;
   cursor: pointer;
   border: var(--filter-button_border, 1px solid var(--j-qkgmf));
-  border-radius: var(--b-y-unon);
+  border-radius: var(--spacer-4);
   margin: 0;
   padding: 7px 0;
 }
@@ -2495,7 +2495,7 @@ fieldset[disabled] .btn {
   grid-auto-flow: column;
 }
 .dir.btn-filter-label[class][class] {
-  padding-top: var(--d-b-mrdy);
+  padding-top: var(--spacer-1);
 }
 .btn-filter__text[class][class] {
   font-size: var(--f-cv-j-j-p);
@@ -2529,7 +2529,7 @@ fieldset[disabled] .btn {
   font-weight: var(--h-oqhch);
 }
 .dir.btn-filter-count__text[class][class] {
-  margin-top: var(--d-b-mrdy);
+  margin-top: var(--spacer-1);
 }
 .btn-filter-rounded-sm {
   cursor: pointer !important;
@@ -2560,7 +2560,7 @@ fieldset[disabled] .btn {
     --chipsbar_separator-height: 32px;
     display: grid;
     flex: 0 0 auto;
-    min-width: calc(48px + var(--ikx-k-pe));
+    min-width: calc(48px + var(--spacer-6));
     place-items: center;
     position: relative;
   }
@@ -2571,18 +2571,18 @@ fieldset[disabled] .btn {
   }
 }
 .dir-ltr.filter-btn__wrapper[class][class] {
-  padding-left: var(--ikx-k-pe);
+  padding-left: var(--spacer-6);
 }
 .filter-btn__inline-relative[class][class] {
   display: inline-block;
   position: relative;
 }
 .filter-btn__wrapper-space-between[class][class] .btn-filter-label[class][class] {
-  gap: var(--fgg-f-l-a);
+  gap: var(--spacer-3);
 }
 .dir.filter-btn__wrapper-space-between[class][class] .btn-filter-label[class][class] {
-  padding-left: var(--jaa-ni-h);
-  padding-right: var(--jaa-ni-h);
+  padding-left: var(--spacer-5);
+  padding-right: var(--spacer-5);
 }
 .filter-btn__wrapper-space-between[class][class] .btn-filter__text[class][class] {
   display: block;
