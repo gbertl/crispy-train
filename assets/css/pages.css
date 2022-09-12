@@ -37135,7 +37135,7 @@ tr.hide {
     flex: 0 1 calc(33% - 16px) !important;
   }
 }
-.become-a-host__form-input-textarea {
+.textarea-lg {
   color: #222 !important;
   display: block !important;
   min-width: 100% !important;
@@ -37159,14 +37159,14 @@ tr.hide {
   line-height: 28px !important;
   overflow-y: auto !important;
 }
-.become-a-host__form-input-textarea:disabled {
+.textarea-lg:disabled {
   cursor: not-allowed !important;
 }
-.become-a-host__form-input-textarea::placeholder {
+.textarea-lg::placeholder {
   color: #717171 !important;
 }
 @media (min-width: 744px) {
-  .become-a-host__form-input-textarea {
+  .textarea-lg {
     padding: 24px !important;
     max-height: 50vh !important;
     font-size: 18px !important;
@@ -40947,7 +40947,7 @@ tr.hide {
     animation-name: none !important;
   }
 }
-.become-a-host__form-text-count {
+.textarea-lg-length {
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
   display: -webkit-box !important;
@@ -40969,7 +40969,7 @@ tr.hide {
   animation-name: keyframe_14ic1xm !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .become-a-host__form-text-count {
+  .textarea-lg-length {
     -webkit-animation-name: none !important;
     animation-name: none !important;
   }
@@ -41022,14 +41022,14 @@ tr.hide {
     max-height: 50vh !important;
   }
 }
-.become-a-host__text-count-content {
+.textarea-lg-length__text {
   font-size: 12px !important;
   line-height: 16px !important;
   font-weight: 800 !important;
   color: #717171 !important;
 }
 @media (min-width: 744px) {
-  .become-a-host__text-count-content {
+  .textarea-lg-length__text {
     font-size: 14px !important;
     line-height: 18px !important;
   }
