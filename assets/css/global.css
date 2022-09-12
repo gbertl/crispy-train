@@ -4120,6 +4120,9 @@ select[disabled] {
   }
 }
 @media (min-width: 1128px) {
+  .float-left-xl {
+    float: left;
+  }
   .block-xl {
     display: block !important;
   }
@@ -4131,6 +4134,9 @@ select[disabled] {
   }
   .flex-xl {
     display: flex !important;
+  }
+  .pr-3-xl {
+    padding-right: 12px;
   }
 }
 @media (min-width: 1440px) {

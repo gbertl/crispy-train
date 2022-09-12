@@ -56277,3 +56277,110 @@ body {
 .payment__login-message {
   margin-bottom: 15px;
 }
+.btn-block {
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+.btn-block + .btn-block {
+  margin-top: 8px;
+  margin-left: 0;
+}
+
+input[type='button'].btn-block {
+  width: 100%;
+}
+.media-body {
+  padding-left: 5px;
+}
+.profile_pic_container {
+  display: inline-block;
+  position: relative;
+}
+.profile_pic_container .media-round {
+  border-width: 0;
+}
+.profile-pic-background {
+  position: absolute;
+  top: 0;
+  left: auto;
+  opacity: 0.3;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';
+}
+.file-input-container {
+  position: relative;
+  cursor: pointer;
+}
+.file-input-container input[type='file'] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  z-index: -1;
+}
+.file-input-container input[type='file']:focus + .btn {
+  border-color: #aaa;
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+@-moz-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+@-o-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+.picture-tile-delete {
+  display: none;
+}
+.overlay-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 24px;
+  height: 24px;
+  background: #000;
+  padding-top: 3px;
+  border: 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  opacity: 0.7;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)';
+}
+.overlay-btn .icon {
+  color: #fff;
+  opacity: 1;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+}
+.overlay-btn:hover,
+.overlay-btn:focus {
+  opacity: 0.9;
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=90)';
+}@media (min-width: 744px) and (max-width: 1127px)
+{
+  .space-md-2 {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 743px)
+{
+  .space-sm-2 {
+    margin-bottom: 12px;
+  }
+}
