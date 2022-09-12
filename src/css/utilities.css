@@ -102,6 +102,9 @@
   }
 }
 @media (min-width: 1128px) {
+  .float-left-xl {
+    float: left;
+  }
   .block-xl {
     display: block !important;
   }
@@ -113,6 +116,9 @@
   }
   .flex-xl {
     display: flex !important;
+  }
+  .pr-3-xl {
+    padding-right: 12px;
   }
 }
 @media (min-width: 1440px) {
@@ -974,4 +980,7 @@
 }
 .rounded-full {
   border-radius: 50%;
+}
+.items-center {
+  align-items: center;
 }
