@@ -50716,3 +50716,9 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   font-size: 14px !important;
   line-height: 18px !important;
 }
+
+@media (max-width: 1128px) {
+  .inherit-hide-print nav {
+    display: none !important;
+  }
+}
