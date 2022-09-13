@@ -24237,7 +24237,7 @@ tr.hide {
     margin-bottom: 0 !important;
   }
 }
-._91gafw {
+.give-feedback {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   -webkit-box-direction: normal !important;
@@ -24256,17 +24256,17 @@ tr.hide {
   padding: 36px !important;
 }
 @media (min-width: 950px) {
-  ._91gafw {
+  .give-feedback {
     padding-right: 64px !important;
   }
 }
 @media (min-width: 1128px) {
-  ._91gafw {
+  .give-feedback {
     padding-right: 30% !important;
   }
 }
 @media (min-width: 1440px) {
-  ._91gafw {
+  .give-feedback {
     padding-right: 45% !important;
   }
 }
@@ -50720,5 +50720,11 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 @media (max-width: 1128px) {
   .inherit-hide-print nav {
     display: none !important;
+  }
+}
+
+@media (max-width: 744px) {
+  .give-feedback .tab__content-visibility {
+    display: block !important;
   }
 }
