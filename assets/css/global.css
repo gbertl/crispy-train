@@ -2289,9 +2289,9 @@
   --j-p-z-kco: 18px;
   --i-nh-zme: 14px;
   --gvarj-f: 20px;
-  --iw-ehf-f: 16px;
+  --font-size: 16px;
   ---s-l-myu: 20px;
-  --y-g-ar-y: 16px;
+  --font-size: 16px;
   --cb-pewj: 24px;
   --ll-l-ys-f: 18px;
   --f-xgviq: 24px;
@@ -2392,9 +2392,9 @@
   --j-p-z-kco: 18px;
   --i-nh-zme: 14px;
   --gvarj-f: 20px;
-  --iw-ehf-f: 16px;
+  --font-size: 16px;
   ---s-l-myu: 20px;
-  --y-g-ar-y: 16px;
+  --font-size: 16px;
   --cb-pewj: 24px;
   --ll-l-ys-f: 18px;
   --f-xgviq: 24px;
@@ -2500,9 +2500,9 @@
   --j-p-z-kco: 18px;
   --i-nh-zme: 14px;
   --gvarj-f: 20px;
-  --iw-ehf-f: 16px;
+  --font-size: 16px;
   ---s-l-myu: 20px;
-  --y-g-ar-y: 16px;
+  --font-size: 16px;
   --cb-pewj: 24px;
   --ll-l-ys-f: 18px;
   --f-xgviq: 24px;
@@ -2621,9 +2621,9 @@
     --j-p-z-kco: 18px;
     --i-nh-zme: 14px;
     --gvarj-f: 20px;
-    --iw-ehf-f: 16px;
+    --font-size: 16px;
     ---s-l-myu: 20px;
-    --y-g-ar-y: 16px;
+    --font-size: 16px;
     --cb-pewj: 24px;
     --ll-l-ys-f: 18px;
     --f-xgviq: 24px;
@@ -8055,7 +8055,7 @@ select[disabled] {
   font-weight: var(--title_font-weight);
 }
 .card-alt-4__title[class][class] {
-  font-size: var(--iw-ehf-f);
+  font-size: var(--font-size);
   line-height: var(---s-l-myu);
   line-height: var(---s-l-myu);
   overflow: hidden;
@@ -9044,7 +9044,7 @@ select[disabled] {
     var(--margin-left, 0);
 }
 .card-portrait__pricing-text {
-  font-size: var(--iw-ehf-f);
+  font-size: var(--font-size);
   line-height: var(---s-l-myu);
 }
 .card-portrait__pricing-price,
@@ -10122,7 +10122,7 @@ select[disabled] {
   -ms-touch-action: manipulation !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -10680,7 +10680,7 @@ select[disabled] {
   text-decoration: none !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -10814,7 +10814,7 @@ fieldset[disabled] .btn {
   -ms-touch-action: manipulation !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -11031,7 +11031,7 @@ fieldset[disabled] .btn {
   -ms-touch-action: manipulation !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -11148,7 +11148,7 @@ fieldset[disabled] .btn {
   -ms-touch-action: manipulation !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -11272,7 +11272,7 @@ fieldset[disabled] .btn {
   width: auto !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -11304,7 +11304,7 @@ fieldset[disabled] .btn {
   width: auto !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -11328,7 +11328,7 @@ fieldset[disabled] .btn {
   width: auto !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--iw-ehf-f) !important;
+  font-size: var(--font-size) !important;
   line-height: var(---s-l-myu) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -11519,7 +11519,7 @@ fieldset[disabled] .btn {
 }
 .btn-save-bordered[class][class] {
   font-family: var(--font-family);
-  font-size: var(--iw-ehf-f);
+  font-size: var(--font-size);
   line-height: var(---s-l-myu);
   font-weight: var(--jx-zk-pv);
   border-radius: var(--border-radius);
@@ -12430,7 +12430,7 @@ fieldset[disabled] .btn {
   padding-top: var(--spacer-3);
 }
 .explore-filter-menu__price-title[class][class] {
-  font-size: var(--iw-ehf-f);
+  font-size: var(--font-size);
   line-height: var(---s-l-myu);
   font-weight: var(--e-y-j-d-v-j);
   color: var(--fo-jk-r-s);
@@ -14146,7 +14146,7 @@ fieldset[disabled] .btn {
   }
 }
 .jumbotron-header__description[class][class] {
-  font-size: var(--iw-ehf-f);
+  font-size: var(--font-size);
   line-height: var(---s-l-myu);
   font-weight: var(--e-y-j-d-v-j);
   color: var(--fo-jk-r-s);
@@ -17345,7 +17345,7 @@ fieldset[disabled] .btn {
   padding-top: 8px!important
 }
 .t2353uq[class][class] {
-  font-size: var(--iw-ehf-f);
+  font-size: var(--font-size);
   line-height: var(---s-l-myu);
   color: var(--f-k-smk-x);
   font-weight: var(--jx-zk-pv)
