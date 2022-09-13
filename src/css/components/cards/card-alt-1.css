@@ -132,7 +132,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--title_max-num-lines, 1);
   color: var(--f-k-smk-x);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   word-break: var(--title_word-break, break-all);
 }
 @supports (overflow: clip) {

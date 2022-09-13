@@ -2297,11 +2297,10 @@
   --line-height-xl: 24px;
   --font-size-md: 18px;
   --line-height-2xl: 28px;
-  --e-y-j-d-v-j: 400;
-  --jx-zk-pv: 600;
-  --h-oqhch: 800;
-  --g-lm-u-p: normal;
-  --mq-yk-l: 0.04em;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
+  --letter-spacing: 0.04em;
   --swiper-theme-color: #007aff;
   --swiper-navigation-size: 44px;
   --border-radius-sm: 4px;
@@ -2400,11 +2399,10 @@
   --line-height-xl: 24px;
   --font-size-md: 18px;
   --line-height-2xl: 28px;
-  --e-y-j-d-v-j: 400;
-  --jx-zk-pv: 600;
-  --h-oqhch: 800;
-  --g-lm-u-p: normal;
-  --mq-yk-l: 0.04em;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
+  --letter-spacing: 0.04em;
   --jp-carousel-primary-color: #fff;
   --jp-carousel-primary-subtle-color: #999;
   --jp-carousel-bg-color: #000;
@@ -2508,11 +2506,10 @@
   --line-height-xl: 24px;
   --font-size-md: 18px;
   --line-height-2xl: 28px;
-  --e-y-j-d-v-j: 400;
-  --jx-zk-pv: 600;
-  --h-oqhch: 800;
-  --g-lm-u-p: normal;
-  --mq-yk-l: 0.04em;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
+  --letter-spacing: 0.04em;
   --wp-admin-theme-color: #007cba;
   --wp-admin-theme-color--rgb: 0, 124, 186;
   --wp-admin-theme-color-darker-10: #006ba1;
@@ -2629,11 +2626,10 @@
     --line-height-xl: 24px;
     --font-size-md: 18px;
     --line-height-2xl: 28px;
-    --e-y-j-d-v-j: 400;
-    --jx-zk-pv: 600;
-    --h-oqhch: 800;
-    --g-lm-u-p: normal;
-    --mq-yk-l: 0.04em;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 800;
+    --letter-spacing: 0.04em;
     --wp-admin-border-width-focus: 1.5px;
   }
 }
@@ -7113,7 +7109,7 @@ select[disabled] {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: var(--title_max-num-lines, 1);
   color: var(--f-k-smk-x);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   word-break: var(--title_word-break, break-all);
 }
 @supports (overflow: clip) {
@@ -7618,7 +7614,7 @@ select[disabled] {
   left: 0;
 }
 .card-alt-4[class][class] {
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--f-k-smk-x);
   position: relative;
 }
@@ -7651,7 +7647,7 @@ select[disabled] {
 }
 .card-alt-4__price[class][class],
 .card-alt-4__starting-price[class][class] {
-  font-weight: var(--h-oqhch);
+  font-weight: var(--font-weight-bold);
 }
 .card-alt-4__lite-image-wrapper[class][class] {
   position: relative;
@@ -8114,7 +8110,7 @@ select[disabled] {
 }
 .bi6b9fr[class][class].card-alt-4__ratings-container[class][class]
   .card-alt-4__ratings-rating[class][class] {
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
 }
 .card-alt-4__title-wrapper[class][class] {
   color: var(--theme_typography-color-primary, var(--f-k-smk-x));
@@ -8275,7 +8271,7 @@ select[disabled] {
   color: var(--f-k-smk-x);
   font-size: var(--font-size-md);
   line-height: var(--line-height-lg);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   display: block;
 }
 .card-basic[class][class] {
@@ -8418,7 +8414,7 @@ select[disabled] {
 }
 .card-horizontal-outlined__btn[class][class] {
   color: var(--f-k-smk-x);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   white-space: nowrap;
 }
 .dir.card-horizontal-outlined__btn[class][class] {
@@ -8519,7 +8515,7 @@ select[disabled] {
   border-top-right-radius: var(--media-container_border-radius);
 }
 .card-portrait {
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--f-k-smk-x);
   position: relative;
 }
@@ -8575,7 +8571,7 @@ select[disabled] {
   }
 }
 .card-portrait {
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--f-k-smk-x);
   position: relative;
 }
@@ -9049,7 +9045,7 @@ select[disabled] {
 }
 .card-portrait__pricing-price,
 .card-portrait__pricing-text-strong {
-  font-weight: var(--h-oqhch);
+  font-weight: var(--font-weight-bold);
 }
 @-webkit-keyframes fade-in-card-portrait__overlay-control-wrapper {
   from {
@@ -10124,7 +10120,7 @@ select[disabled] {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -10682,7 +10678,7 @@ select[disabled] {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   outline: 0 !important;
   padding: 14px 24px !important;
@@ -10816,7 +10812,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   outline: 0 !important;
@@ -11033,7 +11029,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   outline: 0 !important;
@@ -11150,7 +11146,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   outline: 0 !important;
@@ -11274,7 +11270,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   outline: 0 !important;
   padding: 10px !important;
@@ -11306,7 +11302,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   outline: 0 !important;
   padding: 14px 24px !important;
@@ -11330,7 +11326,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size) !important;
   line-height: var(--line-height-md) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   border-style: solid !important;
@@ -11388,7 +11384,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size-sm) !important;
   line-height: var(--line-height-sm) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   outline: 0 !important;
   padding: 8px 16px !important;
@@ -11412,7 +11408,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size-sm) !important;
   line-height: var(--line-height-sm) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   outline: 0 !important;
@@ -11521,7 +11517,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height-md);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   border-radius: var(--border-radius);
   outline: 0;
   padding: 14px 24px;
@@ -12079,7 +12075,7 @@ fieldset[disabled] .btn {
 .btn-filter__text[class][class] {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   display: none;
 }
 .btn-filter-count[class][class] {
@@ -12105,7 +12101,7 @@ fieldset[disabled] .btn {
   font-size: var(--font-size-xxs);
   line-height: var(--line-height-xxs);
   color: var(--f-mkcy-f);
-  font-weight: var(--h-oqhch);
+  font-weight: var(--font-weight-bold);
 }
 .dir.btn-filter-count__text[class][class] {
   margin-top: var(--spacer-1);
@@ -12432,7 +12428,7 @@ fieldset[disabled] .btn {
 .explore-filter-menu__price-title[class][class] {
   font-size: var(--font-size);
   line-height: var(--line-height-md);
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--fo-jk-r-s);
 }
 .dir.explore-filter-menu__price-title[class][class] {
@@ -13614,7 +13610,7 @@ fieldset[disabled] .btn {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
   color: var(--fo-jk-r-s);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   width: max-content;
   -webkit-tap-highlight-color: transparent;
 }
@@ -14132,7 +14128,7 @@ fieldset[disabled] .btn {
 /* Jumbotron Header */
 .jumbotron-header__text[class][class] {
   color: var(--f-k-smk-x);
-  font-weight: var(--h-oqhch);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xxl);
   line-height: var(--line-height-4xl);
 }
@@ -14148,7 +14144,7 @@ fieldset[disabled] .btn {
 .jumbotron-header__description[class][class] {
   font-size: var(--font-size);
   line-height: var(--line-height-md);
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--fo-jk-r-s);
 }
 .dir.jumbotron-header__description[class][class] {
@@ -14689,7 +14685,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size-sm) !important;
   line-height: var(--line-height-sm) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   border-width: 1px !important;
   outline: 0 !important;
@@ -14824,7 +14820,7 @@ fieldset[disabled] .btn {
   font-family: var(--font-family) !important;
   font-size: var(--font-size-sm) !important;
   line-height: var(--line-height-sm) !important;
-  font-weight: var(--jx-zk-pv) !important;
+  font-weight: var(--font-weight-semibold) !important;
   border-radius: var(--border-radius) !important;
   outline: 0 !important;
   padding: 8px !important;
@@ -14932,7 +14928,7 @@ fieldset[disabled] .btn {
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-text[class][class] {
   color: var(--f-k-smk-x);
-  font-weight: var(--h-oqhch);
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
 }
@@ -16785,7 +16781,7 @@ fieldset[disabled] .btn {
   border-radius: 500px!important;
   color: var(--f-mkcy-f)!important;
   font-size: var(--font-size-xxs)!important;
-  font-weight: var(--h-oqhch)!important;
+  font-weight: var(--font-weight-bold)!important;
   height: 1rem!important;
   min-width: 1rem!important;
   left: 100%!important;
@@ -17348,7 +17344,7 @@ fieldset[disabled] .btn {
   font-size: var(--font-size);
   line-height: var(--line-height-md);
   color: var(--f-k-smk-x);
-  font-weight: var(--jx-zk-pv)
+  font-weight: var(--font-weight-semibold)
 }
 .dir.t2353uq[class][class] {
   margin-bottom: var(--spacer-4);
@@ -17516,7 +17512,7 @@ fieldset[disabled] .btn {
   display: flex;
   white-space: nowrap;
   width: 100%;
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
   display: flex;
   align-items: center
 }
@@ -17582,7 +17578,7 @@ fieldset[disabled] .btn {
   color: var(--fo-jk-r-s);
   display: inline-block;
   flex: 0 0 auto;
-  font-weight: var(--e-y-j-d-v-j)
+  font-weight: var(--font-weight-normal)
 }
 .dir-ltr.a90wtny[class][class] {
   margin-left: var(--spacer-5)
@@ -17606,7 +17602,7 @@ fieldset[disabled] .btn {
   display: flex;
   white-space: nowrap;
   width: 100%;
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   display: flex;
   align-items: center
 }

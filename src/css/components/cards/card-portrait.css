@@ -41,7 +41,7 @@
   border-top-right-radius: var(--media-container_border-radius);
 }
 .card-portrait {
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--f-k-smk-x);
   position: relative;
 }
@@ -97,7 +97,7 @@
   }
 }
 .card-portrait {
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--f-k-smk-x);
   position: relative;
 }
@@ -571,7 +571,7 @@
 }
 .card-portrait__pricing-price,
 .card-portrait__pricing-text-strong {
-  font-weight: var(--h-oqhch);
+  font-weight: var(--font-weight-bold);
 }
 @-webkit-keyframes fade-in-card-portrait__overlay-control-wrapper {
   from {
