@@ -3996,6 +3996,58 @@ h2:first-child,
 h3:first-child {
   margin-top: 0;
 }
+[type='email'],
+[type='search'],
+[type='text'],
+[type='url'],
+input[type='checkbox'],
+select {
+  -webkit-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  -moz-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+[type='email']:focus,
+[type='search']:focus,
+[type='text']:focus,
+[type='url']:focus,
+input[type='checkbox']:focus,
+select:focus {
+  border-color: #484848;
+}
+[type='email']:invalid,
+[type='search']:invalid,
+[type='text']:invalid,
+[type='url']:invalid,
+input[type='checkbox']:invalid,
+select:invalid {
+  border-color: #ffb400;
+  background-color: #fff8e5;
+}
+.disabled[type='email'],
+.disabled[type='search'],
+.disabled[type='text'],
+.disabled[type='url'],
+[disabled][type='email'],
+[disabled][type='search'],
+[disabled][type='text'],
+[disabled][type='url'],
+input.disabled[type='checkbox'],
+input[disabled][type='checkbox'],
+select.disabled,
+select[disabled] {
+  background-color: #edefed;
+  color: #bbb;
+  cursor: default;
+}
+[disabled][type='email'],
+[disabled][type='search'],
+[disabled][type='text'],
+[disabled][type='url'],
+input[disabled][type='checkbox'],
+select[disabled] {
+  pointer-events: none;
+}
 
 /*! ------------------- */
 /*! Utility classes     */
