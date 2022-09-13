@@ -1584,3 +1584,35 @@ input::-webkit-input-placeholder {
     font-size: 16px;
   }
 }
+[data-reach-combobox-popover] {
+  border: 1px solid hsla(0, 0%, 0%, 0.25);
+  background: hsla(0, 100%, 100%, 0.99);
+  font-size: 85%;
+}
+[data-reach-combobox-list] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+[data-reach-combobox-option] {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+}
+[data-reach-combobox-option][aria-selected='true'] {
+  background: #f0f2f3;
+}
+[data-reach-combobox-option]:hover {
+  background: #e8eaec;
+}
+[data-reach-combobox-option][aria-selected='true']:hover {
+  background: #e2e5e8;
+}
+[role='region'] {
+  position: relative;
+} /*!rtl:begin:ignore*/ /*!rtl:end:ignore*/ /*!rtl:begin:ignore*/ /*!rtl:end:ignore*/
+html :where(img[class*='wp-image-']) {
+  height: auto;
+  max-width: 100%;
+}
