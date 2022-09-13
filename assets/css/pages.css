@@ -7966,30 +7966,6 @@ select[disabled] {
   border-bottom-left-radius: 4px !important;
   background: #fff !important;
 }
-button,
-html input[type='button'],
-input[type='submit'] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-a,
-button,
-input,
-select {
-  font-family: inherit;
-  font-size: 100%;
-}
-h1,
-h2,
-h3 {
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-h1:first-child,
-h2:first-child,
-h3:first-child {
-  margin-top: 0;
-}
 .explore-container__showmap-btn-wrapper {
   z-index: 8 !important;
   white-space: nowrap !important;

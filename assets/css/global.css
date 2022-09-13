@@ -2623,7 +2623,9 @@
 }
 /* /Root */
 
-/* Base */
+/*! ----------------------- */
+/*! Base (global selectors) */
+/*! ----------------------- */
 *,
 :after,
 :before {
@@ -3970,7 +3972,30 @@ input[disabled][type='radio'],
 select[disabled] {
   pointer-events: none;
 }
-/* /Base */
+button,
+html input[type='button'],
+input[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+a,
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 100%;
+}
+h1,
+h2,
+h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child {
+  margin-top: 0;
+}
 
 /*! ------------------- */
 /*! Utility classes     */
