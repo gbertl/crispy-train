@@ -41414,9 +41414,6 @@ video::cue {
 .vx-bar:hover {
   opacity: 0.7;
 }
-:root {
-  --reach-combobox: 1;
-}
 [data-reach-combobox-popover] {
   border: 1px solid hsla(0, 0%, 0%, 0.25);
   background: hsla(0, 100%, 100%, 0.99);
@@ -41574,53 +41571,6 @@ video::cue {
   font-weight: 600 !important;
   line-height: 1.44444em !important;
   color: #484848 !important;
-}
-body,
-html {
-  padding: 0;
-  margin: 0;
-}
-html {
-  box-sizing: border-box;
-}
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-body {
-  font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #484848;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-}
-[type='number'],
-[type='text'] {
-  border: 1px solid #aaa;
-  border-radius: 2px;
-  background-color: #fff;
-  color: #484848;
-}
-input::-webkit-input-placeholder {
-  color: #767676;
-}
-[type='number']:focus,
-[type='text']:focus {
-  border-color: #484848;
-}
-.invalid[type='number'],
-.invalid[type='text'],
-[type='number']:invalid,
-[type='text']:invalid {
-  border-color: #ffb400;
-  background-color: #fff8e5;
-}
-@media (max-width: 743px) {
-  input[type='text'] {
-    font-size: 16px;
-  }
 }
 .label {
   font-weight: 700;
@@ -42257,120 +42207,6 @@ input::-webkit-input-placeholder {
 }
 .payout-methods__need-help-question:disabled:hover {
   text-decoration: underline !important;
-}
-:root {
-  --border-radius-sm: 4px;
-  --border-radius: 8px;
-  --border-radius-lg: 12px;
-  --border-radius-xl: 16px;
-  --border-radius-2xl: 20px;
-  --box-shadow-alt-1: 0 6px 20px rgba(0, 0, 0, 0.2);
-  --box-shadow-alt-2: 0 6px 16px rgba(0, 0, 0, 0.12);
-  --box-shadow-alt-3: 0 2px 4px rgba(0, 0, 0, 0.18);
-  --timing-function-alt-1: cubic-bezier(0, 0, 0.1, 1);
-  --timing-function-alt-2: cubic-bezier(0.35, 0, 0.65, 1);
-  --black: #000000;
-  --gray-900: #222222;
-  --gray-500: #717171;
-  --gray-400: #b0b0b0;
-  --gray-300: #dddddd;
-  --gray-200: #ebebeb;
-  --gray-100: #f7f7f7;
-  --white: #ffffff;
-  --danger-color: #c13515;
-  --light-danger-color: #fff8f6;
-  --warning-color: #e07912;
-  --success-color: #008a05;
-  --info-color: #428bff;
-  --primary-color: #ff385c;
-  --gradient-alt-1: linear-gradient(
-    to right,
-    #e61e4d 0%,
-    #e31c5f 50%,
-    #d70466 100%
-  );
-  --gradient-alt-2: radial-gradient(
-    circle at center,
-    #ff385c 0%,
-    #e61e4d 27.5%,
-    #e31c5f 40%,
-    #d70466 57.5%,
-    #bd1e59 75%,
-    #bd1e59 100%
-  );
-  --gradient-alt-3: linear-gradient(
-    to right,
-    #bd1e59 0%,
-    #92174d 50%,
-    #861453 100%
-  );
-  --gradient-alt-4: radial-gradient(
-    circle at center,
-    #d70466 0%,
-    #bd1e59 30%,
-    #92174d 55%,
-    #861453 72.5%,
-    #6c0d63 90%,
-    #6c0d63 100%
-  );
-  --gradient-alt-5: linear-gradient(
-    to right,
-    #59086e 0%,
-    #460479 50%,
-    #440589 100%
-  );
-  --gradient-alt-6: radial-gradient(
-    circle at center,
-    #6c0d63 0%,
-    #59086e 30%,
-    #460479 55%,
-    #440589 72.5%,
-    #3b07bb 90%,
-    #3b07bb 100%
-  );
-  --spacer-6: 24px;
-  --spacer-7: 32px;
-  --spacer-8: 40px;
-  --spacer-9: 48px;
-  --spacer-10: 64px;
-  --spacer-11: 80px;
-  --spacer-1: 2px;
-  --spacer-2: 4px;
-  --spacer-3: 8px;
-  --spacer-4: 12px;
-  --spacer-5: 16px;
-  --spacer-6: 24px;
-  --spacer-7: 32px;
-  --font-family: 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto',
-    'Helvetica Neue', sans-serif;
-  --font-size-md: 18px;
-  --line-height-lg: 22px;
-  --font-size-lg: 22px;
-  --line-height-xxl: 26px;
-  --font-size-xl: 26px;
-  --line-height-3xl: 30px;
-  --font-size-xxl: 32px;
-  --line-height-4xl: 36px;
-  --font-size-xxs: 10px;
-  --line-height-xxs: 12px;
-  --font-size-xs: 12px;
-  --line-height-xs: 16px;
-  --font-size-sm: 14px;
-  --line-height-sm: 18px;
-  --font-size-sm: 14px;
-  --line-height-md: 20px;
-  --font-size: 16px;
-  --line-height-md: 20px;
-  --font-size: 16px;
-  --line-height-xl: 24px;
-  --font-size-md: 18px;
-  --line-height-xl: 24px;
-  --font-size-md: 18px;
-  --line-height-2xl: 28px;
-  --font-weight-normal: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 800;
-  --letter-spacing: 0.04em;
 }
 .flex-before-after[class][class]::after,
 .flex-before-after[class][class]::before {
