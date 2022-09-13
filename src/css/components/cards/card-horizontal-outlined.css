@@ -27,7 +27,7 @@
   scroll-snap-align: center;
 }
 .dir.card-horizontal-outlined__time-item[class][class] {
-  margin-bottom: var(--fgg-f-l-a);
+  margin-bottom: var(--spacer-3);
 }
 .dir-ltr.card-horizontal-outlined__time-item[class][class] {
   margin-right: 6px;
@@ -36,26 +36,26 @@
   margin-right: 0;
 }
 .card-horizontal-outlined__btn[class][class] {
-  color: var(--f-k-smk-x);
-  font-weight: var(--jx-zk-pv);
+  color: var(--gray-900);
+  font-weight: var(--font-weight-semibold);
   white-space: nowrap;
 }
 .dir.card-horizontal-outlined__btn[class][class] {
-  background: var(--f-mkcy-f);
-  border-radius: var(--i-g-gvoq);
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
   box-shadow: var(--availability-list-item_box-shadow);
-  padding: var(--b-y-unon);
+  padding: var(--spacer-4);
 }
 @media (min-width: 744px) {
   .dir.card-horizontal-outlined__btn[class][class] {
-    border-radius: var(--go-h-jh-l);
-    padding-top: var(--fgg-f-l-a);
-    padding-bottom: var(--fgg-f-l-a);
+    border-radius: var(--border-radius);
+    padding-top: var(--spacer-3);
+    padding-bottom: var(--spacer-3);
   }
 }
 .card-horizontal-outlined__btn-text-size[class][class] {
-  font-size: var(--f-cv-j-j-p);
-  line-height: var(--f-l-h-bac);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
 }
 .card-horizontal-outlined[class][class] {
   display: flex;
@@ -63,12 +63,12 @@
   overflow: hidden;
 }
 .dir.card-horizontal-outlined[class][class] {
-  border: 1px solid var(--j-qkgmf);
-  border-radius: var(--i-g-gvoq);
-  padding: var(--b-y-unon);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacer-4);
 }
 .dir-ltr.card-horizontal-outlined[class][class] {
-  padding-right: var(--jaa-ni-h);
+  padding-right: var(--spacer-5);
 }
 .card-horizontal-outlined__media[class][class] {
   width: 123px;
@@ -79,7 +79,7 @@
   flex: 1;
 }
 .dir-ltr.card-horizontal-outlined__body[class][class] {
-  margin-left: var(--jaa-ni-h);
+  margin-left: var(--spacer-5);
 }
 .card-horizontal-outlined__btn-save-wrapper[class][class] {
   display: flex;
@@ -87,10 +87,10 @@
   height: 20px;
 }
 .dir.card-horizontal-outlined__btn-save-wrapper[class][class] {
-  margin-bottom: var(--h-x-sf-jw);
+  margin-bottom: var(--spacer-2);
 }
 .card-horizontal-outlined__price-info[class][class] {
-  font-size: var(--c-zdwk-p);
-  line-height: var(--j-p-z-kco);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
 }
 /* /Card Horizontal Outlined */
