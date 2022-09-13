@@ -1042,7 +1042,7 @@
 }
 @supports (--a:a) {
   .status-no {
-    background-color: var(--header_brand-color,var(--ihf-tp-q))!important
+    background-color: var(--header_brand-color,var(--primary-color))!important
   }
 }
 ._10oic88b {
@@ -1076,7 +1076,7 @@
   }
 }
 .header__nav-profile-badge {
-  background-color: var(--ihf-tp-q)!important;
+  background-color: var(--primary-color)!important;
   box-shadow: 0 0 0 1.5px var(--white)!important;
   position: absolute!important;
   z-index: 1!important;
@@ -1098,7 +1098,7 @@
 }
 @supports (--a:a) {
   .header__nav-profile-badge {
-    background-color: var(--header_brand-color,var(--ihf-tp-q))!important
+    background-color: var(--header_brand-color,var(--primary-color))!important
   }
 }
 @media (min-width:744px) {
@@ -1861,7 +1861,7 @@
   width: 6px
 }
 .dir.bgh3vnd[class][class] {
-  background-color: var(--ihf-tp-q);
+  background-color: var(--primary-color);
   border-radius: 50%
 }
 .dir-ltr.bgh3vnd[class][class] {
@@ -1871,7 +1871,7 @@
 }
 @supports (--a:a) {
   .dir.bgh3vnd[class][class] {
-    background-color: var(--header_brand-color,var(--ihf-tp-q))
+    background-color: var(--header_brand-color,var(--primary-color))
   }
 }
 .a90wtny[class][class] {
@@ -1951,7 +1951,7 @@
   width: 6px
 }
 .dir.b1xexnrd[class][class] {
-  background-color: var(--ihf-tp-q);
+  background-color: var(--primary-color);
   border-radius: 50%
 }
 .dir-ltr.b1xexnrd[class][class] {
@@ -1961,7 +1961,7 @@
 }
 @supports (--a:a) {
   .dir.b1xexnrd[class][class] {
-    background-color: var(--header_brand-color,var(--ihf-tp-q))
+    background-color: var(--header_brand-color,var(--primary-color))
   }
 }
 @media (prefers-reduced-motion:reduce) {

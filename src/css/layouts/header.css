@@ -3,7 +3,7 @@
   height: 80px;
   width: 100%;
   z-index: 100;
-  --header_brand-color: var(--ihf-tp-q);
+  --header_brand-color: var(--primary-color);
   position: relative;
 }
 .dir-ltr.header[class][class] {
@@ -881,7 +881,7 @@
   -webkit-transition: color 250ms !important;
   -moz-transition: color 250ms !important;
   transition: color 250ms !important;
-  color: var(--ihf-tp-q) !important;
+  color: var(--primary-color) !important;
 }
 .header__brand::-moz-focus-inner {
   border: none !important;
@@ -1007,7 +1007,7 @@
   }
 }
 .cbavvlr[class][class] {
-  color: var(--ihf-tp-q);
+  color: var(--primary-color);
 }
 .header__logo-xl[class][class] {
   display: none;

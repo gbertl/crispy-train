@@ -5184,7 +5184,7 @@
   line-height: var(--line-height-sm);
 }
 .listing-card-ratings .listing-card-ratings-icon {
-  color: var(--ihf-tp-q);
+  color: var(--primary-color);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7478,7 +7478,7 @@ select[disabled] {
 }
 .dir.jumbotron-btn-search-bg[class][class]:active {
   border: none;
-  background: var(--dls19-brand-gradient-accent, var(--ihf-tp-q));
+  background: var(--dls19-brand-gradient-accent, var(--primary-color));
 }
 .jumbotron-btn-search-bg[class][class]:disabled {
   color: var(--white);
@@ -7826,12 +7826,12 @@ select[disabled] {
   z-index: 1;
 }
 .dir.b10s36so[class][class] {
-  background-color: var(--ihf-tp-q);
+  background-color: var(--primary-color);
   box-shadow: 0 0 0 1.5px var(--white);
 }
 @supports (--a: a) {
   .dir.b10s36so[class][class] {
-    background-color: var(--header_brand-color, var(--ihf-tp-q));
+    background-color: var(--header_brand-color, var(--primary-color));
   }
 }
 .b10i5eq[class][class] {
@@ -11075,7 +11075,7 @@ h3:first-child {
   transform: none;
 }
 .sudbs03[class][class] {
-  color: var(--ihf-tp-q);
+  color: var(--primary-color);
 }
 .dir-ltr.sudbs03[class][class] {
   margin-right: var(--spacer-3);
@@ -14269,7 +14269,7 @@ h3:first-child {
   -moz-user-select: auto !important;
   -ms-user-select: auto !important;
   user-select: auto !important;
-  background-color: var(--ihf-tp-q) !important;
+  background-color: var(--primary-color) !important;
   border-radius: 24px !important;
   height: 48px !important;
   max-width: 48px !important;
@@ -16687,7 +16687,7 @@ h3:first-child {
   margin: 0;
   padding: 0;
   text-align: inherit;
-  background-color: var(--ihf-tp-q);
+  background-color: var(--primary-color);
   border-radius: 24px;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -17283,12 +17283,12 @@ h3:first-child {
   font-weight: 600 !important;
 }
 .confirm-pay__trip-category-icon {
-  color: var(--ihf-tp-q) !important;
+  color: var(--primary-color) !important;
   margin-left: 8px !important;
 }
 @supports (--custom: properties) {
   .confirm-pay__trip-category-icon {
-    color: var(--dls19-brand-color, var(--ihf-tp-q)) !important;
+    color: var(--dls19-brand-color, var(--primary-color)) !important;
   }
 }
 .confirm-pay__trip-category-text {
@@ -22148,7 +22148,7 @@ html :where(img[class*='wp-image-']) {
   width: 32px;
 }
 .dir.header__search-btn-wrapper-search-btn[class][class] {
-  background-color: var(--ihf-tp-q);
+  background-color: var(--primary-color);
   border-radius: 50%;
   padding: 10px;
 }
@@ -22157,7 +22157,7 @@ html :where(img[class*='wp-image-']) {
 }
 @supports (--a: a) {
   .dir.header__search-btn-wrapper-search-btn[class][class] {
-    background-color: var(--header_brand-color, var(--ihf-tp-q));
+    background-color: var(--header_brand-color, var(--primary-color));
   }
 }
 .header__search-btn-wrapper-hr[class][class] {
@@ -22484,7 +22484,7 @@ html :where(img[class*='wp-image-']) {
   margin: 0;
   padding: 0;
   text-align: inherit;
-  background-color: var(--ihf-tp-q);
+  background-color: var(--primary-color);
   border-radius: 24px;
   -webkit-transition: 0.2s max-width var(--timing-function-alt-2);
   transition: 0.2s max-width var(--timing-function-alt-2);
@@ -22502,7 +22502,7 @@ html :where(img[class*='wp-image-']) {
 }
 @supports (--a: a) {
   .dir.header__search-tabs-filter-searchBtn[class][class] {
-    background-color: var(--header_brand-color, var(--ihf-tp-q));
+    background-color: var(--header_brand-color, var(--primary-color));
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -23893,7 +23893,7 @@ html :where(img[class*='wp-image-']) {
   text-align: inherit !important;
   text-decoration: none !important;
   user-select: auto !important;
-  background-color: var(--ihf-tp-q) !important;
+  background-color: var(--primary-color) !important;
   border-radius: 24px !important;
   height: 48px !important;
   max-width: 48px !important;
@@ -23903,7 +23903,7 @@ html :where(img[class*='wp-image-']) {
 }
 @supports (--a: a) {
   .header__search-tabs-filter-input-search {
-    background-color: var(--header_brand-color, var(--ihf-tp-q)) !important;
+    background-color: var(--header_brand-color, var(--primary-color)) !important;
   }
 }
 .header__search-tabs-filter-input-search::before {
@@ -31073,11 +31073,11 @@ tr.hide {
   }
 }
 .dir.i11pgkpu[class][class] {
-  box-shadow: 0 0 0 2px var(--k-va-tnc);
-  background-color: var(--f-p-k-v-lb);
+  box-shadow: 0 0 0 2px var(--danger-color);
+  background-color: var(--light-danger-color);
 }
 .dir.i11pgkpu[class][class]:focus {
-  box-shadow: 0 0 0 2px var(--k-va-tnc);
+  box-shadow: 0 0 0 2px var(--danger-color);
 }
 .s18pctkq[class][class] {
   z-index: 0;
@@ -35224,7 +35224,7 @@ tr.hide {
 }
 .dir.e1rue1xl[class][class].page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-icon[class][class] {
-  background-color: var(--k-va-tnc);
+  background-color: var(--danger-color);
   border-radius: 50%;
 }
 .cm4lcvy[class][class] {
@@ -48412,7 +48412,7 @@ video::cue {
   color: var(--white);
 }
 .dir.e1rue1xl[class][class].i144hzgs[class][class] .c1mzlq0d[class][class] {
-  background-color: var(--k-va-tnc);
+  background-color: var(--danger-color);
   border-radius: 50%;
 }
 ._12kfhdn {
@@ -49606,15 +49606,12 @@ body {
   --gray-200: #ebebeb;
   --gray-100: #f7f7f7;
   --white: #ffffff;
-  --k-va-tnc: #c13515;
-  --cnr-vp-o: #b32505;
-  --f-p-k-v-lb: #fff8f6;
-  --fhi-qn-u: #e07912;
-  --k-ff-my-a: #008a05;
-  --ldbkp-d: #428bff;
-  --ihf-tp-q: #ff385c;
-  --kd-lqtg: #92174d;
-  --d-u-w-o-m-k: #460479;
+  --danger-color: #c13515;
+  --light-danger-color: #fff8f6;
+  --warning-color: #e07912;
+  --success-color: #008a05;
+  --info-color: #428bff;
+  --primary-color: #ff385c;
   --dc-gy-f-v: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
   --d-e-vybb: radial-gradient(
     circle at center,
@@ -49784,7 +49781,7 @@ body {
   }
 }
 .status-no {
-  background-color: var(--ihf-tp-q) !important;
+  background-color: var(--primary-color) !important;
   box-shadow: 0 0 0 1.5px var(--white) !important;
   position: absolute !important;
   z-index: 1 !important;
@@ -49803,7 +49800,7 @@ body {
 }
 @supports (--a: a) {
   .status-no {
-    background-color: var(--header_brand-color, var(--ihf-tp-q)) !important;
+    background-color: var(--header_brand-color, var(--primary-color)) !important;
   }
 }
 ._1qthdmcg {
