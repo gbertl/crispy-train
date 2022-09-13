@@ -50,7 +50,7 @@
   box-shadow: rgba(0, 0, 0, 0.08) 0 1px 12px;
   transform-origin: 50% 0;
   transition: transform 150ms, opacity 150ms 75ms;
-  background: var(--f-mkcy-f);
+  background: var(--white);
 }
 .dir-ltr.header[class][class]::after {
   left: 0;
@@ -136,7 +136,7 @@
   transition: color 250ms;
 }
 .dir.header__brand[class][class]:focus-visible::before {
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .header__brand[class][class]:focus-visible::before {
@@ -144,7 +144,7 @@
   }
 }
 .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .header__brand[class][class]:focus[data-focus-visible-added]::before {
@@ -619,7 +619,7 @@
 .dir.header__brand[class][class]:focus-visible::before {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.header__brand[class][class]:focus-visible::before {
@@ -630,7 +630,7 @@
 .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
@@ -673,7 +673,7 @@
 }
 .dir.header__brand[class][class]:focus-visible::before {
   -webkit-transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .header__brand[class][class]:focus-visible::before {
@@ -688,7 +688,7 @@
 }
 .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
   -webkit-transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .header__brand[class][class]:focus[data-focus-visible-added]::before {
@@ -747,7 +747,7 @@
   -webkit-transform-origin: 50% 0 !important;
   -ms-transform-origin: 50% 0 !important;
   transform-origin: 50% 0 !important;
-  background: var(--f-mkcy-f) !important;
+  background: var(--white) !important;
   content: '' !important;
   left: 0 !important;
   position: absolute !important;
@@ -907,7 +907,7 @@
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f) !important;
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white) !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .header__brand:focus-visible::before {
@@ -920,7 +920,7 @@
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f) !important;
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white) !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .header__brand:focus[data-focus-visible-added]::before {
@@ -990,7 +990,7 @@
 }
 .dir.header__brand[class][class]:focus-visible::before {
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.header__brand[class][class]:focus-visible::before {
@@ -999,7 +999,7 @@
 }
 .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px var(--f-mkcy-f);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px var(--white);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.header__brand[class][class]:focus[data-focus-visible-added]::before {

@@ -92,7 +92,7 @@
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
   background: 0 0 !important;
-  color: var(--f-k-smk-x) !important;
+  color: var(--gray-900) !important;
   text-decoration: none !important;
 }
 .page-shell-mobile__container-wrapper {
@@ -221,7 +221,7 @@
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
   background: 0 0 !important;
-  color: var(--f-k-smk-x) !important;
+  color: var(--gray-900) !important;
   text-decoration: none !important;
 }
 .page-shell-mobile__nav-icon-wrapper {
@@ -253,7 +253,7 @@
 }
 .page-shell-mobile__alert-notification[class][class].page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-icon[class][class] {
-  color: var(--f-mkcy-f);
+  color: var(--white);
 }
 .dir.page-shell-mobile__alert-notification[class][class].page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-icon[class][class] {
@@ -284,7 +284,7 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
 }
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-button[class][class] {
@@ -299,8 +299,8 @@
   width: 100%;
 }
 .dir.page-shell-mobile__alert-attr-notifcation[class][class] {
-  border: 1px solid var(--j-qkgmf);
-  background-color: var(--f-mkcy-f);
+  border: 1px solid var(--gray-300);
+  background-color: var(--white);
   border-radius: 12px;
   padding: 16px;
 }
@@ -315,11 +315,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
 }
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-text[class][class] {
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
@@ -330,13 +330,13 @@
 }
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-desc[class][class] {
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
 }
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-desc-color[class][class] {
-  color: var(--fo-jk-r-s);
+  color: var(--gray-500);
 }
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-button[class][class] {

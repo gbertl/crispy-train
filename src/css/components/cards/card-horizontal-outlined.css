@@ -36,12 +36,12 @@
   margin-right: 0;
 }
 .card-horizontal-outlined__btn[class][class] {
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
 }
 .dir.card-horizontal-outlined__btn[class][class] {
-  background: var(--f-mkcy-f);
+  background: var(--white);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--availability-list-item_box-shadow);
   padding: var(--spacer-4);
@@ -63,7 +63,7 @@
   overflow: hidden;
 }
 .dir.card-horizontal-outlined[class][class] {
-  border: 1px solid var(--j-qkgmf);
+  border: 1px solid var(--gray-300);
   border-radius: var(--border-radius-lg);
   padding: var(--spacer-4);
 }

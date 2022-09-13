@@ -1,6 +1,6 @@
 /* Jumbotron Header */
 .jumbotron-header__text[class][class] {
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xxl);
   line-height: var(--line-height-4xl);
@@ -18,7 +18,7 @@
   font-size: var(--font-size);
   line-height: var(--line-height-md);
   font-weight: var(--font-weight-normal);
-  color: var(--fo-jk-r-s);
+  color: var(--gray-500);
 }
 .dir.jumbotron-header__description[class][class] {
   margin-top: var(--spacer-3);

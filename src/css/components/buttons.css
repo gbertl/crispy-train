@@ -4,7 +4,7 @@
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900) !important;
 }
 .btn-primary:focus-visible::-moz-focus-inner {
   border: none !important;
@@ -29,7 +29,7 @@
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900) !important;
 }
 .btn-primary:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
@@ -482,8 +482,8 @@
 .btn-link:active {
   transform: scale(0.96) !important;
   border: none !important;
-  background: var(---pc-g-v-g) !important;
-  color: var(--bgxgx) !important;
+  background: var(--gray-100) !important;
+  color: var(--black) !important;
 }
 .btn-close::before {
   content: ' ' !important;
@@ -559,18 +559,18 @@
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border-color: var(--f-k-smk-x) !important;
-  background: var(--f-mkcy-f) !important;
-  color: var(--f-k-smk-x) !important;
+  border-color: var(--gray-900) !important;
+  background: var(--white) !important;
+  color: var(--gray-900) !important;
 }
 .btn-outline:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
-  border-color: var(--f-k-smk-x) !important;
-  color: var(--f-k-smk-x) !important;
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+  border-color: var(--gray-900) !important;
+  color: var(--gray-900) !important;
 }
 .btn-outline:focus-visible::-moz-focus-inner {
   border: none !important;
@@ -595,9 +595,9 @@
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
-  border-color: var(--f-k-smk-x) !important;
-  color: var(--f-k-smk-x) !important;
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+  border-color: var(--gray-900) !important;
+  color: var(--gray-900) !important;
 }
 .btn-outline:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
@@ -619,25 +619,25 @@
 }
 @media (hover: hover) {
   .btn-outline:hover {
-    border-color: var(--bgxgx) !important;
-    background: var(---pc-g-v-g) !important;
-    color: var(--f-k-smk-x) !important;
+    border-color: var(--black) !important;
+    background: var(--gray-100) !important;
+    color: var(--gray-900) !important;
   }
 }
 .btn-outline:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
-  border-color: var(--bgxgx) !important;
-  background: var(---pc-g-v-g) !important;
-  color: var(--f-k-smk-x) !important;
+  border-color: var(--black) !important;
+  background: var(--gray-100) !important;
+  color: var(--gray-900) !important;
 }
 .btn-outline:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
-  border-color: var(--j-qkgmf) !important;
-  background: var(--f-mkcy-f) !important;
-  color: var(--j-qkgmf) !important;
+  border-color: var(--gray-300) !important;
+  background: var(--white) !important;
+  color: var(--gray-300) !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn-outline {
@@ -1469,7 +1469,7 @@ fieldset[disabled] .btn {
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
   background: 0 0 !important;
-  color: var(--f-k-smk-x) !important;
+  color: var(--gray-900) !important;
   text-decoration: underline !important;
   contain: paint !important;
 }
@@ -1478,10 +1478,10 @@ fieldset[disabled] .btn {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
   border: none !important;
-  background: var(---pc-g-v-g) !important;
-  color: var(--f-k-smk-x) !important;
+  background: var(--gray-100) !important;
+  color: var(--gray-900) !important;
 }
 .btn-link:focus-visible::-moz-focus-inner {
   border: none !important;
@@ -1506,10 +1506,10 @@ fieldset[disabled] .btn {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
   border: none !important;
-  background: var(---pc-g-v-g) !important;
-  color: var(--f-k-smk-x) !important;
+  background: var(--gray-100) !important;
+  color: var(--gray-900) !important;
 }
 .btn-link:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
@@ -1532,8 +1532,8 @@ fieldset[disabled] .btn {
 @media (hover: hover) {
   .btn-link:hover {
     border: none !important;
-    background: var(---pc-g-v-g) !important;
-    color: var(--bgxgx) !important;
+    background: var(--gray-100) !important;
+    color: var(--black) !important;
   }
 }
 .btn-link:active {
@@ -1541,15 +1541,15 @@ fieldset[disabled] .btn {
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
   border: none !important;
-  background: var(---pc-g-v-g) !important;
-  color: var(--bgxgx) !important;
+  background: var(--gray-100) !important;
+  color: var(--black) !important;
 }
 .btn-link:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
   background: 0 0 !important;
-  color: var(--j-qkgmf) !important;
+  color: var(--gray-300) !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn-link {
@@ -1585,8 +1585,8 @@ fieldset[disabled] .btn {
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
-  background: var(--f-k-smk-x) !important;
-  color: var(--f-mkcy-f) !important;
+  background: var(--gray-900) !important;
+  color: var(--white) !important;
   contain: paint !important;
 }
 .btn-dark:focus-visible {
@@ -1594,7 +1594,7 @@ fieldset[disabled] .btn {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900) !important;
 }
 .btn-dark:focus-visible::-moz-focus-inner {
   border: none !important;
@@ -1619,7 +1619,7 @@ fieldset[disabled] .btn {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x) !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900) !important;
 }
 .btn-dark:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none !important;
@@ -1642,8 +1642,8 @@ fieldset[disabled] .btn {
 @media (hover: hover) {
   .btn-dark:hover {
     border: none !important;
-    background: var(--bgxgx) !important;
-    color: var(--f-mkcy-f) !important;
+    background: var(--black) !important;
+    color: var(--white) !important;
   }
 }
 .btn-dark:active {
@@ -1651,8 +1651,8 @@ fieldset[disabled] .btn {
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
   border: none !important;
-  background: var(--bgxgx) !important;
-  color: var(--f-mkcy-f) !important;
+  background: var(--black) !important;
+  color: var(--white) !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn-dark {
@@ -1704,7 +1704,7 @@ fieldset[disabled] .btn {
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
   background: 0 0 !important;
-  color: var(--f-k-smk-x) !important;
+  color: var(--gray-900) !important;
   text-decoration: underline !important;
   contain: paint !important;
 }
@@ -1712,8 +1712,8 @@ fieldset[disabled] .btn {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
-  background: var(--j-qkgmf) !important;
-  color: var(--f-mkcy-f) !important;
+  background: var(--gray-300) !important;
+  color: var(--white) !important;
 }
 .btn-dark {
   cursor: pointer !important;
@@ -1735,8 +1735,8 @@ fieldset[disabled] .btn {
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
-  background: var(--f-k-smk-x) !important;
-  color: var(--f-mkcy-f) !important;
+  background: var(--gray-900) !important;
+  color: var(--white) !important;
   contain: paint !important;
 }
 .btn-outline {
@@ -1760,9 +1760,9 @@ fieldset[disabled] .btn {
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border-color: var(--f-k-smk-x) !important;
-  background: var(--f-mkcy-f) !important;
-  color: var(--f-k-smk-x) !important;
+  border-color: var(--gray-900) !important;
+  background: var(--white) !important;
+  color: var(--gray-900) !important;
 }
 .btn-close {
   appearance: none !important;
@@ -1794,8 +1794,8 @@ fieldset[disabled] .btn {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
-  background: var(--j-qkgmf) !important;
-  color: var(--f-mkcy-f) !important;
+  background: var(--gray-300) !important;
+  color: var(--white) !important;
 }
 .btn-dark--small {
   cursor: pointer !important;
@@ -1817,8 +1817,8 @@ fieldset[disabled] .btn {
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
-  background: var(--f-k-smk-x) !important;
-  color: var(--f-mkcy-f) !important;
+  background: var(--gray-900) !important;
+  color: var(--white) !important;
 }
 .btn-light-small {
   cursor: pointer !important;
@@ -1847,8 +1847,8 @@ fieldset[disabled] .btn {
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
   border: none !important;
-  color: var(--f-k-smk-x) !important;
-  background: var(--f-mkcy-f) !important;
+  color: var(--gray-900) !important;
+  background: var(--white) !important;
 }
 .btn-light-small:focus-visible {
   outline: 0 !important;
@@ -1903,8 +1903,8 @@ fieldset[disabled] .btn {
 @media (hover: hover) {
   .btn-light-small:hover {
     border: none !important;
-    color: var(--f-k-smk-x) !important;
-    background: var(--d-nc-lt-s) !important;
+    color: var(--gray-900) !important;
+    background: var(--gray-200) !important;
   }
 }
 .btn-light-small:active {
@@ -1912,8 +1912,8 @@ fieldset[disabled] .btn {
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
   border: none !important;
-  background: var(--d-nc-lt-s) !important;
-  color: var(--f-k-smk-x) !important;
+  background: var(--gray-200) !important;
+  color: var(--gray-900) !important;
 }
 .btn-light-small:disabled {
   cursor: not-allowed !important;
@@ -1931,7 +1931,7 @@ fieldset[disabled] .btn {
 }
 .dir.btn-save-bordered[class][class]:focus-visible {
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.btn-save-bordered[class][class]:focus-visible {
@@ -1952,7 +1952,7 @@ fieldset[disabled] .btn {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1994,7 +1994,7 @@ fieldset[disabled] .btn {
 .dir.btn-save-bordered[class][class]:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.btn-save-bordered[class][class]:focus-visible {
@@ -2005,7 +2005,7 @@ fieldset[disabled] .btn {
 .dir.btn-save-bordered[class][class]:focus[data-focus-visible-added] {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--f-k-smk-x);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px var(--gray-900);
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.btn-save-bordered[class][class]:focus[data-focus-visible-added] {
@@ -2022,10 +2022,10 @@ fieldset[disabled] .btn {
   opacity: 1;
 }
 .dir.btn-save-bordered[class][class]:focus-visible {
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
 .dir.btn-save-bordered[class][class]:focus[data-focus-visible-added] {
-  box-shadow: 0 0 0 2px var(--f-k-smk-x), 0 0 0 4px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8);
 }
 .dir.btn-save-bordered[class][class]:active {
   -webkit-transform: scale(0.92);
@@ -2449,12 +2449,12 @@ fieldset[disabled] .btn {
   touch-action: manipulation;
   min-width: var(--spacer-9);
   height: var(--spacer-9);
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
 }
 .dir.btn-filter[class][class] {
   background-color: transparent;
   cursor: pointer;
-  border: var(--filter-button_border, 1px solid var(--j-qkgmf));
+  border: var(--filter-button_border, 1px solid var(--gray-300));
   border-radius: var(--spacer-4);
   margin: 0;
   padding: 7px 0;
@@ -2512,9 +2512,9 @@ fieldset[disabled] .btn {
   height: 20px;
 }
 .dir.btn-filter-count[class][class] {
-  background: var(--f-k-smk-x);
+  background: var(--gray-900);
   border-radius: 50%;
-  border: 1.5px solid var(--f-mkcy-f);
+  border: 1.5px solid var(--white);
   transition: color 0.2s;
   transform: translateY(-1px);
   text-align: center;
@@ -2525,7 +2525,7 @@ fieldset[disabled] .btn {
 .btn-filter-count__text[class][class] {
   font-size: var(--font-size-xxs);
   line-height: var(--line-height-xxs);
-  color: var(--f-mkcy-f);
+  color: var(--white);
   font-weight: var(--font-weight-bold);
 }
 .dir.btn-filter-count__text[class][class] {
