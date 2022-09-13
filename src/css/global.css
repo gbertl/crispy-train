@@ -46,7 +46,6 @@
   }
 }
 @media (min-width:744px) {
-  .page-shell-mobile__display-none,
   .hide-md {
     display: none!important
   }
@@ -1063,11 +1062,6 @@
     margin-bottom: env(safe-area-inset-bottom)!important;
     padding-left: env(safe-area-inset-left)!important;
     padding-right: env(safe-area-inset-right)!important
-  }
-}
-@supports (overflow:clip) {
-  .page-shell__menu-item-text {
-    overflow: clip!important
   }
 }
 @supports (overflow:clip) {
