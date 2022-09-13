@@ -11711,9 +11711,9 @@ html :where(img[class*='wp-image-']) {
   cursor: not-allowed;
 }
 
-/*! ----------- */
-/*! Card Alt 2  */
-/*! ----------- */
+/*! ---------- */
+/*! Card Alt 2 */
+/*! ---------- */
 .card-alt-2__img-wrapper {
   position: absolute !important;
   inset: 0 !important;
@@ -11828,9 +11828,9 @@ html :where(img[class*='wp-image-']) {
   color: #484848 !important;
 }
 
-/*! ----------- */
-/*! Card Alt 3  */
-/*! ----------- */
+/*! ---------- */
+/*! Card Alt 3 */
+/*! ---------- */
 .card-alt-3 {
   background: 0 0 !important;
   border: none !important;
@@ -11889,9 +11889,9 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! ----------- */
-/*! Card Alt 4  */
-/*! ----------- */
+/*! ---------- */
+/*! Card Alt 4 */
+/*! ---------- */
 .card-alt-4__ratings[class][class] {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
@@ -12531,9 +12531,9 @@ html :where(img[class*='wp-image-']) {
   line-height: var(--line-height-sm);
 }
 
-/*! ----------- */
-/*! Card Alt 5  */
-/*! ----------- */
+/*! ---------- */
+/*! Card Alt 5 */
+/*! ---------- */
 .card-alt-5__subtitle {
   text-transform: uppercase !important;
   font-size: 12px !important;
@@ -12574,9 +12574,9 @@ html :where(img[class*='wp-image-']) {
   text-shadow: 0 0 60px rgba(0, 0, 0, 0.4) !important;
 }
 
-/*! ------------ */
-/*! Card Banner  */
-/*! ------------ */
+/*! ----------- */
+/*! Card Banner */
+/*! ----------- */
 .card-banner__container {
   display: block !important;
   border-radius: 12px !important;
@@ -12664,9 +12664,9 @@ html :where(img[class*='wp-image-']) {
   cursor: pointer;
 }
 
-/*! ----------- */
-/*! Card Basic  */
-/*! ----------- */
+/*! ---------- */
+/*! Card Basic */
+/*! ---------- */
 .card-basic__title[class][class] {
   color: var(--gray-900);
   font-size: var(--font-size-md);
@@ -12775,9 +12775,9 @@ html :where(img[class*='wp-image-']) {
   padding-bottom: 0 !important;
 }
 
-/*! ------------------------- */
-/*! Card Horizontal Outlined  */
-/*! ------------------------- */
+/*! ------------------------ */
+/*! Card Horizontal Outlined */
+/*! ------------------------ */
 .card-horizontal-outlined__time-list[class][class] {
   scrollbar-width: none;
   display: flex;
@@ -14179,7 +14179,9 @@ html :where(img[class*='wp-image-']) {
   margin: 0 !important;
 }
 
-/* Alert */
+/*! --------------- */
+/*! Alert component */
+/*! --------------- */
 .alert .btn-primary {
   border-color: #007a87;
   background-color: #007a87;
@@ -14273,11 +14275,10 @@ html :where(img[class*='wp-image-']) {
     vertical-align: baseline;
   }
 }
-/* /Alert */
 
-/*! ----------------------- */
-/*! Button components       */
-/*! ----------------------- */
+/*! ----------------- */
+/*! Button components */
+/*! ----------------- */
 .btn-primary:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -17597,9 +17598,9 @@ input[type='button'].btn-block {
   width: 100%;
 }
 
-/*! ------------------- */
-/*! Calendar component  */
-/*! ------------------- */
+/*! ------------------ */
+/*! Calendar component */
+/*! ------------------ */
 .calendar__next-month {
   display: inline-block !important;
   vertical-align: top !important;
@@ -18234,7 +18235,9 @@ input[type='button'].btn-block {
   line-height: inherit !important;
 }
 
-/* Explore Filter Menu */
+/*! ------------------- */
+/*! Explore Filter Menu */
+/*! ------------------- */
 @media (min-width: 744px) {
   .explore-filter-menu__body {
     min-width: 400px !important;
@@ -18589,9 +18592,10 @@ input[type='button'].btn-block {
   font-size: 16px !important;
   line-height: 20px !important;
 }
-/* /Explore Filter Menu */
 
-/* Explore Filter */
+/*! -------------- */
+/*! Explore Filter */
+/*! -------------- */
 .explore-filter__icon {
   -ms-grid-row-align: center !important;
   -ms-flex-item-align: center !important;
@@ -18808,11 +18812,10 @@ input[type='button'].btn-block {
   font-size: 14px !important;
   line-height: 18px !important;
 }
-/* /Explore Filter */
 
-/*! ------------------- */
-/*! Form components     */
-/*! ------------------- */
+/*! --------------- */
+/*! Form components */
+/*! --------------- */
 .form__switch-secondary {
   appearance: none !important;
   height: 32px !important;
