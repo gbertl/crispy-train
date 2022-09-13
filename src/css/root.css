@@ -1,4 +1,4 @@
-/* Root */
+/*! CSS VARIABLES */
 :root {
   --border-radius-sm: 4px;
   --border-radius: 8px;
@@ -307,6 +307,7 @@
   --wp-admin-theme-color-darker-20: #005a87;
   --wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
   --wp-admin-border-width-focus: 2px;
+  --reach-combobox: 1;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   :root {
@@ -420,4 +421,3 @@
     --wp-admin-border-width-focus: 1.5px;
   }
 }
-/* /Root */

@@ -1,0 +1,186 @@
+/*! COUNTER COMPONENT */
+.counter {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 104px !important;
+  height: 32px !important;
+  color: #222 !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
+}
+.counter__stepper {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  -webkit-box-flex: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #b0b0b0 !important;
+  color: #717171 !important;
+  font-family: inherit !important;
+  outline: 0 !important;
+  touch-action: manipulation !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #fff !important;
+  border-radius: 50% !important;
+}
+.counter__label {
+  left: 0 !important;
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(100%) !important;
+  height: 1px !important;
+  overflow: clip !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+.counter {
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  display: -webkit-inline-box !important;
+  display: -moz-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: -webkit-inline-flex !important;
+  display: inline-flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+  width: 104px !important;
+  height: 32px !important;
+  color: #222 !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+}
+.counter__stepper {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -ms-flex-negative: 0 !important;
+  -webkit-box-flex: 0 !important;
+  -ms-flex-positive: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  -webkit-flex-grow: 0 !important;
+  flex-grow: 0 !important;
+  -webkit-flex-shrink: 0 !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  display: -webkit-inline-box !important;
+  display: -moz-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: -webkit-inline-flex !important;
+  display: inline-flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #b0b0b0 !important;
+  color: #717171 !important;
+  font-family: inherit !important;
+  outline: 0 !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+  background: #fff !important;
+  border-radius: 50% !important;
+}
+.counter__stepper:disabled {
+  cursor: not-allowed !important;
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  background: #fff !important;
+}
+@media (hover: hover) {
+  .counter__stepper:hover {
+    color: #222 !important;
+    border-color: #222 !important;
+    background: #fff !important;
+  }
+}
+.counter__stepper::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.counter__stepper:focus::-moz-focus-inner {
+  border: none !important;
+}
+.counter__stepper:-moz-focusring {
+  outline: 0 !important;
+}
+.counter__stepper:focus-visible {
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  color: #222 !important;
+  border-color: #222 !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #222 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .counter__stepper:focus-visible {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.counter__stepper:disabled:hover {
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  background: #fff !important;
+}
+.counter__label {
+  left: 0 !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
+  height: 1px !important;
+  overflow: clip !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+.counter__icon {
+  height: 22px !important;
+  width: 22px !important;
+  padding: 5px !important;
+}
+.counter__count {
+  position: relative !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}

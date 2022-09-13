@@ -34,7 +34,6 @@ export const globalStyles = () => {
     'src/css/utilities.css',
     'src/css/layouts/**/*.css',
     'src/css/components/**/*.css',
-    'src/css/global.css',
   ])
     .pipe(concat('global.css'))
     .pipe(dest('assets/css'));
