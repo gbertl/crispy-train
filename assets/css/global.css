@@ -1,4 +1,4 @@
-/*! Fonts */
+/*! FONTS */
 @font-face {
   font-family: Circular;
   unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
@@ -738,7 +738,7 @@
   font-style: normal;
 }
 
-/*! CSS animations */
+/*! CSS ANIMATIONS */
 @keyframes keyframe_127wuha {
   from {
     opacity: 0;
@@ -2423,7 +2423,7 @@
   }
 }
 
-/*! CSS variables */
+/*! CSS VARIABLES */
 :root {
   --border-radius-sm: 4px;
   --border-radius: 8px;
@@ -2847,7 +2847,7 @@
   }
 }
 
-/*! Base (global selectors) */
+/*! BASE (GLOBAL SELECTORS) */
 *,
 :after,
 :before {
@@ -4464,7 +4464,7 @@ html :where(img[class*='wp-image-']) {
   max-width: 100%;
 }
 
-/*! Utility classes */
+/*! UTILITY CLASSES */
 .contents {
   display: contents !important;
 }
@@ -5427,7 +5427,7 @@ html :where(img[class*='wp-image-']) {
   align-self: stretch;
 }
 
-/*! Footer component */
+/*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
   padding-bottom: 24px !important;
   margin-bottom: 24px !important;
@@ -6287,7 +6287,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Grid classes */
+/*! GRID CLASSES */
 .row {
   display: grid;
   -webkit-column-gap: 16px;
@@ -6394,7 +6394,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Header component */
+/*! HEADER COMPONENT */
 .header[class][class] {
   height: 80px;
   width: 100%;
@@ -11667,7 +11667,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Card Alt 1 */
+/*! CARD ALT 1 */
 @keyframes fade-in-card-alt-1__nav-btn-wrapper {
   from {
     opacity: 0;
@@ -12009,7 +12009,7 @@ html :where(img[class*='wp-image-']) {
   cursor: not-allowed;
 }
 
-/*! Card Alt 2 */
+/*! CARD ALT 2 */
 .card-alt-2__img-wrapper {
   position: absolute !important;
   inset: 0 !important;
@@ -12124,7 +12124,7 @@ html :where(img[class*='wp-image-']) {
   color: #484848 !important;
 }
 
-/*! Card Alt 3 */
+/*! CARD ALT 3 */
 .card-alt-3 {
   background: 0 0 !important;
   border: none !important;
@@ -12183,7 +12183,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Card Alt 4 */
+/*! CARD ALT 4 */
 .card-alt-4__ratings[class][class] {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
@@ -12823,7 +12823,7 @@ html :where(img[class*='wp-image-']) {
   line-height: var(--line-height-sm);
 }
 
-/*! Card Alt 5 */
+/*! CARD ALT 5 */
 .card-alt-5__subtitle {
   text-transform: uppercase !important;
   font-size: 12px !important;
@@ -12864,7 +12864,7 @@ html :where(img[class*='wp-image-']) {
   text-shadow: 0 0 60px rgba(0, 0, 0, 0.4) !important;
 }
 
-/*! Card Banner */
+/*! CARD BANNER */
 .card-banner__container {
   display: block !important;
   border-radius: 12px !important;
@@ -12952,7 +12952,7 @@ html :where(img[class*='wp-image-']) {
   cursor: pointer;
 }
 
-/*! Card Basic */
+/*! CARD BASIC */
 .card-basic__title[class][class] {
   color: var(--gray-900);
   font-size: var(--font-size-md);
@@ -13000,7 +13000,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Card Horizontal Basic */
+/*! CARD HORIZONTAL BASIC */
 .card-horizontal-basic {
   -webkit-box-align: center !important;
   font-size: 16px !important;
@@ -13059,7 +13059,7 @@ html :where(img[class*='wp-image-']) {
   padding-bottom: 0 !important;
 }
 
-/*! Card Horizontal Outlined */
+/*! CARD HORIZONTAL OUTLINED */
 .card-horizontal-outlined__time-list[class][class] {
   scrollbar-width: none;
   display: flex;
@@ -13155,7 +13155,7 @@ html :where(img[class*='wp-image-']) {
   line-height: var(--line-height-sm);
 }
 
-/*! Card Icon component */
+/*! CARD ICON COMPONENT */
 .card-icon {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
@@ -13194,7 +13194,7 @@ html :where(img[class*='wp-image-']) {
   font-weight: 400 !important;
 }
 
-/*! Card Portrait component */
+/*! CARD PORTRAIT COMPONENT */
 .card-portrait__media-container {
   overflow: hidden;
   position: relative;
@@ -13808,7 +13808,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Card component  */
+/*! CARD COMPONENT  */
 .card__carousel[class][class] {
   --mis: var(--contentscroller_scroller_margin-inline-start);
   --mie: var(--contentscroller_scroller_margin-inline-end);
@@ -14413,7 +14413,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! News Card component */
+/*! NEWS CARD COMPONENT */
 .news-card {
   border: 1px solid #ebebeb !important;
   border-radius: 12px !important;
@@ -14453,7 +14453,7 @@ html :where(img[class*='wp-image-']) {
   margin: 0 !important;
 }
 
-/*! Alert component */
+/*! ALERT COMPONENT */
 .alert .btn-primary {
   border-color: #007a87;
   background-color: #007a87;
@@ -14548,7 +14548,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! Button components */
+/*! BUTTON COMPONENTS */
 .btn-primary:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
@@ -17868,7 +17868,7 @@ input[type='button'].btn-block {
   width: 100%;
 }
 
-/*! Calendar component */
+/*! CALENDAR COMPONENT */
 .calendar__next-month {
   display: inline-block !important;
   vertical-align: top !important;
@@ -18115,7 +18115,7 @@ input[type='button'].btn-block {
   border: 1.5px solid #222 !important;
 }
 
-/*! Counter Large component */
+/*! COUNTER LARGE COMPONENT */
 .counter-lg {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
@@ -18312,7 +18312,7 @@ input[type='button'].btn-block {
   color: #222 !important;
 }
 
-/*! Counter component */
+/*! COUNTER COMPONENT */
 .counter {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
@@ -18499,7 +18499,7 @@ input[type='button'].btn-block {
   line-height: inherit !important;
 }
 
-/*! Form components */
+/*! FORM COMPONENTS */
 .form__switch-secondary {
   appearance: none !important;
   height: 32px !important;
@@ -19050,7 +19050,7 @@ input[type='button'].btn-block {
   appearance: none !important;
 }
 
-/*! Hero Banner */
+/*! HERO BANNER */
 .hero-banner {
   position: relative !important;
   width: 100% !important;
@@ -19286,7 +19286,7 @@ input[type='button'].btn-block {
   position: relative !important;
 }
 
-/*! Input select */
+/*! INPUT SELECT */
 .input-select {
   -moz-appearance: none !important;
   appearance: none !important;
@@ -19371,7 +19371,7 @@ input[type='button'].btn-block {
   box-shadow: #222 0 0 0 2px inset !important;
 }
 
-/*! Jumbotron Header */
+/*! JUMBOTRON HEADER */
 .jumbotron-header__text[class][class] {
   color: var(--gray-900);
   font-weight: var(--font-weight-bold);
@@ -19397,7 +19397,7 @@ input[type='button'].btn-block {
   margin-top: var(--spacer-3);
 }
 
-/*! List Group */
+/*! LIST GROUP */
 .list-group {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
@@ -19591,7 +19591,7 @@ input[type='button'].btn-block {
   }
 }
 
-/*! Lite Image */
+/*! LITE IMAGE */
 .lite-image__body {
   display: table !important;
   position: relative !important;
@@ -19708,7 +19708,7 @@ input[type='button'].btn-block {
   }
 }
 
-/*! Modal component */
+/*! MODAL COMPONENT */
 .modal__backdrop {
   z-index: 2000 !important;
   position: fixed !important;
@@ -19907,7 +19907,7 @@ input[type='button'].btn-block {
   text-align: right !important;
 }
 
-/*! Page Shell component */
+/*! PAGE SHELL COMPONENT */
 .page-shell-mobile__container {
   display: block !important;
 }
@@ -20546,7 +20546,7 @@ input[type='button'].btn-block {
   height: 80px !important;
 }
 
-/*! Pagination Bullets */
+/*! PAGINATION BULLETS */
 .pagination-bullets {
   -webkit-box-pack: center !important;
   -webkit-box-align: end !important;
@@ -20602,7 +20602,7 @@ input[type='button'].btn-block {
   width: 6px !important;
 }
 
-/*! Snackbar */
+/*! SNACKBAR */
 .snackbar-view-show {
   animation-duration: 0.5s !important;
   animation-iteration-count: 1 !important;
@@ -20653,7 +20653,7 @@ input[type='button'].btn-block {
   margin-top: 12px !important;
 }
 
-/*! Spinner Chart */
+/*! SPINNER CHART */
 .spinner-chart {
   -webkit-box-align: end !important;
   -webkit-box-pack: justify !important;
@@ -20779,7 +20779,7 @@ input[type='button'].btn-block {
   white-space: nowrap !important;
 }
 
-/*! Tab component */
+/*! TAB COMPONENT */
 .tab__on-wrapper {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
@@ -21102,7 +21102,7 @@ input[type='button'].btn-block {
   margin-right: 16px !important;
 }
 
-/*! Tooltip component */
+/*! TOOLTIP COMPONENT */
 .tooltip {
   z-index: 3000;
   max-width: 280px;
