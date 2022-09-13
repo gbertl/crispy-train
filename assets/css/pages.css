@@ -7442,7 +7442,7 @@ select[disabled] {
   padding: 14px 24px;
   transition: box-shadow 0.2s, transform 0.1s;
   border: none;
-  background: var(--dls19-brand-gradient, var(--dc-gy-f-v));
+  background: var(--dls19-brand-gradient, var(--gradient-alt-1));
 }
 @media (prefers-reduced-motion: reduce) {
   .dir.jumbotron-btn-search-bg[class][class] {
@@ -7471,7 +7471,7 @@ select[disabled] {
 }
 .dir.jumbotron-btn-search-bg[class][class]:hover {
   border: none;
-  background: var(--dls19-brand-gradient, var(--dc-gy-f-v));
+  background: var(--dls19-brand-gradient, var(--gradient-alt-1));
 }
 .jumbotron-btn-search-bg[class][class]:active {
   color: var(--white);
@@ -7512,7 +7512,7 @@ select[disabled] {
 .dir.search__submit-btn[class][class] {
   background-size: 200% 200%;
   transition: opacity 1.25s;
-  background-image: var(--dls19-brand-gradient-radial, var(--d-e-vybb));
+  background-image: var(--dls19-brand-gradient-radial, var(--gradient-alt-2));
 }
 .search__submit-btn[class][class]:hover {
   opacity: 1;
@@ -10765,7 +10765,7 @@ h3:first-child {
   padding: var(--spacer-5);
   border-radius: 32px;
   border: none;
-  background: var(--dc-gy-f-v);
+  background: var(--gradient-alt-1);
   -webkit-transition: box-shadow 0.2s, max-width 0.2s, min-width 0.2s;
   transition: box-shadow 0.2s, max-width 0.2s, min-width 0.2s;
 }
@@ -14299,7 +14299,7 @@ h3:first-child {
   box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--gray-900) !important;
 }
 .header__search-tabs-filter-input-search::before {
-  background: var(--dc-gy-f-v) !important;
+  background: var(--gradient-alt-1) !important;
   bottom: 0 !important;
   content: '' !important;
   left: 0 !important;
@@ -16705,7 +16705,7 @@ h3:first-child {
   z-index: 0;
 }
 .dir.header__search-tabs-filter-searchBtn[class][class]::before {
-  background: var(--dc-gy-f-v);
+  background: var(--gradient-alt-1);
 }
 .dir-ltr.header__search-tabs-filter-searchBtn[class][class]::before {
   left: 0;
@@ -17398,7 +17398,7 @@ h3:first-child {
 .dir.site-content__create-btn[class][class] {
   background-size: 200% 200%;
   transition: opacity 1.25s;
-  background-image: var(--d-e-vybb);
+  background-image: var(--gradient-alt-2);
 }
 .site-content__create-btn[class][class]:active {
   opacity: 0;
@@ -22520,7 +22520,7 @@ html :where(img[class*='wp-image-']) {
   z-index: 0;
 }
 .dir.header__search-tabs-filter-searchBtn[class][class]::before {
-  background: var(--dc-gy-f-v);
+  background: var(--gradient-alt-1);
   left: 0;
   right: 0;
   -webkit-transition: 0.2s opacity var(--timing-function-alt-2);
@@ -23241,7 +23241,7 @@ html :where(img[class*='wp-image-']) {
   background-size: 200% 200%;
   -webkit-transition: opacity 1.25s;
   transition: opacity 1.25s;
-  background-image: var(--d-e-vybb);
+  background-image: var(--gradient-alt-2);
 }
 .site-content__create-btn[class][class]:active {
   -webkit-transition: -webkit-transform 2s, opacity 2s;
@@ -23907,7 +23907,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 .header__search-tabs-filter-input-search::before {
-  background: var(--dc-gy-f-v) !important;
+  background: var(--gradient-alt-1) !important;
   inset: 0 !important;
   content: '' !important;
   position: absolute !important;
@@ -47645,7 +47645,7 @@ a:hover {
 .dir.site-content__create-btn[class][class] {
   background-size: 200% 200%;
   -webkit-transition: opacity 1.25s;
-  background-image: var(--d-e-vybb);
+  background-image: var(--gradient-alt-2);
 }
 .dir-ltr.site-content__create-btn[class][class] {
   background-image: linear-gradient(to right, #000 0, #fff 50%, #000 100%);
@@ -47668,7 +47668,7 @@ a:hover {
 }
 @supports (--custom: properties) {
   .dir.site-content__create-btn[class][class] {
-    background-image: var(--dls19-brand-gradient-radial, var(--d-e-vybb));
+    background-image: var(--dls19-brand-gradient-radial, var(--gradient-alt-2));
   }
 }
 .main_content {
@@ -49612,8 +49612,8 @@ body {
   --success-color: #008a05;
   --info-color: #428bff;
   --primary-color: #ff385c;
-  --dc-gy-f-v: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
-  --d-e-vybb: radial-gradient(
+  --gradient-alt-1: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+  --gradient-alt-2: radial-gradient(
     circle at center,
     #ff385c 0%,
     #e61e4d 27.5%,
@@ -49622,8 +49622,8 @@ body {
     #bd1e59 75%,
     #bd1e59 100%
   );
-  --gj-z-dpd: linear-gradient(to right, #bd1e59 0%, #92174d 50%, #861453 100%);
-  --i-n-t-h-mj: radial-gradient(
+  --gradient-alt-3: linear-gradient(to right, #bd1e59 0%, #92174d 50%, #861453 100%);
+  --gradient-alt-4: radial-gradient(
     circle at center,
     #d70466 0%,
     #bd1e59 30%,
@@ -49632,8 +49632,8 @@ body {
     #6c0d63 90%,
     #6c0d63 100%
   );
-  --iqds-nv: linear-gradient(to right, #59086e 0%, #460479 50%, #440589 100%);
-  --j-m-v-dtd: radial-gradient(
+  --gradient-alt-5: linear-gradient(to right, #59086e 0%, #460479 50%, #440589 100%);
+  --gradient-alt-6: radial-gradient(
     circle at center,
     #6c0d63 0%,
     #59086e 30%,
