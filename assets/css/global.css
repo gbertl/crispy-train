@@ -19710,7 +19710,9 @@ input[type='button'].btn-block {
   appearance: none !important;
 }
 
-/* Hero banner */
+/*! ----------- */
+/*! Hero Banner */
+/*! ----------- */
 .hero-banner {
   position: relative !important;
   width: 100% !important;
@@ -19945,11 +19947,10 @@ input[type='button'].btn-block {
   height: 100% !important;
   position: relative !important;
 }
-/* /Hero banner */
 
-/*! ------------------- */
-/*! Input select        */
-/*! ------------------- */
+/*! ------------ */
+/*! Input select */
+/*! ------------ */
 .input-select {
   -moz-appearance: none !important;
   appearance: none !important;
@@ -20034,7 +20035,9 @@ input[type='button'].btn-block {
   box-shadow: #222 0 0 0 2px inset !important;
 }
 
-/* Jumbotron Header */
+/*! ---------------- */
+/*! Jumbotron Header */
+/*! ---------------- */
 .jumbotron-header__text[class][class] {
   color: var(--gray-900);
   font-weight: var(--font-weight-bold);
@@ -20059,9 +20062,10 @@ input[type='button'].btn-block {
 .dir.jumbotron-header__description[class][class] {
   margin-top: var(--spacer-3);
 }
-/* /Jumbotron Header */
 
-/* List Group */
+/*! ---------- */
+/*! List Group */
+/*! ---------- */
 .list-group {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
@@ -20254,9 +20258,10 @@ input[type='button'].btn-block {
     min-height: 88px !important;
   }
 }
-/* /List Group */
 
-/* Lite Image */
+/*! ---------- */
+/*! Lite Image */
+/*! ---------- */
 .lite-image__body {
   display: table !important;
   position: relative !important;
@@ -20372,11 +20377,10 @@ input[type='button'].btn-block {
     background-image: none !important;
   }
 }
-/* /Lite Image */
 
-/*! ----------------------- */
-/*! Modal component         */
-/*! ----------------------- */
+/*! --------------- */
+/*! Modal component */
+/*! --------------- */
 .modal__backdrop {
   z-index: 2000 !important;
   position: fixed !important;
