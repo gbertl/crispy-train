@@ -3,7 +3,7 @@
   color: var(--f-k-smk-x);
   font-weight: var(--h-oqhch);
   font-size: var(--font-size-xxl);
-  line-height: var(--hu-t-o-g-n);
+  line-height: var(--line-height-4xl);
 }
 .dir.jumbotron-header__text[class][class] {
   margin-bottom: var(--spacer-3);
@@ -11,12 +11,12 @@
 @media (max-width: 743px) {
   .jumbotron-header__text[class][class] {
     font-size: var(--font-size-lg);
-    line-height: var(--fme-bf-w);
+    line-height: var(--line-height-xxl);
   }
 }
 .jumbotron-header__description[class][class] {
   font-size: var(--font-size);
-  line-height: var(---s-l-myu);
+  line-height: var(--line-height-md);
   font-weight: var(--e-y-j-d-v-j);
   color: var(--fo-jk-r-s);
 }

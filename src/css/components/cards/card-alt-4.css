@@ -1,7 +1,7 @@
 /* Card Alt 4 */
 .card-alt-4__ratings[class][class] {
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
   align-items: center;
   display: flex;
   width: 100%;
@@ -97,7 +97,7 @@
   display: flex;
   align-items: center;
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
 }
 .card-alt-4__ratings-container[class][class]
   .card-alt-4__ratings-icon-wrapper[class][class] {
@@ -364,7 +364,7 @@
 }
 .card-alt-4__ratings[class][class] {
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -391,7 +391,7 @@
   margin-right: var(--spacer-2);
 }
 .card-alt-4__location[class][class] {
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -405,7 +405,7 @@
   }
 }
 .card-alt-4__location--small[class][class] {
-  line-height: var(--f-l-h-bac);
+  line-height: var(--line-height-xs);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -462,8 +462,8 @@
 }
 .card-alt-4__text[class][class] {
   font-size: var(--font-size-xs);
-  line-height: var(--f-l-h-bac);
-  line-height: var(--f-l-h-bac);
+  line-height: var(--line-height-xs);
+  line-height: var(--line-height-xs);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -482,8 +482,8 @@
 @media (min-width: 744px) {
   .card-alt-4__text[class][class] {
     font-size: var(--font-size-sm);
-    line-height: var(--gvarj-f);
-    line-height: var(--gvarj-f);
+    line-height: var(--line-height-md);
+    line-height: var(--line-height-md);
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -498,7 +498,7 @@
 }
 .card-alt-4__text-sm[class][class] {
   font-size: var(--font-size-xs);
-  line-height: var(--f-l-h-bac);
+  line-height: var(--line-height-xs);
 }
 .card-alt-4__media-container[class][class] {
   overflow: hidden;
@@ -556,8 +556,8 @@
 }
 .card-alt-4__title[class][class] {
   font-size: var(--font-size);
-  line-height: var(---s-l-myu);
-  line-height: var(---s-l-myu);
+  line-height: var(--line-height-md);
+  line-height: var(--line-height-md);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -571,8 +571,8 @@
 }
 .card-alt-4__title-sm[class][class] {
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
+  line-height: var(--line-height-sm);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -635,6 +635,6 @@
   -ms-flex-align: center;
   align-items: center;
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
 }
 /* /Card Alt 4 */

@@ -452,11 +452,11 @@
 }
 .card-portrait__overline-compact {
   font-size: var(--font-size-xs);
-  line-height: var(--f-l-h-bac);
+  line-height: var(--line-height-xs);
 }
 .card-portrait__overline-text-compact {
-  line-height: var(--f-l-h-bac);
-  max-height: calc(1 * var(--f-l-h-bac));
+  line-height: var(--line-height-xs);
+  max-height: calc(1 * var(--line-height-xs));
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -470,13 +470,13 @@
 }
 .card-portrait__pricing-text-mobile {
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
 }
 .card-portrait__secondary-line {
   font-size: var(--font-size-xs);
-  line-height: var(--f-l-h-bac);
-  line-height: var(--f-l-h-bac);
-  max-height: calc(3 * var(--f-l-h-bac));
+  line-height: var(--line-height-xs);
+  line-height: var(--line-height-xs);
+  max-height: calc(3 * var(--line-height-xs));
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -491,9 +491,9 @@
 @media (min-width: 744px) {
   .card-portrait__secondary-line {
     font-size: var(--font-size-sm);
-    line-height: var(--gvarj-f);
-    line-height: var(--gvarj-f);
-    max-height: calc(1 * var(--gvarj-f));
+    line-height: var(--line-height-md);
+    line-height: var(--line-height-md);
+    max-height: calc(1 * var(--line-height-md));
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -513,7 +513,7 @@
 }
 .card-portrait__overline {
   font-size: var(--font-size-sm);
-  line-height: var(--j-p-z-kco);
+  line-height: var(--line-height-sm);
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -536,8 +536,8 @@
   margin-right: var(--spacer-2);
 }
 .card-portrait__overline-text {
-  line-height: var(--j-p-z-kco);
-  max-height: calc(1 * var(--j-p-z-kco));
+  line-height: var(--line-height-sm);
+  max-height: calc(1 * var(--line-height-sm));
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -567,7 +567,7 @@
 }
 .card-portrait__pricing-text {
   font-size: var(--font-size);
-  line-height: var(---s-l-myu);
+  line-height: var(--line-height-md);
 }
 .card-portrait__pricing-price,
 .card-portrait__pricing-text-strong {
