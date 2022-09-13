@@ -11367,7 +11367,9 @@ html :where(img[class*='wp-image-']) {
   display: inline !important;
 }
 
-/* Card Alt 1 */
+/*! ---------- */
+/*! Card Alt 1 */
+/*! ---------- */
 @keyframes fade-in-card-alt-1__nav-btn-wrapper {
   from {
     opacity: 0;
@@ -11708,9 +11710,10 @@ html :where(img[class*='wp-image-']) {
 .dir.card-alt-1__btn-save[class][class]:disabled {
   cursor: not-allowed;
 }
-/* /Card Alt 1 */
 
-/* Card Alt 2*/
+/*! ----------- */
+/*! Card Alt 2  */
+/*! ----------- */
 .card-alt-2__img-wrapper {
   position: absolute !important;
   inset: 0 !important;
@@ -11824,9 +11827,10 @@ html :where(img[class*='wp-image-']) {
   line-height: 1.28571em !important;
   color: #484848 !important;
 }
-/* /Card Alt 2*/
 
-/* Card Alt 3 */
+/*! ----------- */
+/*! Card Alt 3  */
+/*! ----------- */
 .card-alt-3 {
   background: 0 0 !important;
   border: none !important;
@@ -11884,9 +11888,10 @@ html :where(img[class*='wp-image-']) {
     padding: 0 20px !important;
   }
 }
-/* /Card Alt 3 */
 
-/* Card Alt 4 */
+/*! ----------- */
+/*! Card Alt 4  */
+/*! ----------- */
 .card-alt-4__ratings[class][class] {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
@@ -12525,9 +12530,10 @@ html :where(img[class*='wp-image-']) {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
 }
-/* /Card Alt 4 */
 
-/* Card Alt 5 */
+/*! ----------- */
+/*! Card Alt 5  */
+/*! ----------- */
 .card-alt-5__subtitle {
   text-transform: uppercase !important;
   font-size: 12px !important;
@@ -12567,9 +12573,10 @@ html :where(img[class*='wp-image-']) {
   line-height: 40px !important;
   text-shadow: 0 0 60px rgba(0, 0, 0, 0.4) !important;
 }
-/* /Card Alt 5 */
 
-/* Card Banner */
+/*! ------------ */
+/*! Card Banner  */
+/*! ------------ */
 .card-banner__container {
   display: block !important;
   border-radius: 12px !important;
@@ -12656,9 +12663,10 @@ html :where(img[class*='wp-image-']) {
 .dir.card-banner[class][class] {
   cursor: pointer;
 }
-/* /Card Banner */
 
-/* Card Basic */
+/*! ----------- */
+/*! Card Basic  */
+/*! ----------- */
 .card-basic__title[class][class] {
   color: var(--gray-900);
   font-size: var(--font-size-md);
@@ -12705,9 +12713,10 @@ html :where(img[class*='wp-image-']) {
     transition: none;
   }
 }
-/* /Card Basic */
 
-/* Card Horizontal Basic */
+/*! --------------------- */
+/*! Card Horizontal Basic */
+/*! --------------------- */
 .card-horizontal-basic {
   -webkit-box-align: center !important;
   font-size: 16px !important;
@@ -12765,9 +12774,10 @@ html :where(img[class*='wp-image-']) {
 .card-horizontal-basic__text:last-child {
   padding-bottom: 0 !important;
 }
-/* /Card Horizontal Basic */
 
-/* Card Horizontal Outlined */
+/*! ------------------------- */
+/*! Card Horizontal Outlined  */
+/*! ------------------------- */
 .card-horizontal-outlined__time-list[class][class] {
   scrollbar-width: none;
   display: flex;
@@ -12862,7 +12872,6 @@ html :where(img[class*='wp-image-']) {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
 }
-/* /Card Horizontal Outlined */
 
 /*! ------------------- */
 /*! Card Icon component */
@@ -13521,9 +13530,9 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/*! ------------------- */
-/*! Card component      */
-/*! ------------------- */
+/*! --------------- */
+/*! Card component  */
+/*! --------------- */
 .card__carousel[class][class] {
   --mis: var(--contentscroller_scroller_margin-inline-start);
   --mie: var(--contentscroller_scroller_margin-inline-end);
