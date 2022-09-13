@@ -1,4 +1,6 @@
-/* Animations */
+/*! ----------------------- */
+/*! CSS animations          */
+/*! ----------------------- */
 @keyframes keyframe_127wuha {
   from {
     opacity: 0;
@@ -1666,4 +1668,19 @@
   }
 }
 
-/* /Animations */
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
