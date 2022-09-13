@@ -1807,7 +1807,7 @@ fieldset[disabled] .btn {
   width: auto !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--c-zdwk-p) !important;
+  font-size: var(--font-size-sm) !important;
   line-height: var(--j-p-z-kco) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -1831,7 +1831,7 @@ fieldset[disabled] .btn {
   -ms-touch-action: manipulation !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--c-zdwk-p) !important;
+  font-size: var(--font-size-sm) !important;
   line-height: var(--j-p-z-kco) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -2498,7 +2498,7 @@ fieldset[disabled] .btn {
   padding-top: var(--spacer-1);
 }
 .btn-filter__text[class][class] {
-  font-size: var(--f-cv-j-j-p);
+  font-size: var(--font-size-xs);
   line-height: var(--f-l-h-bac);
   font-weight: var(--jx-zk-pv);
   display: none;
@@ -2523,7 +2523,7 @@ fieldset[disabled] .btn {
   right: -4px;
 }
 .btn-filter-count__text[class][class] {
-  font-size: var(--hr-k-udr);
+  font-size: var(--font-size-xxs);
   line-height: var(--dpgw-ac);
   color: var(--f-mkcy-f);
   font-weight: var(--h-oqhch);

@@ -75,7 +75,7 @@
   -ms-touch-action: manipulation !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--c-zdwk-p) !important;
+  font-size: var(--font-size-sm) !important;
   line-height: var(--j-p-z-kco) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -210,7 +210,7 @@
   width: auto !important;
   touch-action: manipulation !important;
   font-family: var(--font-family) !important;
-  font-size: var(--c-zdwk-p) !important;
+  font-size: var(--font-size-sm) !important;
   line-height: var(--j-p-z-kco) !important;
   font-weight: var(--jx-zk-pv) !important;
   border-radius: var(--border-radius) !important;
@@ -321,7 +321,7 @@
   .page-shell-mobile__alert-header-text[class][class] {
   color: var(--f-k-smk-x);
   font-weight: var(--h-oqhch);
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
 }
 .dir.page-shell-mobile__alert-attr-notifcation[class][class]
@@ -331,7 +331,7 @@
 .page-shell-mobile__alert-attr-notifcation[class][class]
   .page-shell-mobile__alert-header-desc[class][class] {
   color: var(--f-k-smk-x);
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
 }
 .page-shell-mobile__alert-attr-notifcation[class][class]

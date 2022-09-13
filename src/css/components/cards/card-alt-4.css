@@ -1,6 +1,6 @@
 /* Card Alt 4 */
 .card-alt-4__ratings[class][class] {
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
   align-items: center;
   display: flex;
@@ -96,7 +96,7 @@
 .card-alt-4__ratings-container[class][class] {
   display: flex;
   align-items: center;
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
 }
 .card-alt-4__ratings-container[class][class]
@@ -363,7 +363,7 @@
   position: relative;
 }
 .card-alt-4__ratings[class][class] {
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -461,7 +461,7 @@
   color: var(--fo-jk-r-s);
 }
 .card-alt-4__text[class][class] {
-  font-size: var(--f-cv-j-j-p);
+  font-size: var(--font-size-xs);
   line-height: var(--f-l-h-bac);
   line-height: var(--f-l-h-bac);
   overflow: hidden;
@@ -481,7 +481,7 @@
 }
 @media (min-width: 744px) {
   .card-alt-4__text[class][class] {
-    font-size: var(--i-nh-zme);
+    font-size: var(--font-size-sm);
     line-height: var(--gvarj-f);
     line-height: var(--gvarj-f);
     overflow: hidden;
@@ -497,7 +497,7 @@
   }
 }
 .card-alt-4__text-sm[class][class] {
-  font-size: var(--f-cv-j-j-p);
+  font-size: var(--font-size-xs);
   line-height: var(--f-l-h-bac);
 }
 .card-alt-4__media-container[class][class] {
@@ -570,7 +570,7 @@
   }
 }
 .card-alt-4__title-sm[class][class] {
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
   line-height: var(--j-p-z-kco);
   overflow: hidden;
@@ -634,7 +634,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
 }
 /* /Card Alt 4 */

@@ -451,7 +451,7 @@
   left: 0;
 }
 .card-portrait__overline-compact {
-  font-size: var(--f-cv-j-j-p);
+  font-size: var(--font-size-xs);
   line-height: var(--f-l-h-bac);
 }
 .card-portrait__overline-text-compact {
@@ -469,11 +469,11 @@
   }
 }
 .card-portrait__pricing-text-mobile {
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
 }
 .card-portrait__secondary-line {
-  font-size: var(--f-cv-j-j-p);
+  font-size: var(--font-size-xs);
   line-height: var(--f-l-h-bac);
   line-height: var(--f-l-h-bac);
   max-height: calc(3 * var(--f-l-h-bac));
@@ -490,7 +490,7 @@
 }
 @media (min-width: 744px) {
   .card-portrait__secondary-line {
-    font-size: var(--i-nh-zme);
+    font-size: var(--font-size-sm);
     line-height: var(--gvarj-f);
     line-height: var(--gvarj-f);
     max-height: calc(1 * var(--gvarj-f));
@@ -512,7 +512,7 @@
   }
 }
 .card-portrait__overline {
-  font-size: var(--c-zdwk-p);
+  font-size: var(--font-size-sm);
   line-height: var(--j-p-z-kco);
   -webkit-align-items: center;
   -webkit-box-align: center;

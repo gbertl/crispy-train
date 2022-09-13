@@ -2,7 +2,7 @@
 .jumbotron-header__text[class][class] {
   color: var(--f-k-smk-x);
   font-weight: var(--h-oqhch);
-  font-size: var(--cv-p-u-ui);
+  font-size: var(--font-size-xxl);
   line-height: var(--hu-t-o-g-n);
 }
 .dir.jumbotron-header__text[class][class] {
@@ -10,7 +10,7 @@
 }
 @media (max-width: 743px) {
   .jumbotron-header__text[class][class] {
-    font-size: var(--lhy-d-yl);
+    font-size: var(--font-size-lg);
     line-height: var(--fme-bf-w);
   }
 }
