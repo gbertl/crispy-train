@@ -1,6 +1,6 @@
-/*! ----------------------- */
-/*! Fonts                   */
-/*! ----------------------- */
+/*! ----- */
+/*! Fonts */
+/*! ----- */
 @font-face {
   font-family: Circular;
   unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
@@ -740,9 +740,9 @@
   font-style: normal;
 }
 
-/*! ----------------------- */
-/*! CSS animations          */
-/*! ----------------------- */
+/*! -------------- */
+/*! CSS animations */
+/*! -------------- */
 @keyframes keyframe_127wuha {
   from {
     opacity: 0;
@@ -4473,9 +4473,9 @@ html :where(img[class*='wp-image-']) {
   max-width: 100%;
 }
 
-/*! ------------------- */
-/*! Utility classes     */
-/*! ------------------- */
+/*! --------------- */
+/*! Utility classes */
+/*! --------------- */
 .contents {
   display: contents !important;
 }
@@ -5438,9 +5438,9 @@ html :where(img[class*='wp-image-']) {
   align-self: stretch;
 }
 
-/*! ------------------- */
-/*! Footer              */
-/*! ------------------- */
+/*! ---------------- */
+/*! Footer component */
+/*! ---------------- */
 .footer__links:not(last-child) {
   padding-bottom: 24px !important;
   margin-bottom: 24px !important;
@@ -6300,7 +6300,9 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
-/* Grid */
+/*! ------------ */
+/*! Grid classes */
+/*! ------------ */
 .row {
   display: grid;
   -webkit-column-gap: 16px;
@@ -6406,7 +6408,6 @@ html :where(img[class*='wp-image-']) {
     grid-column: span 6
   }
 }
-/* /Grid */
 
 /*! ---------------- */
 /*! Header component */
@@ -21250,9 +21251,9 @@ input[type='button'].btn-block {
   width: 6px !important;
 }
 
-/*! ------------------- */
-/*! Snackbar            */
-/*! ------------------- */
+/*! -------- */
+/*! Snackbar */
+/*! -------- */
 .snackbar-view-show {
   animation-duration: 0.5s !important;
   animation-iteration-count: 1 !important;
@@ -21303,7 +21304,9 @@ input[type='button'].btn-block {
   margin-top: 12px !important;
 }
 
-/* Spinner Chart */
+/*! ------------- */
+/*! Spinner Chart */
+/*! ------------- */
 .spinner-chart {
   -webkit-box-align: end !important;
   -webkit-box-pack: justify !important;
@@ -21428,11 +21431,10 @@ input[type='button'].btn-block {
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
 }
-/* /Spinner Chart */
 
-/*! ----------------------- */
-/*! Tab component           */
-/*! ----------------------- */
+/*! ------------- */
+/*! Tab component */
+/*! ------------- */
 .tab__on-wrapper {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
@@ -21750,13 +21752,14 @@ input[type='button'].btn-block {
   line-height: 18px !important;
   font-weight: 400 !important;
   color: #717171 !important;
-}.tab__checkbox-mr-16 {
+}
+.tab__checkbox-mr-16 {
   margin-right: 16px !important;
 }
 
-/*! ------------------- */
-/*! Tooltip component   */
-/*! ------------------- */
+/*! ----------------- */
+/*! Tooltip component */
+/*! ----------------- */
 .tooltip {
   z-index: 3000;
   max-width: 280px;
