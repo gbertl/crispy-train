@@ -169,7 +169,7 @@
     padding-right: 8px !important;
   }
 }
-.account-container__menu-list-card {
+.card-icon {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   -webkit-box-direction: normal !important;
@@ -192,7 +192,7 @@
   border-radius: 12px !important;
   text-decoration: none !important;
 }
-.account-container__menu-card-title {
+.card-icon__title {
   font-size: 16px !important;
   line-height: 20px !important;
   color: #222 !important;
@@ -18332,7 +18332,7 @@ full__margin-bottom {
   color: #222 !important;
   font-weight: 400 !important;
 }
-.account-container__menu-card-desc {
+.card-icon__text {
   font-size: 14px !important;
   line-height: 18px !important;
   color: #717171 !important;
