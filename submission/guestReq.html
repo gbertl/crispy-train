@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/global.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/css/pages.css"
-    />
-    <title>Submit your experience - Expertise- Airbnb</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <title>Submit your experience - Guest Request - Airbnb</title>
   </head>
-  <body class="with-new-header">
+  <body class="with-new-header touch">
     <div id="site-skip-links">
       <a
         class="screen-reader-only screen-reader-only-focusable skip-to-content"
@@ -37,6 +34,7 @@
       aria-live="assertive"
     ></div>
     <div id="education-overlay-root"></div>
+
     <div data-application="true">
       <div dir="ltr">
         <div data-theme="" class="app-theme">
@@ -310,8 +308,9 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="expectations-1"
+                                        onclick="window.location.href='expertise.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-wrapper">
+                                        <div class="app-theme__sidebar-expandable-text-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">Expertise</div>
                                           <div class="app-theme__sidebar-expandable-icon-wrapper">
                                             <svg
@@ -584,9 +583,8 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="pricing-and-booking-traveler-requirements"
-                                        onclick="window.location.href='guestReq.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-text-wrapper">
+                                        <div class="app-theme__sidebar-expandable-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
                                             Guest requirements
                                           </div>
@@ -1006,7 +1004,7 @@
               </div>
               <main id="site-content">
                 <div class="site-content__page-wrapper">
-                  <div class="site-content__page-container" id="lyt-page-container">
+                  <div class="site-content__page-wrapper-main" id="lyt-page-container">
                     <div id="lyt-main-header" class="site-content__page-header">
                       <div class="hidden-xl">
                         <button id="side-nav-toggle" aria-expanded="true" type="button" class="header__logo-btn">
@@ -1022,7 +1020,10 @@
                           </span>
                         </button>
                       </div>
-                      <div class="header__logo-btn-text">Expertise</div>
+                      <div class="header__logo-btn-text">Guest requirements</div>
+                      <div class="margin__left-auto">
+                        <button type="button" class="btn-outline-small">Preview</button>
+                      </div>
                     </div>
                     <section class="site-content__page-content">
                       <div class="vh-100">
@@ -1038,137 +1039,466 @@
                                       class="heading"
                                       elementtiming="LCP-target"
                                     >
-                                      Expertise
+                                      Who can attend your experience?
                                     </h1>
+                                  </div>
+                                  <div class="account-container-mb__header-show-more">
+                                    <span class="_11oyobo"
+                                      >Keep in mind that someone booking your
+                                      experience might book spots for other
+                                      guests. If there are strict requirements
+                                      around age, skill level, or
+                                      certifications, include them here.</span
+                                    >
                                   </div>
                                 </div>
                               </section>
                             </div>
-                            <div
-                              class="lite-image"
-                              style="
-                                border-radius: 12px;
-                                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAIAAADUVFKvAAAAO0lEQVQIHQEwAM//AZdiQMzi9BQgJRUaEEYkLgF/UTv5EiA8SFX26eAWAPEBc0It8v8AHSsp8fn36AQPrK0TBFYOvkwAAAAASUVORK5CYII=');
-                                background-size: contain;
-                                --dls-liteimage-padding-top: 66.6667%;
-                              "
-                            >
-                              <div class="lite-image__container">
-                                <img
-                                  class="lite-image__default-static"
-                                  aria-hidden="true"
-                                  alt=""
-                                  elementtiming="LCP-target"
-                                  src="https://a0.muscache.com/pictures/bbc4eb1e-9ec9-4dfb-a108-c371a68d71d2.jpg"
-                                  data-original-uri="https://a0.muscache.com/pictures/bbc4eb1e-9ec9-4dfb-a108-c371a68d71d2.jpg"
-                                  style="
-                                    object-fit: contain;
-                                    border-radius: 12px;
-                                  "
-                                />
+                            <section>
+                              <div class="_7e300w">
+                                <div class="site-content__page-main-option-wrapper">
+                                  <label
+                                    class="form-floating__control"
+                                    for="guest_requirements_min_age_select"
+                                    ><div>
+                                      <div class="_d8a74u">Minimum age</div>
+                                    </div>
+                                    <div class="site-content__page-main-option-select-wrapper">
+                                      <select
+                                        class="site-content__page-main-option-select"
+                                        id="guest_requirements_min_age_select"
+                                      >
+                                        <option value="21">21</option>
+                                        <option value="20">20</option>
+                                        <option value="19">19</option>
+                                        <option value="18">18</option>
+                                        <option value="17">17</option>
+                                        <option value="16">16</option>
+                                        <option value="15">15</option>
+                                        <option value="14">14</option>
+                                        <option value="13">13</option>
+                                        <option value="12">12</option>
+                                        <option value="11">11</option>
+                                        <option value="10">10</option>
+                                        <option value="9">9</option>
+                                        <option value="8">8</option>
+                                        <option value="7">7</option>
+                                        <option value="6">6</option>
+                                        <option value="5">5</option>
+                                        <option value="4">4</option>
+                                        <option value="3">3</option>
+                                        <option value="2">2</option>
+                                      </select>
+                                    </div></label
+                                  >
+                                  <div class="guest-container__selector-icon-wrapper">
+                                    <svg
+                                      viewBox="0 0 32 32"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      aria-hidden="true"
+                                      role="presentation"
+                                      focusable="false"
+                                      style="
+                                        display: block;
+                                        fill: none;
+                                        height: 16px;
+                                        width: 16px;
+                                        stroke: currentcolor;
+                                        stroke-width: 4;
+                                        overflow: visible;
+                                      "
+                                    >
+                                      <g fill="none">
+                                        <path
+                                          d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"
+                                        ></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="become-a-host__preview-loc-desc">
+                                  Set age limits for guests. Minors can only
+                                  attend with their legal guardian.
+                                </div>
+                              </div>
+                              <div class="site-content__page-main-option-label">
                                 <div
-                                  class="lite-image__fallback"
-                                  style="
-                                    background-image: url('https://a0.muscache.com/pictures/bbc4eb1e-9ec9-4dfb-a108-c371a68d71d2.jpg');
-                                    background-size: contain;
-                                    border-radius: 12px;
-                                  "
-                                ></div>
-                              </div>
-                            </div>
-                            <div class="site-content__content-wrapper-rules">
-                              <div class="inline">
-                                <p class="site-content__content-wrapper-rules-note">
-                                  We’re looking for passionate storytellers who
-                                  can share a unique perspective and insider
-                                  knowledge.
-                                </p>
-                                This could include:
-                                <ul class="site-content__content-wrapper-rules-ol">
-                                  <li>Being a well-informed enthusiast</li>
-                                  <li>Having specialized training</li>
-                                  <li>Having achievements in your field</li>
-                                </ul>
-                                <p class="site-content__content-wrapper-rules-note">
-                                  Guests value hosts with a distinctive point of
-                                  view they can’t find elsewhere.
-                                </p>
-                              </div>
-                            </div>
-                            <div class="site-content__content-wrapper-rules-radio-grp">
-                              <div class="">
-                                <div class="margin__y-24">
-                                  <fieldset class="site-content__content-fieldset" role="radiogroup">
-                                    <legend class="site-content__content-menu-legend">
-                                      <div class="inline">
-                                        Have you hosted this activity before?
+                                  id="guest_requirements_infant_can_attend"
+                                  aria-disabled="false"
+                                  role="group"
+                                  aria-labelledby="guest_requirements_infant_can_attend-row-title"
+                                  class="explore-filter-menu__list-padding explore-filter-menu__list-padding--reset dir dir-ltr"
+                                >
+                                  <label
+                                    for="guest_requirements_infant_can_attend-row-checkbox"
+                                    class="cursor-pointer"
+                                    ><div class="flex">
+                                      <div class="explore-filter-menu__list-label">
+                                        <div
+                                          id="guest_requirements_infant_can_attend-row-title"
+                                          class="list-title"
+                                        >
+                                          Parents can bring kids under 2 years
+                                        </div>
                                       </div>
+                                      <div class="become-a-host__count-action-wrapper">
+                                        <span class="explore-filter-menu__list-content"
+                                          ><input
+                                            aria-labelledby="guest_requirements_infant_can_attend-row-title"
+                                            id="guest_requirements_infant_can_attend-row-checkbox"
+                                            class="form__check-input"
+                                            type="checkbox" /><span
+                                            class="explore-filter-menu__list-checkbox"
+                                            data-checkbox="true"
+                                          ></span
+                                        ></span>
+                                      </div></div
+                                  ></label>
+                                </div>
+                              </div>
+                              <div class="_9j2psw">
+                                <div class="">
+                                  <fieldset class="site-content__content-fieldset">
+                                    <legend class="site-content__content-menu-legend">
+                                      <div class="main-content__schedule-text">
+                                        Does your experience have any
+                                        accessibility features? (optional)
+                                      </div>
+                                      <div class="tab__header-desc"></div>
                                     </legend>
-                                    <div class="place__recommended-no">
-                                      <label
-                                        for="info_previously_hosted_activity-Yes, I’ve hosted or taught this activity professionally"
-                                        class="flex"
-                                        ><input
-                                          id="info_previously_hosted_activity-Yes, I’ve hosted or taught this activity professionally"
-                                          name="info_previously_hosted_activity"
-                                          class="site-content__content-wrapper-rules-radio-yes"
-                                          aria-invalid="false"
-                                          type="radio"
-                                          data-veloute="info_previously_hosted_activity-0"
-                                          value="0"
-                                          checked=""
-                                        /><span class="site-content__content-wrapper-rules-radio-text-wrapper"
-                                          ><div class="payment-payout__notice-desc">
-                                            Yes, I’ve hosted or taught this
-                                            activity professionally
-                                          </div></span
-                                        ></label
+                                    <div class="contact-host__textarea-container">
+                                      <div
+                                        id="Tag:4804"
+                                        aria-disabled="false"
+                                        role="group"
+                                        aria-labelledby="Tag:4804-row-title"
+                                        class="explore-filter-menu__list-padding become-a-host__price-discount-card dir dir-ltr"
                                       >
+                                        <label
+                                          for="Tag:4804-row-checkbox"
+                                          class="cursor-pointer"
+                                          ><div class="flex">
+                                            <div class="explore-filter-menu__list-label">
+                                              <div
+                                                id="Tag:4804-row-title"
+                                                class="list-title"
+                                              >
+                                                Communication accessibility
+                                                features
+                                              </div>
+                                              <div
+                                                id="Tag:4804-row-subtitle"
+                                                class="personal-info__phone-number-desc"
+                                              >
+                                                This is how you communicate with
+                                                guests on your experience.
+                                              </div>
+                                            </div>
+                                            <div class="become-a-host__count-action-wrapper">
+                                              <span class="explore-filter-menu__list-content"
+                                                ><input
+                                                  aria-labelledby="Tag:4804-row-title"
+                                                  aria-describedby="Tag:4804-row-subtitle"
+                                                  id="Tag:4804-row-checkbox"
+                                                  class="form__check-input"
+                                                  aria-invalid="false"
+                                                  type="checkbox" /><span
+                                                  class="explore-filter-menu__list-checkbox"
+                                                  data-checkbox="true"
+                                                ></span
+                                              ></span>
+                                            </div></div
+                                        ></label>
+                                      </div>
                                     </div>
-                                    <div class="place__recommended-no">
-                                      <label
-                                        for="info_previously_hosted_activity-Yes, I’ve hosted this activity informally for friends or family"
-                                        class="flex"
-                                        ><input
-                                          id="info_previously_hosted_activity-Yes, I’ve hosted this activity informally for friends or family"
-                                          name="info_previously_hosted_activity"
-                                          class="site-content__content-wrapper-rules-radio-no"
-                                          aria-invalid="false"
-                                          type="radio"
-                                          data-veloute="info_previously_hosted_activity-1"
-                                          value="1"
-                                        /><span class="site-content__content-wrapper-rules-radio-text-wrapper"
-                                          ><div class="payment-payout__notice-desc">
-                                            Yes, I’ve hosted this activity
-                                            informally for friends or family
-                                          </div></span
-                                        ></label
+                                    <div class="contact-host__textarea-container">
+                                      <div
+                                        id="Tag:4802"
+                                        aria-disabled="false"
+                                        role="group"
+                                        aria-labelledby="Tag:4802-row-title"
+                                        class="explore-filter-menu__list-padding become-a-host__price-discount-card dir dir-ltr"
                                       >
+                                        <label
+                                          for="Tag:4802-row-checkbox"
+                                          class="cursor-pointer"
+                                          ><div class="flex">
+                                            <div class="explore-filter-menu__list-label">
+                                              <div
+                                                id="Tag:4802-row-title"
+                                                class="list-title"
+                                              >
+                                                Environmental accessibility
+                                                features
+                                              </div>
+                                              <div
+                                                id="Tag:4802-row-subtitle"
+                                                class="personal-info__phone-number-desc"
+                                              >
+                                                These are the physical
+                                                attributes of the location of
+                                                your Experience or any modified
+                                                equipment you provide.
+                                              </div>
+                                            </div>
+                                            <div class="become-a-host__count-action-wrapper">
+                                              <span class="explore-filter-menu__list-content"
+                                                ><input
+                                                  aria-labelledby="Tag:4802-row-title"
+                                                  aria-describedby="Tag:4802-row-subtitle"
+                                                  id="Tag:4802-row-checkbox"
+                                                  class="form__check-input"
+                                                  aria-invalid="false"
+                                                  type="checkbox" /><span
+                                                  class="explore-filter-menu__list-checkbox"
+                                                  data-checkbox="true"
+                                                ></span
+                                              ></span>
+                                            </div></div
+                                        ></label>
+                                      </div>
                                     </div>
-                                    <div class="place__recommended-no">
-                                      <label
-                                        for="info_previously_hosted_activity-No, I’ve never hosted this activity before"
-                                        class="flex"
-                                        ><input
-                                          id="info_previously_hosted_activity-No, I’ve never hosted this activity before"
-                                          name="info_previously_hosted_activity"
-                                          class="site-content__content-wrapper-rules-radio-no"
-                                          aria-invalid="false"
-                                          type="radio"
-                                          data-veloute="info_previously_hosted_activity-2"
-                                          value="2"
-                                        /><span class="site-content__content-wrapper-rules-radio-text-wrapper"
-                                          ><div class="payment-payout__notice-desc">
-                                            No, I’ve never hosted this activity
-                                            before
-                                          </div></span
-                                        ></label
+                                    <div class="contact-host__textarea-container">
+                                      <div
+                                        id="Tag:4805"
+                                        aria-disabled="false"
+                                        role="group"
+                                        aria-labelledby="Tag:4805-row-title"
+                                        class="explore-filter-menu__list-padding become-a-host__price-discount-card dir dir-ltr"
                                       >
+                                        <label
+                                          for="Tag:4805-row-checkbox"
+                                          class="cursor-pointer"
+                                          ><div class="flex">
+                                            <div class="explore-filter-menu__list-label">
+                                              <div
+                                                id="Tag:4805-row-title"
+                                                class="list-title"
+                                              >
+                                                Other accessibility features
+                                              </div>
+                                            </div>
+                                            <div class="become-a-host__count-action-wrapper">
+                                              <span class="explore-filter-menu__list-content"
+                                                ><input
+                                                  aria-labelledby="Tag:4805-row-title"
+                                                  id="Tag:4805-row-checkbox"
+                                                  class="form__check-input"
+                                                  aria-invalid="false"
+                                                  type="checkbox" /><span
+                                                  class="explore-filter-menu__list-checkbox"
+                                                  data-checkbox="true"
+                                                ></span
+                                              ></span>
+                                            </div></div
+                                        ></label>
+                                      </div>
                                     </div>
                                   </fieldset>
                                 </div>
                               </div>
-                            </div>
+                              <div class="_9j2psw">
+                                <div
+                                  class="dir dir-ltr"
+                                  role="group"
+                                  id="activity_level"
+                                  aria-labelledby="activity_level-DLS-chipGroup-label"
+                                >
+                                  <div
+                                    class="dir dir-ltr"
+                                    id="activity_level-DLS-chipGroup-label"
+                                  >
+                                    <div class="main-content__schedule-text">
+                                      What activity level should people expect?
+                                    </div>
+                                    <div class="tab__header-desc">
+                                      Think about how active people will get
+                                      during your entire experience.
+                                    </div>
+                                  </div>
+                                  <div class="guest-req__category-option">
+                                    <button
+                                      data-testid="Tag:4605"
+                                      class="badge-active"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="true"
+                                      type="button"
+                                    >
+                                      Light<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Light</span
+                                      ></button
+                                    ><button
+                                      data-testid="Tag:4606"
+                                      class="badge"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="false"
+                                      type="button"
+                                    >
+                                      Moderate<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Moderate</span
+                                      ></button
+                                    ><button
+                                      data-testid="Tag:4607"
+                                      class="badge"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="false"
+                                      type="button"
+                                    >
+                                      Strenuous<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Strenuous</span
+                                      ></button
+                                    ><button
+                                      data-testid="Tag:6462"
+                                      class="badge"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="false"
+                                      type="button"
+                                    >
+                                      Extreme<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Extreme</span
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="_9j2psw">
+                                <div
+                                  class="dir dir-ltr"
+                                  role="group"
+                                  id="skill_level"
+                                  aria-labelledby="skill_level-DLS-chipGroup-label"
+                                >
+                                  <div
+                                    class="dir dir-ltr"
+                                    id="skill_level-DLS-chipGroup-label"
+                                  >
+                                    <div class="main-content__schedule-text">
+                                      What skill level is required?
+                                    </div>
+                                    <div class="tab__header-desc">
+                                      Think about how experienced people should
+                                      be to take your activity.
+                                    </div>
+                                  </div>
+                                  <div class="guest-req__category-option">
+                                    <button
+                                      data-testid="Tag:4790"
+                                      class="badge-active"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="true"
+                                      type="button"
+                                    >
+                                      Beginner<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Beginner</span
+                                      ></button
+                                    ><button
+                                      data-testid="Tag:4791"
+                                      class="badge"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="false"
+                                      type="button"
+                                    >
+                                      Intermediate<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Intermediate</span
+                                      ></button
+                                    ><button
+                                      data-testid="Tag:4792"
+                                      class="badge"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="false"
+                                      type="button"
+                                    >
+                                      Advanced<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Advanced</span
+                                      ></button
+                                    ><button
+                                      data-testid="Tag:179"
+                                      class="badge"
+                                      role="radio"
+                                      aria-invalid="false"
+                                      aria-checked="false"
+                                      type="button"
+                                    >
+                                      Expert<span
+                                        aria-hidden="true"
+                                        class="button__hidden-text"
+                                        >Expert</span
+                                      >
+                                    </button>
+                                  </div>
+                                </div>
+                                <div class="booking-setting__suggestion">
+                                  <div class="booking-setting__suggestion-wrapper">
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                      role="presentation"
+                                      aria-hidden="true"
+                                      focusable="false"
+                                      style="
+                                        height: 26px;
+                                        width: 26px;
+                                        display: block;
+                                        fill: rgb(96, 182, 181);
+                                      "
+                                    >
+                                      <path
+                                        d="m7.54 18.01a1.54 1.54 0 0 1 -1.54-1.54v-9.92a1.54 1.54 0 0 1 2.63-1.09l9.93 9.92a1.54 1.54 0 0 1 -1.09 2.63z"
+                                      ></path>
+                                      <path
+                                        d="m21.19 4.96a.5.5 0 0 1 -.65-.28l-.51-1.27-2.56 7.25a.5.5 0 0 1 -.83.19l-2.47-2.47-2.71 6.32a.5.5 0 1 1 -.92-.39l3-7a .5.5 0 0 1 .37-.29.51.51 0 0 1 .45.14l2.44 2.44 2.3-6.55-1.36.73a.5.5 0 1 1 -.47-.88l2.5-1.33a.5.5 0 0 1 .7.26l1 2.5a.5.5 0 0 1 -.28.65zm-1.19 15.04h-11.06l1.52-3.29a.5.5 0 0 0 -.91-.42l-1.72 3.71h-3.83v-15.5a.5.5 0 0 0 -1 0v16a .5.5 0 0 0 .5.5h3.87l-.83 1.79a.5.5 0 0 0 .91.42l1.02-2.21h11.53a.5.5 0 0 0 0-1z"
+                                        fill="#484848"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  We suggest Beginner skill level based on your
+                                  previous selections. Make sure it’s accurate
+                                  so guests know what to expect.
+                                </div>
+                              </div>
+                              <div class="_9j2psw">
+                                <label for="trip_template_traveler_requirements"
+                                  ><div class="textarea-label-wrapper">
+                                    <div class="_d8a74u">
+                                      Additional requirements (optional)
+                                    </div>
+                                  </div>
+                                  <div class="contact-host__textarea-container">
+                                    <div class="contact-host__textarea-wrapper">
+                                      <div dir="ltr">
+                                        <textarea
+                                          name="trip_template_traveler_requirements"
+                                          rows="4"
+                                          class="textarea"
+                                          autocomplete="off"
+                                          id="trip_template_traveler_requirements"
+                                          placeholder="E.g. Guests should have prior surfing experience, guests must have a scuba license, guests should be comfortable around dogs, etc."
+                                        ></textarea>
+                                      </div>
+                                    </div></div
+                                ></label>
+                              </div>
+                            </section>
                           </div>
                         </div>
                         <footer class="footer__item-list">
@@ -1220,7 +1550,450 @@
                       </div>
                     </section>
                   </div>
-                  <div class="site-main__spacer"></div>
+                  <div class="site-content__page-wrapper-right">
+                    <div class="site-content__page-wrapper-right-wrapper">
+                      <div>
+                        <div id="support-panel-header" class="site-content__page-wrapper-right-header">
+                          <h2 class="site-content__page-right-header-text">Tips</h2>
+                        </div>
+                      </div>
+                      <div class="site-content__page-right-tips" tabindex="0" aria-label="Tips">
+                        <div class="site-content__page-right-tips-wrapper">
+                          <div class="site-content__page-right-dos-donts">
+                            <div class="site-content__dos-donts-header">
+                              <h3 class="site-content__dos-donts-header-h3">Do</h3>
+                            </div>
+                            <div class="site-content__dos-donts-list">
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 25.2 4.7 6.2 12.1-11.2"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Remember that people might book spots for
+                                      multiple guests, across multiple ages and
+                                      skills levels, at once
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 25.2 4.7 6.2 12.1-11.2"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Be honest about any age, exertion, or
+                                      skill limits need to participate
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 25.2 4.7 6.2 12.1-11.2"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Make sure that any child who joins is
+                                      accompanied by an adult
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 25.2 4.7 6.2 12.1-11.2"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Tell guests if there’s anything they need
+                                      to read or prepare before your experience
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 0px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 25.2 4.7 6.2 12.1-11.2"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Mention that online experiences are best
+                                      when they’re interactive and the guests
+                                      participate
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="site-content__page-right-dos-donts">
+                            <div class="site-content__dos-donts-header">
+                              <h3 class="site-content__dos-donts-header-h3">Don't</h3>
+                            </div>
+                            <div class="site-content__dos-donts-list">
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 19.1 l14 14 m 0 -14 l -14 14"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Expect that all guests will have the same
+                                      skill level or expertise
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 19.1 l14 14 m 0 -14 l -14 14"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Include physical requirements that put
+                                      people’s safety at risk
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 19.1 l14 14 m 0 -14 l -14 14"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Select a high activity or skill level
+                                      without outlining specifics or explaining
+                                      what’s involved
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 0px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div
+                                        class="site-content__dos-donts-icon-wrapper"
+                                        style="
+                                          width: 20px;
+                                          height: 20px;
+                                          background: rgb(247, 247, 247);
+                                          color: rgb(113, 113, 113);
+                                        "
+                                      >
+                                        <svg
+                                          viewBox="0 0 52 52"
+                                          fill="currentColor"
+                                          fill-opacity="0"
+                                          stroke="#717171"
+                                          stroke-width="3"
+                                          focusable="false"
+                                          aria-hidden="true"
+                                          role="presentation"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          style="
+                                            height: 100%;
+                                            width: 100%;
+                                            display: block;
+                                            overflow: visible;
+                                          "
+                                        >
+                                          <path
+                                            d="m19.1 19.1 l14 14 m 0 -14 l -14 14"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Mislead guests about accessibility or
+                                      adaptations you can or can’t make
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </main>
             </div>

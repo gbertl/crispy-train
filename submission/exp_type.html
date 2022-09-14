@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/global.css" />
-    <link rel="stylesheet" href="../../assets/css/pages.css" />
-    <title>Submit your experience - What well we do - Airbnb</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <title>Submit your experience - Experience type - Airbnb</title>
   </head>
-  <body class="with-new-header touch">
+  <body class="with-new-header">
     <div id="site-skip-links">
       <a
         class="screen-reader-only screen-reader-only-focusable skip-to-content"
@@ -132,9 +132,8 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="experience-type"
-                                        onclick="window.location.href='exp_type.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-text-wrapper">
+                                        <div class="app-theme__sidebar-expandable-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
                                             Experience type
                                           </div>
@@ -486,8 +485,9 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="experience-what-you-will-do-1"
+                                        onclick="window.location.href='wwd.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-wrapper">
+                                        <div class="app-theme__sidebar-expandable-text-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
                                             What we’ll do
                                           </div>
@@ -1010,20 +1010,17 @@
                         <button id="side-nav-toggle" aria-expanded="true" type="button" class="header__logo-btn">
                           <span>
                             <svg viewBox="0 0 16 16" role="img" aria-hidden="false" aria-label="Toggle step navigation" focusable="false" style="
-                                height: 14px;
-                                width: 14px;
-                                display: block;
-                                fill: currentcolor;
+                              height: 14px;
+                              width: 14px;
+                              display: block;
+                              fill: currentcolor;
                               ">
                               <path d="m15.25 12.5a.75.75 0 01-.75.75h-13a .75.75 0 010-1.5h13a .75.75 0 01 .75.75zm-.75-5.75h-13a .75.75 0 100 1.5h13a .75.75 0 000-1.5zm-13-3.5h13a .75.75 0 000-1.5h-13a .75.75 0 100 1.5z" fill-rule="evenodd"></path>
                             </svg>
                           </span>
                         </button>
                       </div>
-                      <div class="header__logo-btn-text">What we’ll do</div>
-                      <div class="margin__left-auto">
-                        <button type="button" class="btn-outline-small">Preview</button>
-                      </div>
+                      <div class="header__logo-btn-text">Experience type</div>
                     </div>
                     <section class="site-content__page-content">
                       <div class="vh-100">
@@ -1039,196 +1036,67 @@
                                       class="heading"
                                       elementtiming="LCP-target"
                                     >
-                                      Next, let's describe your experience
+                                      What kind of experience do you want to
+                                      host?
                                     </h1>
                                   </div>
                                 </div>
                               </section>
                             </div>
                             <div class="site-content__content-menu">
-                              <div id="description-label" class="guest-container__form-question">
-                                What will you and your guests do?
-                              </div>
-                              <ul class="guest-container__form-question-ul">
-                                <li class="guest-container__form-question-li">
-                                  Provide specific plans from start to finish,
-                                  not multiple ideas or options
-                                </li>
-                                <li class="guest-container__form-question-li">
-                                  Describe what makes your experience
-                                  special—something that guests wouldn’t do on
-                                  their own
-                                </li>
-                              </ul>
-                              <div class="contact-host__textarea-container">
-                                <div class="contact-host__textarea-wrapper">
-                                  <div dir="ltr">
-                                    <textarea
-                                      maxlength="1400"
-                                      minlength="200"
-                                      aria-labelledby="description-label"
-                                      rows="9"
-                                      class="textarea"
-                                      autocomplete="off"
-                                      id="description-textarea"
-                                      placeholder="Tell guests the story of what they’ll do during your experience."
-                                    >
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea
-                                    >
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="_1b3feto">
-                                <div
-                                  class="description-textarea__help"
-                                  id="description-textarea-help"
+                              <div role="radiogroup">
+                                <button
+                                  class="list-group__btn"
+                                  type="button"
+                                  role="radio"
+                                  aria-checked="false"
+                                  data-testid="offline-button"
+                                  theme="[object Object]"
                                 >
-                                  <span aria-hidden="true">574/1400</span
-                                  ><span
-                                    class="text-highlight dir dir-ltr"
-                                    aria-atomic="true"
-                                    aria-live="polite"
-                                    >574 out of 1400 characters used</span
-                                  >
-                                </div>
-                                <div class="_63wpx2">
-                                  <button type="button" class="btn-link-condensed">
-                                    Show examples
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="_1ww49e7">
-                              <fieldset class="site-content__content-fieldset">
-                                <legend class="site-content__content-menu-legend">
-                                  <div class="site-content__content-menu-question">
-                                    How long is your experience?
+                                  <div class="site-content__content-menu-list">
+                                    <div class="site-content__menu-header">In person</div>
+                                    <div class="site-content__menu-desc">
+                                      Guests will join you in the real world,
+                                      for hands-on participation.
+                                    </div>
                                   </div>
-                                </legend>
-                                <div>
-                                  <div class="form-floating">
-                                    <label
-                                      class="form-floating__control"
-                                      for="experience_duration"
-                                      ><div class="form-floating__label">
-                                        <div class="spinner-chart__input-title-text">Duration</div>
-                                      </div>
-                                      <div class="box-border">
-                                        <select
-                                          name="experience_duration"
-                                          aria-describedby="experience_duration-InputField-help"
-                                          class="form__select"
-                                          id="experience_duration"
-                                        >
-                                          <option value="0.5" id="0.5">
-                                            0.5 hours
-                                          </option>
-                                          <option value="0.75" id="0.75">
-                                            0.75 hours
-                                          </option>
-                                          <option value="1" id="1">
-                                            1 hour
-                                          </option>
-                                          <option value="1.25" id="1.25">
-                                            1.25 hours
-                                          </option>
-                                          <option value="1.5" id="1.5">
-                                            1.5 hours
-                                          </option>
-                                          <option value="1.75" id="1.75">
-                                            1.75 hours
-                                          </option>
-                                          <option value="2" id="2">
-                                            2 hours
-                                          </option>
-                                          <option value="2.5" id="2.5">
-                                            2.5 hours
-                                          </option>
-                                          <option value="3" id="3">
-                                            3 hours
-                                          </option>
-                                          <option value="3.5" id="3.5">
-                                            3.5 hours
-                                          </option>
-                                          <option value="4" id="4">
-                                            4 hours
-                                          </option>
-                                          <option value="4.5" id="4.5">
-                                            4.5 hours
-                                          </option>
-                                          <option value="5" id="5">
-                                            5 hours
-                                          </option>
-                                          <option value="5.5" id="5.5">
-                                            5.5 hours
-                                          </option>
-                                          <option value="6" id="6">
-                                            6 hours
-                                          </option>
-                                          <option value="6.5" id="6.5">
-                                            6.5 hours
-                                          </option>
-                                          <option value="7" id="7">
-                                            7 hours
-                                          </option>
-                                          <option value="7.5" id="7.5">
-                                            7.5 hours
-                                          </option>
-                                          <option value="8" id="8">
-                                            8 hours
-                                          </option>
-                                          <option value="8.5" id="8.5">
-                                            8.5 hours
-                                          </option>
-                                          <option value="9" id="9">
-                                            9 hours
-                                          </option>
-                                          <option value="9.5" id="9.5">
-                                            9.5 hours
-                                          </option>
-                                          <option value="10" id="10">
-                                            10 hours
-                                          </option>
-                                          <option value="10.5" id="10.5">
-                                            10.5 hours
-                                          </option>
-                                          <option value="11" id="11">
-                                            11 hours
-                                          </option>
-                                          <option value="11.5" id="11.5">
-                                            11.5 hours
-                                          </option>
-                                          <option value="12" id="12">
-                                            12 hours
-                                          </option>
-                                          <option value="12.5" id="12.5">
-                                            12.5 hours
-                                          </option>
-                                          <option value="13" id="13">
-                                            13 hours
-                                          </option>
-                                          <option value="13.5" id="13.5">
-                                            13.5 hours
-                                          </option>
-                                          <option value="14" id="14">
-                                            14 hours
-                                          </option>
-                                          <option value="14.5" id="14.5">
-                                            14.5 hours
-                                          </option>
-                                          <option value="15" id="15">
-                                            15 hours
-                                          </option>
-                                          <option value="15.5" id="15.5">
-                                            15.5 hours
-                                          </option>
-                                          <option value="16" id="16">
-                                            16 hours
-                                          </option>
-                                        </select>
-                                      </div></label
+                                  <div class="site-content__menu-icon">
+                                    <svg
+                                      viewBox="0 0 32 32"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      aria-hidden="true"
+                                      role="presentation"
+                                      focusable="false"
+                                      style="
+                                        display: block;
+                                        height: 32px;
+                                        width: 32px;
+                                        fill: currentcolor;
+                                      "
                                     >
-                                    <div class="form-floating__addon">
+                                      <path
+                                        d="M22 5a6 6 0 0 1 3.643 10.768 9.003 9.003 0 0 1 5.353 7.967L31 24h-2a7.002 7.002 0 0 0-5.999-6.929v-2.197A4.002 4.002 0 0 0 22 7a4 4 0 0 0-3.679 5.574A4.991 4.991 0 0 1 21 17a4.986 4.986 0 0 1-1.599 3.665 9.003 9.003 0 0 1 5.595 8.07L25 29h-2a7.002 7.002 0 0 0-5.999-6.929v-2.242a3.001 3.001 0 1 0-2 0L15 22.071a7.002 7.002 0 0 0-5.996 6.688L9 29H7a9.003 9.003 0 0 1 5.6-8.335 5 5 0 0 1 1.077-8.093A4 4 0 1 0 9 14.874v2.197a7.002 7.002 0 0 0-5.996 6.688L3 24H1a9.002 9.002 0 0 1 5.357-8.232A6 6 0 1 1 15.917 10h.166A6.002 6.002 0 0 1 22 5z"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                </button>
+                                <div class="site-content__menu-list">
+                                  <button
+                                    class="list-group__btn--active"
+                                    type="button"
+                                    role="radio"
+                                    aria-checked="true"
+                                    data-testid="online-button"
+                                    theme="[object Object]"
+                                  >
+                                    <div class="site-content__content-menu-list">
+                                      <div class="site-content__menu-header">Online only</div>
+                                      <div class="site-content__menu-desc">
+                                        Guests will join you virtually, using
+                                        Zoom video conferencing software.
+                                      </div>
+                                    </div>
+                                    <div class="site-content__menu-icon">
                                       <svg
                                         viewBox="0 0 32 32"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -1237,168 +1105,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                                         focusable="false"
                                         style="
                                           display: block;
-                                          fill: none;
-                                          height: 16px;
-                                          width: 16px;
-                                          stroke: currentcolor;
-                                          stroke-width: 4;
-                                          overflow: visible;
+                                          height: 32px;
+                                          width: 32px;
+                                          fill: currentcolor;
                                         "
                                       >
-                                        <g fill="none">
-                                          <path
-                                            d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"
-                                          ></path>
-                                        </g>
+                                        <path
+                                          d="M26 3a5 5 0 0 1 4.995 4.783L31 8v12a5 5 0 0 1-4.783 4.995L26 25h-5v2h2v2H9v-2h2v-2H6a5 5 0 0 1-4.995-4.783L1 20V8a5 5 0 0 1 4.783-4.995L6 3zm-7 22h-6v2h6zm7-20H6a3 3 0 0 0-2.995 2.824L3 8v12a3 3 0 0 0 2.824 2.995L6 23h20a3 3 0 0 0 2.995-2.824L29 20V8a3 3 0 0 0-3-3zM5 11c5.43 0 9.848 4.327 9.996 9.72L15 21h-2a8 8 0 0 0-7.75-7.996L5 13zm0 4a6 6 0 0 1 5.996 5.775L11 21H9a4 4 0 0 0-3.8-3.995L5 17zm0 4a2 2 0 0 1 1.995 1.85L7 21H5z"
+                                        ></path>
                                       </svg>
                                     </div>
-                                  </div>
-                                  <div class="place__recommended-no">
-                                    <div
-                                      class="description-textarea__help"
-                                      id="experience_duration-InputField-help"
-                                    >
-                                      Online experiences are typically 2 hours
-                                      or less.
-                                    </div>
-                                  </div>
-                                </div>
-                              </fieldset>
-                            </div>
-                            <div class="_uflomg">
-                              <div class="">
-                                <div class="margin__y-24">
-                                  <div class="_1f785j7">
-                                    <div class="inline">
-                                      Where will you broadcast from?
-                                    </div>
-                                  </div>
-                                  <div
-                                    id="info_where_are_you_broadcasting-Indoors or on my personal property"
-                                    aria-disabled="false"
-                                    class="explore-filter-menu__list-padding become-a-host__price-discount-card dir dir-ltr"
-                                  >
-                                    <label
-                                      for="info_where_are_you_broadcasting-Indoors or on my personal property-row-radio-button"
-                                      class="cursor-pointer"
-                                      ><div class="flex">
-                                        <div class="explore-filter-menu__list-label">
-                                          <div
-                                            id="info_where_are_you_broadcasting-Indoors or on my personal property-row-title"
-                                            class="list-title"
-                                          >
-                                            Indoors or on my personal property
-                                          </div>
-                                          <div
-                                            id="info_where_are_you_broadcasting-Indoors or on my personal property-row-subtitle"
-                                            class="personal-info__phone-number-desc"
-                                          >
-                                            Ex: My living room or backyard
-                                          </div>
-                                        </div>
-                                        <div class="become-a-host__count-action-wrapper">
-                                          <input
-                                            aria-labelledby="info_where_are_you_broadcasting-Indoors or on my personal property-row-title"
-                                            aria-describedby="info_where_are_you_broadcasting-Indoors or on my personal property-row-subtitle"
-                                            id="info_where_are_you_broadcasting-Indoors or on my personal property-row-radio-button"
-                                            class="explore-filter-menu__radio-input"
-                                            aria-invalid="false"
-                                            type="radio"
-                                            data-veloute="info_where_are_you_broadcasting-0"
-                                            value="0"
-                                            checked=""
-                                          />
-                                        </div></div
-                                    ></label>
-                                  </div>
-                                  <div
-                                    id="info_where_are_you_broadcasting-Outdoors and not on my personal property"
-                                    aria-disabled="false"
-                                    class="explore-filter-menu__list-padding become-a-host__price-discount-card dir dir-ltr"
-                                  >
-                                    <label
-                                      for="info_where_are_you_broadcasting-Outdoors and not on my personal property-row-radio-button"
-                                      class="cursor-pointer"
-                                      ><div class="flex">
-                                        <div class="explore-filter-menu__list-label">
-                                          <div
-                                            id="info_where_are_you_broadcasting-Outdoors and not on my personal property-row-title"
-                                            class="list-title"
-                                          >
-                                            Outdoors and not on my personal
-                                            property
-                                          </div>
-                                          <div
-                                            id="info_where_are_you_broadcasting-Outdoors and not on my personal property-row-subtitle"
-                                            class="personal-info__phone-number-desc"
-                                          >
-                                            Ex: At a local park or tourist
-                                            attraction
-                                          </div>
-                                        </div>
-                                        <div class="become-a-host__count-action-wrapper">
-                                          <input
-                                            aria-labelledby="info_where_are_you_broadcasting-Outdoors and not on my personal property-row-title"
-                                            aria-describedby="info_where_are_you_broadcasting-Outdoors and not on my personal property-row-subtitle"
-                                            id="info_where_are_you_broadcasting-Outdoors and not on my personal property-row-radio-button"
-                                            class="radio__button"
-                                            aria-invalid="false"
-                                            type="radio"
-                                            data-veloute="info_where_are_you_broadcasting-1"
-                                            value="1"
-                                          />
-                                        </div></div
-                                    ></label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="_1ww49e7">
-                              <div class="_zcwkek">
-                                <div
-                                  id="CustomView:113"
-                                  aria-disabled="false"
-                                  role="group"
-                                  aria-labelledby="CustomView:113-row-title"
-                                  class="explore-filter-menu__list-padding dir dir-ltr"
-                                >
-                                  <div class="flex">
-                                    <div class="explore-filter-menu__list-label">
-                                      <button type="button" class="account-container-mb__menu-btn">
-                                        <span class="account-container-mb__menu-btn-wrapper"
-                                          ><div
-                                            id="CustomView:113-row-title"
-                                            class="list-title"
-                                          >
-                                            Animal species
-                                          </div>
-                                          <span class="account-container-mb__menu-arrow"
-                                            ><svg
-                                              viewBox="0 0 32 32"
-                                              xmlns="http://www.w3.org/2000/svg"
-                                              aria-hidden="true"
-                                              role="presentation"
-                                              focusable="false"
-                                              style="
-                                                display: block;
-                                                fill: none;
-                                                height: 16px;
-                                                width: 16px;
-                                                stroke: currentcolor;
-                                                stroke-width: 4;
-                                                overflow: visible;
-                                              "
-                                            >
-                                              <g fill="none">
-                                                <path
-                                                  d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"
-                                                ></path>
-                                              </g></svg></span
-                                        ></span>
-                                      </button>
-                                      <div class="desc">Alligator</div>
-                                    </div>
-                                  </div>
+                                  </button>
                                 </div>
                               </div>
                             </div>
@@ -1428,13 +1145,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                             </div>
                           </div>
                           <div class="footer__progressbar-inactive">
-                            <button
-                              id="lyt-back-button"
-                              type="button"
-                              class="btn-outline-small"
-                            >
-                              Back
-                            </button>
+                            <div></div>
                             <div data-showat="largeAndAbove">
                               <div class="footer__progressbar-status-wrap">
                                 <div class="footer__progressbar-status-text">2 items to submit</div>

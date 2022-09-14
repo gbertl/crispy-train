@@ -4,17 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/global.css" />
-    <link rel="stylesheet" href="../../assets/css/pages.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <title>Submit your experience - Basics - Airbnb</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <title>Submit your experience -Booking Settings - Airbnb</title>
   </head>
-  <body class="with-new-header">
+  <body class="with-new-header touch">
     <div id="site-skip-links">
       <a
         class="screen-reader-only screen-reader-only-focusable skip-to-content"
@@ -171,8 +165,9 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="city"
+                                        onclick="window.location.href='basic.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-wrapper">
+                                        <div class="app-theme__sidebar-expandable-text-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">Basics</div>
                                           <div class="app-theme__sidebar-expandable-icon-wrapper">
                                             <svg
@@ -588,7 +583,7 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="pricing-and-booking-traveler-requirements"
-                                        onclick="window.location.href='guestReq.html';"
+                                        onclick="window.location.href='GuestReq.html';"
                                       >
                                         <div class="app-theme__sidebar-expandable-text-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
@@ -858,9 +853,8 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="lead-time"
-                                        onclick="window.location.href='booking.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-text-wrapper">
+                                        <div class="app-theme__sidebar-expandable-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
                                             Booking settings
                                           </div>
@@ -1010,7 +1004,7 @@
               </div>
               <main id="site-content">
                 <div class="site-content__page-wrapper">
-                  <div class="site-content__page-container" id="lyt-page-container">
+                  <div class="site-content__page-wrapper-main" id="lyt-page-container">
                     <div id="lyt-main-header" class="site-content__page-header">
                       <div class="hidden-xl">
                         <button id="side-nav-toggle" aria-expanded="true" type="button" class="header__logo-btn">
@@ -1026,7 +1020,7 @@
                           </span>
                         </button>
                       </div>
-                      <div class="header__logo-btn-text">Basics</div>
+                      <div class="header__logo-btn-text">Booking settings</div>
                     </div>
                     <section class="site-content__page-content">
                       <div class="vh-100">
@@ -1042,112 +1036,268 @@
                                       class="heading"
                                       elementtiming="LCP-target"
                                     >
-                                      Tell us a bit more
+                                      Booking settings
                                     </h1>
+                                  </div>
+                                  <div class="account-container-mb__header-show-more">
+                                    <span class="_11oyobo"
+                                      >We recommend setting your cutoff time
+                                      close to your start time so more guests
+                                      can book. Be sure to give yourself enough
+                                      time to prepare for your guests.</span
+                                    >
                                   </div>
                                 </div>
                               </section>
                             </div>
-                            <div class="site-content__content-menu">
-                              <fieldset class="site-content__content-fieldset">
-                                <legend class="site-content__content-menu-legend">
-                                  <div class="site-content__content-menu-question">
-                                    Which city do you want to host your
-                                    experience in?
-                                  </div>
-                                </legend>
-                                <div class="relative" data-reach-combobox="">
-                                  <div class="spinner-chart__input-price">
-                                    <label
-                                      class="input-field"
-                                      for="submission_city"
-                                      ><div class="auth-container__form-label">
-                                        <div class="spinner-chart__input-title-text">City</div>
-                                      </div>
-                                      <div dir="ltr">
-                                        <div class="auth-container__form-field-wrapper">
-                                          <input
-                                            aria-autocomplete="both"
-                                            aria-controls="listbox--18"
-                                            aria-expanded="false"
-                                            aria-haspopup="listbox"
-                                            role="combobox"
-                                            data-testid="city-input"
-                                            data-reach-combobox-input=""
-                                            class="form__input"
-                                            id="submission_city"
-                                            autocomplete="off"
-                                            type="text"
-                                            aria-describedby=""
-                                            value="Dafi, Uttar Pradesh, India"
-                                          />
-                                        </div>
-                                      </div>
-                                    </label>
+                            <section>
+                              <div class="hero-banner__label-wrapper">
+                                <div style="margin-bottom: 8px">
+                                  <label
+                                    class="explore-filter-menu__group-size-label"
+                                    for="trip_template_confirmed_booking_lead_hours"
+                                    ><div class="hero-banner__label">
+                                      Cutoff time for additional guests
+                                    </div></label
+                                  >
+                                  <div class="card-alt-2__text">
+                                    If an instance is booked, this is how far in
+                                    advance any new guests can book.
                                   </div>
                                 </div>
-
-                                <div class="_1d3p6bl">
+                                <div class="select-option__container">
+                                  <div class="overflow-hidden">
+                                    <select
+                                      id="trip_template_confirmed_booking_lead_hours"
+                                      name="trip_template_confirmed_booking_lead_hours"
+                                      class="select-option__container-select"
+                                    >
+                                      <option value="0">
+                                        0 hours before start time
+                                      </option>
+                                      <option value="1">
+                                        1 hour before start time
+                                      </option>
+                                      <option value="2">
+                                        2 hours before start time
+                                      </option>
+                                      <option value="3">
+                                        3 hours before start time
+                                      </option>
+                                      <option value="4">
+                                        4 hours before start time
+                                      </option>
+                                      <option value="6">
+                                        6 hours before start time
+                                      </option>
+                                      <option value="8">
+                                        8 hours before start time
+                                      </option>
+                                      <option value="12">
+                                        12 hours before start time
+                                      </option>
+                                      <option value="18">
+                                        18 hours before start time
+                                      </option>
+                                      <option value="24">
+                                        1 day before start time
+                                      </option>
+                                      <option value="48">
+                                        2 days before start time
+                                      </option>
+                                      <option value="72">
+                                        3 days before start time
+                                      </option>
+                                      <option value="96">
+                                        4 days before start time
+                                      </option>
+                                      <option value="120">
+                                        5 days before start time
+                                      </option>
+                                      <option value="144">
+                                        6 days before start time
+                                      </option>
+                                      <option value="168">
+                                        1 week before start time
+                                      </option>
+                                    </select>
+                                  </div>
+                                  <span class="select-option__container-select-icon"
+                                    ><svg
+                                      viewBox="0 0 18 18"
+                                      role="presentation"
+                                      aria-hidden="true"
+                                      focusable="false"
+                                      style="
+                                        height: 16px;
+                                        width: 16px;
+                                        display: block;
+                                        fill: rgb(72, 72, 72);
+                                      "
+                                    >
+                                      <path
+                                        d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="booking-setting__suggestion">
+                                <div class="booking-setting__suggestion-wrapper">
                                   <svg
-                                    viewBox="0 0 32 32"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    aria-hidden="true"
+                                    viewBox="0 0 24 24"
                                     role="presentation"
+                                    aria-hidden="true"
                                     focusable="false"
                                     style="
+                                      height: 26px;
+                                      width: 26px;
                                       display: block;
-                                      height: 16px;
-                                      width: 16px;
-                                      fill: currentcolor;
+                                      fill: rgb(96, 182, 181);
                                     "
                                   >
                                     <path
-                                      d="M16 1C9.925 1 5 6 5 12s3.667 12.167 11 18.5C23.333 24.167 27 18 27 12c0-6.075-4.925-11-11-11zm0 15a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
+                                      d="m7.54 18.01a1.54 1.54 0 0 1 -1.54-1.54v-9.92a1.54 1.54 0 0 1 2.63-1.09l9.93 9.92a1.54 1.54 0 0 1 -1.09 2.63z"
+                                    ></path>
+                                    <path
+                                      d="m21.19 4.96a.5.5 0 0 1 -.65-.28l-.51-1.27-2.56 7.25a.5.5 0 0 1 -.83.19l-2.47-2.47-2.71 6.32a.5.5 0 1 1 -.92-.39l3-7a .5.5 0 0 1 .37-.29.51.51 0 0 1 .45.14l2.44 2.44 2.3-6.55-1.36.73a.5.5 0 1 1 -.47-.88l2.5-1.33a.5.5 0 0 1 .7.26l1 2.5a.5.5 0 0 1 -.28.65zm-1.19 15.04h-11.06l1.52-3.29a.5.5 0 0 0 -.91-.42l-1.72 3.71h-3.83v-15.5a.5.5 0 0 0 -1 0v16a .5.5 0 0 0 .5.5h3.87l-.83 1.79a.5.5 0 0 0 .91.42l1.02-2.21h11.53a.5.5 0 0 0 0-1z"
+                                      fill="#484848"
                                     ></path>
                                   </svg>
-                                  <span class="_1lhojeb"
-                                    ><button type="button" class="btn-link-condensed">
-                                      Use my current location
-                                    </button></span
-                                  >
                                 </div>
-                              </fieldset>
-                            </div>
-                            <div class="_1ww49e7">
-                              <fieldset class="site-content__content-fieldset">
-                                <legend class="site-content__content-menu-legend">
-                                  Which language(s) will you offer your
-                                  experience in?
-                                </legend>
-                                <div class="_y6dq3l">
-                                  You should be able to read, write, and speak
-                                  in this language.
-                                </div>
-                                <div class="landing-page__question-content">
-                                  <div
-                                    id="primary-language-row"
-                                    aria-disabled="false"
-                                    role="group"
-                                    aria-labelledby="primary-language-row-row-title"
-                                    class="explore-filter-menu__list-padding dir dir-ltr"
+                                We suggest setting your cutoff time to 0 hours
+                                based on your activity and the time of day you
+                                are hosting. You can always change this later.
+                              </div>
+                              <div
+                                style="margin-top: 32px; margin-bottom: 32px"
+                              >
+                                <hr class="_l1tb2l" />
+                              </div>
+                              <div class="hero-banner__label-wrapper">
+                                <div style="margin-bottom: 8px">
+                                  <label
+                                    class="explore-filter-menu__group-size-label"
+                                    for="trip_template_booking_lead_hours"
+                                    ><div class="hero-banner__label">
+                                      Cutoff time for your first guest
+                                    </div></label
                                   >
-                                    <div class="flex">
-                                      <div class="explore-filter-menu__list-label">
-                                        <button
-                                          data-testid="primary-language-row"
-                                          type="button"
-                                          class="account-container-mb__menu-btn"
-                                          data-bs-toggle="modal"
-                                          data-bs-target="#exampleModal"
-                                        >
-                                          <span class="account-container-mb__menu-btn-wrapper"
-                                            ><div
-                                              id="primary-language-row-row-title"
-                                              class="list-title"
-                                            >
-                                              English
-                                            </div>
-                                            <span class="account-container-mb__menu-arrow"
+                                  <div class="card-alt-2__text">
+                                    If no one books by this cutoff time, the
+                                    instance won't be available to guests.
+                                  </div>
+                                </div>
+                                <div class="select-option__container">
+                                  <div class="overflow-hidden">
+                                    <select
+                                      id="trip_template_booking_lead_hours"
+                                      name="trip_template_booking_lead_hours"
+                                      class="select-option__container-select"
+                                    >
+                                      <option value="1">
+                                        1 hour before start time
+                                      </option>
+                                      <option value="2">
+                                        2 hours before start time
+                                      </option>
+                                      <option value="3">
+                                        3 hours before start time
+                                      </option>
+                                      <option value="4">
+                                        4 hours before start time
+                                      </option>
+                                      <option value="6">
+                                        6 hours before start time
+                                      </option>
+                                      <option value="8">
+                                        8 hours before start time
+                                      </option>
+                                      <option value="12">
+                                        12 hours before start time
+                                      </option>
+                                      <option value="18">
+                                        18 hours before start time
+                                      </option>
+                                      <option value="24">
+                                        1 day before start time
+                                      </option>
+                                      <option value="48">
+                                        2 days before start time
+                                      </option>
+                                      <option value="72">
+                                        3 days before start time
+                                      </option>
+                                      <option value="96">
+                                        4 days before start time
+                                      </option>
+                                      <option value="120">
+                                        5 days before start time
+                                      </option>
+                                      <option value="144">
+                                        6 days before start time
+                                      </option>
+                                      <option value="168">
+                                        1 week before start time
+                                      </option>
+                                    </select>
+                                  </div>
+                                  <span class="select-option__container-select-icon"
+                                    ><svg
+                                      viewBox="0 0 18 18"
+                                      role="presentation"
+                                      aria-hidden="true"
+                                      focusable="false"
+                                      style="
+                                        height: 16px;
+                                        width: 16px;
+                                        display: block;
+                                        fill: rgb(72, 72, 72);
+                                      "
+                                    >
+                                      <path
+                                        d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z"
+                                        fill-rule="evenodd"
+                                      ></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                              <div
+                                style="margin-top: 32px; margin-bottom: 32px"
+                              >
+                                <hr class="_l1tb2l" />
+                              </div>
+                              <section>
+                                <h2
+                                  tabindex="-1"
+                                  class="heading"
+                                  elementtiming="LCP-target"
+                                >
+                                  <span class="_13fzc4w"
+                                    >Requests for availability</span
+                                  >
+                                </h2>
+                              </section>
+                              <div
+                                style="margin-top: 16px; margin-bottom: 16px"
+                              >
+                                <label class="explore-filter-menu__group-size-label" for="rfi_opt_out"
+                                  ><div class="footer__progress-active-wrapper">
+                                    <div class="va-top">
+                                      <div class="_aaxh23">
+                                        <span class="_foa2bi"
+                                          ><input
+                                            class="_65azzu"
+                                            id="rfi_opt_out"
+                                            name="rfi_opt_out"
+                                            type="checkbox"
+                                            value=""
+                                            checked="" /><span
+                                            data-fake-checkbox="true"
+                                            class="_n0k46zb"
+                                            ><span class="_1lomdd5"
                                               ><svg
                                                 viewBox="0 0 32 32"
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -1164,70 +1314,33 @@
                                                   overflow: visible;
                                                 "
                                               >
-                                                <g fill="none">
-                                                  <path
-                                                    d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"
-                                                  ></path>
-                                                </g></svg></span
-                                          ></span>
-                                        </button>
+                                                <path
+                                                  fill="none"
+                                                  d="m4 16.5 8 8 16-16"
+                                                ></path></svg></span></span
+                                        ></span>
                                       </div>
                                     </div>
-                                  </div>
-                                </div>
-                                <div class="_1cdzk1n">
-                                  <button
-                                    data-testid="add-languages"
-                                    type="button"
-                                    class="btn-link-condensed"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#modalAdditional"
-                                  >
-                                    Add additional languages
-                                  </button>
-                                </div>
-                              </fieldset>
-                            </div>
-                            <div class="_1y8yg3n">
-                              <fieldset class="site-content__content-fieldset">
-                                <legend class="site-content__content-menu-legend">
-                                  <div class="main-content__details-form-repeat-sched">
-                                    Airbnb partner organization (optional)
-                                  </div>
-                                </legend>
-                                <div
-                                  id="partner-switch"
-                                  aria-disabled="false"
-                                  role="group"
-                                  aria-labelledby="partner-switch-row-title"
-                                  class="explore-filter-menu__list-padding dir dir-ltr"
+                                    <div class="va-top-h">
+                                      <div class="_7i43np">
+                                        <span class="_jmgxek"
+                                          ><span class="main-content__details-cancel-button-wrapper"
+                                            >Allow people to request dates and
+                                            times not listed.</span
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div></label
                                 >
-                                  <div class="flex">
-                                    <div class="explore-filter-menu__list-label">
-                                      <div
-                                        id="partner-switch-row-title"
-                                        class="list-title"
-                                      >
-                                        I’m hosting with an organization and
-                                        have a confirmation code
-                                      </div>
-                                    </div>
-                                    <div class="become-a-host__count-action-wrapper">
-                                      <button
-                                        aria-checked="false"
-                                        aria-labelledby="partner-switch-row-title"
-                                        aria-describedby="partner-switch-row-subtitle"
-                                        role="switch"
-                                        type="button"
-                                        class="_17z7clia"
-                                      >
-                                        <div class="form__switch-toggle"></div>
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </fieldset>
-                            </div>
+                              </div>
+                              <div>
+                                When unchecked, “Contact Host” will still appear
+                                on your experience page so people can message
+                                you, but the “Request availability” link will be
+                                removed from your calendar.
+                              </div>
+                            </section>
                           </div>
                         </div>
                         <footer class="footer__item-list">
@@ -1239,16 +1352,12 @@
                                     <div class="footer__progress-active-bar">
                                       <div
                                         role="progressbar"
-                                        aria-valuenow="1"
+                                        aria-valuenow="20"
                                         aria-valuemin="0"
-                                        aria-valuemax="23"
+                                        aria-valuemax="22"
                                         class="footer__progressbar"
                                         style="
-                                          transform: translate3d(
-                                            -96%,
-                                            0px,
-                                            0px
-                                          );
+                                          transform: translate3d(-9%, 0px, 0px);
                                         "
                                       ></div>
                                     </div>
@@ -1267,12 +1376,11 @@
                             </button>
                             <div data-showat="largeAndAbove">
                               <div class="footer__progressbar-status-wrap">
-                                <div class="footer__progressbar-status-text">22 items to submit</div>
+                                <div class="footer__progressbar-status-text">2 items to submit</div>
                               </div>
                             </div>
                             <button
                               id="lyt-next-button"
-                              disabled=""
                               type="button"
                               class="btn-dark-small"
                               data-veloute="lyt-next-button"
@@ -1284,7 +1392,96 @@
                       </div>
                     </section>
                   </div>
-                  <div class="site-main__spacer"></div>
+                  <div class="site-content__page-wrapper-right">
+                    <div class="site-content__page-wrapper-right-wrapper">
+                      <div>
+                        <div id="support-panel-header" class="site-content__page-wrapper-right-header">
+                          <h2 class="site-content__page-right-header-text">Tips</h2>
+                        </div>
+                      </div>
+                      <div class="site-content__page-right-tips" tabindex="0" aria-label="Tips">
+                        <div class="site-content__page-right-tips-wrapper">
+                          <div class="site-content__page-right-dos-donts">
+                            <div class="site-content__dos-donts-list">
+                              <div style="margin-bottom: 24px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div style="margin-top: 8px">
+                                        <svg
+                                          viewBox="0 0 16 16"
+                                          role="presentation"
+                                          aria-hidden="true"
+                                          focusable="false"
+                                          style="
+                                            height: 5px;
+                                            width: 5px;
+                                            display: block;
+                                            fill: rgb(34, 34, 34);
+                                          "
+                                        >
+                                          <ellipse
+                                            cx="8"
+                                            cy="8"
+                                            fill-rule="evenodd"
+                                            rx="8"
+                                            ry="8"
+                                          ></ellipse>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Remember that shorter windows lead to more
+                                      bookings
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div style="margin-bottom: 0px">
+                                <div class="flex">
+                                  <div class="site-content__dos-donts-icon">
+                                    <div style="margin-right: 16px">
+                                      <div style="margin-top: 8px">
+                                        <svg
+                                          viewBox="0 0 16 16"
+                                          role="presentation"
+                                          aria-hidden="true"
+                                          focusable="false"
+                                          style="
+                                            height: 5px;
+                                            width: 5px;
+                                            display: block;
+                                            fill: rgb(34, 34, 34);
+                                          "
+                                        >
+                                          <ellipse
+                                            cx="8"
+                                            cy="8"
+                                            fill-rule="evenodd"
+                                            rx="8"
+                                            ry="8"
+                                          ></ellipse>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="site-content__dos-donts-icon">
+                                    <div>
+                                      Try setting your cutoff time to 0 hours
+                                      since the online format makes it’s easier
+                                      for guests to book last-minute
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </main>
             </div>
@@ -1296,1252 +1493,11 @@
         </div>
       </div>
     </div>
+
     <div id="fb-root"></div>
     <div id="authModals"></div>
     <div>
       <iframe style="display: none"></iframe>
     </div>
-    <!-- Modal English-->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" class="modal__container">
-        <div
-          role="dialog"
-          aria-label="Select primary language"
-          aria-modal="true"
-          class="modal-dialog__content-wrapper"
-          style="position: relative"
-        >
-          <div class="modal__close">
-            <button aria-label="Close" type="button" class="btn-close">
-              <span class="relative"
-                ><svg
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="presentation"
-                  focusable="false"
-                  style="
-                    display: block;
-                    fill: none;
-                    height: 16px;
-                    width: 16px;
-                    stroke: currentcolor;
-                    stroke-width: 3;
-                    overflow: visible;
-                  "
-                >
-                  <path d="m6 6 20 20"></path>
-                  <path d="m26 6-20 20"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <header class="modal__header-container">
-            <div class="modal__header-wrapper"></div>
-            <div class="modal__heading">
-              <h1 tabindex="-1" class="heading" elementtiming="LCP-target">
-                <div class="modal__header-text">
-                  <span id="primary-language-group-label"
-                    >Select primary language</span
-                  >
-                </div>
-              </h1>
-            </div>
-            <div class="modal__heading-wrapper"></div>
-          </header>
-          <div class="modal__body">
-            <div
-              role="radiogroup"
-              aria-labelledby="primary-language-group-label"
-            >
-              <div class="_hmz4rv">
-                <label for="radio-ca" class="flex"
-                  ><input
-                    data-testid="primary-language-ca"
-                    id="radio-ca"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="ca"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Català</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-de" class="flex"
-                  ><input
-                    data-testid="primary-language-de"
-                    id="radio-de"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="de"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Deutsch</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-en" class="flex"
-                  ><input
-                    data-testid="primary-language-en"
-                    id="radio-en"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-yes"
-                    type="radio"
-                    value="en"
-                    checked=""
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">English</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-es" class="flex"
-                  ><input
-                    data-testid="primary-language-es"
-                    id="radio-es"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="es"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Español</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-fr" class="flex"
-                  ><input
-                    data-testid="primary-language-fr"
-                    id="radio-fr"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="fr"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Français</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-it" class="flex"
-                  ><input
-                    data-testid="primary-language-it"
-                    id="radio-it"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="it"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Italiano</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-ja" class="flex"
-                  ><input
-                    data-testid="primary-language-ja"
-                    id="radio-ja"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="ja"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">日本語</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-ko" class="flex"
-                  ><input
-                    data-testid="primary-language-ko"
-                    id="radio-ko"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="ko"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">한국어</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-pt" class="flex"
-                  ><input
-                    data-testid="primary-language-pt"
-                    id="radio-pt"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="pt"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Português</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-ru" class="flex"
-                  ><input
-                    data-testid="primary-language-ru"
-                    id="radio-ru"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="ru"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">Русский</span></label
-                >
-              </div>
-              <div class="_hmz4rv">
-                <label for="radio-zh" class="flex"
-                  ><input
-                    data-testid="primary-language-zh"
-                    id="radio-zh"
-                    name=""
-                    class="site-content__content-wrapper-rules-radio-no"
-                    type="radio"
-                    value="zh"
-                  /><span class="site-content__content-wrapper-rules-radio-text-wrapper">中文 (简体)</span></label
-                >
-              </div>
-            </div>
-          </div>
-          <footer class="modal__footer">
-            <div class="margin__left-auto">
-              <button data-testid="save-button" type="button" class="btn-dark">
-                Save
-              </button>
-            </div>
-          </footer>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal Additional -->
-    <div
-      class="modal fade"
-      id="modalAdditional"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div
-        class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
-        class="modal-dialog__content-wrapper"
-      >
-        <div
-          role="dialog"
-          aria-label="Select additional languages"
-          aria-modal="true"
-          class="modal-dialog__content-wrapper"
-          style="position: relative"
-        >
-          <div class="modal__close">
-            <button aria-label="Close" type="button" class="btn-close">
-              <span class="relative"
-                ><svg
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  role="presentation"
-                  focusable="false"
-                  style="
-                    display: block;
-                    fill: none;
-                    height: 16px;
-                    width: 16px;
-                    stroke: currentcolor;
-                    stroke-width: 3;
-                    overflow: visible;
-                  "
-                >
-                  <path d="m6 6 20 20"></path>
-                  <path d="m26 6-20 20"></path>
-                </svg>
-              </span>
-            </button>
-          </div>
-          <header class="modal__header-container">
-            <div class="modal__header-wrapper"></div>
-            <div class="modal__heading">
-              <h1 tabindex="-1" class="heading" elementtiming="LCP-target">
-                <div class="modal__header-text">
-                  <span id="additional-languages-group-label"
-                    >Select additional languages</span
-                  >
-                </div>
-              </h1>
-            </div>
-            <div class="modal__heading-wrapper"></div>
-          </header>
-          <div class="modal__body">
-            <div
-              class="account-container__menu"
-              role="group"
-              aria-labelledby="additional-languages-group-label"
-            >
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ar"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ar"
-                      id="checkbox-ar"
-                      name="ar"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >العربية</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-az"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-az"
-                      id="checkbox-az"
-                      name="az"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Azərbaycan dili</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-bg"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-bg"
-                      id="checkbox-bg"
-                      name="bg"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Български</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-bs"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-bs"
-                      id="checkbox-bs"
-                      name="bs"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Bosanski</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ca"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ca"
-                      id="checkbox-ca"
-                      name="ca"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Català</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-cs"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-cs"
-                      id="checkbox-cs"
-                      name="cs"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Čeština</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-da"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-da"
-                      id="checkbox-da"
-                      name="da"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Dansk</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-de"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-de"
-                      id="checkbox-de"
-                      name="de"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Deutsch</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-el"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-el"
-                      id="checkbox-el"
-                      name="el"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Eλληνικά</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-en"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      disabled=""
-                      data-testid="additional-language-en"
-                      id="checkbox-en"
-                      name="en"
-                      class="form__check-input--checked"
-                      type="checkbox"
-                      checked="" /><span class="form__check-input-icon-wrapper" data-checkbox="true"
-                      ><span class="form__check-input-icon"
-                        ><svg
-                          viewBox="0 0 32 32"
-                          xmlns="http://www.w3.org/2000/svg"
-                          aria-hidden="true"
-                          role="presentation"
-                          focusable="false"
-                          style="
-                            display: block;
-                            fill: none;
-                            height: 16px;
-                            width: 16px;
-                            stroke: currentcolor;
-                            stroke-width: 4;
-                            overflow: visible;
-                          "
-                        >
-                          <path
-                            fill="none"
-                            d="m4 16.5 8 8 16-16"
-                          ></path></svg></span></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >English</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-es"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-es"
-                      id="checkbox-es"
-                      name="es"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Español</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-et"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-et"
-                      id="checkbox-et"
-                      name="et"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Eesti</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-fi"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-fi"
-                      id="checkbox-fi"
-                      name="fi"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Suomi</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-fr"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-fr"
-                      id="checkbox-fr"
-                      name="fr"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Français</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ga"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ga"
-                      id="checkbox-ga"
-                      name="ga"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Gaeilge</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-he"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-he"
-                      id="checkbox-he"
-                      name="he"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >עברית</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-hi"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-hi"
-                      id="checkbox-hi"
-                      name="hi"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >हिन्दी</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-hr"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-hr"
-                      id="checkbox-hr"
-                      name="hr"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Hrvatski</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-hu"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-hu"
-                      id="checkbox-hu"
-                      name="hu"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Magyar</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-hy"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-hy"
-                      id="checkbox-hy"
-                      name="hy"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Հայերեն</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-id"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-id"
-                      id="checkbox-id"
-                      name="id"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Bahasa Indonesia</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-is"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-is"
-                      id="checkbox-is"
-                      name="is"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Íslenska</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-it"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-it"
-                      id="checkbox-it"
-                      name="it"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Italiano</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ja"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ja"
-                      id="checkbox-ja"
-                      name="ja"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >日本語</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ka"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ka"
-                      id="checkbox-ka"
-                      name="ka"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >ქართული</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ko"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ko"
-                      id="checkbox-ko"
-                      name="ko"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >한국어</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-lt"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-lt"
-                      id="checkbox-lt"
-                      name="lt"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Lietuvių</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-lv"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-lv"
-                      id="checkbox-lv"
-                      name="lv"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Latviešu</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-mk"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-mk"
-                      id="checkbox-mk"
-                      name="mk"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Македонски</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ms"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ms"
-                      id="checkbox-ms"
-                      name="ms"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Bahasa Melayu</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-mt"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-mt"
-                      id="checkbox-mt"
-                      name="mt"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Malti</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-nl"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-nl"
-                      id="checkbox-nl"
-                      name="nl"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Nederlands</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-no"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-no"
-                      id="checkbox-no"
-                      name="no"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Norsk</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-pl"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-pl"
-                      id="checkbox-pl"
-                      name="pl"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Polski</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-pt"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-pt"
-                      id="checkbox-pt"
-                      name="pt"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Português</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ro"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ro"
-                      id="checkbox-ro"
-                      name="ro"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Română</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-ru"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-ru"
-                      id="checkbox-ru"
-                      name="ru"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Русский</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-sk"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-sk"
-                      id="checkbox-sk"
-                      name="sk"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Slovenčina</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-sl"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-sl"
-                      id="checkbox-sl"
-                      name="sl"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Slovenščina</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-sq"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-sq"
-                      id="checkbox-sq"
-                      name="sq"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Shqip</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-sr"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-sr"
-                      id="checkbox-sr"
-                      name="sr"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Srpski</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-sv"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-sv"
-                      id="checkbox-sv"
-                      name="sv"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Svenska</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-sw"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-sw"
-                      id="checkbox-sw"
-                      name="sw"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Kiswahili</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-th"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-th"
-                      id="checkbox-th"
-                      name="th"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >ภาษาไทย</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-tl"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-tl"
-                      id="checkbox-tl"
-                      name="tl"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Tagalog</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-tr"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-tr"
-                      id="checkbox-tr"
-                      name="tr"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Türkçe</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-uk"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-uk"
-                      id="checkbox-uk"
-                      name="uk"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Українська</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-vi"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-vi"
-                      id="checkbox-vi"
-                      name="vi"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >Tiếng Việt</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-xh"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-xh"
-                      id="checkbox-xh"
-                      name="xh"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >isiXhosa</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-zh"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-zh"
-                      id="checkbox-zh"
-                      name="zh"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >中文 (简体)</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-zh-TW"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-zh-TW"
-                      id="checkbox-zh-TW"
-                      name="zh-TW"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >中文 (繁體)</span
-                  ></label
-                >
-              </div>
-              <div class="py-12 flex-50">
-                <label class="flex dir dir-ltr" for="checkbox-zu"
-                  ><span class="explore-filter-menu__list-content"
-                    ><input
-                      data-testid="additional-language-zu"
-                      id="checkbox-zu"
-                      name="zu"
-                      class="form__check-input"
-                      type="checkbox" /><span
-                      class="explore-filter-menu__list-checkbox"
-                      data-checkbox="true"
-                    ></span></span
-                  ><span
-                    class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y text-black atm_h3_yh40bf atm_gz_exct8b dir dir-ltr"
-                    >isiZulu</span
-                  ></label
-                >
-              </div>
-            </div>
-          </div>
-          <footer class="modal__footer">
-            <div class="margin__left-auto">
-              <button data-testid="save-button" type="button" class="btn-dark">
-                Save
-              </button>
-            </div>
-          </footer>
-        </div>
-      </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
