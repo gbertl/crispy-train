@@ -165,7 +165,9 @@ const updateContainer = (sitemapLocal) => {
     map.urls.forEach((url) => {
       const li = document.createElement('li');
       const a = document.createElement('a');
-      const aText = document.createTextNode(url);
+      const aText = document.createTextNode(
+        url.substring(url.lastIndexOf('/') + 1)
+      );
 
       a.appendChild(aText);
       a.setAttribute('href', url);
