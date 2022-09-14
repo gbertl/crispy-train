@@ -18305,15 +18305,6 @@ input[type='button'].btn-block {
   bottom: 0;
   left: 0;
   overflow-y: auto;
-  -webkit-transform: translate3d(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.75);
-}
-.modal {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
 }
 .modal[aria-hidden='true'] {
   display: none;
@@ -18431,6 +18422,9 @@ input[type='button'].btn-block {
   font-size: 16px !important;
   line-height: 20px !important;
   font-weight: 800 !important;
+}
+.modal-dialog {
+  pointer-events: auto !important;
 }
 .modal-dialog__content-wrapper {
   -webkit-box-direction: normal !important;
