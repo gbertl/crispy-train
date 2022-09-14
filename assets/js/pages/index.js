@@ -160,18 +160,43 @@ const updateContainer = (sitemapLocal) => {
     });
 
     const div = document.createElement('div');
+    const button = document.createElement('button');
+    const bText = document.createTextNode(`Open ${map.urls.length}`);
 
+    button.appendChild(bText);
     h1.appendChild(h1Text);
+
     div.appendChild(h1);
+    if (map.urls.length > 1) div.appendChild(button);
     div.appendChild(ul);
 
     containerDivs.push(div.outerHTML);
   });
 
   document.querySelector('.container').innerHTML = containerDivs.join('');
+
+  document.querySelectorAll('button').forEach((b) => {
+    const followLink = (e) => {
+      e.target
+        .closest('div')
+        .querySelectorAll('a')
+        .forEach((aTag) => {
+          window.open(aTag.getAttribute('href'), '_blank');
+        });
+    };
+    b.removeEventListener('click', followLink);
+    b.addEventListener('click', followLink);
+  });
 };
 
 updateContainer(sitemap);
+
+document
+  .querySelector('.input-search')
+  .setAttribute(
+    'placeholder',
+    `Search ${document.querySelectorAll('a').length} pages...`
+  );
 
 document.querySelector('.input-search').addEventListener('keyup', (e) => {
   const value = e.target.value.trim();
