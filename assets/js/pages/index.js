@@ -119,6 +119,17 @@ let sitemap = [
     urls: ['messaging/inbox.html', 'messaging/notifications.html'],
   },
   {
+    title: 'Online Experience',
+    urls: [
+      'online-experience/calendar_agenda.html',
+      'online-experience/calendar.html',
+      'online-experience/calendar_week.html',
+      'online-experience/dashboard.html',
+      'online-experience/experiences.html',
+      'online-experience/insights.html',
+    ],
+  },
+  {
     title: 'Payments',
     urls: [
       'payments/guest-contributions.html',
