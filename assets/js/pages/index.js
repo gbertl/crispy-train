@@ -12,6 +12,26 @@ window.addEventListener('scroll', () => {
 
 let sitemap = [
   {
+    title: 'Account',
+    urls: [
+      'account/account-notifications.html',
+      'account/account-settings.html',
+      'account/airbnb-for-work.html',
+      'account/edit-photo.html',
+      'account/forgot_password.html',
+      'account/invite-friends.html',
+      'account/login-security.html',
+      'account/personal-info.html',
+      'account/preferences.html',
+      'account/privacy-and-sharing.html',
+      'account/professional-hosting.html',
+      'account/profile.html',
+      'account/signup_login.html',
+      'account/transaction_history.html',
+      'account/welcome_back.html',
+    ]
+  },
+  {
     title: 'Become a host',
     urls: [
       'become-a-host/amenities.html',
