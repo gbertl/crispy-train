@@ -50725,3 +50725,54 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   grid-gap: 16px;
   grid-template-columns: 1fr auto;
 }
+._1wnurhp {
+  z-index: -1000 !important;
+  left: 0px !important;
+  pointer-events: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+._1y7qajo {
+  overflow: hidden !important;
+  position: absolute !important;
+  bottom: 0px !important;
+  -webkit-transform: translateY(-100%) !important;
+  -ms-transform: translateY(-100%) !important;
+  transform: translateY(-100%) !important;
+  -webkit-transition: -webkit-transform 0.4s, transform 0.4s !important;
+  -moz-transition: transform 0.4s !important;
+  transition: -ms-transform 0.4s, -webkit-transform 0.4s, transform 0.4s !important;
+  width: 100% !important;
+  z-index: 1999 !important;
+  background-color: #ffffff !important;
+  pointer-events: all !important;
+}
+._7ytxmo {
+  margin-right: 16px !important;
+}
+._ijpbow {
+  border: 1px solid #dddddd !important;
+  padding: 11px !important;
+  border-radius: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  display: inline-block !important;
+  position: relative !important;
+}
+._ihd0yx:after {
+  content: '' !important;
+  display: block !important;
+  clear: both !important;
+}
+._19yomz9c {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e4e4e4 !important;
+  position: relative !important;
+  z-index: 2000 !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 12%) !important;
+}
