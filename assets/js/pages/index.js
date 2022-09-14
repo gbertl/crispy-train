@@ -115,6 +115,10 @@ let sitemap = [
     ],
   },
   {
+    title: 'Messaging',
+    urls: ['messaging/inbox.html', 'messaging/notifications.html'],
+  },
+  {
     title: 'Payments',
     urls: [
       'payments/guest-contributions.html',
