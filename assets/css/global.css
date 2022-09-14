@@ -13550,7 +13550,7 @@ html :where(img[class*='wp-image-']) {
     background: #b0b0b0 !important;
   }
 }
-.btn-dark--small {
+.btn-dark-small {
   cursor: pointer !important;
   display: inline-block !important;
   margin: 0 !important;
@@ -15136,14 +15136,14 @@ fieldset[disabled] .btn {
   height: 32px !important;
   border-radius: 50% !important;
 }
-.btn-dark--small:disabled {
+.btn-dark-small:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border: none !important;
   background: var(--gray-300) !important;
   color: var(--white) !important;
 }
-.btn-dark--small {
+.btn-dark-small {
   cursor: pointer !important;
   display: inline-block !important;
   margin: 0 !important;
