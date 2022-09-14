@@ -104,6 +104,17 @@ let sitemap = [
     ],
   },
   {
+    title: 'LPs and Resources',
+    urls: [
+      'lps-resources/404.html',
+      'lps-resources/covidsafety.html',
+      'lps-resources/help.html',
+      'lps-resources/merchandising.html',
+      'lps-resources/press-release.html',
+      'lps-resources/resources.html',
+    ],
+  },
+  {
     title: 'Payments',
     urls: [
       'payments/guest-contributions.html',
