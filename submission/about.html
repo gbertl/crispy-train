@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/global.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/css/pages.css"
-    />
-    <title>Submit your experience - Participation - Airbnb</title>
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <title>Submit your experience - About you - Airbnb</title>
   </head>
-  <body class="with-new-header">
+  <body class="with-new-header touch">
     <div id="site-skip-links">
       <a
         class="screen-reader-only screen-reader-only-focusable skip-to-content"
@@ -342,8 +339,9 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="expectations-2"
+                                        onclick="window.location.href='participation.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-wrapper">
+                                        <div class="app-theme__sidebar-expandable-text-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
                                             Participation
                                           </div>
@@ -521,9 +519,8 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="about-you"
-                                        onclick="window.location.href='about.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-text-wrapper">
+                                        <div class="app-theme__sidebar-expandable-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">About you</div>
                                           <div class="app-theme__sidebar-expandable-icon-wrapper">
                                             <svg
@@ -1023,7 +1020,10 @@
                           </span>
                         </button>
                       </div>
-                      <div class="header__logo-btn-text">Participation</div>
+                      <div class="header__logo-btn-text">About you</div>
+                      <div class="margin__left-auto">
+                        <button type="button" class="btn-outline-small">Preview</button>
+                      </div>
                     </div>
                     <section class="site-content__page-content">
                       <div class="vh-100">
@@ -1039,70 +1039,187 @@
                                       class="heading"
                                       elementtiming="LCP-target"
                                     >
-                                      Participation
+                                      Tell guests (and us) more about you
                                     </h1>
                                   </div>
                                 </div>
                               </section>
                             </div>
-                            <div
-                              class="lite-image"
-                              style="
-                                border-radius: 12px;
-                                background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAIAAADUVFKvAAAAOUlEQVQIHWM0MTLxdLbj4Rb88PP7qaMHGR0cTB3NLf59YTS2szpx5iSjhak6OxuPtLTYp2cfOIWEAaeBEQ9wFsZjAAAAAElFTkSuQmCC');
-                                background-size: contain;
-                                --dls-liteimage-padding-top: 66.6667%;
-                              "
-                            >
-                              <div class="lite-image__container">
-                                <img
-                                  class="lite-image__default-static"
-                                  aria-hidden="true"
-                                  alt=""
-                                  elementtiming="LCP-target"
-                                  src="https://a0.muscache.com/pictures/76e8cb54-4a6a-4a94-8c0e-ef4d21024c8b.jpg"
-                                  data-original-uri="https://a0.muscache.com/pictures/76e8cb54-4a6a-4a94-8c0e-ef4d21024c8b.jpg"
-                                  style="
-                                    object-fit: contain;
-                                    border-radius: 12px;
-                                  "
-                                />
-                                <div
-                                  class="lite-image__fallback"
-                                  style="
-                                    background-image: url('https://a0.muscache.com/pictures/76e8cb54-4a6a-4a94-8c0e-ef4d21024c8b.jpg');
-                                    background-size: contain;
-                                    border-radius: 12px;
-                                  "
-                                ></div>
+                            <div class="place__recommended-section">
+                              <div class="">
+                                <div class="margin__y-24">
+                                  <fieldset class="site-content__content-fieldset" role="radiogroup">
+                                    <legend class="site-content__content-menu-legend">
+                                      <div class="inline">
+                                        How are you hosting this experience?
+                                      </div>
+                                    </legend>
+                                    <div class="place__recommended-no">
+                                      <label
+                                        for="info_best_describe_you_and_experience-I’m hosting by myself"
+                                        class="flex"
+                                        ><input
+                                          id="info_best_describe_you_and_experience-I’m hosting by myself"
+                                          name="info_best_describe_you_and_experience"
+                                          class="site-content__content-wrapper-rules-radio-yes"
+                                          aria-invalid="false"
+                                          type="radio"
+                                          data-veloute="info_best_describe_you_and_experience-0"
+                                          value="0"
+                                          checked=""
+                                        /><span class="site-content__content-wrapper-rules-radio-text-wrapper"
+                                          ><div class="payment-payout__notice-desc">
+                                            I’m hosting by myself
+                                          </div></span
+                                        ></label
+                                      >
+                                    </div>
+                                    <div class="place__recommended-no">
+                                      <label
+                                        for="info_best_describe_you_and_experience-I have a team who helps me host"
+                                        class="flex"
+                                        ><input
+                                          id="info_best_describe_you_and_experience-I have a team who helps me host"
+                                          name="info_best_describe_you_and_experience"
+                                          class="site-content__content-wrapper-rules-radio-no"
+                                          aria-invalid="false"
+                                          type="radio"
+                                          data-veloute="info_best_describe_you_and_experience-1"
+                                          value="1"
+                                        /><span class="site-content__content-wrapper-rules-radio-text-wrapper"
+                                          ><div class="payment-payout__notice-desc">
+                                            I have a team who helps me host
+                                          </div></span
+                                        ></label
+                                      >
+                                    </div>
+                                  </fieldset>
+                                </div>
                               </div>
                             </div>
-                            <div class="site-content__content-wrapper-rules">
-                              <div class="inline">
-                                <p class="site-content__content-wrapper-rules-note">
-                                  We’re looking for engaging activities that are
-                                  designed for “doing” and not just “watching.”
-                                </p>
-                                For example:
-                                <ul class="site-content__content-wrapper-rules-ol">
-                                  <li>
-                                    Follow-along projects that guests can make
-                                    at home
-                                  </li>
-                                  <li>
-                                    Performances that include interaction with
-                                    the audience
-                                  </li>
-                                  <li>
-                                    Questions, games, and interesting
-                                    conversation
-                                  </li>
-                                </ul>
-                                <p class="site-content__content-wrapper-rules-note">
-                                  Guests should feel immersed in the experience
-                                  the entire time, like they’re an active part
-                                  of it.
-                                </p>
+                            <section>
+                              <h2
+                                tabindex="-1"
+                                class="heading"
+                                elementtiming="LCP-target"
+                              >
+                                <span class="_1ez1349"
+                                  >Your personal profile</span
+                                ><span class="_754507"
+                                  >Use your legal name and provide a photo that
+                                  clearly shows your face (not a logo).</span
+                                >
+                              </h2>
+                              <div
+                                id="profile_photo"
+                                aria-disabled="false"
+                                role="group"
+                                aria-labelledby="profile_photo-row-title"
+                                class="explore-filter-menu__list-padding become-a-host__price-discount-card dir dir-ltr"
+                              >
+                                <div class="flex">
+                                  <div class="tab__checkbox-mr-16">
+                                    <div class="place__tips-profile-img">
+                                      <div
+                                        class="img-middle"
+                                        style="
+                                          display: inline-block;
+                                          vertical-align: bottom;
+                                          height: 48px;
+                                          width: 48px;
+                                          min-height: 1px;
+                                          border-radius: 50%;
+                                        "
+                                      >
+                                        <img
+                                          class="img-full"
+                                          aria-hidden="true"
+                                          alt=""
+                                          elementtiming="LCP-target"
+                                          src="https://a0.muscache.com/im/pictures/user/c23add77-bcfd-4bb9-895f-3e41eb3dc4ca.jpg?aki_policy=profile_x_medium"
+                                          data-original-uri="https://a0.muscache.com/im/pictures/user/c23add77-bcfd-4bb9-895f-3e41eb3dc4ca.jpg?aki_policy=profile_x_medium"
+                                          style="
+                                            object-fit: cover;
+                                            vertical-align: bottom;
+                                            border-radius: 50%;
+                                          "
+                                        />
+                                        <div
+                                          class="background__img-position-center"
+                                          style="
+                                            background-image: url('https://a0.muscache.com/im/pictures/user/c23add77-bcfd-4bb9-895f-3e41eb3dc4ca.jpg?aki_policy=profile_x_medium');
+                                            background-size: cover;
+                                            border-radius: 50%;
+                                          "
+                                        ></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="explore-filter-menu__list-label">
+                                    <div
+                                      id="profile_photo-row-title"
+                                      class="list-title"
+                                    >
+                                      Jose Angelo
+                                    </div>
+                                    <div
+                                      id="profile_photo-row-subtitle"
+                                      class="personal-info__phone-number-desc"
+                                    >
+                                      PH
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="_cpgl1j">
+                                <a
+                                  target="_blank"
+                                  href="/account-settings/personal-info"
+                                  class="text-link"
+                                  >Edit name</a
+                                ><b class="_1p4gkyc">•</b
+                                ><a
+                                  target="_blank"
+                                  href="/users/edit-photo"
+                                  class="text-link"
+                                  >Edit photo</a
+                                >
+                              </div>
+                            </section>
+                            <label for="about_host_input"
+                              ><div class="textarea-label-wrapper">
+                                <div class="_1p5glqf">
+                                  What makes you uniquely qualified to host this
+                                  experience?
+                                </div>
+                              </div>
+                              <div class="contact-host__textarea-container">
+                                <div class="contact-host__textarea-wrapper">
+                                  <div dir="ltr">
+                                    <textarea
+                                      rows="5"
+                                      maxlength="850"
+                                      minlength="150"
+                                      class="textarea"
+                                      autocomplete="off"
+                                      id="about_host_input"
+                                      placeholder="Share the story behind your passion and knowledge."
+                                    >
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea
+                                    >
+                                  </div>
+                                </div>
+                              </div></label
+                            >
+                            <div class="_1b3feto">
+                              <div class="description-textarea__help" id="about_host_input-help">
+                                <span aria-hidden="true">574/850</span
+                                ><span
+                                  class="text-highlight dir dir-ltr"
+                                  aria-atomic="true"
+                                  aria-live="polite"
+                                  >574 out of 850 characters used</span
+                                >
                               </div>
                             </div>
                           </div>
