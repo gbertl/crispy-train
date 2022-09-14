@@ -18,7 +18,7 @@ let sitemap = [
       'account-notifications.html',
       'account-settings.html',
       'airbnb-for-work.html',
-      'basics.html',
+      'basics-error.html',
       'calendar_agenda.html',
       'calendar.html',
       'calendar_week.html',
