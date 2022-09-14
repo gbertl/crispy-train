@@ -19757,3 +19757,93 @@ input[type='button'].btn-block {
 .tooltip-close-btn:focus-visible::before {
   box-shadow: rgb(255 255 255 / 80%) 0 0 0 2px !important;
 } 
+
+/*! TOAST */
+.toast-bottom-right {
+    position: fixed !important;
+    bottom: 179px !important;
+    right: 6px !important;
+    z-index: 100 !important;
+}
+
+@media (min-width: 744px) {
+  .toast-bottom-right {
+    bottom: 63px !important;
+  }
+}
+@keyframes keyframe_1p3tni5 {
+    0% {transform: translateY(60%);}
+    100% {transform: translateY(0px);}
+}
+@keyframes keyframe_s5cldb {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.toast-enter {
+    animation-fill-mode: both !important;
+    animation-iteration-count: 1 !important;
+    animation-name: keyframe_s5cldb, keyframe_1p3tni5 !important;
+    animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
+}
+@keyframes keyframe_ioak0t {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(60%);}
+}
+@keyframes keyframe_aa5y1b {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.toast-exit {
+    /* animation-fill-mode: both !important; */
+    /* animation-iteration-count: 1 !important; */
+    /* animation-name: keyframe_aa5y1b, keyframe_ioak0t !important; */
+    /* animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important; */
+}
+.toast-box {
+    min-height: 66px !important;
+    color: rgb(34, 34, 34) !important;
+    padding: 16px !important;
+    display: flex !important;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 16px !important;
+    border-radius: 16px !important;
+    position: relative !important;
+    margin: 0px auto !important;
+    width: calc(100% - 48px) !important;
+}
+@media (min-width: 744px) {
+.toast-box {
+    width: 350px !important;
+    }
+}
+.toast-content-image {
+    margin-right: 12px !important;
+}
+.toast-content-text {
+    flex: 1 1 auto !important;
+    margin-right: 32px !important;
+}
+.toast-image {
+    height: 58px !important;
+    width: 58px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+}
+.toast-text {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.toast-link {
+    padding: 12px !important;
+    margin: -12px !important;
+    white-space: nowrap !important;
+    text-decoration: underline !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.toast-close {
+    position: absolute !important;
+    right: 0px !important;
+    top: 16px !important;
+    width: 32px !important;
+}
