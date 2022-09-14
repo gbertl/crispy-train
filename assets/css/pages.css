@@ -44120,9 +44120,13 @@ video::cue {
   position: absolute !important;
   top: 11.5px !important;
   -moz-transition: transform 0.15s, opacity 0.15s !important;
-  -webkit-transition-timing-function: cubic-bezier(0.26, 0.86, 0.44, 0.985)
-    !important !important;
-  transition-timing-function: cubic-bezier(0.26, 0.86, 0.44, 0.985) !important !important;
+  -webkit-transition-timing-function: cubic-bezier(
+    0.26,
+    0.86,
+    0.44,
+    0.985
+  ) !important;
+  transition-timing-function: cubic-bezier(0.26, 0.86, 0.44, 0.985) !important;
   width: 24px !important;
   will-change: transform, opacity !important;
 }
