@@ -133,8 +133,13 @@ let sitemap = [
     title: 'Payments',
     urls: [
       'payments/guest-contributions.html',
+      'payments/payment.html',
       'payments/payment-methods.html',
       'payments/payout-methods.html',
+      'payments/resolutions_2.html',
+      'payments/resolutions_3.html',
+      'payments/resolutions.html',
+      'payments/resolutions_pay.html',
       'payments/tax-info.html',
       'payments/your-payments.html',
     ],
