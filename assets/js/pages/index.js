@@ -84,6 +84,26 @@ let sitemap = [
     ],
   },
   {
+    title: 'Listings & Product',
+    urls: [
+      'listings-product/contact-host.html',
+      'listings-product/explore.html',
+      'listings-product/explore-when.html',
+      'listings-product/explore-where.html',
+      'listings-product/explore-who.html',
+      'listings-product/gift.html',
+      'listings-product/online-experience.html',
+      'listings-product/places.html',
+      'listings-product/products.html',
+      'listings-product/products-luxe.html',
+      'listings-product/products-plus.html',
+      'listings-product/specific_trip.html',
+      'listings-product/trips.html',
+      'listings-product/wishlist.html',
+      'listings-product/wishlists.html',
+    ],
+  },
+  {
     title: 'Payments',
     urls: [
       'payments/guest-contributions.html',
