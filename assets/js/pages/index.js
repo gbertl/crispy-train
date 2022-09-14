@@ -144,6 +144,14 @@ let sitemap = [
       'payments/your-payments.html',
     ],
   },
+  {
+    title: 'Reviews',
+    urls: [
+      'reviews/profile-reviews.html',
+      'reviews/reviews.html',
+      'reviews/reviews-tell-us.html',
+    ],
+  },
 ];
 
 const updateContainer = (sitemapLocal) => {
