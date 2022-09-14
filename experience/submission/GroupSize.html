@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/pages.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/global.css" />
-    <link rel="stylesheet" href="../assets/css/pages.css" />
-    <title>Submit your experience - Cancellation policy - Airbnb</title>
+    <title>Submit your experience - Group Size - Airbnb</title>
   </head>
   <body class="with-new-header touch">
     <div id="site-skip-links">
@@ -725,9 +728,8 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="group-size-v2"
-                                        onclick="window.location.href='GroupSize.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-text-wrapper">
+                                        <div class="app-theme__sidebar-expandable-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">Group size</div>
                                           <div class="app-theme__sidebar-expandable-icon-wrapper">
                                             <svg
@@ -886,8 +888,9 @@
                                         type="button"
                                         class="app-theme__sidebar-expandable-button"
                                         data-veloute="cancellation-policy"
+                                        onclick="window.location.href='cancel.html';"
                                       >
-                                        <div class="app-theme__sidebar-expandable-wrapper">
+                                        <div class="app-theme__sidebar-expandable-text-wrapper">
                                           <div class="app-theme__sidebar-expandable-text">
                                             Cancellation policy
                                           </div>
@@ -1020,7 +1023,10 @@
                           </span>
                         </button>
                       </div>
-                      <div class="header__logo-btn-text">Cancellation policy</div>
+                      <div class="header__logo-btn-text">Group size</div>
+                      <div class="margin__left-auto">
+                        <button type="button" class="btn-outline-small">Preview</button>
+                      </div>
                     </div>
                     <section class="site-content__page-content">
                       <div class="vh-100">
@@ -1036,80 +1042,169 @@
                                       class="heading"
                                       elementtiming="LCP-target"
                                     >
-                                      Choose a cancellation policy
+                                      Maximum group size
                                     </h1>
+                                  </div>
+                                  <div class="account-container-mb__header-show-more">
+                                    <span class="_11oyobo"
+                                      >Think about what group size is best for
+                                      your experience. Is it more interactive
+                                      with fewer people, or more fun with a
+                                      larger group? Remember: If only one person
+                                      books, you'll still be expected to
+                                      host.</span
+                                    >
                                   </div>
                                 </div>
                               </section>
                             </div>
-                            <section>
-                              <div style="margin-bottom: 24px">
-                                <div>
-                                  <div class="footer__progress-active-wrapper">
-                                    <div class="va-top">
-                                      <input
-                                        aria-label="strict"
-                                        id="strict"
-                                        data-testid="policy__strict"
-                                        name="lyt-radio-cancellation-policy"
-                                        class="radio__button"
-                                        type="radio"
-                                        value="CANCEL_STRICT"
-                                      />
-                                    </div>
-                                    <div class="va-top-h">
-                                      <div style="margin-left: 16px">
-                                        <div style="margin-bottom: 8px">
-                                          <div class="explore__carousel-img-overlay-text">
-                                            Guests can cancel until 7 days
-                                            before the Experience start time for
-                                            a full refund, or within 24 hours of
-                                            booking as long as the booking is
-                                            made more than 48 hours before the
-                                            start time.
-                                          </div>
+                            <div>
+                              <div class="site-content__content-wrapper-h2-wrapper">
+                                <div class="_1f90wx">
+                                  <div class="_j69sjg">Public groups</div>
+                                  <div class="form-floating">
+                                    <label
+                                      class="form-floating__control"
+                                      for="data-type-picker-Public groups"
+                                      ><div class="form-floating__label">
+                                        <div class="spinner-chart__input-title-text">
+                                          Maximum group size
                                         </div>
                                       </div>
+                                      <div class="box-border">
+                                        <select
+                                          name="data-type-picker-Public groups"
+                                          class="form__select"
+                                          id="data-type-picker-Public groups"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                        </select>
+                                      </div></label
+                                    >
+                                    <div class="form-floating__addon">
+                                      <svg
+                                        viewBox="0 0 32 32"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        role="presentation"
+                                        focusable="false"
+                                        style="
+                                          display: block;
+                                          fill: none;
+                                          height: 16px;
+                                          width: 16px;
+                                          stroke: currentcolor;
+                                          stroke-width: 4;
+                                          overflow: visible;
+                                        "
+                                      >
+                                        <g fill="none">
+                                          <path
+                                            d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"
+                                          ></path>
+                                        </g>
+                                      </svg>
                                     </div>
                                   </div>
-                                  <div
-                                    style="
-                                      margin-top: 24px;
-                                      margin-bottom: 24px;
-                                    "
-                                  >
-                                    <div class="b-divider"></div>
-                                  </div>
-                                </div>
-                                <div>
-                                  <div class="footer__progress-active-wrapper">
-                                    <div class="va-top">
-                                      <input
-                                        aria-label="flexible"
-                                        id="flexible"
-                                        data-testid="policy__flexible"
-                                        name="lyt-radio-cancellation-policy"
-                                        class="explore-filter-menu__radio-input"
-                                        type="radio"
-                                        value="CANCEL_FLEXIBLE"
-                                        checked=""
-                                      />
-                                    </div>
-                                    <div class="va-top-h">
-                                      <div style="margin-left: 16px">
-                                        <div style="margin-bottom: 8px">
-                                          <div class="explore__carousel-img-overlay-text">
-                                            Guests can cancel until 24 hours
-                                            before the Experience start time for
-                                            a full refund.
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <div class="_192q3o1">
+                                    You can host a public group for up to 10
+                                    guests. Guests who book may or may not know
+                                    each other.
                                   </div>
                                 </div>
                               </div>
-                            </section>
+                              <div class="site-content__content-wrapper-h2-wrapper">
+                                <div class="_1f90wx">
+                                  <div class="_j69sjg">Private groups</div>
+                                  <div class="form-floating">
+                                    <label
+                                      class="form-floating__control"
+                                      for="data-type-picker-Private groups"
+                                      ><div class="form-floating__label">
+                                        <div class="spinner-chart__input-title-text">
+                                          Maximum group size
+                                        </div>
+                                      </div>
+                                      <div class="box-border">
+                                        <select
+                                          name="data-type-picker-Private groups"
+                                          class="form__select"
+                                          id="data-type-picker-Private groups"
+                                        >
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                          <option value="13">13</option>
+                                          <option value="14">14</option>
+                                          <option value="15">15</option>
+                                          <option value="16">16</option>
+                                          <option value="17">17</option>
+                                          <option value="18">18</option>
+                                          <option value="19">19</option>
+                                          <option value="20">20</option>
+                                          <option value="21">21</option>
+                                          <option value="22">22</option>
+                                          <option value="23">23</option>
+                                          <option value="24">24</option>
+                                          <option value="25">25</option>
+                                          <option value="26">26</option>
+                                          <option value="27">27</option>
+                                          <option value="28">28</option>
+                                          <option value="29">29</option>
+                                          <option value="30">30</option>
+                                        </select>
+                                      </div></label
+                                    >
+                                    <div class="form-floating__addon">
+                                      <svg
+                                        viewBox="0 0 32 32"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true"
+                                        role="presentation"
+                                        focusable="false"
+                                        style="
+                                          display: block;
+                                          fill: none;
+                                          height: 16px;
+                                          width: 16px;
+                                          stroke: currentcolor;
+                                          stroke-width: 4;
+                                          overflow: visible;
+                                        "
+                                      >
+                                        <g fill="none">
+                                          <path
+                                            d="m28 12-11.2928932 11.2928932c-.3905243.3905243-1.0236893.3905243-1.4142136 0l-11.2928932-11.2928932"
+                                          ></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                  <div class="_192q3o1">
+                                    For online experiences, you can host a
+                                    private group for up to 30 guests.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <footer class="footer__item-list">
