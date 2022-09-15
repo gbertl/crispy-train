@@ -6,13 +6,13 @@ document.querySelectorAll('[role=tab]').forEach((btn) => {
       .querySelectorAll('[role=tab]')
       .forEach((tabBtn) =>
         tabBtn.classList.replace(
-          'tab__list-btn-primary',
-          'tab__list-btn-secondary'
+          'tab__btn-active',
+          'tab__btn'
         )
       );
     e.target.classList.replace(
-      'tab__list-btn-secondary',
-      'tab__list-btn-primary'
+      'tab__btn',
+      'tab__btn-active'
     );
     parent
       .querySelectorAll('[role=tabpanel]')
