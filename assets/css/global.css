@@ -19350,7 +19350,7 @@ input[type='button'].btn-block {
   white-space: nowrap !important;
   overflow: visible !important;
 }
-.tab__list-btn-primary {
+.tab__btn-active {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     'Helvetica Neue', sans-serif !important;
   font-size: 14px !important;
@@ -19370,7 +19370,7 @@ input[type='button'].btn-block {
   color: #222 !important;
   cursor: default !important;
 }
-.tab__list-btn-primary::after {
+.tab__btn-active::after {
   content: '' !important;
   position: absolute !important;
   background-color: #222 !important;
@@ -19379,7 +19379,7 @@ input[type='button'].btn-block {
   width: calc(100% - 20px) !important;
   height: 2px !important;
 }
-.tab__list-btn-secondary {
+.tab__btn {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     'Helvetica Neue', sans-serif !important;
   font-size: 14px !important;
@@ -19412,7 +19412,7 @@ input[type='button'].btn-block {
   white-space: nowrap !important;
   overflow: visible !important;
 }
-.tab__list-btn-primary {
+.tab__btn-active {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif !important;
   font-size: 14px !important;
@@ -19437,24 +19437,24 @@ input[type='button'].btn-block {
   color: #222 !important;
   cursor: default !important;
 }
-.tab__list-btn-primary:first-child {
+.tab__btn-active:first-child {
   margin-left: -10px !important;
 }
-.tab__list-btn-primary:last-child {
+.tab__btn-active:last-child {
   margin-right: 0 !important;
 }
-.tab__list-btn-primary::-moz-focus-inner {
+.tab__btn-active::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.tab__list-btn-primary:focus::-moz-focus-inner {
+.tab__btn-active:focus::-moz-focus-inner {
   border: none !important;
 }
-.tab__list-btn-primary:-moz-focusring {
+.tab__btn-active:-moz-focusring {
   outline: 0 !important;
 }
-.tab__list-btn-primary:focus-visible {
+.tab__btn-active:focus-visible {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
@@ -19464,39 +19464,39 @@ input[type='button'].btn-block {
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .tab__list-btn-primary:focus-visible {
+  .tab__btn-active:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  .tab__list-btn-primary:hover {
+  .tab__btn-active:hover {
     background: #f7f7f7 !important;
   }
 }
-.tab__list-btn-primary:disabled {
+.tab__btn-active:disabled {
   cursor: not-allowed !important;
   color: #ddd !important;
 }
 @media (hover: hover) {
-  .tab__list-btn-primary:disabled:hover {
+  .tab__btn-active:disabled:hover {
     background: 0 0 !important;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .tab__list-btn-primary {
+  .tab__btn-active {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
-.tab__list-btn-primary:active {
+.tab__btn-active:active {
   -webkit-transform: none !important;
   -ms-transform: none !important;
   transform: none !important;
 }
-.tab__list-btn-primary::after {
+.tab__btn-active::after {
   content: '' !important;
   position: absolute !important;
   background-color: #222 !important;
@@ -19507,7 +19507,7 @@ input[type='button'].btn-block {
   width: calc(100% - 20px) !important;
   height: 2px !important;
 }
-.tab__list-btn-secondary {
+.tab__btn {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif !important;
   font-size: 14px !important;
@@ -19531,24 +19531,24 @@ input[type='button'].btn-block {
   position: relative !important;
   outline: 0 !important;
 }
-.tab__list-btn-secondary:first-child {
+.tab__btn:first-child {
   margin-left: -10px !important;
 }
-.tab__list-btn-secondary:last-child {
+.tab__btn:last-child {
   margin-right: 0 !important;
 }
-.tab__list-btn-secondary::-moz-focus-inner {
+.tab__btn::-moz-focus-inner {
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.tab__list-btn-secondary:focus::-moz-focus-inner {
+.tab__btn:focus::-moz-focus-inner {
   border: none !important;
 }
-.tab__list-btn-secondary:-moz-focusring {
+.tab__btn:-moz-focusring {
   outline: 0 !important;
 }
-.tab__list-btn-secondary:focus-visible {
+.tab__btn:focus-visible {
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
   transition: box-shadow 0.2s !important;
@@ -19558,33 +19558,33 @@ input[type='button'].btn-block {
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  .tab__list-btn-secondary:focus-visible {
+  .tab__btn:focus-visible {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;
   }
 }
 @media (hover: hover) {
-  .tab__list-btn-secondary:hover {
+  .tab__btn:hover {
     background: #f7f7f7 !important;
   }
 }
-.tab__list-btn-secondary:active {
+.tab__btn:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
 }
-.tab__list-btn-secondary:disabled {
+.tab__btn:disabled {
   cursor: not-allowed !important;
   color: #ddd !important;
 }
 @media (hover: hover) {
-  .tab__list-btn-secondary:disabled:hover {
+  .tab__btn:disabled:hover {
     background: 0 0 !important;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .tab__list-btn-secondary {
+  .tab__btn {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     transition: none !important;

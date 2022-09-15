@@ -1,9 +1,3 @@
-handleTab({
-  buttonId: 'tab--notification-preferences--',
-  panelId: 'panel--notification-preferences--',
-  parentId: 'notification-preferences',
-});
-
 handleModal({
   btnOpenSelector: '.btn-link-condensed',
   btnCloseSelector: '.btn-close',
