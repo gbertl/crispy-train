@@ -57,11 +57,11 @@ export default series(globalStyles, pageStyles, watchAll);
 // export default series(serve, watchMainStyles)
 
 export const purgeOne = () => {
-  return src('src/css/inline.css')
+  return src('dist/social-impact-host.css')
     .pipe(
       postcss([
         purgeCss({
-          content: ['**/*.html', '**/*.js'],
+          content: ['social-impact-host.html'],
         }),
       ])
     )
