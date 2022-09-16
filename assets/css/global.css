@@ -4735,6 +4735,12 @@ html :where(img[class*='wp-image-']) {
 .self-stretch {
   align-self: stretch;
 }
+.border-b-0 {
+  border-bottom: 0 !important;
+}
+.w-auto {
+  width: auto !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
@@ -14526,42 +14532,6 @@ html :where(img[class*='wp-image-']) {
   z-index: 1;
   position: relative;
 }
-.btn-primary {
-  cursor: pointer !important;
-  display: inline-block !important;
-  margin: 0 !important;
-  position: relative !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  touch-action: manipulation !important;
-  font-family: var(--font-family) !important;
-  font-size: var(--font-size) !important;
-  line-height: var(--line-height-md) !important;
-  font-weight: var(--font-weight-semibold) !important;
-  border-radius: var(--border-radius) !important;
-  outline: 0 !important;
-  padding: 14px 24px !important;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
-    transform 0.1s !important;
-  -webkit-tap-highlight-color: transparent !important;
-  border: none !important;
-  background: linear-gradient(
-    to right,
-    #e61e4d 0,
-    #e31c5f 50%,
-    #d70466 100%
-  ) !important;
-  color: #fff !important;
-  width: 100% !important;
-}
-@supports (--custom: properties) {
-  .btn-primary {
-    background: var(
-      --dls19-brand-gradient,
-      linear-gradient(to right, #e61e4d 0, #e31c5f 50%, #d70466 100%)
-    ) !important;
-  }
-}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -14704,7 +14674,7 @@ fieldset[disabled] .btn {
     #d70466 100%
   ) !important;
   color: #fff !important;
-  width: 100% !important;
+  width: 100%;
 }
 @supports (--custom: properties) {
   .btn-primary {
@@ -18417,7 +18387,7 @@ input[type='button'].btn-block {
   justify-content: space-between !important;
   padding: 0 24px !important;
   min-height: 48px !important;
-  border-bottom: 1px solid #ebebeb !important;
+  border-bottom: 1px solid #ebebeb;
   color: #222 !important;
   font-size: 16px !important;
   line-height: 20px !important;
