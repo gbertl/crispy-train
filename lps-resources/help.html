@@ -274,6 +274,9 @@
                                 ></div>
                                 <form class="ctqyxkl dir dir-ltr" role="search">
                                   <input
+                                    data-search="#search-suggestions-popup"
+                                    data-search-loader="#search-suggestions-popup-loader"
+                                    data-search-result="#search-suggestions-popup-result"
                                     type="search"
                                     value=""
                                     placeholder="Search how-tos and more"
@@ -286,7 +289,17 @@
                                     role="combobox"
                                     aria-describedby="search-suggestions-instructions"
                                     data-testid="search-input"
-                                  /><button
+                                  />
+                                  <div class="cfermtz hidden dir dir-ltr">
+                                    <button data-button="clear" type="button" data-testid="search-clear-button" class="_1qrk4en">
+                                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Clear search" role="img" focusable="false"
+                                        style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                                        <path d="m6 6 20 20"></path>
+                                        <path d="m26 6-20 20"></path>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <button
                                     type="submit"
                                     class="sjnrf6s dir dir-ltr"
                                     data-testid="search-submit-button"
@@ -331,6 +344,116 @@
                                     >
                                   </button>
                                 </form>
+                                <div id="search-suggestions-popup" class="hidden sfme1lx dir dir-ltr" role="listbox" tabindex="-1" aria-label="Search suggestions"
+                                  class="sfme1lx dir dir-ltr" data-testid="search-suggestions-popup">
+                                  <ul role="group" class="l7kl1pb dir dir-ltr" aria-labelledby="suggestion-group-title-Toparticles">
+                                    <li id="suggestion-group-title-Toparticles" role="presentation" tabindex="-1" class="t1anu1jt dir dir-ltr">Top
+                                      articles</li>
+                                    <li id="search-suggestions-item-0" role="option" tabindex="-1" aria-selected="false" aria-posinset="1"
+                                      aria-setsize="3" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr">Canceling your reservation for a stay</span></div>
+                                    </li>
+                                    <li id="search-suggestions-item-1" role="option" tabindex="-1" aria-selected="false" aria-posinset="2"
+                                      aria-setsize="3" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr">Change the date or time of your Experience
+                                          reservation</span></div>
+                                    </li>
+                                    <li id="search-suggestions-item-2" role="option" tabindex="-1" aria-selected="false" aria-posinset="3"
+                                      aria-setsize="3" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr">If your Host cancels your reservation</span></div>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div id="search-suggestions-popup-loader" class="hidden sfme1lx dir dir-ltr" role="listbox" tabindex="-1" aria-label="Search suggestions"
+                                  class="sfme1lx dir dir-ltr" data-testid="search-suggestions-popup">
+                                  <div class="l1vl8tcn dir dir-ltr"><span data-testid="dot-loader" class="_l7ztla"><span class="_mr5az14"></span><span
+                                        class="_1pphas65"></span><span class="_1x9afh0x"></span></span></div>
+                                </div>
+                                <div id="search-suggestions-popup-result" class="hidden sfme1lx dir dir-ltr" role="listbox" tabindex="-1" aria-label="Search suggestions"
+                                  class="sfme1lx dir dir-ltr" data-testid="search-suggestions-popup">
+                                  <ul role="group" class="l7kl1pb dir dir-ltr">
+                                    <li id="search-suggestions-item-0" role="option" tabindex="-1" aria-selected="false" aria-posinset="1"
+                                      aria-setsize="6" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong></span></div>
+                                    </li>
+                                    <li id="search-suggestions-item-1" role="option" tabindex="-1" aria-selected="false" aria-posinset="2"
+                                      aria-setsize="6" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>ircover</span></div>
+                                    </li>
+                                    <li id="search-suggestions-item-2" role="option" tabindex="-1" aria-selected="false" aria-posinset="3"
+                                      aria-setsize="6" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>lter<strong>a</strong>tion</span></div>
+                                    </li>
+                                    <li id="search-suggestions-item-3" role="option" tabindex="-1" aria-selected="false" aria-posinset="4"
+                                      aria-setsize="6" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr">cont<strong>a</strong>ct <strong>a</strong>irbnb</span></div>
+                                    </li>
+                                    <li id="search-suggestions-item-4" role="option" tabindex="-1" aria-selected="false" aria-posinset="5"
+                                      aria-setsize="6" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>dd p<strong>a</strong>yout method</span>
+                                      </div>
+                                    </li>
+                                    <li id="search-suggestions-item-5" role="option" tabindex="-1" aria-selected="false" aria-posinset="6"
+                                      aria-setsize="6" class="l135y242 dir dir-ltr">
+                                      <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                                            style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                                            <path
+                                              d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                                            </path>
+                                          </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>lter<strong>a</strong>tion request</span>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
                                 <div
                                   class="a1vub294 dir dir-ltr"
                                   id="search-suggestions-instructions"
@@ -6226,13 +6349,24 @@
                   <div class="a1vub294 dir dir-ltr" role="status" aria-atomic="true" aria-live="polite">3 search
                     suggestions</div>
                   <div class="a1vub294 dir dir-ltr" role="status" aria-atomic="true" aria-live="polite"></div>
-                  <form class="ctqyxkl c1tt8vn6 dir dir-ltr" role="search"><input type="search"
+                  <form class="ctqyxkl c1tt8vn6 dir dir-ltr" role="search"><input data-search-mobile=""
+                      data-search="#search-suggestions-popup-mobile"
+                      data-search-loader="#search-suggestions-popup-mobile-loader"
+                      data-search-result="#search-suggestions-popup-mobile-result"
+                      type="search"
                       placeholder="Search how-tos and more" aria-label="Search how-tos and more" autocomplete="off"
                       class="i17j5df5 i4tq7yb dir dir-ltr" aria-autocomplete="both" aria-haspopup="listbox"
-                      aria-expanded="true" role="combobox" aria-owns="search-suggestions-popup"
-                      aria-describedby="search-suggestions-instructions" data-testid="search-input" value=""></form>
-                  <div id="search-suggestions-popup" role="listbox" tabindex="-1" aria-label="Search suggestions"
-                    class="sfme1lx s1k6l13p dir dir-ltr" data-testid="search-suggestions-popup">
+                      aria-expanded="true" role="combobox" aria-owns="search-suggestions-popup-mobile"
+                      aria-describedby="search-suggestions-instructions" data-testid="search-input" value="">
+                    <div class="cfermtz hidden c4v6w20 dir dir-ltr"><button data-button="clear" type="button" data-testid="search-clear-button" class="_1qrk4en"><svg
+                          viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Clear search" role="img" focusable="false"
+                          style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                          <path d="m6 6 20 20"></path>
+                          <path d="m26 6-20 20"></path>
+                        </svg></button></div>
+                    </form>
+                  <div id="search-suggestions-popup-mobile" role="listbox" tabindex="-1" aria-label="Search suggestions"
+                    class="sfme1lx s1k6l13p dir dir-ltr" data-testid="search-suggestions-popup-mobile">
                     <ul role="group" class="l7kl1pb dir dir-ltr" aria-labelledby="suggestion-group-title-Toparticles">
                       <li id="suggestion-group-title-Toparticles" role="presentation" tabindex="-1"
                         class="t1anu1jt dir dir-ltr">Top articles</li>
@@ -6267,6 +6401,80 @@
                                 d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z">
                               </path>
                             </svg></span><span class="l1aeurux dir dir-ltr">If your Host cancels your reservation</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="search-suggestions-popup-mobile-loader" role="listbox" tabindex="-1" aria-label="Search suggestions"
+                    class="sfme1lx s1k6l13p dir dir-ltr hidden" data-testid="search-suggestions-popup-mobile">
+                  
+                    <div class="l1vl8tcn dir dir-ltr"><span data-testid="dot-loader" class="_l7ztla"><span class="_mr5az14"></span><span
+                          class="_1pphas65"></span><span class="_1x9afh0x"></span></span>
+                    </div>
+                  </div>
+                  <div id="search-suggestions-popup-mobile-result" role="listbox" tabindex="-1" aria-label="Search suggestions"
+                    class="sfme1lx s1k6l13p dir dir-ltr hidden" data-testid="search-suggestions-popup">
+                    <ul role="group" class="l7kl1pb dir dir-ltr">
+                      <li id="search-suggestions-item-0" role="option" tabindex="-1" aria-selected="false" aria-posinset="1"
+                        aria-setsize="6" class="l135y242 dir dir-ltr">
+                        <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                              style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                              <path
+                                d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                              </path>
+                            </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong></span></div>
+                      </li>
+                      <li id="search-suggestions-item-1" role="option" tabindex="-1" aria-selected="false" aria-posinset="2"
+                        aria-setsize="6" class="l135y242 dir dir-ltr">
+                        <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                              style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                              <path
+                                d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                              </path>
+                            </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>ircover</span></div>
+                      </li>
+                      <li id="search-suggestions-item-2" role="option" tabindex="-1" aria-selected="false" aria-posinset="3"
+                        aria-setsize="6" class="l135y242 dir dir-ltr">
+                        <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                              style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                              <path
+                                d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                              </path>
+                            </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>lter<strong>a</strong>tion</span></div>
+                      </li>
+                      <li id="search-suggestions-item-3" role="option" tabindex="-1" aria-selected="false" aria-posinset="4"
+                        aria-setsize="6" class="l135y242 dir dir-ltr">
+                        <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                              style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                              <path
+                                d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                              </path>
+                            </svg></span><span class="l1aeurux dir dir-ltr">cont<strong>a</strong>ct <strong>a</strong>irbnb</span></div>
+                      </li>
+                      <li id="search-suggestions-item-4" role="option" tabindex="-1" aria-selected="false" aria-posinset="5"
+                        aria-setsize="6" class="l135y242 dir dir-ltr">
+                        <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                              style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                              <path
+                                d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                              </path>
+                            </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>dd p<strong>a</strong>yout method</span>
+                        </div>
+                      </li>
+                      <li id="search-suggestions-item-5" role="option" tabindex="-1" aria-selected="false" aria-posinset="6"
+                        aria-setsize="6" class="l135y242 dir dir-ltr">
+                        <div class="ra379ne dir dir-ltr"><span class="imr2k6c dir dir-ltr"><svg viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false"
+                              style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                              <path
+                                d="m30.707 29.293-8.55224-8.55225a12.02772 12.02772 0 1 0 -1.41407 1.41407l8.55231 8.55218zm-17.707-6.293a10 10 0 1 1 10-10 10.01146 10.01146 0 0 1 -10 10z">
+                              </path>
+                            </svg></span><span class="l1aeurux dir dir-ltr"><strong>a</strong>lter<strong>a</strong>tion request</span>
                         </div>
                       </li>
                     </ul>
