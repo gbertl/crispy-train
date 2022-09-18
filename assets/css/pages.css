@@ -65239,3 +65239,34 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 ._1nt3229 {
   color: #FFB400 !important;
 }
+
+._nu40w4 {
+  position: absolute !important;
+  padding: 8px 44px 8px 56px !important;
+  width: 100vw !important;
+  top: 100% !important;
+  right: 0px !important;
+  left: 0px !important;
+  z-index: -1 !important;
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid rgb(235, 235, 235) !important;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px !important;
+}
+
+._7s3ukx {
+    display: -ms-grid !important;
+    display: grid !important;
+    grid-gap: 32px !important;
+    list-style-type: none !important;
+    padding: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+@media (min-width: 1128px) {
+  ._7s3ukx {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr !important;
+  }
+}
