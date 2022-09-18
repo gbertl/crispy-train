@@ -629,7 +629,7 @@
                                     </div>
                                     <div class="_b76aq7">
                                       <button
-                                        data-testid="host-inbox-filter-button"
+                                        id="host-inbox-filter-button"
                                         aria-label="Filter messages"
                                         type="button"
                                         class="_v54ooj"
@@ -2073,5 +2073,142 @@
     <div>
       <iframe style="display: none"></iframe>
     </div>
+
+    <!-- Show more details modal -->
+    <div dir="ltr" id="show-filter-modal" class="hidden">
+      <div class="_1t0jy5tw"></div>
+      <section>
+        <div class="_vxvq8x" data-testid="modal-container">
+          <div class="_z4lmgp">
+            <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+            <div class="_z4lmgp">
+              <div role="dialog" aria-label="Filter messages" aria-modal="true" class="_1ucy1zjv" style="position: relative;">
+                <div class="_pa35zs">
+                  <button aria-label="Close" type="button" class="_oda838">
+                    <span class="_e296pg">
+                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                        <path d="m6 6 20 20"></path>
+                        <path d="m26 6-20 20"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div class="_z4lmgp" style="--gp-padding-xsmallAndAbove:24px; --gp-padding-smallAndAbove:24px; --gp-padding-mediumAndAbove:24px; --gp-padding-mediumPlusAndAbove:24px; --gp-padding-largeAndAbove:24px; --gp-padding-xlargeAndAbove:24px;">
+                  <header class="_q8mwh4">
+                    <div class="_1jqox1a"></div>
+                    <div class="_1s09xaf">
+                      <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                        <div class="_1q9sh65">
+                          <div class="c1yo0219 dir dir-ltr" style="">
+                            <div style="--gp-section-max-width:1120px;">
+                              <div data-plugin-in-point-id="INBOX_FILTERS_HEADER" data-section-id="INBOX_FILTERS_HEADER">
+                                <div class="_cys8nx">Filter messages</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </h1>
+                    </div>
+                    <div class="_160ra1x"></div>
+                  </header>
+                  <div class="_10toigd">
+                    <main id="site-content">
+                      <div class="c1yo0219 dir dir-ltr" style="">
+                        <div style="--gp-section-max-width:1120px;">
+                          <div class="_le6wlg">
+                            <div class="plmw1e5 mq5rv0q dir dir-ltr" style="--maxWidth:1120px;">
+                              <div data-plugin-in-point-id="INBOX_FILTERS_LISTING" data-section-id="INBOX_FILTERS_LISTING" style="padding-top: 32px; padding-bottom: 32px;">
+                                <button type="button" class="_1yydbd74">
+                                  <div class="_zjunba">
+                                    <div>
+                                      <h3 class="_d8a74u">Experiences</h3>
+                                      <div class="_1x6088p">No filter applied</div>
+                                    </div>
+                                    <div class="_14846yz">
+                                      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                        <g fill="none">
+                                          <path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path>
+                                        </g>
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c1yo0219 dir dir-ltr" style="">
+                        <div style="--gp-section-max-width:1120px;">
+                          <div class="_le6wlg">
+                            <div class="plmw1e5 mq5rv0q dir dir-ltr" style="--maxWidth:1120px;">
+                              <div class="_npr0qi" style="border-top-color: rgb(221, 221, 221);">
+                              </div>
+                              <div data-plugin-in-point-id="INBOX_FILTERS_MESSAGE_TYPE" data-section-id="INBOX_FILTERS_MESSAGE_TYPE" style="padding-top: 32px; padding-bottom: 32px;">
+                                <div>
+                                  <h3 class="_1f88iq8">Message type</h3>
+                                  <div class="_1byskwn">
+                                    <div class="_1s1qfkt6">
+                                      <div class="_1ouw2w0">
+                                        <label class="atm_9s_1txwivl dir dir-ltr" for="unread">
+                                          <span class="_10ndlvp">
+                                            <input id="unread" name="Unread" class="_1yf4i4f" type="checkbox">
+                                            <span class="_41yoza" data-checkbox="true"></span>
+                                          </span>
+                                          <span class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y atm_7l_18pqv07 atm_h3_yh40bf atm_gz_exct8b dir dir-ltr">
+                                            <div class="_l6x7wk">Unread</div>
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="_1s1qfkt6">
+                                      <div class="_1ouw2w0">
+                                        <label class="atm_9s_1txwivl dir dir-ltr"  for="starred">
+                                          <span class="_10ndlvp">
+                                            <input id="starred" name="Starred" class="_1yf4i4f" type="checkbox">
+                                            <span class="_41yoza" data-checkbox="true"></span>
+                                          </span>
+                                          <span class="atm_bx_1ltc5j7 atm_c8_exq1xd atm_g3_1pezo5y atm_7l_18pqv07 atm_h3_yh40bf atm_gz_exct8b dir dir-ltr">
+                                            <div class="_l6x7wk">Starred</div>
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
+                  <footer>
+                    <div class="c1yo0219 dir dir-ltr" style="">
+                      <div style="--gp-section-max-width:1120px;">
+                        <div data-plugin-in-point-id="INBOX_FILTERS_FOOTER" data-section-id="INBOX_FILTERS_FOOTER">
+                          <div data-testid="filters-footer" class="_1fc5ti">
+                            <footer class="_zgc1p6">
+                              <button type="button" class="_za4ekfm">Clear</button>
+                              <button type="button" class="_1ku51f04">Apply</button>
+                            </footer>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+            <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+          </div>
+        </div>
+      </section>
+      <div class="_b21f4g">
+        <div aria-live="polite" aria-atomic="true"></div>
+        <div aria-live="assertive" aria-atomic="true"></div>
+      </div>
+    </div>
+    <script src="../assets/js/pages/inbox.js" defer></script>
   </body>
 </html>
