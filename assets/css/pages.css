@@ -10892,7 +10892,8 @@
   display: flex !important;
   width: 100% !important;
   min-width: 0 !important;
-  height: var(calc(8.65px * 100) -65px, 100vh) !important;
+  /* height: var(calc(8.65px * 100) -65px, 100vh) !important; */
+  height: calc(100vh - 65px) !important;
 }
 ._dkm9h7 {
   opacity: 0 !important;
@@ -37602,7 +37603,8 @@ a:hover {
   display: flex !important;
   width: 100% !important;
   min-width: 0 !important;
-  height: var(--panel-layout-height, 100vh) !important;
+  /* height: var(--panel-layout-height, 100vh) !important; */
+  height: calc(100vh - 65px) !important;
 }
 ._1szkpit {
   min-width: 0 !important;
@@ -37910,7 +37912,8 @@ a:hover {
   }
 }
 ._n7ya4ay {
-  height: var(--panel-layout-height, 100vh) !important;
+  /* height: var(--panel-layout-height, 100vh) !important; */
+  height: calc(100vh - 65px) !important;
   overflow: visible !important;
   --panel-animation-duration: var(
     --orbital-panel-transition-duration,
@@ -37952,7 +37955,8 @@ a:hover {
 }
 @media (min-width: 375px) {
   ._n7ya4ay {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: visible !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -37984,6 +37988,7 @@ a:hover {
 @media (min-width: 744px) {
   ._n7ya4ay {
     height: var(--panel-layout-height, 100vh) !important;
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -38016,7 +38021,8 @@ a:hover {
 }
 @media (min-width: 1128px) {
   ._n7ya4ay {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -38049,7 +38055,8 @@ a:hover {
 }
 @media (min-width: 1440px) {
   ._n7ya4ay {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39078,7 +39085,8 @@ a:hover {
   background: #f7f7f7 !important;
 }
 ._1pogqqkb {
-  height: var(--panel-layout-height, 100vh) !important;
+  /* height: var(--panel-layout-height, 100vh) !important; */
+  height: calc(100vh - 65px) !important;
   overflow: hidden !important;
   --panel-animation-duration: var(
     --orbital-panel-transition-duration,
@@ -39122,7 +39130,8 @@ a:hover {
 }
 @media (min-width: 375px) {
   ._1pogqqkb {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39153,7 +39162,8 @@ a:hover {
 }
 @media (min-width: 744px) {
   ._1pogqqkb {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39186,7 +39196,8 @@ a:hover {
 }
 @media (min-width: 1128px) {
   ._1pogqqkb {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39219,7 +39230,8 @@ a:hover {
 }
 @media (min-width: 1440px) {
   ._1pogqqkb {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39329,7 +39341,8 @@ a:hover {
   }
 }
 ._yy9frzn {
-  height: var(--panel-layout-height, 100vh) !important;
+  /* height: var(--panel-layout-height, 100vh) !important; */
+  height: calc(100vh - 65px) !important;
   overflow: hidden !important;
   --panel-animation-duration: var(
     --orbital-panel-transition-duration,
@@ -39373,7 +39386,8 @@ a:hover {
 }
 @media (min-width: 375px) {
   ._yy9frzn {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39406,7 +39420,8 @@ a:hover {
 }
 @media (min-width: 744px) {
   ._yy9frzn {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39439,7 +39454,8 @@ a:hover {
 }
 @media (min-width: 1128px) {
   ._yy9frzn {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -39472,7 +39488,8 @@ a:hover {
 }
 @media (min-width: 1440px) {
   ._yy9frzn {
-    height: var(--panel-layout-height, 100vh) !important;
+    /* height: var(--panel-layout-height, 100vh) !important; */
+    height: calc(100vh - 65px) !important;
     overflow: hidden !important;
     --panel-animation-duration: var(
       --orbital-panel-transition-duration,
@@ -65218,4 +65235,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   ._1mqtq54.archive ._6n0ip2{
     transform: translate(45px, 0px);
   }
+}
+._1nt3229 {
+  color: #FFB400 !important;
 }
