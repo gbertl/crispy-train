@@ -28,3 +28,14 @@ document
       this.classList.replace('_1qi0sj8', '_1ju7xj0j');
     }
   });
+
+  document
+  .querySelector('.topic-dropdown')
+  .addEventListener('click', function () {
+    const dropdown = document.querySelector('._nu40w4').classList;
+    if(dropdown.contains('hidden')){
+      dropdown.remove('hidden')
+    } else {
+      dropdown.add('hidden')
+    }
+  });
