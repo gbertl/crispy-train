@@ -5388,10 +5388,10 @@ html :where(img[class*='wp-image-']) {
   position: relative;
 }
 @media (min-width: 744px) {
-  .col-md-2 {
+  /* .col-md-2 {
     width: 16.66667%;
     float: left;
-  }
+  } */
   .col-md-9 {
     width: 75%;
     float: left;
