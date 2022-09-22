@@ -206,4 +206,79 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
       searchMenuResult?.classList.add('hidden')
     })
   })
+
+  // data-panel
+
+  const defaultPanel = document.querySelector('#thread_panel')
+  const defaultPanelDetails = document.querySelector('#thread_details_panel')
+
+  defaultPanelDetails.querySelector('[data-button="close"]')
+    .addEventListener('click', (e) => defaultPanelDetails.classList.toggle('hidden'))
+
+  document.querySelectorAll('[data-panel]')
+    .forEach((messages) => {
+      const conversation = document.querySelector(messages.dataset.panel)
+      const conversationDetails = document.querySelector(messages.dataset.panelDetails)
+
+      const conversationButtonClose = conversation?.querySelector('[data-button="close"]')
+      const toggleConversationDetails = () => {
+        if (conversationDetails.classList.contains('hidden')) {
+          conversationButtonClose.classList = '_sq0plgu'
+          conversationButtonClose.innerHTML = 'Hide details'
+        } else {
+          conversationButtonClose.classList = '_43he2wy'
+          conversationButtonClose.innerHTML = 'Get details'
+        }
+
+        conversationDetails.classList.toggle('hidden')
+        conversation.querySelector('._ss1ehk')?.classList.toggle('hidden')
+      }
+
+      conversation?.querySelector('[data-button="close"]')
+        ?.addEventListener('click', () => {
+          toggleConversationDetails()
+        })
+
+      conversationDetails?.querySelector('[data-button="close"]')
+        ?.addEventListener('click', () => {
+          toggleConversationDetails()
+        })
+
+      messages.addEventListener('click', (message) => {
+        message.preventDefault()
+
+        defaultPanel?.classList.add('hidden')
+        defaultPanelDetails?.classList.add('hidden')
+
+        message.currentTarget.closest('#list_inbox')
+          .querySelectorAll('[data-panel]')
+          .forEach((e) => {
+            if (e !== message) {
+              e.classList = '_12ty3s'
+
+              const currentConversation = document.querySelector(e.dataset.panel)
+              const currentConversationDetails = document.querySelector(e.dataset.panelDetails)
+
+              !currentConversation?.classList.contains('hidden') &&
+                currentConversation?.classList.add('hidden')
+
+              !currentConversationDetails?.classList.contains('hidden') &&
+                currentConversationDetails?.classList.add('hidden')
+            }
+          })
+
+        message.currentTarget.classList = '_159gpp2h'
+        conversation?.classList.remove('hidden')
+        conversationDetails?.classList.remove('hidden')
+        conversation.querySelector('._ss1ehk')?.classList.remove('hidden')
+
+        if (conversationButtonClose) {
+          conversationButtonClose.classList = '_sq0plgu'
+          conversationButtonClose.innerHTML = 'Hide details'
+        }
+
+        const conversationContainer = conversation.querySelector('._f4l4c1')
+        conversationContainer.scrollTo({ top: conversationContainer.scrollHeight })
+      })
+    })
 })();
