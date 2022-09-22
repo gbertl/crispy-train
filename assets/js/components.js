@@ -209,14 +209,15 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
   // data-panel
 
-  const defaultPanel = document.querySelector('#thread_panel')
-  const defaultPanelDetails = document.querySelector('#thread_details_panel')
-
-  defaultPanelDetails.querySelector('[data-button="close"]')
-    .addEventListener('click', (e) => defaultPanelDetails.classList.toggle('hidden'))
+  const defaultPanelDetails = document.querySelectorAll('#thread_details_panel')
+  defaultPanelDetails.forEach((e) => {
+    e.querySelector('[data-button="close"]')
+      ?.addEventListener('click', () => defaultPanelDetails.classList.toggle('hidden'))
+  })
 
   document.querySelectorAll('[data-panel]')
     .forEach((messages) => {
+      const inboxPanel = messages.closest('section')
       const conversation = document.querySelector(messages.dataset.panel)
       const conversationDetails = document.querySelector(messages.dataset.panelDetails)
 
@@ -228,6 +229,10 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
         } else {
           conversationButtonClose.classList = '_43he2wy'
           conversationButtonClose.innerHTML = 'Get details'
+        }
+
+        if (messages.dataset.panelTypeMd) {
+          inboxPanel.classList.toggle('hidden')
         }
 
         conversationDetails.classList.toggle('hidden')
@@ -247,8 +252,13 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
       messages.addEventListener('click', (message) => {
         message.preventDefault()
 
-        defaultPanel?.classList.add('hidden')
-        defaultPanelDetails?.classList.add('hidden')
+        document.querySelectorAll('#thread_panel').forEach((e) => {
+          e.classList.add('hidden')
+        })
+
+        document.querySelectorAll('#thread_details_panel').forEach((e) => {
+          e.classList.add('hidden')
+        })
 
         message.currentTarget.closest('#list_inbox')
           .querySelectorAll('[data-panel]')
@@ -269,13 +279,17 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
         message.currentTarget.classList = '_159gpp2h'
         conversation?.classList.remove('hidden')
-        conversationDetails?.classList.remove('hidden')
-        conversation.querySelector('._ss1ehk')?.classList.remove('hidden')
 
-        if (conversationButtonClose) {
-          conversationButtonClose.classList = '_sq0plgu'
-          conversationButtonClose.innerHTML = 'Hide details'
+        if (!messages.dataset.panelTypeMd) {
+          conversationDetails?.classList.remove('hidden')
+
+          if (conversationButtonClose) {
+            conversationButtonClose.classList = '_sq0plgu'
+            conversationButtonClose.innerHTML = 'Hide details'
+          }
         }
+
+        conversation.querySelector('._ss1ehk')?.classList.remove('hidden')
 
         const conversationContainer = conversation.querySelector('._f4l4c1')
         conversationContainer.scrollTo({ top: conversationContainer.scrollHeight })
