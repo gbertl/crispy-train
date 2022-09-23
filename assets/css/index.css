@@ -1,5 +1,7 @@
 :root {
   font-size: 14px;
+  --transition-duration: 300ms;
+  --primary-color: #ff385c;
 }
 
 *,
@@ -11,9 +13,10 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #1b1b22;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
+  color: #c8c8c8;
 }
 
 section {
@@ -40,10 +43,11 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  transition: var(--transition-duration);
 }
 
 a:hover {
-  color: #ff385c;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -51,6 +55,7 @@ h1 {
   font-family: 'Merriweather', serif;
   margin-bottom: 1rem;
   text-transform: uppercase;
+  color: #ffff;
 }
 
 @media (min-width: 576px) {
@@ -62,6 +67,7 @@ h1 {
 input {
   background: none;
   border: none;
+  outline: none;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -78,7 +84,7 @@ input {
   font-family: 'Merriweather', serif;
   margin-bottom: 1rem;
   opacity: 1;
-  transition: 300ms;
+  transition: var(--transition-duration);
 }
 
 .input-search:hover,
@@ -88,7 +94,7 @@ input {
 }
 
 .input-search::placeholder {
-  color: #ffff;
+  color: inherit;
 }
 
 .input-search--scrolled {
@@ -100,13 +106,14 @@ input {
 }
 
 button {
-  background: #eee;
+  background: #32323a;
   padding: 0.75rem 1.5rem;
   font-family: 'Merriweather', serif;
   margin-bottom: 0.5rem;
-  transition: 300ms;
+  transition: var(--transition-duration);
   border: none;
   cursor: pointer;
+  color: inherit;
 }
 
 @media (min-width: 576px) {
@@ -116,6 +123,6 @@ button {
 }
 
 button:hover {
-  background: #000;
+  background: var(--primary-color);
   color: #ffff;
 }
