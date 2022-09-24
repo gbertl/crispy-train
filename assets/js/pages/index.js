@@ -234,7 +234,7 @@ document
   .querySelector('.input-search')
   .setAttribute(
     'placeholder',
-    `Search ${document.querySelectorAll('a').length} pages...`
+    `Search in ${document.querySelectorAll('a').length} pages...`
   );
 
 document.querySelector('.input-search').addEventListener('keyup', (e) => {
