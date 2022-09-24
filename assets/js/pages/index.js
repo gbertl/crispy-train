@@ -12,6 +12,30 @@ window.addEventListener('scroll', () => {
 
 let sitemap = [
   {
+    title: 'New Pages',
+    urls: [
+      'accessibility.html',
+      'all-topics.html',
+      'article.html',
+      'feedback.html',
+      'host-liability-insurance.html',
+      'media-assets.html',
+      'media-assets-search.html',
+      'media-category.html',
+      'media-contact.html',
+      'media-home.html',
+      'media-search.html',
+      'messages.html',
+      'searching-and-booking.html',
+      'searching-for-stays.html',
+      'search-tips.html',
+      'social-impact-host.html',
+      'ticket-selection.html',
+      'topic.html',
+      'video.html',
+    ],
+  },
+  {
     title: 'Account',
     urls: [
       'account/account-notifications.html',
