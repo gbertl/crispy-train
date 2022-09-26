@@ -12431,7 +12431,7 @@
     transition: none !important;
   }
 }
-.animation__name-keyframe {
+.animation-name-keyframe {
   -webkit-animation-name: keyframe_1t86taz !important;
   animation-name: keyframe_1t86taz !important;
 }
@@ -24609,48 +24609,48 @@ tr.hide {
 .dir-ltr.atm_h0_exct8b:is(*, #x) {
   margin-right: 16px;
 }
-.dir-ltr.animation__direction-alternate:is(*, #x) {
+.dir-ltr.animation-direction-alternate:is(*, #x) {
   animation-direction: alternate;
 }
-.dir-ltr.animation__duration-1s:is(*, #x) {
+.dir-ltr.animation-duration-1s:is(*, #x) {
   animation-duration: 1s;
 }
-.dir-ltr.animation__fill-mode-forwards:is(*, #x) {
+.dir-ltr.animation-fill-mode-forwards:is(*, #x) {
   animation-fill-mode: forwards;
 }
-.dir-ltr.animation__iteration-count-infinite:is(*, #x) {
+.dir-ltr.animation-iteration-count-infinite:is(*, #x) {
   animation-iteration-count: infinite;
 }
 .dir-ltr.atm_1c_lvmtox:is(*, #x) {
   animation-name: animation-64e8c8;
 }
-.dir-ltr.animation__timing-function-ease-in-out:is(*, #x) {
+.dir-ltr.animation-timing-function-ease-in-out:is(*, #x) {
   animation-timing-function: ease-in-out;
 }
-.dir.animation__bg-color-current:is(*, #x) {
+.dir.animation-bg-color-current:is(*, #x) {
   background-color: currentColor;
 }
 @media (prefers-reduced-motion: reduce) {
   @media (prefers-reduced-motion: reduce) {
-    .dir-ltr.animation__all-none:is(*, x) {
+    .dir-ltr.animation-all-none:is(*, x) {
       animation: none;
     }
   }
-  .dir-ltr.animation__all-none:is(*, x) {
+  .dir-ltr.animation-all-none:is(*, x) {
     animation: none;
   }
 }
 @media (prefers-reduced-motion: reduce) {
   @media (prefers-reduced-motion: reduce) {
-    .animation__opacity:is(*, x) {
+    .animation-opacity:is(*, x) {
       opacity: 0.09049773755656108;
     }
   }
-  .animation__opacity:is(*, x) {
+  .animation-opacity:is(*, x) {
     opacity: 0.09049773755656108;
   }
 }
-.dir-ltr.animation__name-none:is(*, #x) {
+.dir-ltr.animation-name-none:is(*, #x) {
   animation-name: none;
 }
 .text-highlight:is(*, #x#x) {
@@ -28241,7 +28241,7 @@ tr.hide {
     border-color: var(--color-white, #fff) !important;
   }
 }
-.dir-ltr.animation__iteration-count-infinite.animation__iteration-count-infinite {
+.dir-ltr.animation-iteration-count-infinite.animation-iteration-count-infinite {
   animation-iteration-count: infinite;
 }
 .dir-ltr.incoming__container[class][class] {
@@ -34673,51 +34673,51 @@ tr.hide {
   border-radius: 2px !important;
   background: #000 !important;
 }
-.dir.animation__direction-alternate.animation__direction-alternate {
+.dir.animation-direction-alternate.animation-direction-alternate {
   animation-direction: alternate;
 }
-.dir.animation__duration-1s.animation__duration-1s {
+.dir.animation-duration-1s.animation-duration-1s {
   animation-duration: 1s;
 }
-.dir.animation__fill-mode-forwards.animation__fill-mode-forwards {
+.dir.animation-fill-mode-forwards.animation-fill-mode-forwards {
   animation-fill-mode: forwards;
 }
 .dir.atm_1c_lvmtox.atm_1c_lvmtox {
   animation-name: animation-64e8c8;
 }
-.dir.animation__timing-function-ease-in-out.animation__timing-function-ease-in-out {
+.dir.animation-timing-function-ease-in-out.animation-timing-function-ease-in-out {
   animation-timing-function: ease-in-out;
 }
-.dir.animation__bg-color-current.animation__bg-color-current {
+.dir.animation-bg-color-current.animation-bg-color-current {
   background-color: currentColor;
 }
 @media (prefers-reduced-motion: reduce) {
   @media (prefers-reduced-motion: reduce) {
-    .dir.animation__all-none.animation__all-none {
+    .dir.animation-all-none.animation-all-none {
       animation: none;
     }
   }
-  .dir.animation__all-none.animation__all-none {
+  .dir.animation-all-none.animation-all-none {
     animation: none;
   }
 }
 @media (prefers-reduced-motion: reduce) {
   @media (prefers-reduced-motion: reduce) {
-    .animation__opacity.animation__opacity {
+    .animation-opacity.animation-opacity {
       opacity: 0.09049773755656108;
     }
   }
-  .animation__opacity.animation__opacity {
+  .animation-opacity.animation-opacity {
     opacity: 0.09049773755656108;
   }
 }
-.dir.animation__name-none.animation__name-none {
+.dir.animation-name-none.animation-name-none {
   animation-name: none;
 }
-.animation__opacity-secondary {
+.animation-opacity-secondary {
   opacity: 0.09049773755656108;
 }
-.dir.animation__iteration-count-infinite.animation__iteration-count-infinite {
+.dir.animation-iteration-count-infinite.animation-iteration-count-infinite {
   animation-iteration-count: infinite;
 }
 .atm_fc_1yb4nlp.atm_fc_1yb4nlp {
@@ -70310,11 +70310,11 @@ img {
   animation-name: none;
 }
 
-.dir.animation__fill-mode-forwards.animation__fill-mode-forwards {
+.dir.animation-fill-mode-forwards.animation-fill-mode-forwards {
   animation-fill-mode: forwards;
 }
 
-.animation__opacity-secondary {
+.animation-opacity-secondary {
   opacity: 0.09049773755656108;
 }
 
