@@ -70121,19 +70121,19 @@ img {
   padding: 0px 24px !important;
 }
 
-._13c6cly9 {
+.inbox-container {
   position: fixed !important;
   bottom: 0px !important;
   left: 0px !important;
   right: 0px !important;
 }
 
-._13c6cly9 {
+.inbox-container {
   top: 0px !important;
 }
 
 @supports (margin: env(safe-area-inset-left)) {
-  ._13c6cly9 {
+  .inbox-container {
     padding-left: calc(env(safe-area-inset-left, 20px) - 20px) !important;
     padding-right: calc(env(safe-area-inset-right, 20px) - 20px) !important;
   }
