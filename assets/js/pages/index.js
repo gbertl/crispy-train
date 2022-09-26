@@ -17,7 +17,11 @@ let sitemap = [
       'accessibility.html',
       'all-topics.html',
       'article.html',
+      'dashboard-loader.html',
+      'experiences-loader.html',
+      'explore-loader.html',
       'feedback.html',
+      'help-loader.html',
       'host-liability-insurance.html',
       'media-assets.html',
       'media-assets-search.html',
@@ -26,6 +30,7 @@ let sitemap = [
       'media-home.html',
       'media-search.html',
       'messages.html',
+      'messages-loader.html',
       'searching-and-booking.html',
       'searching-for-stays.html',
       'search-tips.html',
@@ -33,6 +38,7 @@ let sitemap = [
       'ticket-selection.html',
       'topic.html',
       'video.html',
+      'wishlist-loader.html',
     ],
   },
   {
@@ -234,7 +240,7 @@ document
   .querySelector('.input-search')
   .setAttribute(
     'placeholder',
-    `Search ${document.querySelectorAll('a').length} pages...`
+    `Search in ${document.querySelectorAll('a').length} pages...`
   );
 
 document.querySelector('.input-search').addEventListener('keyup', (e) => {

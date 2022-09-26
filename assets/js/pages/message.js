@@ -13,7 +13,7 @@ document.querySelectorAll('[data-panel-sm]').forEach((messages) => {
 
         hideMobileNav()
 
-        document.querySelector('._2x3iol > div').classList.replace('_ipnlcjr', '_13c6cly9')
+        document.querySelector('._2x3iol > div').classList.replace('_ipnlcjr', 'inbox-container')
 
         document.querySelector('#inbox_panel').classList.replace('_1xxu4mif', '_pm6ka6k')
         conversation.classList.replace('_pm6ka6k', '_1xxu4mif')
@@ -21,7 +21,7 @@ document.querySelectorAll('[data-panel-sm]').forEach((messages) => {
         conversation?.querySelector('[data-button="close"]')?.addEventListener('click', () => {
             mobileNav.classList.replace('_qnqe0zo', 'footer-menu__wrapper')
 
-            document.querySelector('._2x3iol > div').classList.replace('_13c6cly9', '_ipnlcjr')
+            document.querySelector('._2x3iol > div').classList.replace('inbox-container', '_ipnlcjr')
 
             document.querySelector('#inbox_panel').classList.replace('_pm6ka6k', '_1xxu4mif')
             conversation.classList.replace('_1xxu4mif', '_pm6ka6k')
