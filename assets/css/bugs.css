@@ -1,0 +1,36 @@
+.t1bgcr6e {
+    overflow-x: hidden;
+}
+
+._1x6d8808 {
+    position: fixed !important;
+    top: 0px !important;
+    padding-top: env(safe-area-inset-top, 0) !important;
+    box-sizing: content-box !important;
+    z-index: 1 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    transition-duration: 0.2s !important;
+    transition-property: -ms-transform, -webkit-transform, transform !important;
+    transition-timing-function: ease-out !important;
+    height: 56px !important;
+    transform: translateY(-100%) !important;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    ._1x6d8808 {
+        backdrop-filter: blur(25px) saturate(140%) !important;
+        background: rgba(255, 255, 255, 0.85) !important;
+    }
+}
+
+@media (min-width: 744px) {
+    ._1x6d8808 {
+        height: 64px !important;
+    }
+}
+
+@media (min-width: 1128px) {
+    ._1x6d8808 {
+        height: 72px !important;
+    }
+}
