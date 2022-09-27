@@ -60,17 +60,62 @@ document.querySelectorAll('[data-panel]').forEach((messages) => {
     const toggleConversationDetails = () => {
         if (conversationDetails.classList.contains('hidden')) {
             conversationButtonClose.classList = '_sq0plgu'
-            conversationButtonClose.innerHTML = 'Hide details'
+            conversationButtonClose.querySelector('span').innerHTML = 'Hide details'
         } else {
             conversationButtonClose.classList = '_43he2wy'
-            conversationButtonClose.innerHTML = 'Get details'
+            conversationButtonClose.querySelector('span').innerHTML = 'Get details'
         }
 
-        if (window.innerWidth < 1128) {
-            inboxPanel.classList.toggle('hidden')
+        if (window.innerWidth < 1440) {
+            inboxPanel.classList.contains('_1fdiyhjh')
+                ? inboxPanel.classList.replace('_1fdiyhjh', '_x6sr1rm')
+                : inboxPanel.classList.replace('_x6sr1rm', '_1fdiyhjh')
+
+            let inboxPanelTransition = inboxPanel.children[0]
+
+            if (inboxPanelTransition.classList.contains('_ijm3lbp')) {
+                inboxPanelTransition.style.width = '375px';
+                inboxPanelTransition.classList.replace('_ijm3lbp', '_1fls1kdh')
+                inboxPanelTransition.classList.replace('_1fls1kdh', '_11shkc8n')
+                inboxPanelTransition.removeAttribute('style')
+            } else {
+                inboxPanelTransition.style.width = '375px';
+                inboxPanelTransition.classList.replace('_11shkc8n', '_1qf4j2qh')
+                inboxPanelTransition.classList.replace('_1qf4j2qh', '_ijm3lbp')
+                inboxPanelTransition.removeAttribute('style')
+            }
+
+            conversation.classList.contains('_wdec1jj')
+                ? conversation.classList.replace('_wdec1jj', '_phfc55f')
+                : conversation.classList.replace('_phfc55f', '_wdec1jj')
+
+            conversationDetails.classList.contains('hidden')
+                && conversationDetails.classList.remove('hidden')
+
+            conversationDetails.classList.contains('_50rkbdl')
+                ? conversationDetails.classList.replace('_50rkbdl', '_x6sr1rm')
+                : conversationDetails.classList.replace('_x6sr1rm', '_50rkbdl')
+
+        } else {
+            conversationDetails.classList.contains('_1mz2k89o')
+                ? conversationDetails.classList.replace('_1mz2k89o', '_o8ljzwp')
+                : conversationDetails.classList.replace('_o8ljzwp', '_1mz2k89o')
+
+            let conversationDetailsTransition = conversationDetails.children[0]
+
+            if (conversationDetailsTransition.classList.contains('_15pihn5q')) {
+                conversationDetailsTransition.style.width = '375px';
+                conversationDetailsTransition.classList.replace('_15pihn5q', '_1fls1kdh')
+                conversationDetailsTransition.classList.replace('_1fls1kdh', '_1obz29zo')
+                conversationDetailsTransition.removeAttribute('style')
+            } else {
+                conversationDetailsTransition.style.width = '375px';
+                conversationDetailsTransition.classList.replace('_1obz29zo', '_1qf4j2qh')
+                conversationDetailsTransition.classList.replace('_1qf4j2qh', '_15pihn5q')
+                conversationDetailsTransition.removeAttribute('style')
+            }
         }
 
-        conversationDetails.classList.toggle('hidden')
         conversation.querySelector('._ss1ehk')?.classList.toggle('hidden')
     }
 
@@ -107,12 +152,14 @@ document.querySelectorAll('[data-panel]').forEach((messages) => {
         message.currentTarget.classList = '_159gpp2h'
         conversation?.classList.remove('hidden')
 
-        if (window.innerWidth >= 1128) {
+        if (window.innerWidth >= 1440) {
+            conversationDetails?.classList.replace('_o8ljzwp', '_1mz2k89o')
+            conversationDetails?.children[0].classList.replace('_1obz29zo', '_15pihn5q')
             conversationDetails?.classList.remove('hidden')
 
             if (conversationButtonClose) {
                 conversationButtonClose.classList = '_sq0plgu'
-                conversationButtonClose.innerHTML = 'Hide details'
+                conversationButtonClose.querySelector('span').innerHTML = 'Hide details'
             }
         }
 
@@ -128,19 +175,23 @@ const reportWindowSize = () => {
     const inboxPanel = document.querySelector('#inbox_panel_md')
     const message = document.querySelector('._159gpp2h')
 
-    mq = window.matchMedia('(min-width: 1128px)');
+    mq = window.matchMedia('(min-width: 1440px)');
     if (mq.matches) {
+        inboxPanel.classList = '_1aolh5ll'
+        inboxPanel.children[0].classList = '_ijm3lbp'
+
         document.querySelector('._1fdiyhjh')?.classList.replace('_1fdiyhjh', '_1aolh5ll')
         document.querySelectorAll('._ijm3lbp').forEach((e) => e.classList.replace('_ijm3lbp', '_15pihn5q'))
+        document.querySelectorAll('._1obz29zo').forEach((e) => e.classList.replace('_1obz29zo', '_15pihn5q'))
         document.querySelectorAll('._wdec1jj').forEach((e) => e.classList.replace('_wdec1jj', '_r61jg4l'))
-        document.querySelector('._x6sr1rm')?.classList.replace('_x6sr1rm', '_1mz2k89o')
-        document.querySelectorAll('._50rkbdl').forEach((e, index) => e.classList.replace('_50rkbdl', '_1mz2k89o'))
+        document.querySelectorAll('._x6sr1rm').forEach((e) => e.classList.replace('_x6sr1rm', '_1mz2k89o'))
+        document.querySelectorAll('._50rkbdl').forEach((e) => e.classList.replace('_50rkbdl', '_1mz2k89o'))
 
         defaultPanelDetails.querySelector('._11shkc8n').classList.add('hidden')
         defaultPanelDetails.querySelector('._15pihn5q')?.classList.remove('hidden')
 
-        inboxPanel?.classList.contains('hidden') &&
-            inboxPanel.classList.remove('hidden')
+        inboxPanel?.classList.contains('_1fdiyhjh') &&
+            inboxPanel.classList.replace('_1fdiyhjh', '_x6sr1rm')
 
         if (!message) {
             defaultPanelDetails?.classList.contains('hidden') &&
@@ -157,7 +208,7 @@ const reportWindowSize = () => {
                     const conversationButtonClose = currentConversation?.querySelector('[data-button="close"]')
                     if (conversationButtonClose) {
                         conversationButtonClose.classList = '_sq0plgu'
-                        conversationButtonClose.innerHTML = 'Hide details'
+                        conversationButtonClose.querySelector('span').innerHTML = 'Hide details'
                     }
 
                     currentConversation?.classList.contains('hidden') &&
@@ -171,11 +222,8 @@ const reportWindowSize = () => {
         document.querySelector('._1aolh5ll')?.classList.replace('_1aolh5ll', '_1fdiyhjh')
         document.querySelectorAll('._15pihn5q').forEach((e) => e.classList.replace('_15pihn5q', '_ijm3lbp'))
         document.querySelectorAll('._r61jg4l').forEach((e) => e.classList.replace('_r61jg4l', '_wdec1jj'))
-        document.querySelectorAll('._1mz2k89o').forEach((e, index) => {
-            index !== 0
-                ? e.classList.replace('_1mz2k89o', '_50rkbdl')
-                : e.classList.replace('_1mz2k89o', '_x6sr1rm')
-        })
+        document.querySelectorAll('._1mz2k89o').forEach((e) => e.classList.replace('_1mz2k89o', '_x6sr1rm'))
+        document.querySelectorAll('._o8ljzwp').forEach((e) => e.classList.replace('_o8ljzwp', '_x6sr1rm'))
 
         defaultPanelDetails.querySelector('._11shkc8n').classList.remove('hidden')
         defaultPanelDetails.querySelector('._ijm3lbp')?.classList.add('hidden')
@@ -190,11 +238,8 @@ const reportWindowSize = () => {
                     const conversationButtonClose = currentConversation?.querySelector('[data-button="close"]')
                     if (conversationButtonClose) {
                         conversationButtonClose.classList = '_43he2wy'
-                        conversationButtonClose.innerHTML = 'Get details'
+                        conversationButtonClose.querySelector('span').innerHTML = 'Get details'
                     }
-
-                    !currentConversationDetails?.classList.contains('hidden') &&
-                        currentConversationDetails?.classList.add('hidden')
                 }
             })
     }
