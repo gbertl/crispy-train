@@ -47,3 +47,18 @@
     }
 }
 
+.mobileMenu__searchForm {
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    height: 48px;
+    border-radius: 2px;
+    color: #222;
+    font-size: 16px;
+    line-height: 1.375;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    padding: 0 0 0 52px;
+    width: 100%;
+    -webkit-box-sizing: unset !important;
+}
