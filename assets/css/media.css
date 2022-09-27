@@ -4920,3 +4920,16 @@ img {
     right: 0;
   }
 }
+.press-release__header .nav .menu-item.current-menu-item a:active:after, .press-release__header .nav .menu-item.current-menu-item a:after, .press-release__header .nav .menu-item.current-menu-item a:focus:after, .press-release__header .nav .menu-item.current-menu-item a:hover:after, .press-release__header .nav .menu-item.current-menu-item a:visited:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #222;
+    bottom: -6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    left: 12px;
+    right: 12px;
+    bottom: -19px;
+}
