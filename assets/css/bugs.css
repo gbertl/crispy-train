@@ -34,3 +34,16 @@
         height: 72px !important;
     }
 }
+
+@media (max-width: 743px) {
+    ._eie8gyn {
+        -ms-grid-columns: 1fr 1fr !important;
+        display: -ms-grid !important;
+        display: grid !important;
+        grid-row-gap: 2rem !important;
+        grid-column-gap: 1.125rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        -ms-grid-columns: 1fr 1fr !important;
+    }
+}
+
