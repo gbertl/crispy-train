@@ -39,3 +39,22 @@ document
       dropdown.add('hidden')
     }
   });
+
+
+  document
+  .querySelector('#content-type-btn')
+  .addEventListener('click', function () {
+    document.querySelector('#content-type-modal').classList.toggle('hidden');
+  });
+
+  document
+  .querySelector('[data-testid="modal-container"]')
+  .addEventListener('click', function (e) {
+    if(e.target.attributes[1].value == 'modal-container'){
+      e.stopPropagation()
+      e.preventDefault()
+      document.querySelector('#content-type-modal').classList.toggle('hidden'); 
+    }
+  });
+  
+  
