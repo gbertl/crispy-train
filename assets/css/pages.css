@@ -68559,3 +68559,13 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     padding-bottom: 64px;
   }
 }
+.explore__mobile-header-item--active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 60%;
+  height: 2px;
+  background: var(--gray-900);
+  transform: translateX(-50%);
+}
