@@ -5935,13 +5935,6 @@
     width: 26.3333% !important;
   }
 }
-.feature__airbnb-li {
-  border-style: solid !important;
-  border-color: transparent !important;
-  scroll-snap-align: start !important;
-  scroll-snap-stop: always !important;
-  display: flex !important;
-}
 .img-container {
   height: 100% !important;
   width: 100% !important;
@@ -15583,17 +15576,6 @@ full__margin-bottom {
 .feature__airbnb-card-wrapper {
   width: 100% !important;
   margin-right: 6px !important;
-}
-.feature__airbnb-li {
-  border-style: solid !important;
-  border-color: transparent !important;
-  scroll-snap-align: start !important;
-  scroll-snap-stop: always !important;
-  display: -webkit-box !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: -webkit-flex !important;
-  display: flex !important;
 }
 .feature__airbnb-card {
   height: 100% !important;
@@ -59881,10 +59863,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   height: 100% !important;
   width: 100% !important;
 }
-._ni9axhe {
-  display: table-cell !important;
-  vertical-align: middle !important;
-}
 .inline-block {
   display: inline-block !important;
 }
@@ -67712,9 +67690,9 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   margin-bottom: 20px !important;
 }
 ._tswrdl1 {
-    display: table-cell !important;
-    vertical-align: middle !important;
-    white-space: nowrap !important;
+  display: table-cell !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
 }
 @keyframes keyframe_127wuha {
   from {
@@ -68563,5 +68541,21 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   30%,
   50% {
     opacity: 1;
+  }
+}
+@supports (overflow: clip) {
+  .feature__airbnb-ul {
+    overflow: auto clip !important;
+  }
+}
+
+.resources__suggestion-heading {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media (min-width: 744px) {
+  .resources__suggestion-heading {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
