@@ -8379,18 +8379,6 @@
   animation: 0.5s forwards fadeInUp;
   animation-delay: var(--staggered_animation_delay, 1);
 }
-.t11xb1yy[class][class] {
-  position: fixed;
-  will-change: left, width;
-}
-.dir.t11xb1yy[class][class] {
-  background-color: var(--gray-900);
-  border: 1px var(--gray-900) solid;
-  border-radius: 1px;
-}
-.dir-ltr.t11xb1yy[class][class] {
-  transition: left 0.2s, width 0.2s;
-}
 .dir.g1kar0m2[class][class] {
   margin-bottom: -16px;
 }
@@ -66002,238 +65990,13 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   width: 1px !important;
 }
 
-._kapps0l {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  height: auto !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  transition-property: all !important;
-  transition-duration: 0.5s !important;
-  transition-delay: 0s !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-  border-image: initial !important;
-}
-
-@media (min-width: 375px) {
-  ._kapps0l {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-  }
-}
-
-@media (min-width: 744px) {
-  ._kapps0l {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-  }
+@media (min-width: 1128px) {
 }
 
 @media (min-width: 1128px) {
-  ._kapps0l {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border: 1px solid transparent !important;
-    flex: 1 1 0% !important;
-  }
 }
 
 @media (min-width: 1128px) {
-  @supports (--custom: properties) {
-    ._kapps0l {
-      flex: 0 0 var(--orbital-panel-width-lg) !important;
-    }
-  }
-}
-
-._1y2ftwql {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  height: auto !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  transition-property: all !important;
-  transition-duration: 0.5s !important;
-  transition-delay: 0s !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-  border-image: initial !important;
-}
-
-@media (min-width: 375px) {
-  ._1y2ftwql {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-  }
-}
-
-@media (min-width: 744px) {
-  ._1y2ftwql {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-  }
-}
-
-@media (min-width: 1128px) {
-  ._1y2ftwql {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-    flex: 1 1 0% !important;
-  }
-}
-
-@media (min-width: 1128px) {
-  @supports (--custom: properties) {
-    ._1y2ftwql {
-      flex: 1 1 0% !important;
-    }
-  }
-}
-
-._ekd2cho {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  height: auto !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  transition-property: all !important;
-  transition-duration: 0.5s !important;
-  transition-delay: 0s !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-  border-image: initial !important;
-}
-
-@media (min-width: 375px) {
-  ._ekd2cho {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-  }
-}
-
-@media (min-width: 744px) {
-  ._ekd2cho {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-  }
-}
-
-@media (min-width: 1128px) {
-  ._ekd2cho {
-    -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important;
-    height: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    transition-property: all !important;
-    transition-duration: 0.5s !important;
-    transition-delay: 0s !important;
-    border-width: 1px !important;
-    border-style: solid !important;
-    border-color: transparent transparent transparent rgb(235, 235, 235) !important;
-    border-image: initial !important;
-    flex: 1 1 0% !important;
-  }
-}
-
-@media (min-width: 1128px) {
-  @supports (--custom: properties) {
-    ._ekd2cho {
-      flex: 0 0 var(--orbital-panel-width-lg) !important;
-    }
-  }
 }
 
 ._1fls1kdh {
@@ -68627,9 +68390,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 ._1lkho1 {
   flex: 0 0 auto !important;
   margin-right: 8px !important;
-}
-.t1bgcr6e {
-  overflow-x: hidden;
 }
 
 ._1x6d8808 {
