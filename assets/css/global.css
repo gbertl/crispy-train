@@ -5176,13 +5176,13 @@ html :where(img[class*='wp-image-']) {
 }
 .text-muted-heading[class][class] {
   color: var(--gray-500);
-  font-size: var(--c-zdwk-p);
-  line-height: var(--j-p-z-kco);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
   font-weight: var(--jx-zk-pv);
 }
 .text-ellipsis[class][class] {
-  font-size: var(--y-g-ar-y);
-  line-height: var(--cb-pewj);
+  font-size: var(--font-size);
+  line-height: var(--line-height-xl);
   font-weight: var(--e-y-j-d-v-j);
   color: var(--gray-500);
   display: -webkit-box;
