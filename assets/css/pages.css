@@ -59684,7 +59684,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   border-radius: 2px;
   width: 100%;
 }
-.flash-container .alert .alert-close {
+.flash-container .alert .alert__close {
   position: absolute;
   line-height: initial;
   right: 15px;
@@ -59712,11 +59712,11 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .flash-container .alert .alert__icon {
   color: #4cb0bb;
 }
-.flash-container .alert .alert-close {
+.flash-container .alert .alert__close {
   color: #007a87;
 }
-.flash-container .alert .alert-close:focus,
-.flash-container .alert .alert-close:hover {
+.flash-container .alert .alert__close:focus,
+.flash-container .alert .alert__close:hover {
   color: #004c54;
 }
 .flash-container .alert-error {
@@ -59725,14 +59725,14 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .flash-container .alert-error .alert__icon {
   color: #e4a593;
 }
-.flash-container .alert-error .alert-close {
+.flash-container .alert-error .alert__close {
   color: #b2725f;
 }
-.flash-container .alert-error .alert-close:focus,
-.flash-container .alert-error .alert-close:hover {
+.flash-container .alert-error .alert__close:focus,
+.flash-container .alert-error .alert__close:hover {
   color: #965a48;
 }
-.flash-container .alert-close {
+.flash-container .alert__close {
   float: right;
   cursor: pointer;
   font-size: 2em;
