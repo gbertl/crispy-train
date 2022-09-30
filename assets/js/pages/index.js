@@ -86,7 +86,7 @@ let sitemap = [
     ],
   },
   {
-    title: 'Add/Edit Listings',
+    title: 'Manage Listings',
     urls: [
       'edit/about.html',
       'edit/bring.html',
