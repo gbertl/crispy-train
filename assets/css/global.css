@@ -5175,7 +5175,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 .text-muted-heading[class][class] {
-  color: var(--fo-jk-r-s);
+  color: var(--gray-500);
   font-size: var(--c-zdwk-p);
   line-height: var(--j-p-z-kco);
   font-weight: var(--jx-zk-pv);
@@ -5184,7 +5184,7 @@ html :where(img[class*='wp-image-']) {
   font-size: var(--y-g-ar-y);
   line-height: var(--cb-pewj);
   font-weight: var(--e-y-j-d-v-j);
-  color: var(--fo-jk-r-s);
+  color: var(--gray-500);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -17071,10 +17071,10 @@ input[type='button'].btn-block {
   height: 100% !important;
 }
 .dir.btn-map-ctrl-in[class][class] {
-  border-radius: var(--go-h-jh-l) var(--go-h-jh-l) 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 .dir.btn-map-ctrl-out[class][class] {
-  border-radius: 0 0 var(--go-h-jh-l) var(--go-h-jh-l);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 .dir.btn-map-ctrl-base[class][class] {
   border: none;
@@ -17095,7 +17095,7 @@ input[type='button'].btn-block {
   position: relative;
 }
 .btn-map-ctrl[class][class] {
-  color: var(--f-k-smk-x);
+  color: var(--gray-900);
   display: flex;
   justify-content: center;
   align-items: center;
