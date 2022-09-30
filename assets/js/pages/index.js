@@ -12,12 +12,6 @@ window.addEventListener('scroll', () => {
 
 let sitemap = [
   {
-    title: 'New Pages',
-    urls: [
-      'host-liability-insurance.html',
-    ],
-  },
-  {
     title: 'Manage Listings',
     urls: [
       'edit/about.html',
@@ -123,6 +117,7 @@ let sitemap = [
       'help/search-tips.html',
       'help/ticket-selection.html',
       'help/help.html',
+      'help/host-liability-insurance.html',
     ],
   },
   {
