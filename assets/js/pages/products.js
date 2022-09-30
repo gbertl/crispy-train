@@ -17,7 +17,10 @@ document.querySelector('#reviews-search-input').addEventListener('keyup', (e) =>
   !resultInfo.classList.contains('hidden') && resultInfo.classList.add('hidden')
 
   let noResult = document.querySelector('._1d4xcco')
-  !noResult.classList.contains('hidden') && resultInfo.classList.add('hidden')
+  !noResult.classList.contains('hidden') && noResult.classList.add('hidden')
+
+  let loader = document.querySelector('._3vbwaj')
+  loader.removeAttribute('style')
 
   document.querySelectorAll('.r1are2x1 .ll4r2nl').forEach((e) => {
     let parentElement = e.closest('.r1are2x1')
@@ -44,6 +47,7 @@ document.querySelector('#reviews-search-input').addEventListener('keyup', (e) =>
     noResult.classList.contains('hidden') && noResult.classList.remove('hidden')
     resultInfo.innerText = `There are no results for "${searchValue}"`
     resultInfo.classList.remove('hidden')
+    loader.setAttribute('style', 'display: none!important;')
   }
 })
 
