@@ -4851,6 +4851,97 @@ html :where(img[class*='wp-image-']) {
   display: none !important;
   background-image: none !important;
 }
+.image-absolute {
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .image-absolute {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+.stretched-link {
+  cursor: pointer !important;
+  position: relative !important;
+  border-width: 1px !important;
+  background: 0 0 !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s, -webkit-transform 0.1s, transform 0.1s !important;
+  -moz-transition: box-shadow 0.2s, transform 0.1s !important;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: inherit !important;
+  text-decoration: none !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.stretched-link:focus-visible {
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px #222 !important;
+}
+.stretched-link:focus-visible::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.stretched-link:focus-visible:focus::-moz-focus-inner {
+  border: none !important;
+}
+.stretched-link:focus-visible:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stretched-link:focus-visible {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.stretched-link:active {
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+}
+.stretched-link:disabled {
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stretched-link {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.stretched-link::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.stretched-link:focus::-moz-focus-inner {
+  border: none !important;
+}
+.stretched-link:-moz-focusring {
+  outline: 0 !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
