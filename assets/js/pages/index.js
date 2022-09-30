@@ -17,7 +17,6 @@ let sitemap = [
       'accessibility.html',
       'alerts.html',
       'all-topics.html',
-      'article.html',
       'dashboard-loader.html',
       'experiences-loader.html',
       'explore-loader.html',
@@ -42,8 +41,6 @@ let sitemap = [
       'products-loader.html',
       'products-mobile.html',
       'ticket-selection.html',
-      'topic.html',
-      'video.html',
       'wishlist-loader.html',
     ],
   },
@@ -161,15 +158,14 @@ let sitemap = [
       'lps-resources/404.html',
       'lps-resources/covidsafety.html',
       'lps-resources/merchandising.html',
-      'lps-resources/resources.html',
     ],
   },
   {
     title: 'Messaging',
-    urls: ['messaging/inbox.html', 'messaging/notifications.html'],
+    urls: ['messaging/notifications.html'],
   },
   {
-    title: 'Online Experience',
+    title: 'Experience Hosting',
     urls: [
       'online-experience/calendar_agenda.html',
       'online-experience/calendar.html',
@@ -177,6 +173,16 @@ let sitemap = [
       'online-experience/dashboard.html',
       'online-experience/experiences.html',
       'online-experience/insights.html',
+      'messaging/inbox.html',
+    ],
+  },
+  {
+    title: 'Resource Center',
+    urls: [
+      'resource-center/article.html',
+      'resource-center/topic.html',
+      'resource-center/video.html',
+      'resource-center/resources.html',
     ],
   },
   {
