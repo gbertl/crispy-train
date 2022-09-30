@@ -21359,7 +21359,9 @@ tr.hide {
 }
 .invisible {
   visibility: hidden;
-} /*!
+}
+
+/*!
 * Covalent for O2
 * Copyright 2014 Airbnb, Inc
 */
@@ -57698,7 +57700,9 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     padding-left: calc(env(safe-area-inset-left, 20px) - 20px) !important;
     padding-right: calc(env(safe-area-inset-right, 20px) - 20px) !important;
   }
-} /*! LOADER-SPECIFIC CLASSES START */
+}
+
+/*! LOADER-SPECIFIC CLASSES START */
 .dir.header__search-btn-wrapper-title[class][class] {
   padding: 0 var(--lilsearch-field_padding-inline);
 }
@@ -58003,7 +58007,9 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .black-dots > .skeleton__dot-1,
 .black-dots > .skeleton__dot-2 {
   background-color: #000 !important;
-} /*! LOADER-SPECIFIC CLASSES END */
+}
+
+/*! LOADER-SPECIFIC CLASSES END */
 :root {
   --f-k-smk-x: #222222;
   --go-h-jh-l: 8px;
