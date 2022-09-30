@@ -14,28 +14,10 @@ let sitemap = [
   {
     title: 'New Pages',
     urls: [
-      'accessibility.html',
-      'alerts.html',
-      'dashboard-loader.html',
-      'experiences-loader.html',
-      'explore-loader.html',
-      'help-loader.html',
       'host-liability-insurance.html',
       'host-protection-insurance.html',
-      'media-assets.html',
-      'media-assets-search.html',
-      'media-category.html',
-      'media-contact.html',
-      'media-home.html',
-      'media-press-release.html',
-      'media-search.html',
-      'messages.html',
-      'messages-loader.html',
       'onlinehost.html',
-      'social-impact-host.html',
-      'products-loader.html',
       'products-mobile.html',
-      'wishlist-loader.html',
     ],
   },
   {
@@ -144,14 +126,6 @@ let sitemap = [
       'listings-product/trips.html',
       'listings-product/wishlist.html',
       'listings-product/wishlists.html',
-    ],
-  },
-  {
-    title: 'LPs and Resources',
-    urls: [
-      'lps-resources/404.html',
-      'lps-resources/covidsafety.html',
-      'lps-resources/merchandising.html',
     ],
   },
   {
