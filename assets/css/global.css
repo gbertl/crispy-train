@@ -18723,6 +18723,101 @@ input[type='button'].btn-block {
     background-image: none !important;
   }
 }
+.lite-image-ratio {
+  padding-top: var(--dls-liteimage-padding-top) !important;
+  position: relative !important;
+  -webkit-flex: 1 !important;
+  -ms-flex: 1 1 0% !important;
+  flex: 1 !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.lite-image-wrapper {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
+}
+.lite-image-absolute {
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .lite-image-absolute {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+.lite-image-fallback {
+  display: inline-block !important;
+  vertical-align: bottom !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+@supports (object-fit: cover) {
+  .lite-image-fallback {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+.lite-image__default-static {
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .lite-image__default-static {
+    height: 100% !important;
+    width: 100% !important;
+    position: static !important;
+  }
+}
+.lite-image-default {
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .lite-image-default {
+    height: 100% !important;
+    width: 100% !important;
+    position: static !important;
+  }
+}
 
 /*! MODAL COMPONENT */
 .modal__backdrop {
