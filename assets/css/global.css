@@ -18494,6 +18494,61 @@ input[type='button'].btn-block {
   box-shadow: #222 0 0 0 2px inset !important;
 }
 
+/*! INPUT TEXT */
+.input-text {
+  width: 100% !important;
+  border: none !important;
+  outline: 0 !important;
+  min-height: 1px !important;
+  background-color: transparent !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #222 !important;
+}
+.input-text:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+.input-text:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+.input-text:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+.input-text:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+.input-text::-ms-clear {
+  display: none !important;
+}
+.input-text::-webkit-input-placeholder {
+  color: #717171 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+.input-text::-moz-placeholder {
+  color: #717171 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+.input-text:-moz-placeholder {
+  color: #717171 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+.input-text:-ms-input-placeholder {
+  color: #717171 !important;
+  opacity: 1 !important;
+  font-weight: 400 !important;
+}
+.input-text:focus {
+  color: #222 !important;
+}
+
 /*! JUMBOTRON HEADER */
 .jumbotron-header__text[class][class] {
   color: var(--gray-900);
