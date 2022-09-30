@@ -59691,7 +59691,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   text-decoration: none;
   top: 7px;
 }
-.flash-container .alert .alert-icon {
+.flash-container .alert .alert__icon {
   display: table-cell;
   color: #007a87;
   height: 100%;
@@ -59709,7 +59709,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .flash-container .alert {
   background-color: #c2e4e7;
 }
-.flash-container .alert .alert-icon {
+.flash-container .alert .alert__icon {
   color: #4cb0bb;
 }
 .flash-container .alert .alert-close {
@@ -59722,7 +59722,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .flash-container .alert-error {
   background-color: #ffd1c4;
 }
-.flash-container .alert-error .alert-icon {
+.flash-container .alert-error .alert__icon {
   color: #e4a593;
 }
 .flash-container .alert-error .alert-close {
@@ -59751,7 +59751,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     display: inline;
     padding: 0;
   }
-  .flash-container .alert .alert-icon {
+  .flash-container .alert .alert__icon {
     margin-right: 20px;
     display: inline-block;
     vertical-align: baseline;
@@ -59810,7 +59810,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .alert-body {
   flex: 1 1 auto !important;
 }
-.alert-icon {
+.alert__icon {
   flex: 0 0 auto !important;
   margin-right: 8px !important;
 }
