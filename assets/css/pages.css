@@ -22109,15 +22109,6 @@ tr.hide {
   border-color: #484848 !important;
   color: #484848 !important;
 }
-.progress-bar-top {
-  display: flex !important;
-  width: 100% !important;
-  background-color: #ddd !important;
-}
-.progress-bar-top__bar {
-  height: 2px !important;
-  background-color: #222 !important;
-}
 .resolution-exit {
   right: 0 !important;
   position: absolute !important;
@@ -24106,13 +24097,6 @@ tr.hide {
   font-size: 16px !important;
   line-height: 20px !important;
 }
-.progress-bar-bottom {
-  position: fixed !important;
-  bottom: 80px !important;
-  left: 0 !important;
-  right: 0 !important;
-  z-index: 11 !important;
-}
 ._ua9072 {
   border-top: 2px solid #ebebeb !important;
   background: #fff !important;
@@ -24133,27 +24117,6 @@ tr.hide {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-}
-.progress-bar-bottom__inner {
-  height: 2px !important;
-  overflow: hidden !important;
-  position: relative !important;
-  width: 100% !important;
-}
-.progress-bar-bottom__bar {
-  width: 100% !important;
-  height: 100% !important;
-  left: 0 !important;
-  position: absolute !important;
-  top: 0 !important;
-  -webkit-transform-origin: 0 50% !important;
-  -ms-transform-origin: 0 50% !important;
-  transform-origin: 0 50% !important;
-  -webkit-transition: -webkit-transform 0.5s, transform 0.5s !important;
-  -moz-transition: transform 0.5s !important;
-  transition: -ms-transform 0.5s, -webkit-transform 0.5s, transform 0.5s !important;
-  will-change: transform !important;
-  background: #222 !important;
 }
 ._153csg0n {
   position: relative !important;
@@ -33802,24 +33765,6 @@ tr.hide {
   .become-a-host__footer-next {
     margin-right: 48px !important;
   }
-}
-.progress-bar-bottom-alt {
-  -webkit-box-flex: 1 !important;
-  -ms-flex-positive: 1 !important;
-  overflow-x: hidden !important;
-  height: 2px !important;
-  background-color: #ebebeb !important;
-  border-radius: 2px !important;
-  -webkit-flex-grow: 1 !important;
-  flex-grow: 1 !important;
-}
-.progress-bar-bottom-alt__bar {
-  position: relative !important;
-  width: 100% !important;
-  left: -100% !important;
-  height: 100% !important;
-  border-radius: 2px !important;
-  background: #000 !important;
 }
 .dir.atm_1c_lvmtox.atm_1c_lvmtox {
   animation-name: animation-64e8c8;
