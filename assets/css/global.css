@@ -4981,6 +4981,86 @@ html :where(img[class*='wp-image-']) {
   line-height: 20px !important;
   font-weight: 400 !important;
 }
+.stretched-link-rounder {
+  cursor: pointer !important;
+  position: relative !important;
+  border-width: 1px !important;
+  background: 0 0 !important;
+  -ms-touch-action: manipulation !important;
+  touch-action: manipulation !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  border-radius: 12px !important;
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s, -webkit-transform 0.1s, transform 0.1s !important;
+  -moz-transition: box-shadow 0.2s, transform 0.1s !important;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: inherit !important;
+  text-decoration: none !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.stretched-link-rounder:focus-visible {
+  outline: 0 !important;
+  -webkit-transition: box-shadow 0.2s !important;
+  -moz-transition: box-shadow 0.2s !important;
+  transition: box-shadow 0.2s !important;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 0 0 4px #222 !important;
+}
+.stretched-link-rounder:focus-visible::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.stretched-link-rounder:focus-visible:focus::-moz-focus-inner {
+  border: none !important;
+}
+.stretched-link-rounder:focus-visible:-moz-focusring {
+  outline: 0 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stretched-link-rounder:focus-visible {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.stretched-link-rounder:active {
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
+}
+.stretched-link-rounder:disabled {
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stretched-link-rounder {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    transition: none !important;
+  }
+}
+.stretched-link-rounder::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.stretched-link-rounder:focus::-moz-focus-inner {
+  border: none !important;
+}
+.stretched-link-rounder:-moz-focusring {
+  outline: 0 !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
