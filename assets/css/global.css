@@ -4753,6 +4753,104 @@ html :where(img[class*='wp-image-']) {
   -ms-flex: 1 1 0% !important;
   flex: 1 !important;
 }
+.row-condensed {
+  margin-left: -4px !important;
+  margin-right: -4px !important;
+}
+.row-condensed:before {
+  content: ' ' !important;
+  display: table !important;
+}
+.row-condensed:after {
+  content: ' ' !important;
+  display: table !important;
+  clear: both !important;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.block {
+  display: block !important;
+}
+.absolute-all {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+.f16 {
+  margin: 0 !important;
+  overflow-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.375em !important;
+  color: #484848 !important;
+}
+.f16-600 {
+  margin: 0 !important;
+  word-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.375em !important;
+  color: #484848 !important;
+}
+.f24-800 {
+  margin: 0 !important;
+  word-wrap: break-word !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 1.25em !important;
+  color: #484848 !important;
+}
+.heading-reset {
+  color: inherit !important;
+  font-size: 1em !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.heading-reset:focus {
+  outline: 0 !important;
+}
+.image-wrapper {
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+.image-default {
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .image-default {
+    height: 100% !important;
+    width: 100% !important;
+    position: static !important;
+  }
+}
+.image-fallback {
+  vertical-align: bottom !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  display: none !important;
+  background-image: none !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
