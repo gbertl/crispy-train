@@ -18520,6 +18520,53 @@ input[type='button'].btn-block {
   margin-top: var(--spacer-3);
 }
 
+/*! JUMBOTRON FORM */
+.jumbotron-form__input-dates-wrapper {
+  display: inline-block !important;
+  width: 50% !important;
+  padding: 8px 16px !important;
+  box-shadow: default !important;
+  border-radius: 8px !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.jumbotron-form__input-dates-wrapper:focus-within {
+  box-shadow: #222 0 0 0 2px inset !important;
+}
+.jumbotron-form__input-dates-wrapper::-moz-focus-inner {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.jumbotron-form__input-dates-wrapper:focus::-moz-focus-inner {
+  border: none !important;
+}
+.jumbotron-form__input-dates-wrapper:-moz-focusring {
+  outline: 0 !important;
+}
+.jumbotron-form__input-dates-label {
+  pointer-events: none !important;
+  font-size: 10px !important;
+  line-height: 20px !important;
+  color: #222 !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.jumbotron-form__input-dates {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-weight: 400 !important;
+  padding-top: none !important;
+  height: auto !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #717171 !important;
+}
+
 /*! LIST GROUP */
 .list-group {
   -webkit-box-direction: normal !important;
