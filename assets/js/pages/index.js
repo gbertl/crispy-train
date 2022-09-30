@@ -192,6 +192,15 @@ let sitemap = [
     ],
   },
   {
+    title: 'Landing Pages',
+    urls: [
+      'landing-pages/social-impact-host.html',
+      'landing-pages/accessibility.html',
+      'landing-pages/covidsafety.html',
+      'landing-pages/merchandising.html',
+    ],
+  },
+  {
     title: 'Reviews',
     urls: [
       'reviews/profile-reviews.html',
