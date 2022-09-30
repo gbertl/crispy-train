@@ -15,9 +15,6 @@ let sitemap = [
     title: 'New Pages',
     urls: [
       'host-liability-insurance.html',
-      'host-protection-insurance.html',
-      'onlinehost.html',
-      'products-mobile.html',
     ],
   },
   {
@@ -168,6 +165,8 @@ let sitemap = [
       'landing-pages/accessibility.html',
       'landing-pages/covidsafety.html',
       'landing-pages/merchandising.html',
+      'landing-pages/host-protection-insurance.html',
+      'landing-pages/onlinehost.html',
     ],
   },
   {
