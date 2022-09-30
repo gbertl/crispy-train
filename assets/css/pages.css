@@ -59702,7 +59702,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   -o-transform: scale(2.4) translateY(-0.4px);
   transform: scale(2.4) translateY(-0.4px);
 }
-.flash-container .alert .alert-message {
+.flash-container .alert .alert__text-inline {
   display: table-cell;
   padding-left: 20px;
 }
@@ -59747,7 +59747,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   margin: 0;
 }
 @media (min-width: 744px) {
-  .flash-container .alert .alert-message {
+  .flash-container .alert .alert__text-inline {
     display: inline;
     padding: 0;
   }
