@@ -182,6 +182,10 @@ let sitemap = [
     ],
   },
   {
+    title: 'Misc Pages',
+    urls: ['misc-pages/404.html', 'misc-pages/alerts.html'],
+  },
+  {
     title: 'Experience Hosting',
     urls: [
       'online-experience/calendar_agenda.html',
