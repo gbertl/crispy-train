@@ -41740,13 +41740,13 @@ video::cue {
     margin: 16px 0 !important;
   }
 }
-.alert-title {
+.alert__title {
   color: #222 !important;
   font-weight: 800 !important;
   font-size: 16px !important;
   line-height: 20px !important;
 }
-.alert-text {
+.alert__text {
   margin-top: 4px !important;
   color: #717171 !important;
   font-size: 14px !important;
@@ -59807,7 +59807,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     margin: 16px 0 !important;
   }
 }
-.alert-body {
+.alert__body {
   flex: 1 1 auto !important;
 }
 .alert__icon {
