@@ -89,6 +89,18 @@ let sitemap = [
     ],
   },
   {
+    title: 'Help',
+    urls: [
+      'help/all-topics.html',
+      'help/feedback.html',
+      'help/searching-and-booking.html',
+      'help/searching-for-stays.html',
+      'help/search-tips.html',
+      'help/ticket-selection.html',
+      'help/help.html',
+    ],
+  },
+  {
     title: 'Manage Listings',
     urls: [
       'edit/about.html',
@@ -148,7 +160,6 @@ let sitemap = [
     urls: [
       'lps-resources/404.html',
       'lps-resources/covidsafety.html',
-      'lps-resources/help.html',
       'lps-resources/merchandising.html',
       'lps-resources/resources.html',
     ],
