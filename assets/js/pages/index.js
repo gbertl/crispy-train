@@ -170,6 +170,18 @@ let sitemap = [
     ],
   },
   {
+    title: 'Loaders',
+    urls: [
+      'loaders/dashboard-loader.html',
+      'loaders/experiences-loader.html',
+      'loaders/explore-loader.html',
+      'loaders/help-loader.html',
+      'loaders/messages-loader.html',
+      'loaders/wishlist-loader.html',
+      'loaders/products-loader.html',
+    ],
+  },
+  {
     title: 'Experience Hosting',
     urls: [
       'online-experience/calendar_agenda.html',
