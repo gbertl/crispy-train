@@ -120,7 +120,7 @@ let sitemap = [
     ],
   },
   {
-    title: 'Listings & Product',
+    title: 'Merchandising',
     urls: [
       'listings-product/contact-host.html',
       'listings-product/explore.html',
@@ -131,6 +131,7 @@ let sitemap = [
       'listings-product/online-experience.html',
       'listings-product/places.html',
       'listings-product/products.html',
+      'listings-product/products-mobile.html',
       'listings-product/products-luxe.html',
       'listings-product/products-plus.html',
       'listings-product/specific_trip.html',
