@@ -71,7 +71,7 @@ let sitemap = [
     ],
   },
   {
-    title: 'Become a host',
+    title: 'Become a Host',
     urls: [
       'become-a-host/amenities.html',
       'become-a-host/description.html',
