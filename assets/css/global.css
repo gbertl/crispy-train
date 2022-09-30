@@ -18660,6 +18660,63 @@ input[type='button'].btn-block {
   line-height: 20px !important;
   color: #717171 !important;
 }
+.jumbotron-form__container[class][class] {
+  width: 100%;
+}
+.dir.jumbotron-form__container[class][class] {
+  background: var(--white);
+}
+.dir.jumbotron-form__container-dates[class][class] {
+  margin-top: var(--spacer-3);
+}
+.jumbotron-form__container-guests[class][class] {
+  overflow: hidden;
+}
+.dir.jumbotron-form__container-guests[class][class] {
+  margin-top: var(--spacer-3);
+}
+.jumbotron-form__container-search-btn[class][class] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dir.jumbotron-form__container-search-btn[class][class] {
+  margin-top: var(--spacer-5);
+  border: 0;
+}
+.dir-ltr.jumbotron-form__container-search-btn[class][class] {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.jumbotron-form__input-location-wrapper {
+  width: -webkit-calc(100% - 1px) !important;
+  width: -moz-calc(100% - 1px) !important;
+  width: calc(100% - 1px) !important;
+  padding: 8px 16px !important;
+  box-shadow: #ddd 0 0 0 1px inset !important;
+  border-radius: 8px !important;
+  display: inline-block !important;
+}
+.jumbotron-form__input-location-wrapper:focus-within {
+  box-shadow: #222 0 0 0 2px inset !important;
+}
+.jumbotron-form__input-location {
+  position: relative !important;
+  cursor: text !important;
+  display: inline-block !important;
+  min-height: auto !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+  color: #222 !important;
+  background-color: #fff !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  height: auto !important;
+}
 
 /*! LIST GROUP */
 .list-group {
