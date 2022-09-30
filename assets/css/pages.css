@@ -49654,7 +49654,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   z-index: 0 !important;
   padding-top: var(--dls-basecard-padding-top) !important;
 }
-._1szwzht {
+.card__media-container {
   position: absolute !important;
   top: 0 !important;
   bottom: 0 !important;
@@ -54542,17 +54542,17 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   border-radius: 8px !important;
   overflow: hidden !important;
 }
-._1h6n1zu {
+.img-middle {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
 }
-._9ofhsl {
+.img-full {
   height: 0 !important;
   width: 0 !important;
   position: absolute !important;
 }
 @supports (object-fit: cover) {
-  ._9ofhsl {
+  .img-full {
     height: 100% !important;
     width: 100% !important;
     position: static !important;
