@@ -5178,12 +5178,12 @@ html :where(img[class*='wp-image-']) {
   color: var(--gray-500);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  font-weight: var(--jx-zk-pv);
+  font-weight: var(--font-weight-semibold);
 }
 .text-ellipsis[class][class] {
   font-size: var(--font-size);
   line-height: var(--line-height-xl);
-  font-weight: var(--e-y-j-d-v-j);
+  font-weight: var(--font-weight-normal);
   color: var(--gray-500);
   display: -webkit-box;
   -webkit-line-clamp: 2;
