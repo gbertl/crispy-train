@@ -184,6 +184,7 @@ let sitemap = [
       'media/media-category.html',
       'media/media-contact.html',
       'media/media-home.html',
+      'media/media-press-release.html',
       'media/media-search.html',
     ],
   },
