@@ -156,7 +156,7 @@ let sitemap = [
   },
   {
     title: 'Messaging',
-    urls: ['messaging/notifications.html'],
+    urls: ['messaging/messages.html', 'messaging/notifications.html'],
   },
   {
     title: 'Experience Hosting',
