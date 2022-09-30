@@ -15792,7 +15792,7 @@ fieldset[disabled] .btn {
 .btn-link-condensed:disabled:hover {
   text-decoration: underline !important;
 }
-.btn-light {
+.btn-light-outlined {
   cursor: pointer !important;
   display: inline-block;
   margin: 0 !important;
@@ -15823,7 +15823,7 @@ fieldset[disabled] .btn {
   color: var(--gray-900) !important;
   width: 100% !important;
 }
-.btn-light:focus-visible {
+.btn-light-outlined:focus-visible {
   outline: 0 !important;
   -webkit-transition: box-shadow 0.2s !important;
   -moz-transition: box-shadow 0.2s !important;
@@ -15833,13 +15833,13 @@ fieldset[disabled] .btn {
   color: var(--gray-900) !important;
 }
 @media (hover: hover) {
-  .btn-light:hover {
+  .btn-light-outlined:hover {
     border-color: var(--black) !important;
     background: var(--gray-100) !important;
     color: var(--gray-900) !important;
   }
 }
-.btn-light:active {
+.btn-light-outlined:active {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
@@ -15847,7 +15847,7 @@ fieldset[disabled] .btn {
   background: var(--gray-100) !important;
   color: var(--gray-900) !important;
 }
-.btn-light:disabled {
+.btn-light-outlined:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
   border-color: var(--gray-300) !important;
@@ -16234,7 +16234,7 @@ fieldset[disabled] .btn {
     transition: none !important;
   }
 }
-.btn-light:active,
+.btn-light-outlined:active,
 .btn-outline-small:active {
   transform: scale(0.96) !important;
   border-color: var(--black) !important;
