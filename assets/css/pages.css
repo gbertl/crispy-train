@@ -6488,50 +6488,11 @@
   font-weight: 400 !important;
   height: auto !important;
 }
-.input-group {
-  -webkit-box-pack: justify !important;
-  -ms-flex-pack: justify !important;
-  position: relative !important;
-  display: -webkit-box !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: -webkit-flex !important;
-  display: flex !important;
-  -webkit-justify-content: space-between !important;
-  justify-content: space-between !important;
-  border: 1px solid #ddd !important;
-  border-radius: 8px !important;
-}
 .search__divider-v {
   background: #ddd !important;
   margin: 9px 0 !important;
   width: 1px !important;
   position: relative !important;
-}
-.input-group-hr {
-  background: #ddd !important;
-  width: 1px !important;
-  height: 38px !important;
-  top: 9px !important;
-  position: relative !important;
-}
-.input-group-select {
-  position: relative !important;
-  display: -webkit-box !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: -webkit-flex !important;
-  display: flex !important;
-  width: 100% !important;
-  margin: 0 !important;
-  border: none !important;
-  color: #222 !important;
-  background-color: #fff !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  font-weight: 400 !important;
 }
 .jumbotron-form__container[class][class] {
   width: 100%;
