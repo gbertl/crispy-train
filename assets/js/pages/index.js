@@ -159,6 +159,17 @@ let sitemap = [
     urls: ['messaging/messages.html', 'messaging/notifications.html'],
   },
   {
+    title: 'Media',
+    urls: [
+      'media/media-assets.html',
+      'media/media-assets-search.html',
+      'media/media-category.html',
+      'media/media-contact.html',
+      'media/media-home.html',
+      'media/media-search.html',
+    ],
+  },
+  {
     title: 'Experience Hosting',
     urls: [
       'online-experience/calendar_agenda.html',
