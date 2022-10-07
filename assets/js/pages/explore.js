@@ -154,3 +154,68 @@ document.addEventListener('keydown', (e) => {
         tabId = null
     }
 })
+
+let scrollMove = 0;
+
+function carouselController (controller) {
+    if(controller == 'next'){ 
+        const carousel = document.querySelector('._3uceys')
+        const dots = document.querySelector('.d1dz9bym')
+        const prev = document.querySelector('._1kjng5b[aria-label="Previous"]')
+        const next = document.querySelector('._1kjng5b[aria-label="Next"]')
+        const prevMobile = document.querySelector('._sp8hvh[aria-label="Previous"]')
+        const nextMobile = document.querySelector('._sp8hvh[aria-label="Next"]')
+        const count = document.querySelector('._1l1vk8w')
+    
+        if(scrollMove<9){
+            prev.style.display = "inline-flex"
+            prevMobile.removeAttribute('disabled')
+            scrollMove++;
+            if(scrollMove==9){
+                next.style.display = "none"
+                nextMobile.setAttribute('disabled', false)
+            }
+            dots.children[scrollMove-1].classList.remove('dot96k7')
+            dots.children[scrollMove].classList.add('dot96k7')
+            carousel.scrollBy((carousel.scrollWidth/10)/2, 0);
+            count.innerHTML = (scrollMove + 1) + '/ 10'
+        }
+    } else if(controller == 'prev') {
+        const carousel = document.querySelector('._3uceys')
+        const dots = document.querySelector('.d1dz9bym')
+        const prev = document.querySelector('._1kjng5b[aria-label="Previous"]')
+        const next = document.querySelector('._1kjng5b[aria-label="Next"]')
+        const prevMobile = document.querySelector('._sp8hvh[aria-label="Previous"]')
+        const nextMobile = document.querySelector('._sp8hvh[aria-label="Next"]')
+        const count = document.querySelector('._1l1vk8w')
+    
+        if(scrollMove>0){
+            next.style.display = "inline-flex"
+            nextMobile.removeAttribute('disabled')
+            scrollMove--;
+            if(scrollMove==0){
+                prev.style.display = "none"
+                prevMobile.setAttribute('disabled', false)
+            }
+            dots.children[scrollMove+1].classList.remove('dot96k7')
+            dots.children[scrollMove].classList.add('dot96k7')
+            carousel.scrollBy(-(carousel.scrollWidth/10)/2, 0);
+            count.innerHTML = (scrollMove + 1) + '/ 10'
+        }
+    } 
+}
+document.querySelector('._1kjng5b[aria-label="Previous"]').addEventListener('click', (e) => {
+    carouselController('prev')
+})
+
+document.querySelector('._1kjng5b[aria-label="Next"]').addEventListener('click', (e) => {
+    carouselController('next')
+})
+
+document.querySelector('._sp8hvh[aria-label="Previous"]').addEventListener('click', (e) => {
+    carouselController('prev')
+})
+
+document.querySelector('._sp8hvh[aria-label="Next"]').addEventListener('click', (e) => {
+    carouselController('next')
+})
