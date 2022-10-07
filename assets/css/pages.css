@@ -60516,7 +60516,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   -ms-flex-direction: column !important;
   flex-direction: column !important;
   padding-top: 48px !important;
-  padding-bottom: 20rem !important;
+  padding-bottom: 15rem !important;
 }
 
 @media (min-width: 744px) {
@@ -61095,4 +61095,26 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 
 ._pog3hg {
   margin-left: 8px !important;
+}
+
+._1sikdxcl {
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-style: inherit !important;
+  font-variant: inherit !important;
+  line-height: inherit !important;
+  color: #222222 !important;
+  text-decoration: underline !important;
+  border-radius: 4px !important;
+  font-weight: 600 !important;
+  text-align: inherit !important;
+  outline: none !important;
+}
+
+@media (hover: hover) {
+  ._1sikdxcl:hover {
+    cursor: pointer !important;
+    color: #000000 !important;
+    text-decoration: underline !important;
+  }
 }
