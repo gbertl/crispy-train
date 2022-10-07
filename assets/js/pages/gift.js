@@ -1,10 +1,3 @@
-// const accordation = document.getElementsByClassName('expandable-accordation')
-
-// console.dir(accordation);
-// // accordation.addEventListener('click', (e) => {
-// //     console.log('click');
-// // })
-
 document.querySelectorAll('.expandable-accordation')
     .forEach((target) => {
         target.addEventListener('click', (e) => {
