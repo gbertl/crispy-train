@@ -260,3 +260,36 @@ newYorkCardPlay.addEventListener('click', (e) => {
   e.currentTarget.closest('.card-alt-4').querySelector('video').play();
   isPause = false;
 });
+
+const discoverSunnyCard = document.querySelector('#discoverSunnyCard')
+let discoverSunnyCardInterval;
+    let discoverSunnyCardCounter = 0;
+    const discoverSunnyCardItems = discoverSunnyCard.querySelector('.m18vqd2l').querySelectorAll('.i4bgxyv')
+
+discoverSunnyCard.addEventListener('mouseenter', (e) => { 
+
+    discoverSunnyCardInterval = setInterval(() => {
+        discoverSunnyCardItems.forEach((el) => { 
+            el.classList.remove('i1ttw8c4')
+            el.classList.remove('i16nzgyh')
+         })
+
+        discoverSunnyCardItems[discoverSunnyCardCounter].classList.add('i1ttw8c4')
+        discoverSunnyCardItems[discoverSunnyCardCounter].classList.add('i16nzgyh')
+
+        if (discoverSunnyCardCounter !== discoverSunnyCardItems.length - 1) {
+            discoverSunnyCardCounter = discoverSunnyCardCounter + 1
+        } else {
+            discoverSunnyCardCounter = 0
+        }
+    }, 2500)
+ })
+
+ discoverSunnyCard.addEventListener('mouseleave', () => { 
+    clearInterval(discoverSunnyCardInterval)
+    discoverSunnyCardCounter=0
+        discoverSunnyCardItems.forEach((el) => { 
+            el.classList.remove('i1ttw8c4')
+            el.classList.remove('i16nzgyh')
+         })
+  })
