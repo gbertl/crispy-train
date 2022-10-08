@@ -5375,6 +5375,9 @@ html :where(img[class*='wp-image-']) {
   white-space: nowrap;
   width: 1px;
 }
+.invisible {
+  visibility: hidden;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
@@ -11665,7 +11668,7 @@ html :where(img[class*='wp-image-']) {
   display: flex;
   justify-content: space-between;
 }
-.card-alt-4__btn-pause[class][class] {
+.card-alt-4__btn[class][class] {
   appearance: none;
   border: 0;
   outline: 0;
@@ -11679,7 +11682,7 @@ html :where(img[class*='wp-image-']) {
   color: var(--white);
   pointer-events: all;
 }
-.dir.card-alt-4__btn-pause[class][class] {
+.dir.card-alt-4__btn[class][class] {
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
@@ -11688,36 +11691,36 @@ html :where(img[class*='wp-image-']) {
   background: 0 0;
   transition: transform 0.25s;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible {
+.dir.card-alt-4__btn[class][class]:focus-visible {
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 255, 255, 0.7);
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-4__btn-pause[class][class] {
+  .dir.card-alt-4__btn[class][class] {
     transition: none;
   }
 }
-.dir.card-alt-4__btn-pause[class][class]:active {
+.dir.card-alt-4__btn[class][class]:active {
   transform: scale(0.92);
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible {
+.dir.card-alt-4__btn[class][class]:focus-visible {
   transition: box-shadow 0.2s;
   box-shadow: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-4__btn-pause[class][class]:focus-visible {
+  .dir.card-alt-4__btn[class][class]:focus-visible {
     transition: none;
   }
 }
-.dir-ltr.card-alt-4__btn-pause[class][class]::before {
+.dir-ltr.card-alt-4__btn[class][class]::before {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.card-alt-4__btn-pause[class][class]:active::before,
-.card-alt-4__btn-pause[class][class]:hover::before {
+.card-alt-4__btn[class][class]:active::before,
+.card-alt-4__btn[class][class]:hover::before {
   backdrop-filter: blur(14px);
 }
-.card-alt-4__btn-pause[class][class]:focus-visible {
+.card-alt-4__btn[class][class]:focus-visible {
   backdrop-filter: blur(14px);
 }
 .card-alt-4__ratings-container[class][class]
@@ -11788,7 +11791,7 @@ html :where(img[class*='wp-image-']) {
 .card-alt-4__lite-image-wrapper[class][class] {
   position: relative;
 }
-.card-alt-4__btn-pause[class][class] {
+.card-alt-4__btn[class][class] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -11805,7 +11808,7 @@ html :where(img[class*='wp-image-']) {
   color: var(--white);
   pointer-events: all;
 }
-.dir.card-alt-4__btn-pause[class][class] {
+.dir.card-alt-4__btn[class][class] {
   border-radius: 50%;
   cursor: pointer;
   padding: 0;
@@ -11815,122 +11818,122 @@ html :where(img[class*='wp-image-']) {
   -webkit-transition: transform 0.25s;
   transition: transform 0.25s;
 }
-.card-alt-4__btn-pause[class][class]:focus-visible {
+.card-alt-4__btn[class][class]:focus-visible {
   outline: 0;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible {
+.dir.card-alt-4__btn[class][class]:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 255, 255, 0.7);
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible::-moz-focus-inner {
+.dir.card-alt-4__btn[class][class]:focus-visible::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible:focus::-moz-focus-inner {
+.dir.card-alt-4__btn[class][class]:focus-visible:focus::-moz-focus-inner {
   border: none;
 }
-.card-alt-4__btn-pause[class][class]:focus-visible:-moz-focusring {
+.card-alt-4__btn[class][class]:focus-visible:-moz-focusring {
   outline: 0;
 }
-.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added] {
+.card-alt-4__btn[class][class]:focus[data-focus-visible-added] {
   outline: 0;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added] {
+.dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added] {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 255, 255, 0.7);
 }
-.dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added]::-moz-focus-inner {
+.dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added]::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added]:focus::-moz-focus-inner {
+.dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added]:focus::-moz-focus-inner {
   border: none;
 }
-.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added]:-moz-focusring {
+.card-alt-4__btn[class][class]:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0;
 }
-.card-alt-4__btn-pause[class][class]:disabled {
+.card-alt-4__btn[class][class]:disabled {
   opacity: 0.5;
   color: graytext;
 }
-.dir.card-alt-4__btn-pause[class][class]:disabled {
+.dir.card-alt-4__btn[class][class]:disabled {
   cursor: not-allowed;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-4__btn-pause[class][class] {
+  .dir.card-alt-4__btn[class][class] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.card-alt-4__btn-pause[class][class]:hover {
+.card-alt-4__btn[class][class]:hover {
   color: var(--black);
 }
-.dir.card-alt-4__btn-pause[class][class]:hover::before {
+.dir.card-alt-4__btn[class][class]:hover::before {
   background: var(--gray-100);
 }
-.card-alt-4__btn-pause[class][class]:active {
+.card-alt-4__btn[class][class]:active {
   color: var(--black);
 }
-.dir.card-alt-4__btn-pause[class][class]:active {
+.dir.card-alt-4__btn[class][class]:active {
   -webkit-transform: scale(0.92);
   -ms-transform: scale(0.92);
   transform: scale(0.92);
 }
-.dir.card-alt-4__btn-pause[class][class]:active::before {
+.dir.card-alt-4__btn[class][class]:active::before {
   background: var(--gray-100);
 }
-.dir.card-alt-4__btn-pause[class][class]::-moz-focus-inner {
+.dir.card-alt-4__btn[class][class]::-moz-focus-inner {
   border: none;
   padding: 0;
   margin: 0;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus::-moz-focus-inner {
+.dir.card-alt-4__btn[class][class]:focus::-moz-focus-inner {
   border: none;
 }
-.card-alt-4__btn-pause[class][class]:-moz-focusring {
+.card-alt-4__btn[class][class]:-moz-focusring {
   outline: 0;
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible {
+.dir.card-alt-4__btn[class][class]:focus-visible {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-4__btn-pause[class][class]:focus-visible {
+  .dir.card-alt-4__btn[class][class]:focus-visible {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible::before {
+.dir.card-alt-4__btn[class][class]:focus-visible::before {
   box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8);
   background: var(--gray-100);
 }
-.dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added] {
+.dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added] {
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   box-shadow: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added] {
+  .dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added] {
     -webkit-transition: none;
     transition: none;
   }
 }
-.dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added]::before {
+.dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added]::before {
   box-shadow: 0 0 0 2px var(--gray-900), 0 0 0 4px rgba(255, 255, 255, 0.8);
   background: var(--gray-100);
 }
-.card-alt-4__btn-pause[class][class]:disabled {
+.card-alt-4__btn[class][class]:disabled {
   color: var(--gray-300);
 }
-.dir.card-alt-4__btn-pause[class][class]:disabled::before {
+.dir.card-alt-4__btn[class][class]:disabled::before {
   background: 0 0;
 }
-.card-alt-4__btn-pause[class][class]::before {
+.card-alt-4__btn[class][class]::before {
   content: '';
   display: block;
   position: absolute;
@@ -11938,55 +11941,52 @@ html :where(img[class*='wp-image-']) {
   width: 32px;
   height: 32px;
 }
-.dir.card-alt-4__btn-pause[class][class]::before {
+.dir.card-alt-4__btn[class][class]::before {
   border-radius: 50%;
 }
-.dir-ltr.card-alt-4__btn-pause[class][class]::before {
+.dir-ltr.card-alt-4__btn[class][class]::before {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.card-alt-4__btn-pause[class][class]::before {
+.card-alt-4__btn[class][class]::before {
   width: 32px;
   height: 32px;
 }
-.card-alt-4__btn-pause[class][class]:hover {
+.card-alt-4__btn[class][class]:hover {
   color: var(--white);
 }
-.card-alt-4__btn-pause[class][class]:hover::before {
+.card-alt-4__btn[class][class]:hover::before {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.card-alt-4__btn-pause[class][class]:hover::before {
+.dir.card-alt-4__btn[class][class]:hover::before {
   background: rgba(255, 255, 255, 0.16);
 }
-.card-alt-4__btn-pause[class][class]:active {
+.card-alt-4__btn[class][class]:active {
   color: var(--white);
 }
-.card-alt-4__btn-pause[class][class]:active::before {
+.card-alt-4__btn[class][class]:active::before {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.card-alt-4__btn-pause[class][class]:active::before {
+.dir.card-alt-4__btn[class][class]:active::before {
   background: rgba(255, 255, 255, 0.16);
 }
-.card-alt-4__btn-pause[class][class]:focus-visible {
+.card-alt-4__btn[class][class]:focus-visible {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.card-alt-4__btn-pause[class][class]:focus-visible {
+.dir.card-alt-4__btn[class][class]:focus-visible {
   background: rgba(255, 255, 255, 0.16);
 }
-.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added] {
+.card-alt-4__btn[class][class]:focus[data-focus-visible-added] {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
 }
-.dir.card-alt-4__btn-pause[class][class]:focus[data-focus-visible-added] {
+.dir.card-alt-4__btn[class][class]:focus[data-focus-visible-added] {
   background: rgba(255, 255, 255, 0.16);
-}
-.card-alt-4__btn-pause-icon-wrapper[class][class] {
-  position: relative;
 }
 .card-alt-4__ratings[class][class] {
   font-size: var(--font-size-sm);
@@ -12072,9 +12072,6 @@ html :where(img[class*='wp-image-']) {
 }
 .dir.card-alt-4__overlay-top[class][class] {
   padding: var(--media-overlay_top-row-padding);
-}
-.card-alt-4__overlay-bottom[class][class] {
-  visibility: hidden;
 }
 .dir.card-alt-4__overlay-bottom[class][class] {
   padding: 10px 15px;

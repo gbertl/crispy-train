@@ -219,3 +219,44 @@ document.querySelector('._sp8hvh[aria-label="Previous"]').addEventListener('clic
 document.querySelector('._sp8hvh[aria-label="Next"]').addEventListener('click', (e) => {
     carouselController('next')
 })
+
+let isPause = false;
+const newYorkCard = document.querySelector('#newYorkCard');
+const newYorkCardPause = document.querySelector('#newYorkCardPause');
+const newYorkCardPlay = document.querySelector('#newYorkCardPlay');
+
+newYorkCard.addEventListener('mouseenter', (e) => {
+  e.target.querySelector('#newYorkCardVid').classList.add('i1ttw8c4');
+  e.target
+    .querySelector('.card-alt-4__overlay-bottom')
+    .classList.remove('invisible');
+  if (!isPause) e.target.querySelector('video').play();
+});
+
+newYorkCard.addEventListener('mouseleave', (e) => {
+  e.target.querySelector('#newYorkCardVid').classList.remove('i1ttw8c4');
+  e.target
+    .querySelector('.card-alt-4__overlay-bottom')
+    .classList.add('invisible');
+  e.target.querySelector('video').pause();
+});
+
+newYorkCardPause.addEventListener('click', (e) => {
+  e.currentTarget.classList.add('hidden');
+  e.currentTarget
+    .closest('.card-alt-4__overlay-bottom')
+    .querySelector('#newYorkCardPlay')
+    .classList.remove('hidden');
+  e.currentTarget.closest('.card-alt-4').querySelector('video').pause();
+  isPause = true;
+});
+
+newYorkCardPlay.addEventListener('click', (e) => {
+  e.currentTarget.classList.add('hidden');
+  e.currentTarget
+    .closest('.card-alt-4__overlay-bottom')
+    .querySelector('#newYorkCardPause')
+    .classList.remove('hidden');
+  e.currentTarget.closest('.card-alt-4').querySelector('video').play();
+  isPause = false;
+});
