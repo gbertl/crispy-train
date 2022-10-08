@@ -293,3 +293,21 @@ discoverSunnyCard.addEventListener('mouseenter', (e) => {
             el.classList.remove('i16nzgyh')
          })
   })
+
+  const btnUnsave = document.querySelector('.js-btn-unsave')
+
+  btnUnsave.addEventListener('click', (e) => {
+    e.currentTarget.classList.add('hidden')
+    e.currentTarget.closest('.card-alt-4').querySelector('.js-btn-save').classList.remove('hidden')
+  })
+
+const wishlistModalBtns = document.querySelectorAll('._11eqlma4')
+const btnSave = document.querySelector('.js-btn-save')
+
+wishlistModalBtns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        btnUnsave.classList.remove('hidden')
+        btnSave.classList.add('hidden')
+        e.currentTarget.closest('#save-modal').classList.add('hidden')
+    })
+ })
