@@ -29,6 +29,7 @@ document
     }
   });
 
+
   document
   .querySelector('.topic-dropdown')
   .addEventListener('click', function () {
@@ -40,13 +41,17 @@ document
     }
   });
 
-
-  document
-  .querySelector('#content-type-btn')
-  .addEventListener('click', function () {
-    document.querySelector('#content-type-modal').classList.toggle('hidden');
-  });
-
+  if(document
+    .querySelector('#content-type-btn') !== null){
+      document
+      .querySelector('#content-type-btn')
+      .addEventListener('click', function () {
+        document.querySelector('#content-type-modal').classList.toggle('hidden');
+      });
+  }
+ 
+ if(document
+  .querySelector('[data-testid="modal-container"]') !== null){
   document
   .querySelector('[data-testid="modal-container"]')
   .addEventListener('click', function (e) {
@@ -57,4 +62,5 @@ document
     }
   });
   
+ }
   
