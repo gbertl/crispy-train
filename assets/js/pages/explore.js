@@ -226,9 +226,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 let scrollMove = 0;
+let clickNavigation = false;
 
-function carouselController(controller) {
+function carouselController(controller, event) {
   if (controller == 'next') {
+    clickNavigation = true;
+
     const carousel = document.querySelector('._3uceys');
     const dots = document.querySelector('.d1dz9bym');
     const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
@@ -252,7 +255,12 @@ function carouselController(controller) {
       carousel.scrollBy(carousel.scrollWidth / 10 / 2, 0);
       count.innerHTML = scrollMove + 1 + '/ 10';
     }
+
+    setTimeout(() => {
+      clickNavigation = false;
+    }, 1000);
   } else if (controller == 'prev') {
+    clickNavigation = true;
     const carousel = document.querySelector('._3uceys');
     const dots = document.querySelector('.d1dz9bym');
     const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
@@ -275,6 +283,52 @@ function carouselController(controller) {
       dots.children[scrollMove].classList.add('dot96k7');
       carousel.scrollBy(-(carousel.scrollWidth / 10) / 2, 0);
       count.innerHTML = scrollMove + 1 + '/ 10';
+    }
+    setTimeout(() => {
+      clickNavigation = false;
+    }, 1000);
+  } else if(controller == 'scroll') {
+    if(clickNavigation == false){
+      const count =  Math.round(event.target.scrollLeft / event.target.offsetWidth)
+      const dots = document.querySelector('.d1dz9bym');
+      const page = document.querySelector('._1l1vk8w');
+      const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
+      const next = document.querySelector('._1kjng5b[aria-label="Next"]');
+      const prevMobile = document.querySelector(
+        '._sp8hvh[aria-label="Previous"]'
+      );
+      const nextMobile = document.querySelector('._sp8hvh[aria-label="Next"]');
+
+      console.log(count);
+      console.log(scrollMove);
+
+      if(count > scrollMove){
+        scrollMove = count
+        if (scrollMove > 0) { 
+          prev.style.display = 'inline-flex';
+          prevMobile.removeAttribute('disabled');
+          if (scrollMove == 9) {
+            next.style.display = 'none';
+            nextMobile.setAttribute('disabled', false);
+          }
+          dots.children[scrollMove-1].classList.remove('dot96k7');
+          dots.children[scrollMove].classList.add('dot96k7');
+          page.innerHTML = scrollMove + 1 + '/ 10';
+        }
+      } else if(count < scrollMove) {
+        scrollMove = count
+        if (scrollMove < 9) {
+          next.style.display = 'inline-flex';
+          nextMobile.removeAttribute('disabled');
+          if (scrollMove == 0) {
+            prev.style.display = 'none';
+            prevMobile.setAttribute('disabled', false);
+          }
+          dots.children[scrollMove + 1].classList.remove('dot96k7');
+          dots.children[scrollMove].classList.add('dot96k7');
+          page.innerHTML = scrollMove + 1 + '/ 10';
+        }
+      }
     }
   }
 }
@@ -300,6 +354,16 @@ document
   .querySelector('._sp8hvh[aria-label="Next"]')
   .addEventListener('click', (e) => {
     carouselController('next');
+  });
+
+document
+  .querySelector('._3uceys')
+  .addEventListener('scroll', (e) => {
+    carouselController('scroll', e);
+    // console.dir(e.target);
+    // console.log(e.target.scrollLeft);
+    
+    
   });
 
 let isPause = false;
@@ -418,83 +482,98 @@ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
 });
 
 const cardAltCarousel = () => {
-  const card = document.querySelector('.card-alt-1');
-  const slides = card.querySelectorAll('.card-alt-1__slide');
-  const cardSlides = card.querySelector('.card__slides');
-  const width = document.querySelector('.card-alt-1__slide').offsetWidth;
-  let size = 0;
-  let counter = 0;
-  const nextBtn = card.querySelector('.js-btn-nav-next');
-  const prevBtn = card.querySelector('.js-btn-nav-prev');
+  const card = document.querySelectorAll('.card-alt-1.carousel-images-location');
+  card.forEach((target) => {
+    console.log(target);
+    const slides = target.querySelectorAll('.card-alt-1__slide');
+    const cardSlides = target.querySelector('.card__slides');
+    const width = target.querySelector('.card-alt-1__slide').offsetWidth;
+    let size = 0;
+    let counter = 0;
+    const nextBtn = target.querySelector('.js-btn-nav-next');
+    const prevBtn = target.querySelector('.js-btn-nav-prev');
 
-  // creates bullets
-  for (let x = 0; x < slides.length; x++) {
-    const bullet = document.createElement('span');
+      // creates bullets
+    for (let x = 0; x < slides.length; x++) {
+      const bullet = document.createElement('span');
 
-    bullet.classList.add(
-      x === 0 ? 'pagination-bullets__item--active' : 'pagination-bullets__item'
-    );
-
-    bullet.setAttribute(
-      'style',
-      x === slides.length - 2 // 2nd to last
-        ? 'transform: scale(0.833333)'
-        : x === slides.length - 1 // last
-        ? 'transform: scale(0.666667)'
-        : 'transform: scale(1)'
-    );
-
-    card.querySelector('.pagination-bullets__list').appendChild(bullet);
-  }
-
-  const bullets = card.querySelectorAll('.pagination-bullets__list > *');
-
-  const updateBullets = () => {
-    bullets.forEach((el) => {
-      el.classList.replace(
-        'pagination-bullets__item--active',
-        'pagination-bullets__item'
+      bullet.classList.add(
+        x === 0 ? 'pagination-bullets__item--active' : 'pagination-bullets__item'
       );
+
+      bullet.setAttribute(
+        'style',
+        x === slides.length - 2 // 2nd to last
+          ? 'transform: scale(0.833333)'
+          : x === slides.length - 1 // last
+          ? 'transform: scale(0.666667)'
+          : 'transform: scale(1)'
+      );
+
+      target.querySelector('.pagination-bullets__list').appendChild(bullet);
+    }
+
+    const bullets = target.querySelectorAll('.pagination-bullets__list > *');
+
+    const updateBullets = () => {
+      bullets.forEach((el) => {
+        el.classList.replace(
+          'pagination-bullets__item--active',
+          'pagination-bullets__item'
+        );
+      });
+      bullets[counter].classList.replace(
+        'pagination-bullets__item',
+        'pagination-bullets__item--active'
+      );
+    };
+
+    nextBtn.addEventListener('click', (e) => {
+      if (counter === slides.length - 1) return;
+
+      counter += 1;
+      size = width * counter;
+
+      e.currentTarget
+        .closest('.card-alt-1')
+        .querySelector('.card__slides')
+        .scrollTo({
+          left: size,
+          behavior: 'smooth',
+        });
+
+      updateBullets();
     });
-    bullets[counter].classList.replace(
-      'pagination-bullets__item',
-      'pagination-bullets__item--active'
-    );
-  };
 
-  nextBtn.addEventListener('click', (e) => {
-    if (counter === slides.length - 1) return;
+    prevBtn.addEventListener('click', (e) => {
+      if (counter === 0) return;
 
-    counter += 1;
-    size = width * counter;
+      counter -= 1;
+      size = width * counter;
 
-    e.currentTarget
-      .closest('.card-alt-1')
-      .querySelector('.card__slides')
-      .scrollTo({
-        left: size,
-        behavior: 'smooth',
-      });
+      e.currentTarget
+        .closest('.card-alt-1')
+        .querySelector('.card__slides')
+        .scrollTo({
+          left: size,
+          behavior: 'smooth',
+        });
 
-    updateBullets();
-  });
+      updateBullets();
+    });
 
-  prevBtn.addEventListener('click', (e) => {
-    if (counter === 0) return;
+    cardSlides.addEventListener('scroll', (e) => {
+      const count =  Math.round(e.target.scrollLeft / width)
+      counter = count
+      updateBullets();
+    })
 
-    counter -= 1;
-    size = width * counter;
+  })
+  
 
-    e.currentTarget
-      .closest('.card-alt-1')
-      .querySelector('.card__slides')
-      .scrollTo({
-        left: size,
-        behavior: 'smooth',
-      });
 
-    updateBullets();
-  });
+
+ 
 };
 
 cardAltCarousel();
