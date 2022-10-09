@@ -61139,14 +61139,15 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 
 ._yz46843 {
   position: relative !important;
-  margin-bottom: 24px !important;
+  /* margin-bottom: 24px !important; */
   margin-top: 0px !important;
+  height: 100%;
 }
 
 @media (min-width: 744px) {
   ._yz46843 {
     padding-top: 50% !important;
-    margin-bottom: 32px !important;
+    /* margin-bottom: 32px !important; */
     margin-top: 0px !important;
   }
 }
@@ -61154,7 +61155,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 @media (min-width: 1128px) {
   ._yz46843 {
     padding-top: 50% !important;
-    margin-bottom: 48px !important;
+    /* margin-bottom: 48px !important; */
     margin-top: 0px !important;
   }
 }
@@ -61175,6 +61176,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   flex: 1 !important;
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
+  height: 100%;
 }
 
 ._4626ulj {
