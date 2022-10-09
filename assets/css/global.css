@@ -11290,7 +11290,7 @@ html :where(img[class*='wp-image-']) {
   --contentscroller_controls_z-index: 1;
   --contentscroller_gap: 0px;
   --contentscroller_height: 100%;
-  --contentscroller_overflow: hidden;
+  --contentscroller_overflow: visible hidden;
   --contentscroller_peek: 0;
   --contentscroller_scrollsnapstop: always;
   --contentscroller_visible-items: 1;
