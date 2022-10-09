@@ -311,3 +311,18 @@ wishlistModalBtns.forEach((el) => {
         e.currentTarget.closest('#save-modal').classList.add('hidden')
     })
  })
+
+ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => { 
+    el.addEventListener('mouseenter', (e) => {
+        e.currentTarget.querySelectorAll('.card-alt-1__nav-btn-wrapper').forEach((el) => { 
+            el.classList.replace('invisible', 'card-alt-1__controls-active');
+         })
+    })
+  })
+ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => { 
+    el.addEventListener('mouseleave', (e) => {
+        e.currentTarget.querySelectorAll('.card-alt-1__nav-btn-wrapper').forEach((el) => { 
+            el.classList.replace('card-alt-1__controls-active','invisible');
+         })
+    })
+  })

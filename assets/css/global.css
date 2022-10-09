@@ -11424,16 +11424,16 @@ html :where(img[class*='wp-image-']) {
 .card-alt-1__pointer-events[class][class] {
   pointer-events: auto;
 }
-.card-alt-1__nav-btn-wrapper[class][class] {
+.card-alt-1__controls-active[class][class] {
   opacity: 1;
   visibility: visible;
 }
-.dir.card-alt-1__nav-btn-wrapper[class][class] {
+.dir.card-alt-1__controls-active[class][class] {
   animation-duration: 0.3s;
   animation-name: fade-in;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-1__nav-btn-wrapper[class][class] {
+  .dir.card-alt-1__controls-active[class][class] {
     animation-duration: 0s;
   }
 }
