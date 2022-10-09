@@ -418,83 +418,92 @@ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
 });
 
 const cardAltCarousel = () => {
-  const card = document.querySelector('.card-alt-1');
-  const slides = card.querySelectorAll('.card-alt-1__slide');
-  const cardSlides = card.querySelector('.card__slides');
-  const width = document.querySelector('.card-alt-1__slide').offsetWidth;
-  let size = 0;
-  let counter = 0;
-  const nextBtn = card.querySelector('.js-btn-nav-next');
-  const prevBtn = card.querySelector('.js-btn-nav-prev');
+  const card = document.querySelectorAll('.card-alt-1.carousel-images-location');
+  card.forEach((target) => {
+    console.log(target);
+    const slides = target.querySelectorAll('.card-alt-1__slide');
+    const cardSlides = target.querySelector('.card__slides');
+    const width = target.querySelector('.card-alt-1__slide').offsetWidth;
+    let size = 0;
+    let counter = 0;
+    const nextBtn = target.querySelector('.js-btn-nav-next');
+    const prevBtn = target.querySelector('.js-btn-nav-prev');
 
-  // creates bullets
-  for (let x = 0; x < slides.length; x++) {
-    const bullet = document.createElement('span');
+      // creates bullets
+    for (let x = 0; x < slides.length; x++) {
+      const bullet = document.createElement('span');
 
-    bullet.classList.add(
-      x === 0 ? 'pagination-bullets__item--active' : 'pagination-bullets__item'
-    );
-
-    bullet.setAttribute(
-      'style',
-      x === slides.length - 2 // 2nd to last
-        ? 'transform: scale(0.833333)'
-        : x === slides.length - 1 // last
-        ? 'transform: scale(0.666667)'
-        : 'transform: scale(1)'
-    );
-
-    card.querySelector('.pagination-bullets__list').appendChild(bullet);
-  }
-
-  const bullets = card.querySelectorAll('.pagination-bullets__list > *');
-
-  const updateBullets = () => {
-    bullets.forEach((el) => {
-      el.classList.replace(
-        'pagination-bullets__item--active',
-        'pagination-bullets__item'
+      bullet.classList.add(
+        x === 0 ? 'pagination-bullets__item--active' : 'pagination-bullets__item'
       );
+
+      bullet.setAttribute(
+        'style',
+        x === slides.length - 2 // 2nd to last
+          ? 'transform: scale(0.833333)'
+          : x === slides.length - 1 // last
+          ? 'transform: scale(0.666667)'
+          : 'transform: scale(1)'
+      );
+
+      target.querySelector('.pagination-bullets__list').appendChild(bullet);
+    }
+
+    const bullets = target.querySelectorAll('.pagination-bullets__list > *');
+
+    const updateBullets = () => {
+      bullets.forEach((el) => {
+        el.classList.replace(
+          'pagination-bullets__item--active',
+          'pagination-bullets__item'
+        );
+      });
+      bullets[counter].classList.replace(
+        'pagination-bullets__item',
+        'pagination-bullets__item--active'
+      );
+    };
+
+    nextBtn.addEventListener('click', (e) => {
+      if (counter === slides.length - 1) return;
+
+      counter += 1;
+      size = width * counter;
+
+      e.currentTarget
+        .closest('.card-alt-1')
+        .querySelector('.card__slides')
+        .scrollTo({
+          left: size,
+          behavior: 'smooth',
+        });
+
+      updateBullets();
     });
-    bullets[counter].classList.replace(
-      'pagination-bullets__item',
-      'pagination-bullets__item--active'
-    );
-  };
 
-  nextBtn.addEventListener('click', (e) => {
-    if (counter === slides.length - 1) return;
+    prevBtn.addEventListener('click', (e) => {
+      if (counter === 0) return;
 
-    counter += 1;
-    size = width * counter;
+      counter -= 1;
+      size = width * counter;
 
-    e.currentTarget
-      .closest('.card-alt-1')
-      .querySelector('.card__slides')
-      .scrollTo({
-        left: size,
-        behavior: 'smooth',
-      });
+      e.currentTarget
+        .closest('.card-alt-1')
+        .querySelector('.card__slides')
+        .scrollTo({
+          left: size,
+          behavior: 'smooth',
+        });
 
-    updateBullets();
-  });
+      updateBullets();
+    });
 
-  prevBtn.addEventListener('click', (e) => {
-    if (counter === 0) return;
+  })
+  
 
-    counter -= 1;
-    size = width * counter;
 
-    e.currentTarget
-      .closest('.card-alt-1')
-      .querySelector('.card__slides')
-      .scrollTo({
-        left: size,
-        behavior: 'smooth',
-      });
 
-    updateBullets();
-  });
+ 
 };
 
 cardAltCarousel();
