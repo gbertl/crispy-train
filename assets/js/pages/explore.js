@@ -493,6 +493,8 @@ const cardAltCarousel = () => {
     const nextBtn = target.querySelector('.js-btn-nav-next');
     const prevBtn = target.querySelector('.js-btn-nav-prev');
 
+    prevBtn.classList.add('invisible')
+
       // creates bullets
     for (let x = 0; x < slides.length; x++) {
       const bullet = document.createElement('span');
@@ -566,6 +568,11 @@ const cardAltCarousel = () => {
       const count =  Math.round(e.target.scrollLeft / width)
       counter = count
       updateBullets();
+
+      prevBtn.classList.remove('invisible')
+      nextBtn.classList.remove('invisible')
+      if (counter === slides.length - 1) nextBtn.classList.add('invisible')
+      if (counter === 0) prevBtn.classList.add('invisible')
     })
 
   })
