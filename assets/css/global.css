@@ -11290,7 +11290,7 @@ html :where(img[class*='wp-image-']) {
   --contentscroller_controls_z-index: 1;
   --contentscroller_gap: 0px;
   --contentscroller_height: 100%;
-  --contentscroller_overflow: hidden;
+  --contentscroller_overflow: visible hidden;
   --contentscroller_peek: 0;
   --contentscroller_scrollsnapstop: always;
   --contentscroller_visible-items: 1;
@@ -11424,16 +11424,16 @@ html :where(img[class*='wp-image-']) {
 .card-alt-1__pointer-events[class][class] {
   pointer-events: auto;
 }
-.card-alt-1__nav-btn-wrapper[class][class] {
+.card-alt-1__controls-active[class][class] {
   opacity: 1;
   visibility: visible;
 }
-.dir.card-alt-1__nav-btn-wrapper[class][class] {
+.dir.card-alt-1__controls-active[class][class] {
   animation-duration: 0.3s;
   animation-name: fade-in;
 }
 @media (prefers-reduced-motion: reduce) {
-  .dir.card-alt-1__nav-btn-wrapper[class][class] {
+  .dir.card-alt-1__controls-active[class][class] {
     animation-duration: 0s;
   }
 }
