@@ -219,3 +219,95 @@ document.querySelector('._sp8hvh[aria-label="Previous"]').addEventListener('clic
 document.querySelector('._sp8hvh[aria-label="Next"]').addEventListener('click', (e) => {
     carouselController('next')
 })
+
+let isPause = false;
+const newYorkCard = document.querySelector('#newYorkCard');
+const newYorkCardPause = document.querySelector('#newYorkCardPause');
+const newYorkCardPlay = document.querySelector('#newYorkCardPlay');
+
+newYorkCard.addEventListener('mouseenter', (e) => {
+  e.target.querySelector('#newYorkCardVid').classList.add('i1ttw8c4');
+  e.target
+    .querySelector('.card-alt-4__overlay-bottom')
+    .classList.remove('invisible');
+  if (!isPause) e.target.querySelector('video').play();
+});
+
+newYorkCard.addEventListener('mouseleave', (e) => {
+  e.target.querySelector('#newYorkCardVid').classList.remove('i1ttw8c4');
+  e.target
+    .querySelector('.card-alt-4__overlay-bottom')
+    .classList.add('invisible');
+  e.target.querySelector('video').pause();
+});
+
+newYorkCardPause.addEventListener('click', (e) => {
+  e.currentTarget.classList.add('hidden');
+  e.currentTarget
+    .closest('.card-alt-4__overlay-bottom')
+    .querySelector('#newYorkCardPlay')
+    .classList.remove('hidden');
+  e.currentTarget.closest('.card-alt-4').querySelector('video').pause();
+  isPause = true;
+});
+
+newYorkCardPlay.addEventListener('click', (e) => {
+  e.currentTarget.classList.add('hidden');
+  e.currentTarget
+    .closest('.card-alt-4__overlay-bottom')
+    .querySelector('#newYorkCardPause')
+    .classList.remove('hidden');
+  e.currentTarget.closest('.card-alt-4').querySelector('video').play();
+  isPause = false;
+});
+
+const discoverSunnyCard = document.querySelector('#discoverSunnyCard')
+let discoverSunnyCardInterval;
+    let discoverSunnyCardCounter = 0;
+    const discoverSunnyCardItems = discoverSunnyCard.querySelector('.m18vqd2l').querySelectorAll('.i4bgxyv')
+
+discoverSunnyCard.addEventListener('mouseenter', (e) => { 
+
+    discoverSunnyCardInterval = setInterval(() => {
+        discoverSunnyCardItems.forEach((el) => { 
+            el.classList.remove('i1ttw8c4')
+            el.classList.remove('i16nzgyh')
+         })
+
+        discoverSunnyCardItems[discoverSunnyCardCounter].classList.add('i1ttw8c4')
+        discoverSunnyCardItems[discoverSunnyCardCounter].classList.add('i16nzgyh')
+
+        if (discoverSunnyCardCounter !== discoverSunnyCardItems.length - 1) {
+            discoverSunnyCardCounter = discoverSunnyCardCounter + 1
+        } else {
+            discoverSunnyCardCounter = 0
+        }
+    }, 2500)
+ })
+
+ discoverSunnyCard.addEventListener('mouseleave', () => { 
+    clearInterval(discoverSunnyCardInterval)
+    discoverSunnyCardCounter=0
+        discoverSunnyCardItems.forEach((el) => { 
+            el.classList.remove('i1ttw8c4')
+            el.classList.remove('i16nzgyh')
+         })
+  })
+
+  const btnUnsave = document.querySelector('.js-btn-unsave')
+
+  btnUnsave.addEventListener('click', (e) => {
+    e.currentTarget.classList.add('hidden')
+    e.currentTarget.closest('.card-alt-4').querySelector('.js-btn-save').classList.remove('hidden')
+  })
+
+const wishlistModalBtns = document.querySelectorAll('._11eqlma4')
+const btnSave = document.querySelector('.js-btn-save')
+
+wishlistModalBtns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        btnUnsave.classList.remove('hidden')
+        btnSave.classList.add('hidden')
+        e.currentTarget.closest('#save-modal').classList.add('hidden')
+    })
+ })
