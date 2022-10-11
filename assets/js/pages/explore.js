@@ -576,11 +576,38 @@ const cardAltCarousel = () => {
     })
 
   })
-  
-
-
-
  
 };
 
 cardAltCarousel();
+
+function checkboxFilter() {
+  document.querySelectorAll('.filter-checkbox').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      const checkbox = target.querySelector('.explore-filter-menu__list-checkbox')
+      console.log(checkbox.classList.toggle("_1v5cvwv4"));
+    })
+  });
+}
+
+checkboxFilter();
+
+function showMoreFilter() {
+  document.querySelectorAll('.show-more').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      const more = document.querySelector('#'+target.attributes[2].value)
+      if(more.classList.contains('hidden')) {
+        more.classList.remove('hidden')
+        target.children[0].innerHTML = 'Show less'
+      }
+      else if(!more.classList.contains('hidden')) {
+        more.classList.add('hidden')
+        target.children[0].innerHTML = 'Show more'
+      }
+    })
+  });
+}
+
+showMoreFilter();
