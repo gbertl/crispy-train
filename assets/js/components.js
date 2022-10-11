@@ -45,17 +45,90 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     const modal = document.querySelector(e.dataset.modal);
     const section = document.querySelector(e.dataset.lightbox);
 
+    const lightboxControls = section?.querySelector('._14x8wq27')
+    const lcPrev = lightboxControls?.querySelector('button[aria-label="Previous"]')
+    const lcNext = lightboxControls?.querySelector('button[aria-label="Next"]')
+
+    const sections = modal.querySelectorAll('section')
+
+    const setControlsState = (section) => {
+      const prevSectionIndex = [...sections].indexOf(section.previousElementSibling)
+      const nextSectionIndex = [...sections].indexOf(section.nextElementSibling)
+
+      const lightboxControls = section.querySelector('._14x8wq27')
+      const lcPrev = lightboxControls.querySelector('button[aria-label="Previous"]')
+      const lcNext = lightboxControls.querySelector('button[aria-label="Next"]')
+
+      if (section.previousElementSibling && prevSectionIndex !== -1) {
+        lcPrev.removeAttribute('style')
+        lcPrev.focus()
+      } else {
+        lcPrev.style.visibility = 'hidden'
+      }
+
+      if (section.nextElementSibling && nextSectionIndex !== -1) {
+        lcNext.removeAttribute('style')
+        lcNext.focus()
+      } else {
+        lcNext.style.visibility = 'hidden'
+      }
+    }
+
+    const prevHandler = (e) => {
+      const section = e.target.closest('section')
+
+      const prevSectionIndex = [...sections].indexOf(section.previousElementSibling)
+      if (prevSectionIndex === -1) return;
+
+      if (section) {
+        section.style.visibility = 'hidden'
+        if (section.previousElementSibling) {
+          const prevSection = section.previousElementSibling
+          prevSection.removeAttribute('style')
+          setControlsState(prevSection)
+        }
+      }
+    }
+
+    const nextHandler = (e) => {
+      const section = e.target.closest('section')
+
+      const nextSectionIndex = [...sections].indexOf(section.nextElementSibling)
+      if (nextSectionIndex === -1) return;
+
+      if (section) {
+        section.style.visibility = 'hidden'
+        if (section.nextElementSibling) {
+          const nextSection = section.nextElementSibling
+          nextSection.removeAttribute('style')
+          setControlsState(nextSection)
+        }
+      }
+    }
+
     const openModal = () => {
       document.body.classList.add('overflow-y-hidden');
       modal.classList.remove('hidden');
-      section?.classList.remove('hidden');
-    };
+      if (section) {
+        section.removeAttribute('style')
+        setControlsState(section)
+      }
+    }
+
     const closeModal = () => {
       document.body.classList.remove('overflow-y-hidden');
       modal.classList.add('hidden');
-      section?.classList.add('hidden');
-    };
+      if (section) {
+        section.style.visibility = 'hidden'
+        setControlsState(section)
+      }
+    }
 
+    // lightbox controls
+    lcPrev?.addEventListener('click', prevHandler)
+    lcNext?.addEventListener('click', nextHandler)
+
+    // data-modal click handler
     e.addEventListener('click', (e) => {
       e.preventDefault();
 
@@ -72,10 +145,12 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
       });
     });
 
+    // handle close modal
     document.addEventListener('click', (e) => {
       if (
         !modal.contains(e.target) &&
-        !e.target.closest('[data-modal]')
+        !e.target.closest('[data-modal]') ||
+        e.target == modal.querySelector('[data-testid="modal-container"]')
       ) {
         closeModal();
       }
@@ -83,6 +158,8 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     document.addEventListener('keydown', (e) => {
       e.key === 'Escape' && closeModal();
+      e.key === 'ArrowLeft' && prevHandler(e)
+      e.key === 'ArrowRight' && nextHandler(e)
     });
   });
 
