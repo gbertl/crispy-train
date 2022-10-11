@@ -48429,7 +48429,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     padding-bottom: 32px !important;
   }
 }
-._1p3joamp {
+.btn-light__text {
   margin: 0 !important;
   word-wrap: break-word !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
@@ -62774,7 +62774,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   position: absolute !important;
   width: 100% !important;
 }
-._ftj2sg4 {
+.btn-light__text-wrapper {
   font-size: 16px !important;
   line-height: 24px !important;
   letter-spacing: normal !important;
@@ -62786,7 +62786,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   padding-bottom: undefined !important;
 }
 @supports (--custom: properties) {
-  ._ftj2sg4 {
+  .btn-light__text-wrapper {
     font-size: var(--font-button-font-size, 16px) !important;
     line-height: var(--font-button-line-height, 24px) !important;
     letter-spacing: var(--font-button-letter-spacing, normal) !important;
