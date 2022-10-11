@@ -12,10 +12,6 @@ window.addEventListener('scroll', () => {
 
 let sitemap = [
   {
-    title: 'New Pages',
-    urls: ['articles.html', 'full-screen-hero.html'],
-  },
-  {
     title: 'Manage Listings',
     urls: [
       'edit/about.html',
@@ -166,6 +162,8 @@ let sitemap = [
       'landing-pages/merchandising.html',
       'landing-pages/host-protection-insurance.html',
       'landing-pages/onlinehost.html',
+      'landing-pages/articles.html',
+      'landing-pages/full-screen-hero.html',
     ],
   },
   {
