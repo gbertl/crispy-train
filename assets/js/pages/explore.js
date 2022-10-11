@@ -484,7 +484,6 @@ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
 const cardAltCarousel = () => {
   const card = document.querySelectorAll('.card-alt-1.carousel-images-location');
   card.forEach((target) => {
-    console.log(target);
     const slides = target.querySelectorAll('.card-alt-1__slide');
     const cardSlides = target.querySelector('.card__slides');
     const width = target.querySelector('.card-alt-1__slide').offsetWidth;
@@ -576,11 +575,100 @@ const cardAltCarousel = () => {
     })
 
   })
-  
-
-
-
  
 };
 
 cardAltCarousel();
+
+function checkboxFilter() {
+  document.querySelectorAll('.filter-checkbox').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      const checkbox = target.querySelector('.explore-filter-menu__list-checkbox')
+      console.log(checkbox.classList.toggle("_1v5cvwv4"));
+    })
+  });
+}
+
+checkboxFilter();
+
+function showMoreFilter() {
+  document.querySelectorAll('.show-more').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      const more = document.querySelector('#'+target.attributes[2].value)
+      if(more.classList.contains('hidden')) {
+        more.classList.remove('hidden')
+        target.children[0].innerHTML = 'Show less'
+      }
+      else if(!more.classList.contains('hidden')) {
+        more.classList.add('hidden')
+        target.children[0].innerHTML = 'Show more'
+      }
+    })
+  });
+}
+
+showMoreFilter();
+
+function propertyTypeFilter() {
+  document.querySelectorAll('.property-type').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      if(target.classList.contains('btn-card')) {
+        target.classList.add('btn-card-active')
+        target.classList.remove('btn-card')
+      }
+      else if(target.classList.contains('btn-card-active')) {
+        target.classList.add('btn-card')
+        target.classList.remove('btn-card-active')
+      }
+    })
+  });
+}
+
+propertyTypeFilter();
+
+function toggleSwitchFilter() {
+  document.querySelectorAll('.toggle-switch').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      if(target.classList.contains('form__switch')) {
+        target.classList.add('form__switch--checked')
+        target.classList.remove('form__switch')
+        target.children[0].classList.add('form__switch-toggle-checked')
+        target.children[0].classList.remove('form__switch-toggle')
+        target.children[0].children[0].classList.remove('hidden')
+      }
+      else if(target.classList.contains('form__switch--checked')) {
+        target.classList.add('form__switch')
+        target.classList.remove('form__switch--checked')
+        target.children[0].classList.add('form__switch-toggle')
+        target.children[0].classList.remove('form__switch-toggle-checked')
+        target.children[0].children[0].classList.add('hidden')
+      }
+    })
+  });
+}
+
+toggleSwitchFilter();
+
+function multipleSelectFilter(selector) {
+  document.querySelectorAll(selector).forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      if(target.classList.contains('badge-dark')) {
+        document.querySelectorAll(selector).forEach((el) => {
+          el.classList.add('badge-dark')
+          el.classList.remove('badge-dark-active')
+        })
+        target.classList.add('badge-dark-active')
+        target.classList.remove('badge-dark')
+      }
+    })
+  });
+}
+
+multipleSelectFilter('.bedrooms-count');
+multipleSelectFilter('.beds-count');
+multipleSelectFilter('.bathroom-count');
