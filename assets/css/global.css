@@ -5338,6 +5338,10 @@ html :where(img[class*='wp-image-']) {
   white-space: nowrap;
   width: 1px;
 }
+.cell-middle {
+  display: table-cell;
+  vertical-align: middle !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
