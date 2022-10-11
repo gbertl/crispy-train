@@ -45,9 +45,9 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     const modal = document.querySelector(e.dataset.modal);
     const section = document.querySelector(e.dataset.lightbox);
 
-    const lightboxControls = section.querySelector('._14x8wq27')
-    const lcPrev = lightboxControls.querySelector('button[aria-label="Previous"]')
-    const lcNext = lightboxControls.querySelector('button[aria-label="Next"]')
+    const lightboxControls = section?.querySelector('._14x8wq27')
+    const lcPrev = lightboxControls?.querySelector('button[aria-label="Previous"]')
+    const lcNext = lightboxControls?.querySelector('button[aria-label="Next"]')
 
     const sections = modal.querySelectorAll('section')
 
