@@ -4155,9 +4155,6 @@ html :where(img[class*='wp-image-']) {
 .hidden {
   display: none !important;
 }
-.flex {
-  display: flex !important;
-}
 .hidden-scrollbar::-webkit-scrollbar {
   display: none !important;
 }
@@ -4340,22 +4337,6 @@ html :where(img[class*='wp-image-']) {
   white-space: nowrap !important;
   width: 1px !important;
 }
-.visually-hidden {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  overflow: clip;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-.dir.visually-hidden {
-  border: 0;
-  padding: 0;
-}
 .vh-100 {
   height: 100% !important;
   width: 100% !important;
@@ -4366,11 +4347,13 @@ html :where(img[class*='wp-image-']) {
 .img-full {
   height: 0 !important;
   width: 0 !important;
+  position: absolute !important;
 }
 @supports (object-fit: cover) {
   .img-full {
     height: 100% !important;
     width: 100% !important;
+    position: static !important;
   }
 }
 .table-container {
@@ -4378,10 +4361,6 @@ html :where(img[class*='wp-image-']) {
   position: relative !important;
   height: 100% !important;
   width: 100% !important;
-}
-.cell-middle {
-  display: table-cell !important;
-  vertical-align: middle !important;
 }
 .box-border {
   --webkit-box-sizing: border-box;
@@ -4905,10 +4884,6 @@ html :where(img[class*='wp-image-']) {
   vertical-align: top !important;
   width: 100% !important;
 }
-.flex-grow-1 {
-  -webkit-box-flex: 1 !important;
-  flex-grow: 1 !important;
-}
 .flex-items::after,
 .flex-items::before {
   display: -webkit-box !important;
@@ -4999,18 +4974,6 @@ html :where(img[class*='wp-image-']) {
 .image-wrapper {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
-}
-.image-default {
-  height: 0 !important;
-  width: 0 !important;
-  position: absolute !important;
-}
-@supports (object-fit: cover) {
-  .image-default {
-    height: 100% !important;
-    width: 100% !important;
-    position: static !important;
-  }
 }
 .image-fallback {
   vertical-align: bottom !important;
@@ -5375,8 +5338,9 @@ html :where(img[class*='wp-image-']) {
   white-space: nowrap;
   width: 1px;
 }
-.invisible {
-  visibility: hidden;
+.cell-middle {
+  display: table-cell;
+  vertical-align: middle !important;
 }
 
 /*! FOOTER COMPONENT */
@@ -7726,7 +7690,7 @@ html :where(img[class*='wp-image-']) {
   flex: 1 0 0%;
   min-width: 0;
 }
-.header__search-overlay[class][class] {
+.visually-hidden[class][class] {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
   height: 1px;
@@ -9537,22 +9501,6 @@ html :where(img[class*='wp-image-']) {
 .header__search-tabs-filter-where-body-show[class][class] {
   visibility: visible;
   opacity: 1;
-}
-.header__search-overlay[class][class] {
-  -webkit-clip: rect(0 0 0 0);
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  height: 1px;
-  overflow: hidden;
-  overflow: clip;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-.dir.header__search-overlay[class][class] {
-  border: 0;
-  padding: 0;
 }
 .header__search-tabs[class][class] {
   -webkit-align-items: center;
@@ -19603,24 +19551,6 @@ input[type='button'].btn-block {
 .modal-dialog {
   pointer-events: auto !important;
 }
-.modal-dialog__content-wrapper {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  background: #fff !important;
-  position: relative !important;
-  width: 100vw !important;
-  max-width: 100vw !important;
-  max-height: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  box-shadow: rgb(0 0 0 / 28%) 0 8px 28px !important;
-  border-top-left-radius: 12px !important;
-  border-top-right-radius: 12px !important;
-  animation-duration: 0.4s !important;
-  animation-iteration-count: 1 !important;
-  animation-fill-mode: both !important;
-  animation-name: keyframe_d37zz3 !important;
-}
 .modal__header-wrapper {
   -webkit-box-flex: 0 !important;
   flex: 0 0 16px !important;
@@ -20245,25 +20175,6 @@ input[type='button'].btn-block {
 }
 
 /*! PAGINATION BULLETS */
-.pagination-bullets {
-  -webkit-box-pack: center !important;
-  -webkit-box-align: end !important;
-  align-items: flex-end !important;
-  display: flex !important;
-  justify-content: center !important;
-  height: 100% !important;
-}
-.pagination-bullets__container {
-  display: flex !important;
-  overflow: hidden !important;
-  padding-bottom: 12px !important;
-  max-width: 55px !important;
-}
-@supports (overflow: clip) {
-  .pagination-bullets__container {
-    overflow: clip !important;
-  }
-}
 .pagination-bullets__list {
   -webkit-box-pack: center !important;
   -webkit-box-align: end !important;
@@ -21165,4 +21076,4 @@ input[type='button'].btn-block {
   transition: -ms-transform 0.5s, -webkit-transform 0.5s, transform 0.5s !important;
   will-change: transform !important;
   background: #222 !important;
-}
+} 
