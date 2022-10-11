@@ -462,15 +462,15 @@ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
 });
 
 const cardAltCarousel = () => {
-  const card = document.querySelectorAll('.card-alt-1.carousel-images-location');
+  const card = document.querySelectorAll('.card-alt-1');
   card.forEach((target) => {
-    const slides = target.querySelectorAll('.card-alt-1__slide');
+    const slides = target.querySelectorAll('.card-alt-1__slide, .card__carousel-item');
     const cardSlides = target.querySelector('.card__slides');
-    const width = target.querySelector('.card-alt-1__slide').offsetWidth;
+    const width = target.querySelector('.card-alt-1__slide, .card__carousel-item').offsetWidth;
     let size = 0;
     let counter = 0;
-    const nextBtn = target.querySelector('.js-btn-nav-next');
-    const prevBtn = target.querySelector('.js-btn-nav-prev');
+    const nextBtn = target.querySelector('[aria-label="Next image"]');
+    const prevBtn = target.querySelector('[aria-label="Previous image"]');
 
     prevBtn.classList.add('invisible')
 
