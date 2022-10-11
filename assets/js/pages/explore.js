@@ -522,8 +522,6 @@ const cardAltCarousel = () => {
           left: size,
           behavior: 'smooth',
         });
-
-      updateBullets();
     });
 
     prevBtn.addEventListener('click', (e) => {
@@ -539,8 +537,6 @@ const cardAltCarousel = () => {
           left: size,
           behavior: 'smooth',
         });
-
-      updateBullets();
     });
 
     cardSlides.addEventListener('scroll', (e) => {
