@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
 let sitemap = [
   {
     title: 'New Pages',
-    urls: ['articles.html', 'full-screen-hero-only.html'],
+    urls: ['articles.html', 'full-screen-hero.html'],
   },
   {
     title: 'Manage Listings',
