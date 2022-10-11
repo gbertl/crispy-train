@@ -141,7 +141,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     const lcPrev = lightboxControls?.querySelector('button[aria-label="Previous"]')
     const lcNext = lightboxControls?.querySelector('button[aria-label="Next"]')
 
-    const sections = modal.querySelectorAll('section')
+    const sections = modal?.querySelectorAll('section')
 
     const setControlsState = (section) => {
       const prevSectionIndex = [...sections].indexOf(section.previousElementSibling)
