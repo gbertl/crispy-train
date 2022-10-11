@@ -5000,13 +5000,13 @@ html :where(img[class*='wp-image-']) {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
 }
-.image-default {
+.img-full {
   height: 0 !important;
   width: 0 !important;
   position: absolute !important;
 }
 @supports (object-fit: cover) {
-  .image-default {
+  .img-full {
     height: 100% !important;
     width: 100% !important;
     position: static !important;
