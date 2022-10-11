@@ -1,4 +1,4 @@
-document.querySelectorAll('._1ynkfbb')
+document.querySelectorAll('.btn-outline-muted')
     .forEach((target) => {
         target.addEventListener('click', (e) => {
             const dislike = document.querySelector('.dislike')
