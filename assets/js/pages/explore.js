@@ -484,7 +484,6 @@ document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
 const cardAltCarousel = () => {
   const card = document.querySelectorAll('.card-alt-1.carousel-images-location');
   card.forEach((target) => {
-    console.log(target);
     const slides = target.querySelectorAll('.card-alt-1__slide');
     const cardSlides = target.querySelector('.card__slides');
     const width = target.querySelector('.card-alt-1__slide').offsetWidth;
@@ -653,3 +652,23 @@ function toggleSwitchFilter() {
 }
 
 toggleSwitchFilter();
+
+function multipleSelectFilter(selector) {
+  document.querySelectorAll(selector).forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault()
+      if(target.classList.contains('badge-dark')) {
+        document.querySelectorAll(selector).forEach((el) => {
+          el.classList.add('badge-dark')
+          el.classList.remove('badge-dark-active')
+        })
+        target.classList.add('badge-dark-active')
+        target.classList.remove('badge-dark')
+      }
+    })
+  });
+}
+
+multipleSelectFilter('.bedrooms-count');
+multipleSelectFilter('.beds-count');
+multipleSelectFilter('.bathroom-count');
