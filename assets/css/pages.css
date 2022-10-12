@@ -63111,3 +63111,59 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   height: 100% !important;
   transform-origin: 0% center !important;
 }
+.btn-filter-rounded-sm-secondary.active {
+  cursor: pointer !important;
+  text-align: center !important;
+  border: none rgb(34, 34, 34) !important;
+  outline: none !important;
+  margin: 0px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  position: relative !important;
+  transition-property: -ms-transform, -webkit-transform, transform, background-color, border-color !important;
+  transition-duration: 0.15s !important;
+  transition-timing-function: ease-in-out !important;
+  padding: 8px 16px !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  background-color: rgb(34, 34, 34) !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 800 !important;
+}
+.btn-filter-rounded.active {
+  cursor: pointer !important;
+  text-align: center !important;
+  border: 1px solid rgb(34, 34, 34) !important;
+  outline: none !important;
+  margin: 0px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  position: relative !important;
+  transition-property: -ms-transform, -webkit-transform, transform, background-color, border-color !important;
+  transition-duration: 0.15s !important;
+  transition-timing-function: ease-in-out !important;
+  padding: 10px 16px !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  width: 100% !important;
+  background-color: rgb(247, 247, 247) !important;
+  color: rgb(34, 34, 34) !important;
+}
+.header-filter--active[class][class] {
+  background-color: black;
+  color: white;
+  color: var(--black);
+}
+.dir.header-filter--active[class][class] {
+  background-color: unset;
+  cursor: default;
+}
+.header-filter--active[class][class] .header-filter__icon[class][class] {
+  filter: contrast(1);
+}
+.dir.header-filter--active[class][class] .header-filter__label[class][class]::after {
+  background-color: var(--black);
+}
+.header-filter--active[class][class] .header-filter__label[class][class]::after {
+  opacity: 1;
+}

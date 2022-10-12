@@ -43,13 +43,13 @@ const toggleModal = (type) => {
       ).classList;
       whoButton.contains('header__search-tabs-filter-btn-container-inactive')
         ? whoButton.replace(
-            'header__search-tabs-filter-btn-container-inactive',
-            'header__search-tabs-filter-btn-container-active'
-          )
+          'header__search-tabs-filter-btn-container-inactive',
+          'header__search-tabs-filter-btn-container-active'
+        )
         : whoButton.replace(
-            'header__search-tabs-filter-btn-container-active',
-            'header__search-tabs-filter-btn-container-inactive'
-          );
+          'header__search-tabs-filter-btn-container-active',
+          'header__search-tabs-filter-btn-container-inactive'
+        );
 
       const searchWho = document.querySelector('#search-who').classList;
       searchWho.contains('hidden')
@@ -65,13 +65,13 @@ const toggleModal = (type) => {
         'header__search-tabs-filter-btn-container-inactive'
       )
         ? checkInButton.replace(
-            'header__search-tabs-filter-btn-container-inactive',
-            'header__search-tabs-filter-btn-container-active'
-          )
+          'header__search-tabs-filter-btn-container-inactive',
+          'header__search-tabs-filter-btn-container-active'
+        )
         : checkInButton.replace(
-            'header__search-tabs-filter-btn-container-active',
-            'header__search-tabs-filter-btn-container-inactive'
-          );
+          'header__search-tabs-filter-btn-container-active',
+          'header__search-tabs-filter-btn-container-inactive'
+        );
 
       const anyweekPanel = document.querySelector('#anyweek-panel').classList;
       anyweekPanel.contains('hidden')
@@ -88,13 +88,13 @@ const toggleModal = (type) => {
           const classList = target.classList;
           classList.contains('header__search-tabs-filter-where-hide')
             ? classList.replace(
-                'header__search-tabs-filter-where-hide',
-                'header__search-tabs-filter-where-show'
-              )
+              'header__search-tabs-filter-where-hide',
+              'header__search-tabs-filter-where-show'
+            )
             : classList.replace(
-                'header__search-tabs-filter-where-show',
-                'header__search-tabs-filter-where-hide'
-              );
+              'header__search-tabs-filter-where-show',
+              'header__search-tabs-filter-where-hide'
+            );
         });
 
       const content = document.querySelector(
@@ -115,13 +115,13 @@ const toggleModal = (type) => {
       const classList = target.classList;
       classList.contains('header__search-tabs-hide')
         ? classList.replace(
-            'header__search-tabs-hide',
-            'header__search-tabs-show'
-          )
+          'header__search-tabs-hide',
+          'header__search-tabs-show'
+        )
         : classList.replace(
-            'header__search-tabs-show',
-            'header__search-tabs-hide'
-          );
+          'header__search-tabs-show',
+          'header__search-tabs-hide'
+        );
     });
 
   const filters = document
@@ -141,25 +141,25 @@ const toggleModal = (type) => {
       const classList = target.classList;
       classList.contains('header__search-tabs-content-transition-hide')
         ? classList.replace(
-            'header__search-tabs-content-transition-hide',
-            'header__search-tabs-content-transition-show'
-          )
+          'header__search-tabs-content-transition-hide',
+          'header__search-tabs-content-transition-show'
+        )
         : classList.replace(
-            'header__search-tabs-content-transition-show',
-            'header__search-tabs-content-transition-hide'
-          );
+          'header__search-tabs-content-transition-show',
+          'header__search-tabs-content-transition-hide'
+        );
     });
 
   const searchTablPanel = document.querySelector('#search-tabpanel').classList;
   searchTablPanel.contains('header__search-tabs-filter-hide')
     ? searchTablPanel.replace(
-        'header__search-tabs-filter-hide',
-        'header__search-tabs-filter-show'
-      )
+      'header__search-tabs-filter-hide',
+      'header__search-tabs-filter-show'
+    )
     : searchTablPanel.replace(
-        'header__search-tabs-filter-show',
-        'header__search-tabs-filter-hide'
-      );
+      'header__search-tabs-filter-show',
+      'header__search-tabs-filter-hide'
+    );
 
   const searchButton = document
     .querySelectorAll(
@@ -169,13 +169,13 @@ const toggleModal = (type) => {
       const classList = target.classList;
       classList.contains('header__search-tabs-filter-searchBtn-hide')
         ? classList.replace(
-            'header__search-tabs-filter-searchBtn-hide',
-            'header__search-tabs-filter-searchBtn-show'
-          )
+          'header__search-tabs-filter-searchBtn-hide',
+          'header__search-tabs-filter-searchBtn-show'
+        )
         : classList.replace(
-            'header__search-tabs-filter-searchBtn-show',
-            'header__search-tabs-filter-searchBtn-hide'
-          );
+          'header__search-tabs-filter-searchBtn-show',
+          'header__search-tabs-filter-searchBtn-hide'
+        );
     });
 
   const searchButtonIcon = document.querySelector('#search-btn-text').classList;
@@ -498,8 +498,8 @@ const cardAltCarousel = () => {
         x === slides.length - 2 // 2nd to last
           ? 'transform: scale(0.833333)'
           : x === slides.length - 1 // last
-          ? 'transform: scale(0.666667)'
-          : 'transform: scale(1)'
+            ? 'transform: scale(0.666667)'
+            : 'transform: scale(1)'
       );
 
       target.querySelector('.pagination-bullets__list').appendChild(bullet);
@@ -702,3 +702,23 @@ const handleFilterSlider = () => {
 };
 
 handleFilterSlider();
+
+document.querySelectorAll('.activity__type button').forEach((e) => {
+  e.addEventListener('click', (e) => {
+    e.currentTarget.classList.toggle('active')
+  })
+})
+
+document.querySelectorAll('.explore-filter__carousel button.btn-filter-rounded-sm-secondary').forEach((e) => {
+  e.addEventListener('click', (e) => {
+    document.querySelector('.explore-filter__carousel button.btn-filter-rounded-sm-secondary.active')?.classList.remove('active')
+    e.currentTarget.classList.add('active')
+  })
+})
+
+document.querySelectorAll('.header-filter__container-bg button.header-filter').forEach((e) => {
+  e.addEventListener('click', (e) => {
+    document.querySelector('.header-filter__container-bg button.header-filter.header-filter--active')?.classList.remove('header-filter--active')
+    e.currentTarget.classList.add('header-filter--active')
+  })
+})
