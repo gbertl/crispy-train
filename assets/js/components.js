@@ -1,3 +1,95 @@
+const handleSaveUnsaveWishlist = () => { 
+  const saveBtns = document.querySelectorAll('[aria-label="Save this Experience"], [aria-label="Add listing to a list"]');
+  const unsaveBtns = document.querySelectorAll('[aria-label="Unsave this Experience"]');
+  const wishlistModalBtns = document.querySelectorAll('._11eqlma4');
+  let currentCard;
+  
+  const createUnsaveBtn = () => {
+    let html = `
+    <button aria-label="Unsave this Experience" type="button" class="explore__list-heart explore__list-heart-font dir dir-ltr">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="
+        display: block;
+        fill: var(
+          --primary-color
+        );
+        height: 24px;
+        width: 24px;
+        stroke: var(
+          --white
+        );
+        stroke-width: 2;
+        overflow: visible;
+      ">
+        <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+      </svg>
+    </button>
+    `
+
+    const  template = document.createElement('template');
+    html = html.trim(); 
+    template.innerHTML = html;
+
+    return template.content.firstChild
+  }
+
+
+  const createSaveBtn = () => {
+    let html = `
+    <button aria-label="Save this Experience" type="button" class="explore__list-heart explore__list-heart-font dir dir-ltr" data-modal="#save-modal">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="
+          display: block;
+          fill: rgba(
+            0,
+            0,
+            0,
+            0.5
+          );
+          height: 24px;
+          width: 24px;
+          stroke: var(
+            --white
+          );
+          stroke-width: 2;
+          overflow: visible;
+        ">
+        <path d="m16 28c7-4.733 14-10 14-17 0-1.792-.683-3.583-2.05-4.95-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05l-2.051 2.051-2.05-2.051c-1.367-1.366-3.158-2.05-4.95-2.05-1.791 0-3.583.684-4.949 2.05-1.367 1.367-2.051 3.158-2.051 4.95 0 7 7 12.267 14 17z"></path>
+      </svg>
+    </button>
+    `
+
+    const  template = document.createElement('template');
+    html = html.trim(); 
+    template.innerHTML = html;
+
+    return template.content.firstChild
+  }
+
+  saveBtns.forEach((el) => { 
+    el.setAttribute('data-modal', '#save-modal')
+
+    el.addEventListener('click', (e) => { 
+      currentCard = e.currentTarget.closest('[role]')
+    })
+   })
+
+   unsaveBtns.forEach((el) => { 
+    el.addEventListener('click', (e) => { 
+      e.currentTarget.replaceWith(createSaveBtn())
+     })
+    })
+
+  wishlistModalBtns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+      currentCard.querySelector('[aria-label="Save this Experience"], [aria-label="Add listing to a list"]').replaceWith(createUnsaveBtn())
+      e.currentTarget.closest('#save-modal').classList.add('hidden');
+    });
+  });
+
+
+}
+
+handleSaveUnsaveWishlist();
+
 document.querySelectorAll('[role=tab]').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     // please add this role attribute to the parent to make handler work
@@ -49,7 +141,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     const lcPrev = lightboxControls?.querySelector('button[aria-label="Previous"]')
     const lcNext = lightboxControls?.querySelector('button[aria-label="Next"]')
 
-    const sections = modal.querySelectorAll('section')
+    const sections = modal?.querySelectorAll('section')
 
     const setControlsState = (section) => {
       const prevSectionIndex = [...sections].indexOf(section.previousElementSibling)

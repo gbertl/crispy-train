@@ -287,9 +287,11 @@ function carouselController(controller, event) {
     setTimeout(() => {
       clickNavigation = false;
     }, 1000);
-  } else if(controller == 'scroll') {
-    if(clickNavigation == false){
-      const count =  Math.round(event.target.scrollLeft / event.target.offsetWidth)
+  } else if (controller == 'scroll') {
+    if (clickNavigation == false) {
+      const count = Math.round(
+        event.target.scrollLeft / event.target.offsetWidth
+      );
       const dots = document.querySelector('.d1dz9bym');
       const page = document.querySelector('._1l1vk8w');
       const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
@@ -302,21 +304,21 @@ function carouselController(controller, event) {
       console.log(count);
       console.log(scrollMove);
 
-      if(count > scrollMove){
-        scrollMove = count
-        if (scrollMove > 0) { 
+      if (count > scrollMove) {
+        scrollMove = count;
+        if (scrollMove > 0) {
           prev.style.display = 'inline-flex';
           prevMobile.removeAttribute('disabled');
           if (scrollMove == 9) {
             next.style.display = 'none';
             nextMobile.setAttribute('disabled', false);
           }
-          dots.children[scrollMove-1].classList.remove('dot96k7');
+          dots.children[scrollMove - 1].classList.remove('dot96k7');
           dots.children[scrollMove].classList.add('dot96k7');
           page.innerHTML = scrollMove + 1 + '/ 10';
         }
-      } else if(count < scrollMove) {
-        scrollMove = count
+      } else if (count < scrollMove) {
+        scrollMove = count;
         if (scrollMove < 9) {
           next.style.display = 'inline-flex';
           nextMobile.removeAttribute('disabled');
@@ -356,15 +358,11 @@ document
     carouselController('next');
   });
 
-document
-  .querySelector('._3uceys')
-  .addEventListener('scroll', (e) => {
-    carouselController('scroll', e);
-    // console.dir(e.target);
-    // console.log(e.target.scrollLeft);
-    
-    
-  });
+document.querySelector('._3uceys').addEventListener('scroll', (e) => {
+  carouselController('scroll', e);
+  // console.dir(e.target);
+  // console.log(e.target.scrollLeft);
+});
 
 let isPause = false;
 const newYorkCard = document.querySelector('#newYorkCard');
@@ -441,65 +439,58 @@ discoverSunnyCard.addEventListener('mouseleave', () => {
   });
 });
 
-const btnUnsave = document.querySelector('.js-btn-unsave');
-
-btnUnsave.addEventListener('click', (e) => {
-  e.currentTarget.classList.add('hidden');
-  e.currentTarget
-    .closest('.card-alt-4')
-    .querySelector('.js-btn-save')
-    .classList.remove('hidden');
-});
-
-const wishlistModalBtns = document.querySelectorAll('._11eqlma4');
-const btnSave = document.querySelector('.js-btn-save');
-
-wishlistModalBtns.forEach((el) => {
-  el.addEventListener('click', (e) => {
-    btnUnsave.classList.remove('hidden');
-    btnSave.classList.add('hidden');
-    e.currentTarget.closest('#save-modal').classList.add('hidden');
-  });
-});
-
-document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
-  el.addEventListener('mouseenter', (e) => {
-    e.currentTarget
-      .querySelectorAll('.card-alt-1__nav-btn-wrapper')
-      .forEach((el) => {
-        el.classList.replace('invisible', 'card-alt-1__controls-active');
-      });
-  });
-});
-document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
-  el.addEventListener('mouseleave', (e) => {
-    e.currentTarget
-      .querySelectorAll('.card-alt-1__nav-btn-wrapper')
-      .forEach((el) => {
-        el.classList.replace('card-alt-1__controls-active', 'invisible');
-      });
-  });
-});
-
 const cardAltCarousel = () => {
-  const card = document.querySelectorAll('.card-alt-1.carousel-images-location');
+  // hide controls by default
+  document.querySelectorAll('.card-alt-1__nav-btn-wrapper, .card-alt-1__pointer-events').forEach((el) => {
+    el.classList.add('invisible');
+  });
+
+  // show controls on hover
+  document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
+    el.addEventListener('mouseenter', (e) => {
+      e.currentTarget
+        .querySelectorAll('.card-alt-1__nav-btn-wrapper, .card-alt-1__pointer-events')
+        .forEach((el) => {
+          el.classList.replace('invisible', 'card-alt-1__controls-active');
+        });
+    });
+  });
+
+  document.querySelectorAll('.card-alt-1__media-container').forEach((el) => {
+    el.addEventListener('mouseleave', (e) => {
+      e.currentTarget
+        .querySelectorAll('.card-alt-1__nav-btn-wrapper, .card-alt-1__pointer-events')
+        .forEach((el) => {
+          el.classList.replace('card-alt-1__controls-active', 'invisible');
+        });
+    });
+  });
+
+  const card = document.querySelectorAll('.card-alt-1');
+
   card.forEach((target) => {
-    const slides = target.querySelectorAll('.card-alt-1__slide');
+    const slides = target.querySelectorAll(
+      '.card-alt-1__slide, .card__carousel-item'
+    );
     const cardSlides = target.querySelector('.card__slides');
-    const width = target.querySelector('.card-alt-1__slide').offsetWidth;
+    const width = target.querySelector(
+      '.card-alt-1__slide, .card__carousel-item'
+    ).offsetWidth;
     let size = 0;
     let counter = 0;
-    const nextBtn = target.querySelector('.js-btn-nav-next');
-    const prevBtn = target.querySelector('.js-btn-nav-prev');
+    const nextBtn = target.querySelector('[aria-label="Next image"]');
+    const prevBtn = target.querySelector('[aria-label="Previous image"]');
 
-    prevBtn.classList.add('invisible')
+    prevBtn.classList.add('invisible');
 
-      // creates bullets
+    // creates bullets
     for (let x = 0; x < slides.length; x++) {
       const bullet = document.createElement('span');
 
       bullet.classList.add(
-        x === 0 ? 'pagination-bullets__item--active' : 'pagination-bullets__item'
+        x === 0
+          ? 'pagination-bullets__item--active'
+          : 'pagination-bullets__item'
       );
 
       bullet.setAttribute(
@@ -542,8 +533,6 @@ const cardAltCarousel = () => {
           left: size,
           behavior: 'smooth',
         });
-
-      updateBullets();
     });
 
     prevBtn.addEventListener('click', (e) => {
@@ -559,23 +548,19 @@ const cardAltCarousel = () => {
           left: size,
           behavior: 'smooth',
         });
-
-      updateBullets();
     });
 
     cardSlides.addEventListener('scroll', (e) => {
-      const count =  Math.round(e.target.scrollLeft / width)
-      counter = count
+      const count = Math.round(e.target.scrollLeft / width);
+      counter = count;
       updateBullets();
 
-      prevBtn.classList.remove('invisible')
-      nextBtn.classList.remove('invisible')
-      if (counter === slides.length - 1) nextBtn.classList.add('invisible')
-      if (counter === 0) prevBtn.classList.add('invisible')
-    })
-
-  })
- 
+      prevBtn.classList.remove('invisible');
+      nextBtn.classList.remove('invisible');
+      if (counter === slides.length - 1) nextBtn.classList.add('invisible');
+      if (counter === 0) prevBtn.classList.add('invisible');
+    });
+  });
 };
 
 cardAltCarousel();
@@ -583,10 +568,12 @@ cardAltCarousel();
 function checkboxFilter() {
   document.querySelectorAll('.filter-checkbox').forEach((target) => {
     target.addEventListener('click', (e) => {
-      e.preventDefault()
-      const checkbox = target.querySelector('.explore-filter-menu__list-checkbox')
-      console.log(checkbox.classList.toggle("_1v5cvwv4"));
-    })
+      e.preventDefault();
+      const checkbox = target.querySelector(
+        '.explore-filter-menu__list-checkbox'
+      );
+      console.log(checkbox.classList.toggle('_1v5cvwv4'));
+    });
   });
 }
 
@@ -595,17 +582,16 @@ checkboxFilter();
 function showMoreFilter() {
   document.querySelectorAll('.show-more').forEach((target) => {
     target.addEventListener('click', (e) => {
-      e.preventDefault()
-      const more = document.querySelector('#'+target.attributes[2].value)
-      if(more.classList.contains('hidden')) {
-        more.classList.remove('hidden')
-        target.children[0].innerHTML = 'Show less'
+      e.preventDefault();
+      const more = document.querySelector('#' + target.attributes[2].value);
+      if (more.classList.contains('hidden')) {
+        more.classList.remove('hidden');
+        target.children[0].innerHTML = 'Show less';
+      } else if (!more.classList.contains('hidden')) {
+        more.classList.add('hidden');
+        target.children[0].innerHTML = 'Show more';
       }
-      else if(!more.classList.contains('hidden')) {
-        more.classList.add('hidden')
-        target.children[0].innerHTML = 'Show more'
-      }
-    })
+    });
   });
 }
 
@@ -614,16 +600,15 @@ showMoreFilter();
 function propertyTypeFilter() {
   document.querySelectorAll('.property-type').forEach((target) => {
     target.addEventListener('click', (e) => {
-      e.preventDefault()
-      if(target.classList.contains('btn-card')) {
-        target.classList.add('btn-card-active')
-        target.classList.remove('btn-card')
+      e.preventDefault();
+      if (target.classList.contains('btn-card')) {
+        target.classList.add('btn-card-active');
+        target.classList.remove('btn-card');
+      } else if (target.classList.contains('btn-card-active')) {
+        target.classList.add('btn-card');
+        target.classList.remove('btn-card-active');
       }
-      else if(target.classList.contains('btn-card-active')) {
-        target.classList.add('btn-card')
-        target.classList.remove('btn-card-active')
-      }
-    })
+    });
   });
 }
 
@@ -632,22 +617,21 @@ propertyTypeFilter();
 function toggleSwitchFilter() {
   document.querySelectorAll('.toggle-switch').forEach((target) => {
     target.addEventListener('click', (e) => {
-      e.preventDefault()
-      if(target.classList.contains('form__switch')) {
-        target.classList.add('form__switch--checked')
-        target.classList.remove('form__switch')
-        target.children[0].classList.add('form__switch-toggle-checked')
-        target.children[0].classList.remove('form__switch-toggle')
-        target.children[0].children[0].classList.remove('hidden')
+      e.preventDefault();
+      if (target.classList.contains('form__switch')) {
+        target.classList.add('form__switch--checked');
+        target.classList.remove('form__switch');
+        target.children[0].classList.add('form__switch-toggle-checked');
+        target.children[0].classList.remove('form__switch-toggle');
+        target.children[0].children[0].classList.remove('hidden');
+      } else if (target.classList.contains('form__switch--checked')) {
+        target.classList.add('form__switch');
+        target.classList.remove('form__switch--checked');
+        target.children[0].classList.add('form__switch-toggle');
+        target.children[0].classList.remove('form__switch-toggle-checked');
+        target.children[0].children[0].classList.add('hidden');
       }
-      else if(target.classList.contains('form__switch--checked')) {
-        target.classList.add('form__switch')
-        target.classList.remove('form__switch--checked')
-        target.children[0].classList.add('form__switch-toggle')
-        target.children[0].classList.remove('form__switch-toggle-checked')
-        target.children[0].children[0].classList.add('hidden')
-      }
-    })
+    });
   });
 }
 
@@ -656,19 +640,65 @@ toggleSwitchFilter();
 function multipleSelectFilter(selector) {
   document.querySelectorAll(selector).forEach((target) => {
     target.addEventListener('click', (e) => {
-      e.preventDefault()
-      if(target.classList.contains('badge-dark')) {
+      e.preventDefault();
+      if (target.classList.contains('badge-dark')) {
         document.querySelectorAll(selector).forEach((el) => {
-          el.classList.add('badge-dark')
-          el.classList.remove('badge-dark-active')
-        })
-        target.classList.add('badge-dark-active')
-        target.classList.remove('badge-dark')
+          el.classList.add('badge-dark');
+          el.classList.remove('badge-dark-active');
+        });
+        target.classList.add('badge-dark-active');
+        target.classList.remove('badge-dark');
       }
-    })
+    });
   });
 }
 
 multipleSelectFilter('.bedrooms-count');
 multipleSelectFilter('.beds-count');
 multipleSelectFilter('.bathroom-count');
+
+const handleFilterSlider = () => {
+  const nextBtn = document.querySelector(
+    '.header-filter__controls-btn[aria-label=Next]'
+  );
+  const prevBtn = document.querySelector(
+    '.header-filter__controls-btn[aria-label=Previous]'
+  );
+
+  const length = document.querySelectorAll('.card__slides-item').length;
+  let width = document.querySelector('.card__slides-item').offsetWidth;
+  let size = 0;
+  let counter = 0;
+
+  nextBtn.addEventListener('click', (e) => {
+    if (counter >= length) return;
+
+    counter += 10;
+    size = width * counter;
+
+    e.currentTarget
+      .closest('.header-filter__container')
+      .querySelector('.card__slides')
+      .scrollTo({
+        left: size,
+        behavior: 'smooth',
+      });
+  });
+
+  prevBtn.addEventListener('click', (e) => {
+    if (counter === 0) return;
+
+    counter -= 10;
+    size = width * counter;
+
+    e.currentTarget
+      .closest('.header-filter__container')
+      .querySelector('.card__slides')
+      .scrollTo({
+        left: size,
+        behavior: 'smooth',
+      });
+  });
+};
+
+handleFilterSlider();
