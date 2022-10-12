@@ -656,3 +656,49 @@ function multipleSelectFilter(selector) {
 multipleSelectFilter('.bedrooms-count');
 multipleSelectFilter('.beds-count');
 multipleSelectFilter('.bathroom-count');
+
+const handleFilterSlider = () => {
+  const nextBtn = document.querySelector(
+    '.header-filter__controls-btn[aria-label=Next]'
+  );
+  const prevBtn = document.querySelector(
+    '.header-filter__controls-btn[aria-label=Previous]'
+  );
+
+  const length = document.querySelectorAll('.card__slides-item').length;
+  let width = document.querySelector('.card__slides-item').offsetWidth;
+  let size = 0;
+  let counter = 0;
+
+  nextBtn.addEventListener('click', (e) => {
+    if (counter >= length) return;
+
+    counter += 10;
+    size = width * counter;
+
+    e.currentTarget
+      .closest('.header-filter__container')
+      .querySelector('.card__slides')
+      .scrollTo({
+        left: size,
+        behavior: 'smooth',
+      });
+  });
+
+  prevBtn.addEventListener('click', (e) => {
+    if (counter === 0) return;
+
+    counter -= 10;
+    size = width * counter;
+
+    e.currentTarget
+      .closest('.header-filter__container')
+      .querySelector('.card__slides')
+      .scrollTo({
+        left: size,
+        behavior: 'smooth',
+      });
+  });
+};
+
+handleFilterSlider();
