@@ -1,3 +1,129 @@
+const carousel = document.querySelectorAll('._149776kz')
+carousel.forEach((carousel) => {
+  const carouselProgressBar = carousel.querySelectorAll('.carousel-progress ._cm41d9')
+  const slidesContainer = carousel.querySelector('._rm1dhy')
+  const slides = slidesContainer.querySelectorAll('._1hxk8lj')
+
+  const controls = carousel.querySelector('._tk908t')
+  const prevControl = controls.querySelector('button[aria-label="Previous"]')
+  const nextControl = controls.querySelector('button[aria-label="Next"]')
+
+  const playButton = carousel.querySelector('._12wueiun [data-button="play"]')
+  const muteButton = carousel.querySelector('._12wueiun [data-button="mute"]')
+  const fullScreenButton = carousel.querySelector('._12wueiun [data-button="full-screen"]')
+
+  const nextSlideHandler = () => {
+    const currentSlide = carousel.querySelector('._1hxk8lj[aria-hidden="false"]')
+    const currentSlideIndex = [...slides].indexOf(currentSlide)
+    const nextSlide = currentSlide.nextElementSibling
+    const nextSlideIndex = [...slides].indexOf(nextSlide)
+
+    let progress = carouselProgressBar[currentSlideIndex].querySelector('._seyo89 > div')
+    progress.classList = '_jicl67'
+    progress.removeAttribute('style')
+
+    let progressClone = progress.cloneNode(true)
+    progressClone.classList = '_1a3hvh71'
+
+    if (nextSlideIndex !== -1) {
+      currentSlide.ariaHidden = true
+      nextSlide.ariaHidden = false
+      slidesContainer.style.transform = `translateX(-${nextSlideIndex * 100}%)`
+      progressClone.style.animationDuration = '8s'
+
+      carouselProgressBar[currentSlideIndex]
+        .nextElementSibling.querySelector('._seyo89').appendChild(progressClone)
+    } else {
+      currentSlide.ariaHidden = true
+      const targetSlide = slides[0]
+      targetSlide.ariaHidden = false
+
+      slidesContainer.style.transform = `translateX(0%)`
+      progressClone.style.animationDuration = '25.053s'
+
+      carouselProgressBar.forEach((e, index) => {
+        e.querySelector('._seyo89 > div').remove()
+        if (index === 0) {
+          e.querySelector('._seyo89').appendChild(progressClone)
+          return;
+        }
+      })
+    }
+  }
+
+  prevControl.addEventListener('click', () => {
+    const currentSlide = carousel.querySelector('._1hxk8lj[aria-hidden="false"]')
+    const currentSlideIndex = [...slides].indexOf(currentSlide)
+    const prevSlide = currentSlide.previousElementSibling
+    const prevSlideIndex = [...slides].indexOf(prevSlide)
+
+    let progress = carouselProgressBar[currentSlideIndex].querySelector('._seyo89 > div')
+
+    carouselProgressBar[currentSlideIndex - 1]?.querySelector('._seyo89 > div')?.remove()
+
+    if (prevSlideIndex !== -1) {
+      currentSlide.ariaHidden = true
+      prevSlide.ariaHidden = false
+
+      slidesContainer.style.transform = `translateX(-${prevSlideIndex * 100}%)`
+      progress.style.animationDuration = '8s'
+      if (prevSlideIndex === 0) {
+        progress.style.animationDuration = '25.053s'
+      }
+      carouselProgressBar[currentSlideIndex]
+        .previousElementSibling.querySelector('._seyo89').appendChild(progress)
+    } else {
+      currentSlide.ariaHidden = true
+      const targetSlide = slides[slides.length - 1]
+      targetSlide.ariaHidden = false
+
+      slidesContainer.style.transform = `translateX(-${(slides.length - 1) * 100}%)`
+      progress.style.animationDuration = '8s'
+
+      carouselProgressBar.forEach((e, index) => {
+        let progressClone = progress.cloneNode(true)
+        progressClone.classList = '_jicl67'
+
+        if (index === carouselProgressBar.length - 1) {
+          e.querySelector('._seyo89').appendChild(progress)
+          return;
+        }
+        e.querySelector('._seyo89').appendChild(progressClone)
+      })
+    }
+  })
+
+  nextControl.addEventListener('click', nextSlideHandler)
+
+  playButton.addEventListener('click', () => {
+    const currentSlide = carousel.querySelector('._1hxk8lj[aria-hidden="false"]')
+    const currentSlideIndex = [...slides].indexOf(currentSlide)
+    const progress = carouselProgressBar[currentSlideIndex].querySelector('._seyo89 > div')
+    progress.classList.contains('_1a3hvh71')
+      ? progress.classList.replace('_1a3hvh71', '_qu67pdw')
+      : progress.classList.replace('_qu67pdw', '_1a3hvh71')
+  })
+
+  carouselProgressBar.forEach((e) => {
+    const progressBar = e.querySelector('._seyo89')
+
+    progressBar.addEventListener('animationstart', () => {
+      const currentSlide = carousel.querySelector('._1hxk8lj[aria-hidden="false"]')
+      const currentSlideIndex = [...slides].indexOf(currentSlide)
+      if (currentSlideIndex === 0) {
+        muteButton.parentElement.classList.replace('hidden', 'inline-block')
+        fullScreenButton.parentElement.classList.replace('hidden', 'inline-block')
+      } else {
+        muteButton.parentElement.classList.replace('inline-block', 'hidden')
+        fullScreenButton.parentElement.classList.replace('inline-block', 'hidden')
+      }
+    })
+
+    progressBar.addEventListener('animationend', nextSlideHandler, false);
+  })
+})
+
+
 const videoPlayer = () => {
   const videoPlayerWrapper = document.querySelectorAll('.become-a-host__video-content')
 
