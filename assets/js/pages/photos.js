@@ -42,7 +42,7 @@ photos.forEach(photo => {
         }
 
         if (e.currentTarget == dragged) {
-            dragged.querySelector('._e296pg').classList.remove('hidden')
+            dragged.querySelector('.carousel-slider__item-wrap').classList.remove('hidden')
             dragged.querySelector('.become-a-host__photos-img-full').classList.add('hidden')
             dragged.querySelector('.become-a-host__photos-action').classList.add('hidden')
         }
@@ -51,7 +51,7 @@ photos.forEach(photo => {
     photo.addEventListener('dragleave', (e) => {
         e.preventDefault()
 
-        dragged.querySelector('._e296pg').classList.add('hidden')
+        dragged.querySelector('.carousel-slider__item-wrap').classList.add('hidden')
         dragged.querySelector('.become-a-host__photos-img-full').classList.remove('hidden')
         dragged.querySelector('.become-a-host__photos-action').classList.remove('hidden')
     })
@@ -60,7 +60,7 @@ photos.forEach(photo => {
         dragged.querySelector('div').removeAttribute('style')
 
         if (e.currentTarget == dragged) {
-            dragged.querySelector('._e296pg').classList.add('hidden')
+            dragged.querySelector('.carousel-slider__item-wrap').classList.add('hidden')
             dragged.querySelector('.become-a-host__photos-img-full').classList.remove('hidden')
             dragged.querySelector('.become-a-host__photos-action').classList.remove('hidden')
         }
