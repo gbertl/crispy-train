@@ -24,7 +24,7 @@ container.addEventListener('scroll', (e) => {
     nextButton.setAttribute('disabled', true);
   }
 
-  console.log(currentScrollLeft, maxScrollLeft);
+  // console.log(currentScrollLeft, maxScrollLeft);
 });
 
 prevButton.addEventListener('click', () => {
@@ -232,15 +232,15 @@ function carouselController(controller, event) {
   if (controller == 'next') {
     clickNavigation = true;
 
-    const carousel = document.querySelector('._3uceys');
-    const dots = document.querySelector('.d1dz9bym');
-    const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
-    const next = document.querySelector('._1kjng5b[aria-label="Next"]');
+    const carousel = document.querySelector('.carousel-slider__list');
+    const dots = document.querySelector('.carousel-slider__dots-content');
+    const prev = document.querySelector('.carousel-slider__nav-buttons[aria-label="Previous"]');
+    const next = document.querySelector('.carousel-slider__nav-buttons[aria-label="Next"]');
     const prevMobile = document.querySelector(
-      '._sp8hvh[aria-label="Previous"]'
+      '.carousel-slider__nav-page-btn[aria-label="Previous"]'
     );
-    const nextMobile = document.querySelector('._sp8hvh[aria-label="Next"]');
-    const count = document.querySelector('._1l1vk8w');
+    const nextMobile = document.querySelector('.carousel-slider__nav-page-btn[aria-label="Next"]');
+    const count = document.querySelector('.carousel-slider__nav-pages');
 
     if (scrollMove < 9) {
       prev.style.display = 'inline-flex';
@@ -250,8 +250,8 @@ function carouselController(controller, event) {
         next.style.display = 'none';
         nextMobile.setAttribute('disabled', false);
       }
-      dots.children[scrollMove - 1].classList.remove('dot96k7');
-      dots.children[scrollMove].classList.add('dot96k7');
+      dots.children[scrollMove - 1].classList.remove('carousel-slider__dot-item-active');
+      dots.children[scrollMove].classList.add('carousel-slider__dot-item-active');
       carousel.scrollBy(carousel.scrollWidth / 10 / 2, 0);
       count.innerHTML = scrollMove + 1 + '/ 10';
     }
@@ -261,15 +261,15 @@ function carouselController(controller, event) {
     }, 1000);
   } else if (controller == 'prev') {
     clickNavigation = true;
-    const carousel = document.querySelector('._3uceys');
-    const dots = document.querySelector('.d1dz9bym');
-    const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
-    const next = document.querySelector('._1kjng5b[aria-label="Next"]');
+    const carousel = document.querySelector('.carousel-slider__list');
+    const dots = document.querySelector('.carousel-slider__dots-content');
+    const prev = document.querySelector('.carousel-slider__nav-buttons[aria-label="Previous"]');
+    const next = document.querySelector('.carousel-slider__nav-buttons[aria-label="Next"]');
     const prevMobile = document.querySelector(
-      '._sp8hvh[aria-label="Previous"]'
+      '.carousel-slider__nav-page-btn[aria-label="Previous"]'
     );
-    const nextMobile = document.querySelector('._sp8hvh[aria-label="Next"]');
-    const count = document.querySelector('._1l1vk8w');
+    const nextMobile = document.querySelector('.carousel-slider__nav-page-btn[aria-label="Next"]');
+    const count = document.querySelector('.carousel-slider__nav-pages');
 
     if (scrollMove > 0) {
       next.style.display = 'inline-flex';
@@ -279,8 +279,8 @@ function carouselController(controller, event) {
         prev.style.display = 'none';
         prevMobile.setAttribute('disabled', false);
       }
-      dots.children[scrollMove + 1].classList.remove('dot96k7');
-      dots.children[scrollMove].classList.add('dot96k7');
+      dots.children[scrollMove + 1].classList.remove('carousel-slider__dot-item-active');
+      dots.children[scrollMove].classList.add('carousel-slider__dot-item-active');
       carousel.scrollBy(-(carousel.scrollWidth / 10) / 2, 0);
       count.innerHTML = scrollMove + 1 + '/ 10';
     }
@@ -292,17 +292,17 @@ function carouselController(controller, event) {
       const count = Math.round(
         event.target.scrollLeft / event.target.offsetWidth
       );
-      const dots = document.querySelector('.d1dz9bym');
-      const page = document.querySelector('._1l1vk8w');
-      const prev = document.querySelector('._1kjng5b[aria-label="Previous"]');
-      const next = document.querySelector('._1kjng5b[aria-label="Next"]');
+      const dots = document.querySelector('.carousel-slider__dots-content');
+      const page = document.querySelector('.carousel-slider__nav-pages');
+      const prev = document.querySelector('.carousel-slider__nav-buttons[aria-label="Previous"]');
+      const next = document.querySelector('.carousel-slider__nav-buttons[aria-label="Next"]');
       const prevMobile = document.querySelector(
-        '._sp8hvh[aria-label="Previous"]'
+        '.carousel-slider__nav-page-btn[aria-label="Previous"]'
       );
-      const nextMobile = document.querySelector('._sp8hvh[aria-label="Next"]');
+      const nextMobile = document.querySelector('.carousel-slider__nav-page-btn[aria-label="Next"]');
 
-      console.log(count);
-      console.log(scrollMove);
+      // console.log(count);
+      // console.log(scrollMove);
 
       if (count > scrollMove) {
         scrollMove = count;
@@ -313,8 +313,8 @@ function carouselController(controller, event) {
             next.style.display = 'none';
             nextMobile.setAttribute('disabled', false);
           }
-          dots.children[scrollMove - 1].classList.remove('dot96k7');
-          dots.children[scrollMove].classList.add('dot96k7');
+          dots.children[scrollMove - 1].classList.remove('carousel-slider__dot-item-active');
+          dots.children[scrollMove].classList.add('carousel-slider__dot-item-active');
           page.innerHTML = scrollMove + 1 + '/ 10';
         }
       } else if (count < scrollMove) {
@@ -326,8 +326,8 @@ function carouselController(controller, event) {
             prev.style.display = 'none';
             prevMobile.setAttribute('disabled', false);
           }
-          dots.children[scrollMove + 1].classList.remove('dot96k7');
-          dots.children[scrollMove].classList.add('dot96k7');
+          dots.children[scrollMove + 1].classList.remove('carousel-slider__dot-item-active');
+          dots.children[scrollMove].classList.add('carousel-slider__dot-item-active');
           page.innerHTML = scrollMove + 1 + '/ 10';
         }
       }
@@ -335,30 +335,30 @@ function carouselController(controller, event) {
   }
 }
 document
-  .querySelector('._1kjng5b[aria-label="Previous"]')
+  .querySelector('.carousel-slider__nav-buttons[aria-label="Previous"]')
   .addEventListener('click', (e) => {
     carouselController('prev');
   });
 
 document
-  .querySelector('._1kjng5b[aria-label="Next"]')
+  .querySelector('.carousel-slider__nav-buttons[aria-label="Next"]')
   .addEventListener('click', (e) => {
     carouselController('next');
   });
 
 document
-  .querySelector('._sp8hvh[aria-label="Previous"]')
+  .querySelector('.carousel-slider__nav-page-btn[aria-label="Previous"]')
   .addEventListener('click', (e) => {
     carouselController('prev');
   });
 
 document
-  .querySelector('._sp8hvh[aria-label="Next"]')
+  .querySelector('.carousel-slider__nav-page-btn[aria-label="Next"]')
   .addEventListener('click', (e) => {
     carouselController('next');
   });
 
-document.querySelector('._3uceys').addEventListener('scroll', (e) => {
+document.querySelector('.carousel-slider__list').addEventListener('scroll', (e) => {
   carouselController('scroll', e);
   // console.dir(e.target);
   // console.log(e.target.scrollLeft);
@@ -572,7 +572,8 @@ function checkboxFilter() {
       const checkbox = target.querySelector(
         '.explore-filter-menu__list-checkbox'
       );
-      console.log(checkbox.classList.toggle('_1v5cvwv4'));
+      checkbox.classList.toggle('_1v5cvwv4')
+      // console.log(checkbox.classList.toggle('_1v5cvwv4'));
     });
   });
 }
