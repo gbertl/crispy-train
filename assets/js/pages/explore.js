@@ -732,6 +732,12 @@ const multipleSlider = ({ btnCls, parentCls, slideWrapperCls, step }) => {
     );
   };
 
+  const exploreFilterCls =
+    '.explore-filter__controls-next, .explore-filter__controls-prev, .header-filter__controls-btn-prev, .header-filter__controls-btn-next';
+
+  const invisible = 'visibility: hidden; opacity: 0';
+  const visible = 'visibility: visible; opacity: 1';
+
   const hideBtn = (el) => {
     if (
       el.classList.contains('carousel-control-btn') ||
@@ -739,7 +745,11 @@ const multipleSlider = ({ btnCls, parentCls, slideWrapperCls, step }) => {
     ) {
       el.setAttribute('disabled', true);
     } else {
-      el.classList.add('invisible');
+      if (el.closest(exploreFilterCls)) {
+        el.closest(exploreFilterCls).style = invisible;
+      } else {
+        el.classList.add('invisible');
+      }
     }
   };
 
@@ -750,7 +760,11 @@ const multipleSlider = ({ btnCls, parentCls, slideWrapperCls, step }) => {
     ) {
       el.removeAttribute('disabled');
     } else {
-      el.classList.remove('invisible');
+      if (el.closest(exploreFilterCls)) {
+        el.closest(exploreFilterCls).style = visible;
+      } else {
+        el.classList.remove('invisible');
+      }
     }
   };
 
