@@ -1,9 +1,9 @@
-const handleSaveUnsaveWishlist = () => { 
+const handleSaveUnsaveWishlist = () => {
   const saveBtns = document.querySelectorAll('[aria-label="Save this Experience"], [aria-label="Add listing to a list"]');
   const unsaveBtns = document.querySelectorAll('[aria-label="Unsave this Experience"]');
   const wishlistModalBtns = document.querySelectorAll('._11eqlma4');
   let currentCard;
-  
+
   const createUnsaveBtn = () => {
     let html = `
     <button aria-label="Unsave this Experience" type="button" class="explore__list-heart explore__list-heart-font dir dir-ltr">
@@ -25,8 +25,8 @@ const handleSaveUnsaveWishlist = () => {
     </button>
     `
 
-    const  template = document.createElement('template');
-    html = html.trim(); 
+    const template = document.createElement('template');
+    html = html.trim();
     template.innerHTML = html;
 
     return template.content.firstChild
@@ -57,26 +57,26 @@ const handleSaveUnsaveWishlist = () => {
     </button>
     `
 
-    const  template = document.createElement('template');
-    html = html.trim(); 
+    const template = document.createElement('template');
+    html = html.trim();
     template.innerHTML = html;
 
     return template.content.firstChild
   }
 
-  saveBtns.forEach((el) => { 
+  saveBtns.forEach((el) => {
     el.setAttribute('data-modal', '#save-modal')
 
-    el.addEventListener('click', (e) => { 
+    el.addEventListener('click', (e) => {
       currentCard = e.currentTarget.closest('[role]')
     })
-   })
+  })
 
-   unsaveBtns.forEach((el) => { 
-    el.addEventListener('click', (e) => { 
+  unsaveBtns.forEach((el) => {
+    el.addEventListener('click', (e) => {
       e.currentTarget.replaceWith(createSaveBtn())
-     })
     })
+  })
 
   wishlistModalBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
@@ -142,6 +142,43 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     const lcNext = lightboxControls?.querySelector('button[aria-label="Next"]')
 
     const sections = modal?.querySelectorAll('section')
+
+    const mobileScrollSection = modal?.querySelector('._rxz20bq')
+    const mobileScrollSectionList = mobileScrollSection?.querySelectorAll('li')
+    const mobileLightboxItemCount = modal?.querySelector('._1b1whhx')
+
+    if (mobileScrollSectionList && mobileLightboxItemCount) {
+      mobileLightboxItemCount.querySelector('span:first-child').innerHTML = `Showing photo 1 of ${mobileScrollSectionList.length}`
+      mobileLightboxItemCount.querySelector('span:nth-child(2)').innerHTML = `1 / ${mobileScrollSectionList.length}`
+    }
+
+    let currentScrolledValue = 0
+    mobileScrollSection?.addEventListener('scroll', (e) => {
+      if (e.target.scrollLeft % e.target.offsetWidth === 0) {
+        if (e.target.scrollLeft !== currentScrolledValue) {
+          let currentItem = mobileScrollSection.querySelector('li[aria-hidden="false"]')
+          currentItem.ariaHidden = true
+
+          let currentItemIndex;
+
+          // previous item
+          if (e.target.scrollLeft < currentScrolledValue) {
+            currentItem.previousElementSibling.ariaHidden = false
+            currentItemIndex = [...mobileScrollSectionList].indexOf(currentItem.previousElementSibling)
+          }
+
+          // next item
+          if (e.target.scrollLeft > currentScrolledValue) {
+            currentItem.nextElementSibling.ariaHidden = false
+            currentItemIndex = [...mobileScrollSectionList].indexOf(currentItem.nextElementSibling)
+          }
+
+          modal.querySelector('._1b1whhx span:first-child').innerHTML = `Showing photo ${(currentItemIndex + 1)} of ${mobileScrollSectionList.length}`
+          modal.querySelector('._1b1whhx span:nth-child(2)').innerHTML = `${(currentItemIndex + 1)} / ${mobileScrollSectionList.length}`
+        }
+        currentScrolledValue = e.target.scrollLeft
+      }
+    })
 
     const setControlsState = (section) => {
       const prevSectionIndex = [...sections].indexOf(section.previousElementSibling)
