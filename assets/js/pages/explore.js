@@ -35,21 +35,19 @@ nextButton.addEventListener('click', () => {
   container.scrollBy({ top: 0, left: +500, behavior: 'smooth' });
 });
 
-const toggleModal = (type) => {
+const toggleModal = (type, section, targetFilter) => {
   switch (type) {
     case 'addguests':
-      const whoButton = document.querySelector(
-        '[data-testid=structured-search-input-field-guests-button]'
-      ).classList;
+      const whoButton = document.querySelector('[data-testid=structured-search-input-field-guests-button]').classList;
       whoButton.contains('header__search-tabs-filter-btn-container-inactive')
         ? whoButton.replace(
-            'header__search-tabs-filter-btn-container-inactive',
-            'header__search-tabs-filter-btn-container-active'
-          )
+          'header__search-tabs-filter-btn-container-inactive',
+          'header__search-tabs-filter-btn-container-active'
+        )
         : whoButton.replace(
-            'header__search-tabs-filter-btn-container-active',
-            'header__search-tabs-filter-btn-container-inactive'
-          );
+          'header__search-tabs-filter-btn-container-active',
+          'header__search-tabs-filter-btn-container-inactive'
+        );
 
       const searchWho = document.querySelector('#search-who').classList;
       searchWho.contains('hidden')
@@ -58,20 +56,19 @@ const toggleModal = (type) => {
       break;
 
     case 'anyweek':
-      const checkInButton = document.querySelectorAll(
-        '.header__search-tabs-filter-btn-container-inactive, .header__search-tabs-filter-btn-container-active'
-      )[0].classList;
-      checkInButton.contains(
+      targetFilter = targetFilter || document.querySelector('.header__search-tabs-filter-dates-container .header__search-tabs-filter-btn-container.header__search-tabs-filter-btn-container-active')
+      const targetDateButton = targetFilter?.classList || document.querySelector('[data-testid="structured-search-input-field-split-dates-0"]').classList
+      targetDateButton.contains(
         'header__search-tabs-filter-btn-container-inactive'
       )
-        ? checkInButton.replace(
-            'header__search-tabs-filter-btn-container-inactive',
-            'header__search-tabs-filter-btn-container-active'
-          )
-        : checkInButton.replace(
-            'header__search-tabs-filter-btn-container-active',
-            'header__search-tabs-filter-btn-container-inactive'
-          );
+        ? targetDateButton.replace(
+          'header__search-tabs-filter-btn-container-inactive',
+          'header__search-tabs-filter-btn-container-active'
+        )
+        : targetDateButton.replace(
+          'header__search-tabs-filter-btn-container-active',
+          'header__search-tabs-filter-btn-container-inactive'
+        );
 
       const anyweekPanel = document.querySelector('#anyweek-panel').classList;
       anyweekPanel.contains('hidden')
@@ -80,21 +77,20 @@ const toggleModal = (type) => {
       break;
 
     case 'anywhere':
-      const anywhereLabel = document
-        .querySelectorAll(
-          '.header__search-tabs-filter-where-hide, .header__search-tabs-filter-where-show'
-        )
+      const anywhereLabel = document.querySelectorAll(
+        '.header__search-tabs-filter-where-hide, .header__search-tabs-filter-where-show'
+      )
         .forEach((target) => {
           const classList = target.classList;
           classList.contains('header__search-tabs-filter-where-hide')
             ? classList.replace(
-                'header__search-tabs-filter-where-hide',
-                'header__search-tabs-filter-where-show'
-              )
+              'header__search-tabs-filter-where-hide',
+              'header__search-tabs-filter-where-show'
+            )
             : classList.replace(
-                'header__search-tabs-filter-where-show',
-                'header__search-tabs-filter-where-hide'
-              );
+              'header__search-tabs-filter-where-show',
+              'header__search-tabs-filter-where-hide'
+            );
         });
 
       const content = document.querySelector(
@@ -109,86 +105,74 @@ const toggleModal = (type) => {
       return;
   }
 
-  const header = document
-    .querySelectorAll('.header__search-tabs-hide, .header__search-tabs-show')
-    .forEach((target) => {
-      const classList = target.classList;
-      classList.contains('header__search-tabs-hide')
-        ? classList.replace(
-            'header__search-tabs-hide',
-            'header__search-tabs-show'
-          )
-        : classList.replace(
-            'header__search-tabs-show',
-            'header__search-tabs-hide'
-          );
-    });
+  if (section === 'panel') return;
 
-  const filters = document
-    .querySelectorAll('.header__search-content, .l1h6eamc')
-    .forEach((target) => {
-      const classList = target.classList;
-      classList.contains('header__search-content')
-        ? classList.replace('header__search-content', 'l1h6eamc')
-        : classList.replace('l1h6eamc', 'header__search-content');
-    });
+  const header = document.querySelectorAll('.header__search-tabs-hide, .header__search-tabs-show').forEach((target) => {
+    const classList = target.classList;
+    classList.contains('header__search-tabs-hide')
+      ? classList.replace(
+        'header__search-tabs-hide',
+        'header__search-tabs-show'
+      )
+      : classList.replace(
+        'header__search-tabs-show',
+        'header__search-tabs-hide'
+      );
+  });
 
-  const filtersWrapper = document
-    .querySelectorAll(
-      '.header__search-tabs-content-transition-hide, .header__search-tabs-content-transition-show'
-    )
-    .forEach((target) => {
-      const classList = target.classList;
-      classList.contains('header__search-tabs-content-transition-hide')
-        ? classList.replace(
-            'header__search-tabs-content-transition-hide',
-            'header__search-tabs-content-transition-show'
-          )
-        : classList.replace(
-            'header__search-tabs-content-transition-show',
-            'header__search-tabs-content-transition-hide'
-          );
-    });
+  const filters = document.querySelectorAll('.header__search-content, .l1h6eamc').forEach((target) => {
+    const classList = target.classList;
+    classList.contains('header__search-content')
+      ? classList.replace('header__search-content', 'l1h6eamc')
+      : classList.replace('l1h6eamc', 'header__search-content');
+  });
+
+  const filtersWrapper = document.querySelectorAll('.header__search-tabs-content-transition-hide, .header__search-tabs-content-transition-show').forEach((target) => {
+    const classList = target.classList;
+    classList.contains('header__search-tabs-content-transition-hide')
+      ? classList.replace(
+        'header__search-tabs-content-transition-hide',
+        'header__search-tabs-content-transition-show'
+      )
+      : classList.replace(
+        'header__search-tabs-content-transition-show',
+        'header__search-tabs-content-transition-hide'
+      );
+  });
 
   const searchTablPanel = document.querySelector('#search-tabpanel').classList;
   searchTablPanel.contains('header__search-tabs-filter-hide')
     ? searchTablPanel.replace(
-        'header__search-tabs-filter-hide',
-        'header__search-tabs-filter-show'
-      )
-    : searchTablPanel.replace(
-        'header__search-tabs-filter-show',
-        'header__search-tabs-filter-hide'
-      );
-
-  const searchButton = document
-    .querySelectorAll(
-      '.header__search-tabs-filter-searchBtn-hide, .header__search-tabs-filter-searchBtn-show'
+      'header__search-tabs-filter-hide',
+      'header__search-tabs-filter-show'
     )
-    .forEach((target) => {
-      const classList = target.classList;
-      classList.contains('header__search-tabs-filter-searchBtn-hide')
-        ? classList.replace(
-            'header__search-tabs-filter-searchBtn-hide',
-            'header__search-tabs-filter-searchBtn-show'
-          )
-        : classList.replace(
-            'header__search-tabs-filter-searchBtn-show',
-            'header__search-tabs-filter-searchBtn-hide'
-          );
-    });
+    : searchTablPanel.replace(
+      'header__search-tabs-filter-show',
+      'header__search-tabs-filter-hide'
+    );
+
+  const searchButton = document.querySelectorAll('.header__search-tabs-filter-searchBtn-hide, .header__search-tabs-filter-searchBtn-show').forEach((target) => {
+    const classList = target.classList;
+    classList.contains('header__search-tabs-filter-searchBtn-hide')
+      ? classList.replace(
+        'header__search-tabs-filter-searchBtn-hide',
+        'header__search-tabs-filter-searchBtn-show'
+      )
+      : classList.replace(
+        'header__search-tabs-filter-searchBtn-show',
+        'header__search-tabs-filter-searchBtn-hide'
+      );
+  });
 
   const searchButtonIcon = document.querySelector('#search-btn-text').classList;
   searchButtonIcon.contains('hidden')
     ? searchButtonIcon.remove('hidden')
     : searchButtonIcon.add('hidden');
 
-  const searchButtonhText = document.querySelector(
-    '.header__search-tabs-filter-searchBtn-content'
-  ).classList;
-  searchButtonhText.contains('hidden')
-    ? searchButtonhText.remove('hidden')
-    : searchButtonhText.add('hidden');
+  const searchButtonText = document.querySelector('.header__search-tabs-filter-searchBtn-content').classList;
+  searchButtonText.contains('hidden')
+    ? searchButtonText.remove('hidden')
+    : searchButtonText.add('hidden');
 
   const searchBackdrop = document.querySelector('#search-backdrop').classList;
   searchBackdrop.contains('hidden')
@@ -197,15 +181,38 @@ const toggleModal = (type) => {
 };
 
 let tabId = null;
-document
-  .querySelectorAll('#anywhere-btn, #anyweek-btn, #addguests-btn')
-  .forEach((target) => {
-    target.addEventListener('click', (e) => {
-      const id = (tabId = e.currentTarget.id.split('-')[0]);
-
-      toggleModal(tabId);
-    });
+document.querySelectorAll('#anywhere-btn, #anyweek-btn, #addguests-btn').forEach((target) => {
+  target.addEventListener('click', (e) => {
+    const id = (tabId = e.currentTarget.id.split('-')[0]);
+    toggleModal(tabId);
   });
+});
+
+const toggleModalSection = (type, targetFilter) => {
+  toggleModal(tabId, 'panel');
+  tabId = type
+  toggleModal(tabId, 'panel', targetFilter)
+}
+
+document.querySelector('.header__search-tabs-filter-where-container').addEventListener('click', (e) => {
+  e.preventDefault()
+  toggleModalSection('anywhere')
+})
+
+document.querySelector('[data-testid="structured-search-input-field-split-dates-0"]').addEventListener('click', (e) => {
+  e.preventDefault()
+  toggleModalSection('anyweek', e.currentTarget)
+})
+
+document.querySelector('[data-testid="structured-search-input-field-split-dates-1"]').addEventListener('click', (e) => {
+  e.preventDefault()
+  toggleModalSection('anyweek', e.currentTarget)
+})
+
+document.querySelector('[data-testid=structured-search-input-field-guests-button]').addEventListener('click', (e) => {
+  e.preventDefault()
+  toggleModalSection('addguests')
+})
 
 document.addEventListener('click', (e) => {
   const modalBody = document.querySelector('.h1wqqi3k');
@@ -542,8 +549,8 @@ const cardAltCarousel = () => {
         x === slides.length - 2 // 2nd to last
           ? 'transform: scale(0.833333)'
           : x === slides.length - 1 // last
-          ? 'transform: scale(0.666667)'
-          : 'transform: scale(1)'
+            ? 'transform: scale(0.666667)'
+            : 'transform: scale(1)'
       );
 
       target.querySelector('.pagination-bullets__list').appendChild(bullet);

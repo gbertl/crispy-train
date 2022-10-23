@@ -6710,7 +6710,7 @@ html :where(img[class*='wp-image-']) {
     transition: none !important;
   }
 }
-.header::after {
+/* .header::after {
   box-shadow: rgba(0, 0, 0, 0.08) 0 1px 1px !important;
   -webkit-transform-origin: 50% 0 !important;
   -ms-transform-origin: 50% 0 !important;
@@ -6738,7 +6738,7 @@ html :where(img[class*='wp-image-']) {
     -moz-transition: none !important;
     transition: none !important;
   }
-}
+} */
 .header__container {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
