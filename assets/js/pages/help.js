@@ -76,3 +76,30 @@ if(document.querySelector('#open-modal-help') != null){
         document.querySelector('._j292vx').classList.remove('hidden')
     });
 }
+
+if(document.querySelector('[name="select_feedback_theme"]') != null){
+    const select = document.querySelector('[name="select_feedback_theme"]');
+    select.addEventListener('change', (e) => {
+        if(select.value != "Please Select"){
+            document.querySelector('.topic-select').classList.remove('hidden');
+        }
+    });
+}
+
+if(document.querySelector('[name="select_feedback_type"]') != null){
+    const select = document.querySelector('[name="select_feedback_type"]');
+    select.addEventListener('change', (e) => {
+        if(select.value != "Please Select"){
+            document.querySelector('.fuzmsn8').classList.remove('hidden');
+        }
+    });
+}
+
+if(document.querySelector('[name="textarea_feedback"]') != null){
+    const textarea = document.querySelector('[name="textarea_feedback"]');
+    textarea.addEventListener('keyup', (e) => {
+        if(textarea.value!="") {
+            document.querySelector('.share-feedback-btn').classList.remove('hidden');
+        }
+    });
+}

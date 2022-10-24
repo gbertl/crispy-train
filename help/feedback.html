@@ -152,6 +152,7 @@
                         aria-haspopup="dialog"
                         type="button"
                         class="_oda838"
+                        id="open-modal-help"
                       >
                         <span class="relative"
                           ><svg
@@ -332,7 +333,7 @@
                                 to connect with our support team.
                               </p>
                             </div>
-                            <div class="fh2sxkc dir dir-ltr">
+                            <div class="fh2sxkc dir dir-ltr feedback-select">
                               <div class="_4mmmhh">
                                 <label
                                   class="_19nw8j1"
@@ -347,11 +348,11 @@
                                       <option
                                         value="_theme_placeholder"
                                         label="Please select"
-                                        disabled=""
+                                        selected
+                                        disabled
                                       >
                                         Please select
                                       </option>
-                                      ,
                                       <option
                                         value="Experiences"
                                         label="Experiences"
@@ -360,7 +361,6 @@
                                       </option>
                                       <option
                                         value="Hosting"
-                                        selected
                                         label="Hosting"
                                       >
                                         Hosting
@@ -400,7 +400,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="fh2sxkc dir dir-ltr">
+                            <div class="fh2sxkc dir dir-ltr hidden topic-select">
                               <div class="_4mmmhh">
                                 <label
                                   class="_19nw8j1"
@@ -414,10 +414,9 @@
                                     >
                                       <option
                                         value="_type_placeholder"
-                                        label="Choose one"
-                                        disabled=""
+                                        label="Please Select"
                                       >
-                                        Choose one
+                                        Please Select
                                       </option>
                                       ,
                                       <option
@@ -527,7 +526,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="fuzmsn8 dir dir-ltr">
+                            <div class="fuzmsn8 dir dir-ltr hidden">
                               <label for="textarea_feedback"
                                 ><div class="_1wgf3yo">Add details</div>
                                 <div class="_4l12l8">
@@ -540,15 +539,14 @@
                                         autocomplete="off"
                                         id="textarea_feedback"
                                         spellcheck="false"
-                                      >
-sdfsdfsdfsdf</textarea
+                                      ></textarea
                                       >
                                     </div>
                                   </div>
                                 </div></label
                               >
                             </div>
-                            <button type="button" class="_1ku51f04">
+                            <button type="button" class="_1ku51f04 share-feedback-btn hidden">
                               Submit
                             </button>
                             <div class="e1cinm2u dir dir-ltr"></div>
@@ -1234,5 +1232,102 @@ sdfsdfsdfsdf</textarea
         </div>
       </div>
     </div>
+
+    <div dir="ltr">
+      <section>
+       <div class="_j292vx hidden" data-testid="modal-container">
+        <div class="_z4lmgp">
+         <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+         <div class="_z4lmgp">
+          <div role="dialog" aria-label="Search help" aria-modal="true" class="modal-help _1iw81xea" style="position: relative;">
+           <div class="c40xpfg dir dir-ltr" data-testid="search-bar-overlay-content">
+            <span class="i772rby dir dir-ltr">
+             <button aria-label="Close" data-testid="search-bar-overlay-close-button" type="button" class="_oda838" id="close-modal-help">
+              <span class="_e296pg">
+               <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><g fill="none"><path d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"></path></g></svg>
+              </span>
+             </button>
+            </span>
+            <div class="s5vb0u3 dir dir-ltr">
+             <div>
+              <div class="a1vub294 dir dir-ltr" role="status" aria-atomic="true" aria-live="polite">3 search suggestions</div>
+              <div class="a1vub294 dir dir-ltr" role="status" aria-atomic="true" aria-live="polite"></div>
+              <form class="ctqyxkl c1tt8vn6 dir dir-ltr" role="search">
+               <input
+                type="search"
+                placeholder="Search how-tos and more"
+                aria-label="Search how-tos and more"
+                autocomplete="off"
+                class="i17j5df5 i4tq7yb dir dir-ltr"
+                aria-autocomplete="both"
+                aria-haspopup="listbox"
+                aria-expanded="true"
+                role="combobox"
+                aria-owns="search-suggestions-popup"
+                aria-describedby="search-suggestions-instructions"
+                data-testid="search-input"
+                value=""
+               />
+              </form>
+              <div id="search-suggestions-popup" role="listbox" tabindex="-1" aria-label="Search suggestions" class="sfme1lx s1k6l13p dir dir-ltr" data-testid="search-suggestions-popup">
+               <ul role="group" class="l7kl1pb dir dir-ltr" aria-labelledby="suggestion-group-title-Toparticles">
+                <li id="suggestion-group-title-Toparticles" role="presentation" tabindex="-1" class="t1anu1jt dir dir-ltr">Top articles</li>
+                <li id="search-suggestions-item-0" role="option" tabindex="-1" aria-selected="false" aria-posinset="1" aria-setsize="3" class="l135y242 dir dir-ltr">
+                 <div class="ra379ne dir dir-ltr">
+                  <span class="imr2k6c dir dir-ltr">
+                   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                     d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z"
+                    ></path>
+                   </svg>
+                  </span>
+                  <span class="l1aeurux dir dir-ltr">How the Resolution Center helps you</span>
+                 </div>
+                </li>
+                <li id="search-suggestions-item-1" role="option" tabindex="-1" aria-selected="false" aria-posinset="2" aria-setsize="3" class="l135y242 dir dir-ltr">
+                 <div class="ra379ne dir dir-ltr">
+                  <span class="imr2k6c dir dir-ltr">
+                   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                     d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z"
+                    ></path>
+                   </svg>
+                  </span>
+                  <span class="l1aeurux dir dir-ltr">Edit your account settings</span>
+                 </div>
+                </li>
+                <li id="search-suggestions-item-2" role="option" tabindex="-1" aria-selected="false" aria-posinset="3" aria-setsize="3" class="l135y242 dir dir-ltr">
+                 <div class="ra379ne dir dir-ltr">
+                  <span class="imr2k6c dir dir-ltr">
+                   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 24px; width: 24px; fill: currentcolor;">
+                    <path
+                     d="M25 3a2 2 0 0 1 1.995 1.85L27 5v2h2a2 2 0 0 1 1.995 1.85L31 9v17a3 3 0 0 1-3 3H4a3 3 0 0 1-2.995-2.824L1 26V5a2 2 0 0 1 1.85-1.995L3 3zm4 6h-2v17a1 1 0 0 0 1.993.117L29 26zm-4-4H3v21a1 1 0 0 0 .883.993L4 27h21zM13 21v2H7v-2zm8 0v2h-6v-2zm-8-4v2H7v-2zm8 0v2h-6v-2zm0-8v6H7V9zm-2 2H9v2h10z"
+                    ></path>
+                   </svg>
+                  </span>
+                  <span class="l1aeurux dir dir-ltr">Getting protected through AirCover</span>
+                 </div>
+                </li>
+               </ul>
+              </div>
+              <div class="a1vub294 dir dir-ltr" id="search-suggestions-instructions">
+               Suggestions will show after typing in the search input. Use the up and down arrows to review. Use enter to select. If the selection is a phrase, that phrase will be submitted to search. If the suggestion is a link, the browser
+               will navigate to that page.
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+        </div>
+       </div>
+      </section>
+      <div class="_b21f4g">
+       <div aria-live="polite" aria-atomic="true"></div>
+       <div aria-live="assertive" aria-atomic="true"></div>
+      </div>
+     </div>
+     <script src="../assets/js/pages/help.js" defer></script>
   </body>
 </html>
