@@ -31265,7 +31265,7 @@ tr.hide {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
-  min-width: 200px !important;
+  /* min-width: 200px !important; */
   background-size: 200% 200% !important;
   opacity: 0 !important;
   -webkit-transition: opacity 1.25s !important;
@@ -63940,7 +63940,4 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   animation-iteration-count: 1 !important;
   animation-fill-mode: both !important; 
   animation-name: keyframe_1hvlqe7 !important;
-}  
-   
-  
-  
+}
