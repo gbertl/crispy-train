@@ -11,10 +11,12 @@ if(document.querySelector('#close-modal-welcome') != null){
 if(document.querySelector('._virdaj') != null){
     const close = document.querySelector('._virdaj');
     const modal = document.querySelector('.modal-welcome');
-    close.addEventListener('click', () => {
-        modal.classList.replace('_wheg71v', '_dsadsad')
-        document.querySelector('._virdaj').classList.add('hidden')
-        document.querySelector('._1t0jy5tw').classList.add('hidden')
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('_virdaj')){
+            modal.classList.replace('_wheg71v', '_dsadsad')
+            document.querySelector('._virdaj').classList.add('hidden')
+            document.querySelector('._1t0jy5tw').classList.add('hidden')
+        }
     });
 }
 
