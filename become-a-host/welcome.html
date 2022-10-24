@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a listing - Airbnb</title>
+
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+  </head>
+
+  <body class="with-new-header">
+    <div id="site-skip-links">
+      <span id="popups-everywhere-skip-link"></span>
+    </div>
+    <div id="smart-banner"></div>
+    <noscript>
+      <div
+        class="alert alert-with-icon alert-error no-js-alert"
+        data-nosnippet="true"
+      >
+        <i class="icon alert__icon icon-alert-alt"></i>We’re sorry, some parts of
+        the Airbnb website don’t work properly without JavaScript enabled.
+      </div>
+    </noscript>
+    <div
+      id="flash-container"
+      class="flash-container"
+      role="alert"
+      aria-live="assertive"
+    ></div>
+    <div id="education-overlay-root"></div>
+    <div data-application="true">
+      <div dir="ltr">
+        <div data-theme="" class="app-theme">
+          <div>
+            <div class="become-a-host__container"></div>
+            <main class="become-a-host__main">
+              <div class="become-a-host__left-container" aria-hidden="false">
+                <div class="become-a-host__logo-wrapper">
+                  <a aria-label="Airbnb homepage" href="/" class="become-a-host__logo-link"
+                    ><span class="relative"
+                      ><svg
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="
+                          display: block;
+                          height: 32px;
+                          width: 32px;
+                          fill: white;
+                        "
+                        aria-hidden="true"
+                        role="presentation"
+                        focusable="false"
+                      >
+                        <path
+                          d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.96 3.396l.01.415.001.228c0 4.062-2.877 6.478-6.357 6.478-2.224 0-4.556-1.258-6.709-3.386l-.257-.26-.172-.179h-.011l-.176.185c-2.044 2.1-4.267 3.42-6.414 3.615l-.28.019-.267.006C5.377 31 2.5 28.584 2.5 24.522l.005-.469c.026-.928.23-1.768.83-3.244l.216-.524c.966-2.298 6.083-12.989 7.707-16.034C12.537 1.963 13.992 1 16 1zm0 2c-1.239 0-2.053.539-2.987 2.21l-.523 1.008c-1.926 3.776-6.06 12.43-7.031 14.692l-.345.836c-.427 1.071-.573 1.655-.605 2.24l-.009.33v.206C4.5 27.395 6.411 29 8.857 29c1.773 0 3.87-1.236 5.831-3.354-2.295-2.938-3.855-6.45-3.855-8.91 0-2.913 1.933-5.386 5.178-5.42 3.223.034 5.156 2.507 5.156 5.42 0 2.456-1.555 5.96-3.855 8.907C19.277 27.766 21.37 29 23.142 29c2.447 0 4.358-1.605 4.358-4.478l-.004-.411c-.019-.672-.17-1.296-.714-2.62l-.248-.6c-1.065-2.478-5.993-12.768-7.538-15.664C18.053 3.539 17.24 3 16 3zm.01 10.316c-2.01.021-3.177 1.514-3.177 3.42 0 1.797 1.18 4.58 2.955 7.044l.21.287.174-.234c1.73-2.385 2.898-5.066 2.989-6.875l.006-.221c0-1.906-1.167-3.4-3.156-3.421h-.001z"
+                        ></path></svg></span
+                  ></a>
+                </div>
+                <div class="become-a-host__text-wrapper">
+                  <h1 class="become-a-host__text-h1" tabindex="-1">
+                    Welcome back, Jose Angelo
+                  </h1>
+                </div>
+              </div>
+              <div class="become-a-host__header" aria-hidden="false">
+                <div class="become-a-host__header-wrapper">
+                  <div class="become-a-host__header-menu">
+                    <div class="page-shell-mobile__container hidden-md">
+                      <div class="become-a-host__close-wrapper">
+                        <button
+                          aria-label="Close"
+                          type="button"
+                          class="become-a-host__close-btn"
+                        >
+                          <span class="relative-opacity">
+                            <svg
+                              viewBox="0 0 32 32"
+                              xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true"
+                              role="presentation"
+                              focusable="false"
+                              style="
+                                display: block;
+                                fill: none;
+                                height: 16px;
+                                width: 16px;
+                                stroke: rgb(255, 255, 255);
+                                stroke-width: 4;
+                                overflow: visible;
+                              "
+                            >
+                              <path d="m6 6 20 20"></path>
+                              <path d="m26 6-20 20"></path>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="become-a-host__header-menu">
+                    <div class="flex-items-center">
+                      <div class="become-a-host__profile-wrapper">
+                        <button
+                          class="become-a-host__profile-btn"
+                          type="button"
+                          aria-expanded="false"
+                          aria-label="Ask a Superhost"
+                        >
+                          <div class="become-a-host__profile-content" aria-hidden="true">
+                            <img
+                              class="become-a-host__profile-img"
+                              src="https://a0.muscache.com/im/pictures/user/5438063d-f035-43c0-b9da-59eb0ff20b8f.jpg?aki_policy=profile_x_medium"
+                              alt=""
+                            />
+                          </div>
+                        </button>
+                      </div>
+                      <div class="become-a-host__m-help-wrapper">
+                        <button
+                          aria-label="Help"
+                          class="become-a-host__m-help-btn"
+                          type="button"
+                        >
+                          <div class="become-a-host__m-help-content">
+                            <div>Help</div>
+                            <span aria-hidden="true" class="become-a-host__m-help-span"
+                              >Help</span
+                            >
+                          </div>
+                        </button>
+                      </div>
+                      <div class="become-a-host__help-wrapper">
+                        <button class="become-a-host__help-btn" type="button">
+                          <div class="become-a-host__help-content">
+                            <div>Help</div>
+                            <span aria-hidden="true" class="become-a-host__help-span"
+                              >Help</span
+                            >
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="become-a-host__header-menu">
+                    <div class="tab__content-visibility">
+                      <button class="become-a-host__help-btn" type="button">
+                        <div class="become-a-host__help-content">
+                          <div>Save and exit</div>
+                          <span aria-hidden="true" class="become-a-host__help-span"
+                            >Save and exit</span
+                          >
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="become-a-host__right-container">
+                <div class="become-a-host__right-wrapper">
+                  <div class="become-a-host__right-content">
+                    <div class="become-a-host__right-content-wrap" style="transition: opacity 0.6s">
+                      <div class="become-a-host__right-wrap">
+                        <span style="font-size: 0"></span>
+                        <div class="cgwn23z dir dir-ltr" id="FMP-target">
+                          <div class="l8zl6q8 dir dir-ltr" style="animation-delay: 400ms;">
+                           <div class="a1n3nwiv dir dir-ltr">
+                            <h2 class="h169a49r dir dir-ltr" id="action-group-0">Finish your listing</h2>
+                            <div role="group" aria-labelledby="action-group-0">
+                             <div class="a1rgsqn9 a1p7fbvz dir dir-ltr">
+                              <button type="button" class="_15i50to6">
+                               <span class="_jr600v">
+                                <span class="_cy0new">
+                                 <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 32px; width: 32px; min-height: 1px; border-radius: 8px;">
+                                  <img
+                                   class="_9ofhsl"
+                                   aria-hidden="true"
+                                   alt=""
+                                   decoding="async"
+                                   elementtiming="LCP-target"
+                                   src="https://a0.muscache.com/im/pictures/miso/Hosting-742658061004193533/original/49566ac0-cc44-4b6f-83eb-28522c6be530.jpeg?aki_policy=small"
+                                   data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-742658061004193533/original/49566ac0-cc44-4b6f-83eb-28522c6be530.jpeg?aki_policy=small"
+                                   style="object-fit: cover; vertical-align: bottom; border-radius: 8px;"
+                                  />
+                                  <div
+                                   class="_15p4g025"
+                                   style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-742658061004193533/original/49566ac0-cc44-4b6f-83eb-28522c6be530.jpeg?aki_policy=small'); background-size: cover; border-radius: 8px;"
+                                  ></div>
+                                 </div>
+                                </span>
+                                <span class="_bc4egv">dsadasdas</span>
+                                <span class="_12s5d6w">
+                                 <svg
+                                  viewBox="0 0 32 32"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                                 >
+                                  <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                                 </svg>
+                                </span>
+                               </span>
+                              </button>
+                             </div>
+                             <div class="a1rgsqn9 a1p7fbvz dir dir-ltr">
+                              <button type="button" class="_15i50to6">
+                               <span class="_jr600v">
+                                <span class="_cy0new">
+                                 <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 32px; width: 32px; min-height: 1px; border-radius: 8px;">
+                                  <img
+                                   class="_9ofhsl"
+                                   aria-hidden="true"
+                                   alt=""
+                                   decoding="async"
+                                   elementtiming="LCP-target"
+                                   src="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                                   data-original-uri="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                                   style="object-fit: cover; vertical-align: bottom; border-radius: 8px;"
+                                  />
+                                  <div class="_15p4g025" style="background-image: url('https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg'); background-size: cover; border-radius: 8px;"></div>
+                                 </div>
+                                </span>
+                                <span class="_bc4egv">Your Apartment listing started October 21, 2022</span>
+                                <span class="_12s5d6w">
+                                 <svg
+                                  viewBox="0 0 32 32"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                                 >
+                                  <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                                 </svg>
+                                </span>
+                               </span>
+                              </button>
+                             </div>
+                             <div class="a1rgsqn9 a1p7fbvz dir dir-ltr">
+                              <button type="button" class="_15i50to6">
+                               <span class="_jr600v">
+                                <span class="_cy0new">
+                                 <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 32px; width: 32px; min-height: 1px; border-radius: 8px;">
+                                  <img
+                                   class="_9ofhsl"
+                                   aria-hidden="true"
+                                   alt=""
+                                   decoding="async"
+                                   elementtiming="LCP-target"
+                                   src="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                                   data-original-uri="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                                   style="object-fit: cover; vertical-align: bottom; border-radius: 8px;"
+                                  />
+                                  <div class="_15p4g025" style="background-image: url('https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg'); background-size: cover; border-radius: 8px;"></div>
+                                 </div>
+                                </span>
+                                <span class="_bc4egv">Your Apartment listing</span>
+                                <span class="_12s5d6w">
+                                 <svg
+                                  viewBox="0 0 32 32"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                                 >
+                                  <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                                 </svg>
+                                </span>
+                               </span>
+                              </button>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                          <div class="l8zl6q8 dir dir-ltr" style="animation-delay: 449.741ms;">
+                           <div class="a1n3nwiv dir dir-ltr">
+                            <h2 class="h169a49r dir dir-ltr" id="action-group-1">Start a new listing</h2>
+                            <div role="group" aria-labelledby="action-group-1">
+                             <div class="a1rgsqn9 a1p7fbvz dir dir-ltr">
+                              <button type="button" class="_15i50to6">
+                               <span class="_jr600v">
+                                <span class="_cy0new">
+                                 <svg
+                                  viewBox="0 0 32 32"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="display: block; fill: none; height: 32px; width: 32px; stroke: currentcolor; stroke-width: 2; overflow: visible;"
+                                 >
+                                  <path d="m2 16h28m-14-14v28"></path>
+                                 </svg>
+                                </span>
+                                <span class="_bc4egv">Create a new listing</span>
+                                <span class="_12s5d6w">
+                                 <svg
+                                  viewBox="0 0 32 32"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                                 >
+                                  <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                                 </svg>
+                                </span>
+                               </span>
+                              </button>
+                             </div>
+                             <div class="a1rgsqn9 a1p7fbvz dir dir-ltr" id="open-modal-welcome">
+                              <button type="button" class="_15i50to6">
+                               <span class="_jr600v">
+                                <span class="_cy0new">
+                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 32px; width: 32px; fill: currentcolor;">
+                                  <path
+                                   d="M25 5a4 4 0 0 1 4 4v17a5 5 0 0 1-5 5H12a5 5 0 0 1-5-5V10a5 5 0 0 1 5-5h13zm0 2H12a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a2 2 0 0 0-2-2zm-3-6v2H11a6 6 0 0 0-5.996 5.775L5 9v13H3V9a8 8 0 0 1 7.75-7.996L11 1h11z"
+                                  ></path>
+                                 </svg>
+                                </span>
+                                <span class="_bc4egv">Duplicate an existing listing</span>
+                                <span class="_12s5d6w">
+                                 <svg
+                                  viewBox="0 0 32 32"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true"
+                                  role="presentation"
+                                  focusable="false"
+                                  style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                                 >
+                                  <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                                 </svg>
+                                </span>
+                               </span>
+                              </button>
+                             </div>
+                            </div>
+                           </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="become-a-host__footer">
+                  <div class="become-a-host__footer-wrapper">
+                    <div class="flex-items-center">
+                      <span class="text-highlight dir dir-ltr"
+                        >Your progress: step 10 out of 10.</span
+                      >
+                      <div class="progress-bar-bottom-alt">
+                        <div
+                          class="progress-bar-bottom-alt__bar"
+                          style="
+                            transition: transform 0.6s;
+                            transform: translateX(91%);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                    <div class="become-a-host__footer-action">
+                      <div class="become-a-host__footer-back">
+                        <a
+                          href="price.html"
+                          aria-label="Back to previous step"
+                          class="btn-link"
+                          >Back
+                        </a>
+                      </div>
+                      <div class="become-a-host__footer-next">
+                        <a
+                          href="preview.html"
+                          class="btn-dark"
+                          >Review your listing
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+          <div class="container__border-0">
+            <div aria-live="polite" aria-atomic="true"></div>
+            <div aria-live="assertive" aria-atomic="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div dir="ltr">
+      <div class="_1t0jy5tw hidden"></div>
+      <section>
+       <div class="_virdaj hidden" data-testid="modal-container">
+        <div class="_z4lmgp">
+         <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+         <div class="_z4lmgp">
+          <div role="dialog" aria-label="Duplicate existing listings" aria-modal="true" class="_dsadsad modal-welcome" style="position: relative;">
+           <div class="_pa35zs">
+            <button aria-label="Close" type="button" class="_oda838" id="close-modal-welcome">
+             <span class="_e296pg">
+              <svg
+               viewBox="0 0 32 32"
+               xmlns="http://www.w3.org/2000/svg"
+               aria-hidden="true"
+               role="presentation"
+               focusable="false"
+               style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"
+              >
+               <path d="m6 6 20 20"></path>
+               <path d="m26 6-20 20"></path>
+              </svg>
+             </span>
+            </button>
+           </div>
+           <div>
+            <header class="_1b0cy6g">
+             <div class="_1tng6ym"></div>
+             <div class="_9t7ktw">
+              <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target"><div class="_1q9sh65">Choose a listing</div></h1>
+             </div>
+             <div class="_rrmdgl"></div>
+            </header>
+            <div class="_1x1fv19">
+             <div class="_5xnym8">
+              <div class="_zdxht7" role="group">
+               <div class="_kf50tk">
+                <button type="button" class="_15i50to6">
+                 <span class="_jr600v">
+                  <span class="_cy0new">
+                   <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 32px; width: 32px; min-height: 1px; border-radius: 8px;">
+                    <img
+                     class="_9ofhsl"
+                     aria-hidden="true"
+                     alt=""
+                     decoding="async"
+                     elementtiming="LCP-target"
+                     src="https://a0.muscache.com/im/pictures/miso/Hosting-742658061004193533/original/49566ac0-cc44-4b6f-83eb-28522c6be530.jpeg?aki_policy=small"
+                     data-original-uri="https://a0.muscache.com/im/pictures/miso/Hosting-742658061004193533/original/49566ac0-cc44-4b6f-83eb-28522c6be530.jpeg?aki_policy=small"
+                     style="object-fit: cover; vertical-align: bottom; border-radius: 8px;"
+                    />
+                    <div
+                     class="_15p4g025"
+                     style="background-image: url('https://a0.muscache.com/im/pictures/miso/Hosting-742658061004193533/original/49566ac0-cc44-4b6f-83eb-28522c6be530.jpeg?aki_policy=small'); background-size: cover; border-radius: 8px;"
+                    ></div>
+                   </div>
+                  </span>
+                  <span class="_bc4egv">dsadasdas</span>
+                  <span class="_12s5d6w">
+                   <svg
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                   >
+                    <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                   </svg>
+                  </span>
+                 </span>
+                </button>
+               </div>
+               <div class="_kf50tk">
+                <button type="button" class="_15i50to6">
+                 <span class="_jr600v">
+                  <span class="_cy0new">
+                   <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 32px; width: 32px; min-height: 1px; border-radius: 8px;">
+                    <img
+                     class="_9ofhsl"
+                     aria-hidden="true"
+                     alt=""
+                     decoding="async"
+                     elementtiming="LCP-target"
+                     src="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                     data-original-uri="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                     style="object-fit: cover; vertical-align: bottom; border-radius: 8px;"
+                    />
+                    <div class="_15p4g025" style="background-image: url('https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg'); background-size: cover; border-radius: 8px;"></div>
+                   </div>
+                  </span>
+                  <span class="_bc4egv">Your Apartment listing started October 21, 2022</span>
+                  <span class="_12s5d6w">
+                   <svg
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                   >
+                    <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                   </svg>
+                  </span>
+                 </span>
+                </button>
+               </div>
+               <div class="_kf50tk">
+                <button type="button" class="_15i50to6">
+                 <span class="_jr600v">
+                  <span class="_cy0new">
+                   <div class="_1h6n1zu" style="display: inline-block; vertical-align: bottom; height: 32px; width: 32px; min-height: 1px; border-radius: 8px;">
+                    <img
+                     class="_9ofhsl"
+                     aria-hidden="true"
+                     alt=""
+                     decoding="async"
+                     elementtiming="LCP-target"
+                     src="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                     data-original-uri="https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg"
+                     style="object-fit: cover; vertical-align: bottom; border-radius: 8px;"
+                    />
+                    <div class="_15p4g025" style="background-image: url('https://a0.muscache.com/pictures/893cb7b3-6902-4c92-b136-235afe5511da.jpg'); background-size: cover; border-radius: 8px;"></div>
+                   </div>
+                  </span>
+                  <span class="_bc4egv">Your Apartment listing</span>
+                  <span class="_12s5d6w">
+                   <svg
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+                   >
+                    <g fill="none"><path d="m12 4 11.2928932 11.2928932c.3905243.3905243.3905243 1.0236893 0 1.4142136l-11.2928932 11.2928932"></path></g>
+                   </svg>
+                  </span>
+                 </span>
+                </button>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+        </div>
+       </div>
+      </section>
+      <div class="_b21f4g">
+       <div aria-live="polite" aria-atomic="true"></div>
+       <div aria-live="assertive" aria-atomic="true"></div>
+      </div>
+    </div>
+     
+  </body>
+  <script src="../assets/js/pages/become-a-host-welcome.js" defer></script>
+</html>
