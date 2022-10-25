@@ -282,45 +282,47 @@ window.addEventListener('scroll', () => {
   }
 });
 
-document.querySelector('#reviews-search-input').addEventListener('keyup', (e) => {
-  let searchValue = e.target.value
+document.querySelectorAll('#reviews-search-input').forEach((e) => {
+  e.addEventListener('keyup', (e) => {
+    let searchValue = e.target.value
 
-  let resultInfo = document.querySelector('._1ebv9q1')
-  !resultInfo.classList.contains('hidden') && resultInfo.classList.add('hidden')
+    let resultInfo = document.querySelector('._1ebv9q1')
+    !resultInfo.classList.contains('hidden') && resultInfo.classList.add('hidden')
 
-  let noResult = document.querySelector('._1d4xcco')
-  !noResult.classList.contains('hidden') && noResult.classList.add('hidden')
+    let noResult = document.querySelector('._1d4xcco')
+    !noResult.classList.contains('hidden') && noResult.classList.add('hidden')
 
-  let loader = document.querySelector('._3vbwaj')
-  loader.removeAttribute('style')
+    let loader = document.querySelector('._3vbwaj')
+    loader.removeAttribute('style')
 
-  document.querySelectorAll('.r1are2x1 .ll4r2nl').forEach((e) => {
-    let parentElement = e.closest('.r1are2x1')
-    let currentText = e.innerText
+    document.querySelectorAll('.r1are2x1 .ll4r2nl').forEach((e) => {
+      let parentElement = e.closest('.r1are2x1')
+      let currentText = e.innerText
 
-    if (!currentText.includes(searchValue)) {
-      !parentElement.classList.contains('hidden') && parentElement.classList.add('hidden')
-      return;
-    }
+      if (!currentText.includes(searchValue)) {
+        !parentElement.classList.contains('hidden') && parentElement.classList.add('hidden')
+        return;
+      }
 
-    parentElement.classList.remove('hidden')
+      parentElement.classList.remove('hidden')
 
-    let newValue = currentText.replace(new RegExp(searchValue, 'g'), `<mark>${searchValue}</mark>`)
+      let newValue = currentText.replace(new RegExp(searchValue, 'g'), `<mark>${searchValue}</mark>`)
 
-    if (searchValue.length) {
-      resultInfo.innerText = `${document.querySelectorAll('.r1are2x1:not(.hidden)').length} reviews mentioned "${searchValue}"`
+      if (searchValue.length) {
+        resultInfo.innerText = `${document.querySelectorAll('.r1are2x1:not(.hidden)').length} reviews mentioned "${searchValue}"`
+        resultInfo.classList.remove('hidden')
+      }
+
+      e.innerHTML = searchValue.length ? newValue : currentText
+    })
+
+    if (document.querySelectorAll('.r1are2x1.hidden').length === document.querySelectorAll('.r1are2x1').length) {
+      noResult.classList.contains('hidden') && noResult.classList.remove('hidden')
+      resultInfo.innerText = `There are no results for "${searchValue}"`
       resultInfo.classList.remove('hidden')
+      loader.setAttribute('style', 'display: none!important;')
     }
-
-    e.innerHTML = searchValue.length ? newValue : currentText
   })
-
-  if (document.querySelectorAll('.r1are2x1.hidden').length === document.querySelectorAll('.r1are2x1').length) {
-    noResult.classList.contains('hidden') && noResult.classList.remove('hidden')
-    resultInfo.innerText = `There are no results for "${searchValue}"`
-    resultInfo.classList.remove('hidden')
-    loader.setAttribute('style', 'display: none!important;')
-  }
 })
 
 
@@ -336,4 +338,4 @@ const onScroll = () => {
 
 onScroll();
 
-// window.addEventListener('scroll', onScroll);
+window.addEventListener('scroll', onScroll);
