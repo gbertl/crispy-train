@@ -130,3 +130,48 @@ if(document.querySelector('._1p1cugo') != null){
 }
 
 
+if(document.querySelector('#close-modal-save-exit') != null){
+    const close = document.querySelector('#close-modal-save-exit');
+    const modal = document.querySelector('.modal-save-exit');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_ewwxwe', '_1m9khubh')
+        setTimeout(() => {
+            document.querySelector('._g2ext.save-exit-modal-container').classList.add('hidden')
+        }, 500);
+        document.querySelector('._1t0jy5tw.save-exit-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-save-exit') != null){
+    const close = document.querySelector('#open-modal-save-exit');
+    const modal = document.querySelector('.modal-save-exit');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1m9khubh', '_ewwxwe')
+        document.querySelector('._g2ext.save-exit-modal-container').classList.remove('hidden')
+        document.querySelector('._1t0jy5tw.save-exit-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('.save-exit-modal-container') != null){
+    const close = document.querySelector('.save-exit-modal-container');
+    const modal = document.querySelector('.modal-save-exit');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('save-exit-modal-container')){
+            modal.classList.replace('_ewwxwe', '_1m9khubh')
+            setTimeout(() => {
+                document.querySelector('._g2ext.save-exit-modal-container').classList.add('hidden')
+            }, 500);
+            document.querySelector('._1t0jy5tw.save-exit-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#open-modal-save-exit-m') != null){
+    const close = document.querySelector('#open-modal-save-exit-m');
+    const modal = document.querySelector('.modal-save-exit');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1m9khubh', '_ewwxwe')
+        document.querySelector('._g2ext.save-exit-modal-container').classList.remove('hidden')
+        document.querySelector('._1t0jy5tw.save-exit-backdrop').classList.remove('hidden')
+    });
+}
