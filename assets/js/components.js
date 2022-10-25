@@ -236,7 +236,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     }
 
     const openModal = () => {
-      document.body.classList.add('overflow-y-hidden');
+      document.body.classList.add('hidden-vscroll');
       modal.classList.remove('hidden');
       if (section) {
         section.removeAttribute('style')
@@ -245,7 +245,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     }
 
     const closeModal = () => {
-      document.body.classList.remove('overflow-y-hidden');
+      document.body.classList.remove('hidden-vscroll');
       modal.classList.add('hidden');
       if (section) {
         section.style.visibility = 'hidden'
