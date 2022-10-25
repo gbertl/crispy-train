@@ -83,5 +83,50 @@ if(document.querySelector('#open-modal-dp') != null){
     });
 }
 
-// _njcq40o
-// _iwziubj
+if(document.querySelector('#close-modal-help') != null){
+    const close = document.querySelector('#close-modal-help');
+    const modal = document.querySelector('.modal-help');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mtm84lo', '_o4zczix')
+        setTimeout(() => {
+            document.querySelector('._1p1cugo').classList.add('hidden')
+        }, 500);
+        document.querySelector('._1t0jy5tw.help-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-help') != null){
+    const close = document.querySelector('#open-modal-help');
+    const modal = document.querySelector('.modal-help');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_o4zczix', '_mtm84lo')
+        document.querySelector('._1p1cugo').classList.remove('hidden')
+        document.querySelector('._1t0jy5tw.help-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-help-m') != null){
+    const close = document.querySelector('#open-modal-help-m');
+    const modal = document.querySelector('.modal-help');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_o4zczix', '_mtm84lo')
+        document.querySelector('._1p1cugo').classList.remove('hidden')
+        document.querySelector('._1t0jy5tw.help-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('._1p1cugo') != null){
+    const close = document.querySelector('._1p1cugo');
+    const modal = document.querySelector('.modal-help');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('_1p1cugo')){
+            modal.classList.replace('_mtm84lo', '_o4zczix')
+            setTimeout(() => {
+                document.querySelector('._1p1cugo').classList.add('hidden')
+            }, 500);
+            document.querySelector('._1t0jy5tw.help-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+
