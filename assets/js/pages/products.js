@@ -1,3 +1,43 @@
+// start inline calendar
+const inlineCalendar = document.querySelector('#inline-calendar')
+
+document.querySelectorAll('.availability-container__rate-table-checkin').forEach((e) => {
+  e.addEventListener('click', (addDate) => {
+    inlineCalendar.classList.remove('hidden')
+
+    const hideInlineCalendar = () => {
+      inlineCalendar.classList.add('hidden')
+    }
+
+    inlineCalendar.querySelector('[data-testid="availability-calendar-save"]').addEventListener('click', (e) => {
+      hideInlineCalendar()
+    })
+
+    document.addEventListener('click', (e) => {
+      if (!inlineCalendar.contains(e.target) && addDate.target !== e.target) {
+        hideInlineCalendar()
+      }
+    })
+  })
+})
+
+document.querySelectorAll('._c5rhl5').forEach((inputs) => {
+  inputs.addEventListener('click', (input) => {
+    const target = input.target
+    target.closest('._1rhk4n5')?.classList.replace('_1rhk4n5', '_etxtlin')
+    target.classList.add('focus-visible')
+    target.placeholder = 'MM/DD/YYYY'
+    document.addEventListener('click', (e) => {
+      if (input.target !== e.target) {
+        target.closest('._etxtlin')?.classList.replace('_etxtlin', '_1rhk4n5')
+        target.classList.remove('focus-visible')
+        target.placeholder = 'Add date'
+      }
+    })
+  })
+})
+// end inline calendar
+
 const carousel = document.querySelectorAll('._149776kz')
 carousel.forEach((carousel) => {
   const carouselProgressBar = carousel.querySelectorAll('.carousel-progress ._cm41d9')
