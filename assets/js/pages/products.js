@@ -467,3 +467,23 @@ document.querySelector('#where-modal-read-more').addEventListener('click', (e) =
   e.currentTarget.classList.add('hidden')
 
 })
+
+document.querySelectorAll('.radio__button, .radio__button-active').forEach((el) => {
+  el.addEventListener('click', (el) => {
+    const parent = el.currentTarget.closest('.modal__container')
+
+    parent.querySelectorAll('.radio__button-active').forEach((el) => el.classList.replace('radio__button-active', 'radio__button'))
+
+    el.currentTarget.classList.replace('radio__button', 'radio__button-active')
+
+    parent.querySelector('[data-testid=flag-primary-button]').removeAttribute('disabled');
+
+  })
+})
+
+document.querySelector('#report-this-next').addEventListener('click', (el) => {
+  el.currentTarget.closest('#report-this-modal').classList.add('hidden')
+  document.querySelector('#we-got-your-report-modal').classList.remove('hidden')
+})
+
+document.querySelector('#we-got-your-report-ok').addEventListener('click', (el) => el.currentTarget.closest('#we-got-your-report-modal').classList.add('hidden'))
