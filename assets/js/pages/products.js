@@ -1,3 +1,165 @@
+// start inline counter
+const inlineCounter = document.querySelector('#inline-counter')
+const guestDecrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-decrease-button"]')
+const guestIncrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-increase-button"]')
+const guestCounterValue = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-value"]')
+
+const childrenDecrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-decrease-button"]')
+const childrenIncrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-increase-button"]')
+const childrenCounterValue = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-value"]')
+
+const infantDecrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-decrease-button"]')
+const infantIncrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-increase-button"]')
+const infantCounterValue = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-value"]')
+
+document.querySelectorAll('.main-content__details-form-language-value').forEach((e) => {
+  const selectIcon = e.closest('.main-content__details-form-language').querySelector('.form-floating__addon > svg')
+
+  let guestCounter = 1, childrenCounter = 0, infantCounter = 0
+
+  e.addEventListener('click', (addGuests) => {
+    addGuests.stopPropagation()
+
+    let counterLabel = addGuests.currentTarget.querySelector('span')
+
+    inlineCounter.classList.remove('hidden')
+    selectIcon.style.transform = 'rotate(180deg)';
+
+    const hideInlineCounter = () => {
+      inlineCounter.classList.add('hidden')
+      selectIcon.style.transform = 'rotate(360deg)';
+    }
+
+    inlineCounter.querySelector('[data-button="close"]').addEventListener('click', (e) => {
+      hideInlineCounter()
+    })
+
+    document.addEventListener('click', (e) => {
+      if (!inlineCounter.contains(e.target) && addGuests.target !== e.target) {
+        hideInlineCounter()
+      }
+    })
+
+    const handleCounterLabel = () => {
+      let totalGuestCounter = guestCounter + childrenCounter
+      guestLabel = `${totalGuestCounter} ${totalGuestCounter === 1 ? 'guest' : 'guests'}`
+      infantLabel = `${infantCounter} ${infantCounter === 1 ? 'infant' : 'infants'}`
+      counterLabel.innerHTML = guestLabel + (infantCounter ? `, ${infantLabel}` : '')
+    }
+
+    const handleGuestStepperState = () => {
+      let totalGuestCounter = guestCounter + childrenCounter
+      guestDecrease.disabled = guestCounter === 1
+      guestIncrease.disabled = totalGuestCounter === 16
+      childrenIncrease.disabled = totalGuestCounter === 16
+      guestCounterValue.innerHTML = guestCounter
+      handleCounterLabel()
+    }
+
+    const handleChildrenStepperState = () => {
+      let totalGuestCounter = guestCounter + childrenCounter
+      childrenDecrease.disabled = childrenCounter === 0
+      childrenIncrease.disabled = totalGuestCounter === 16
+      guestIncrease.disabled = totalGuestCounter === 16
+      childrenCounterValue.innerHTML = childrenCounter
+      handleCounterLabel()
+    }
+
+    const handleInfantsStepperState = () => {
+      infantDecrease.disabled = infantCounter === 0
+      infantIncrease.disabled = infantCounter === 5
+      infantCounterValue.innerHTML = infantCounter
+      handleCounterLabel()
+    }
+
+    guestDecrease.addEventListener('click', (e) => {
+      if (guestCounter > 1) {
+        guestCounter--
+        handleGuestStepperState()
+      }
+    })
+
+    guestIncrease.addEventListener('click', (e) => {
+      if ((guestCounter + childrenCounter) < 16) {
+        guestCounter++
+        handleGuestStepperState()
+      }
+    })
+
+    childrenDecrease.addEventListener('click', (e) => {
+      if (childrenCounter > 0) {
+        childrenCounter--
+        handleChildrenStepperState()
+      }
+    })
+
+    childrenIncrease.addEventListener('click', (e) => {
+      if ((childrenCounter + guestCounter) < 16) {
+        childrenCounter++
+        handleChildrenStepperState()
+      }
+    })
+
+    infantDecrease.addEventListener('click', (e) => {
+      if (infantCounter > 0) {
+        infantCounter--
+        handleInfantsStepperState()
+      }
+    })
+
+    infantIncrease.addEventListener('click', (e) => {
+      if (infantCounter < 5) {
+        infantCounter++
+        handleInfantsStepperState()
+      }
+    })
+
+  })
+})
+// end inline counter
+
+// start inline calendar
+const inlineCalendar = document.querySelector('#inline-calendar')
+
+document.querySelectorAll('.availability-container__rate-table-checkin').forEach((e) => {
+  e.addEventListener('click', (addDate) => {
+    addDate.stopPropagation()
+
+    inlineCalendar.classList.remove('hidden')
+
+    const hideInlineCalendar = () => {
+      inlineCalendar.classList.add('hidden')
+    }
+
+    inlineCalendar.querySelector('[data-button="close"]').addEventListener('click', (e) => {
+      hideInlineCalendar()
+    })
+
+    document.addEventListener('click', (e) => {
+      if (!inlineCalendar.contains(e.target) && addDate.target !== e.target) {
+        hideInlineCalendar()
+      }
+    })
+  })
+})
+
+document.querySelectorAll('._c5rhl5').forEach((inputs) => {
+  inputs.addEventListener('click', (input) => {
+    const target = input.target
+    target.closest('._1rhk4n5')?.classList.replace('_1rhk4n5', '_etxtlin')
+    target.classList.add('focus-visible')
+    target.placeholder = 'MM/DD/YYYY'
+    document.addEventListener('click', (e) => {
+      if (input.target !== e.target) {
+        target.closest('._etxtlin')?.classList.replace('_etxtlin', '_1rhk4n5')
+        target.classList.remove('focus-visible')
+        target.placeholder = 'Add date'
+      }
+    })
+  })
+})
+// end inline calendar
+
 const carousel = document.querySelectorAll('._149776kz')
 carousel.forEach((carousel) => {
   const carouselProgressBar = carousel.querySelectorAll('.carousel-progress ._cm41d9')
@@ -242,45 +404,47 @@ window.addEventListener('scroll', () => {
   }
 });
 
-document.querySelector('#reviews-search-input').addEventListener('keyup', (e) => {
-  let searchValue = e.target.value
+document.querySelectorAll('#reviews-search-input').forEach((e) => {
+  e.addEventListener('keyup', (e) => {
+    let searchValue = e.target.value
 
-  let resultInfo = document.querySelector('._1ebv9q1')
-  !resultInfo.classList.contains('hidden') && resultInfo.classList.add('hidden')
+    let resultInfo = document.querySelector('._1ebv9q1')
+    !resultInfo.classList.contains('hidden') && resultInfo.classList.add('hidden')
 
-  let noResult = document.querySelector('._1d4xcco')
-  !noResult.classList.contains('hidden') && noResult.classList.add('hidden')
+    let noResult = document.querySelector('._1d4xcco')
+    !noResult.classList.contains('hidden') && noResult.classList.add('hidden')
 
-  let loader = document.querySelector('._3vbwaj')
-  loader.removeAttribute('style')
+    let loader = document.querySelector('._3vbwaj')
+    loader.removeAttribute('style')
 
-  document.querySelectorAll('.r1are2x1 .ll4r2nl').forEach((e) => {
-    let parentElement = e.closest('.r1are2x1')
-    let currentText = e.innerText
+    document.querySelectorAll('.r1are2x1 .ll4r2nl').forEach((e) => {
+      let parentElement = e.closest('.r1are2x1')
+      let currentText = e.innerText
 
-    if (!currentText.includes(searchValue)) {
-      !parentElement.classList.contains('hidden') && parentElement.classList.add('hidden')
-      return;
-    }
+      if (!currentText.includes(searchValue)) {
+        !parentElement.classList.contains('hidden') && parentElement.classList.add('hidden')
+        return;
+      }
 
-    parentElement.classList.remove('hidden')
+      parentElement.classList.remove('hidden')
 
-    let newValue = currentText.replace(new RegExp(searchValue, 'g'), `<mark>${searchValue}</mark>`)
+      let newValue = currentText.replace(new RegExp(searchValue, 'g'), `<mark>${searchValue}</mark>`)
 
-    if (searchValue.length) {
-      resultInfo.innerText = `${document.querySelectorAll('.r1are2x1:not(.hidden)').length} reviews mentioned "${searchValue}"`
+      if (searchValue.length) {
+        resultInfo.innerText = `${document.querySelectorAll('.r1are2x1:not(.hidden)').length} reviews mentioned "${searchValue}"`
+        resultInfo.classList.remove('hidden')
+      }
+
+      e.innerHTML = searchValue.length ? newValue : currentText
+    })
+
+    if (document.querySelectorAll('.r1are2x1.hidden').length === document.querySelectorAll('.r1are2x1').length) {
+      noResult.classList.contains('hidden') && noResult.classList.remove('hidden')
+      resultInfo.innerText = `There are no results for "${searchValue}"`
       resultInfo.classList.remove('hidden')
+      loader.setAttribute('style', 'display: none!important;')
     }
-
-    e.innerHTML = searchValue.length ? newValue : currentText
   })
-
-  if (document.querySelectorAll('.r1are2x1.hidden').length === document.querySelectorAll('.r1are2x1').length) {
-    noResult.classList.contains('hidden') && noResult.classList.remove('hidden')
-    resultInfo.innerText = `There are no results for "${searchValue}"`
-    resultInfo.classList.remove('hidden')
-    loader.setAttribute('style', 'display: none!important;')
-  }
 })
 
 
@@ -296,4 +460,4 @@ const onScroll = () => {
 
 onScroll();
 
-// window.addEventListener('scroll', onScroll);
+window.addEventListener('scroll', onScroll);
