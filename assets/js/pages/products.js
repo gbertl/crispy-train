@@ -461,3 +461,9 @@ const onScroll = () => {
 onScroll();
 
 window.addEventListener('scroll', onScroll);
+
+document.querySelector('#where-modal-read-more').addEventListener('click', (e) => {
+  e.currentTarget.closest('._50mnu4').querySelector('#where-modal-read-more-text').setAttribute('style', 'line-height: 24px')
+  e.currentTarget.classList.add('hidden')
+
+})

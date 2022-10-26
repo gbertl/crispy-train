@@ -56769,11 +56769,16 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 }
 ._1lplc7 {
   -webkit-box-flex: 0 !important;
-  flex: 0 0 72px !important;
+  flex: 0 0 48px !important;
   position: sticky !important;
   text-align: left !important;
   top: 0 !important;
   z-index: -1 !important;
+}
+@media(min-width: 744px) {
+  ._1lplc7 {
+  flex: 0 0 62px !important;
+  }
 }
 ._17itzz4 {
   flex: 1 1 auto !important;
