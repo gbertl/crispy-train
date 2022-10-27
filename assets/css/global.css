@@ -20961,6 +20961,12 @@ input[type='button'].btn-block {
   animation-name: keyframe_s5cldb, keyframe_1p3tni5 !important;
   animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
 }
+.toast-exit {
+    animation-fill-mode: both !important;
+    animation-iteration-count: 1 !important;
+    animation-name: keyframe_aa5y1b, keyframe_ioak0t !important;
+    animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
+}
 .toast-box {
   min-height: 66px !important;
   color: #222 !important;
