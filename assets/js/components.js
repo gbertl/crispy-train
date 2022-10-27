@@ -75,6 +75,15 @@ const handleSaveUnsaveWishlist = () => {
   unsaveBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
       e.currentTarget.replaceWith(createSaveBtn())
+
+      document.querySelectorAll('.snackbar-text-wrapper > div').forEach((el, idx) => {
+         el.style = idx === 0 ? 'display: none !important' : 'display: block !important';
+      })
+      document.querySelector('.snackbar-view-hide').classList.replace('snackbar-view-hide', 'snackbar-view-show')
+
+      setTimeout(() => {
+      document.querySelector('.snackbar-view-show').classList.replace('snackbar-view-show', 'snackbar-view-hide')
+      }, 2000)
     })
   })
 
@@ -82,6 +91,15 @@ const handleSaveUnsaveWishlist = () => {
     el.addEventListener('click', (e) => {
       currentCard.querySelector('[aria-label="Save this Experience"], [aria-label="Add listing to a list"]').replaceWith(createUnsaveBtn())
       e.currentTarget.closest('#save-modal').classList.add('hidden');
+
+      document.querySelectorAll('.snackbar-text-wrapper > div').forEach((el, idx) => {
+         el.style = idx === 0 ? 'display: block !important' : 'display: none !important' ;
+      })
+      document.querySelector('.snackbar-view-hide').classList.replace('snackbar-view-hide', 'snackbar-view-show')
+
+      setTimeout(() => {
+      document.querySelector('.snackbar-view-show').classList.replace('snackbar-view-show', 'snackbar-view-hide')
+      }, 2000)
     });
   });
 

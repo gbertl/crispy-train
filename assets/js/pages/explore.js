@@ -918,3 +918,8 @@ document
       e.currentTarget.classList.add('header-filter--active');
     });
   });
+
+
+document.querySelector('.toast-bottom-right button[aria-label=Close]').addEventListener('click', (el) => {
+  el.currentTarget.closest('.toast-bottom-right > div').classList.add('toast-enter', 'toast-exit');
+})

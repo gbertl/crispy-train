@@ -3405,20 +3405,6 @@ input[type='radio'] {
   -moz-border-radius: 1.25em;
   border-radius: 1.25em;
 }
-input[type='radio']:checked:before {
-  content: '';
-  position: absolute;
-  height: 0.45em;
-  width: 0.45em;
-  -webkit-border-radius: 0.45em;
-  -moz-border-radius: 0.45em;
-  border-radius: 0.45em;
-  top: 50%;
-  left: 50%;
-  margin-top: -0.225em;
-  margin-left: -0.225em;
-  background-color: #008489;
-}
 input[type='checkbox']:checked:before {
   content: '\2713';
   position: absolute;
@@ -16430,7 +16416,7 @@ fieldset[disabled] .btn {
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border-color: var(--gray-900) !important;
+  border-color: transparent !important;
   background: var(--white) !important;
   color: var(--gray-900) !important;
 }
@@ -16463,8 +16449,7 @@ fieldset[disabled] .btn {
 }
 @media (hover: hover) {
   .btn-outline-small:hover {
-    border-color: var(--black) !important;
-    background: var(--gray-100) !important;
+    background: var(--gray-200) !important;
     color: var(--gray-900) !important;
   }
 }
@@ -16611,7 +16596,7 @@ fieldset[disabled] .btn {
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border-color: var(--gray-900) !important;
+  border-color: transparent !important;
   background: var(--white) !important;
   color: var(--gray-900) !important;
 }
@@ -20975,6 +20960,12 @@ input[type='button'].btn-block {
   animation-iteration-count: 1 !important;
   animation-name: keyframe_s5cldb, keyframe_1p3tni5 !important;
   animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
+}
+.toast-exit {
+    animation-fill-mode: both !important;
+    animation-iteration-count: 1 !important;
+    animation-name: keyframe_aa5y1b, keyframe_ioak0t !important;
+    animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
 }
 .toast-box {
   min-height: 66px !important;
