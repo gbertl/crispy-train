@@ -16416,7 +16416,7 @@ fieldset[disabled] .btn {
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border-color: var(--gray-900) !important;
+  border-color: transparent !important;
   background: var(--white) !important;
   color: var(--gray-900) !important;
 }
@@ -16449,8 +16449,7 @@ fieldset[disabled] .btn {
 }
 @media (hover: hover) {
   .btn-outline-small:hover {
-    border-color: var(--black) !important;
-    background: var(--gray-100) !important;
+    background: var(--gray-200) !important;
     color: var(--gray-900) !important;
   }
 }
@@ -16597,7 +16596,7 @@ fieldset[disabled] .btn {
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border-color: var(--gray-900) !important;
+  border-color: transparent !important;
   background: var(--white) !important;
   color: var(--gray-900) !important;
 }
