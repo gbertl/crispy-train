@@ -2596,6 +2596,13 @@
   display: -webkit-flex !important;
   display: flex !important;
 }
+
+@media (max-width: 744px) {
+  .landing-page__image-full {
+    min-height: 400px !important;
+  }
+}
+
 .landing-page__full-wrapper {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
