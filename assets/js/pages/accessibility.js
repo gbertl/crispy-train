@@ -59,3 +59,17 @@ if(document.querySelector('#open-modal-filter-list') != null){
         document.querySelector('._1t0jy5tw').classList.remove('hidden')
     });
 }
+
+function accordation() {
+    document.querySelectorAll('._14gz2us').forEach(el => {
+        el.addEventListener('click', (e) => {
+            if(el.parentNode.children[1].classList.contains('hidden')){
+                el.parentNode.children[1].classList.remove('hidden')
+            } else {
+                el.parentNode.children[1].classList.add('hidden')
+            }
+        })
+    });
+}
+
+accordation();
