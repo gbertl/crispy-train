@@ -66615,3 +66615,18 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 ._14tt8lmp:hover:not(:active) {
   background-color: rgb(247, 247, 247) !important;
 }
+
+._d4ojg9 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+    color: rgb(34, 34, 34) !important;
+    text-decoration: underline !important;
+}
+
+@media (min-width: 1128px) {
+  ._d4ojg9 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+}
