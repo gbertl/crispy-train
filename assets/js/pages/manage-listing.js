@@ -1,29 +1,3 @@
-// if(document.querySelector('._virdaj') != null){
-//     const close = document.querySelector('._virdaj');
-//     const modal = document.querySelector('.modal-filter-list');
-//     close.addEventListener('click', (e) => {
-//         if(e.target.classList.contains('_virdaj')){
-//             modal.classList.replace('_wheg71v', '_dsadsad')
-//             setTimeout(() => {
-//                 document.querySelector('._virdaj').classList.add('hidden') 
-//             }, 500);
-//             document.querySelector('._1t0jy5tw').classList.add('hidden')
-//         }
-//     });
-// }
-
-// if(document.querySelector('#close-modal-filter-list') != null){
-//     const close = document.querySelector('#close-modal-filter-list');
-//     const modal = document.querySelector('.modal-filter-list');
-//     close.addEventListener('click', () => {
-//         modal.classList.replace('_wheg71v', '_dsadsad')
-//         setTimeout(() => {
-//             document.querySelector('._virdaj').classList.add('hidden') 
-//         }, 500);
-//         document.querySelector('._1t0jy5tw').classList.add('hidden')
-//     });
-// }
-
 if(document.querySelector('#side-nav-toggle') != null){
     const trigger = document.querySelector('#side-nav-toggle');
     const sidebar = document.querySelector('.app-theme__wrapper');
@@ -56,12 +30,39 @@ if(document.querySelector('.site-content__page-container') != null){
     });
 }
 
-// if(document.querySelector('#open-modal-filter-list') != null){
-//     const close = document.querySelector('#open-modal-filter-list');
-//     const modal = document.querySelector('.modal-filter-list');
-//     close.addEventListener('click', () => {
-//         modal.classList.replace('_dsadsad', '_wheg71v')
-//         document.querySelector('._virdaj').classList.remove('hidden') 
-//         document.querySelector('._1t0jy5tw').classList.remove('hidden')
-//     });
-// }
+function close() {
+    if(document.querySelectorAll('button[data-testid="delete-input-button"].btn-close').length != 0){
+        const trigger = document.querySelectorAll('button[data-testid="delete-input-button"].btn-close');
+        trigger.forEach(element => {
+            element.addEventListener('click', (e) => {
+                element.parentNode.parentNode.parentNode.remove()
+            });
+        });
+    }
+}
+
+close();
+
+if(document.querySelector('button[data-testid="add-packing-list-item-link"].btn-link-condensed').length != 0){
+    const trigger = document.querySelector('button[data-testid="add-packing-list-item-link"].btn-link-condensed');
+    trigger.addEventListener('click', (e) => {
+        // const parentM = document.querySelector('.parent-guest-m')
+        const parent = document.querySelector('.parent-guest')
+        const el = document.querySelector('.input-el')
+        const clone = el.children[0].cloneNode(true)
+        parent.appendChild(clone)
+        close();
+    });
+}
+
+if(document.querySelector('button[data-testid="add-packing-list-item-link-m"].btn-link-condensed').length != 0){
+    const trigger = document.querySelector('button[data-testid="add-packing-list-item-link-m"].btn-link-condensed');
+    trigger.addEventListener('click', (e) => {
+        // const parentM = document.querySelector('.parent-guest-m')
+        const parent = document.querySelector('.parent-guest-m')
+        const el = document.querySelector('.input-el')
+        const clone = el.children[0].cloneNode(true)
+        parent.appendChild(clone)
+        close();
+    });
+}
