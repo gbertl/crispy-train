@@ -487,3 +487,27 @@ document.querySelector('#report-this-next').addEventListener('click', (el) => {
 })
 
 document.querySelector('#we-got-your-report-ok').addEventListener('click', (el) => el.currentTarget.closest('#we-got-your-report-modal').classList.add('hidden'))
+
+let copyLinkTimeout
+const shareModal = document.querySelector('#share-modal')
+shareModal.querySelector('.modal__share-item:first-child button').addEventListener('click', (e) => {
+  clearTimeout(copyLinkTimeout)
+
+  let copyLink = shareModal.querySelector('._8c85wg')
+  copyLink.classList.contains('hidden') && copyLink.classList.remove('hidden')
+  copyLinkTimeout = setTimeout(() => {
+    !copyLink.classList.contains('hidden') && copyLink.classList.add('hidden')
+  }, 3000);
+})
+
+let copyHTMLTimeout
+const embedModal = document.querySelector('#embed-modal')
+embedModal.querySelector('._1ku51f04').addEventListener('click', (e) => {
+  clearTimeout(copyHTMLTimeout)
+
+  let copyHTML = embedModal.querySelector('._ei7ywt')
+  copyHTML.classList.contains('hidden') && copyHTML.classList.remove('hidden')
+  copyHTMLTimeout = setTimeout(() => {
+    !copyHTML.classList.contains('hidden') && copyHTML.classList.add('hidden')
+  }, 3000);
+})
