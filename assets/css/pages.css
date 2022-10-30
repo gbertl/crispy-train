@@ -68064,3 +68064,105 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   font-size: 14px !important;
   line-height: 18px !important;
 }
+
+._qr4oq3 {
+  display: flex !important;
+  list-style-type: none !important;
+  margin: -4px -24px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  overflow: auto hidden !important;
+}
+
+._1bwncnd {
+  border-radius: 12px !important;
+  flex: 0 0 auto !important;
+  height: 320px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  width: 240px !important;
+}
+
+._1h6n1zu {
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+._9ofhsl {
+  height: 0px !important;
+  width: 0px !important;
+  position: absolute !important;
+}
+
+@supports (object-fit: cover) {
+  ._9ofhsl {
+    height: 100% !important;
+    width: 100% !important;
+    position: static !important;
+  }
+}
+
+._15p4g025 {
+  display: inline-block !important;
+  vertical-align: bottom !important;
+  height: 100% !important;
+  width: 100% !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+}
+
+@supports (object-fit: cover) {
+  ._15p4g025 {
+    display: none !important;
+    background-image: none !important;
+  }
+}
+
+._51dwk2 {
+  font-size: 18px !important;
+  line-height: 24px !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%) !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 600 !important;
+  padding: 16px !important;
+  position: absolute !important;
+  inset: 0px !important;
+}
+
+._coqiui {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  border-top: 0px !important;
+  padding: 16px 24px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+._dt638 {
+  flex: 1 1 0% !important;
+  margin-top: -16px !important;
+}
+
+@media (min-width: 744px) {
+  ._dt638 {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+  }
+}
+
+._1bwncnd {
+  border-radius: 12px !important;
+  flex: 0 0 auto !important;
+  height: 320px !important;
+  overflow: hidden !important;
+  position: relative !important;
+  width: 240px !important;
+}
+
+._1bwncnd:not(:first-child) {
+  margin-left: 16px !important;
+}

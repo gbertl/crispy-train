@@ -215,3 +215,47 @@ if(document.querySelector('#open-modal-manage') != null){
     });
 }
 
+if(document.querySelector('.modal-container-example') != null){
+    const close = document.querySelector('.modal-container-example');
+    const modal = document.querySelector('.modal-example');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-example')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-example').classList.add('hidden') 
+        document.querySelector('.example-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-example') != null){
+    const close = document.querySelector('#close-modal-example');
+    const modal = document.querySelector('.modal-example');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-example').classList.add('hidden') 
+        document.querySelector('.example-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-example') != null){
+    const close = document.querySelector('#open-modal-example');
+    const modal = document.querySelector('.modal-example');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_mvip18q')
+        document.querySelector('.modal-container-example').classList.remove('hidden') 
+        document.querySelector('.example-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-example-m') != null){
+    const close = document.querySelector('#open-modal-example-m');
+    const modal = document.querySelector('.modal-example');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_mvip18q')
+        document.querySelector('.modal-container-example').classList.remove('hidden') 
+        document.querySelector('.example-backdrop').classList.remove('hidden')
+    });
+}
