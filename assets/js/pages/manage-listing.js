@@ -131,6 +131,8 @@ if(document.querySelector('#close-modal-caption') != null){
     });
 }
 
+
+
 function captionPhotos() {
     if(document.querySelectorAll('._9d4he4').length != 0){
         const trigger = document.querySelectorAll('._9d4he4');
