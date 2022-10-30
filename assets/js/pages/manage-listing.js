@@ -43,7 +43,7 @@ function close() {
 
 close();
 
-if(document.querySelector('button[data-testid="add-packing-list-item-link"].btn-link-condensed').length != 0){
+if(document.querySelector('button[data-testid="add-packing-list-item-link"].btn-link-condensed') != null){
     const trigger = document.querySelector('button[data-testid="add-packing-list-item-link"].btn-link-condensed');
     trigger.addEventListener('click', (e) => {
         // const parentM = document.querySelector('.parent-guest-m')
@@ -55,7 +55,7 @@ if(document.querySelector('button[data-testid="add-packing-list-item-link"].btn-
     });
 }
 
-if(document.querySelector('button[data-testid="add-packing-list-item-link-m"].btn-link-condensed').length != 0){
+if(document.querySelector('button[data-testid="add-packing-list-item-link-m"].btn-link-condensed') != null){
     const trigger = document.querySelector('button[data-testid="add-packing-list-item-link-m"].btn-link-condensed');
     trigger.addEventListener('click', (e) => {
         // const parentM = document.querySelector('.parent-guest-m')
@@ -66,3 +66,22 @@ if(document.querySelector('button[data-testid="add-packing-list-item-link-m"].bt
         close();
     });
 }
+
+function checkbox() {
+    if(document.querySelectorAll('.explore-filter-menu__list-content').length != 0){
+        const trigger = document.querySelectorAll('.explore-filter-menu__list-content');
+        trigger.forEach(element => {
+            element.addEventListener('click', (e) => {
+                if(element.children[1].classList.contains('explore-filter-menu__list-checkbox')){
+                    element.children[1].classList.remove('explore-filter-menu__list-checkbox')
+                    element.children[1].classList.add('_1v5cvwv4')
+                } else {
+                    element.children[1].classList.add('explore-filter-menu__list-checkbox')
+                    element.children[1].classList.remove('_1v5cvwv4')
+                }
+            });
+        });
+    }
+}
+
+checkbox();
