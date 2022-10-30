@@ -131,8 +131,6 @@ if(document.querySelector('#close-modal-caption') != null){
     });
 }
 
-
-
 function captionPhotos() {
     if(document.querySelectorAll('._9d4he4').length != 0){
         const trigger = document.querySelectorAll('._9d4he4');
@@ -148,3 +146,38 @@ function captionPhotos() {
 }
 
 captionPhotos();
+
+if(document.querySelector('.modal-container-add-photo') != null){
+    const close = document.querySelector('.modal-container-add-photo');
+    const modal = document.querySelector('.modal-add-photo');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-add-photo')){
+            modal.classList.replace('_244p2lw', '_dsadsad')
+        document.querySelector('.modal-container-add-photo').classList.add('hidden') 
+        document.querySelector('.add-photo-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-add-photo') != null){
+    const close = document.querySelector('#close-modal-add-photo');
+    const modal = document.querySelector('.modal-add-photo');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_244p2lw', '_dsadsad')
+        document.querySelector('.modal-container-add-photo').classList.add('hidden') 
+        document.querySelector('.add-photo-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-add-photo') != null){
+    const close = document.querySelector('#open-modal-add-photo');
+    const modal = document.querySelector('.modal-add-photo');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_244p2lw')
+        document.querySelector('.modal-container-add-photo').classList.remove('hidden') 
+        document.querySelector('.add-photo-backdrop').classList.remove('hidden')
+    });
+}
+
