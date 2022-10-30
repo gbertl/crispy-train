@@ -85,3 +85,20 @@ function checkbox() {
 }
 
 checkbox();
+
+function dotsPhotos() {
+    if(document.querySelectorAll('.btn-dots').length != 0){
+        const trigger = document.querySelectorAll('.btn-dots');
+        trigger.forEach(element => {
+            element.addEventListener('click', (e) => {
+                if(element.parentNode.parentNode.children[1].classList.contains('hidden')){
+                    element.parentNode.parentNode.children[1].classList.remove('hidden')
+                } else {
+                    element.parentNode.parentNode.children[1].classList.add('hidden')
+                }
+            });
+        });
+    }
+}
+
+dotsPhotos();
