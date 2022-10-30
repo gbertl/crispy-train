@@ -86,9 +86,9 @@ function checkbox() {
 
 checkbox();
 
-function dotsPhotos() {
-    if(document.querySelectorAll('.btn-dots').length != 0){
-        const trigger = document.querySelectorAll('.btn-dots');
+function dotsPhotos(el) {
+    if(document.querySelectorAll(el).length != 0){
+        const trigger = document.querySelectorAll(el);
         trigger.forEach(element => {
             element.addEventListener('click', (e) => {
                 if(element.parentNode.parentNode.children[1].classList.contains('hidden')){
@@ -101,4 +101,50 @@ function dotsPhotos() {
     }
 }
 
-dotsPhotos();
+dotsPhotos('.btn-dots');
+dotsPhotos('._1d3iagv');
+
+if(document.querySelector('._vxvq8x') != null){
+    const close = document.querySelector('._vxvq8x');
+    const modal = document.querySelector('.modal-caption');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('_vxvq8x')){
+            modal.classList.replace('_1nvgts7s', '_dsadsad')
+            setTimeout(() => {
+                document.querySelector('._vxvq8x').classList.add('hidden') 
+            }, 500);
+            document.querySelector('._1t0jy5tw').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-caption') != null){
+    const close = document.querySelector('#close-modal-caption');
+    const modal = document.querySelector('.modal-caption');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_1nvgts7s', '_dsadsad')
+        setTimeout(() => {
+            document.querySelector('._vxvq8x').classList.add('hidden') 
+        }, 500);
+        document.querySelector('._1t0jy5tw').classList.add('hidden')
+    });
+}
+
+
+
+function captionPhotos() {
+    if(document.querySelectorAll('._9d4he4').length != 0){
+        const trigger = document.querySelectorAll('._9d4he4');
+        trigger.forEach(element => {
+            element.addEventListener('click', (e) => {
+                const modal = document.querySelector('.modal-caption');
+                modal.classList.replace('_dsadsad', '_1nvgts7s')
+                document.querySelector('._vxvq8x').classList.remove('hidden') 
+                document.querySelector('._1t0jy5tw').classList.remove('hidden')
+            });
+        });
+    }
+}
+
+captionPhotos();
