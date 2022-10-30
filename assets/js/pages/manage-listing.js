@@ -181,3 +181,37 @@ if(document.querySelector('#open-modal-add-photo') != null){
     });
 }
 
+if(document.querySelector('.modal-container-manage') != null){
+    const close = document.querySelector('.modal-container-manage');
+    const modal = document.querySelector('.modal-manage');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-manage')){
+            modal.classList.replace('_244p2lw', '_dsadsad')
+        document.querySelector('.modal-container-manage').classList.add('hidden') 
+        document.querySelector('.manage-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-manage') != null){
+    const close = document.querySelector('#close-modal-manage');
+    const modal = document.querySelector('.modal-manage');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_244p2lw', '_dsadsad')
+        document.querySelector('.modal-container-manage').classList.add('hidden') 
+        document.querySelector('.manage-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-manage') != null){
+    const close = document.querySelector('#open-modal-manage');
+    const modal = document.querySelector('.modal-manage');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_244p2lw')
+        document.querySelector('.modal-container-manage').classList.remove('hidden') 
+        document.querySelector('.manage-backdrop').classList.remove('hidden')
+    });
+}
+
