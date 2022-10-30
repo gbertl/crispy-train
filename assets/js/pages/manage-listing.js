@@ -259,3 +259,93 @@ if(document.querySelector('#open-modal-example-m') != null){
         document.querySelector('.example-backdrop').classList.remove('hidden')
     });
 }
+
+if(document.querySelector('.modal-container-options') != null){
+    const close = document.querySelector('.modal-container-options');
+    const modal = document.querySelector('.modal-options');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-options')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-options').classList.add('hidden') 
+        document.querySelector('.options-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-options') != null){
+    const close = document.querySelector('#close-modal-options');
+    const modal = document.querySelector('.modal-options');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-options').classList.add('hidden') 
+        document.querySelector('.options-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-options') != null){
+    const close = document.querySelector('#open-modal-options');
+    const modal = document.querySelector('.modal-options');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_mvip18q')
+        document.querySelector('.modal-container-options').classList.remove('hidden') 
+        document.querySelector('.options-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-options-m') != null){
+    const close = document.querySelector('#open-modal-options');
+    const modal = document.querySelector('.modal-options');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_mvip18q')
+        document.querySelector('.modal-container-options').classList.remove('hidden') 
+        document.querySelector('.options-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('.modal-container-examples') != null){
+    const close = document.querySelector('.modal-container-examples');
+    const modal = document.querySelector('.modal-examples');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-examples')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-examples').classList.add('hidden') 
+        document.querySelector('.examples-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-examples') != null){
+    const close = document.querySelector('#close-modal-examples');
+    const modal = document.querySelector('.modal-examples');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-examples').classList.add('hidden') 
+        document.querySelector('.examples-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-examples') != null){
+    const close = document.querySelector('#open-modal-examples');
+    const modal = document.querySelector('.modal-examples');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_mvip18q')
+        document.querySelector('.modal-container-examples').classList.remove('hidden') 
+        document.querySelector('.examples-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-examples-m') != null){
+    const close = document.querySelector('#open-modal-examples');
+    const modal = document.querySelector('.modal-examples');
+    close.addEventListener('click', () => {
+        console.log(modal);
+        modal.classList.replace('_dsadsad', '_mvip18q')
+        document.querySelector('.modal-container-examples').classList.remove('hidden') 
+        document.querySelector('.options-backdrop').classList.remove('hidden')
+    });
+}
