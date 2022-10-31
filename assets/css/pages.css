@@ -69511,3 +69511,25 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     text-align: right !important;
   }
 }
+
+@media (min-width: 744px) {
+  ._1d7txt4 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (min-width: 744px) {
+  ._1xku4ev:nth-child(2n) {
+    margin-left: 40px !important;
+  }
+}
+@media (min-width: 744px) {
+  ._1xku4ev {
+    flex: 0 0 calc(50% - 20px) !important;
+  }
+}
+
+._1xku4ev {
+  border-bottom: 1px solid rgb(221, 221, 221) !important;
+}
