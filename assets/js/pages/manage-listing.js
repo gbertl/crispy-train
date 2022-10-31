@@ -333,7 +333,7 @@ if(document.querySelector('#open-modal-examples-m') != null){
     close.addEventListener('click', () => {
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-examples').classList.remove('hidden') 
-        document.querySelector('.options-backdrop').classList.remove('hidden')
+        document.querySelector('.examples-backdrop').classList.remove('hidden')
     });
 }
 
