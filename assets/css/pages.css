@@ -33607,7 +33607,20 @@ tr.hide {
   padding-top: 24px !important;
   padding-bottom: 24px !important;
 }
-._17z7clia {
+.switch-toogle-active {
+  border-radius: 32px !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  cursor: pointer !important;
+  height: 32px !important;
+  position: relative !important;
+  min-width: 48px !important;
+  width: 48px !important;
+  outline: none !important;
+  background-color: rgb(34, 34, 34) !important;
+  border-color: rgb(34, 34, 34) !important;
+}
+.switch-toogle-inactive {
   border-radius: 32px !important;
   border-style: solid !important;
   border-width: 1px !important;
@@ -68650,4 +68663,9 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   line-height: 20px !important;
   font-weight: 400 !important;
   margin: 0px 0px 24px !important;
+}
+
+
+._1jj61m9.hidden {
+  display: none !important;
 }
