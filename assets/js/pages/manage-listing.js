@@ -366,3 +366,39 @@ function switchToogleBtn(callbackActive, callbackInactive) {
         });
     }
 }
+
+
+if(document.querySelector('#add-group-rate') != null){
+    const trigger = document.querySelector('#add-group-rate');
+    const fields = document.querySelector('.group-input-fields');
+    const labels = document.querySelector('.group-labels');
+    const hr = document.querySelector('.group-hr');    
+    const add = document.querySelector('.group-add-btn');    
+    const banner = document.querySelector('.group-banner-btn');    
+    
+    trigger.addEventListener('click', () => {
+        fields.classList.remove('hidden') 
+        labels.classList.remove('hidden') 
+        hr.classList.remove('hidden') 
+        add.classList.add('hidden') 
+        banner.classList.add('hidden') 
+    });
+}
+
+if(document.querySelector('.remove-group-rate') != null){
+    const trigger = document.querySelector('.remove-group-rate');
+    const fields = document.querySelector('.group-input-fields');
+    const labels = document.querySelector('.group-labels');
+    const hr = document.querySelector('.group-hr');    
+    const add = document.querySelector('.group-add-btn');    
+    const banner = document.querySelector('.group-banner-btn');    
+    
+    trigger.addEventListener('click', () => {
+        console.log('dsad');
+        fields.classList.add('hidden') 
+        labels.classList.add('hidden') 
+        hr.classList.add('hidden') 
+        add.classList.remove('hidden') 
+        banner.classList.remove('hidden') 
+    });
+}
