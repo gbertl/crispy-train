@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="../assets/css/pages.css" />
     <link rel="stylesheet" href="../assets/css/places.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
   </head>
 
   <body class="with-new-header">
@@ -262,6 +264,7 @@
                       ></div>
                       <div class="place__wrapper">
                         <div class="main-content__details-form-language">
+                          <!-- Desktop gallery -->
                           <div
                             class="place__container-img-container"
                             style="margin-bottom: 0"
@@ -273,6 +276,8 @@
                                   role="presentation"
                                   class="place__container-img-1"
                                   style="margin-left: 0"
+                                  data-modal="#lightbox-modal"
+                                  data-lightbox="#lightbox-media-1"
                                 >
                                   <div
                                     class="lite-image"
@@ -310,6 +315,8 @@
                                   role="presentation"
                                   class="place__container-img-2"
                                   style="margin-left: 2px"
+                                  data-modal="#lightbox-modal"
+                                  data-lightbox="#lightbox-media-1"
                                 >
                                   <div
                                     class="lite-image"
@@ -343,6 +350,8 @@
                                   role="presentation"
                                   class="place__container-img-3"
                                   style="margin-left: 2px"
+                                  data-modal="#lightbox-modal"
+                                  data-lightbox="#lightbox-media-1"
                                 >
                                   <div
                                     class="lite-image"
@@ -412,16 +421,14 @@
                               </div>
                             </div>
                           </div>
-
+                          
+                          <!-- Lightbox modal -->
                           <div id="lightbox-modal" class="hidden" dir="ltr">
                             <section
                               id="lightbox-media-1"
                               style="visibility: hidden"
                             >
-                              <div
-                                class="_j292vx"
-                                data-testid="modal-container"
-                              >
+                              <div class="_j292vx" data-testid="modal-container">
                                 <div
                                   style="
                                     --gp-padding-xsmallAndAbove: 24px;
@@ -445,6 +452,7 @@
                                               <div data-showat="mediumAndAbove">
                                                 <div class="_1llxo8x">
                                                   <button
+                                                   
                                                     type="button"
                                                     class="_1rp5252"
                                                     aria-busy="false"
@@ -452,6 +460,7 @@
                                                       padding: 32px;
                                                       margin: -32px;
                                                     "
+                                                    
                                                   >
                                                     <svg
                                                       viewBox="0 0 24 24"
@@ -475,66 +484,32 @@
                                                 </div>
                                               </div>
                                             </div>
+                                            
                                             <div data-showat="mediumAndAbove">
                                               <!-- left column -->
+                                              
+                                              
                                               <div class="_40iwxv">
                                                 <div class="_z9dr48">
                                                   <div
                                                     data-showat="mediumAndAbove"
                                                   >
-                                                    <button
-                                                      type="button"
-                                                      aria-label="Previous"
-                                                      class="_12qhocje"
-                                                    >
-                                                      <svg
-                                                        viewBox="0 0 18 18"
-                                                        role="presentation"
-                                                        aria-hidden="true"
-                                                        focusable="false"
-                                                        style="
-                                                          height: 24px;
-                                                          width: 24px;
-                                                          fill: rgb(72, 72, 72);
-                                                        "
-                                                      >
-                                                        <path
-                                                          d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z"
-                                                          fill-rule="evenodd"
-                                                        ></path>
-                                                      </svg></button
-                                                    ><button
-                                                      type="button"
-                                                      aria-label="Next"
-                                                      class="_wlnonhg"
-                                                    >
-                                                      <svg
-                                                        viewBox="0 0 18 18"
-                                                        role="presentation"
-                                                        aria-hidden="true"
-                                                        focusable="false"
-                                                        style="
-                                                          height: 24px;
-                                                          width: 24px;
-                                                          fill: rgb(72, 72, 72);
-                                                        "
-                                                      >
-                                                        <path
-                                                          d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z"
-                                                          fill-rule="evenodd"
-                                                        ></path>
+                                                   
+                                                    <button type="button" aria-label="Previous" class="_12qhocje">
+                                                      <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 24px; width: 24px; fill: rgb(72, 72, 72);">
+                                                        <path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z" fill-rule="evenodd"></path>
+                                                      </svg>
+                                                    </button>
+                                                    <button type="button" aria-label="Next" class="_wlnonhg">
+                                                      <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 24px; width: 24px; fill: rgb(72, 72, 72);">
+                                                        <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path>
                                                       </svg>
                                                     </button>
                                                   </div>
-                                                  <img
-                                                    class="_17vo0vv"
-                                                    aria-hidden="true"
-                                                    src="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?im_w=1200"
-                                                    alt=""
-                                                  /><span
-                                                    ><div
-                                                      data-showat="largeAndAbove"
-                                                    >
+                                                 
+                                                  <img class="_17vo0vv" aria-hidden="true" src="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?im_w=1200" alt=""/>
+                                                  <span>
+                                                    <div data-showat="largeAndAbove">
                                                       <img
                                                         src="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?im_w=1200"
                                                         alt=""
@@ -553,8 +528,9 @@
                                                             -50%
                                                           );
                                                         "
-                                                      /></div
-                                                  ></span>
+                                                      />
+                                                    </div>
+                                                  </span>
                                                   <div class="_1u9fru1">
                                                     <img
                                                       src="https://a0.muscache.com/im/pictures/34527a29-4963-4a2a-9a15-c694574accbb.jpg?im_w=1200"
@@ -569,6 +545,9 @@
                                                   </div>
                                                 </div>
                                               </div>
+                                              
+                                             
+                                              
                                               <!-- right column -->
                                               <div class="_o00axf">
                                                 <div class="_1q5yq3s">
@@ -579,8 +558,59 @@
                                                         <div
                                                           class="_1iwi6a4"
                                                         ></div>
+                                                        <div thumbsSlider="" class="swiper desktopMiniSwiper">
+                                                          <div class="swiper-wrapper">
+                                                            <ul
+                                                            class="_conlnu"
+                                                            style="
+                                                            transform: translateX(
+                                                            8px
+                                                            );
+                                                            "
+                                                            >
+                                                            <li class="_1y6wdia">
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-1.jpg" style="border-radius: 4px !important;
+                                                            position: absolute !important;
+                                                            left: 50% !important;
+                                                            top: 50% !important;
+                                                            height: 100% !important;
+                                                            width: auto !important;
+                                                            transform: translate(-50%, -50%) !important;" />
+                                                            </div>
+                                                            </li></ul>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                                            </div>
+                                                          </div>
+                                                        </div>
                                                         <div class="_2fozrm">
                                                           <div class="_zf7q4">
+                                                           
                                                             <ul
                                                               class="_conlnu"
                                                               style="
@@ -660,8 +690,9 @@
                                                   <div
                                                     style="margin-bottom: 16px"
                                                   >
-                                                    <div class="_1p3joamp">
+                                                    <div class="_1p3joamp gallery-counter">
                                                       1 / 4
+                                                      <div class="swiper-pagination _1p3joamp"></div>
                                                     </div>
                                                   </div>
                                                   <div class="_1dcp06s">
@@ -669,6 +700,7 @@
                                                   </div>
                                                 </div>
                                               </div>
+                                              
                                             </div>
                                           </div>
                                         </div>
@@ -678,6 +710,8 @@
                                 </div>
                               </div>
                             </section>
+                       
+                                                        
 
                             <div class="_b21f4g">
                               <div aria-live="polite" aria-atomic="true"></div>
@@ -685,6 +719,67 @@
                                 aria-live="assertive"
                                 aria-atomic="true"
                               ></div>
+                            </div>
+                          </div>
+
+                          <!-- Mobile back -->
+                          <div class="_2b0qwl">
+                            <div class="_1o4zwko" role="presentation"><a aria-label="Back" data-testid="back-button" href="/" class="_1dxtmbip">
+                                <div class="_1ran6xy">
+                                  <div class="_zzdavs"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-label="Back" role="img"
+                                      focusable="false"
+                                      style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                      <g fill="none">
+                                        <path
+                                          d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932">
+                                        </path>
+                                      </g>
+                                    </svg></div>
+                                  <div class="_1s0b0yb"></div>
+                                </div>
+                              </a></div>
+                          </div>
+
+                          <!-- Mobile gallery -->
+                          <div class="_vfwjg3" style="margin-bottom: 24px;">
+                            <div class="_1mx6kqf" style="background: white; --dls-basecard-padding-top:56%;">
+                              <div class="_1szwzht">
+                                <div class="_1trgpf1">
+                                  <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <img class="_91slf2a" aria-hidden="true" alt="" elementtiming="LCP-target" id="FMP-target"
+                                        src="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?aki_policy=large"
+                                        data-original-uri="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?aki_policy=large"
+                                        style="object-fit: cover;"></div>
+                                      <div class="swiper-slide">
+                                        <img class="_91slf2a" aria-hidden="true" alt="" elementtiming="LCP-target"
+                                        src="https://a0.muscache.com/im/pictures/34527a29-4963-4a2a-9a15-c694574accbb.jpg?aki_policy=large"
+                                        data-original-uri="https://a0.muscache.com/im/pictures/34527a29-4963-4a2a-9a15-c694574accbb.jpg?aki_policy=large"
+                                        style="object-fit: cover;"></div>
+                                      <div class="swiper-slide">
+                                        <img class="_91slf2a" aria-hidden="true" alt="" elementtiming="LCP-target"
+                                          src="https://a0.muscache.com/im/pictures/c5af983b-869e-4b0f-bfc4-e0f1e045e154.jpg?aki_policy=large"
+                                          data-original-uri="https://a0.muscache.com/im/pictures/c5af983b-869e-4b0f-bfc4-e0f1e045e154.jpg?aki_policy=large"
+                                          style="object-fit: cover;">
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <img class="_91slf2a" aria-hidden="true" alt="" elementtiming="LCP-target"
+                                          src="https://a0.muscache.com/im/pictures/d12c4075-afcf-487e-be87-9ab79c2029bf.jpg?aki_policy=large"
+                                          data-original-uri="https://a0.muscache.com/im/pictures/d12c4075-afcf-487e-be87-9ab79c2029bf.jpg?aki_policy=large"
+                                          style="object-fit: cover;">
+                                      </div>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                      
+                                    </div>
+                                    <div class="swiper-button-prev">
+                                      <span class="_e296pg"><span class="_krjbj">_</span></span>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
 
@@ -18444,7 +18539,42 @@
       "
     ></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/js/components.js"></script>
-    <script src="../assets/js/pages/products.js" defer></script>
+    <script src="../assets/js/pages/gallery.js"></script>
+    <!-- Swiper JS -->
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+           loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+
+        
+
+           var swiper2 = new Swiper(".desktopMiniSwiper", {
+              loop: true,
+              spaceBetween: 10,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              thumbs: {
+                swiper: swiper,
+              },
+            });
+      
+        
+    </script>
   </body>
 </html>
