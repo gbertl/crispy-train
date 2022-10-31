@@ -402,3 +402,99 @@ if(document.querySelector('.remove-group-rate') != null){
         banner.classList.remove('hidden') 
     });
 }
+
+if(document.querySelector('.modal-container-laws') != null){
+    const close = document.querySelector('.modal-container-laws');
+    const modal = document.querySelector('.modal-laws');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-laws')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-laws').classList.add('hidden') 
+        document.querySelector('.laws-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-laws') != null){
+    const close = document.querySelector('#close-modal-laws');
+    const modal = document.querySelector('.modal-laws');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-laws').classList.add('hidden') 
+        document.querySelector('.laws-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-laws') != null){
+    const close = document.querySelector('#open-modal-laws');
+    const modal = document.querySelector('.modal-laws');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mvip18q', '_1ucy1zjv')
+        document.querySelector('.modal-container-laws').classList.remove('hidden') 
+        document.querySelector('.laws-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('.modal-container-tour') != null){
+    const close = document.querySelector('.modal-container-tour');
+    const modal = document.querySelector('.modal-tour');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-tour')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-tour').classList.add('hidden') 
+        document.querySelector('.tour-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-tour') != null){
+    const close = document.querySelector('#close-modal-tour');
+    const modal = document.querySelector('.modal-tour');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-tour').classList.add('hidden') 
+        document.querySelector('.tour-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-tour') != null){
+    const close = document.querySelector('#open-modal-tour');
+    const modal = document.querySelector('.modal-tour');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mvip18q', '_1ucy1zjv')
+        document.querySelector('.modal-container-tour').classList.remove('hidden') 
+        document.querySelector('.tour-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('.modal-container-animals') != null){
+    const close = document.querySelector('.modal-container-animals');
+    const modal = document.querySelector('.modal-animals');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-animals')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-animals').classList.add('hidden') 
+        document.querySelector('.animals-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-animals') != null){
+    const close = document.querySelector('#close-modal-animals');
+    const modal = document.querySelector('.modal-animals');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-animals').classList.add('hidden') 
+        document.querySelector('.animals-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-animals') != null){
+    const close = document.querySelector('#open-modal-animals');
+    const modal = document.querySelector('.modal-animals');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mvip18q', '_1ucy1zjv')
+        document.querySelector('.modal-container-animals').classList.remove('hidden') 
+        document.querySelector('.animals-backdrop').classList.remove('hidden')
+    });
+}
