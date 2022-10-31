@@ -383,8 +383,9 @@
                           type="button"
                           class="header__logo-btn"
                         >
-                          <span>
+                          <span id="side-nav-toggle-span">
                             <svg
+                              id="side-nav-toggle-svg"
                               viewBox="0 0 16 16"
                               role="img"
                               aria-hidden="false"
@@ -398,6 +399,7 @@
                               "
                             >
                               <path
+                                id="side-nav-toggle-path"
                                 d="m15.25 12.5a.75.75 0 01-.75.75h-13a .75.75 0 010-1.5h13a .75.75 0 01 .75.75zm-.75-5.75h-13a .75.75 0 100 1.5h13a .75.75 0 000-1.5zm-13-3.5h13a .75.75 0 000-1.5h-13a .75.75 0 100 1.5z"
                                 fill-rule="evenodd"
                               ></path>
@@ -554,378 +556,380 @@
                                                 being specific and listing each
                                                 item separately.
                                               </p>
-                                              <div class="_1d5136v">
-                                                <div class="_1jj61m9">
-                                                  <label
-                                                    class="_1yw7hpv"
-                                                    for="packing-item-0"
-                                                  >
-                                                    <div class="_1m2ich98">
-                                                      <div class="spinner-chart__input-title-text">
-                                                        Item
-                                                      </div>
-                                                    </div>
-                                                    <div dir="ltr">
-                                                      <div class="spinner-chart__input-currency">
-                                                        <input
-                                                          data-testid="packing-item-0"
-                                                          class="_yrzsibu"
-                                                          id="packing-item-0"
-                                                          autocomplete="off"
-                                                          type="text"
-                                                          aria-describedby=""
-                                                          value="1 cup flour"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                  </label>
-                                                  <div class="_129y4gf">
-                                                    <button
-                                                      data-testid="delete-input-button"
-                                                      aria-label="Delete"
-                                                      type="button"
-                                                      class="_oda838"
+                                              <div class="parent-guest-m">
+                                                <div class="_1d5136v">
+                                                  <div class="_1jj61m9">
+                                                    <label
+                                                      class="_1yw7hpv"
+                                                      for="packing-item-0"
                                                     >
-                                                      <span class="relative">
-                                                        <svg
-                                                          viewBox="0 0 32 32"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                          aria-hidden="true"
-                                                          role="presentation"
-                                                          focusable="false"
-                                                          style="
-                                                            display: block;
-                                                            fill: none;
-                                                            height: 16px;
-                                                            width: 16px;
-                                                            stroke: currentcolor;
-                                                            stroke-width: 4;
-                                                            overflow: visible;
-                                                          "
-                                                        >
-                                                          <path
-                                                            d="m6 6 20 20"
-                                                          ></path>
-                                                          <path
-                                                            d="m26 6-20 20"
-                                                          ></path>
-                                                        </svg>
-                                                      </span>
-                                                    </button>
+                                                      <div class="_1m2ich98">
+                                                        <div class="spinner-chart__input-title-text">
+                                                          Item
+                                                        </div>
+                                                      </div>
+                                                      <div dir="ltr">
+                                                        <div class="spinner-chart__input-currency">
+                                                          <input
+                                                            data-testid="packing-item-0"
+                                                            class="_yrzsibu"
+                                                            id="packing-item-0"
+                                                            autocomplete="off"
+                                                            type="text"
+                                                            aria-describedby=""
+                                                            value="1 cup flour"
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                    <div class="_129y4gf">
+                                                      <button
+                                                        data-testid="delete-input-button"
+                                                        aria-label="Delete"
+                                                        type="button"
+                                                        class="btn-close"
+                                                      >
+                                                        <span class="relative">
+                                                          <svg
+                                                            viewBox="0 0 32 32"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            aria-hidden="true"
+                                                            role="presentation"
+                                                            focusable="false"
+                                                            style="
+                                                              display: block;
+                                                              fill: none;
+                                                              height: 16px;
+                                                              width: 16px;
+                                                              stroke: currentcolor;
+                                                              stroke-width: 4;
+                                                              overflow: visible;
+                                                            "
+                                                          >
+                                                            <path
+                                                              d="m6 6 20 20"
+                                                            ></path>
+                                                            <path
+                                                              d="m26 6-20 20"
+                                                            ></path>
+                                                          </svg>
+                                                        </span>
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                              <div class="_1d5136v">
-                                                <div class="_1jj61m9">
-                                                  <label
-                                                    class="_1yw7hpv"
-                                                    for="packing-item-1"
-                                                  >
-                                                    <div class="_1m2ich98">
-                                                      <div class="spinner-chart__input-title-text">
-                                                        Item
-                                                      </div>
-                                                    </div>
-                                                    <div dir="ltr">
-                                                      <div class="spinner-chart__input-currency">
-                                                        <input
-                                                          data-testid="packing-item-1"
-                                                          class="_yrzsibu"
-                                                          id="packing-item-1"
-                                                          autocomplete="off"
-                                                          type="text"
-                                                          aria-describedby=""
-                                                          value="hard boiled chicken eggs or quail eggs"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                  </label>
-                                                  <div class="_129y4gf">
-                                                    <button
-                                                      data-testid="delete-input-button"
-                                                      aria-label="Delete"
-                                                      type="button"
-                                                      class="_oda838"
+                                                <div class="_1d5136v">
+                                                  <div class="_1jj61m9">
+                                                    <label
+                                                      class="_1yw7hpv"
+                                                      for="packing-item-1"
                                                     >
-                                                      <span class="relative">
-                                                        <svg
-                                                          viewBox="0 0 32 32"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                          aria-hidden="true"
-                                                          role="presentation"
-                                                          focusable="false"
-                                                          style="
-                                                            display: block;
-                                                            fill: none;
-                                                            height: 16px;
-                                                            width: 16px;
-                                                            stroke: currentcolor;
-                                                            stroke-width: 4;
-                                                            overflow: visible;
-                                                          "
-                                                        >
-                                                          <path
-                                                            d="m6 6 20 20"
-                                                          ></path>
-                                                          <path
-                                                            d="m26 6-20 20"
-                                                          ></path>
-                                                        </svg>
-                                                      </span>
-                                                    </button>
+                                                      <div class="_1m2ich98">
+                                                        <div class="spinner-chart__input-title-text">
+                                                          Item
+                                                        </div>
+                                                      </div>
+                                                      <div dir="ltr">
+                                                        <div class="spinner-chart__input-currency">
+                                                          <input
+                                                            data-testid="packing-item-1"
+                                                            class="_yrzsibu"
+                                                            id="packing-item-1"
+                                                            autocomplete="off"
+                                                            type="text"
+                                                            aria-describedby=""
+                                                            value="hard boiled chicken eggs or quail eggs"
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                    <div class="_129y4gf">
+                                                      <button
+                                                        data-testid="delete-input-button"
+                                                        aria-label="Delete"
+                                                        type="button"
+                                                        class="btn-close"
+                                                      >
+                                                        <span class="relative">
+                                                          <svg
+                                                            viewBox="0 0 32 32"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            aria-hidden="true"
+                                                            role="presentation"
+                                                            focusable="false"
+                                                            style="
+                                                              display: block;
+                                                              fill: none;
+                                                              height: 16px;
+                                                              width: 16px;
+                                                              stroke: currentcolor;
+                                                              stroke-width: 4;
+                                                              overflow: visible;
+                                                            "
+                                                          >
+                                                            <path
+                                                              d="m6 6 20 20"
+                                                            ></path>
+                                                            <path
+                                                              d="m26 6-20 20"
+                                                            ></path>
+                                                          </svg>
+                                                        </span>
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                              <div class="_1d5136v">
-                                                <div class="_1jj61m9">
-                                                  <label
-                                                    class="_1yw7hpv"
-                                                    for="packing-item-2"
-                                                  >
-                                                    <div class="_1m2ich98">
-                                                      <div class="spinner-chart__input-title-text">
-                                                        Item
-                                                      </div>
-                                                    </div>
-                                                    <div dir="ltr">
-                                                      <div class="spinner-chart__input-currency">
-                                                        <input
-                                                          data-testid="packing-item-2"
-                                                          class="_yrzsibu"
-                                                          id="packing-item-2"
-                                                          autocomplete="off"
-                                                          type="text"
-                                                          aria-describedby=""
-                                                          value="salt and pepper"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                  </label>
-                                                  <div class="_129y4gf">
-                                                    <button
-                                                      data-testid="delete-input-button"
-                                                      aria-label="Delete"
-                                                      type="button"
-                                                      class="_oda838"
+                                                <div class="_1d5136v">
+                                                  <div class="_1jj61m9">
+                                                    <label
+                                                      class="_1yw7hpv"
+                                                      for="packing-item-2"
                                                     >
-                                                      <span class="relative">
-                                                        <svg
-                                                          viewBox="0 0 32 32"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                          aria-hidden="true"
-                                                          role="presentation"
-                                                          focusable="false"
-                                                          style="
-                                                            display: block;
-                                                            fill: none;
-                                                            height: 16px;
-                                                            width: 16px;
-                                                            stroke: currentcolor;
-                                                            stroke-width: 4;
-                                                            overflow: visible;
-                                                          "
-                                                        >
-                                                          <path
-                                                            d="m6 6 20 20"
-                                                          ></path>
-                                                          <path
-                                                            d="m26 6-20 20"
-                                                          ></path>
-                                                        </svg>
-                                                      </span>
-                                                    </button>
+                                                      <div class="_1m2ich98">
+                                                        <div class="spinner-chart__input-title-text">
+                                                          Item
+                                                        </div>
+                                                      </div>
+                                                      <div dir="ltr">
+                                                        <div class="spinner-chart__input-currency">
+                                                          <input
+                                                            data-testid="packing-item-2"
+                                                            class="_yrzsibu"
+                                                            id="packing-item-2"
+                                                            autocomplete="off"
+                                                            type="text"
+                                                            aria-describedby=""
+                                                            value="salt and pepper"
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                    <div class="_129y4gf">
+                                                      <button
+                                                        data-testid="delete-input-button"
+                                                        aria-label="Delete"
+                                                        type="button"
+                                                        class="btn-close"
+                                                      >
+                                                        <span class="relative">
+                                                          <svg
+                                                            viewBox="0 0 32 32"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            aria-hidden="true"
+                                                            role="presentation"
+                                                            focusable="false"
+                                                            style="
+                                                              display: block;
+                                                              fill: none;
+                                                              height: 16px;
+                                                              width: 16px;
+                                                              stroke: currentcolor;
+                                                              stroke-width: 4;
+                                                              overflow: visible;
+                                                            "
+                                                          >
+                                                            <path
+                                                              d="m6 6 20 20"
+                                                            ></path>
+                                                            <path
+                                                              d="m26 6-20 20"
+                                                            ></path>
+                                                          </svg>
+                                                        </span>
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                              <div class="_1d5136v">
-                                                <div class="_1jj61m9">
-                                                  <label
-                                                    class="_1yw7hpv"
-                                                    for="packing-item-3"
-                                                  >
-                                                    <div class="_1m2ich98">
-                                                      <div class="spinner-chart__input-title-text">
-                                                        Item
-                                                      </div>
-                                                    </div>
-                                                    <div dir="ltr">
-                                                      <div class="spinner-chart__input-currency">
-                                                        <input
-                                                          data-testid="packing-item-3"
-                                                          class="_yrzsibu"
-                                                          id="packing-item-3"
-                                                          autocomplete="off"
-                                                          type="text"
-                                                          aria-describedby=""
-                                                          value="1 tsp annato seeds powder or red + yellow food coloring"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                  </label>
-                                                  <div class="_129y4gf">
-                                                    <button
-                                                      data-testid="delete-input-button"
-                                                      aria-label="Delete"
-                                                      type="button"
-                                                      class="_oda838"
+                                                <div class="_1d5136v">
+                                                  <div class="_1jj61m9">
+                                                    <label
+                                                      class="_1yw7hpv"
+                                                      for="packing-item-3"
                                                     >
-                                                      <span class="relative">
-                                                        <svg
-                                                          viewBox="0 0 32 32"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                          aria-hidden="true"
-                                                          role="presentation"
-                                                          focusable="false"
-                                                          style="
-                                                            display: block;
-                                                            fill: none;
-                                                            height: 16px;
-                                                            width: 16px;
-                                                            stroke: currentcolor;
-                                                            stroke-width: 4;
-                                                            overflow: visible;
-                                                          "
-                                                        >
-                                                          <path
-                                                            d="m6 6 20 20"
-                                                          ></path>
-                                                          <path
-                                                            d="m26 6-20 20"
-                                                          ></path>
-                                                        </svg>
-                                                      </span>
-                                                    </button>
+                                                      <div class="_1m2ich98">
+                                                        <div class="spinner-chart__input-title-text">
+                                                          Item
+                                                        </div>
+                                                      </div>
+                                                      <div dir="ltr">
+                                                        <div class="spinner-chart__input-currency">
+                                                          <input
+                                                            data-testid="packing-item-3"
+                                                            class="_yrzsibu"
+                                                            id="packing-item-3"
+                                                            autocomplete="off"
+                                                            type="text"
+                                                            aria-describedby=""
+                                                            value="1 tsp annato seeds powder or red + yellow food coloring"
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                    <div class="_129y4gf">
+                                                      <button
+                                                        data-testid="delete-input-button"
+                                                        aria-label="Delete"
+                                                        type="button"
+                                                        class="btn-close"
+                                                      >
+                                                        <span class="relative">
+                                                          <svg
+                                                            viewBox="0 0 32 32"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            aria-hidden="true"
+                                                            role="presentation"
+                                                            focusable="false"
+                                                            style="
+                                                              display: block;
+                                                              fill: none;
+                                                              height: 16px;
+                                                              width: 16px;
+                                                              stroke: currentcolor;
+                                                              stroke-width: 4;
+                                                              overflow: visible;
+                                                            "
+                                                          >
+                                                            <path
+                                                              d="m6 6 20 20"
+                                                            ></path>
+                                                            <path
+                                                              d="m26 6-20 20"
+                                                            ></path>
+                                                          </svg>
+                                                        </span>
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                              <div class="_1d5136v">
-                                                <div class="_1jj61m9">
-                                                  <label
-                                                    class="_1yw7hpv"
-                                                    for="packing-item-4"
-                                                  >
-                                                    <div class="_1m2ich98">
-                                                      <div class="spinner-chart__input-title-text">
-                                                        Item
-                                                      </div>
-                                                    </div>
-                                                    <div dir="ltr">
-                                                      <div class="spinner-chart__input-currency">
-                                                        <input
-                                                          data-testid="packing-item-4"
-                                                          class="_yrzsibu"
-                                                          id="packing-item-4"
-                                                          autocomplete="off"
-                                                          type="text"
-                                                          aria-describedby=""
-                                                          value="3 tsps corn starch"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                  </label>
-                                                  <div class="_129y4gf">
-                                                    <button
-                                                      data-testid="delete-input-button"
-                                                      aria-label="Delete"
-                                                      type="button"
-                                                      class="_oda838"
+                                                <div class="_1d5136v">
+                                                  <div class="_1jj61m9">
+                                                    <label
+                                                      class="_1yw7hpv"
+                                                      for="packing-item-4"
                                                     >
-                                                      <span class="relative">
-                                                        <svg
-                                                          viewBox="0 0 32 32"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                          aria-hidden="true"
-                                                          role="presentation"
-                                                          focusable="false"
-                                                          style="
-                                                            display: block;
-                                                            fill: none;
-                                                            height: 16px;
-                                                            width: 16px;
-                                                            stroke: currentcolor;
-                                                            stroke-width: 4;
-                                                            overflow: visible;
-                                                          "
-                                                        >
-                                                          <path
-                                                            d="m6 6 20 20"
-                                                          ></path>
-                                                          <path
-                                                            d="m26 6-20 20"
-                                                          ></path>
-                                                        </svg>
-                                                      </span>
-                                                    </button>
+                                                      <div class="_1m2ich98">
+                                                        <div class="spinner-chart__input-title-text">
+                                                          Item
+                                                        </div>
+                                                      </div>
+                                                      <div dir="ltr">
+                                                        <div class="spinner-chart__input-currency">
+                                                          <input
+                                                            data-testid="packing-item-4"
+                                                            class="_yrzsibu"
+                                                            id="packing-item-4"
+                                                            autocomplete="off"
+                                                            type="text"
+                                                            aria-describedby=""
+                                                            value="3 tsps corn starch"
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                    <div class="_129y4gf">
+                                                      <button
+                                                        data-testid="delete-input-button"
+                                                        aria-label="Delete"
+                                                        type="button"
+                                                        class="btn-close"
+                                                      >
+                                                        <span class="relative">
+                                                          <svg
+                                                            viewBox="0 0 32 32"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            aria-hidden="true"
+                                                            role="presentation"
+                                                            focusable="false"
+                                                            style="
+                                                              display: block;
+                                                              fill: none;
+                                                              height: 16px;
+                                                              width: 16px;
+                                                              stroke: currentcolor;
+                                                              stroke-width: 4;
+                                                              overflow: visible;
+                                                            "
+                                                          >
+                                                            <path
+                                                              d="m6 6 20 20"
+                                                            ></path>
+                                                            <path
+                                                              d="m26 6-20 20"
+                                                            ></path>
+                                                          </svg>
+                                                        </span>
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                              <div class="_1d5136v">
-                                                <div class="_1jj61m9">
-                                                  <label
-                                                    class="_1yw7hpv"
-                                                    for="packing-item-5"
-                                                  >
-                                                    <div class="_1m2ich98">
-                                                      <div class="spinner-chart__input-title-text">
-                                                        Item
-                                                      </div>
-                                                    </div>
-                                                    <div dir="ltr">
-                                                      <div class="spinner-chart__input-currency">
-                                                        <input
-                                                          data-testid="packing-item-5"
-                                                          class="_yrzsibu"
-                                                          id="packing-item-5"
-                                                          autocomplete="off"
-                                                          type="text"
-                                                          aria-describedby=""
-                                                          value="1 cup water"
-                                                        />
-                                                      </div>
-                                                    </div>
-                                                  </label>
-                                                  <div class="_129y4gf">
-                                                    <button
-                                                      data-testid="delete-input-button"
-                                                      aria-label="Delete"
-                                                      type="button"
-                                                      class="_oda838"
+                                                <div class="_1d5136v">
+                                                  <div class="_1jj61m9">
+                                                    <label
+                                                      class="_1yw7hpv"
+                                                      for="packing-item-5"
                                                     >
-                                                      <span class="relative">
-                                                        <svg
-                                                          viewBox="0 0 32 32"
-                                                          xmlns="http://www.w3.org/2000/svg"
-                                                          aria-hidden="true"
-                                                          role="presentation"
-                                                          focusable="false"
-                                                          style="
-                                                            display: block;
-                                                            fill: none;
-                                                            height: 16px;
-                                                            width: 16px;
-                                                            stroke: currentcolor;
-                                                            stroke-width: 4;
-                                                            overflow: visible;
-                                                          "
-                                                        >
-                                                          <path
-                                                            d="m6 6 20 20"
-                                                          ></path>
-                                                          <path
-                                                            d="m26 6-20 20"
-                                                          ></path>
-                                                        </svg>
-                                                      </span>
-                                                    </button>
+                                                      <div class="_1m2ich98">
+                                                        <div class="spinner-chart__input-title-text">
+                                                          Item
+                                                        </div>
+                                                      </div>
+                                                      <div dir="ltr">
+                                                        <div class="spinner-chart__input-currency">
+                                                          <input
+                                                            data-testid="packing-item-5"
+                                                            class="_yrzsibu"
+                                                            id="packing-item-5"
+                                                            autocomplete="off"
+                                                            type="text"
+                                                            aria-describedby=""
+                                                            value="1 cup water"
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    </label>
+                                                    <div class="_129y4gf">
+                                                      <button
+                                                        data-testid="delete-input-button"
+                                                        aria-label="Delete"
+                                                        type="button"
+                                                        class="btn-close"
+                                                      >
+                                                        <span class="relative">
+                                                          <svg
+                                                            viewBox="0 0 32 32"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            aria-hidden="true"
+                                                            role="presentation"
+                                                            focusable="false"
+                                                            style="
+                                                              display: block;
+                                                              fill: none;
+                                                              height: 16px;
+                                                              width: 16px;
+                                                              stroke: currentcolor;
+                                                              stroke-width: 4;
+                                                              overflow: visible;
+                                                            "
+                                                          >
+                                                            <path
+                                                              d="m6 6 20 20"
+                                                            ></path>
+                                                            <path
+                                                              d="m26 6-20 20"
+                                                            ></path>
+                                                          </svg>
+                                                        </span>
+                                                      </button>
+                                                    </div>
                                                   </div>
                                                 </div>
                                               </div>
                                               <div class="_c56c9g">
                                                 <button
                                                   aria-label="Add another item to: What guests need to bring"
-                                                  data-testid="add-packing-list-item-link"
+                                                  data-testid="add-packing-list-item-link-m"
                                                   type="button"
-                                                  class="_15rpys7s"
+                                                  class="btn-link-condensed"
                                                 >
                                                   Add another item
                                                 </button>
@@ -1069,417 +1073,419 @@
                                             them prepare by being specific and
                                             listing each item separately.
                                           </p>
-                                          <div class="_1d5136v">
-                                            <div
-                                              class="spinner-chart__input-price"
-                                            >
-                                              <label
-                                                class="input-field"
-                                                for="packing-item-0"
+                                          <div class="parent-guest">
+                                            <div class="_1d5136v">
+                                              <div
+                                                class="spinner-chart__input-price"
                                               >
-                                                <div
-                                                  class="spinner-chart__input-title"
+                                                <label
+                                                  class="input-field"
+                                                  for="packing-item-0"
                                                 >
                                                   <div
-                                                    class="spinner-chart__input-title-text"
+                                                    class="spinner-chart__input-title"
                                                   >
-                                                    Item
-                                                  </div>
-                                                </div>
-                                                <div dir="ltr">
-                                                  <div
-                                                    class="spinner-chart__input-currency"
-                                                  >
-                                                    <input
-                                                      data-testid="packing-item-0"
-                                                      class="form__input"
-                                                      id="packing-item-0"
-                                                      autocomplete="off"
-                                                      type="text"
-                                                      aria-describedby=""
-                                                      value="1 cup flour"
-                                                    />
-                                                  </div>
-                                                </div>
-                                              </label>
-                                              <div class="_129y4gf">
-                                                <button
-                                                  data-testid="delete-input-button"
-                                                  aria-label="Delete"
-                                                  type="button"
-                                                  class="btn-close"
-                                                >
-                                                  <span class="relative">
-                                                    <svg
-                                                      viewBox="0 0 32 32"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      aria-hidden="true"
-                                                      role="presentation"
-                                                      focusable="false"
-                                                      style="
-                                                        display: block;
-                                                        fill: none;
-                                                        height: 16px;
-                                                        width: 16px;
-                                                        stroke: currentcolor;
-                                                        stroke-width: 4;
-                                                        overflow: visible;
-                                                      "
+                                                    <div
+                                                      class="spinner-chart__input-title-text"
                                                     >
-                                                      <path
-                                                        d="m6 6 20 20"
-                                                      ></path>
-                                                      <path
-                                                        d="m26 6-20 20"
-                                                      ></path>
-                                                    </svg>
-                                                  </span>
-                                                </button>
+                                                      Item
+                                                    </div>
+                                                  </div>
+                                                  <div dir="ltr">
+                                                    <div
+                                                      class="spinner-chart__input-currency"
+                                                    >
+                                                      <input
+                                                        data-testid="packing-item-0"
+                                                        class="form__input"
+                                                        id="packing-item-0"
+                                                        autocomplete="off"
+                                                        type="text"
+                                                        aria-describedby=""
+                                                        value="1 cup flour"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </label>
+                                                <div class="_129y4gf">
+                                                  <button
+                                                    data-testid="delete-input-button"
+                                                    aria-label="Delete"
+                                                    type="button"
+                                                    class="btn-close"
+                                                  >
+                                                    <span class="relative">
+                                                      <svg
+                                                        viewBox="0 0 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                        role="presentation"
+                                                        focusable="false"
+                                                        style="
+                                                          display: block;
+                                                          fill: none;
+                                                          height: 16px;
+                                                          width: 16px;
+                                                          stroke: currentcolor;
+                                                          stroke-width: 4;
+                                                          overflow: visible;
+                                                        "
+                                                      >
+                                                        <path
+                                                          d="m6 6 20 20"
+                                                        ></path>
+                                                        <path
+                                                          d="m26 6-20 20"
+                                                        ></path>
+                                                      </svg>
+                                                    </span>
+                                                  </button>
+                                                </div>
                                               </div>
                                             </div>
-                                          </div>
-                                          <div class="_1d5136v">
-                                            <div
-                                              class="spinner-chart__input-price"
-                                            >
-                                              <label
-                                                class="input-field"
-                                                for="packing-item-1"
+                                            <div class="_1d5136v">
+                                              <div
+                                                class="spinner-chart__input-price"
                                               >
-                                                <div
-                                                  class="spinner-chart__input-title"
+                                                <label
+                                                  class="input-field"
+                                                  for="packing-item-1"
                                                 >
                                                   <div
-                                                    class="spinner-chart__input-title-text"
+                                                    class="spinner-chart__input-title"
                                                   >
-                                                    Item
-                                                  </div>
-                                                </div>
-                                                <div dir="ltr">
-                                                  <div
-                                                    class="spinner-chart__input-currency"
-                                                  >
-                                                    <input
-                                                      data-testid="packing-item-1"
-                                                      class="form__input"
-                                                      id="packing-item-1"
-                                                      autocomplete="off"
-                                                      type="text"
-                                                      aria-describedby=""
-                                                      value="hard boiled chicken eggs or quail eggs"
-                                                    />
-                                                  </div>
-                                                </div>
-                                              </label>
-                                              <div class="_129y4gf">
-                                                <button
-                                                  data-testid="delete-input-button"
-                                                  aria-label="Delete"
-                                                  type="button"
-                                                  class="btn-close"
-                                                >
-                                                  <span class="relative">
-                                                    <svg
-                                                      viewBox="0 0 32 32"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      aria-hidden="true"
-                                                      role="presentation"
-                                                      focusable="false"
-                                                      style="
-                                                        display: block;
-                                                        fill: none;
-                                                        height: 16px;
-                                                        width: 16px;
-                                                        stroke: currentcolor;
-                                                        stroke-width: 4;
-                                                        overflow: visible;
-                                                      "
+                                                    <div
+                                                      class="spinner-chart__input-title-text"
                                                     >
-                                                      <path
-                                                        d="m6 6 20 20"
-                                                      ></path>
-                                                      <path
-                                                        d="m26 6-20 20"
-                                                      ></path>
-                                                    </svg>
-                                                  </span>
-                                                </button>
+                                                      Item
+                                                    </div>
+                                                  </div>
+                                                  <div dir="ltr">
+                                                    <div
+                                                      class="spinner-chart__input-currency"
+                                                    >
+                                                      <input
+                                                        data-testid="packing-item-1"
+                                                        class="form__input"
+                                                        id="packing-item-1"
+                                                        autocomplete="off"
+                                                        type="text"
+                                                        aria-describedby=""
+                                                        value="hard boiled chicken eggs or quail eggs"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </label>
+                                                <div class="_129y4gf">
+                                                  <button
+                                                    data-testid="delete-input-button"
+                                                    aria-label="Delete"
+                                                    type="button"
+                                                    class="btn-close"
+                                                  >
+                                                    <span class="relative">
+                                                      <svg
+                                                        viewBox="0 0 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                        role="presentation"
+                                                        focusable="false"
+                                                        style="
+                                                          display: block;
+                                                          fill: none;
+                                                          height: 16px;
+                                                          width: 16px;
+                                                          stroke: currentcolor;
+                                                          stroke-width: 4;
+                                                          overflow: visible;
+                                                        "
+                                                      >
+                                                        <path
+                                                          d="m6 6 20 20"
+                                                        ></path>
+                                                        <path
+                                                          d="m26 6-20 20"
+                                                        ></path>
+                                                      </svg>
+                                                    </span>
+                                                  </button>
+                                                </div>
                                               </div>
                                             </div>
-                                          </div>
-                                          <div class="_1d5136v">
-                                            <div
-                                              class="spinner-chart__input-price"
-                                            >
-                                              <label
-                                                class="input-field"
-                                                for="packing-item-2"
+                                            <div class="_1d5136v">
+                                              <div
+                                                class="spinner-chart__input-price"
                                               >
-                                                <div
-                                                  class="spinner-chart__input-title"
+                                                <label
+                                                  class="input-field"
+                                                  for="packing-item-2"
                                                 >
                                                   <div
-                                                    class="spinner-chart__input-title-text"
+                                                    class="spinner-chart__input-title"
                                                   >
-                                                    Item
-                                                  </div>
-                                                </div>
-                                                <div dir="ltr">
-                                                  <div
-                                                    class="spinner-chart__input-currency"
-                                                  >
-                                                    <input
-                                                      data-testid="packing-item-2"
-                                                      class="form__input"
-                                                      id="packing-item-2"
-                                                      autocomplete="off"
-                                                      type="text"
-                                                      aria-describedby=""
-                                                      value="salt and pepper"
-                                                    />
-                                                  </div>
-                                                </div>
-                                              </label>
-                                              <div class="_129y4gf">
-                                                <button
-                                                  data-testid="delete-input-button"
-                                                  aria-label="Delete"
-                                                  type="button"
-                                                  class="btn-close"
-                                                >
-                                                  <span class="relative">
-                                                    <svg
-                                                      viewBox="0 0 32 32"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      aria-hidden="true"
-                                                      role="presentation"
-                                                      focusable="false"
-                                                      style="
-                                                        display: block;
-                                                        fill: none;
-                                                        height: 16px;
-                                                        width: 16px;
-                                                        stroke: currentcolor;
-                                                        stroke-width: 4;
-                                                        overflow: visible;
-                                                      "
+                                                    <div
+                                                      class="spinner-chart__input-title-text"
                                                     >
-                                                      <path
-                                                        d="m6 6 20 20"
-                                                      ></path>
-                                                      <path
-                                                        d="m26 6-20 20"
-                                                      ></path>
-                                                    </svg>
-                                                  </span>
-                                                </button>
+                                                      Item
+                                                    </div>
+                                                  </div>
+                                                  <div dir="ltr">
+                                                    <div
+                                                      class="spinner-chart__input-currency"
+                                                    >
+                                                      <input
+                                                        data-testid="packing-item-2"
+                                                        class="form__input"
+                                                        id="packing-item-2"
+                                                        autocomplete="off"
+                                                        type="text"
+                                                        aria-describedby=""
+                                                        value="salt and pepper"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </label>
+                                                <div class="_129y4gf">
+                                                  <button
+                                                    data-testid="delete-input-button"
+                                                    aria-label="Delete"
+                                                    type="button"
+                                                    class="btn-close"
+                                                  >
+                                                    <span class="relative">
+                                                      <svg
+                                                        viewBox="0 0 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                        role="presentation"
+                                                        focusable="false"
+                                                        style="
+                                                          display: block;
+                                                          fill: none;
+                                                          height: 16px;
+                                                          width: 16px;
+                                                          stroke: currentcolor;
+                                                          stroke-width: 4;
+                                                          overflow: visible;
+                                                        "
+                                                      >
+                                                        <path
+                                                          d="m6 6 20 20"
+                                                        ></path>
+                                                        <path
+                                                          d="m26 6-20 20"
+                                                        ></path>
+                                                      </svg>
+                                                    </span>
+                                                  </button>
+                                                </div>
                                               </div>
                                             </div>
-                                          </div>
-                                          <div class="_1d5136v">
-                                            <div
-                                              class="spinner-chart__input-price"
-                                            >
-                                              <label
-                                                class="input-field"
-                                                for="packing-item-3"
+                                            <div class="_1d5136v">
+                                              <div
+                                                class="spinner-chart__input-price"
                                               >
-                                                <div
-                                                  class="spinner-chart__input-title"
+                                                <label
+                                                  class="input-field"
+                                                  for="packing-item-3"
                                                 >
                                                   <div
-                                                    class="spinner-chart__input-title-text"
+                                                    class="spinner-chart__input-title"
                                                   >
-                                                    Item
-                                                  </div>
-                                                </div>
-                                                <div dir="ltr">
-                                                  <div
-                                                    class="spinner-chart__input-currency"
-                                                  >
-                                                    <input
-                                                      data-testid="packing-item-3"
-                                                      class="form__input"
-                                                      id="packing-item-3"
-                                                      autocomplete="off"
-                                                      type="text"
-                                                      aria-describedby=""
-                                                      value="1 tsp annato seeds powder or red + yellow food coloring"
-                                                    />
-                                                  </div>
-                                                </div>
-                                              </label>
-                                              <div class="_129y4gf">
-                                                <button
-                                                  data-testid="delete-input-button"
-                                                  aria-label="Delete"
-                                                  type="button"
-                                                  class="btn-close"
-                                                >
-                                                  <span class="relative">
-                                                    <svg
-                                                      viewBox="0 0 32 32"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      aria-hidden="true"
-                                                      role="presentation"
-                                                      focusable="false"
-                                                      style="
-                                                        display: block;
-                                                        fill: none;
-                                                        height: 16px;
-                                                        width: 16px;
-                                                        stroke: currentcolor;
-                                                        stroke-width: 4;
-                                                        overflow: visible;
-                                                      "
+                                                    <div
+                                                      class="spinner-chart__input-title-text"
                                                     >
-                                                      <path
-                                                        d="m6 6 20 20"
-                                                      ></path>
-                                                      <path
-                                                        d="m26 6-20 20"
-                                                      ></path>
-                                                    </svg>
-                                                  </span>
-                                                </button>
+                                                      Item
+                                                    </div>
+                                                  </div>
+                                                  <div dir="ltr">
+                                                    <div
+                                                      class="spinner-chart__input-currency"
+                                                    >
+                                                      <input
+                                                        data-testid="packing-item-3"
+                                                        class="form__input"
+                                                        id="packing-item-3"
+                                                        autocomplete="off"
+                                                        type="text"
+                                                        aria-describedby=""
+                                                        value="1 tsp annato seeds powder or red + yellow food coloring"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </label>
+                                                <div class="_129y4gf">
+                                                  <button
+                                                    data-testid="delete-input-button"
+                                                    aria-label="Delete"
+                                                    type="button"
+                                                    class="btn-close"
+                                                  >
+                                                    <span class="relative">
+                                                      <svg
+                                                        viewBox="0 0 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                        role="presentation"
+                                                        focusable="false"
+                                                        style="
+                                                          display: block;
+                                                          fill: none;
+                                                          height: 16px;
+                                                          width: 16px;
+                                                          stroke: currentcolor;
+                                                          stroke-width: 4;
+                                                          overflow: visible;
+                                                        "
+                                                      >
+                                                        <path
+                                                          d="m6 6 20 20"
+                                                        ></path>
+                                                        <path
+                                                          d="m26 6-20 20"
+                                                        ></path>
+                                                      </svg>
+                                                    </span>
+                                                  </button>
+                                                </div>
                                               </div>
                                             </div>
-                                          </div>
-                                          <div class="_1d5136v">
-                                            <div
-                                              class="spinner-chart__input-price"
-                                            >
-                                              <label
-                                                class="input-field"
-                                                for="packing-item-4"
+                                            <div class="_1d5136v">
+                                              <div
+                                                class="spinner-chart__input-price"
                                               >
-                                                <div
-                                                  class="spinner-chart__input-title"
+                                                <label
+                                                  class="input-field"
+                                                  for="packing-item-4"
                                                 >
                                                   <div
-                                                    class="spinner-chart__input-title-text"
+                                                    class="spinner-chart__input-title"
                                                   >
-                                                    Item
-                                                  </div>
-                                                </div>
-                                                <div dir="ltr">
-                                                  <div
-                                                    class="spinner-chart__input-currency"
-                                                  >
-                                                    <input
-                                                      data-testid="packing-item-4"
-                                                      class="form__input"
-                                                      id="packing-item-4"
-                                                      autocomplete="off"
-                                                      type="text"
-                                                      aria-describedby=""
-                                                      value="3 tsps corn starch"
-                                                    />
-                                                  </div>
-                                                </div>
-                                              </label>
-                                              <div class="_129y4gf">
-                                                <button
-                                                  data-testid="delete-input-button"
-                                                  aria-label="Delete"
-                                                  type="button"
-                                                  class="btn-close"
-                                                >
-                                                  <span class="relative">
-                                                    <svg
-                                                      viewBox="0 0 32 32"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      aria-hidden="true"
-                                                      role="presentation"
-                                                      focusable="false"
-                                                      style="
-                                                        display: block;
-                                                        fill: none;
-                                                        height: 16px;
-                                                        width: 16px;
-                                                        stroke: currentcolor;
-                                                        stroke-width: 4;
-                                                        overflow: visible;
-                                                      "
+                                                    <div
+                                                      class="spinner-chart__input-title-text"
                                                     >
-                                                      <path
-                                                        d="m6 6 20 20"
-                                                      ></path>
-                                                      <path
-                                                        d="m26 6-20 20"
-                                                      ></path>
-                                                    </svg>
-                                                  </span>
-                                                </button>
+                                                      Item
+                                                    </div>
+                                                  </div>
+                                                  <div dir="ltr">
+                                                    <div
+                                                      class="spinner-chart__input-currency"
+                                                    >
+                                                      <input
+                                                        data-testid="packing-item-4"
+                                                        class="form__input"
+                                                        id="packing-item-4"
+                                                        autocomplete="off"
+                                                        type="text"
+                                                        aria-describedby=""
+                                                        value="3 tsps corn starch"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </label>
+                                                <div class="_129y4gf">
+                                                  <button
+                                                    data-testid="delete-input-button"
+                                                    aria-label="Delete"
+                                                    type="button"
+                                                    class="btn-close"
+                                                  >
+                                                    <span class="relative">
+                                                      <svg
+                                                        viewBox="0 0 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                        role="presentation"
+                                                        focusable="false"
+                                                        style="
+                                                          display: block;
+                                                          fill: none;
+                                                          height: 16px;
+                                                          width: 16px;
+                                                          stroke: currentcolor;
+                                                          stroke-width: 4;
+                                                          overflow: visible;
+                                                        "
+                                                      >
+                                                        <path
+                                                          d="m6 6 20 20"
+                                                        ></path>
+                                                        <path
+                                                          d="m26 6-20 20"
+                                                        ></path>
+                                                      </svg>
+                                                    </span>
+                                                  </button>
+                                                </div>
                                               </div>
                                             </div>
-                                          </div>
-                                          <div class="_1d5136v">
-                                            <div
-                                              class="spinner-chart__input-price"
-                                            >
-                                              <label
-                                                class="input-field"
-                                                for="packing-item-5"
+                                            <div class="_1d5136v">
+                                              <div
+                                                class="spinner-chart__input-price"
                                               >
-                                                <div
-                                                  class="spinner-chart__input-title"
+                                                <label
+                                                  class="input-field"
+                                                  for="packing-item-5"
                                                 >
                                                   <div
-                                                    class="spinner-chart__input-title-text"
+                                                    class="spinner-chart__input-title"
                                                   >
-                                                    Item
-                                                  </div>
-                                                </div>
-                                                <div dir="ltr">
-                                                  <div
-                                                    class="spinner-chart__input-currency"
-                                                  >
-                                                    <input
-                                                      data-testid="packing-item-5"
-                                                      class="form__input"
-                                                      id="packing-item-5"
-                                                      autocomplete="off"
-                                                      type="text"
-                                                      aria-describedby=""
-                                                      value="1 cup water"
-                                                    />
-                                                  </div>
-                                                </div>
-                                              </label>
-                                              <div class="_129y4gf">
-                                                <button
-                                                  data-testid="delete-input-button"
-                                                  aria-label="Delete"
-                                                  type="button"
-                                                  class="btn-close"
-                                                >
-                                                  <span class="relative">
-                                                    <svg
-                                                      viewBox="0 0 32 32"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      aria-hidden="true"
-                                                      role="presentation"
-                                                      focusable="false"
-                                                      style="
-                                                        display: block;
-                                                        fill: none;
-                                                        height: 16px;
-                                                        width: 16px;
-                                                        stroke: currentcolor;
-                                                        stroke-width: 4;
-                                                        overflow: visible;
-                                                      "
+                                                    <div
+                                                      class="spinner-chart__input-title-text"
                                                     >
-                                                      <path
-                                                        d="m6 6 20 20"
-                                                      ></path>
-                                                      <path
-                                                        d="m26 6-20 20"
-                                                      ></path>
-                                                    </svg>
-                                                  </span>
-                                                </button>
+                                                      Item
+                                                    </div>
+                                                  </div>
+                                                  <div dir="ltr">
+                                                    <div
+                                                      class="spinner-chart__input-currency"
+                                                    >
+                                                      <input
+                                                        data-testid="packing-item-5"
+                                                        class="form__input"
+                                                        id="packing-item-5"
+                                                        autocomplete="off"
+                                                        type="text"
+                                                        aria-describedby=""
+                                                        value="1 cup water"
+                                                      />
+                                                    </div>
+                                                  </div>
+                                                </label>
+                                                <div class="_129y4gf">
+                                                  <button
+                                                    data-testid="delete-input-button"
+                                                    aria-label="Delete"
+                                                    type="button"
+                                                    class="btn-close"
+                                                  >
+                                                    <span class="relative">
+                                                      <svg
+                                                        viewBox="0 0 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        aria-hidden="true"
+                                                        role="presentation"
+                                                        focusable="false"
+                                                        style="
+                                                          display: block;
+                                                          fill: none;
+                                                          height: 16px;
+                                                          width: 16px;
+                                                          stroke: currentcolor;
+                                                          stroke-width: 4;
+                                                          overflow: visible;
+                                                        "
+                                                      >
+                                                        <path
+                                                          d="m6 6 20 20"
+                                                        ></path>
+                                                        <path
+                                                          d="m26 6-20 20"
+                                                        ></path>
+                                                      </svg>
+                                                    </span>
+                                                  </button>
+                                                </div>
                                               </div>
                                             </div>
                                           </div>
@@ -1533,5 +1539,35 @@
     <div id="authModals"></div>
 
     <div dir="ltr"><div class="_56lpy0"></div></div>
+    <div class="hidden input-el">
+      <div class="_1d5136v">
+        <div class="_1jj61m9">
+         <label class="_1yw7hpv" for="packing-item-6">
+          <div class="_1m2ich98"><div class="_11hx67x">Item</div></div>
+          <div dir="ltr">
+           <div class="_fywymp7"><input data-testid="packing-item-6" class="_yrzsibu" id="packing-item-6" autocomplete="off" type="text" aria-describedby="" value="dsada" /></div>
+          </div>
+         </label>
+         <div class="_129y4gf">
+          <button data-testid="delete-input-button" aria-label="Delete dsada" type="button" class="btn-close">
+           <span class="_e296pg">
+            <svg
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true"
+             role="presentation"
+             focusable="false"
+             style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"
+            >
+             <path d="m6 6 20 20"></path>
+             <path d="m26 6-20 20"></path>
+            </svg>
+           </span>
+          </button>
+         </div>
+        </div>
+       </div>
+    </div>
   </body>
+  <script src="../assets/js/pages/manage-listing.js"></script>
 </html>
