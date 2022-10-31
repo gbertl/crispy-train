@@ -6,6 +6,7 @@
     <title>1st Wishlist · Wishlists - Airbnb</title>
     <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="../assets/css/pages.css" />
+    <link rel="stylesheet" href="../assets/css/wishlist.css" />
   </head>
   <body class="with-new-header">
     <div id="site-skip-links">
@@ -265,7 +266,7 @@
                                       </span>
                                     </button>
                                     <div class="_h9dw5i">
-                                      <button aria-label="Share" data-testid="list-details-marquee__share-button" type="button" class="btn-close">
+                                      <button aria-label="Share" data-testid="list-details-marquee__share-button" type="button" class="btn-share-md"  data-modal="#lightbox-modal" data-lightbox="#lightbox-share" >
                                         <span class="relative">
                                           <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
                                             <g fill="none">
@@ -281,7 +282,7 @@
                                       </button>
                                       <span class="main-content__news-header-pagination">
                                       </span>
-                                      <button aria-label="Settings" data-testid="list-details-marquee__button-to-open-settings" type="button" class="btn-save">
+                                      <button aria-label="Settings" data-testid="list-details-marquee__button-to-open-settings" type="button" class="btn-save" data-modal="#lightbox-modal" data-lightbox="#lightbox-settings">
                                         <span class="relative">
                                           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 18px; width: 18px; fill: currentcolor;">
                                             <path d="M3 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm5 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm5 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z">
@@ -1764,7 +1765,9 @@
                                       aria-label="Share"
                                       data-testid="list-details-marquee__share-button"
                                       type="button"
-                                      class="btn-close"
+                                      
+                                      data-modal="#lightbox-modal" data-lightbox="#lightbox-share"
+                                      class="btn-share-desktop"
                                     >
                                       <span class="relative"
                                         ><svg
@@ -6572,10 +6575,897 @@
             <div aria-live="polite" aria-atomic="true"></div>
             <div aria-live="assertive" aria-atomic="true"></div>
           </div>
+          
+          <!-- Share -->
+          <div dir="ltr" id="lightbox-modal modal-one" class="hidden" >
+            <div class="_1t0jy5tw"></div>
+            <section  id="lightbox-share">
+              <div class="_vxvq8x" data-testid="modal-container">
+                <div class="_z4lmgp">
+                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                  <div class="_z4lmgp">
+                    <div role="dialog" aria-label="How do you want to share?" aria-modal="true" class="_1ucy1zjv"
+                      style="position: relative;">
+                      <div class="_pa35zs"><button aria-label="Close" type="button" class="_oda838"><span class="_e296pg"><svg
+                              viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                              focusable="false"
+                              style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                              <path d="m6 6 20 20"></path>
+                              <path d="m26 6-20 20"></path>
+                            </svg></span></button></div>
+                      <header class="_1youxq0">
+                        <div class="_1tng6ym"></div>
+                        <div class="_9t7ktw">
+                          <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                            <div class="_1q9sh65">How do you want to share?</div>
+                          </h1>
+                        </div>
+                        <div class="_rrmdgl"></div>
+                      </header>
+                      <div class="_12kfhdn">
+                        <div class="_1qfon39">
+                          <div class="_1gglzn7"><button data-testid="choose-share-method-modal__send-link-button" type="button"
+                              class="_o7xaku5">
+                              <div class="_sggpze">
+                                <div class="_1eaes69"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true" role="presentation" focusable="false"
+                                    style="display: block; height: 32px; width: 32px; fill: currentcolor;">
+                                    <path
+                                      d="M21.768 5.354l9.293 9.292.116.128a2 2 0 0 1 0 2.574l-.116.127-9.293 9.293-1.414-1.414 9.292-9.293-9.292-9.293zm-11.536 0l1.414 1.414-9.292 9.293 9.292 9.293-1.414 1.414L.94 17.475a2 2 0 0 1-.116-2.701l.116-.128zM16 14.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm-12 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z">
+                                    </path>
+                                  </svg></div>
+                                <div class="_3qymq">
+                                  <div class="_652db9">Send a link</div>
+                                  <div class="_10rf6ea">Anyone with the link can view</div>
+                                </div>
+                              </div>
+                            </button></div>
+                          <div><button data-testid="choose-share-method-modal__invite-others-button" type="button"
+                              class="_o7xaku5">
+                              <div class="_sggpze">
+                                <div class="_1eaes69"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                                    aria-hidden="true" role="presentation" focusable="false"
+                                    style="display: block; height: 32px; width: 32px; fill: currentcolor;">
+                                    <path
+                                      d="M32,25H30a8.007,8.007,0,0,0-7-7.93054V14.81573a3.00011,3.00011,0,1,0-2-.00006v2.25379a7.958,7.958,0,0,0-3.50024,1.33246A9.95129,9.95129,0,0,1,20,25H18a7.95162,7.95162,0,0,0-2-5.27905,8.057,8.057,0,0,0-1.49969-1.319A7.958,7.958,0,0,0,11,17.06946V14.81573a3.00011,3.00011,0,1,0-2-.00006v2.25379A8.007,8.007,0,0,0,2,25H0a10.01615,10.01615,0,0,1,6.54834-9.38574,5,5,0,1,1,6.90332,0A9.98322,9.98322,0,0,1,16,17.00879a9.98325,9.98325,0,0,1,2.54785-1.39453,5,5,0,1,1,6.9043,0A10.01571,10.01571,0,0,1,32,25Z">
+                                    </path>
+                                  </svg></div>
+                                <div class="_3qymq">
+                                  <div class="_652db9">Invite others</div>
+                                  <div class="_10rf6ea">People you invite can add and edit</div>
+                                </div>
+                              </div>
+                            </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+              </div>
+            </section>
+            <div class="_b21f4g">
+              <div aria-live="polite" aria-atomic="true"></div>
+              <div aria-live="assertive" aria-atomic="true"></div>
+            </div>
+          </div>
+
+          <!-- Setting -->
+          <div dir="ltr" id="lightbox-modal" class="hidden">
+            <div class="_ybk1kl0"></div>
+            <section  id="lightbox-settings" visibility="hidden">
+              <div class="_g2ext" data-testid="modal-container">
+                <div class="_z4lmgp">
+                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                  <div class="_z4lmgp">
+                    <div role="dialog" aria-label="Settings" aria-modal="true" class="_ewwxwe" style="position: relative;">
+                      <div class="_1wv4knt"><button aria-label="Close" type="button" class="_oda838"><span class="_e296pg"><svg
+                              viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
+                              focusable="false"
+                              style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                              <path d="m6 6 20 20"></path>
+                              <path d="m26 6-20 20"></path>
+                            </svg></span></button></div>
+                      <header class="_1c8aprq">
+                        <div class="_1tng6ym"></div>
+                        <div class="_9t7ktw">
+                          <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
+                            <div class="_1q9sh65">
+                              <div tabindex="-1">Settings</div>
+                            </div>
+                          </h1>
+                        </div>
+                        <div class="_rrmdgl"><button type="button" class="_za4ekfm">Delete</button></div>
+                      </header>
+                      <div class="_12kfhdn">
+                        <div class="_1fxvefn">
+                          <div>
+                            <div class="_1jj61m9"><label class="_1yw7hpv" for="wishlists.ListSettings.wishlist_name">
+                                <div class="_1m2ich98">
+                                  <div class="_11hx67x">Wishlist name</div>
+                                </div>
+                                <div dir="ltr">
+                                  <div class="_fywymp7"><input name="wishlists.ListSettings.wishlist_name"
+                                      data-testid="list-settings-modal_name-input" maxlength="50" class="_yrzsibu"
+                                      id="wishlists.ListSettings.wishlist_name" autocomplete="off" type="text"
+                                      aria-describedby="wishlists.ListSettings.wishlist_name-InputField-help" value="Teas"></div>
+                                </div>
+                              </label></div>
+                            <div class="_klarpw">
+                              <div class="_pxnjg" id="wishlists.ListSettings.wishlist_name-InputField-help"
+                                data-testid="wishlists.ListSettings.wishlist_name-InputField-help">50 characters maximum</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="_zgc1p6">
+                        <div class="_1u5lyjm"><button type="button" class="_za4ekfm">Cancel</button><button
+                            data-testid="list-settings-modal_save-button" type="button" class="_1ku51f04">Save</button></div>
+                      </footer>
+                    </div>
+                  </div>
+                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+              </div>
+            </section>
+            <div class="_b21f4g">
+              <div aria-live="polite" aria-atomic="true"></div>
+              <div aria-live="assertive" aria-atomic="true"></div>
+            </div>
+          </div>
+
+          <!-- Inline Calendar -->
+          <div dir="ltr" id="lightbox-modal" class="hidden">
+            <div class="_ybk1kl0"></div>
+            <section>
+              <div class="_g2ext" data-testid="modal-container">
+                <div class="_z4lmgp">
+                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                  <div class="_z4lmgp">
+                    <div role="dialog" aria-label="Dates" aria-modal="true" class="_ewwxwe"
+                      style="position: absolute; top: 244px; left: 24px; transform-origin: left top;">
+                      <div class="_12to336">
+                        <div class="_36rlri">
+                          <div class="_g2s11rv" style="width: 382px;">
+                            <div>
+                              <div style="width: 381px;">
+                                <div class="_1x76l5m3" aria-hidden="true" role="presentation">
+                                  <div class="_2cafln" style="left: 0px; padding: 0px 13px;">
+                                    <ul class="_xv14sf">
+                                      <li class="_92xroi" style="width: 48px;">Su</li>
+                                      <li class="_92xroi" style="width: 48px;">Mo</li>
+                                      <li class="_92xroi" style="width: 48px;">Tu</li>
+                                      <li class="_92xroi" style="width: 48px;">We</li>
+                                      <li class="_92xroi" style="width: 48px;">Th</li>
+                                      <li class="_92xroi" style="width: 48px;">Fr</li>
+                                      <li class="_92xroi" style="width: 48px;">Sa</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="_14676s3" tabindex="-1" role="application" aria-label="Calendar">
+                                  <div class="_5neba7a">
+                                    <div class="_1d1qzab"><button aria-disabled="false"
+                                        aria-label="Move backward to switch to the previous month." type="button"
+                                        class="_oda838"><span class="_e296pg"><svg viewBox="0 0 18 18" role="presentation"
+                                            aria-hidden="true" focusable="false"
+                                            style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                            <path
+                                              d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z"
+                                              fill-rule="evenodd"></path>
+                                          </svg></span></button></div>
+                                    <div class="_qz9x4fc"><button aria-disabled="false"
+                                        aria-label="Move forward to switch to the next month." type="button" class="_oda838"><span
+                                          class="_e296pg"><svg viewBox="0 0 18 18" role="presentation" aria-hidden="true"
+                                            focusable="false"
+                                            style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                            <path
+                                              d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z"
+                                              fill-rule="evenodd"></path>
+                                          </svg></span></button></div>
+                                  </div>
+                                  <div class="_1foj6yps" style="width: 381px; height: 350px;">
+                                    <div class="_2hyui6e" style="transform: translateX(0px); width: 1089px;">
+                                      <div class="_fdp53bg">
+                                        <div class="_ytfarf" data-visible="false" style="padding: 0px 13px;">
+                                          <div class="_ihvjx2">
+                                            <section>
+                                              <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">October 2022</h2>
+                                            </section>
+                                          </div>
+                                          <table class="_cvkwaj" role="presentation" style="border-spacing: 0px 2px;">
+                                            <tbody>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="_1y5o1573" role="button" aria-disabled="true"
+                                                  aria-label="1, Saturday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1rqff24 notranslate" data-testid="calendar-day-10/01/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">1</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_1k32kw4z" role="button" aria-disabled="true"
+                                                  aria-label="2, Sunday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/02/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">2</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="3, Monday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/03/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">3</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="4, Tuesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/04/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">4</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="5, Wednesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/05/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">5</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="6, Thursday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/06/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">6</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="7, Friday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/07/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">7</div>
+                                                </td>
+                                                <td class="_874f7s1" role="button" aria-disabled="true"
+                                                  aria-label="8, Saturday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/08/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">8</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_1k32kw4z" role="button" aria-disabled="true"
+                                                  aria-label="9, Sunday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/09/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">9</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="10, Monday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/10/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">10</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="11, Tuesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/11/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">11</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="12, Wednesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/12/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">12</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="13, Thursday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/13/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">13</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="14, Friday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/14/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">14</div>
+                                                </td>
+                                                <td class="_874f7s1" role="button" aria-disabled="true"
+                                                  aria-label="15, Saturday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/15/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">15</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_1k32kw4z" role="button" aria-disabled="true"
+                                                  aria-label="16, Sunday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/16/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">16</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="17, Monday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/17/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">17</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="18, Tuesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/18/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">18</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="19, Wednesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/19/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">19</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="20, Thursday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/20/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">20</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="21, Friday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/21/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">21</div>
+                                                </td>
+                                                <td class="_874f7s1" role="button" aria-disabled="true"
+                                                  aria-label="22, Saturday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/22/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">22</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_1k32kw4z" role="button" aria-disabled="true"
+                                                  aria-label="23, Sunday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/23/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">23</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="24, Monday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/24/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">24</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="25, Tuesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/25/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">25</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="26, Wednesday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/26/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">26</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="27, Thursday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/27/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">27</div>
+                                                </td>
+                                                <td class="_1sgf68tj" role="button" aria-disabled="true"
+                                                  aria-label="28, Friday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_t3cq320 notranslate" data-testid="calendar-day-10/28/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">28</div>
+                                                </td>
+                                                <td class="_874f7s1" role="button" aria-disabled="true"
+                                                  aria-label="29, Saturday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/29/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">29</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_1k32kw4z" role="button" aria-disabled="true"
+                                                  aria-label="30, Sunday, October 2022. Past dates can’t be selected. "
+                                                  tabindex="-1">
+                                                  <div class="_1ct0t2 notranslate" data-testid="calendar-day-10/30/2022"
+                                                    data-is-day-blocked="true" style="width: 46px; height: 46px;">30</div>
+                                                </td>
+                                                <td class="_3etjwuh" role="button" aria-disabled="false"
+                                                  aria-label="31, Monday, October 2022, Today. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_5up9lg0 notranslate" data-testid="calendar-day-10/31/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">31</div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                      <div class="_1lds9wb">
+                                        <div class="_ytfarf" data-visible="true" style="padding: 0px 13px;">
+                                          <div class="_ihvjx2">
+                                            <section>
+                                              <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">November 2022</h2>
+                                            </section>
+                                          </div>
+                                          <table class="_cvkwaj" role="presentation" style="border-spacing: 0px 2px;">
+                                            <tbody>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="_61wmwdf" role="button" aria-disabled="false"
+                                                  aria-label="1, Tuesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/01/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">1</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="2, Wednesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/02/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">2</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="3, Thursday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/03/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">3</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="4, Friday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/04/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">4</div>
+                                                </td>
+                                                <td class="_1thnfbs8" role="button" aria-disabled="false"
+                                                  aria-label="5, Saturday, November 2022. Selected start date. " tabindex="0">
+                                                  <div class="_1nmnz1zg notranslate" data-testid="calendar-day-11/05/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">5</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_7179yqh" aria-describedby="20221106" role="button"
+                                                  aria-disabled="false"
+                                                  aria-label="6, Sunday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_119nin5s notranslate" data-testid="calendar-day-11/06/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">6</div><span
+                                                    class="a8jt5op dir dir-ltr" id="20221106">Part of selected date range.</span>
+                                                </td>
+                                                <td class="_1ifwywb1" aria-describedby="20221107" role="button"
+                                                  aria-disabled="false"
+                                                  aria-label="7, Monday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_gkknk2q notranslate" data-testid="calendar-day-11/07/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">7</div><span
+                                                    class="a8jt5op dir dir-ltr" id="20221107">Part of selected date range.</span>
+                                                </td>
+                                                <td class="_1ifwywb1" aria-describedby="20221108" role="button"
+                                                  aria-disabled="false"
+                                                  aria-label="8, Tuesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_gkknk2q notranslate" data-testid="calendar-day-11/08/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">8</div><span
+                                                    class="a8jt5op dir dir-ltr" id="20221108">Part of selected date range.</span>
+                                                </td>
+                                                <td class="_1esiloo3" aria-describedby="20221109" role="button"
+                                                  aria-disabled="false"
+                                                  aria-label="9, Wednesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gosri9s notranslate" data-testid="calendar-day-11/09/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">9</div><span
+                                                    class="a8jt5op dir dir-ltr" id="20221109">Part of selected date range.</span>
+                                                </td>
+                                                <td class="_1ba08hns" role="button" aria-disabled="false"
+                                                  aria-label="10, Thursday, November 2022. Selected end date. " tabindex="-1">
+                                                  <div class="_1nf2vyse notranslate" data-testid="calendar-day-11/10/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">10</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="11, Friday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/11/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">11</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="12, Saturday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/12/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">12</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="13, Sunday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/13/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">13</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="14, Monday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/14/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">14</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="15, Tuesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/15/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">15</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="16, Wednesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/16/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">16</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="17, Thursday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/17/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">17</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="18, Friday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/18/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">18</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="19, Saturday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/19/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">19</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="20, Sunday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/20/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">20</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="21, Monday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/21/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">21</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="22, Tuesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/22/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">22</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="23, Wednesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/23/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">23</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="24, Thursday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/24/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">24</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="25, Friday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/25/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">25</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="26, Saturday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/26/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">26</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="27, Sunday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/27/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">27</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="28, Monday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/28/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">28</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="29, Tuesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-11/29/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">29</div>
+                                                </td>
+                                                <td class="_61wmwdf" role="button" aria-disabled="false"
+                                                  aria-label="30, Wednesday, November 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-11/30/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">30</div>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                      <div class="_kuxo8ai">
+                                        <div class="_ytfarf" data-visible="false" style="padding: 0px 13px;">
+                                          <div class="_ihvjx2">
+                                            <section>
+                                              <h2 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">December 2022</h2>
+                                            </section>
+                                          </div>
+                                          <table class="_cvkwaj" role="presentation" style="border-spacing: 0px 2px;">
+                                            <tbody>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="_61wmwdf" role="button" aria-disabled="false"
+                                                  aria-label="1, Thursday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/01/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">1</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="2, Friday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/02/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">2</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="3, Saturday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/03/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">3</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="4, Sunday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/04/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">4</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="5, Monday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/05/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">5</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="6, Tuesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/06/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">6</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="7, Wednesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/07/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">7</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="8, Thursday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/08/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">8</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="9, Friday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/09/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">9</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="10, Saturday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/10/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">10</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="11, Sunday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/11/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">11</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="12, Monday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/12/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">12</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="13, Tuesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/13/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">13</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="14, Wednesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/14/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">14</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="15, Thursday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/15/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">15</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="16, Friday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/16/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">16</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="17, Saturday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/17/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">17</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="18, Sunday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/18/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">18</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="19, Monday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/19/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">19</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="20, Tuesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/20/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">20</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="21, Wednesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/21/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">21</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="22, Thursday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/22/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">22</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="23, Friday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/23/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">23</div>
+                                                </td>
+                                                <td class="_uab5izv" role="button" aria-disabled="false"
+                                                  aria-label="24, Saturday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/24/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">24</div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="_12glnvbt" role="button" aria-disabled="false"
+                                                  aria-label="25, Sunday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_1gazwvry notranslate" data-testid="calendar-day-12/25/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">25</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="26, Monday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/26/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">26</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="27, Tuesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/27/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">27</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="28, Wednesday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/28/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">28</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="29, Thursday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/29/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">29</div>
+                                                </td>
+                                                <td class="_xzo51qd" role="button" aria-disabled="false"
+                                                  aria-label="30, Friday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_6gi1qsw notranslate" data-testid="calendar-day-12/30/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">30</div>
+                                                </td>
+                                                <td class="_1u4xo8x" role="button" aria-disabled="false"
+                                                  aria-label="31, Saturday, December 2022. Available. Select as start date. "
+                                                  tabindex="-1">
+                                                  <div class="_5up9lg0 notranslate" data-testid="calendar-day-12/31/2022"
+                                                    data-is-day-blocked="false" style="width: 46px; height: 46px;">31</div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="_1ns0ggc">
+                          <div class="_2f11rw">
+                            <div class="_17er5s9">
+                              <div class="_udzbwj">
+                                <div id="flexible-dates-checkbox-flexible-dates-checkbox-wishlist" aria-disabled="false"
+                                  role="group"
+                                  aria-labelledby="flexible-dates-checkbox-flexible-dates-checkbox-wishlist-row-title"
+                                  class="rcem0st dir dir-ltr"><label
+                                    for="flexible-dates-checkbox-flexible-dates-checkbox-wishlist-row-checkbox" class="_13xlah4">
+                                    <div class="_jro6t0">
+                                      <div class="_7ytxmo"><span class="_10ndlvp"><input
+                                            name="flexible-dates-checkbox-flexible-dates-checkbox-wishlist"
+                                            id="flexible-dates-checkbox-flexible-dates-checkbox-wishlist-row-checkbox"
+                                            class="_1yf4i4f" type="checkbox"><span class="_41yoza"
+                                            data-checkbox="true"></span></span></div>
+                                      <div class="_gfomxi">
+                                        <div id="flexible-dates-checkbox-flexible-dates-checkbox-wishlist-row-title"
+                                          class="_gw4xx4">My dates are flexible</div>
+                                      </div>
+                                    </div>
+                                  </label></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="_zgc1p6"><button type="button" class="_za4ekfm">Clear</button><button type="button"
+                          class="_1ku51f04">Save</button></footer>
+                    </div>
+                  </div>
+                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                </div>
+              </div>
+            </section>
+            <div class="_b21f4g">
+              <div aria-live="polite" aria-atomic="true"></div>
+              <div aria-live="assertive" aria-atomic="true"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </body>
 </html>
 
+<script src="../assets/js/components.js"></script>
 <script src="../assets/js/pages/wishlist.js"></script>
+
