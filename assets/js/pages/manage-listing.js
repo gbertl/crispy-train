@@ -498,3 +498,33 @@ if(document.querySelector('#open-modal-animals') != null){
         document.querySelector('.animals-backdrop').classList.remove('hidden')
     });
 }
+
+function switchToogleBtn(callbackActive, callbackInactive) {
+    console.log('init');
+    if(document.querySelectorAll('.switch-toogle-btn') != null){
+        const trigger = document.querySelectorAll('.switch-toogle-btn');
+        trigger.forEach(element => {
+            element.addEventListener('click', () => {
+                if(element.classList.contains('switch-toogle-inactive')){
+                    element.classList.remove('switch-toogle-inactive')
+                    element.classList.add('switch-toogle-active')
+                    element.children[0].classList.remove('form__switch-toggle')
+                    element.children[0].classList.add('form__switch-toggle-checked')
+                    element.children[0].children[0].classList.remove('hidden')
+                    if(callbackActive){
+                        callbackActive()
+                    }
+                }else{
+                    element.classList.remove('switch-toogle-active')
+                    element.classList.add('switch-toogle-inactive')
+                    element.children[0].classList.remove('form__switch-toggle-checked')
+                    element.children[0].classList.add('form__switch-toggle')
+                    element.children[0].children[0].classList.add('hidden')
+                    if(callbackInactive){
+                        callbackInactive()
+                    }
+                }
+            });
+        });
+    }
+}
