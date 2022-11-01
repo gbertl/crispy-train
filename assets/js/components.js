@@ -285,8 +285,6 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
       buttonClose.forEach((e) => {
         e.addEventListener('click', (e) => {
-          event.preventDefault();
-
           closeModal();
         });
       });
@@ -426,6 +424,46 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
         && searchMenuContainer?.classList.remove('hidden')
 
       searchMenuResult?.classList.add('hidden')
+    })
+  })
+
+  // data-gallery
+  document.querySelectorAll('[data-gallery]').forEach((e) => {
+    const scrollSection = e.querySelector('ul')
+    const scrollSectionList = scrollSection.querySelectorAll('li')
+    const scrollCounter = e.querySelector('[data-gallery-counter]')
+
+    if (scrollSectionList && scrollCounter) {
+      scrollCounter.children[0].innerHTML = `Showing photo 1 of ${scrollSectionList.length}`
+      scrollCounter.children[1].innerHTML = `1 / ${scrollSectionList.length}`
+    }
+
+    let currentScrolledValue = 0
+    scrollSection?.addEventListener('scroll', (e) => {
+      if (e.target.scrollLeft % e.target.offsetWidth === 0) {
+        if (e.target.scrollLeft !== currentScrolledValue) {
+          let currentItem = scrollSection.querySelector('li[aria-hidden="false"]')
+          currentItem.ariaHidden = true
+
+          let currentItemIndex;
+
+          // previous item
+          if (e.target.scrollLeft < currentScrolledValue) {
+            currentItem.previousElementSibling.ariaHidden = false
+            currentItemIndex = [...scrollSectionList].indexOf(currentItem.previousElementSibling)
+          }
+
+          // next item
+          if (e.target.scrollLeft > currentScrolledValue) {
+            currentItem.nextElementSibling.ariaHidden = false
+            currentItemIndex = [...scrollSectionList].indexOf(currentItem.nextElementSibling)
+          }
+
+          scrollCounter.children[0].innerHTML = `Showing photo ${(currentItemIndex + 1)} of ${scrollSectionList.length}`
+          scrollCounter.children[1].innerHTML = `${(currentItemIndex + 1)} / ${scrollSectionList.length}`
+        }
+        currentScrolledValue = e.target.scrollLeft
+      }
     })
   })
 })();
