@@ -1219,13 +1219,26 @@
                                         aria-describedby="partner-switch-row-subtitle"
                                         role="switch"
                                         type="button"
-                                        class="_17z7clia"
+                                        class="switch-toogle-inactive switch-toogle-btn"
                                       >
-                                        <div class="form__switch-toggle"></div>
+                                        <div class="form__switch-toggle">
+                                          <svg class="hidden" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 12px; width: 12px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg>
+                                        </div>
                                       </button>
                                     </div>
                                   </div>
                                 </div>
+                                <div>
+                                  <div class="_1jj61m9 hidden partner-confirmation-code">
+                                   <label class="_1yw7hpv" for="partner-code">
+                                    <div class="_1jn0ze9"><div class="_11hx67x">Partner confirmation code</div></div>
+                                    <div dir="ltr">
+                                     <div class="_js9i23"><input class="_c5rhl5" id="partner-code" autocomplete="off" type="text" aria-describedby="partner-code-InputField-help" value="" /></div>
+                                    </div>
+                                   </label>
+                                  </div>
+                                  <div class="_klarpw"></div>
+                                 </div>
                               </fieldset>
                             </div>
                           </div>
@@ -2545,5 +2558,22 @@
     ></script>
   </body>
   <script src="../assets/js/pages/manage-listing.js"></script>
+  <script>
+    const active = function callbackActive() {
+      console.log('dasdas');
+      const field = document.querySelector('.partner-confirmation-code');
+      field.classList.remove('hidden')
+    }
+
+    const inactive = function callbackInactive() {
+      const field = document.querySelector('.partner-confirmation-code');
+      field.classList.add('hidden')
+    }
+
+    switchToogleBtn(
+      active,
+      inactive,
+    )
+  </script>
 </html>
 
