@@ -20,7 +20,6 @@ if(document.querySelector('.site-content__page-container') != null){
     const sidebar = document.querySelector('.app-theme__wrapper');
     const body = document.querySelector('.site-content__page-wrapper');
     trigger.addEventListener('click', (e) => {
-        
         if(e.target.id !== 'side-nav-toggle' || e.target.id !== 'side-nav-toggle-span' || e.target.id !== 'side-nav-toggle-svg' || e.target.id !== 'side-nav-toggle-path'){
             if(sidebar.classList.contains('show') && body.classList.contains('show')){
                 sidebar.classList.remove('show');
@@ -122,7 +121,6 @@ if(document.querySelector('#close-modal-caption') != null){
     const close = document.querySelector('#close-modal-caption');
     const modal = document.querySelector('.modal-caption');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_1nvgts7s', '_dsadsad')
         setTimeout(() => {
             document.querySelector('._vxvq8x').classList.add('hidden') 
@@ -165,7 +163,6 @@ if(document.querySelector('#close-modal-add-photo') != null){
     const close = document.querySelector('#close-modal-add-photo');
     const modal = document.querySelector('.modal-add-photo');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_244p2lw', '_dsadsad')
         document.querySelector('.modal-container-add-photo').classList.add('hidden') 
         document.querySelector('.add-photo-backdrop').classList.add('hidden')
@@ -176,7 +173,6 @@ if(document.querySelector('#open-modal-add-photo') != null){
     const close = document.querySelector('#open-modal-add-photo');
     const modal = document.querySelector('.modal-add-photo');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_244p2lw')
         document.querySelector('.modal-container-add-photo').classList.remove('hidden') 
         document.querySelector('.add-photo-backdrop').classList.remove('hidden')
@@ -199,7 +195,6 @@ if(document.querySelector('#close-modal-manage') != null){
     const close = document.querySelector('#close-modal-manage');
     const modal = document.querySelector('.modal-manage');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_244p2lw', '_dsadsad')
         document.querySelector('.modal-container-manage').classList.add('hidden') 
         document.querySelector('.manage-backdrop').classList.add('hidden')
@@ -210,7 +205,6 @@ if(document.querySelector('#open-modal-manage') != null){
     const close = document.querySelector('#open-modal-manage');
     const modal = document.querySelector('.modal-manage');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_244p2lw')
         document.querySelector('.modal-container-manage').classList.remove('hidden') 
         document.querySelector('.manage-backdrop').classList.remove('hidden')
@@ -233,7 +227,6 @@ if(document.querySelector('#close-modal-example') != null){
     const close = document.querySelector('#close-modal-example');
     const modal = document.querySelector('.modal-example');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_1ucy1zjv', '_mvip18q')
         document.querySelector('.modal-container-example').classList.add('hidden') 
         document.querySelector('.example-backdrop').classList.add('hidden')
@@ -244,7 +237,6 @@ if(document.querySelector('#open-modal-example') != null){
     const close = document.querySelector('#open-modal-example');
     const modal = document.querySelector('.modal-example');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-example').classList.remove('hidden') 
         document.querySelector('.example-backdrop').classList.remove('hidden')
@@ -255,7 +247,6 @@ if(document.querySelector('#open-modal-example-m') != null){
     const close = document.querySelector('#open-modal-example-m');
     const modal = document.querySelector('.modal-example');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-example').classList.remove('hidden') 
         document.querySelector('.example-backdrop').classList.remove('hidden')
@@ -278,7 +269,6 @@ if(document.querySelector('#close-modal-options') != null){
     const close = document.querySelector('#close-modal-options');
     const modal = document.querySelector('.modal-options');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_1ucy1zjv', '_mvip18q')
         document.querySelector('.modal-container-options').classList.add('hidden') 
         document.querySelector('.options-backdrop').classList.add('hidden')
@@ -289,7 +279,6 @@ if(document.querySelector('#open-modal-options') != null){
     const close = document.querySelector('#open-modal-options');
     const modal = document.querySelector('.modal-options');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-options').classList.remove('hidden') 
         document.querySelector('.options-backdrop').classList.remove('hidden')
@@ -300,7 +289,6 @@ if(document.querySelector('#open-modal-options-m') != null){
     const close = document.querySelector('#open-modal-options');
     const modal = document.querySelector('.modal-options');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-options').classList.remove('hidden') 
         document.querySelector('.options-backdrop').classList.remove('hidden')
@@ -323,7 +311,6 @@ if(document.querySelector('#close-modal-examples') != null){
     const close = document.querySelector('#close-modal-examples');
     const modal = document.querySelector('.modal-examples');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_1ucy1zjv', '_mvip18q')
         document.querySelector('.modal-container-examples').classList.add('hidden') 
         document.querySelector('.examples-backdrop').classList.add('hidden')
@@ -334,7 +321,6 @@ if(document.querySelector('#open-modal-examples') != null){
     const close = document.querySelector('#open-modal-examples');
     const modal = document.querySelector('.modal-examples');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-examples').classList.remove('hidden') 
         document.querySelector('.examples-backdrop').classList.remove('hidden')
@@ -345,9 +331,200 @@ if(document.querySelector('#open-modal-examples-m') != null){
     const close = document.querySelector('#open-modal-examples');
     const modal = document.querySelector('.modal-examples');
     close.addEventListener('click', () => {
-        console.log(modal);
         modal.classList.replace('_dsadsad', '_mvip18q')
         document.querySelector('.modal-container-examples').classList.remove('hidden') 
-        document.querySelector('.options-backdrop').classList.remove('hidden')
+        document.querySelector('.examples-backdrop').classList.remove('hidden')
     });
+}
+
+function switchToogleBtn(callbackActive, callbackInactive) {
+    console.log('init');
+    if(document.querySelectorAll('.switch-toogle-btn') != null){
+        const trigger = document.querySelectorAll('.switch-toogle-btn');
+        trigger.forEach(element => {
+            element.addEventListener('click', () => {
+                if(element.classList.contains('switch-toogle-inactive')){
+                    element.classList.remove('switch-toogle-inactive')
+                    element.classList.add('switch-toogle-active')
+                    element.children[0].classList.remove('form__switch-toggle')
+                    element.children[0].classList.add('form__switch-toggle-checked')
+                    element.children[0].children[0].classList.remove('hidden')
+                    if(callbackActive){
+                        callbackActive()
+                    }
+                }else{
+                    element.classList.remove('switch-toogle-active')
+                    element.classList.add('switch-toogle-inactive')
+                    element.children[0].classList.remove('form__switch-toggle-checked')
+                    element.children[0].classList.add('form__switch-toggle')
+                    element.children[0].children[0].classList.add('hidden')
+                    if(callbackInactive){
+                        callbackInactive()
+                    }
+                }
+            });
+        });
+    }
+}
+
+
+if(document.querySelector('#add-group-rate') != null){
+    const trigger = document.querySelector('#add-group-rate');
+    const fields = document.querySelector('.group-input-fields');
+    const labels = document.querySelector('.group-labels');
+    const hr = document.querySelector('.group-hr');    
+    const add = document.querySelector('.group-add-btn');    
+    const banner = document.querySelector('.group-banner-btn');    
+    
+    trigger.addEventListener('click', () => {
+        fields.classList.remove('hidden') 
+        labels.classList.remove('hidden') 
+        hr.classList.remove('hidden') 
+        add.classList.add('hidden') 
+        banner.classList.add('hidden') 
+    });
+}
+
+if(document.querySelector('.remove-group-rate') != null){
+    const trigger = document.querySelector('.remove-group-rate');
+    const fields = document.querySelector('.group-input-fields');
+    const labels = document.querySelector('.group-labels');
+    const hr = document.querySelector('.group-hr');    
+    const add = document.querySelector('.group-add-btn');    
+    const banner = document.querySelector('.group-banner-btn');    
+    
+    trigger.addEventListener('click', () => {
+        console.log('dsad');
+        fields.classList.add('hidden') 
+        labels.classList.add('hidden') 
+        hr.classList.add('hidden') 
+        add.classList.remove('hidden') 
+        banner.classList.remove('hidden') 
+    });
+}
+
+if(document.querySelector('.modal-container-laws') != null){
+    const close = document.querySelector('.modal-container-laws');
+    const modal = document.querySelector('.modal-laws');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-laws')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-laws').classList.add('hidden') 
+        document.querySelector('.laws-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-laws') != null){
+    const close = document.querySelector('#close-modal-laws');
+    const modal = document.querySelector('.modal-laws');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-laws').classList.add('hidden') 
+        document.querySelector('.laws-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-laws') != null){
+    const close = document.querySelector('#open-modal-laws');
+    const modal = document.querySelector('.modal-laws');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mvip18q', '_1ucy1zjv')
+        document.querySelector('.modal-container-laws').classList.remove('hidden') 
+        document.querySelector('.laws-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('.modal-container-tour') != null){
+    const close = document.querySelector('.modal-container-tour');
+    const modal = document.querySelector('.modal-tour');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-tour')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-tour').classList.add('hidden') 
+        document.querySelector('.tour-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-tour') != null){
+    const close = document.querySelector('#close-modal-tour');
+    const modal = document.querySelector('.modal-tour');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-tour').classList.add('hidden') 
+        document.querySelector('.tour-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-tour') != null){
+    const close = document.querySelector('#open-modal-tour');
+    const modal = document.querySelector('.modal-tour');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mvip18q', '_1ucy1zjv')
+        document.querySelector('.modal-container-tour').classList.remove('hidden') 
+        document.querySelector('.tour-backdrop').classList.remove('hidden')
+    });
+}
+
+if(document.querySelector('.modal-container-animals') != null){
+    const close = document.querySelector('.modal-container-animals');
+    const modal = document.querySelector('.modal-animals');
+    close.addEventListener('click', (e) => {
+        if(e.target.classList.contains('modal-container-animals')){
+            modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-animals').classList.add('hidden') 
+        document.querySelector('.animals-backdrop').classList.add('hidden')
+        }
+    });
+}
+
+if(document.querySelector('#close-modal-animals') != null){
+    const close = document.querySelector('#close-modal-animals');
+    const modal = document.querySelector('.modal-animals');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_1ucy1zjv', '_mvip18q')
+        document.querySelector('.modal-container-animals').classList.add('hidden') 
+        document.querySelector('.animals-backdrop').classList.add('hidden')
+    });
+}
+
+if(document.querySelector('#open-modal-animals') != null){
+    const close = document.querySelector('#open-modal-animals');
+    const modal = document.querySelector('.modal-animals');
+    close.addEventListener('click', () => {
+        modal.classList.replace('_mvip18q', '_1ucy1zjv')
+        document.querySelector('.modal-container-animals').classList.remove('hidden') 
+        document.querySelector('.animals-backdrop').classList.remove('hidden')
+    });
+}
+
+function switchToogleBtn(callbackActive, callbackInactive) {
+    console.log('init');
+    if(document.querySelectorAll('.switch-toogle-btn') != null){
+        const trigger = document.querySelectorAll('.switch-toogle-btn');
+        trigger.forEach(element => {
+            element.addEventListener('click', () => {
+                if(element.classList.contains('switch-toogle-inactive')){
+                    element.classList.remove('switch-toogle-inactive')
+                    element.classList.add('switch-toogle-active')
+                    element.children[0].classList.remove('form__switch-toggle')
+                    element.children[0].classList.add('form__switch-toggle-checked')
+                    element.children[0].children[0].classList.remove('hidden')
+                    if(callbackActive){
+                        callbackActive()
+                    }
+                }else{
+                    element.classList.remove('switch-toogle-active')
+                    element.classList.add('switch-toogle-inactive')
+                    element.children[0].classList.remove('form__switch-toggle-checked')
+                    element.children[0].classList.add('form__switch-toggle')
+                    element.children[0].children[0].classList.add('hidden')
+                    if(callbackInactive){
+                        callbackInactive()
+                    }
+                }
+            });
+        });
+    }
 }
