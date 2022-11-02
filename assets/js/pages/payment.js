@@ -79,6 +79,27 @@ document.querySelectorAll('._1gyjybc > li').forEach((el) => {
   });
 });
 
+// click outside to hide dropdown selector
+window.addEventListener('click', (el) => {
+  if (
+    !el.target.closest('#dropdown-selector-payment_option_selector-options') &&
+    !el.target.closest('#dropdown-selector-payment_option_selector-input')
+  ) {
+    const options = document.querySelector(
+      '#dropdown-selector-payment_option_selector-options'
+    );
+
+    options.classList.add('pointer-events-none');
+
+    options.style.opacity = 0;
+    options.style.top = '-16px';
+
+    document
+      .querySelectorAll('.payment-option__selection-wrapper-icon')
+      .forEach((el) => (el.style.transform = 'rotate(0deg)'));
+  }
+});
+
 // handles click event for country/region select element, centers selected option in country modal
 document.querySelectorAll('._14yb6ke[role=button]').forEach((el) => {
   el.addEventListener('click', () => {
