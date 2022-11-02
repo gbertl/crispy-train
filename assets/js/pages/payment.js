@@ -78,5 +78,35 @@ document.querySelectorAll('._1gyjybc > li').forEach((el) => {
       .classList.replace('_6h56b0p', '_1s9o8so5');
   });
 });
+
+// handles click event for country/region select element, centers selected option in country modal
+document.querySelectorAll('._14yb6ke[role=button]').forEach((el) => {
+  el.addEventListener('click', () => {
+    document
+      .querySelector('#country-modal ._13ni8kr[aria-selected=true]')
+      .scrollIntoView({ block: 'center' });
+  });
+});
+
+// handles click event for country modal options, sets active to selected option
+document.querySelectorAll('._13ni8kr[role=option]').forEach((el) => {
+  el.addEventListener('click', (el) => {
+    const activeOption = el.currentTarget
+      .closest('._os2yin')
+      .querySelector('._13ni8kr[aria-selected=true]');
+    const check = activeOption.querySelector('._1eaes69');
+
+    activeOption.setAttribute('aria-selected', 'false');
+    activeOption
+      .querySelector('._bgqgdvf')
+      .classList.replace('_bgqgdvf', '_1oy1k74');
+
+    el.currentTarget.setAttribute('aria-selected', 'true');
+    el.currentTarget
+      .querySelector('._1oy1k74')
+      .classList.replace('_1oy1k74', '_bgqgdvf');
+    el.currentTarget.appendChild(check);
+
+    document.querySelector('#country-modal').classList.add('hidden');
   });
 });
