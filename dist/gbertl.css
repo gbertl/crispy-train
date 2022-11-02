@@ -757,3 +757,31 @@
   font-size: 16px !important;
   margin: 0px !important;
 }
+._11vbjbm {
+  padding-left: 32px !important;
+}
+._1875dx {
+  padding-bottom: 16px !important;
+}
+@media (min-width: 744px) {
+  ._1875dx {
+    padding-bottom: 0px !important;
+  }
+}
+._l6x7wk {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: rgb(34, 34, 34) !important;
+}
+
+.popover-animate {
+  transform: scale(0);
+  transform-origin: top right;
+  opacity: 0;
+  transition: 400ms;
+}
+
+.popover-animate--active {
+  transform: scale(1);
+  opacity: 1;
+}

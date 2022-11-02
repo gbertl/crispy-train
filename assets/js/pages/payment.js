@@ -134,3 +134,31 @@ document.querySelectorAll('._13ni8kr[role=option]').forEach((el) => {
     document.querySelector('#country-modal').classList.add('hidden');
   });
 });
+
+// handles popover
+document.querySelectorAll('.confirm-pay__price-btn').forEach((el) => {
+  el.addEventListener('click', (e) => {
+    const popover = e.currentTarget
+      .closest('.confirm-pay__price-wrapper')
+      .querySelector('._ewwxwe');
+
+    popover.classList.toggle('popover-animate--active');
+
+    popover
+      .querySelector('button[aria-label=Close]')
+      .addEventListener('click', (e) => {
+        e.currentTarget
+          .closest('._ewwxwe')
+          .classList.remove('popover-animate--active');
+      });
+  });
+});
+
+// handles click outside of popover
+window.addEventListener('click', (e) => {
+  if (!e.target.closest('._ewwxwe.popover-animate--active') && !e.target.closest('.confirm-pay__price-btn')) {
+    document
+      .querySelector('._ewwxwe.popover-animate')
+      .classList.remove('popover-animate--active');
+  }
+});
