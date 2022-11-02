@@ -128,6 +128,9 @@ document.querySelectorAll('._13ni8kr[role=option]').forEach((el) => {
       .classList.replace('_1oy1k74', '_bgqgdvf');
     el.currentTarget.appendChild(check);
 
+    document.querySelector('#billing_country_selector').innerText =
+      el.currentTarget.querySelector('._uyh343 > div').innerText;
+
     document.querySelector('#country-modal').classList.add('hidden');
   });
 });
