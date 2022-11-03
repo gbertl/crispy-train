@@ -923,3 +923,20 @@ document
 document.querySelector('.toast-bottom-right button[aria-label=Close]').addEventListener('click', (el) => {
   el.currentTarget.closest('.toast-bottom-right > div').classList.add('toast-enter', 'toast-exit');
 })
+
+
+document.querySelector('input#query').addEventListener('click', (el) => {
+  if(document.querySelector('._jibw4hu').classList.contains('hidden')) {
+    document.querySelector('._jibw4hu').classList.remove('hidden')
+  } else {
+    document.querySelector('._jibw4hu').classList.add('hidden')
+  }
+})
+
+document.querySelector('#checkin_button').addEventListener('click', (el) => {
+  if(document.querySelector('._1ldjf5n6').classList.contains('hidden')) {
+    document.querySelector('._1ldjf5n6').classList.remove('hidden')
+  } else {
+    document.querySelector('._1ldjf5n6').classList.add('hidden')
+  }
+})
