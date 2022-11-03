@@ -70467,3 +70467,32 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   outline: none !important;
 }
 
+._1vkmpb5 {
+  -webkit-box-align: start !important;
+  -webkit-box-pack: justify !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+}
+
+
+._792k0r1 {
+  height: 100% !important;
+  width: 100% !important;
+  position: static !important;
+}
+
+@supports (object-fit: cover) {
+  ._792k0r1 {
+    height: 100% !important;
+    width: 100% !important;
+    position: static !important;
+  }
+}
+
+._1kv4z85 {
+  height: 1px !important;
+  background-color: rgb(221, 221, 221) !important;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
