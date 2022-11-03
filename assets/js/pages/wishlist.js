@@ -19,4 +19,3 @@ document
     document.querySelector('#pin-search').classList.add('cv25bqx')
   });
 
-  
