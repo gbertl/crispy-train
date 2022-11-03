@@ -21743,7 +21743,6 @@ tr.hide {
 }
 .payment-option__described-btn-wrap {
   position: relative !important;
-  z-index: 3 !important;
 }
 .payment-option__described-btn {
   display: block !important;
@@ -44533,9 +44532,6 @@ video::cue {
   margin-bottom: 24px !important;
   font-weight: 600 !important;
 }
-._wz0818y:hover {
-  border: 1px solid #d8d8d8 !important;
-}
 ._wz0818y {
   display: block !important;
   width: 100% !important;
@@ -44547,6 +44543,9 @@ video::cue {
   transition: border 150ms ease-out !important;
   border: 1px solid #b0b0b0 !important;
   border-radius: 8px !important;
+}
+._wz0818y:hover {
+  border: 1px solid #d8d8d8 !important;
 }
 ._1wcpnjd {
   font-size: 16px !important;
@@ -52855,9 +52854,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   -webkit-box-orient: vertical !important;
   background: #fff !important;
   width: 400px !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  display: flex !important;
+  display: flex;
   flex-direction: column !important;
   border-radius: 12px !important;
   box-shadow: rgb(0 0 0 / 28%) 0 8px 28px !important;
@@ -65735,20 +65732,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   color: rgb(255, 255, 255) !important;
   font-size: 12px !important;
   line-height: 16px !important;
-}
-
-._ewwxwe {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  background: rgb(255, 255, 255) !important;
-  width: 400px !important;
-  max-width: 100% !important;
-  max-height: 100% !important;
-  display: flex !important;
-  flex-direction: column !important;
-  border-radius: 12px !important;
-  box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px !important;
-  overflow: hidden !important;
 }
 
 ._12kfhdn {
