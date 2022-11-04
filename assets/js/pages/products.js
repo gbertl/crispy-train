@@ -512,3 +512,39 @@ embedModal.querySelector('._1ku51f04').addEventListener('click', (e) => {
     !copyHTML.classList.contains('hidden') && copyHTML.classList.add('hidden')
   }, 3000);
 })
+
+if(document.querySelector('._g2ext') != null){
+  const close = document.querySelector('._g2ext');
+  const modal = document.querySelector('.modal-price-breakdown');
+  close.addEventListener('click', (e) => {
+      if(e.target.classList.contains('_g2ext')){
+          modal.classList.replace('_ewwxwe', '_1m9khubh')
+          setTimeout(() => {
+            document.querySelector('._g2ext').classList.add('hidden') 
+            document.querySelector('._ybk1kl0').classList.add('hidden')
+          }, 700);
+      }
+  });
+}
+
+if(document.querySelector('#close-modal-price-breakdown') != null){
+  const close = document.querySelector('#close-modal-price-breakdown');
+  const modal = document.querySelector('.modal-price-breakdown');
+  close.addEventListener('click', () => {
+      modal.classList.replace('_ewwxwe', '_1m9khubh')
+      setTimeout(() => {
+        document.querySelector('._g2ext').classList.add('hidden') 
+        document.querySelector('._ybk1kl0').classList.add('hidden')
+      }, 700);
+  });
+}
+
+if(document.querySelector('#open-modal-price-breakdown') != null){
+  const close = document.querySelector('#open-modal-price-breakdown');
+  const modal = document.querySelector('.modal-price-breakdown');
+  close.addEventListener('click', () => {
+      modal.classList.replace('_1m9khubh', '_ewwxwe')
+      document.querySelector('._g2ext').classList.remove('hidden') 
+      document.querySelector('._ybk1kl0').classList.remove('hidden')
+  });
+}
