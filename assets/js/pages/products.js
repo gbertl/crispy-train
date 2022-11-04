@@ -449,7 +449,6 @@ document.querySelectorAll('#reviews-search-input').forEach((e) => {
 
 
 const onScroll = () => {
-  window.scrollY >= 500 ? console.log('nima') : console.log('aliwan')
   window.scrollY > 600
     ? document.querySelector('._1zeg3u')?.classList.replace('_1zeg3u', '_6gzg21')
     : document.querySelector('._6gzg21')?.classList.replace('_6gzg21', '_1zeg3u')
