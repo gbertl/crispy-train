@@ -1277,4 +1277,17 @@
   font-weight: 400 !important;
   line-height: 1.375em !important;
   color: rgb(72, 72, 72) !important;
-} 
+}._mezawn {
+  position: absolute !important;
+  height: 64px !important;
+  background: linear-gradient(270deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 90.82%) !important;
+  transform: rotate(180deg) !important;
+  z-index: 1 !important;
+  width: 20px !important;
+}@media (min-width: 1440px)
+{ 
+._mezawn {
+    width: 32px !important;
+    height: 96px !important;
+}  
+ } 
