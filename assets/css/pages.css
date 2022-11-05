@@ -51974,7 +51974,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   padding-top: calc(12px + env(safe-area-inset-top, 0)) !important;
   display: flex !important;
   flex-direction: row !important;
-  align-items: flex-end !important;
+  /* align-items: flex-end !important; */
   justify-content: center !important;
 }
 @media (min-width: 744px) and (min-height: 475px) {
@@ -65160,7 +65160,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   animation-name: keyframe_15p0df !important;
 }
 
-._vxvq8x {
+/* ._vxvq8x {
   -webkit-box-pack: center !important;
   -webkit-box-align: end !important;
   -webkit-box-direction: normal !important;
@@ -65174,7 +65174,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   flex-direction: row !important;
   align-items: flex-end !important;
   justify-content: center !important;
-}
+} */
 
 @supports (max-height: -webkit-fill-available) {
   ._vxvq8x {
@@ -67764,10 +67764,11 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   min-height: 56px !important;
   width: 100% !important;
   margin: 0px !important;
-  border: none !important;
+
   color: rgb(34, 34, 34) !important;
   background-color: rgb(255, 255, 255) !important;
   border-radius: 8px !important;
+  box-shadow: rgb(34 34 34) 0px 0px 0px 2px inset !important;
 }
 
 ._1nvgts7s {
@@ -68035,7 +68036,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   line-height: inherit !important;
   -webkit-appearance: none !important;
   outline: none !important;
-  box-shadow: rgb(34 34 34) 0px 0px 0px 2px inset !important;
+  /* box-shadow: rgb(34 34 34) 0px 0px 0px 2px inset !important; */
 }
 
 ._4l12l8 {
