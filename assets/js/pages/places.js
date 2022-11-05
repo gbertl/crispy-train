@@ -38,8 +38,6 @@ const apply = () => {
     .querySelector(`button[data-photo-index="${counter}"]`)
     .classList.replace('_hwcst', '_1umg7png');
 
-
-
   if (counter === 0 || counter === 1)
     parent.querySelector('._conlnu').style = 'transform: translateX(8px)';
   if (counter === 2)
@@ -68,4 +66,28 @@ parent
       counter = slideSrcs.length - 1;
       apply();
     }
+  });
+
+// handles closing of gallery modal
+parent.querySelector('._1rp5252').addEventListener('click', () => {
+  document.body.classList.remove('hidden-vscroll');
+
+  document.querySelector('._1ugan3i').classList.add('hidden');
+});
+
+// opens gallery modal by clicking any photos or show all button
+document
+  .querySelectorAll('[id*=header-photo-], .place__show-photos-btn > button')
+  .forEach((el) => {
+    el.addEventListener('click', (e) => {
+      document.body.classList.add('hidden-vscroll');
+
+      counter = parseInt(
+        e.currentTarget.getAttribute('id')?.replace('header-photo-', '') || 0
+      );
+
+      apply();
+
+      document.querySelector('._1ugan3i').classList.remove('hidden');
+    });
   });
