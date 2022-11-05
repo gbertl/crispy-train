@@ -1673,7 +1673,7 @@
                               </div>
                             </div>
                             <main id="site-content">
-                              <form>
+                              <form id="submitmessage">
                                 <div>
                                   <div class="tab__content-visibility">
                                     <div>
@@ -2079,7 +2079,7 @@
                                                 "
                                                 data-reactroot=""
                                               >
-                                                <div
+                                                <!-- <div
                                                   data-plugin-in-point-id="TEXT_AREA"
                                                   data-section-id="TEXT_AREA"
                                                   style="padding-bottom: 24px"
@@ -2096,7 +2096,7 @@
                                                           aria-required="true"
                                                           name="contactHostMessage"
                                                           autocomplete="off"
-                                                          class="contact-host__textarea"
+                                                          class="contact-host__textarea _3u8xhn"
                                                           id="contactHostMessage"
                                                           placeholder=""
                                                           style="height: 116px"
@@ -2104,8 +2104,24 @@
                                                       </div>
                                                     </div>
                                                   </div>
+                                                </div> -->
+                                                <div id="message-wrapper-box" data-plugin-in-point-id="TEXT_AREA" data-section-id="TEXT_AREA" style="padding-bottom:24px">
+                                                  <div id="error-message" class="hidden">
+                                                    <div class="e4y1ay4 dir dir-ltr">
+                                                      <div class="e1bg2my dir dir-ltr"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                          role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                                                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 10.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm.8-6.6H7.2v5.2h1.6z"></path>
+                                                        </svg></div>Please add a message.
+                                                    </div>
+                                                  </div>
+                                                
+                                                  <div class="contact-host__textarea-wrapper">
+                                                    <div dir="ltr"><textarea aria-describedby="textarea-error" aria-label="Message the host" aria-required="true"
+                                                        name="contactHostMessage" autocomplete="off" class="_3u8xhn" id="contactHostMessage" placeholder=""
+                                                        style="height: 116px;" spellcheck="false" aria-invalid="true"></textarea></div>
+                                                  </div>
+                                                
                                                 </div>
-                                                <div data-plugin-in-point-id="TEXT_AREA" data-section-id="TEXT_AREA" style="padding-bottom:24px"><div id="textarea-error"><div class="e4y1ay4 dir dir-ltr"><div class="e1bg2my dir dir-ltr"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm0 10.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm.8-6.6H7.2v5.2h1.6z"></path></svg></div>Please add a message.</div></div><div><div class="_1on2i2qy"><div dir="ltr"><textarea aria-describedby="textarea-error" aria-label="Message the host" aria-required="true" name="contactHostMessage" autocomplete="off" class="_3u8xhn" id="contactHostMessage" placeholder="" style="height: 116px;" spellcheck="false" aria-invalid="true"></textarea></div></div></div></div>
                                               </div>
                                             </div>
                                             <div class="flex-before-after dir dir-ltr">
@@ -2673,5 +2689,16 @@
         </div>
       </div>
     </div>
+    <script>
+      // show error message and textarea error state
+      var messageForm = document.querySelector('#submitmessage');
+      var messageBox = document.querySelector('#message-wrapper-box > div.contact-host__textarea-wrapper');
+      var errorMessage = document.querySelector('#error-message');
+      messageForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+       messageBox.classList.replace('contact-host__textarea-wrapper', '_1on2i2qy');
+       errorMessage.classList.remove('hidden');
+      })
+    </script> 
   </body>
 </html>
