@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/global.css" />
     <link rel="stylesheet" href="../assets/css/pages.css" />
+    <link rel="stylesheet" href="../dist/gbertl.css">
     <title>Your trip preview - Airbnb</title>
   </head>
   <body class="with-new-header touch" style="overflow: hidden">
@@ -267,20 +268,7 @@
                                                             >
                                                               <div
                                                                 class="h-full"
-                                                                style="
-                                                                  transform: scale(
-                                                                    1.1
-                                                                  );
-                                                                  transition: transform
-                                                                    0.5s
-                                                                    cubic-bezier(
-                                                                      0,
-                                                                      0,
-                                                                      0.1,
-                                                                      1
-                                                                    )
-                                                                    0s;
-                                                                "
+                                                                style="transform:scale(1.1);transition:transform 0.5s cubic-bezier(0, 0, 0.1, 1)"
                                                               >
                                                                 <button
                                                                   aria-label="View all photos"
@@ -666,7 +654,35 @@
                                                             >
                                                               <div
                                                                 class="_1lyyzem"
-                                                              ></div>
+                                                                style="opacity: 0"
+                                                              >
+                                                                <button aria-label="Previous" type="button" class="_1ue05kx">
+                                                                  <span class="_e296pg"
+                                                                    ><span class="_krjbj">_</span
+                                                                    ><svg
+                                                                      viewBox="0 0 32 32"
+                                                                      xmlns="http://www.w3.org/2000/svg"
+                                                                      aria-hidden="true"
+                                                                      role="presentation"
+                                                                      focusable="false"
+                                                                      style="
+                                                                        display: block;
+                                                                        fill: none;
+                                                                        height: 12px;
+                                                                        width: 12px;
+                                                                        stroke: currentcolor;
+                                                                        stroke-width: 5.33333;
+                                                                        overflow: visible;
+                                                                      "
+                                                                    >
+                                                                      <g fill="none">
+                                                                        <path
+                                                                          d="m20 28-11.29289322-11.2928932c-.39052429-.3905243-.39052429-1.0236893 0-1.4142136l11.29289322-11.2928932"
+                                                                        ></path>
+                                                                      </g></svg
+                                                                  ></span>
+                                                                </button>
+                                                            </div>
                                                               <div
                                                                 class="_1lyyzem"
                                                               >
@@ -6289,5 +6305,7 @@
         contain: strict;
       "
     ></div>
+
+    <script src="../assets/js/pages/specific_trip.js"></script>
   </body>
 </html>
