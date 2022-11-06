@@ -103,3 +103,68 @@ const galleryModal = () => {
 };
 
 galleryModal();
+
+const mobileCarousel = () => {
+  let counter = 0;
+  const slideContainer = document.querySelector('._rxz20bq');
+  const slides = document.querySelectorAll('._rxz20bq > li');
+  const size = slides[0].offsetWidth;
+  const dotsContainer = document.querySelector('._1b2klj3');
+
+  for (let x = 0; x < slides.length; x++) {
+    const span = document.createElement('span');
+    if (x === 0) {
+      span.classList.add('_figllth');
+    } else {
+      span.classList.add('_1g2uchb');
+    }
+
+    dotsContainer.appendChild(span);
+  }
+
+  const updateDots = () => {
+    dotsContainer
+      .querySelector('._figllth')
+      .classList.replace('_figllth', '_1g2uchb');
+    dotsContainer
+      .querySelectorAll('span')
+      [counter].classList.replace('_1g2uchb', '_figllth');
+  };
+
+  const apply = () => {
+    slideContainer.scrollTo({
+      left: counter * size,
+      behavior: 'smooth',
+    });
+  };
+
+  document
+    .querySelector('._1ue05kx[aria-label=Next]')
+    .addEventListener('click', () => {
+      if (counter < slides.length - 1) {
+        counter += 1;
+      } else {
+        counter = 0;
+      }
+
+      apply();
+    });
+
+  document
+    .querySelector('._1ue05kx[aria-label=Previous]')
+    .addEventListener('click', () => {
+      if (counter > 0) {
+        counter -= 1;
+      } else {
+        counter = slides.length - 1;
+      }
+      apply();
+    });
+
+  slideContainer.addEventListener('scroll', (e) => {
+    counter = Math.round(e.currentTarget.scrollLeft / size);
+    updateDots();
+  });
+};
+
+mobileCarousel();
