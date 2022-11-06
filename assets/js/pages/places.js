@@ -69,6 +69,14 @@ const galleryModal = () => {
       }
     });
 
+  // right side thumb buttons updates slide
+  parent.querySelectorAll('._conlnu button[data-photo-index]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      counter = parseInt(e.currentTarget.dataset.photoIndex);
+      apply();
+    });
+  });
+
   // handles closing of gallery modal
   parent.querySelector('._1rp5252').addEventListener('click', () => {
     document.body.classList.remove('hidden-vscroll');
