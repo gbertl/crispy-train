@@ -925,10 +925,12 @@ document.querySelector('.toast-bottom-right button[aria-label=Close]').addEventL
 })
 
 
-document.querySelector('input#query').addEventListener('click', (el) => {
-  if(document.querySelector('._jibw4hu').classList.contains('hidden')) {
-    document.querySelector('._jibw4hu').classList.remove('hidden')
-  } else {
+document.querySelector('input#query').addEventListener('keyup', (el) => {
+  const inputLength = el.currentTarget.value.length
+  
+  if (inputLength >= 3){
+      document.querySelector('._jibw4hu').classList.remove('hidden')
+  }else{
     document.querySelector('._jibw4hu').classList.add('hidden')
   }
 })
@@ -986,3 +988,11 @@ if(document.querySelector('#open-modal-footer') != null){
 //       document.querySelector('._1t0jy5tw').classList.remove('hidden')
 //   });
 // }
+
+
+// const countries = ['Philippines','Manila, Philippines','Antipolo, Rizal','Makati, NCR', 'Phnom Penh, Cambodia']
+// const inputQuery = document.getElementById('query')
+
+// inputQuery.addEventListener('click', ()=> {
+//   console.log(countries)
+// })
