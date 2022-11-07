@@ -988,11 +988,3 @@ if(document.querySelector('#open-modal-footer') != null){
 //       document.querySelector('._1t0jy5tw').classList.remove('hidden')
 //   });
 // }
-
-
-// const countries = ['Philippines','Manila, Philippines','Antipolo, Rizal','Makati, NCR', 'Phnom Penh, Cambodia']
-// const inputQuery = document.getElementById('query')
-
-// inputQuery.addEventListener('click', ()=> {
-//   console.log(countries)
-// })
