@@ -116,3 +116,22 @@ const carousel = () => {
 };
 
 carousel();
+
+// adds gray bg and shows 3 dots button in message host's div
+document.querySelectorAll('._1f6woba').forEach((el) => {
+  el.addEventListener('mouseenter', (e) => {
+    e.currentTarget.classList.replace('_1f6woba', '_pcw78nw');
+    e.currentTarget
+      .closest('._1w193fh')
+      .querySelector('._hp87iag')
+      .classList.replace('_hp87iag', '_12xty9qt');
+  });
+
+  el.addEventListener('mouseleave', (e) => {
+    e.currentTarget.classList.replace('_pcw78nw', '_1f6woba');
+    e.currentTarget
+      .closest('._1w193fh')
+      .querySelector('._12xty9qt')
+      .classList.replace('_12xty9qt', '_hp87iag');
+  });
+});
