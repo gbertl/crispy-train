@@ -255,7 +255,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     const openModal = () => {
       document.body.classList.add('hidden-vscroll');
-      modal.classList.remove('hidden');
+      modal?.classList.remove('hidden');
       if (section) {
         section.removeAttribute('style')
         setControlsState(section)
@@ -264,7 +264,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     const closeModal = () => {
       document.body.classList.remove('hidden-vscroll');
-      modal.classList.add('hidden');
+      modal?.classList.add('hidden');
       if (section) {
         section.style.visibility = 'hidden'
         setControlsState(section)
@@ -293,7 +293,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     // handle close modal
     document.addEventListener('click', (e) => {
       if (
-        !modal.contains(e.target) &&
+        !modal?.contains(e.target) &&
         !e.target.closest('[data-modal]') ||
         e.target == modal.querySelector('[data-testid="modal-container"]')
       ) {

@@ -1,16 +1,16 @@
 // start inline counter
 const inlineCounter = document.querySelector('#inline-counter')
-const guestDecrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-decrease-button"]')
-const guestIncrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-increase-button"]')
-const guestCounterValue = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-value"]')
+const guestDecrease = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-decrease-button"]')
+const guestIncrease = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-increase-button"]')
+const guestCounterValue = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-adults-stepper-value"]')
 
-const childrenDecrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-decrease-button"]')
-const childrenIncrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-increase-button"]')
-const childrenCounterValue = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-value"]')
+const childrenDecrease = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-decrease-button"]')
+const childrenIncrease = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-increase-button"]')
+const childrenCounterValue = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-children-stepper-value"]')
 
-const infantDecrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-decrease-button"]')
-const infantIncrease = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-increase-button"]')
-const infantCounterValue = inlineCounter.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-value"]')
+const infantDecrease = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-decrease-button"]')
+const infantIncrease = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-increase-button"]')
+const infantCounterValue = inlineCounter?.querySelector('[data-testid="GuestPicker-book_it-form-infants-stepper-value"]')
 
 document.querySelectorAll('.main-content__details-form-language-value').forEach((e) => {
   const selectIcon = e.closest('.main-content__details-form-language').querySelector('.form-floating__addon > svg')
@@ -462,7 +462,7 @@ onScroll();
 
 window.addEventListener('scroll', onScroll);
 
-document.querySelector('#where-modal-read-more').addEventListener('click', (e) => {
+document.querySelector('#where-modal-read-more')?.addEventListener('click', (e) => {
   e.currentTarget.closest('._50mnu4').querySelector('#where-modal-read-more-text').setAttribute('style', 'line-height: 24px')
   e.currentTarget.classList.add('hidden')
 
@@ -481,16 +481,16 @@ document.querySelectorAll('.radio__button, .radio__button-active').forEach((el) 
   })
 })
 
-document.querySelector('#report-this-next').addEventListener('click', (el) => {
+document.querySelector('#report-this-next')?.addEventListener('click', (el) => {
   el.currentTarget.closest('#report-this-modal').classList.add('hidden')
   document.querySelector('#we-got-your-report-modal').classList.remove('hidden')
 })
 
-document.querySelector('#we-got-your-report-ok').addEventListener('click', (el) => el.currentTarget.closest('#we-got-your-report-modal').classList.add('hidden'))
+document.querySelector('#we-got-your-report-ok')?.addEventListener('click', (el) => el.currentTarget.closest('#we-got-your-report-modal').classList.add('hidden'))
 
 let copyLinkTimeout
 const shareModal = document.querySelector('#share-modal')
-shareModal.querySelector('.modal__share-item:first-child button').addEventListener('click', (e) => {
+shareModal?.querySelector('.modal__share-item:first-child button').addEventListener('click', (e) => {
   clearTimeout(copyLinkTimeout)
 
   let copyLink = shareModal.querySelector('._8c85wg')
@@ -502,7 +502,7 @@ shareModal.querySelector('.modal__share-item:first-child button').addEventListen
 
 let copyHTMLTimeout
 const embedModal = document.querySelector('#embed-modal')
-embedModal.querySelector('._1ku51f04').addEventListener('click', (e) => {
+embedModal?.querySelector('._1ku51f04').addEventListener('click', (e) => {
   clearTimeout(copyHTMLTimeout)
 
   let copyHTML = embedModal.querySelector('._ei7ywt')
