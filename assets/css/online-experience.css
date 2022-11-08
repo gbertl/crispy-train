@@ -70,18 +70,25 @@
         padding: 0px !important;
 }
 
+._1b3a2fl {
+    -webkit-box-pack: justify !important;
+    -webkit-box-direction: reverse !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-align: center !important;
+    color: rgb(34, 34, 34) !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    margin-left: 0px !important;
+    margin-top: 24px !important;
+}
+
 @media (min-width: 744px) {
-
-    ._qzp5rw5 {
-            border-radius: 8px !important;
-        }
-
-    ._16gyin1 {
-        -webkit-box-align: center !important;
-        display: flex !important;
-        align-items: center !important;
-        margin-top: 32px !important;
-    }
 
     ._1b3a2fl {
         -webkit-box-pack: initial !important;
@@ -93,6 +100,29 @@
             margin-top: 0px !important;
     }
 
+}
+
+._16gyin1 {
+    display: block !important;
+    margin-top: 24px !important;
+}
+@media(min-width: 744px) {
+
+    ._16gyin1 {
+        -webkit-box-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        margin-top: 32px !important;
+    }
+}
+
+@media (min-width: 744px) {
+
+    ._qzp5rw5 {
+            border-radius: 8px !important;
+        }
+
+
         ._cg8a3u {
             margin-left: 0px !important;
             margin-right: 16px !important;
@@ -103,28 +133,6 @@
     min-width: 160px !important;
 }
 
-
-._1b3a2fl {
-    /* -webkit-box-pack: justify !important; */
-    /* -webkit-box-direction: reverse !important; */
-    /* -webkit-box-orient: horizontal !important; */
-    /* -webkit-box-align: center !important; */
-    color: rgb(34, 34, 34) !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 12px !important;
-    line-height: 16px !important;
-    align-items: center !important;
-    display: flex !important;
-    /* flex-direction: row-reverse !important; */
-    /* justify-content: space-between !important; */
-    /* margin-left: 0px !important; */
-    /* margin-top: 24px !important; */
-}
-
-._16gyin1 {
-    margin-top: 24px !important;
-}
 
 ._cg8a3u {
     margin-left: 16px !important;
@@ -730,13 +738,6 @@
     justify-content: space-between !important;
 }
 
-.k1wzclqp[class][class] {
-    font-size: var(--hr-k-udr);
-    line-height: var(--dpgw-ac);
-    text-transform: uppercase;
-    font-weight: var(--h-oqhch);
-}
-
 ._1fm9zq {
     -webkit-box-align: center !important;
     font-size: 14px !important;
@@ -1049,3 +1050,16 @@
     border-color: rgb(34, 34, 34) !important;
 }
 
+._deddqi {
+    margin-top: 12px !important;
+}@media (min-width: 1128px)
+{ 
+._deddqi {
+    margin-top: 24px !important;
+}
+ }._16ea8e8 {
+    border: 1px solid rgb(255, 255, 255) !important;
+    border-radius: 100% !important;
+    margin-left: 4px !important;
+    z-index: 1 !important;
+} 
