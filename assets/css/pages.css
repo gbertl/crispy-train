@@ -7094,12 +7094,15 @@
   left: 0 !important;
   right: auto !important;
 }
-.explore-filter__wrapper:focus-within + .dialog__wrapper {
+.showFilter {
+  display: block !important;
+}
+/* .explore-filter__wrapper:focus-within + .dialog__wrapper {
   display: inline-block !important;
 }
 .explore-filter__wrapper:focus-within .explore-filter__icon > svg {
   rotate: 180deg;
-}
+} */
 @media (min-width: 744px) and (min-height: 475px) {
   ._virdaj {
     -webkit-box-align: center !important;
