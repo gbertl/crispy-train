@@ -1007,5 +1007,32 @@ document
       e.currentTarget.classList.replace('explore-header__date-category-radio-1', 'explore-header__date-category-radio-2')
 
       document.querySelector('#subcategory-item-super_flexible_lengths').innerText = `Stay for a ${e.currentTarget.innerText.toLowerCase()}`
+
+      document.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = `Any ${e.currentTarget.innerText.toLowerCase()}`
+    })
+  })
+
+  // handles Choose dates and I'm flexible
+  document.querySelectorAll('.header__search-tabs-filter-body-date-tabs-container > button').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      const parent = document.querySelector('.header__search-tabs-filter-dates-container')
+
+
+
+    if (e.currentTarget.innerText.includes('flexible')) {
+parent.querySelectorAll('.header__search-tabs-filter-content')[1].classList.add('hidden')
+
+      parent.querySelector('.header__search-tabs-filter-btn-label').innerText = 'When'
+      parent.querySelector('.header__search-tabs-filter-btn-text').innerText = 'Any weekend'
+      parent.querySelector('.header__search-tabs-filter-btn-text').classList.replace('header__search-tabs-filter-btn-text', 'header__search-tabs-filter-btn-text-bold')
+    } else {
+parent.querySelectorAll('.header__search-tabs-filter-content')[1].classList.remove('hidden')
+      parent.querySelector('.header__search-tabs-filter-btn-label').innerText = 'Check in'
+      parent.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = 'Add dates'
+      parent.querySelector('.header__search-tabs-filter-btn-text-bold').classList.replace(  'header__search-tabs-filter-btn-text-bold', 'header__search-tabs-filter-btn-text')
+    }
+
+    
+      document.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = `Any ${document.querySelector('.explore-header__date-category-radio-2').innerText.toLowerCase()}`
     })
   })

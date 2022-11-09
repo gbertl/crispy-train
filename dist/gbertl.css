@@ -1694,3 +1694,12 @@
   display: flex !important;
   justify-content: flex-end !important;
 } 
+.header__search-tabs-filter-btn-text-bold[class][class] {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  color: var(--gray-900);
+  font-weight: var(--font-weight-semibold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
