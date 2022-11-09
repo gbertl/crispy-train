@@ -112,18 +112,37 @@ document.querySelectorAll('[role=tab]').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     // please add this role attribute to the parent to make handler work
     const parent = e.target.closest('[role=tablistcontainer]');
+
     parent
       .querySelectorAll('[role=tab]')
-      .forEach((tabBtn) =>
-        tabBtn.classList.replace(
-          'tab__btn-active',
-          'tab__btn'
-        )
+      .forEach((tabBtn) => {
+          if (tabBtn.classList.contains('header__search-tabs-filter-body-date-tabs-active')) { 
+            tabBtn.classList.replace(
+              'header__search-tabs-filter-body-date-tabs-active',
+              'header__search-tabs-filter-body-date-tabs-btn'
+            )
+
+          } else {
+            tabBtn.classList.replace(
+              'tab__btn-active',
+              'tab__btn'
+            )
+          }
+        }
       );
-    e.target.classList.replace(
-      'tab__btn',
-      'tab__btn-active'
-    );
+
+    if (e.currentTarget.classList.contains('header__search-tabs-filter-body-date-tabs-btn')) {
+      e.currentTarget.classList.replace(
+        'header__search-tabs-filter-body-date-tabs-btn',
+        'header__search-tabs-filter-body-date-tabs-active'
+      );
+    } else {
+      e.currentTarget.classList.replace(
+        'tab__btn',
+        'tab__btn-active'
+      );
+    }
+
     parent
       .querySelectorAll('[role=tabpanel]')
       .forEach((panel) => panel.setAttribute('hidden', true));
@@ -255,7 +274,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     const openModal = () => {
       document.body.classList.add('hidden-vscroll');
-      modal.classList.remove('hidden');
+      modal?.classList.remove('hidden');
       if (section) {
         section.removeAttribute('style')
         setControlsState(section)
@@ -263,8 +282,30 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     }
 
     const closeModal = () => {
-      document.body.classList.remove('hidden-vscroll');
-      modal.classList.add('hidden');
+
+      // closing animation of modals
+      if (modal.querySelector('.modal__backdrop') && modal.querySelector('div[role=dialog]')) {
+        const modalBackdropStyle = modal.querySelector('.modal__backdrop').getAttribute('style')
+        const dialogStyle = modal.querySelector('div[role=dialog]').getAttribute('style')
+
+        // prepend animation if style string exist
+        modal.querySelector('.modal__backdrop').style= modalBackdropStyle ? 'animation-name: keyframe_1vz6p0j !important;' + modalBackdropStyle  : 'animation-name: keyframe_1vz6p0j !important' 
+        modal.querySelector('div[role=dialog]').style= dialogStyle ? 'animation-name: keyframe_1vhlqe7 !important;'+ dialogStyle  :  'animation-name: keyframe_1vhlqe7 !important'
+      } else {
+        modal?.classList.add('hidden');
+        document.body.classList.remove('hidden-vscroll');
+      }
+
+      if (modal.querySelector('.modal__backdrop') && modal.querySelector('div[role=dialog]')) {
+        setTimeout(() => {
+          modal.querySelector('.modal__backdrop').style.removeProperty('animation-name')
+          modal.querySelector('div[role=dialog]').style.removeProperty('animation-name')
+          modal?.classList.add('hidden');
+          document.body.classList.remove('hidden-vscroll');
+        }, 400)
+      }
+
+
       if (section) {
         section.style.visibility = 'hidden'
         setControlsState(section)
@@ -290,16 +331,31 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
       });
     });
 
+    modal?.querySelectorAll('[data-button="close"]').forEach((el) => {
+      el.addEventListener('click', () => {
+        closeModal()
+      })
+    })
+
     // handle close modal
-    document.addEventListener('click', (e) => {
-      if (
-        !modal.contains(e.target) &&
-        !e.target.closest('[data-modal]') ||
-        e.target == modal.querySelector('[data-testid="modal-container"]')
-      ) {
-        closeModal();
-      }
-    });
+    // document.addEventListener('click', (e) => {
+    //   console.log(modal.contains(e.target), '<<< this')
+    //   if (
+    //     !modal?.contains(e.target) &&
+    //     !e.target.closest('[data-modal]') ||
+    //     e.target == modal.querySelector('[data-testid="modal-container"]')
+    //   ) {
+    //     closeModal();
+    //   }
+    // });
+
+    // click outside
+    modal?.addEventListener('click', (e) => {
+      if (e.target.dataset.testid === 'modal-container') {
+        closeModal()
+      } 
+    })
+
 
     document.addEventListener('keydown', (e) => {
       e.key === 'Escape' && closeModal();

@@ -147,6 +147,13 @@
   font-weight: 800 !important;
 }
 
+@media (min-width: 744px)
+{ 
+._1youxq0 {
+    min-height: 64px !important;
+}
+ }
+
 ._12kfhdn {
   padding: 24px !important;
   flex: 1 1 auto !important;
@@ -367,3 +374,19 @@
   line-height: 20px !important;
   color: rgb(34, 34, 34) !important;
 }
+
+._10rf6ea {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: rgb(113, 113, 113) !important;
+}
+
+._1fxvefn {
+  padding-bottom: 8px !important;
+}
+@media (min-width: 744px)
+{ 
+._1fxvefn {
+    padding: 24px 0px !important;
+}
+ } 

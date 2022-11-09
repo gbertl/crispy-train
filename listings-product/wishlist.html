@@ -7092,80 +7092,122 @@
           <!-- End of send link -->
 
           <!-- Setting -->
-          <div dir="ltr" class="hidden" id="setting-modal">
-            <div class="_ybk1kl0"></div>
-            <section >
-              <div class="_g2ext" data-testid="modal-container">
-                <div class="_z4lmgp">
-                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
-                  <div class="_z4lmgp">
-                    <div role="dialog" aria-label="Settings" aria-modal="true" class="_ewwxwe" style="position: relative;">                      
+          <div id="setting-modal" class="hidden" dir="ltr">
+            <div class="modal__backdrop"></div>
+            <section>
+              <div class="modal__container" data-testid="modal-container">
+                <div class="contents">
+                  <div class="container__border-0" aria-hidden="true" tabindex="0"></div>
+                  <div class="contents">
+                    <div role="dialog" aria-modal="true" class="_244p2lw" style="position: relative; max-width: 400px !important">
                       <div class="modal__close">
-                        <button aria-label="Close" type="button" data-button="close" class="btn-close">
-                          <span class="relative">
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"
-                              focusable="false" style="
-                                                display: block;
-                                                fill: none;
-                                                height: 16px;
-                                                width: 16px;
-                                                stroke: currentcolor;
-                                                stroke-width: 3;
-                                                overflow: visible;
-                                              ">
+                        <button data-button="close" aria-label="Close" type="button" class="btn-close">
+                          <span class="relative"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="
+                                  display: block;
+                                  fill: none;
+                                  height: 16px;
+                                  width: 16px;
+                                  stroke: currentcolor;
+                                  stroke-width: 3;
+                                  overflow: visible;
+                                ">
                               <path d="m6 6 20 20"></path>
                               <path d="m26 6-20 20"></path>
-                            </svg>
-                          </span>
+                            </svg></span>
                         </button>
                       </div>
-                      <header class="_1c8aprq">
-                        <div class="_1tng6ym"></div>
-                        <div class="_9t7ktw">
-                          <h1 tabindex="-1" class="_14i3z6h" elementtiming="LCP-target">
-                            <div class="_1q9sh65">
-                              <div tabindex="-1">Settings</div>
+                      <header class="_q8mwh4">
+                      <div class="_1jqox1a"></div>
+                      <div class="_1s09xaf">
+                        <h1 tabindex="-1" class="heading" elementtiming="LCP-target">
+                          <div class="modal__header-text">
+                            <div class="flex-before-after dir dir-ltr" style="">
+                              <div style="--gp-section-max-width: 1120px">
+                                <div data-plugin-in-point-id="EXPLORE_ALL_FILTERS_NAV:TAB_8225" data-section-id="EXPLORE_ALL_FILTERS_NAV:TAB_8225">
+                                  <div class="modal__header-container">
+                                    <div class="modal__header-wrapper"></div>
+                                    <div class="_9t7ktw">
+                                      <div class="modal__header-text">
+                                        Settings
+                                      </div>
+                                    </div>
+                                    <div class="modal__heading-wrapper">
+                                      <button type="button" class="btn-link">Delete</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                          </h1>
-                        </div>
-                        <div class="_rrmdgl"><button type="button" class="_za4ekfm" data-modal="#delete-modal" data-button="close">Delete</button></div>
-                      </header>
-                      <div class="_12kfhdn">
-                        <div class="_1fxvefn">
-                          <div>
-                            <div class="_1jj61m9"><label class="_1yw7hpv" for="wishlists.ListSettings.wishlist_name">
-                                <div class="_1m2ich98">
-                                  <div class="_11hx67x">Wishlist name</div>
-                                </div>
-                                <div dir="ltr">
-                                  <div class="_fywymp7"><input name="wishlists.ListSettings.wishlist_name"
-                                      data-testid="list-settings-modal_name-input" maxlength="50" class="_yrzsibu"
-                                      id="wishlists.ListSettings.wishlist_name" autocomplete="off" type="text"
-                                      aria-describedby="wishlists.ListSettings.wishlist_name-InputField-help" value="Teas"></div>
-                                </div>
-                              </label></div>
-                            <div class="_klarpw">
-                              <div class="_pxnjg" id="wishlists.ListSettings.wishlist_name-InputField-help"
-                                data-testid="wishlists.ListSettings.wishlist_name-InputField-help">50 characters maximum</div>
+                          </div>
+                        </h1>
+                      </div>
+                      <div class="_160ra1x"></div>
+                    </header>
+                      
+<div class="_12kfhdn">
+  <div class="_1fxvefn">
+    <div>
+      <div class="_1jj61m9">
+        <label class="_1yw7hpv" for="wishlists.ListSettings.wishlist_name"
+          ><div class="_1m2ich98">
+            <div class="_11hx67x">Wishlist name</div>
+          </div>
+          <div dir="ltr">
+            <div class="_fywymp7">
+              <input
+                name="wishlists.ListSettings.wishlist_name"
+                data-testid="list-settings-modal_name-input"
+                maxlength="50"
+                class="_yrzsibu"
+                id="wishlists.ListSettings.wishlist_name"
+                autocomplete="off"
+                type="text"
+                aria-describedby="wishlists.ListSettings.wishlist_name-InputField-help"
+                value="1st Wishlist"
+              />
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="_klarpw">
+        <div
+          class="_pxnjg"
+          id="wishlists.ListSettings.wishlist_name-InputField-help"
+          data-testid="wishlists.ListSettings.wishlist_name-InputField-help"
+        >
+          50 characters maximum
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                      <footer>
+                        <div class="flex-before-after dir dir-ltr" style="">
+                          <div style="--gp-section-max-width: 1120px">
+                            <div data-plugin-in-point-id="COMPOSITE_FILTER_FOOTER_ALL_FILTERS:TAB_8225" data-section-id="COMPOSITE_FILTER_FOOTER_ALL_FILTERS:TAB_8225">
+                              <div class="_kr7m4r">
+                                <footer class="modal__footer">
+                                  <button data-testid="list-settings-modal_save-button" type="button" class="btn-link" data-button="close">Cancel</button>
+        
+                                  <button data-testid="list-settings-modal_save-button" type="button" class="btn-dark" data-button="close">Save</button>
+                                </footer>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <footer class="_zgc1p6">
-                        <div class="_1u5lyjm"><button type="button" class="_za4ekfm" data-button="close">Cancel</button><button
-                            data-testid="list-settings-modal_save-button" type="button" class="_1ku51f04">Save</button></div>
                       </footer>
                     </div>
                   </div>
-                  <div class="_b21f4g" aria-hidden="true" tabindex="0"></div>
+                  <div class="container__border-0" aria-hidden="true" tabindex="0"></div>
                 </div>
               </div>
             </section>
-            <div class="_b21f4g">
+            <div class="container__border-0">
               <div aria-live="polite" aria-atomic="true"></div>
               <div aria-live="assertive" aria-atomic="true"></div>
             </div>
-          </div>
+          </div> 
           <!-- end of setting -->
 
           <!-- Delete to wishlist -->
@@ -7930,7 +7972,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="_1ns0ggc">
+                        <div class="_1ns0ggc hidden-scrollbar">
                           <div class="_2f11rw">
                             <div class="_17er5s9">
                               <div class="_udzbwj">
