@@ -392,10 +392,16 @@
 .s1i49yfd[class][class] {
 	clip: rect(0px, 0px, 0px, 0px);
 	clip-path: inset(100%);
-	height: 1px;
+	height: .0625rem;
 	overflow: clip;
 	position: absolute;
 	white-space: nowrap;
-	width: 1px;
+	width: .0625rem;
 }
+
+/* FEEDBACK-SPECIFIC CLASS */
+.dir-ltr.ix70r5g[class][class] {
+	padding-left: 1.5rem;
+}
+
 
