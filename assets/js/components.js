@@ -310,15 +310,24 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     });
 
     // handle close modal
-    document.addEventListener('click', (e) => {
-      if (
-        !modal?.contains(e.target) &&
-        !e.target.closest('[data-modal]') ||
-        e.target == modal.querySelector('[data-testid="modal-container"]')
-      ) {
-        closeModal();
-      }
-    });
+    // document.addEventListener('click', (e) => {
+    //   console.log(modal.contains(e.target), '<<< this')
+    //   if (
+    //     !modal?.contains(e.target) &&
+    //     !e.target.closest('[data-modal]') ||
+    //     e.target == modal.querySelector('[data-testid="modal-container"]')
+    //   ) {
+    //     closeModal();
+    //   }
+    // });
+
+    // click outside
+    modal?.addEventListener('click', (e) => {
+      if (e.target.dataset.testid === 'modal-container') {
+        closeModal()
+      } 
+    })
+
 
     document.addEventListener('keydown', (e) => {
       e.key === 'Escape' && closeModal();
