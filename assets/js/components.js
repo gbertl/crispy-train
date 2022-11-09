@@ -112,18 +112,37 @@ document.querySelectorAll('[role=tab]').forEach((btn) => {
   btn.addEventListener('click', (e) => {
     // please add this role attribute to the parent to make handler work
     const parent = e.target.closest('[role=tablistcontainer]');
+
     parent
       .querySelectorAll('[role=tab]')
-      .forEach((tabBtn) =>
-        tabBtn.classList.replace(
-          'tab__btn-active',
-          'tab__btn'
-        )
+      .forEach((tabBtn) => {
+          if (tabBtn.classList.contains('header__search-tabs-filter-body-date-tabs-active')) { 
+            tabBtn.classList.replace(
+              'header__search-tabs-filter-body-date-tabs-active',
+              'header__search-tabs-filter-body-date-tabs-btn'
+            )
+
+          } else {
+            tabBtn.classList.replace(
+              'tab__btn-active',
+              'tab__btn'
+            )
+          }
+        }
       );
-    e.target.classList.replace(
-      'tab__btn',
-      'tab__btn-active'
-    );
+
+    if (e.currentTarget.classList.contains('header__search-tabs-filter-body-date-tabs-btn')) {
+      e.currentTarget.classList.replace(
+        'header__search-tabs-filter-body-date-tabs-btn',
+        'header__search-tabs-filter-body-date-tabs-active'
+      );
+    } else {
+      e.currentTarget.classList.replace(
+        'tab__btn',
+        'tab__btn-active'
+      );
+    }
+
     parent
       .querySelectorAll('[role=tabpanel]')
       .forEach((panel) => panel.setAttribute('hidden', true));

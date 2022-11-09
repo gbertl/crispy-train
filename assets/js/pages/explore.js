@@ -999,3 +999,13 @@ document
       ).nextElementSibling.classList.toggle('showFilter')
     });
   });
+
+  document.querySelectorAll('.explore-header__date-category-wrapper > button').forEach((el) =>  {
+    el.addEventListener('click', (e) => {
+      e.currentTarget.closest('#chip-group-super_flexible_lengths').querySelector('.explore-header__date-category-radio-2').classList.replace('explore-header__date-category-radio-2', 'explore-header__date-category-radio-1')
+    
+      e.currentTarget.classList.replace('explore-header__date-category-radio-1', 'explore-header__date-category-radio-2')
+
+      document.querySelector('#subcategory-item-super_flexible_lengths').innerText = `Stay for a ${e.currentTarget.innerText.toLowerCase()}`
+    })
+  })
