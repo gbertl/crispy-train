@@ -309,6 +309,12 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
       });
     });
 
+    modal?.querySelectorAll('[data-button="close"]').forEach((el) => {
+      el.addEventListener('click', () => {
+        closeModal()
+      })
+    })
+
     // handle close modal
     // document.addEventListener('click', (e) => {
     //   console.log(modal.contains(e.target), '<<< this')

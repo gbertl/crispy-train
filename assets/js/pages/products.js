@@ -486,8 +486,6 @@ document.querySelector('#report-this-next')?.addEventListener('click', (el) => {
   document.querySelector('#we-got-your-report-modal').classList.remove('hidden')
 })
 
-document.querySelector('#we-got-your-report-ok')?.addEventListener('click', (el) => el.currentTarget.closest('#we-got-your-report-modal').classList.add('hidden'))
-
 let copyLinkTimeout
 const shareModal = document.querySelector('#share-modal')
 shareModal?.querySelector('.modal__share-item:first-child button').addEventListener('click', (e) => {
