@@ -4350,6 +4350,19 @@ html :where(img[class*='wp-image-']) {
     position: static !important;
   }
 }
+.img-full-absolute {
+  height: 0 !important;
+  width: 0 !important;
+  inset: 0 !important;
+  position: absolute !important;
+}
+@supports (object-fit: cover) {
+  .img-full-absolute {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
 .table-container {
   display: table !important;
   position: relative !important;
