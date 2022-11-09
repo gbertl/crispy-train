@@ -997,8 +997,30 @@ document
       document.querySelector(
         `#${e.currentTarget.id}`
       ).nextElementSibling.classList.toggle('showFilter')
+
+      if (!e.currentTarget.querySelector('svg').style.transform) {
+        e.currentTarget.querySelector('svg').style.transform = 'rotate(180deg)'
+      } else {
+        e.currentTarget.querySelector('svg').style.removeProperty('transform')
+      }
     });
   });
+
+  document.addEventListener('click', (e) => {
+
+    if (!e.target.closest('.dialog__wrapper') && !e.target.closest('.explore-filter__wrapper')){
+
+      document.querySelectorAll('.dialog__wrapper.showFilter').forEach((el) => {
+        el.classList.remove('showFilter')
+      })
+
+
+        document.querySelectorAll('.explore-filter__wrapper svg').forEach((el) => {
+          el.style.removeProperty('transform')
+        })
+
+    }
+  })
 
   document.querySelectorAll('.explore-header__date-category-wrapper > button').forEach((el) =>  {
     el.addEventListener('click', (e) => {
