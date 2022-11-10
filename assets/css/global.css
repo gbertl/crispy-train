@@ -4145,12 +4145,8 @@ html :where(img[class*='wp-image-']) {
 .hidden-scrollbar::-webkit-scrollbar {
   display: none !important;
 }
-@media (min-width: 744px) 
-{
 .hidden-vscroll {
   overflow-y: hidden;
-  padding-right: 15px;
-}
 }
 .overflow-y-hidden {
   overflow-y: hidden;
