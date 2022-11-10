@@ -57,15 +57,15 @@ export default series(globalStyles, pageStyles, watchAll);
 // export default series(serve, watchMainStyles)
 
 export const purgeOne = () => {
-  return src('assets/css/pages.css')
+  return src('assets/css/media.css')
     .pipe(
       postcss([
         purgeCss({
-          content: ['**/*.html'],
+          content: ['media/**/*.html'],
         }),
       ])
     )
-    .pipe(dest('assets/css'));
+    .pipe(dest('dist'));
 };
 
 // export const removeStyles = () => {
