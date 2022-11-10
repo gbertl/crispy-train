@@ -88,6 +88,7 @@ let sitemap = [
       'account/welcome_back.html',
       'payments/guest-contributions.html',
       'payments/payment-methods.html',
+      'payments/service-fee.html',
       'payments/tax-info.html',
     ],
   },
