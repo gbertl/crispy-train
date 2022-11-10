@@ -2620,7 +2620,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -4145,12 +4145,8 @@ html :where(img[class*='wp-image-']) {
 .hidden-scrollbar::-webkit-scrollbar {
   display: none !important;
 }
-@media (min-width: 744px) 
-{
 .hidden-vscroll {
   overflow-y: hidden;
-  padding-right: 15px;
-}
 }
 .overflow-y-hidden {
   overflow-y: hidden;
@@ -4285,8 +4281,8 @@ html :where(img[class*='wp-image-']) {
 .mt2 {
   margin-top: 16px;
 }
-.mb2 {
-  margin-bottom: 16px;
+.mb-4 {
+  margin-bottom: 16px !important;
 }
 .ml2 {
   margin-left: 16px;
@@ -5854,7 +5850,7 @@ html :where(img[class*='wp-image-']) {
     transition: none !important;
   }
 }
-.footer__social-ml-32 {
+.ml-8 {
   margin-left: 32px !important;
 }
 .footer__copyright-text {
@@ -20979,10 +20975,10 @@ input[type='button'].btn-block {
   animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
 }
 .toast-exit {
-    animation-fill-mode: both !important;
-    animation-iteration-count: 1 !important;
-    animation-name: keyframe_aa5y1b, keyframe_ioak0t !important;
-    animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
+  animation-fill-mode: both !important;
+  animation-iteration-count: 1 !important;
+  animation-name: keyframe_aa5y1b, keyframe_ioak0t !important;
+  animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
 }
 .toast-box {
   min-height: 66px !important;
@@ -21088,4 +21084,4 @@ input[type='button'].btn-block {
   transition: -ms-transform 0.5s, -webkit-transform 0.5s, transform 0.5s !important;
   will-change: transform !important;
   background: #222 !important;
-} 
+}

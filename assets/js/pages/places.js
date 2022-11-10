@@ -108,7 +108,7 @@ const mobileCarousel = () => {
   let counter = 0;
   const slideContainer = document.querySelector('._rxz20bq');
   const slides = document.querySelectorAll('._rxz20bq > li');
-  const size = slides[0].offsetWidth;
+  let size = slides[0].offsetWidth;
   const dotsContainer = document.querySelector('._1b2klj3');
 
   for (let x = 0; x < slides.length; x++) {
@@ -137,6 +137,8 @@ const mobileCarousel = () => {
       behavior: 'smooth',
     });
   };
+
+  window.addEventListener('resize', () => size = slides[0].offsetWidth)
 
   document
     .querySelector('._1ue05kx[aria-label=Next]')
@@ -168,3 +170,19 @@ const mobileCarousel = () => {
 };
 
 mobileCarousel();
+
+// sets currentSlide image responsive in mobile
+window.addEventListener('resize', () => {
+  const desktopStyle =
+    'max-height: 75vh; object-fit: cover; cursor: pointer; z-index: 2; border-radius: 16px; position: absolute; max-width: 85%; margin: 0px auto; inset: 50% 0px 0px; transform: translateY(-50%);';
+  const mobileStyle =
+    'max-height: 55vh; object-fit: cover; cursor: pointer; z-index: 2; border-radius: 16px; position: absolute; max-width: 85%; margin: 0px auto; inset: 0px;';
+
+  if (document.body.clientWidth < 1128) {
+    document.querySelector('[data-veloute="slideshow-image"]').style =
+      mobileStyle;
+  } else {
+    document.querySelector('[data-veloute="slideshow-image"]').style =
+      desktopStyle;
+  }
+});
