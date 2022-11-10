@@ -116,12 +116,12 @@ let sitemap = [
     urls: [
       'help/all-topics.html',
       'help/feedback.html',
+      'help/help.html',
+      'help/host-liability-insurance.html',
       'help/searching-and-booking.html',
       'help/searching-for-stays.html',
       'help/search-tips.html',
       'help/ticket-selection.html',
-      'help/help.html',
-      'help/host-liability-insurance.html',
     ],
   },
   {
