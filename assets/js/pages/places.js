@@ -108,7 +108,7 @@ const mobileCarousel = () => {
   let counter = 0;
   const slideContainer = document.querySelector('._rxz20bq');
   const slides = document.querySelectorAll('._rxz20bq > li');
-  const size = slides[0].offsetWidth;
+  let size = slides[0].offsetWidth;
   const dotsContainer = document.querySelector('._1b2klj3');
 
   for (let x = 0; x < slides.length; x++) {
@@ -137,6 +137,8 @@ const mobileCarousel = () => {
       behavior: 'smooth',
     });
   };
+
+  window.addEventListener('resize', () => size = slides[0].offsetWidth)
 
   document
     .querySelector('._1ue05kx[aria-label=Next]')
