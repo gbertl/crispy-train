@@ -2620,7 +2620,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -20975,10 +20975,10 @@ input[type='button'].btn-block {
   animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
 }
 .toast-exit {
-    animation-fill-mode: both !important;
-    animation-iteration-count: 1 !important;
-    animation-name: keyframe_aa5y1b, keyframe_ioak0t !important;
-    animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
+  animation-fill-mode: both !important;
+  animation-iteration-count: 1 !important;
+  animation-name: keyframe_aa5y1b, keyframe_ioak0t !important;
+  animation-timing-function: linear, cubic-bezier(0.17, 0.11, 0.34, 1) !important;
 }
 .toast-box {
   min-height: 66px !important;
@@ -21084,4 +21084,4 @@ input[type='button'].btn-block {
   transition: -ms-transform 0.5s, -webkit-transform 0.5s, transform 0.5s !important;
   will-change: transform !important;
   background: #222 !important;
-} 
+}
