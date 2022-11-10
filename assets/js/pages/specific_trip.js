@@ -5,7 +5,7 @@ const carousel = () => {
   let counter = 0;
   const slideWrapper = document.querySelector('._rxz20bq');
   const slides = slideWrapper.querySelectorAll('li');
-  const width = slides[0].offsetWidth;
+  let width = slides[0].offsetWidth;
   const overlays = document.querySelectorAll(
     '._rxz20bq li:first-child > div > div'
   );
@@ -38,6 +38,8 @@ const carousel = () => {
   };
 
   let isAnimated = false;
+
+  window.addEventListener('resize', () => (width = slides[0].offsetWidth));
 
   nextBtn.addEventListener('click', () => {
     if (isAnimated) {
