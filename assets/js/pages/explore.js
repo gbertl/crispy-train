@@ -928,7 +928,7 @@ document.querySelector('.toast-bottom-right button[aria-label=Close]').addEventL
 document.querySelector('input#query').addEventListener('keyup', (el) => {
   const inputLength = el.currentTarget.value.length
 
-  if (inputLength >= 3) {
+  if (inputLength >= 2) {
     document.querySelector('._jibw4hu').classList.remove('hidden')
   } else {
     document.querySelector('._jibw4hu').classList.add('hidden')
