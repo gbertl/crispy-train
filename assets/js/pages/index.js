@@ -160,14 +160,14 @@ let sitemap = [
   {
     title: 'Landing Pages',
     urls: [
-      'landing-pages/social-impact-host.html',
       'landing-pages/accessibility.html',
-      'landing-pages/covidsafety.html',
-      'landing-pages/merchandising.html',
-      'landing-pages/host-protection-insurance.html',
-      'landing-pages/onlinehost.html',
       'landing-pages/articles.html',
+      'landing-pages/covidsafety.html',
       'landing-pages/full-screen-hero.html',
+      'landing-pages/host-protection-insurance.html',
+      'landing-pages/merchandising.html',
+      'landing-pages/onlinehost.html',
+      'landing-pages/social-impact-host.html',
     ],
   },
   {
