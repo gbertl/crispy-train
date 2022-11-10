@@ -37,6 +37,7 @@ let sitemap = [
       'submission/overview.html',
       'submission/participation.html',
       'submission/photo.html',
+      'submission/photo-upload.html',
       'submission/review.html',
       'submission/theme.html',
       'submission/title.html',
