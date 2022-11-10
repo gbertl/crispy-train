@@ -108,6 +108,7 @@ let sitemap = [
       'become-a-host/property-type-group.html',
       'become-a-host/property-type.html',
       'become-a-host/title.html',
+      'become-a-host/welcome.html',
     ],
   },
   {
