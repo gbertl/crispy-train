@@ -6644,17 +6644,6 @@
 .dir-ltr.button__icon[class][class] {
   right: -4px;
 }
-.explore-container__showmap-btn-text {
-  -ms-grid-row-align: center !important;
-  -ms-flex-item-align: center !important;
-  display: -webkit-inline-box !important;
-  display: -moz-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: -webkit-inline-flex !important;
-  display: inline-flex !important;
-  -webkit-align-self: center !important;
-  align-self: center !important;
-}
 ._ft1uei {
   -webkit-box-pack: center !important;
   -ms-flex-pack: center !important;
@@ -14021,7 +14010,7 @@ full__margin-bottom {
     -webkit-transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955),
     transform 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
 }
-.button__mt-24 {
+.mt-6 {
   margin-top: 24px !important;
 }
 .account-container__country-select {
@@ -42947,13 +42936,13 @@ video::cue {
     ) !important;
   }
 }
+._1s86b2t {
+  margin-top: 24px !important;
+}
 @media (min-width: 744px) {
   ._1s86b2t {
     margin-top: 32px !important;
   }
-}
-._1s86b2t {
-  margin-top: 24px !important;
 }
 .carousel-slider__list::-webkit-scrollbar {
   display: none !important;
