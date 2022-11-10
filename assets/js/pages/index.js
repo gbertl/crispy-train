@@ -202,8 +202,8 @@ let sitemap = [
       'loaders/explore-loader.html',
       'loaders/help-loader.html',
       'loaders/messages-loader.html',
-      'loaders/wishlist-loader.html',
       'loaders/products-loader.html',
+      'loaders/wishlist-loader.html',
     ],
   },
   {
