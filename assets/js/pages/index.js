@@ -140,9 +140,9 @@ let sitemap = [
     title: 'Resource Center',
     urls: [
       'resource-center/article.html',
+      'resource-center/resources.html',
       'resource-center/topic.html',
       'resource-center/video.html',
-      'resource-center/resources.html',
     ],
   },
   {
