@@ -90,7 +90,7 @@ const handleSaveUnsaveWishlist = () => {
   wishlistModalBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
       currentCard.querySelector('[aria-label="Save this Experience"], [aria-label="Add listing to a list"]').replaceWith(createUnsaveBtn())
-      e.currentTarget.closest('#save-modal').classList.add('hidden');
+      e.currentTarget.closest('#save-modal').querySelector('[data-button=close]').click();
 
       document.querySelectorAll('.snackbar-text-wrapper > div').forEach((el, idx) => {
          el.style = idx === 0 ? 'display: block !important' : 'display: none !important' ;
