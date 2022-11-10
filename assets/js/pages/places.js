@@ -168,3 +168,19 @@ const mobileCarousel = () => {
 };
 
 mobileCarousel();
+
+// sets currentSlide image responsive in mobile
+window.addEventListener('resize', () => {
+  const desktopStyle =
+    'max-height: 75vh; object-fit: cover; cursor: pointer; z-index: 2; border-radius: 16px; position: absolute; max-width: 85%; margin: 0px auto; inset: 50% 0px 0px; transform: translateY(-50%);';
+  const mobileStyle =
+    'max-height: 55vh; object-fit: cover; cursor: pointer; z-index: 2; border-radius: 16px; position: absolute; max-width: 85%; margin: 0px auto; inset: 0px;';
+
+  if (document.body.clientWidth < 1128) {
+    document.querySelector('[data-veloute="slideshow-image"]').style =
+      mobileStyle;
+  } else {
+    document.querySelector('[data-veloute="slideshow-image"]').style =
+      desktopStyle;
+  }
+});
