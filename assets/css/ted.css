@@ -1,3 +1,90 @@
+:root {
+	--h-l-f-om-o: 4px;
+	--go-h-jh-l: 8px;
+	--i-g-gvoq: 12px;
+	--g-ki-r-rq: 16px;
+	--j-mdfu-h: 20px;
+	--jx-b-v-zt: 0 8px 28px rgba(0, 0, 0, 0.28);
+	--g-r-n-ycy: 1px solid rgba(0, 0, 0, 0.04);
+	--ih-jiz-p: 0 6px 20px rgba(0, 0, 0, 0.2);
+	--cglwe-y: 1px solid rgba(0, 0, 0, 0.04);
+	--cizosd: 0 6px 16px rgba(0, 0, 0, 0.12);
+	--cb-k-zk-c: 1px solid rgba(0, 0, 0, 0.04);
+	--e-swdx-p: 0 2px 4px rgba(0, 0, 0, 0.18);
+	--g-fi-y-r-e: 1px solid rgba(0, 0, 0, 0.08);
+	--f-ya-ggj: cubic-bezier(1, 0, 0.86, 1);
+	--bd-d-m-c-q: cubic-bezier(0, 0, 0.1, 1);
+	---bz-mmq: cubic-bezier(0.35, 0, 0.65, 1);
+	--bgxgx: #000000;
+	--f-k-smk-x: #222222;
+	--fo-jk-r-s: #717171;
+	--iw-ihca: #b0b0b0;
+	--j-qkgmf: #dddddd;
+	--d-nc-lt-s: #ebebeb;
+	---pc-g-v-g: #f7f7f7;
+	--f-mkcy-f: #ffffff;
+	--k-va-tnc: #c13515;
+	--cnr-vp-o: #b32505;
+	--f-p-k-v-lb: #fff8f6;
+	--fhi-qn-u: #e07912;
+	--k-ff-my-a: #008a05;
+	--ldbkp-d: #428bff;
+	--ihf-tp-q: #ff385c;
+	--kd-lqtg: #92174d;
+	--d-u-w-o-m-k: #460479;
+	--dc-gy-f-v: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+	--d-e-vybb: radial-gradient( circle at center, #ff385c 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100% );
+	--gj-z-dpd: linear-gradient(to right, #bd1e59 0%, #92174d 50%, #861453 100%);
+	--i-n-t-h-mj: radial-gradient( circle at center, #d70466 0%, #bd1e59 30%, #92174d 55%, #861453 72.5%, #6c0d63 90%, #6c0d63 100% );
+	--iqds-nv: linear-gradient(to right, #59086e 0%, #460479 50%, #440589 100%);
+	--j-m-v-dtd: radial-gradient( circle at center, #6c0d63 0%, #59086e 30%, #460479 55%, #440589 72.5%, #3b07bb 90%, #3b07bb 100% );
+	--jhzm-v-t: 16px;
+	--ikx-k-pe: 24px;
+	--kksqe-v: 32px;
+	--f-fw-z-a-i: 40px;
+	--cw-a-a-u-a: 48px;
+	--fvsvry: 64px;
+	--cy-o-aco: 80px;
+	--d-b-mrdy: 2px;
+	--h-x-sf-jw: 4px;
+	--fgg-f-l-a: 8px;
+	--b-y-unon: 12px;
+	--jaa-ni-h: 16px;
+	--ic-zlb-s: 24px;
+	--kc-t-qr-j: 32px;
+	--e-ls-qkw: 'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+	--fy-rs-ca: 18px;
+	--d-ar-t-o-n: 22px;
+	--lhy-d-yl: 22px;
+	--fme-bf-w: 26px;
+	--g-zgv-nj: 26px;
+	--b-x-z-q-l-e: 30px;
+	--cv-p-u-ui: 32px;
+	--hu-t-o-g-n: 36px;
+	--hr-k-udr: 10px;
+	--dpgw-ac: 12px;
+	--f-cv-j-j-p: 12px;
+	--f-l-h-bac: 16px;
+	--c-zdwk-p: 14px;
+	--j-p-z-kco: 18px;
+	--i-nh-zme: 14px;
+	--gvarj-f: 20px;
+	--iw-ehf-f: 16px;
+	---s-l-myu: 20px;
+	--y-g-ar-y: 16px;
+	--cb-pewj: 24px;
+	--ll-l-ys-f: 18px;
+	--f-xgviq: 24px;
+	--kmwb-ss: 18px;
+	--j-n-c-d-l-h: 28px;
+	--e-y-j-d-v-j: 400;
+	--jx-zk-pv: 600;
+	--h-oqhch: 800;
+	--g-lm-u-p: normal;
+	--mq-yk-l: 0.04em;
+}
+
+
 ._is5jnq {
 	--page-shell-max-content-width: 1440px !important;
 }
@@ -2194,11 +2281,262 @@ outline: none !important;
 	   
 }
 
+#payment-modal{
+	display: none;
+}
+._1t0jy5tw {
+    z-index: 2000 !important;
+    position: fixed !important;
+    inset: 0px !important;
+    overflow-y: auto !important;
+    background: rgb(34, 34, 34) !important;
+    animation-duration: 400ms !important;
+    animation-iteration-count: 1 !important;
+    animation-fill-mode: both !important;
+    animation-name: keyframe_15p0df !important;
+}
+@media (min-width: 744px){
+	._1t0jy5tw {
+		background: rgb(34, 34, 34) !important;
+	}	
+}
 
-
-
-
-
+._vxvq8x {
+    -webkit-box-pack: center !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: horizontal !important;
+    z-index: 2000 !important;
+    position: fixed !important;
+    inset: 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+}
+@supports (max-height: -webkit-fill-available){
+	._vxvq8x {
+		max-height: max(-webkit-fill-available, calc(7.95px * 100)) !important;
+	}
+}
+@media (min-width: 744px) and (min-height: 475px){
+	._vxvq8x {
+		-webkit-box-align: center !important;
+		padding: 40px !important;
+		align-items: center !important;
+	}
+}
+._z4lmgp {
+    display: contents !important;
+}
+._b21f4g {
+    border: 0px !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(100%) !important;
+    clip-path: inset(100%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0px !important;
+    position: absolute !important;
+    white-space: nowrap !important;
+    width: 1px !important;
+    margin-top: -1px !important;
+}
+._aicnws2 {
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    background: rgb(255, 255, 255) !important;
+    position: relative !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    max-height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    animation-duration: 400ms !important;
+    animation-iteration-count: 1 !important;
+    animation-fill-mode: both !important;
+    animation-name: keyframe_d37zz3 !important;
+    height: 100% !important;
+    overflow: clip !important;
+}
+@media (min-width: 744px){
+	._aicnws2 {
+		width: 765px !important;
+		max-width: 568px !important;
+		border-radius: 12px !important;
+		height: 600px !important;
+		min-width: 765px !important;
+	}	
+}
+._1j0otcx {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    contain: strict !important;
+}
+._sle94h {
+    position: absolute !important;
+    height: 100% !important;
+    width: 100% !important;
+    transform: scale(1.6) !important;
+}
+@media (min-width: 744px){
+	._sle94h {
+		transform: scale(1.4) !important;
+	}	
+}
+.l3t4iso[class][class] {
+    display: var(--lottie-animation-display,'block');
+}
+.a8jt5op[class][class] {
+    -webkit-clip: rect(0 0 0 0);
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    overflow: clip;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.dir.a8jt5op[class][class] {
+    border: 0;
+    padding: 0;
+}
+._eb84dk {
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+._xajlvv {
+    position: relative !important;
+    top: -40px !important;
+}
+@media (min-width: 744px){
+	._xajlvv {
+		top: -60px !important;
+	}	
+}
+._anvb7a {
+    width: 48px !important;
+    height: 48px !important;
+}
+._bilk7p {
+    font-size: 22px !important;
+    line-height: 26px !important;
+    font-weight: 600 !important;
+    color: rgb(34, 34, 34) !important;
+    text-align: center !important;
+    position: absolute !important;
+    width: 330px !important;
+    max-width: 100vw !important;
+    left: 50% !important;
+    right: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 72px !important;
+}
+._167h82a {
+    position: absolute !important;
+    display: none !important;
+    top: 422px !important;
+}
+@media (min-width: 744px){
+	._167h82a {
+		top: 340px !important;
+	}	
+}
+._l7ztla {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) translateY(-50%) !important;
+    -ms-transform: translateX(-50%) translateY(-50%) !important;
+    transform: translateX(-50%) translateY(-50%) !important;
+}
+._mr5az14 {
+    background-color: #222222 !important;
+    width: 6px !important;
+    height: 6px !important;
+    margin-right: 4px !important;
+    border-radius: 100% !important;
+    display: inline-block !important;
+    -webkit-animation-name: keyframe_1fk160q !important;
+    animation-name: keyframe_1fk160q !important;
+    -webkit-animation-duration: 0.8s !important;
+    animation-duration: 0.8s !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+    -webkit-animation-timing-function: linear !important;
+    animation-timing-function: linear !important;
+    -webkit-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+    vertical-align: middle !important;
+    -webkit-animation-delay: -0.3s !important;
+    animation-delay: -0.3s !important;
+}
+._1pphas65 {
+    background-color: #222222 !important;
+    width: 6px !important;
+    height: 6px !important;
+    margin-right: 4px !important;
+    border-radius: 100% !important;
+    display: inline-block !important;
+    -webkit-animation-name: keyframe_1fk160q !important;
+    animation-name: keyframe_1fk160q !important;
+    -webkit-animation-duration: 0.8s !important;
+    animation-duration: 0.8s !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+    -webkit-animation-timing-function: linear !important;
+    animation-timing-function: linear !important;
+    -webkit-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+    vertical-align: middle !important;
+    -webkit-animation-delay: -0.15s !important;
+    animation-delay: -0.15s !important;
+}
+._1x9afh0x {
+    background-color: #222222 !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 100% !important;
+    display: inline-block !important;
+    -webkit-animation-name: keyframe_1fk160q !important;
+    animation-name: keyframe_1fk160q !important;
+    -webkit-animation-duration: 0.8s !important;
+    animation-duration: 0.8s !important;
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
+    -webkit-animation-timing-function: linear !important;
+    animation-timing-function: linear !important;
+    -webkit-animation-fill-mode: both !important;
+    animation-fill-mode: both !important;
+    vertical-align: middle !important;
+    margin-right: 0 !important;
+}
 
 
 

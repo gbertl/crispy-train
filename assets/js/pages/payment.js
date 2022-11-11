@@ -162,3 +162,13 @@ window.addEventListener('click', (e) => {
       .classList.remove('popover-animate--active');
   }
 });
+
+document.querySelector('._6901pxv').addEventListener('click', ()=> {
+  document.body.style.cssText = `
+    position: fixed;
+    overflow: hidden;
+    inset: -562px 0px 0px;
+  `
+  document.querySelector("#payment-modal").style.display = "block"
+  console.log('clicked!')
+})
