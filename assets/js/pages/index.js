@@ -227,7 +227,6 @@ const updateContainer = (sitemapLocal) => {
 
       a.appendChild(aText);
       a.setAttribute('href', url);
-      a.setAttribute('target', '_blank');
       li.appendChild(a);
       ul.appendChild(li);
     });
