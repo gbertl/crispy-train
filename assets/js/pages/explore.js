@@ -846,7 +846,7 @@ multipleSlider({
 
 multipleSlider({
   btnCls: '.carousel-control-btn',
-  parentCls: '.vh-100',
+  parentCls: '.wh-full',
   slideWrapperCls: '.explore-grouped-listings-carousel-scroll-area',
 });
 
