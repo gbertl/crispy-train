@@ -61,7 +61,7 @@ export const purgeOne = () => {
     .pipe(
       postcss([
         purgeCss({
-          content: ['**/*.html', 'assets/**/*.js'],
+          content: ['**/*.html', '**/*.js', '!index.html', '!assets/js/pages/index.js'],
         }),
       ])
     )
