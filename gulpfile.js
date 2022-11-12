@@ -57,11 +57,11 @@ export default series(globalStyles, pageStyles, watchAll);
 // export default series(serve, watchMainStyles)
 
 export const purgeOne = () => {
-  return src('assets/css/ted.css')
+  return src('assets/css/pages.css')
     .pipe(
       postcss([
         purgeCss({
-          content: ['payments/payment.html', 'payments/payment-confirmed.html', '**/*.js'],
+          content: ['**/*.html', '**/*.js', '!index.html', '!assets/js/pages/index.js'],
         }),
       ])
     )
