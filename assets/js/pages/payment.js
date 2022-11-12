@@ -59,9 +59,9 @@ document.querySelectorAll('._1gyjybc > li').forEach((el) => {
     toggleOptions();
 
     if (text.innerText.includes('Credit')) {
-      document.querySelector('._4l12l8').classList.remove('hidden');
+      document.querySelector('.mt-2').classList.remove('hidden');
     } else {
-      document.querySelector('._4l12l8').classList.add('hidden');
+      document.querySelector('.mt-2').classList.add('hidden');
     }
 
     const activeOption = document.querySelector(
