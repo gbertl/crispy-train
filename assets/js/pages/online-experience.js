@@ -1,4 +1,4 @@
-const readMore = document.querySelector("._15rpys7s"); 
+const readMore = document.querySelector(".btn-link-condensed"); 
 
 
 document.querySelectorAll('[role="readMore"]').forEach((readMore => {
