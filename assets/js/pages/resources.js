@@ -23,9 +23,9 @@ document
     document.querySelector('._1fls13n').classList.toggle('hidden');
 
     if (this.classList.contains('_1ju7xj0j')) {
-      this.classList.replace('_1ju7xj0j', '_1qi0sj8');
+      this.classList.replace('_1ju7xj0j', 'btn-save');
     } else {
-      this.classList.replace('_1qi0sj8', '_1ju7xj0j');
+      this.classList.replace('btn-save', '_1ju7xj0j');
     }
   });
 
