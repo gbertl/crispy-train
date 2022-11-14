@@ -59,9 +59,9 @@ document.querySelectorAll('._1gyjybc > li').forEach((el) => {
     toggleOptions();
 
     if (text.innerText.includes('Credit')) {
-      document.querySelector('.mt-2').classList.remove('hidden');
+      document.querySelector('#credit-card-form').classList.remove('hidden');
     } else {
-      document.querySelector('.mt-2').classList.add('hidden');
+      document.querySelector('#credit-card-form').classList.add('hidden');
     }
 
     const activeOption = document.querySelector(
