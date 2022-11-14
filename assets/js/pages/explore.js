@@ -1022,11 +1022,11 @@ document
     }
   })
 
-  document.querySelectorAll('.explore-header__date-category-wrapper > button').forEach((el) =>  {
+  document.querySelectorAll('.header__trip-length-item > button').forEach((el) =>  {
     el.addEventListener('click', (e) => {
-      e.currentTarget.closest('#chip-group-super_flexible_lengths').querySelector('.explore-header__date-category-radio-2').classList.replace('explore-header__date-category-radio-2', 'explore-header__date-category-radio-1')
+      e.currentTarget.closest('#chip-group-super_flexible_lengths').querySelector('.header__trip-length-radio-active').classList.replace('header__trip-length-radio-active', 'header__trip-length-radio')
     
-      e.currentTarget.classList.replace('explore-header__date-category-radio-1', 'explore-header__date-category-radio-2')
+      e.currentTarget.classList.replace('header__trip-length-radio', 'header__trip-length-radio-active')
 
       document.querySelector('#subcategory-item-super_flexible_lengths').innerText = `Stay for a ${e.currentTarget.innerText.toLowerCase()}`
 
@@ -1055,6 +1055,6 @@ parent.querySelectorAll('.header__search-tabs-filter-content')[1].classList.remo
     }
 
     
-      document.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = `Any ${document.querySelector('.explore-header__date-category-radio-2').innerText.toLowerCase()}`
+      document.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = `Any ${document.querySelector('.header__trip-length-radio-active').innerText.toLowerCase()}`
     })
   })
