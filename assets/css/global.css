@@ -4133,6 +4133,12 @@ html :where(img[class*='wp-image-']) {
 }
 
 /*! UTILITY CLASSES */
+.inline-block {
+  display: inline-block !important;
+}
+.block {
+  display: block !important;
+}
 .contents {
   display: contents !important;
 }
@@ -4913,12 +4919,6 @@ html :where(img[class*='wp-image-']) {
   content: ' ' !important;
   display: table !important;
   clear: both !important;
-}
-.inline-block {
-  display: inline-block !important;
-}
-.block {
-  display: block !important;
 }
 .absolute-all {
   position: absolute !important;
