@@ -17354,10 +17354,10 @@ ul {
   display: flex;
   content: '';
 }
-.explore-header__date-category-wrapper[class][class] {
+.header__trip-length-item[class][class] {
   display: inline-block;
 }
-.dir-ltr.explore-header__date-category-wrapper[class][class] {
+.dir-ltr.header__trip-length-item[class][class] {
   padding-left: 8px;
 }
 .products-container__alert-warning-date[class][class] {
@@ -77335,7 +77335,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   padding-bottom: 14px !important;
   margin: 0px !important;
 }
-.explore-header__date-category-radio-1 {
+.header__trip-length-radio {
   cursor: pointer !important;
   text-align: center !important;
   border: 1px solid rgb(221, 221, 221) !important;
@@ -77356,12 +77356,12 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   line-height: 18px !important;
 }
 @media (hover: hover) {
-  .explore-header__date-category-radio-1:hover {
+  .header__trip-length-radio:hover {
     color: rgb(0, 0, 0) !important;
     border-color: rgb(0, 0, 0) !important;
   }
 }
-.explore-header__date-category-radio-2 {
+.header__trip-length-radio-active {
   cursor: pointer !important;
   text-align: center !important;
   border: 1px solid rgb(34, 34, 34) !important;
@@ -77382,7 +77382,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   color: rgb(34, 34, 34) !important;
 }
 @media (hover: hover) {
-  .explore-header__date-category-radio-2:hover {
+  .header__trip-length-radio-active:hover {
     color: rgb(0, 0, 0) !important;
     border-color: rgb(0, 0, 0) !important;
   }
