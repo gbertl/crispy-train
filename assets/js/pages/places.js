@@ -3,7 +3,7 @@ const galleryModal = () => {
 
   const parent = document.querySelector('._1ugan3i');
   const currentSlide = parent.querySelector('[data-veloute=slideshow-image]');
-  const remainingSlides = parent.querySelectorAll('._1u9fru1 > img');
+  const remainingSlides = parent.querySelectorAll('.hidden > img');
   const slideSrcs = [currentSlide.src];
   remainingSlides.forEach((rs) => slideSrcs.push(rs.src));
 
@@ -12,7 +12,7 @@ const galleryModal = () => {
     currentSlide.setAttribute('src', slideSrcs[counter]);
 
     // update counter
-    parent.querySelector('._1p3joamp').innerText = `${counter + 1} / ${
+    parent.querySelector('.btn-light__text').innerText = `${counter + 1} / ${
       slideSrcs.length
     }`;
 

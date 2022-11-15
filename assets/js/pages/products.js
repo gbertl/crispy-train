@@ -143,7 +143,7 @@ document.querySelectorAll('.availability-container__rate-table-checkin').forEach
   })
 })
 
-document.querySelectorAll('._c5rhl5').forEach((inputs) => {
+document.querySelectorAll('.form__input').forEach((inputs) => {
   inputs.addEventListener('click', (input) => {
     const target = input.target
     target.closest('._1rhk4n5')?.classList.replace('_1rhk4n5', '_etxtlin')
@@ -463,7 +463,7 @@ onScroll();
 window.addEventListener('scroll', onScroll);
 
 document.querySelector('#where-modal-read-more')?.addEventListener('click', (e) => {
-  e.currentTarget.closest('._50mnu4').querySelector('#where-modal-read-more-text').setAttribute('style', 'line-height: 24px')
+  e.currentTarget.closest('.mb-10').querySelector('#where-modal-read-more-text').setAttribute('style', 'line-height: 24px')
   e.currentTarget.classList.add('hidden')
 
 })

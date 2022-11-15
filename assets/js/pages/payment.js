@@ -42,7 +42,7 @@ document
     )
   );
 
-document.querySelectorAll('._1gyjybc > li').forEach((el) => {
+document.querySelectorAll('.pa-0 > li').forEach((el) => {
   el.addEventListener('click', (el) => {
     const icon = el.currentTarget.querySelector('svg').cloneNode(true);
     const text = el.currentTarget
@@ -65,7 +65,7 @@ document.querySelectorAll('._1gyjybc > li').forEach((el) => {
     }
 
     const activeOption = document.querySelector(
-      '._1gyjybc li[aria-selected=true]'
+      '.pa-0 li[aria-selected=true]'
     );
     activeOption.setAttribute('aria-selected', 'false');
     activeOption

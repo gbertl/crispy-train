@@ -3,7 +3,7 @@ const modal = document.querySelector('._1rp5252');
 
 
 const gallery = document.querySelector("._wlnonhg");
-const imgGallery = document.querySelector("._1u9fru1")
+const imgGallery = document.querySelector(".hidden")
 
 gallery.addEventListener('click', (e) => {
     e.preventDefault();

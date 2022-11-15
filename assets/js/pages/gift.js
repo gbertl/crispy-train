@@ -27,7 +27,7 @@ const handleInput = (e) => {
     }
 
     target.classList.contains('form__input')
-        ? target.classList.replace('form__input', '_c5rhl5')
+        ? target.classList.replace('form__input', 'form__input')
         : (target.classList = 'form__input')
 }
 input.addEventListener('focus', handleInput, false)

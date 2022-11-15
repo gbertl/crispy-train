@@ -13,9 +13,9 @@ if(document.querySelector('#close-modal-dp') != null){
         document.querySelector('._ybk1kl0').classList.remove('max-hidden-md')
 
         document.querySelector('._1t0jy5tw').classList.add('hidden')
-        document.querySelector('._vxvq8x').classList.add('hidden') 
+        document.querySelector('.modal__container').classList.add('hidden') 
         document.querySelector('._1t0jy5tw').classList.remove('min-hidden-md')
-        document.querySelector('._vxvq8x').classList.remove('min-hidden-md')
+        document.querySelector('.modal__container').classList.remove('min-hidden-md')
     });
 }
 
@@ -27,7 +27,7 @@ if(document.querySelector('#close-modal-dp-m') != null){
         modal.classList.replace('_5wyy9re', '_1tbjv3ch')
         modalM.classList.replace('_njcq40o', '_iwziubj')
         setTimeout(() => {
-            document.querySelector('._vxvq8x').classList.add('hidden') 
+            document.querySelector('.modal__container').classList.add('hidden') 
         }, 500);
         document.querySelector('._ybk1kl0').classList.add('hidden')
         document.querySelector('._g2ext').classList.add('hidden')
@@ -36,7 +36,7 @@ if(document.querySelector('#close-modal-dp-m') != null){
 
         document.querySelector('._1t0jy5tw').classList.add('hidden')
         document.querySelector('._1t0jy5tw').classList.remove('min-hidden-md')
-        document.querySelector('._vxvq8x').classList.remove('min-hidden-md')
+        document.querySelector('.modal__container').classList.remove('min-hidden-md')
     });
 }
 
@@ -56,9 +56,9 @@ if(document.querySelector('._g2ext') != null){
             document.querySelector('._ybk1kl0').classList.remove('max-hidden-md')
 
             document.querySelector('._1t0jy5tw').classList.add('hidden')
-            document.querySelector('._vxvq8x').classList.add('hidden')
+            document.querySelector('.modal__container').classList.add('hidden')
             document.querySelector('._1t0jy5tw').classList.remove('min-hidden-md')
-            document.querySelector('._vxvq8x').classList.remove('min-hidden-md')
+            document.querySelector('.modal__container').classList.remove('min-hidden-md')
         }
     });
 }
@@ -77,9 +77,9 @@ if(document.querySelector('#open-modal-dp') != null){
         document.querySelector('._ybk1kl0').classList.add('max-hidden-md')
 
         document.querySelector('._1t0jy5tw').classList.remove('hidden')
-        document.querySelector('._vxvq8x').classList.remove('hidden')
+        document.querySelector('.modal__container').classList.remove('hidden')
         document.querySelector('._1t0jy5tw').classList.add('min-hidden-md')
-        document.querySelector('._vxvq8x').classList.add('min-hidden-md')
+        document.querySelector('.modal__container').classList.add('min-hidden-md')
     });
 }
 
