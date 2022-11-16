@@ -72090,25 +72090,25 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   vertical-align: middle !important;
   font-size: 34px !important;
 }
-._yz46843 {
+.hero {
   position: relative !important;
   margin-bottom: 24px !important;
   margin-top: 0 !important;
 }
 @media (max-width: 743px) {
-  ._yz46843 {
+  .hero {
     padding-top: 150% !important;
   }
 }
 @media (min-width: 744px) {
-  ._yz46843 {
+  .hero {
     padding-top: 50% !important;
     margin-bottom: 32px !important;
     margin-top: 0 !important;
   }
 }
 @media (min-width: 1128px) {
-  ._yz46843 {
+  .hero {
     padding-top: 50% !important;
     margin-bottom: 48px !important;
     margin-top: 0 !important;
@@ -72134,7 +72134,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   align-items: center !important;
   justify-content: center !important;
 }
-._1d0k9d2t {
+.hero__overlay {
   -moz-box-direction: normal !important;
   -moz-box-orient: vertical !important;
   position: absolute !important;
@@ -72143,12 +72143,12 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   flex-direction: column !important;
 }
 @media (max-width: 743px) {
-  ._1d0k9d2t {
+  .hero__overlay {
     padding-bottom: 24px !important;
   }
 }
 @media (min-width: 744px) {
-  ._1d0k9d2t {
+  .hero__overlay {
     -moz-box-pack: center !important;
     justify-content: center !important;
   }
@@ -72238,7 +72238,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   line-height: 1.375em !important;
   color: #484848 !important;
 }
-._122hpti {
+.hero__title-wrapper {
   font-size: 40px !important;
   line-height: 40px !important;
   letter-spacing: -1.5px !important;
@@ -72246,7 +72246,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   overflow-wrap: normal !important;
 }
 @media (min-width: 1128px) {
-  ._122hpti {
+  .hero__title-wrapper {
     font-size: 48px !important;
     line-height: 52px !important;
     letter-spacing: -2.5px !important;
@@ -72264,19 +72264,19 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   padding-top: 6px !important;
   padding-bottom: 6px !important;
 }
-._1ef5mfj {
+.hero__desc {
   font-size: 18px !important;
   font-weight: 400 !important;
   line-height: 28px !important;
 }
 @media (min-width: 744px) {
-  ._1ef5mfj {
+  .hero__desc {
     font-size: 22px !important;
     line-height: 32px !important;
   }
 }
 @media (min-width: 1128px) {
-  ._1ef5mfj {
+  .hero__desc {
     font-size: 26px !important;
     line-height: 36px !important;
   }
