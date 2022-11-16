@@ -1,7 +1,7 @@
 const handleSaveUnsaveWishlist = () => {
   const saveBtns = document.querySelectorAll('[aria-label="Save this Experience"], [aria-label="Add listing to a list"]');
   const unsaveBtns = document.querySelectorAll('[aria-label="Unsave this Experience"]');
-  const wishlistModalBtns = document.querySelectorAll('._11eqlma4');
+  const wishlistModalBtns = document.querySelectorAll('.button-container__wrapper');
   let currentCard;
 
   const createUnsaveBtn = () => {
