@@ -5346,6 +5346,36 @@ html :where(img[class*='wp-image-']) {
   display: table-cell;
   vertical-align: middle !important;
 }
+.mr-4 {
+  margin-right: 16px;
+}
+.fs-normal {
+  font-size: var(--font-size);
+}
+.lh-medium {
+  line-height: var(--line-height-md);
+}
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+.pb-3.5 {
+  padding-bottom: 14px;
+}
+.pl-6 {
+  padding-left: 24px;
+}
+.pr-6 {
+  padding-right: 24px;
+}
+.fs-small {
+  font-size: var(--font-size-sm);
+}
+.lh-small {
+  line-height: var(--line-height-sm);
+}
+.text-primary {
+  color: var(--primary-color);
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
