@@ -1,7 +1,7 @@
 const galleryModal = () => {
   let counter = 0;
 
-  const parent = document.querySelector('._1ugan3i');
+  const parent = document.querySelector('.gallery-modal');
   const currentSlide = parent.querySelector('[data-veloute=slideshow-image]');
   const remainingSlides = parent.querySelectorAll('.hidden > img');
   const slideSrcs = [currentSlide.src];
@@ -20,29 +20,29 @@ const galleryModal = () => {
 
     // white cloud left and right
     if (counter === 0) {
-      parent.querySelectorAll('._cw8pnk > div')[0].classList.remove('_mezawn');
+      parent.querySelectorAll('.gallery-modal__thumbs-transform > div')[0].classList.remove('gallery-modal__thumbs-left-cloud');
     }
 
     if (counter < slideSrcs.length - 1 && counter !== 0) {
-      parent.querySelectorAll('._cw8pnk > div')[0].classList.add('_mezawn');
+      parent.querySelectorAll('.gallery-modal__thumbs-transform > div')[0].classList.add('gallery-modal__thumbs-left-cloud');
     }
 
     if (counter === slideSrcs.length - 1) {
-      parent.querySelectorAll('._cw8pnk > div')[1].classList.remove('_1iwi6a4');
+      parent.querySelectorAll('.gallery-modal__thumbs-transform > div')[1].classList.remove('gallery-modal__thumbs-right-cloud');
     } else {
-      parent.querySelectorAll('._cw8pnk > div')[1].classList.add('_1iwi6a4');
+      parent.querySelectorAll('.gallery-modal__thumbs-transform > div')[1].classList.add('gallery-modal__thumbs-right-cloud');
     }
 
     // update border for currentSlide
-    parent.querySelector('._1umg7png').classList.replace('_1umg7png', '_hwcst');
+    parent.querySelector('.gallery-modal__thumb-btn-active').classList.replace('gallery-modal__thumb-btn-active', 'gallery-modal__thumb-btn');
     parent
       .querySelector(`button[data-photo-index="${counter}"]`)
-      .classList.replace('_hwcst', '_1umg7png');
+      .classList.replace('gallery-modal__thumb-btn', 'gallery-modal__thumb-btn-active');
 
     if (counter === 0 || counter === 1)
-      parent.querySelector('._conlnu').style = 'transform: translateX(8px)';
+      parent.querySelector('.gallery-modal__thumbs-list').style = 'transform: translateX(8px)';
     if (counter === 2)
-      parent.querySelector('._conlnu').style = 'transform: translateX(0)';
+      parent.querySelector('.gallery-modal__thumbs-list').style = 'transform: translateX(0)';
   };
 
   parent
@@ -70,7 +70,7 @@ const galleryModal = () => {
     });
 
   // right side thumb buttons updates slide
-  parent.querySelectorAll('._conlnu button[data-photo-index]').forEach((el) => {
+  parent.querySelectorAll('.gallery-modal__thumbs-list button[data-photo-index]').forEach((el) => {
     el.addEventListener('click', (e) => {
       counter = parseInt(e.currentTarget.dataset.photoIndex);
       apply();
@@ -78,10 +78,10 @@ const galleryModal = () => {
   });
 
   // handles closing of gallery modal
-  parent.querySelector('._1rp5252').addEventListener('click', () => {
+  parent.querySelector('.gallery-modal__close').addEventListener('click', () => {
     document.body.classList.remove('hidden-vscroll');
 
-    document.querySelector('._1ugan3i').classList.add('hidden');
+    document.querySelector('.gallery-modal').classList.add('hidden');
   });
 
   // opens gallery modal by clicking any photos or show all button
@@ -97,7 +97,7 @@ const galleryModal = () => {
 
         apply();
 
-        document.querySelector('._1ugan3i').classList.remove('hidden');
+        document.querySelector('.gallery-modal').classList.remove('hidden');
       });
     });
 };
@@ -106,17 +106,17 @@ galleryModal();
 
 const mobileCarousel = () => {
   let counter = 0;
-  const slideContainer = document.querySelector('._rxz20bq');
-  const slides = document.querySelectorAll('._rxz20bq > li');
+  const slideContainer = document.querySelector('.mobile-carousel__slide-wrapper');
+  const slides = document.querySelectorAll('.mobile-carousel__slide-wrapper > li');
   let size = slides[0].offsetWidth;
-  const dotsContainer = document.querySelector('._1b2klj3');
+  const dotsContainer = document.querySelector('.mobile-carousel__dots');
 
   for (let x = 0; x < slides.length; x++) {
     const span = document.createElement('span');
     if (x === 0) {
-      span.classList.add('_figllth');
+      span.classList.add('mobile-carousel__dot-active');
     } else {
-      span.classList.add('_1g2uchb');
+      span.classList.add('mobile-carousel__dot');
     }
 
     dotsContainer.appendChild(span);
@@ -124,11 +124,11 @@ const mobileCarousel = () => {
 
   const updateDots = () => {
     dotsContainer
-      .querySelector('._figllth')
-      .classList.replace('_figllth', '_1g2uchb');
+      .querySelector('.mobile-carousel__dot-active')
+      .classList.replace('mobile-carousel__dot-active', 'mobile-carousel__dot');
     dotsContainer
       .querySelectorAll('span')
-      [counter].classList.replace('_1g2uchb', '_figllth');
+      [counter].classList.replace('mobile-carousel__dot', 'mobile-carousel__dot-active');
   };
 
   const apply = () => {
@@ -141,7 +141,7 @@ const mobileCarousel = () => {
   window.addEventListener('resize', () => size = slides[0].offsetWidth)
 
   document
-    .querySelector('._1ue05kx[aria-label=Next]')
+    .querySelector('.mobile-carousel__btn[aria-label=Next]')
     .addEventListener('click', () => {
       if (counter < slides.length - 1) {
         counter += 1;
@@ -153,7 +153,7 @@ const mobileCarousel = () => {
     });
 
   document
-    .querySelector('._1ue05kx[aria-label=Previous]')
+    .querySelector('.mobile-carousel__btn[aria-label=Previous]')
     .addEventListener('click', () => {
       if (counter > 0) {
         counter -= 1;

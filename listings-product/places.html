@@ -412,20 +412,20 @@
                             
                               <div class="_vfwjg3 hidden-md" style="margin-bottom: 24px">
                                 <div
-                                  class="_1mx6kqf"
+                                  class="mobile-carousel"
                                   style="background: white; --dls-basecard-padding-top: 56%"
                                 >
-                                  <div class="_1szwzht">
+                                  <div class="mobile-carousel__wrapper">
                                     <div class="img-container">
                                       <ul
                                         aria-label="Photo of Nobu Malibu in Eastern Malibu"
-                                        class="_rxz20bq"
+                                        class="mobile-carousel__slide-wrapper"
                                         style="margin-left: 0px; margin-right: 0px"
                                       >
                                         <li
                                           aria-hidden="false"
                                           data-key="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?aki_policy=large"
-                                          class="_145ocfuw"
+                                          class="mobile-carousel__slide"
                                           style="border-width: 0px"
                                         >
                                           <div
@@ -458,7 +458,7 @@
                                         <li
                                           aria-hidden="true"
                                           data-key="https://a0.muscache.com/im/pictures/34527a29-4963-4a2a-9a15-c694574accbb.jpg?aki_policy=large"
-                                          class="_145ocfuw"
+                                          class="mobile-carousel__slide"
                                           style="border-width: 0px"
                                         >
                                           <div
@@ -490,7 +490,7 @@
                                         <li
                                           aria-hidden="true"
                                           data-key="https://a0.muscache.com/im/pictures/c5af983b-869e-4b0f-bfc4-e0f1e045e154.jpg?aki_policy=large"
-                                          class="_145ocfuw"
+                                          class="mobile-carousel__slide"
                                           style="border-width: 0px"
                                         >
                                           <div
@@ -522,7 +522,7 @@
                                         <li
                                           aria-hidden="true"
                                           data-key="https://a0.muscache.com/im/pictures/d12c4075-afcf-487e-be87-9ab79c2029bf.jpg?aki_policy=large"
-                                          class="_145ocfuw"
+                                          class="mobile-carousel__slide"
                                           style="border-width: 0px"
                                         >
                                           <div
@@ -553,10 +553,10 @@
                                         </li>
                                       </ul>
                                       <div class="carousel-slider__list-m">
-                                        <div class="_18v2eh">
-                                          <div class="_14x8wq27">
-                                            <div class="_1lyyzem">
-                                              <button aria-label="Previous" type="button" class="_1ue05kx">
+                                        <div class="mobile-carousel__overlay-top">
+                                          <div class="mobile-carousel__controls">
+                                            <div class="mobile-carousel__btn-wrapper">
+                                              <button aria-label="Previous" type="button" class="mobile-carousel__btn">
                                                 <span class="relative"
                                                   ><span class="new-arrow-underscore">_</span
                                                   ><svg
@@ -583,8 +583,8 @@
                                                 ></span>
                                               </button>
                                             </div>
-                                            <div class="_1lyyzem">
-                                              <button aria-label="Next" type="button" class="_1ue05kx">
+                                            <div class="mobile-carousel__btn-wrapper">
+                                              <button aria-label="Next" type="button" class="mobile-carousel__btn">
                                                 <span class="relative"
                                                   ><span class="new-arrow-underscore">_</span
                                                   ><svg
@@ -613,10 +613,10 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="_1und47">
+                                        <div class="mobile-carousel__overlay-bottom">
                                           <div aria-label="Photo 1 of 4" role="img" class="pagination-bullets">
-                                            <div class="_12i96r6">
-                                              <div class="_1b2klj3" style="transform: translateX(0px)">
+                                            <div class="mobile-carousel__dots-wrapper">
+                                              <div class="mobile-carousel__dots" style="transform: translateX(0px)">
                                             </div>
                                           </div>
                                         </div>
@@ -17566,15 +17566,15 @@
     ></div>
 
     <!-- gallery modal -->
-<div role="dialog" class="_1ugan3i hidden" style="z-index: 2000">
-  <div class="_1od2xb8 hidden block-md">
-    <div class="_rgyfiy">
+<div role="dialog" class="gallery-modal hidden" style="z-index: 2000">
+  <div class="gallery-modal__inner hidden block-md">
+    <div class="table-row-xl">
       <div>
         <div data-showat="mediumAndAbove">
-          <div class="_1llxo8x">
+          <div class="gallery-modal__close-wrapper">
             <button
               type="button"
-              class="_1rp5252"
+              class="gallery-modal__close"
               aria-busy="false"
               style="padding: 32px; margin: -32px"
             >
@@ -17601,10 +17601,10 @@
         </div>
       </div>
       <div data-showat="mediumAndAbove">
-        <div class="_40iwxv">
-          <div class="_z9dr48">
+        <div class="gallery-modal__slide-wrapper">
+          <div class="gallery-modal__slide">
             <div data-showat="mediumAndAbove">
-              <button type="button" aria-label="Previous" class="_12qhocje">
+              <button type="button" aria-label="Previous" class="gallery-modal__prev-btn">
                 <svg
                   viewBox="0 0 18 18"
                   role="presentation"
@@ -17617,7 +17617,7 @@
                     fill-rule="evenodd"
                   ></path>
                 </svg></button
-              ><button type="button" aria-label="Next" class="_wlnonhg">
+              ><button type="button" aria-label="Next" class="gallery-modal__next-btn">
                 <svg
                   viewBox="0 0 18 18"
                   role="presentation"
@@ -17633,7 +17633,7 @@
               </button>
             </div>
             <img
-              class="_17vo0vv"
+              class="gallery-modal__slide-img"
               aria-hidden="true"
               src="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?im_w=1200"
               alt=""
@@ -17671,65 +17671,65 @@
             </div>
           </div>
         </div>
-        <div class="_o00axf">
-          <div class="_1q5yq3s">
-            <div class="_1gcx0s8">
-              <div class="_q3au4a">
-                <div class="_cw8pnk">
+        <div class="gallery-modal__thumbs-wrapper">
+          <div class="gallery-modal__thumbs">
+            <div class="gallery-modal__thumbs-inner">
+              <div class="gallery-modal__thumbs-inner-2">
+                <div class="gallery-modal__thumbs-transform">
                   <div></div>
-                  <div class="_1iwi6a4"></div>
-                  <div class="_2fozrm">
-                    <div class="_zf7q4">
-                      <ul class="_conlnu">
-                        <li class="_1y6wdia">
+                  <div class="gallery-modal__thumbs-right-cloud"></div>
+                  <div class="gallery-modal__thumbs-block">
+                    <div class="gallery-modal__thumbs-list-wrapper">
+                      <ul class="gallery-modal__thumbs-list">
+                        <li class="gallery-modal__thumb-first">
                           <button
                             data-photo-index="0"
-                            class="_1umg7png"
+                            class="gallery-modal__thumb-btn-active"
                             aria-label="1/4: "
                           >
                             <img
                               alt=""
                               src="https://a0.muscache.com/im/pictures/e557bf4b-cde7-4107-a696-2c22ab889b69.jpg?aki_policy=small"
-                              class="_u6tx3c"
+                              class="gallery-modal__thumb-img"
                             />
                           </button>
                         </li>
-                        <li class="_12n0r6ug">
+                        <li class="gallery-modal__thumb">
                           <button
                             data-photo-index="1"
-                            class="_hwcst"
+                            class="gallery-modal__thumb-btn"
                             aria-label="2/4: "
                           >
                             <img
                               alt=""
                               src="https://a0.muscache.com/im/pictures/34527a29-4963-4a2a-9a15-c694574accbb.jpg?aki_policy=small"
-                              class="_u6tx3c"
+                              class="gallery-modal__thumb-img"
                             />
                           </button>
                         </li>
-                        <li class="_12n0r6ug">
+                        <li class="gallery-modal__thumb">
                           <button
                             data-photo-index="2"
-                            class="_hwcst"
+                            class="gallery-modal__thumb-btn"
                             aria-label="3/4: "
                           >
                             <img
                               alt=""
                               src="https://a0.muscache.com/im/pictures/c5af983b-869e-4b0f-bfc4-e0f1e045e154.jpg?aki_policy=small"
-                              class="_u6tx3c"
+                              class="gallery-modal__thumb-img"
                             />
                           </button>
                         </li>
-                        <li class="_12n0r6ug">
+                        <li class="gallery-modal__thumb">
                           <button
                             data-photo-index="3"
-                            class="_hwcst"
+                            class="gallery-modal__thumb-btn"
                             aria-label="4/4: "
                           >
                             <img
                               alt=""
                               src="https://a0.muscache.com/im/pictures/d12c4075-afcf-487e-be87-9ab79c2029bf.jpg?aki_policy=small"
-                              class="_u6tx3c"
+                              class="gallery-modal__thumb-img"
                             />
                           </button>
                         </li>
@@ -17740,7 +17740,7 @@
               </div>
             </div>
           </div>
-          <div class="_yoviva">
+          <div class="gallery-modal__counter-wrapper">
             <div style="margin-bottom: 16px">
               <div class="btn-light__text">1 / 4</div>
             </div>

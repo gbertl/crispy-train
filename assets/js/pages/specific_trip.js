@@ -1,13 +1,13 @@
 const carousel = () => {
-  const nextBtn = document.querySelector('._1ue05kx[aria-label=Next]');
-  const prevBtn = document.querySelector('._1ue05kx[aria-label=Previous]');
+  const nextBtn = document.querySelector('.mobile-carousel__btn[aria-label=Next]');
+  const prevBtn = document.querySelector('.mobile-carousel__btn[aria-label=Previous]');
   const dotsWrapper = document.querySelector('.pagination-bullets__list');
   let counter = 0;
-  const slideWrapper = document.querySelector('._rxz20bq');
+  const slideWrapper = document.querySelector('.mobile-carousel__slide-wrapper');
   const slides = slideWrapper.querySelectorAll('li');
   let width = slides[0].offsetWidth;
   const overlays = document.querySelectorAll(
-    '._rxz20bq li:first-child > div > div'
+    '.mobile-carousel__slide-wrapper li:first-child > div > div'
   );
 
   // creates bullets
@@ -66,7 +66,7 @@ const carousel = () => {
       dots[0].classList.replace('_13280q5', '_ub4kx1h');
 
       // shows previous button
-      prevBtn.closest('._1lyyzem').style.opacity = '1';
+      prevBtn.closest('.mobile-carousel__btn-wrapper').style.opacity = '1';
 
       isAnimated = true;
     }
@@ -79,7 +79,7 @@ const carousel = () => {
       apply();
 
       // shows next button
-      nextBtn.closest('._1lyyzem').style.opacity = '1';
+      nextBtn.closest('.mobile-carousel__btn-wrapper').style.opacity = '1';
     } else {
       // overlay animations on first slide
       overlays[0].style.transform = 'scale(1.1)';
@@ -98,7 +98,7 @@ const carousel = () => {
       dots[0].classList.replace('_ub4kx1h', '_13280q5');
 
       // hides previous button
-      prevBtn.closest('._1lyyzem').style.opacity = '0';
+      prevBtn.closest('.mobile-carousel__btn-wrapper').style.opacity = '0';
 
       isAnimated = false;
     }
@@ -110,9 +110,9 @@ const carousel = () => {
 
     // shows and hides next button
     if (counter < slides.length - 1) {
-      nextBtn.closest('._1lyyzem').style.opacity = '1';
+      nextBtn.closest('.mobile-carousel__btn-wrapper').style.opacity = '1';
     } else {
-      nextBtn.closest('._1lyyzem').style.opacity = '0';
+      nextBtn.closest('.mobile-carousel__btn-wrapper').style.opacity = '0';
     }
   });
 };

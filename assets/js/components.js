@@ -174,13 +174,13 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
     const modal = document.querySelector(e.dataset.modal);
     const section = document.querySelector(e.dataset.lightbox);
 
-    const lightboxControls = section?.querySelector('._14x8wq27')
+    const lightboxControls = section?.querySelector('.mobile-carousel__controls')
     const lcPrev = lightboxControls?.querySelector('button[aria-label="Previous"]')
     const lcNext = lightboxControls?.querySelector('button[aria-label="Next"]')
 
     const sections = modal?.querySelectorAll('section')
 
-    const mobileScrollSection = modal?.querySelector('._rxz20bq')
+    const mobileScrollSection = modal?.querySelector('.mobile-carousel__slide-wrapper')
     const mobileScrollSectionList = mobileScrollSection?.querySelectorAll('li')
     const mobileLightboxItemCount = modal?.querySelector('._1b1whhx')
 
@@ -221,7 +221,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
       const prevSectionIndex = [...sections].indexOf(section.previousElementSibling)
       const nextSectionIndex = [...sections].indexOf(section.nextElementSibling)
 
-      const lightboxControls = section.querySelector('._14x8wq27')
+      const lightboxControls = section.querySelector('.mobile-carousel__controls')
       const lcPrev = lightboxControls.querySelector('button[aria-label="Previous"]')
       const lcNext = lightboxControls.querySelector('button[aria-label="Next"]')
 
