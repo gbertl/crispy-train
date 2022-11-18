@@ -5376,6 +5376,9 @@ html :where(img[class*='wp-image-']) {
 .text-primary {
   color: var(--primary-color);
 }
+.pb-3 {
+  padding-bottom: 12px !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
