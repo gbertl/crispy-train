@@ -41871,7 +41871,7 @@ video::cue {
   margin-top: 8px !important;
   color: #717171 !important;
 }
-._1xk0grw {
+.card-availability {
   -webkit-box-direction: normal !important;
   -webkit-box-orient: vertical !important;
   border: 1px solid #ddd !important;
@@ -41884,22 +41884,22 @@ video::cue {
   position: relative !important;
 }
 @media (min-width: 744px) {
-  ._1xk0grw {
+  .card-availability {
     border-radius: 8px !important;
   }
 }
-._1xfzkyj {
+.card-availability__subtitle {
   margin-top: 4px !important;
   font-size: 14px !important;
   line-height: 18px !important;
 }
-._dyh67hw {
+.card-availability__link {
   margin-top: 4px !important;
   font-size: 14px !important;
   line-height: 18px !important;
   color: #717171 !important;
 }
-._i3mzil {
+.card-availability__price {
   -webkit-box-align: end !important;
   -webkit-box-flex: 1 !important;
   font-size: 16px !important;
@@ -43491,7 +43491,7 @@ video::cue {
     ) !important;
   }
 }
-.tjxdvlu[class][class] {
+.btn-mask-image[class][class] {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -43501,7 +43501,7 @@ video::cue {
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   mask-image: -webkit-radial-gradient(white, black);
 }
-.t12u7nq4[class][class] {
+.btn-background-image[class][class] {
   display: block;
   width: 100%;
   height: 100%;
@@ -43509,13 +43509,13 @@ video::cue {
   opacity: 0;
   background-image: linear-gradient(to right, #000 0, #fff 50%, #000 100%);
 }
-.dir.t12u7nq4[class][class] {
+.dir.btn-background-image[class][class] {
   background-size: 200% 200%;
   transition: opacity 1.25s;
   background-image: var(--gradient-alt-2);
 }
 @supports (--custom: properties) {
-  .dir.t12u7nq4[class][class] {
+  .dir.btn-background-image[class][class] {
     background-image: var(--dls19-brand-gradient-radial, var(--gradient-alt-2));
   }
 }
@@ -54181,7 +54181,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     ) !important;
   }
 }
-.c4wd1yj[class][class] {
+.btn-text[class][class] {
   display: block;
   position: relative;
   pointer-events: none;
@@ -65111,7 +65111,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     overflow: hidden;
   }
 }
-.dir.tjxdvlu[class][class] {
+.dir.btn-mask-image[class][class] {
   left: 0;
   right: 0;
   border-radius: var(--border-radius);
