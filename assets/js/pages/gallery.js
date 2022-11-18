@@ -1,8 +1,8 @@
-const modal = document.querySelector('._1rp5252');
+const modal = document.querySelector('.gallery-modal__close');
 
 
 
-const gallery = document.querySelector("._wlnonhg");
+const gallery = document.querySelector(".gallery-modal__next-btn");
 const imgGallery = document.querySelector(".hidden")
 
 gallery.addEventListener('click', (e) => {

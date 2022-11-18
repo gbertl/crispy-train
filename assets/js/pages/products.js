@@ -146,12 +146,12 @@ document.querySelectorAll('.availability-container__rate-table-checkin').forEach
 document.querySelectorAll('.form__input').forEach((inputs) => {
   inputs.addEventListener('click', (input) => {
     const target = input.target
-    target.closest('._1rhk4n5')?.classList.replace('_1rhk4n5', '_etxtlin')
+    target.closest('.calendar-dropdown__input-text-active')?.classList.replace('calendar-dropdown__input-text-active', '_etxtlin')
     target.classList.add('focus-visible')
     target.placeholder = 'MM/DD/YYYY'
     document.addEventListener('click', (e) => {
       if (input.target !== e.target) {
-        target.closest('._etxtlin')?.classList.replace('_etxtlin', '_1rhk4n5')
+        target.closest('._etxtlin')?.classList.replace('_etxtlin', 'calendar-dropdown__input-text-active')
         target.classList.remove('focus-visible')
         target.placeholder = 'Add date'
       }
@@ -450,12 +450,12 @@ document.querySelectorAll('#reviews-search-input').forEach((e) => {
 
 const onScroll = () => {
   window.scrollY > 600
-    ? document.querySelector('._1zeg3u')?.classList.replace('_1zeg3u', '_6gzg21')
-    : document.querySelector('._6gzg21')?.classList.replace('_6gzg21', '_1zeg3u')
+    ? document.querySelector('._1zeg3u')?.classList.replace('_1zeg3u', 'sticky-header')
+    : document.querySelector('.sticky-header')?.classList.replace('sticky-header', '_1zeg3u')
 
   window.scrollY > 2500
-    ? document.querySelector('._14ukjft')?.classList.replace('_14ukjft', '_15tm0yy3')
-    : document.querySelector('._15tm0yy3')?.classList.replace('_15tm0yy3', '_14ukjft')
+    ? document.querySelector('._14ukjft')?.classList.replace('_14ukjft', 'sticky-header__action')
+    : document.querySelector('.sticky-header__action')?.classList.replace('sticky-header__action', '_14ukjft')
 }
 
 onScroll();
@@ -491,7 +491,7 @@ const shareModal = document.querySelector('#share-modal')
 shareModal?.querySelector('.modal__share-item:first-child button').addEventListener('click', (e) => {
   clearTimeout(copyLinkTimeout)
 
-  let copyLink = shareModal.querySelector('._8c85wg')
+  let copyLink = shareModal.querySelector('.modal__snackbar')
   copyLink.classList.contains('hidden') && copyLink.classList.remove('hidden')
   copyLinkTimeout = setTimeout(() => {
     !copyLink.classList.contains('hidden') && copyLink.classList.add('hidden')

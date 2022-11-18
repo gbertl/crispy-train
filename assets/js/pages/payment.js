@@ -46,7 +46,7 @@ document.querySelectorAll('.pa-0 > li').forEach((el) => {
   el.addEventListener('click', (el) => {
     const icon = el.currentTarget.querySelector('svg').cloneNode(true);
     const text = el.currentTarget
-      .querySelector('._10ejfg4u span')
+      .querySelector('.payment-dropdown__text span')
       .cloneNode(true);
 
     const select = document.querySelector(
@@ -69,13 +69,13 @@ document.querySelectorAll('.pa-0 > li').forEach((el) => {
     );
     activeOption.setAttribute('aria-selected', 'false');
     activeOption
-      .querySelector('._1s9o8so5')
-      .classList.replace('_1s9o8so5', '_6h56b0p');
+      .querySelector('.payment-dropdown__check')
+      .classList.replace('payment-dropdown__check', 'payment-dropdown__check-hide');
 
     el.currentTarget.setAttribute('aria-selected', 'true');
     el.currentTarget
-      .querySelector('._6h56b0p')
-      .classList.replace('_6h56b0p', '_1s9o8so5');
+      .querySelector('.payment-dropdown__check-hide')
+      .classList.replace('payment-dropdown__check-hide', 'payment-dropdown__check');
   });
 });
 
