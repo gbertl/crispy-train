@@ -450,12 +450,12 @@ document.querySelectorAll('#reviews-search-input').forEach((e) => {
 
 const onScroll = () => {
   window.scrollY > 600
-    ? document.querySelector('._1zeg3u')?.classList.replace('_1zeg3u', '_6gzg21')
-    : document.querySelector('._6gzg21')?.classList.replace('_6gzg21', '_1zeg3u')
+    ? document.querySelector('._1zeg3u')?.classList.replace('_1zeg3u', 'sticky-header')
+    : document.querySelector('.sticky-header')?.classList.replace('sticky-header', '_1zeg3u')
 
   window.scrollY > 2500
-    ? document.querySelector('._14ukjft')?.classList.replace('_14ukjft', '_15tm0yy3')
-    : document.querySelector('._15tm0yy3')?.classList.replace('_15tm0yy3', '_14ukjft')
+    ? document.querySelector('._14ukjft')?.classList.replace('_14ukjft', 'sticky-header__action')
+    : document.querySelector('.sticky-header__action')?.classList.replace('sticky-header__action', '_14ukjft')
 }
 
 onScroll();
