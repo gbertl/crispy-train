@@ -60628,7 +60628,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   align-items: flex-end !important;
   flex-flow: column wrap !important;
 }
-._r2ourjn {
+.counter-dropdown {
   background: #fff !important;
   border-radius: 4px !important;
   box-shadow: rgb(0 0 0 / 15%) 0 2px 6px, rgb(0 0 0 / 7%) 0 0 0 1px !important;
@@ -60642,18 +60642,18 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   z-index: 999 !important;
   right: 0 !important;
 }
-._ysga5k {
+.counter-dropdown__inner {
   --guest-picker-filter-row-title-font-weight: 600 !important;
   --guest-picker-filter-row-subtitle-font-size: 14px !important;
   --guest-picker-filter-row-subtitle-line-height: 18px !important;
   --guest-picker-disclaimer-font-size: 12px !important;
   --guest-picker-disclaimer-line-height: 16px !important;
 }
-._1y5b6gl {
+.counter-dropdown__item-first {
   margin-bottom: 24px !important;
   margin-top: 8px !important;
 }
-._1m4zger {
+.counter-dropdown__item {
   -webkit-box-align: center !important;
   align-items: center !important;
   display: flex !important;
@@ -60663,20 +60663,20 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     'Helvetica Neue', sans-serif !important;
   font-weight: 400 !important;
 }
-._1ynrq4v {
+.counter-dropdown__title {
   font-size: 16px !important;
   line-height: 20px !important;
   padding-bottom: 4px !important;
   font-weight: var(--guest-picker-filter-row-title-font-weight, 400) !important;
 }
-._1wh7hnv {
+.counter-dropdown__subtitle {
   font-size: var(--guest-picker-filter-row-subtitle-font-size, 12px) !important;
   line-height: var(
     --guest-picker-filter-row-subtitle-line-height,
     16px
   ) !important;
 }
-._3zlfom {
+.counter-dropdown__action {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
   display: inline-flex !important;
@@ -60691,13 +60691,13 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     'Helvetica Neue', sans-serif !important;
 }
-._ul9u8c:disabled {
+.counter-dropdown__stepper:disabled {
   cursor: not-allowed !important;
   color: #ebebeb !important;
   border-color: #ebebeb !important;
   background: #fff !important;
 }
-._ul9u8c {
+.counter-dropdown__stepper {
   -webkit-box-pack: center !important;
   -webkit-box-align: center !important;
   -webkit-box-flex: 0 !important;
@@ -60723,19 +60723,19 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   background: #fff !important;
   border-radius: 50% !important;
 }
-._8ovatg {
+.counter-dropdown__stepper-icon {
   height: 22px !important;
   width: 22px !important;
   padding: 5px !important;
 }
-._1665lvv {
+.counter-dropdown__counter {
   position: relative !important;
   color: inherit !important;
   font-family: inherit !important;
   font-size: inherit !important;
   line-height: inherit !important;
 }
-._25sktq {
+.counter-dropdown__counter-label {
   left: 0 !important;
   border: 0 !important;
   clip: rect(0, 0, 0, 0) !important;
