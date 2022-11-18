@@ -146,12 +146,12 @@ document.querySelectorAll('.availability-container__rate-table-checkin').forEach
 document.querySelectorAll('.form__input').forEach((inputs) => {
   inputs.addEventListener('click', (input) => {
     const target = input.target
-    target.closest('._1rhk4n5')?.classList.replace('_1rhk4n5', '_etxtlin')
+    target.closest('.calendar-dropdown__input-text-active')?.classList.replace('calendar-dropdown__input-text-active', '_etxtlin')
     target.classList.add('focus-visible')
     target.placeholder = 'MM/DD/YYYY'
     document.addEventListener('click', (e) => {
       if (input.target !== e.target) {
-        target.closest('._etxtlin')?.classList.replace('_etxtlin', '_1rhk4n5')
+        target.closest('._etxtlin')?.classList.replace('_etxtlin', 'calendar-dropdown__input-text-active')
         target.classList.remove('focus-visible')
         target.placeholder = 'Add date'
       }
@@ -491,7 +491,7 @@ const shareModal = document.querySelector('#share-modal')
 shareModal?.querySelector('.modal__share-item:first-child button').addEventListener('click', (e) => {
   clearTimeout(copyLinkTimeout)
 
-  let copyLink = shareModal.querySelector('._8c85wg')
+  let copyLink = shareModal.querySelector('.modal__snackbar')
   copyLink.classList.contains('hidden') && copyLink.classList.remove('hidden')
   copyLinkTimeout = setTimeout(() => {
     !copyLink.classList.contains('hidden') && copyLink.classList.add('hidden')
