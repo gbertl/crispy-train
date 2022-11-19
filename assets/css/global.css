@@ -23294,3 +23294,65 @@ input[type='button'].btn-block {
   white-space: nowrap !important;
   width: 1px !important;
 }
+
+/*! PAYMENT DROPDOWN COMPONENT */
+.payment-dropdown__text {
+  display: table-cell;
+  width: 100% !important;
+  vertical-align: middle !important;
+}
+.payment-dropdown {
+  display: block;
+  width: 100% !important;
+  background: #fff !important;
+  border: 1px solid #b0b0b0 !important;
+  border-radius: 8px !important;
+  position: absolute !important;
+  z-index: 2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 3px 9px 3px !important;
+  list-style: none !important;
+  overflow-y: scroll !important;
+  max-height: 424px !important;
+}
+.payment-dropdown__check {
+  pointer-events: none !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 4px !important;
+  height: 100% !important;
+  transition: opacity 0.25s ease-in-out !important;
+  opacity: 1 !important;
+  animation-name: keyframe_yti3uf !important;
+  animation-timing-function: ease-in-out !important;
+  animation-duration: 0.25s !important;
+}
+.payment-dropdown__title {
+  padding: 16px 12px 4px 16px !important;
+  white-space: nowrap !important;
+  text-transform: uppercase !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #484848 !important;
+}
+.payment-dropdown__check-hide {
+  pointer-events: none !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 4px !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  transition: opacity 0.25s ease-in-out !important;
+}
+.payment-dropdown__icon {
+  float: left !important;
+  margin-top: -9px !important;
+  height: 24px !important;
+  margin-right: 16px !important;
+}
+.payment-dropdown__text {
+  display: table-cell !important;
+  width: 100% !important;
+  vertical-align: middle !important;
+}
