@@ -23681,7 +23681,7 @@ tr.hide {
   font-weight: 600 !important;
   margin-bottom: 8px !important;
 }
-._1n35162 {
+.login-pane__btn-wrapper {
   margin-bottom: 24px !important;
   margin-top: 16px !important;
 }
@@ -23857,7 +23857,7 @@ tr.hide {
 ._6hkhatt:disabled:hover {
   background: #ddd !important;
 }
-._1x0diny1 {
+.login-pane__or-wrapper {
   width: 100% !important;
   margin-top: 16px !important;
   margin-bottom: 16px !important;
@@ -23865,7 +23865,7 @@ tr.hide {
   font-size: 12px !important;
   line-height: 16px !important;
 }
-._16fq9mb {
+.login-pane__or {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   display: -webkit-box !important;
@@ -23877,7 +23877,7 @@ tr.hide {
   align-items: center !important;
   margin: 16px 0 !important;
 }
-._16fq9mb::before {
+.login-pane__or::before {
   content: '' !important;
   display: block !important;
   width: 100% !important;
@@ -23885,7 +23885,7 @@ tr.hide {
   background-color: #ddd !important;
   margin-right: 16px !important;
 }
-._16fq9mb::after {
+.login-pane__or::after {
   content: '' !important;
   display: block !important;
   width: 100% !important;
@@ -23893,7 +23893,7 @@ tr.hide {
   background-color: #ddd !important;
   margin-left: 16px !important;
 }
-._88sa87 {
+.login-pane__social {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   -webkit-box-lines: multiple !important;
@@ -23922,11 +23922,11 @@ tr.hide {
   font-weight: 600 !important;
   font-size: 14px !important;
 }
-._jwti9r {
+.login-pane__email-btn-wrapper {
   width: 100% !important;
   margin-bottom: 16px !important;
 }
-._jwti9r:last-child {
+.login-pane__email-btn-wrapper:last-child {
   margin-bottom: 0 !important;
 }
 .atm_c8_exq1xd.atm_c8_exq1xd {
@@ -67787,13 +67787,13 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   transform: scale(1);
   opacity: 1;
 }
-._88sa87 {
+.login-pane__social {
   -webkit-box-pack: justify !important;
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: space-between !important;
 }
-._1wifrqag {
+.login-pane__social-item {
   margin-bottom: 16px !important;
   width: 31% !important;
 }
