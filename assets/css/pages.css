@@ -18202,7 +18202,7 @@ ul {
 .dir.r1f90fvr[class][class] {
   margin-bottom: 24px;
 }
-.ciubx2o[class][class] {
+.reviews-rate[class][class] {
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -18211,16 +18211,16 @@ ul {
   width: calc(100% + var(--spacer-4));
 }
 @media (min-width: 744px) {
-  .ciubx2o[class][class] {
+  .reviews-rate[class][class] {
     width: calc(100% + var(--spacer-5));
   }
 }
-.dir.ciubx2o[class][class] {
+.dir.reviews-rate[class][class] {
   margin-left: calc(-1 * var(--spacer-4) / 2);
   margin-right: calc(-1 * var(--spacer-4) / 2);
 }
 @media (min-width: 744px) {
-  .dir.ciubx2o[class][class] {
+  .dir.reviews-rate[class][class] {
     margin-left: calc(-1 * var(--spacer-5) / 2);
     margin-right: calc(-1 * var(--spacer-5) / 2);
   }
@@ -18262,7 +18262,7 @@ ul {
 .dir.rjiv01r[class][class] {
   margin-bottom: 16px;
 }
-._a3qxec {
+.reviews-rate__body {
   -webkit-box-pack: justify !important;
   -webkit-box-align: center !important;
   display: flex !important;
@@ -18270,13 +18270,13 @@ ul {
   justify-content: space-between !important;
   width: 100% !important;
 }
-._y1ba89 {
+.reviews-rate__title {
   width: 100% !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   white-space: nowrap !important;
 }
-._bgq2leu {
+.reviews-rate__rate {
   -webkit-box-align: center !important;
   -webkit-box-direction: normal !important;
   -webkit-box-orient: horizontal !important;
@@ -18287,11 +18287,11 @@ ul {
   width: 75% !important;
 }
 @media (min-width: 1128px) {
-  ._bgq2leu {
+  .reviews-rate__rate {
     width: 50% !important;
   }
 }
-._7pay {
+.reviews-rate__bar-wrapper {
   position: relative !important;
   height: 4px !important;
   width: 100% !important;
@@ -18299,7 +18299,7 @@ ul {
   background: #ddd !important;
   border-radius: 2px !important;
 }
-._1wsvxly {
+.reviews-rate__bar {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
@@ -18307,7 +18307,7 @@ ul {
   background: var(--dls19-ui-brand-color) !important;
   border-radius: 2px !important;
 }
-._4oybiu {
+.reviews-rate__count {
   color: #222 !important;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
     'Helvetica Neue', sans-serif !important;
