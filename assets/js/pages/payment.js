@@ -104,34 +104,34 @@ window.addEventListener('click', (el) => {
 document.querySelectorAll('._14yb6ke[role=button]').forEach((el) => {
   el.addEventListener('click', () => {
     document
-      .querySelector('#country-modal ._13ni8kr[aria-selected=true]')
+      .querySelector('#country-modal .list-group-checked__item[aria-selected=true]')
       .scrollIntoView({ block: 'center' });
   });
 });
 
 // handles click event for country modal options, sets active to selected option
-document.querySelectorAll('._13ni8kr[role=option]').forEach((el) => {
+document.querySelectorAll('.list-group-checked__item[role=option]').forEach((el) => {
   el.addEventListener('click', (el) => {
     const activeOption = el.currentTarget
-      .closest('._os2yin')
-      .querySelector('._13ni8kr[aria-selected=true]');
-    const check = activeOption.querySelector('._1eaes69');
+      .closest('.list-group-checked')
+      .querySelector('.list-group-checked__item[aria-selected=true]');
+    const check = activeOption.querySelector('.flex-0-auto');
 
     activeOption.setAttribute('aria-selected', 'false');
     activeOption
-      .querySelector('._bgqgdvf')
-      .classList.replace('_bgqgdvf', '_1oy1k74');
+      .querySelector('.list-group-checked__text-active')
+      .classList.replace('list-group-checked__text-active', 'list-group-checked__text');
 
     el.currentTarget.setAttribute('aria-selected', 'true');
     el.currentTarget
-      .querySelector('._1oy1k74')
-      .classList.replace('_1oy1k74', '_bgqgdvf');
+      .querySelector('.list-group-checked__text')
+      .classList.replace('list-group-checked__text', 'list-group-checked__text-active');
     el.currentTarget.appendChild(check);
 
     document.querySelector('#billing_country_selector').innerText =
-      el.currentTarget.querySelector('._uyh343 > div').innerText;
+      el.currentTarget.querySelector('.list-group-checked__text-wrapper > div').innerText;
 
-    document.querySelector('#country-modal').classList.add('hidden');
+    document.querySelector('#country-modal .btn-close').click();
   });
 });
 

@@ -47,7 +47,7 @@ if(document.querySelector('._tfpul05') != null){
 if(document.querySelector('._1i9dva05') != null){
     const prev = document.querySelector('._tfpul05');
     const next = document.querySelector('._1i9dva05');
-    const tabs = document.querySelector('._1xkr92p');
+    const tabs = document.querySelector('.tab');
     next.addEventListener('click', () => {
         if(!next.classList.contains('hidden')) {
             next.classList.add('hidden')

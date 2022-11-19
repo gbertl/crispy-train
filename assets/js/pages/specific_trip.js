@@ -3,11 +3,11 @@ const carousel = () => {
   const prevBtn = document.querySelector('.mobile-carousel__btn[aria-label=Previous]');
   const dotsWrapper = document.querySelector('.pagination-bullets__list');
   let counter = 0;
-  const slideWrapper = document.querySelector('.mobile-carousel__slide-wrapper');
+  const slideWrapper = document.querySelector('.carousel-scroll-snap');
   const slides = slideWrapper.querySelectorAll('li');
   let width = slides[0].offsetWidth;
   const overlays = document.querySelectorAll(
-    '.mobile-carousel__slide-wrapper li:first-child > div > div'
+    '.carousel-scroll-snap li:first-child > div > div'
   );
 
   // creates bullets
