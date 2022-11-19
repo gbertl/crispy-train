@@ -182,7 +182,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     const mobileScrollSection = modal?.querySelector('.carousel-scroll-snap')
     const mobileScrollSectionList = mobileScrollSection?.querySelectorAll('li')
-    const mobileLightboxItemCount = modal?.querySelector('._1b1whhx')
+    const mobileLightboxItemCount = modal?.querySelector('.lightbox__counter')
 
     if (mobileScrollSectionList && mobileLightboxItemCount) {
       mobileLightboxItemCount.querySelector('span:first-child').innerHTML = `Showing photo 1 of ${mobileScrollSectionList.length}`
@@ -210,8 +210,8 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
             currentItemIndex = [...mobileScrollSectionList].indexOf(currentItem.nextElementSibling)
           }
 
-          modal.querySelector('._1b1whhx span:first-child').innerHTML = `Showing photo ${(currentItemIndex + 1)} of ${mobileScrollSectionList.length}`
-          modal.querySelector('._1b1whhx span:nth-child(2)').innerHTML = `${(currentItemIndex + 1)} / ${mobileScrollSectionList.length}`
+          modal.querySelector('.lightbox__counter span:first-child').innerHTML = `Showing photo ${(currentItemIndex + 1)} of ${mobileScrollSectionList.length}`
+          modal.querySelector('.lightbox__counter span:nth-child(2)').innerHTML = `${(currentItemIndex + 1)} / ${mobileScrollSectionList.length}`
         }
         currentScrolledValue = e.target.scrollLeft
       }
