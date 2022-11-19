@@ -46652,16 +46652,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .dir.p1umoqsc[class][class] {
   margin-bottom: var(--spacer-6);
 }
-.dir.list-group-unstyled__item[class][class] {
-  margin: 0 0 var(--spacer-5);
-  padding: 0;
-}
-.list-group-unstyled__text[class][class] {
-  color: var(--gray-900);
-  font-size: var(--font-size);
-  line-height: var(--line-height-xl);
-  font-weight: var(--font-weight-normal);
-}
 .b1k5q1b3[class][class] {
   display: inline-block;
   position: relative;
@@ -48274,21 +48264,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   color: var(--gray-900);
   font-weight: var(--font-weight-semibold);
 }
-.list-group-unstyled[class][class] {
-  list-style-type: none;
-}
-.dir.list-group-unstyled[class][class] {
-  margin: 0;
-  padding: 0;
-}
-.dir.list-group-unstyled__card[class][class] {
-  margin: 0;
-  padding: var(--spacer-6) 0;
-  border-bottom: 1px solid var(--gray-300);
-}
-.dir.list-group-unstyled__card-subtitle[class][class] {
-  margin-bottom: var(--spacer-3);
-}
 .link-title[class][class] {
   font-size: var(--font-size-md);
   line-height: var(--line-height-xl);
@@ -48299,14 +48274,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 }
 .dir.link-title[class][class] {
   margin-bottom: var(--spacer-2);
-}
-.list-group-unstyled__card-title[class][class] {
-  font-size: var(--font-size);
-  line-height: var(--line-height-md);
-}
-.list-group-unstyled__card-text[class][class] {
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-md);
 }
 .b1l0j7xr[class][class] {
   font-size: var(--font-size-sm);
@@ -59384,47 +59351,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .a1rgsqn9[class][class] {
   width: 100%;
 }
-.list-group-action__btn {
-  cursor: pointer !important;
-  display: inline-block !important;
-  margin: 0 !important;
-  position: relative !important;
-  text-decoration: none !important;
-  -ms-touch-action: manipulation !important;
-  touch-action: manipulation !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Helvetica Neue', sans-serif !important;
-  font-size: 16px !important;
-  line-height: var(--line-height-md) !important;
-  font-weight: var(--font-weight-semibold) !important;
-  border-radius: 12px !important;
-  border-width: var(--button-action-border-width, 2px) !important;
-  border-style: solid !important;
-  outline: 0 !important;
-  padding-top: 14px !important;
-  padding-bottom: 14px !important;
-  padding-left: 24px !important;
-  padding-right: 24px !important;
-  -webkit-transition: box-shadow 0.2s, -webkit-transform 0.1s, transform 0.1s !important;
-  -moz-transition: box-shadow 0.2s, transform 0.1s !important;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
-    transform 0.1s !important;
-  -webkit-tap-highlight-color: transparent !important;
-  border-color: #ddd !important;
-  background: #fff !important;
-  color: #222 !important;
-  padding: 24px !important;
-  width: 100% !important;
-  text-align: start !important;
-}
-.list-group-action__left-icon {
-  margin-left: -6px !important;
-  margin-right: 16px !important;
-}
-.list-group-action__right-icon {
-  margin-left: 16px !important;
-  margin-right: -6px !important;
-}
 ._virdaj {
   -webkit-box-pack: center !important;
   -webkit-box-align: end !important;
@@ -60386,27 +60312,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   background: #222 !important;
   color: #fff !important;
   height: 100% !important;
-}
-.list-group-action__btn-body {
-  -webkit-box-pack: start !important;
-  -ms-flex-pack: start !important;
-  -webkit-box-align: center !important;
-  -ms-flex-align: center !important;
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: horizontal !important;
-  display: -webkit-box !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: -webkit-flex !important;
-  display: flex !important;
-  -webkit-flex-direction: row !important;
-  -ms-flex-direction: row !important;
-  flex-direction: row !important;
-  -webkit-align-items: center !important;
-  align-items: center !important;
-  -webkit-justify-content: flex-start !important;
-  justify-content: flex-start !important;
-  pointer-events: none !important;
 }
 .horizontal-card-dark__img {
   margin-left: 0 !important;
@@ -66557,86 +66462,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     margin-bottom: 24px !important;
   }
 }
-.list-group-horizontal {
-  list-style: none !important;
-  margin: -8px -21px !important;
-  padding: 0 !important;
-}
-@media (min-width: 744px) {
-  .list-group-horizontal {
-    margin: -8px !important;
-  }
-}
-.list-group-horizontal__item {
-  display: inline-block !important;
-  padding: 8px !important;
-  width: 50% !important;
-  vertical-align: top !important;
-}
-@media (min-width: 744px) {
-  .list-group-horizontal__item {
-    width: 33.33% !important;
-  }
-}
-@media (min-width: 900px) {
-  .list-group-horizontal__item {
-    width: 25% !important;
-  }
-}
-@media (min-width: 1128px) {
-  .list-group-horizontal__item {
-    width: 20% !important;
-  }
-}
-.list-group-horizontal__link {
-  outline: 0 !important;
-  appearance: none !important;
-  background: 0 0 !important;
-  cursor: pointer !important;
-  margin: 0 !important;
-  text-align: inherit !important;
-  text-decoration: none !important;
-  user-select: auto !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-  border: 1px solid transparent !important;
-  border-radius: 8px !important;
-  color: #222 !important;
-  display: block !important;
-  padding: 9px 12px !important;
-  width: 100% !important;
-}
-.form__switch:hover:not([disabled]) {
-  background-color: #717171 !important;
-  border-color: #717171 !important;
-}
-.form__switch:hover:not([disabled]) > div {
-  border-color: #717171 !important;
-}
-.list-group-horizontal__link:hover {
-  background-color: #f7f7f7 !important;
-}
-.list-group-horizontal__link-active {
-  outline: 0 !important;
-  appearance: none !important;
-  background: 0 0 !important;
-  cursor: pointer !important;
-  margin: 0 !important;
-  text-align: inherit !important;
-  text-decoration: none !important;
-  user-select: auto !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-  border: 1px solid currentcolor !important;
-  border-radius: 8px !important;
-  color: #222 !important;
-  display: block !important;
-  padding: 9px 12px !important;
-  width: 100% !important;
-}
-.list-group-horizontal__link-active:hover {
-  background-color: #f7f7f7 !important;
-}
 .e4y1ay4[class][class] {
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
@@ -66913,52 +66738,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   width: 100% !important;
   overflow-wrap: break-word !important;
   background-color: #f2f2f2 !important;
-}
-.list-group-checked {
-  padding: 0 24px !important;
-  flex: 1 1 auto !important;
-  overflow-y: auto !important;
-  outline: 0 !important;
-}
-.list-group-checked__item {
-  -webkit-box-align: center !important;
-  outline-width: 0 !important;
-  cursor: pointer !important;
-  display: flex !important;
-  align-items: center !important;
-  min-height: 72px !important;
-  padding-top: 12px !important;
-  padding-bottom: 12px !important;
-  border-top: 1px solid #ddd !important;
-}
-.list-group-checked__item:first-child {
-  border-top: none !important;
-}
-.list-group-checked__text-wrapper {
-  flex: 1 1 auto !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-}
-.list-group-checked__text {
-  color: #222 !important;
-  font-size: 16px !important;
-}
-.list-group-checked__text-active {
-  color: #222 !important;
-  font-size: 16px !important;
-  font-weight: 800 !important;
-}
-.list-group-checked__icon-wrapper {
-  width: 48px !important;
-  height: 48px !important;
-  overflow: hidden !important;
-}
-.list-group-checked__icon {
-  opacity: 1 !important;
-  animation-duration: 0.25s !important;
-  animation-timing-function: ease-in-out !important;
-  animation-fill-mode: forwards !important;
-  animation-name: keyframe_yti3uf !important;
 }
 ._11vbjbm {
   padding-left: 32px !important;
