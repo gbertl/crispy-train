@@ -54508,7 +54508,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   background: var(--gray-900);
   transform: translateX(-50%);
 }
-.alert-danger {
+.alert-danger-bordered {
   background-color: #fff !important;
   border-width: 8px 1px 1px !important;
   border-style: solid !important;
@@ -54527,7 +54527,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   margin: 16px 0 !important;
 }
 @media (min-width: 744px) {
-  .alert-danger {
+  .alert-danger-bordered {
     box-shadow: rgb(0 0 0 / 18%) 0 2px 4px !important;
     position: static !important;
     margin: 16px 0 !important;
