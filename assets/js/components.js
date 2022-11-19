@@ -180,7 +180,7 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
     const sections = modal?.querySelectorAll('section')
 
-    const mobileScrollSection = modal?.querySelector('.mobile-carousel__slide-wrapper')
+    const mobileScrollSection = modal?.querySelector('.carousel-scroll-snap')
     const mobileScrollSectionList = mobileScrollSection?.querySelectorAll('li')
     const mobileLightboxItemCount = modal?.querySelector('._1b1whhx')
 

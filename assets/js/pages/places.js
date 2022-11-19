@@ -106,8 +106,8 @@ galleryModal();
 
 const mobileCarousel = () => {
   let counter = 0;
-  const slideContainer = document.querySelector('.mobile-carousel__slide-wrapper');
-  const slides = document.querySelectorAll('.mobile-carousel__slide-wrapper > li');
+  const slideContainer = document.querySelector('.carousel-scroll-snap');
+  const slides = document.querySelectorAll('.carousel-scroll-snap > li');
   let size = slides[0].offsetWidth;
   const dotsContainer = document.querySelector('.mobile-carousel__dots');
 

@@ -25998,7 +25998,7 @@ tr.hide {
   -ms-break-inside: avoid !important;
   break-inside: avoid !important;
 }
-.mobile-carousel__slide-wrapper {
+.carousel-scroll-snap {
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
   display: -webkit-box !important;
@@ -26019,11 +26019,11 @@ tr.hide {
   -ms-scroll-snap-type: x mandatory !important;
   scroll-snap-type: x mandatory !important;
 }
-.mobile-carousel__slide-wrapper::-webkit-scrollbar {
+.carousel-scroll-snap::-webkit-scrollbar {
   display: none !important;
 }
 @supports (overflow: clip) {
-  .mobile-carousel__slide-wrapper {
+  .carousel-scroll-snap {
     overflow-x: auto !important;
     overflow-y: clip !important;
   }
@@ -40560,7 +40560,7 @@ video::cue {
   background-color: #ddd !important;
   margin-bottom: 24px !important;
 }
-.mobile-carousel__slide-wrapper {
+.carousel-scroll-snap {
   display: flex !important;
   height: 100% !important;
   list-style: none !important;
@@ -40572,7 +40572,7 @@ video::cue {
   scroll-snap-type: x mandatory !important;
 }
 @supports (overflow: clip) {
-  .mobile-carousel__slide-wrapper {
+  .carousel-scroll-snap {
     overflow: auto clip !important;
   }
 }
