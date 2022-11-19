@@ -58324,56 +58324,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   margin-top: 16px !important;
   position: relative !important;
 }
-.card-dark {
-  cursor: pointer !important;
-  display: inline-block !important;
-  margin: 0 !important;
-  position: relative !important;
-  text-decoration: none !important;
-  font-size: 14px !important;
-  font-family: inherit !important;
-  touch-action: manipulation !important;
-  padding: 0 !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-  text-align: left !important;
-  border: 1px solid #222 !important;
-  background: #222 !important;
-  color: #fff !important;
-  outline: 0 !important;
-  width: 100% !important;
-}
-.card-dark__body {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  padding: 16px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  border-bottom-left-radius: 12px !important;
-  border-bottom-right-radius: 12px !important;
-}
-.card-dark__title {
-  color: #fff !important;
-  font-size: 14px !important;
-  line-height: 20px !important;
-  font-weight: 600 !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  display: -webkit-box !important;
-  -webkit-line-clamp: 2 !important;
-  -webkit-box-orient: vertical !important;
-}
-@supports (overflow: clip) {
-  .card-dark__title {
-    overflow: clip !important;
-  }
-}
-.card-dark__subtitle {
-  margin-top: 4px !important;
-  color: #fff !important;
-  font-size: 12px !important;
-  line-height: 16px !important;
-}
 ._3joskp {
   font-size: 16px !important;
   line-height: 24px !important;
