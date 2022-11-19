@@ -21860,3 +21860,182 @@ input[type='button'].btn-block {
   will-change: transform !important;
   background: #222 !important;
 }
+
+/*! CALENDAR DROPDOWN COMPONENT */
+.calendar-dropdown__subtitle {
+  line-height: 18px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  height: 36px !important;
+}
+@supports (overflow: clip) {
+  .calendar-dropdown__subtitle {
+    overflow: clip !important;
+  }
+}
+.calendar-dropdown__title-wrapper {
+  order: 1 !important;
+}
+.calendar-dropdown__title[class][class] {
+  color: var(--gray-900);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-xxl);
+}
+.calendar-dropdown {
+  background: #fff !important;
+  border-radius: 16px !important;
+  box-shadow: rgb(0 0 0 / 20%) 0 6px 20px !important;
+  display: inline-block !important;
+  padding: 24px 32px 16px !important;
+  position: absolute !important;
+  top: -24px !important;
+  right: -32px !important;
+  width: 661px !important;
+  z-index: 1 !important;
+  min-height: 460px !important;
+}
+.calendar-dropdown__header {
+  -webkit-box-align: start !important;
+  -webkit-box-pack: justify !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  padding-bottom: 16px !important;
+}
+.calendar-dropdown__inputs-wrapper {
+  -webkit-box-flex: 0 !important;
+  order: 2 !important;
+  flex: 0 0 calc(((100vw - 256px) / 12) * 5 + 16px) !important;
+  margin-left: 24px !important;
+  min-width: 270px !important;
+  display: block !important;
+}
+@media (min-width: 950px) {
+  .calendar-dropdown__inputs-wrapper {
+    flex-basis: calc(((100vw - 256px) / 12) * 4 + 0px) !important;
+  }
+}
+@media (min-width: 1128px) {
+  .calendar-dropdown__inputs-wrapper {
+    flex-basis: calc(((100vw - 336px) / 12) * 4 + 0px) !important;
+  }
+}
+@media (min-width: 1440px) {
+  .calendar-dropdown__inputs-wrapper {
+    flex-basis: 315px !important;
+  }
+}
+.calendar-dropdown__inputs {
+  display: flex !important;
+  border-radius: 8px !important;
+  background-color: #f7f7f7 !important;
+  box-shadow: rgb(176 176 176) 0 0 0 1px inset !important;
+}
+.calendar-dropdown__input-active {
+  position: relative !important;
+  cursor: text !important;
+  display: flex !important;
+  min-height: 56px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border: transparent !important;
+  color: #222 !important;
+  border-radius: 8px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  flex: 1 1 0% !important;
+  outline: 0 !important;
+  box-shadow: rgb(34 34 34) 0 0 0 2px inset !important;
+  background-color: #fff !important;
+}
+.calendar-dropdown__label-title-active {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  right: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  color: #222 !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+.calendar-dropdown__input-text-active {
+  display: flex !important;
+  opacity: 1 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #222 !important;
+}
+.calendar-dropdown__input {
+  position: relative !important;
+  display: flex !important;
+  min-height: 56px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  border: transparent !important;
+  border-radius: 8px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  flex: 1 1 0% !important;
+  opacity: 1 !important;
+  cursor: not-allowed !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #ddd !important;
+  -webkit-text-fill-color: rgb(221, 221, 221) !important;
+}
+.calendar-dropdown__label-title {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  right: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  text-transform: uppercase !important;
+  font-weight: 800 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  color: #717171 !important;
+}
+.calendar-dropdown__input-text {
+  display: flex !important;
+  opacity: 1 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #b0b0b0 !important;
+}
+.calendar-dropdown__label {
+  position: relative !important;
+  -webkit-flex: 1 !important;
+  -ms-flex: 1 1 0% !important;
+  flex: 1 !important;
+  padding: 0 !important;
+}
+.calendar-dropdown__label {
+  position: relative !important;
+  flex: 1 1 0% !important;
+  padding: 0 !important;
+}
