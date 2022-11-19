@@ -291,20 +291,18 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
         // prepend animation if style string exist
         modal.querySelector('.modal__backdrop').style= modalBackdropStyle ? 'animation-name: keyframe_1vz6p0j !important;' + modalBackdropStyle  : 'animation-name: keyframe_1vz6p0j !important' 
         modal.querySelector('div[role=dialog]').style= dialogStyle ? 'animation-name: keyframe_1vhlqe7 !important;'+ dialogStyle  :  'animation-name: keyframe_1vhlqe7 !important'
-      } else {
-        modal?.classList.add('hidden');
-        document.body.classList.remove('hidden-vscroll');
-      }
 
-      if (modal.querySelector('.modal__backdrop') && modal.querySelector('div[role=dialog]')) {
+        // removes closing animation after some delay
         setTimeout(() => {
           modal.querySelector('.modal__backdrop').style.removeProperty('animation-name')
           modal.querySelector('div[role=dialog]').style.removeProperty('animation-name')
           modal?.classList.add('hidden');
           document.body.classList.remove('hidden-vscroll');
-        }, 400)
+        }, 300)
+      } else {
+        modal?.classList.add('hidden');
+        document.body.classList.remove('hidden-vscroll');
       }
-
 
       if (section) {
         section.style.visibility = 'hidden'

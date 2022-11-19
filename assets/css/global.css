@@ -4117,7 +4117,11 @@ html :where(img[class*='wp-image-']) {
 }
 .hidden-vscroll {
   overflow: hidden;
-  padding-right: 15px;
+}
+@media (min-width: 744px) {
+  .hidden-vscroll {
+    padding-right: 15px;
+  }
 }
 .overflow-y-hidden {
   overflow-y: hidden;
