@@ -15584,7 +15584,6 @@ fieldset[disabled] .btn {
   transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
     transform 0.1s !important;
   -webkit-tap-highlight-color: transparent !important;
-  border: none !important;
   color: var(--gray-900) !important;
   background: var(--white) !important;
 }
@@ -15596,12 +15595,8 @@ fieldset[disabled] .btn {
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
 .btn-light-small:focus-visible::-moz-focus-inner {
-  border: none !important;
   padding: 0 !important;
   margin: 0 !important;
-}
-.btn-light-small:focus-visible:focus::-moz-focus-inner {
-  border: none !important;
 }
 .btn-light-small:focus-visible:-moz-focusring {
   outline: 0 !important;
@@ -15621,12 +15616,8 @@ fieldset[disabled] .btn {
   box-shadow: 0 0 0 2px #222, 0 0 0 4px rgba(255, 255, 255, 0.8) !important;
 }
 .btn-light-small:focus[data-focus-visible-added]::-moz-focus-inner {
-  border: none !important;
   padding: 0 !important;
   margin: 0 !important;
-}
-.btn-light-small:focus[data-focus-visible-added]:focus::-moz-focus-inner {
-  border: none !important;
 }
 .btn-light-small:focus[data-focus-visible-added]:-moz-focusring {
   outline: 0 !important;
@@ -15640,7 +15631,6 @@ fieldset[disabled] .btn {
 }
 @media (hover: hover) {
   .btn-light-small:hover {
-    border: none !important;
     color: var(--gray-900) !important;
     background: var(--gray-200) !important;
   }
@@ -15649,14 +15639,12 @@ fieldset[disabled] .btn {
   -webkit-transform: scale(0.96) !important;
   -ms-transform: scale(0.96) !important;
   transform: scale(0.96) !important;
-  border: none !important;
   background: var(--gray-200) !important;
   color: var(--gray-900) !important;
 }
 .btn-light-small:disabled {
   cursor: not-allowed !important;
   opacity: 1 !important;
-  border: none !important;
   background: #4a4a4a !important;
   color: #878787 !important;
 }
