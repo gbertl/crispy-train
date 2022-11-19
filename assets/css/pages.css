@@ -39388,24 +39388,6 @@ video::cue {
   box-shadow: none !important;
   transform: scale(1) !important;
 }
-.card__title {
-  color: #222 !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Helvetica Neue', sans-serif !important;
-  font-weight: 600 !important;
-  font-size: 16px !important;
-  line-height: 20px !important;
-  margin-top: 16px !important;
-}
-.card__text {
-  color: #222 !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    'Helvetica Neue', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: 18px !important;
-  margin-top: 4px !important;
-}
 .products-container__gallery-wrapper-overlay-plus-1 {
   height: 100% !important;
   width: 69.23076923076923% !important;
@@ -45213,15 +45195,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   ._g8tq4r {
     margin-bottom: 12px !important;
   }
-}
-.card__media-container {
-  position: absolute !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  height: 100% !important;
-  width: 100% !important;
 }
 ._1tp71en {
   width: 100% !important;
@@ -65114,26 +65087,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   .heading__lg {
     font-size: 2rem !important;
     line-height: 2.25rem !important;
-  }
-}
-.card__lite-image-title {
-  color: #222 !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-    Helvetica Neue, sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 0.875rem !important;
-  line-height: 1.125rem !important;
-  margin-top: 0.75rem !important;
-}
-@media (min-width: 744px) {
-  .card__lite-image-title {
-    color: #222 !important;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
-      Helvetica Neue, sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 1rem !important;
-    line-height: 1.25rem !important;
-    margin-top: 1rem !important;
   }
 }
 .atm_ar_vrvcex.atm_ar_vrvcex {
