@@ -23173,3 +23173,124 @@ input[type='button'].btn-block {
   margin-left: 4px !important;
   white-space: nowrap !important;
 }
+
+/*! COUNTER DROPDOWN COMPONENT */
+.counter-dropdown {
+  background: #fff !important;
+  border-radius: 4px !important;
+  box-shadow: rgb(0 0 0 / 15%) 0 2px 6px, rgb(0 0 0 / 7%) 0 0 0 1px !important;
+  box-sizing: border-box !important;
+  margin-bottom: 16px !important;
+  min-width: 280px !important;
+  padding: 16px !important;
+  position: absolute !important;
+  text-align: left !important;
+  width: 100% !important;
+  z-index: 999 !important;
+  right: 0 !important;
+}
+.counter-dropdown__inner {
+  --guest-picker-filter-row-title-font-weight: 600 !important;
+  --guest-picker-filter-row-subtitle-font-size: 14px !important;
+  --guest-picker-filter-row-subtitle-line-height: 18px !important;
+  --guest-picker-disclaimer-font-size: 12px !important;
+  --guest-picker-disclaimer-line-height: 16px !important;
+}
+.counter-dropdown__item-first {
+  margin-bottom: 24px !important;
+  margin-top: 8px !important;
+}
+.counter-dropdown__item {
+  -webkit-box-align: center !important;
+  align-items: center !important;
+  display: flex !important;
+  width: 100% !important;
+  color: #222 !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
+  font-weight: 400 !important;
+}
+.counter-dropdown__title {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  padding-bottom: 4px !important;
+  font-weight: var(--guest-picker-filter-row-title-font-weight, 400) !important;
+}
+.counter-dropdown__subtitle {
+  font-size: var(--guest-picker-filter-row-subtitle-font-size, 12px) !important;
+  line-height: var(
+    --guest-picker-filter-row-subtitle-line-height,
+    16px
+  ) !important;
+}
+.counter-dropdown__action {
+  -webkit-box-pack: justify !important;
+  -webkit-box-align: center !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 104px !important;
+  height: 32px !important;
+  color: #222 !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
+}
+.counter-dropdown__stepper:disabled {
+  cursor: not-allowed !important;
+  color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  background: #fff !important;
+}
+.counter-dropdown__stepper {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  -webkit-box-flex: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #b0b0b0 !important;
+  color: #717171 !important;
+  font-family: inherit !important;
+  outline: 0 !important;
+  touch-action: manipulation !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #fff !important;
+  border-radius: 50% !important;
+}
+.counter-dropdown__stepper-icon {
+  height: 22px !important;
+  width: 22px !important;
+  padding: 5px !important;
+}
+.counter-dropdown__counter {
+  position: relative !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+.counter-dropdown__counter-label {
+  left: 0 !important;
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: inset(100%) !important;
+  height: 1px !important;
+  overflow: clip !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
