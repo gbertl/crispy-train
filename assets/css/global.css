@@ -14145,6 +14145,92 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
+/*! HORIZONTAL HERO CARD */
+.dir.horizontal-hero-card__wrapper[class][class] {
+  border: 1px solid var(--gray-300);
+  border-radius: var(--border-radius-lg);
+}
+@media (min-width: 744px) {
+  .horizontal-hero-card__wrapper[class][class] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1128px) {
+  .horizontal-hero-card__wrapper[class][class] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.horizontal-hero-card__wrapper[class][class] {
+  display: grid;
+  grid-column-gap: 16px;
+  overflow: hidden;
+}
+.dir.horizontal-hero-card__body[class][class] {
+  padding: var(--spacer-6);
+}
+@media (min-width: 744px) {
+  .dir.horizontal-hero-card__body[class][class] {
+    padding: var(--spacer-7);
+  }
+}
+.horizontal-hero-card__body[class][class] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: span 1;
+}
+@media (min-width: 744px) {
+  .horizontal-hero-card__body[class][class] {
+    align-items: flex-start;
+  }
+}
+.dir.horizontal-hero-card__icon[class][class] {
+  margin-top: var(--spacer-6);
+  margin-bottom: var(--spacer-6);
+}
+@media (min-width: 744px) {
+  .dir.horizontal-hero-card__icon[class][class] {
+    margin-top: var(--spacer-3);
+  }
+}
+.dir.horizontal-hero-card__title[class][class] {
+  margin-bottom: var(--spacer-3);
+  text-align: center;
+}
+@media (min-width: 744px) {
+  .dir-ltr.horizontal-hero-card__title[class][class] {
+    text-align: left;
+  }
+}
+.horizontal-hero-card__title-text {
+  white-space: pre-line !important;
+  max-width: 100% !important;
+  font-size: var(--tl-font-size, 16px) !important;
+  font-weight: var(--tl-font-weight, MEDIUM) !important;
+  letter-spacing: var(--tl-letter-spacing, 0) !important;
+  line-height: var(--tl-line-height, 20px) !important;
+  color: var(--tl-color, #000) !important;
+  -webkit-line-clamp: var(--tl-line-clamp) !important;
+}
+.dir.horizontal-hero-card__text[class][class] {
+  margin-bottom: var(--spacer-3);
+  text-align: center;
+}
+@media (min-width: 744px) {
+  .dir-ltr.horizontal-hero-card__text[class][class] {
+    text-align: left;
+  }
+}
+.dir.horizontal-hero-card__btn-wrapper[class][class] {
+  margin-top: var(--spacer-5);
+}
+@media (min-width: 744px) {
+  .horizontal-hero-card__btn-wrapper[class][class] {
+    width: auto;
+  }
+}
+
 /*! ALERT COMPONENT */
 .alert .btn-primary {
   border-color: #007a87;
