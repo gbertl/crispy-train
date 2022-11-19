@@ -24443,3 +24443,14 @@ input[type='button'].btn-block {
   line-height: 16px !important;
   margin-left: 6px !important;
 }
+
+/*! IMG GRID COMPONENT */
+.img-grid {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+.img-grid__inner {
+  display: grid !important;
+  gap: 8px !important;
+  grid-template-columns: 1fr !important;
+}
