@@ -22,10 +22,10 @@ document
     document.querySelector('#resources-menu').classList.toggle('hidden');
     document.querySelector('._1fls13n').classList.toggle('hidden');
 
-    if (this.classList.contains('_1ju7xj0j')) {
-      this.classList.replace('_1ju7xj0j', 'btn-save');
+    if (this.classList.contains('btn-light-small')) {
+      this.classList.replace('btn-light-small', 'btn-save');
     } else {
-      this.classList.replace('btn-save', '_1ju7xj0j');
+      this.classList.replace('btn-save', 'btn-light-small');
     }
   });
 
