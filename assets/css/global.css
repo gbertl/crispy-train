@@ -5342,6 +5342,32 @@ html :where(img[class*='wp-image-']) {
 .pb-3 {
   padding-bottom: 12px !important;
 }
+.heading:focus {
+  outline: 0 !important;
+}
+.heading {
+  color: inherit !important;
+  font-size: 1em !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.heading-md {
+  font-size: 18px !important;
+  line-height: 22px !important;
+  font-weight: 600 !important;
+}
+.heading__lg {
+  font-size: 1.625rem !important;
+  line-height: 1.875rem !important;
+}
+@media (min-width: 1128px) {
+  .heading__lg {
+    font-size: 2rem !important;
+    line-height: 2.25rem !important;
+  }
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {

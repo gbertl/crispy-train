@@ -37024,9 +37024,6 @@ a:hover {
     margin-top: 0 !important;
   }
 }
-.heading:focus {
-  outline: 0 !important;
-}
 .site-content__header-button {
   cursor: pointer !important;
   display: inline-block !important;
@@ -55271,14 +55268,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     float: left !important;
   }
 }
-.heading {
-  color: inherit !important;
-  font-size: 1em !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
 .my-0 {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
@@ -61109,11 +61098,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 ._v08k6k {
   padding-top: 16px !important;
 }
-.heading-md {
-  font-size: 18px !important;
-  line-height: 22px !important;
-  font-weight: 600 !important;
-}
 ._b328lf {
   flex: 1 1 0% !important;
 }
@@ -64784,16 +64768,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
     transform: translate(0, 100%);
   }
 } 
-.heading__lg {
-  font-size: 1.625rem !important;
-  line-height: 1.875rem !important;
-}
-@media (min-width: 1128px) {
-  .heading__lg {
-    font-size: 2rem !important;
-    line-height: 2.25rem !important;
-  }
-}
 .atm_ar_vrvcex.atm_ar_vrvcex {
   flex-direction: row;
 }
