@@ -115,7 +115,7 @@ document.querySelectorAll('.list-group-checked__item[role=option]').forEach((el)
     const activeOption = el.currentTarget
       .closest('.list-group-checked')
       .querySelector('.list-group-checked__item[aria-selected=true]');
-    const check = activeOption.querySelector('._1eaes69');
+    const check = activeOption.querySelector('.flex-0-auto');
 
     activeOption.setAttribute('aria-selected', 'false');
     activeOption
