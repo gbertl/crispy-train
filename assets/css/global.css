@@ -11214,6 +11214,53 @@ html :where(img[class*='wp-image-']) {
   .header-filter__label[class][class]::after {
   opacity: 1;
 }
+@media (min-width: 1128px) {
+  .header__logo {
+    display: none !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__brand[class][class]:focus-visible::before {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__search-tabs-filter-btn-container-inactive[class][class]:focus-visible::after {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__search-tabs-filter-btn-container-active[class][class]:focus-visible::after {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__search-tabs-item[class][class]:focus-visible {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__search-tabs-item-btn[class][class]:focus-visible {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__search-tabs-links[class][class]:focus-visible {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header__nav-btn-container[class][class]:focus-visible::before {
+    transition: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dir.header-filter__controls-btn[class][class]:focus-visible {
+    transition: none;
+  }
+}
 
 /*! CARD ALT 1 */
 @keyframes fade-in-card-alt-1__nav-btn-wrapper {

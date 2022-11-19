@@ -43641,11 +43641,6 @@ video::cue {
 .pt-2 {
   padding-top: 8px !important;
 }
-@media (min-width: 1128px) {
-  .header__logo {
-    display: none !important;
-  }
-}
 @media (min-width: 1440px) {
   .explore__time-btn-wrapper {
     display: none !important;
@@ -45134,38 +45129,6 @@ video::cue {
     transition: none !important;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__brand[class][class]:focus-visible::before {
-    transition: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__search-tabs-filter-btn-container-inactive[class][class]:focus-visible::after {
-    transition: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__search-tabs-filter-btn-container-active[class][class]:focus-visible::after {
-    transition: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__search-tabs-item[class][class]:focus-visible {
-    transition: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__search-tabs-item-btn[class][class]:focus-visible {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__search-tabs-links[class][class]:focus-visible {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
 .c1b2ssu5[class][class] {
   appearance: none;
   color: inherit;
@@ -45229,11 +45192,6 @@ video::cue {
 .dir.c1iyjvyv[class][class]:hover:not(:active) {
   background-color: var(--gray-100);
 }
-@media (prefers-reduced-motion: reduce) {
-  .dir.header__nav-btn-container[class][class]:focus-visible::before {
-    transition: none;
-  }
-}
 .dir.c1ixqffw[class][class] {
   background: var(--white);
   border-radius: var(--border-radius-lg);
@@ -45244,11 +45202,6 @@ video::cue {
 .c3i7glo[class][class]:focus,
 button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
   display: block;
-}
-@media (prefers-reduced-motion: reduce) {
-  .dir.header-filter__controls-btn[class][class]:focus-visible {
-    transition: none;
-  }
 }
 @media (min-width: 744px) {
   .dir.click_card[class][class]:focus-visible {
