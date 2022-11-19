@@ -23439,3 +23439,81 @@ input[type='button'].btn-block {
     line-height: 26px !important;
   }
 }
+
+/*! LOGIN PANE COMPONENT */
+.login-pane__header {
+  margin-top: 8px !important;
+  margin-bottom: 24px !important;
+}
+.login-pane__btn-wrapper {
+  margin-bottom: 24px !important;
+  margin-top: 16px !important;
+}
+.login-pane__or-wrapper {
+  width: 100% !important;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+.login-pane__or {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  margin: 16px 0 !important;
+}
+.login-pane__or::before {
+  content: '' !important;
+  display: block !important;
+  width: 100% !important;
+  height: 1px !important;
+  background-color: #ddd !important;
+  margin-right: 16px !important;
+}
+.login-pane__or::after {
+  content: '' !important;
+  display: block !important;
+  width: 100% !important;
+  height: 1px !important;
+  background-color: #ddd !important;
+  margin-left: 16px !important;
+}
+.login-pane__social {
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  -webkit-box-lines: multiple !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-flex-wrap: wrap !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+}
+.login-pane__email-btn-wrapper {
+  width: 100% !important;
+  margin-bottom: 16px !important;
+}
+.login-pane__email-btn-wrapper:last-child {
+  margin-bottom: 0 !important;
+}
+.login-pane__social {
+  -webkit-box-pack: justify !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+.login-pane__social-item {
+  margin-bottom: 16px !important;
+  width: 31% !important;
+}

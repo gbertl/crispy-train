@@ -23237,20 +23237,12 @@ tr.hide {
   margin-left: 16px !important;
   margin-right: 16px !important;
 }
-.login-pane__header {
-  margin-top: 8px !important;
-  margin-bottom: 24px !important;
-}
 ._u72b34 {
   font-size: 22px !important;
   line-height: 26px !important;
   color: #222 !important;
   font-weight: 600 !important;
   margin-bottom: 8px !important;
-}
-.login-pane__btn-wrapper {
-  margin-bottom: 24px !important;
-  margin-top: 16px !important;
 }
 ._ey3tib {
   position: relative !important;
@@ -23293,64 +23285,6 @@ tr.hide {
   font-size: 16px !important;
   line-height: 20px !important;
   font-weight: 400 !important;
-}
-.login-pane__or-wrapper {
-  width: 100% !important;
-  margin-top: 16px !important;
-  margin-bottom: 16px !important;
-  font-weight: 400 !important;
-  font-size: 12px !important;
-  line-height: 16px !important;
-}
-.login-pane__or {
-  -webkit-box-align: center !important;
-  -ms-flex-align: center !important;
-  display: -webkit-box !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: -webkit-flex !important;
-  display: flex !important;
-  -webkit-align-items: center !important;
-  align-items: center !important;
-  margin: 16px 0 !important;
-}
-.login-pane__or::before {
-  content: '' !important;
-  display: block !important;
-  width: 100% !important;
-  height: 1px !important;
-  background-color: #ddd !important;
-  margin-right: 16px !important;
-}
-.login-pane__or::after {
-  content: '' !important;
-  display: block !important;
-  width: 100% !important;
-  height: 1px !important;
-  background-color: #ddd !important;
-  margin-left: 16px !important;
-}
-.login-pane__social {
-  -webkit-box-pack: justify !important;
-  -ms-flex-pack: justify !important;
-  -webkit-box-lines: multiple !important;
-  display: -webkit-box !important;
-  display: -moz-box !important;
-  display: -ms-flexbox !important;
-  display: -webkit-flex !important;
-  display: flex !important;
-  -webkit-flex-wrap: wrap !important;
-  -ms-flex-wrap: wrap !important;
-  flex-wrap: wrap !important;
-  -webkit-justify-content: space-between !important;
-  justify-content: space-between !important;
-}
-.login-pane__email-btn-wrapper {
-  width: 100% !important;
-  margin-bottom: 16px !important;
-}
-.login-pane__email-btn-wrapper:last-child {
-  margin-bottom: 0 !important;
 }
 .atm_c8_exq1xd.atm_c8_exq1xd {
   font-size: var(--font-size-md);
@@ -65360,16 +65294,6 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 .popover-animate--active {
   transform: scale(1);
   opacity: 1;
-}
-.login-pane__social {
-  -webkit-box-pack: justify !important;
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: space-between !important;
-}
-.login-pane__social-item {
-  margin-bottom: 16px !important;
-  width: 31% !important;
 }
 ._1khodb3 {
   margin-right: 8px !important;
