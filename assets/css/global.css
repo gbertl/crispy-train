@@ -23356,3 +23356,23 @@ input[type='button'].btn-block {
   width: 100% !important;
   vertical-align: middle !important;
 }
+
+/*! INLINE LOGIN COMPONENT */
+.inline-login__heading {
+  font-size: 22px !important;
+  line-height: 26px !important;
+  margin-bottom: 24px !important;
+  font-weight: 600 !important;
+}
+.inline-login__heading {
+  font-size: 22px !important;
+  line-height: 26px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0;
+}
+@media (min-width: 744px) {
+  .inline-login__heading {
+    font-size: 22px !important;
+    line-height: 26px !important;
+  }
+}
