@@ -12546,6 +12546,35 @@ html :where(img[class*='wp-image-']) {
   }
 }
 
+/*! CARD HORIZONTAL */
+.card-horizontal[class][class] {
+  display: flex;
+  align-items: center;
+}
+.dir.card-horizontal[class][class] {
+  padding: var(--spacer-4) 0;
+}
+.dir-ltr.card-horizontal__img[class][class] {
+  margin-right: var(--spacer-5);
+}
+.dir.card-horizontal__img[class][class] {
+  border-radius: var(--border-radius);
+}
+.card-horizontal__title {
+  white-space: pre-line !important;
+  max-width: 100% !important;
+  font-size: var(--tl-font-size, 32px) !important;
+  font-weight: var(--tl-font-weight, 800) !important;
+  letter-spacing: var(--tl-letter-spacing, 0) !important;
+  line-height: var(--tl-line-height, 36px) !important;
+  color: var(--tl-color, #222) !important;
+  -webkit-line-clamp: var(--tl-line-clamp) !important;
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  text-overflow: ellipsis !important;
+}
+
 /*! CARD HORIZONTAL BASIC */
 .card-horizontal-basic {
   -webkit-box-align: center !important;
