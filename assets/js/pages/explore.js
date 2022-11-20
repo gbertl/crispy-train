@@ -38,16 +38,18 @@ nextButton.addEventListener('click', () => {
 const toggleModal = (type, section, targetFilter) => {
   switch (type) {
     case 'addguests':
-      const whoButton = document.querySelector('[data-testid=structured-search-input-field-guests-button]').classList;
+      const whoButton = document.querySelector(
+        '[data-testid=structured-search-input-field-guests-button]'
+      ).classList;
       whoButton.contains('header__search-tabs-filter-btn-container-inactive')
         ? whoButton.replace(
-          'header__search-tabs-filter-btn-container-inactive',
-          'header__search-tabs-filter-btn-container-active'
-        )
+            'header__search-tabs-filter-btn-container-inactive',
+            'header__search-tabs-filter-btn-container-active'
+          )
         : whoButton.replace(
-          'header__search-tabs-filter-btn-container-active',
-          'header__search-tabs-filter-btn-container-inactive'
-        );
+            'header__search-tabs-filter-btn-container-active',
+            'header__search-tabs-filter-btn-container-inactive'
+          );
 
       const searchWho = document.querySelector('#search-who').classList;
       searchWho.contains('hidden')
@@ -56,19 +58,27 @@ const toggleModal = (type, section, targetFilter) => {
       break;
 
     case 'anyweek':
-      targetFilter = targetFilter || document.querySelector('.header__search-tabs-filter-dates-container .header__search-tabs-filter-btn-container.header__search-tabs-filter-btn-container-active')
-      const targetDateButton = targetFilter?.classList || document.querySelector('[data-testid="structured-search-input-field-split-dates-0"]').classList
+      targetFilter =
+        targetFilter ||
+        document.querySelector(
+          '.header__search-tabs-filter-dates-container .header__search-tabs-filter-btn-container.header__search-tabs-filter-btn-container-active'
+        );
+      const targetDateButton =
+        targetFilter?.classList ||
+        document.querySelector(
+          '[data-testid="structured-search-input-field-split-dates-0"]'
+        ).classList;
       targetDateButton.contains(
         'header__search-tabs-filter-btn-container-inactive'
       )
         ? targetDateButton.replace(
-          'header__search-tabs-filter-btn-container-inactive',
-          'header__search-tabs-filter-btn-container-active'
-        )
+            'header__search-tabs-filter-btn-container-inactive',
+            'header__search-tabs-filter-btn-container-active'
+          )
         : targetDateButton.replace(
-          'header__search-tabs-filter-btn-container-active',
-          'header__search-tabs-filter-btn-container-inactive'
-        );
+            'header__search-tabs-filter-btn-container-active',
+            'header__search-tabs-filter-btn-container-inactive'
+          );
 
       const anyweekPanel = document.querySelector('#anyweek-panel').classList;
       anyweekPanel.contains('hidden')
@@ -77,20 +87,21 @@ const toggleModal = (type, section, targetFilter) => {
       break;
 
     case 'anywhere':
-      const anywhereLabel = document.querySelectorAll(
-        '.header__search-tabs-filter-where-hide, .header__search-tabs-filter-where-show'
-      )
+      const anywhereLabel = document
+        .querySelectorAll(
+          '.header__search-tabs-filter-where-hide, .header__search-tabs-filter-where-show'
+        )
         .forEach((target) => {
           const classList = target.classList;
           classList.contains('header__search-tabs-filter-where-hide')
             ? classList.replace(
-              'header__search-tabs-filter-where-hide',
-              'header__search-tabs-filter-where-show'
-            )
+                'header__search-tabs-filter-where-hide',
+                'header__search-tabs-filter-where-show'
+              )
             : classList.replace(
-              'header__search-tabs-filter-where-show',
-              'header__search-tabs-filter-where-hide'
-            );
+                'header__search-tabs-filter-where-show',
+                'header__search-tabs-filter-where-hide'
+              );
         });
 
       const content = document.querySelector(
@@ -107,69 +118,83 @@ const toggleModal = (type, section, targetFilter) => {
 
   if (section === 'panel') return;
 
-  const header = document.querySelectorAll('.header__search-tabs-hide, .header__search-tabs-show').forEach((target) => {
-    const classList = target.classList;
-    classList.contains('header__search-tabs-hide')
-      ? classList.replace(
-        'header__search-tabs-hide',
-        'header__search-tabs-show'
-      )
-      : classList.replace(
-        'header__search-tabs-show',
-        'header__search-tabs-hide'
-      );
-  });
+  const header = document
+    .querySelectorAll('.header__search-tabs-hide, .header__search-tabs-show')
+    .forEach((target) => {
+      const classList = target.classList;
+      classList.contains('header__search-tabs-hide')
+        ? classList.replace(
+            'header__search-tabs-hide',
+            'header__search-tabs-show'
+          )
+        : classList.replace(
+            'header__search-tabs-show',
+            'header__search-tabs-hide'
+          );
+    });
 
-  const filters = document.querySelectorAll('.header__search-content, .l1h6eamc').forEach((target) => {
-    const classList = target.classList;
-    classList.contains('header__search-content')
-      ? classList.replace('header__search-content', 'l1h6eamc')
-      : classList.replace('l1h6eamc', 'header__search-content');
-  });
+  const filters = document
+    .querySelectorAll('.header__search-content, .l1h6eamc')
+    .forEach((target) => {
+      const classList = target.classList;
+      classList.contains('header__search-content')
+        ? classList.replace('header__search-content', 'l1h6eamc')
+        : classList.replace('l1h6eamc', 'header__search-content');
+    });
 
-  const filtersWrapper = document.querySelectorAll('.header__search-tabs-content-transition-hide, .header__search-tabs-content-transition-show').forEach((target) => {
-    const classList = target.classList;
-    classList.contains('header__search-tabs-content-transition-hide')
-      ? classList.replace(
-        'header__search-tabs-content-transition-hide',
-        'header__search-tabs-content-transition-show'
-      )
-      : classList.replace(
-        'header__search-tabs-content-transition-show',
-        'header__search-tabs-content-transition-hide'
-      );
-  });
+  const filtersWrapper = document
+    .querySelectorAll(
+      '.header__search-tabs-content-transition-hide, .header__search-tabs-content-transition-show'
+    )
+    .forEach((target) => {
+      const classList = target.classList;
+      classList.contains('header__search-tabs-content-transition-hide')
+        ? classList.replace(
+            'header__search-tabs-content-transition-hide',
+            'header__search-tabs-content-transition-show'
+          )
+        : classList.replace(
+            'header__search-tabs-content-transition-show',
+            'header__search-tabs-content-transition-hide'
+          );
+    });
 
   const searchTablPanel = document.querySelector('#search-tabpanel').classList;
   searchTablPanel.contains('header__search-tabs-filter-hide')
     ? searchTablPanel.replace(
-      'header__search-tabs-filter-hide',
-      'header__search-tabs-filter-show'
-    )
-    : searchTablPanel.replace(
-      'header__search-tabs-filter-show',
-      'header__search-tabs-filter-hide'
-    );
-
-  const searchButton = document.querySelectorAll('.header__search-tabs-filter-searchBtn-hide, .header__search-tabs-filter-searchBtn-show').forEach((target) => {
-    const classList = target.classList;
-    classList.contains('header__search-tabs-filter-searchBtn-hide')
-      ? classList.replace(
-        'header__search-tabs-filter-searchBtn-hide',
-        'header__search-tabs-filter-searchBtn-show'
+        'header__search-tabs-filter-hide',
+        'header__search-tabs-filter-show'
       )
-      : classList.replace(
-        'header__search-tabs-filter-searchBtn-show',
-        'header__search-tabs-filter-searchBtn-hide'
+    : searchTablPanel.replace(
+        'header__search-tabs-filter-show',
+        'header__search-tabs-filter-hide'
       );
-  });
+
+  const searchButton = document
+    .querySelectorAll(
+      '.header__search-tabs-filter-searchBtn-hide, .header__search-tabs-filter-searchBtn-show'
+    )
+    .forEach((target) => {
+      const classList = target.classList;
+      classList.contains('header__search-tabs-filter-searchBtn-hide')
+        ? classList.replace(
+            'header__search-tabs-filter-searchBtn-hide',
+            'header__search-tabs-filter-searchBtn-show'
+          )
+        : classList.replace(
+            'header__search-tabs-filter-searchBtn-show',
+            'header__search-tabs-filter-searchBtn-hide'
+          );
+    });
 
   const searchButtonIcon = document.querySelector('#search-btn-text').classList;
   searchButtonIcon.contains('hidden')
     ? searchButtonIcon.remove('hidden')
     : searchButtonIcon.add('hidden');
 
-  const searchButtonText = document.querySelector('.header__search-tabs-filter-searchBtn-content').classList;
+  const searchButtonText = document.querySelector(
+    '.header__search-tabs-filter-searchBtn-content'
+  ).classList;
   searchButtonText.contains('hidden')
     ? searchButtonText.remove('hidden')
     : searchButtonText.add('hidden');
@@ -181,38 +206,48 @@ const toggleModal = (type, section, targetFilter) => {
 };
 
 let tabId = null;
-document.querySelectorAll('#anywhere-btn, #anyweek-btn, #addguests-btn').forEach((target) => {
-  target.addEventListener('click', (e) => {
-    const id = (tabId = e.currentTarget.id.split('-')[0]);
-    toggleModal(tabId);
+document
+  .querySelectorAll('#anywhere-btn, #anyweek-btn, #addguests-btn')
+  .forEach((target) => {
+    target.addEventListener('click', (e) => {
+      const id = (tabId = e.currentTarget.id.split('-')[0]);
+      toggleModal(tabId);
+    });
   });
-});
 
 const toggleModalSection = (type, targetFilter) => {
   toggleModal(tabId, 'panel');
-  tabId = type
-  toggleModal(tabId, 'panel', targetFilter)
-}
+  tabId = type;
+  toggleModal(tabId, 'panel', targetFilter);
+};
 
-document.querySelector('.header__search-tabs-filter-where-container').addEventListener('click', (e) => {
-  e.preventDefault()
-  toggleModalSection('anywhere')
-})
+document
+  .querySelector('.header__search-tabs-filter-where-container')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModalSection('anywhere');
+  });
 
-document.querySelector('[data-testid="structured-search-input-field-split-dates-0"]').addEventListener('click', (e) => {
-  e.preventDefault()
-  toggleModalSection('anyweek', e.currentTarget)
-})
+document
+  .querySelector('[data-testid="structured-search-input-field-split-dates-0"]')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModalSection('anyweek', e.currentTarget);
+  });
 
-document.querySelector('[data-testid="structured-search-input-field-split-dates-1"]').addEventListener('click', (e) => {
-  e.preventDefault()
-  toggleModalSection('anyweek', e.currentTarget)
-})
+document
+  .querySelector('[data-testid="structured-search-input-field-split-dates-1"]')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModalSection('anyweek', e.currentTarget);
+  });
 
-document.querySelector('[data-testid=structured-search-input-field-guests-button]').addEventListener('click', (e) => {
-  e.preventDefault()
-  toggleModalSection('addguests')
-})
+document
+  .querySelector('[data-testid=structured-search-input-field-guests-button]')
+  .addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleModalSection('addguests');
+  });
 
 document.addEventListener('click', (e) => {
   const modalBody = document.querySelector('.h1wqqi3k');
@@ -549,8 +584,8 @@ const cardAltCarousel = () => {
         x === slides.length - 2 // 2nd to last
           ? 'transform: scale(0.833333)'
           : x === slides.length - 1 // last
-            ? 'transform: scale(0.666667)'
-            : 'transform: scale(1)'
+          ? 'transform: scale(0.666667)'
+          : 'transform: scale(1)'
       );
 
       target.querySelector('.pagination-bullets__list').appendChild(bullet);
@@ -745,6 +780,12 @@ const multipleSlider = ({ btnCls, parentCls, slideWrapperCls, step }) => {
   const invisible = 'visibility: hidden; opacity: 0';
   const visible = 'visibility: visible; opacity: 1';
 
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 744) {
+      document.querySelector(exploreFilterCls).style = invisible;
+    }
+  });
+
   const hideBtn = (el) => {
     if (
       el.classList.contains('carousel-control-btn') ||
@@ -919,40 +960,42 @@ document
     });
   });
 
-
-document.querySelector('.toast-bottom-right button[aria-label=Close]').addEventListener('click', (el) => {
-  el.currentTarget.closest('.toast-bottom-right > div').classList.add('toast-enter', 'toast-exit');
-})
-
+document
+  .querySelector('.toast-bottom-right button[aria-label=Close]')
+  .addEventListener('click', (el) => {
+    el.currentTarget
+      .closest('.toast-bottom-right > div')
+      .classList.add('toast-enter', 'toast-exit');
+  });
 
 document.querySelector('input#query').addEventListener('keyup', (el) => {
-  const inputLength = el.currentTarget.value.length
+  const inputLength = el.currentTarget.value.length;
 
   if (inputLength >= 2) {
-    document.querySelector('._jibw4hu').classList.remove('hidden')
+    document.querySelector('._jibw4hu').classList.remove('hidden');
   } else {
-    document.querySelector('._jibw4hu').classList.add('hidden')
+    document.querySelector('._jibw4hu').classList.add('hidden');
   }
-})
+});
 
 document.querySelector('#checkin_button').addEventListener('click', (el) => {
   if (document.querySelector('._1ldjf5n6').classList.contains('hidden')) {
-    document.querySelector('._1ldjf5n6').classList.remove('hidden')
+    document.querySelector('._1ldjf5n6').classList.remove('hidden');
   } else {
-    document.querySelector('._1ldjf5n6').classList.add('hidden')
+    document.querySelector('._1ldjf5n6').classList.add('hidden');
   }
-})
+});
 
 if (document.querySelector('._1w2nzi8') != null) {
   const close = document.querySelector('._1w2nzi8');
   const modal = document.querySelector('.modal-footer');
   close.addEventListener('click', (e) => {
     if (e.target.classList.contains('_1w2nzi8')) {
-      modal.classList.replace('_n0t6xkk', '_e3o26jf')
+      modal.classList.replace('_n0t6xkk', '_e3o26jf');
       setTimeout(() => {
-        document.querySelector('._1w2nzi8').classList.add('hidden')
+        document.querySelector('._1w2nzi8').classList.add('hidden');
       }, 700);
-      document.querySelector('._1t0jy5tw').classList.add('hidden')
+      document.querySelector('._1t0jy5tw').classList.add('hidden');
     }
   });
 }
@@ -961,11 +1004,11 @@ if (document.querySelector('#close-modal-footer') != null) {
   const close = document.querySelector('#close-modal-footer');
   const modal = document.querySelector('.modal-footer');
   close.addEventListener('click', () => {
-    modal.classList.replace('_n0t6xkk', '_e3o26jf')
+    modal.classList.replace('_n0t6xkk', '_e3o26jf');
     setTimeout(() => {
-      document.querySelector('._1w2nzi8').classList.add('hidden')
+      document.querySelector('._1w2nzi8').classList.add('hidden');
     }, 700);
-    document.querySelector('._1t0jy5tw').classList.add('hidden')
+    document.querySelector('._1t0jy5tw').classList.add('hidden');
   });
 }
 
@@ -973,9 +1016,9 @@ if (document.querySelector('#open-modal-footer') != null) {
   const close = document.querySelector('#open-modal-footer');
   const modal = document.querySelector('.modal-footer');
   close.addEventListener('click', () => {
-    modal.classList.replace('_e3o26jf', '_n0t6xkk')
-    document.querySelector('._1w2nzi8').classList.remove('hidden')
-    document.querySelector('._1t0jy5tw').classList.remove('hidden')
+    modal.classList.replace('_e3o26jf', '_n0t6xkk');
+    document.querySelector('._1w2nzi8').classList.remove('hidden');
+    document.querySelector('._1t0jy5tw').classList.remove('hidden');
   });
 }
 
@@ -984,77 +1027,116 @@ if (document.querySelector('#open-modal-footer') != null) {
 //   const modal = document.querySelector('.modal-filter-list');
 //   close.addEventListener('click', () => {
 //       modal.classList.replace('_dsadsad', '_wheg71v')
-//       document.querySelector('._virdaj').classList.remove('hidden') 
+//       document.querySelector('._virdaj').classList.remove('hidden')
 //       document.querySelector('._1t0jy5tw').classList.remove('hidden')
 //   });
 // }
 
+document.querySelectorAll('.explore-filter__wrapper').forEach((e) => {
+  e.addEventListener('click', (e) => {
+    document
+      .querySelector(`#${e.currentTarget.id}`)
+      .nextElementSibling.classList.toggle('showFilter');
+
+    if (!e.currentTarget.querySelector('svg').style.transform) {
+      e.currentTarget.querySelector('svg').style.transform = 'rotate(180deg)';
+    } else {
+      e.currentTarget.querySelector('svg').style.removeProperty('transform');
+    }
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (
+    !e.target.closest('.dialog__wrapper') &&
+    !e.target.closest('.explore-filter__wrapper')
+  ) {
+    document.querySelectorAll('.dialog__wrapper.showFilter').forEach((el) => {
+      el.classList.remove('showFilter');
+    });
+
+    document.querySelectorAll('.explore-filter__wrapper svg').forEach((el) => {
+      el.style.removeProperty('transform');
+    });
+  }
+});
 
 document
-  .querySelectorAll('.explore-filter__wrapper')
-  .forEach((e) => {
-    e.addEventListener('click', (e) => {
-      document.querySelector(
-        `#${e.currentTarget.id}`
-      ).nextElementSibling.classList.toggle('showFilter')
+  .querySelectorAll('.header__trip-length-item > button')
+  .forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.currentTarget
+        .closest('#chip-group-super_flexible_lengths')
+        .querySelector('.header__trip-length-radio-active')
+        .classList.replace(
+          'header__trip-length-radio-active',
+          'header__trip-length-radio'
+        );
 
-      if (!e.currentTarget.querySelector('svg').style.transform) {
-        e.currentTarget.querySelector('svg').style.transform = 'rotate(180deg)'
-      } else {
-        e.currentTarget.querySelector('svg').style.removeProperty('transform')
-      }
+      e.currentTarget.classList.replace(
+        'header__trip-length-radio',
+        'header__trip-length-radio-active'
+      );
+
+      document.querySelector(
+        '#subcategory-item-super_flexible_lengths'
+      ).innerText = `Stay for a ${e.currentTarget.innerText.toLowerCase()}`;
+
+      document.querySelector(
+        '.header__search-tabs-filter-btn-text-bold'
+      ).innerText = `Any ${e.currentTarget.innerText.toLowerCase()}`;
     });
   });
 
-  document.addEventListener('click', (e) => {
-
-    if (!e.target.closest('.dialog__wrapper') && !e.target.closest('.explore-filter__wrapper')){
-
-      document.querySelectorAll('.dialog__wrapper.showFilter').forEach((el) => {
-        el.classList.remove('showFilter')
-      })
-
-
-        document.querySelectorAll('.explore-filter__wrapper svg').forEach((el) => {
-          el.style.removeProperty('transform')
-        })
-
-    }
-  })
-
-  document.querySelectorAll('.header__trip-length-item > button').forEach((el) =>  {
+// handles Choose dates and I'm flexible
+document
+  .querySelectorAll(
+    '.header__search-tabs-filter-body-date-tabs-container > button'
+  )
+  .forEach((el) => {
     el.addEventListener('click', (e) => {
-      e.currentTarget.closest('#chip-group-super_flexible_lengths').querySelector('.header__trip-length-radio-active').classList.replace('header__trip-length-radio-active', 'header__trip-length-radio')
-    
-      e.currentTarget.classList.replace('header__trip-length-radio', 'header__trip-length-radio-active')
+      const parent = document.querySelector(
+        '.header__search-tabs-filter-dates-container'
+      );
 
-      document.querySelector('#subcategory-item-super_flexible_lengths').innerText = `Stay for a ${e.currentTarget.innerText.toLowerCase()}`
+      if (e.currentTarget.innerText.includes('flexible')) {
+        parent
+          .querySelectorAll('.header__search-tabs-filter-content')[1]
+          .classList.add('hidden');
 
-      document.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = `Any ${e.currentTarget.innerText.toLowerCase()}`
-    })
-  })
+        parent.querySelector(
+          '.header__search-tabs-filter-btn-label'
+        ).innerText = 'When';
+        parent.querySelector('.header__search-tabs-filter-btn-text').innerText =
+          'Any weekend';
+        parent
+          .querySelector('.header__search-tabs-filter-btn-text')
+          .classList.replace(
+            'header__search-tabs-filter-btn-text',
+            'header__search-tabs-filter-btn-text-bold'
+          );
+      } else {
+        parent
+          .querySelectorAll('.header__search-tabs-filter-content')[1]
+          .classList.remove('hidden');
+        parent.querySelector(
+          '.header__search-tabs-filter-btn-label'
+        ).innerText = 'Check in';
+        parent.querySelector(
+          '.header__search-tabs-filter-btn-text-bold'
+        ).innerText = 'Add dates';
+        parent
+          .querySelector('.header__search-tabs-filter-btn-text-bold')
+          .classList.replace(
+            'header__search-tabs-filter-btn-text-bold',
+            'header__search-tabs-filter-btn-text'
+          );
+      }
 
-  // handles Choose dates and I'm flexible
-  document.querySelectorAll('.header__search-tabs-filter-body-date-tabs-container > button').forEach((el) => {
-    el.addEventListener('click', (e) => {
-      const parent = document.querySelector('.header__search-tabs-filter-dates-container')
-
-
-
-    if (e.currentTarget.innerText.includes('flexible')) {
-parent.querySelectorAll('.header__search-tabs-filter-content')[1].classList.add('hidden')
-
-      parent.querySelector('.header__search-tabs-filter-btn-label').innerText = 'When'
-      parent.querySelector('.header__search-tabs-filter-btn-text').innerText = 'Any weekend'
-      parent.querySelector('.header__search-tabs-filter-btn-text').classList.replace('header__search-tabs-filter-btn-text', 'header__search-tabs-filter-btn-text-bold')
-    } else {
-parent.querySelectorAll('.header__search-tabs-filter-content')[1].classList.remove('hidden')
-      parent.querySelector('.header__search-tabs-filter-btn-label').innerText = 'Check in'
-      parent.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = 'Add dates'
-      parent.querySelector('.header__search-tabs-filter-btn-text-bold').classList.replace(  'header__search-tabs-filter-btn-text-bold', 'header__search-tabs-filter-btn-text')
-    }
-
-    
-      document.querySelector('.header__search-tabs-filter-btn-text-bold').innerText = `Any ${document.querySelector('.header__trip-length-radio-active').innerText.toLowerCase()}`
-    })
-  })
+      document.querySelector(
+        '.header__search-tabs-filter-btn-text-bold'
+      ).innerText = `Any ${document
+        .querySelector('.header__trip-length-radio-active')
+        .innerText.toLowerCase()}`;
+    });
+  });
