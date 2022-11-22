@@ -425,12 +425,14 @@ document
 document
   .querySelector('.carousel-slider__nav-page-btn[aria-label="Previous"]')
   .addEventListener('click', (e) => {
+    console.log('click');
     carouselController('prev');
   });
 
 document
   .querySelector('.carousel-slider__nav-page-btn[aria-label="Next"]')
   .addEventListener('click', (e) => {
+    console.log('click');
     carouselController('next');
   });
 
@@ -965,7 +967,7 @@ document
   .addEventListener('click', (el) => {
     el.currentTarget
       .closest('.toast-bottom-right > div')
-      .classList.add('toast-enter', 'toast-exit');
+      .classList.add('toast-enter', 'toast-exit', 'hidden');
   });
 
 document.querySelector('input#query').addEventListener('keyup', (el) => {

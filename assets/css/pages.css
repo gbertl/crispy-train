@@ -53395,7 +53395,7 @@ button[data-testid='cypress-headernav-profile']:focus + .c3i7glo[class][class] {
 }
 @media (max-width: 743px) {
   .landing-page-billboard {
-    padding-top: 150% !important;
+    padding-top: 50% !important;
   }
 }
 @media (min-width: 744px) {
@@ -66049,5 +66049,12 @@ label {
     -webkit-column-gap: 48px !important;
     -moz-column-gap: 48px !important;
     column-gap: 48px !important;
+  }
+}
+
+@media (max-width: 744px) {
+  .text-small {
+    font-size: 16px !important;
+    line-height: 24px !important;
   }
 }
