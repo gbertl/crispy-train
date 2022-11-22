@@ -250,7 +250,7 @@ document
   });
 
 document.addEventListener('click', (e) => {
-  const modalBody = document.querySelector('.h1wqqi3k');
+  const modalBody = document.querySelector('.header-wrapper');
   if (
     !modalBody.contains(e.target) ||
     e.target.classList.contains('header__search-backdrop')
@@ -653,20 +653,21 @@ const cardAltCarousel = () => {
 
 cardAltCarousel();
 
-function checkboxFilter() {
-  document.querySelectorAll('.filter-checkbox').forEach((target) => {
-    target.addEventListener('click', (e) => {
+const handleActiveCheckInput = () => {
+  document.querySelectorAll('.form__check-input').forEach((el) => {
+    const parent = el.closest('.flex')
+    parent.addEventListener('click', (e) => {
       e.preventDefault();
-      const checkbox = target.querySelector(
-        '.explore-filter-menu__list-checkbox'
+      const iconWrapper = parent.querySelector(
+        '.form__check-icon-wrapper'
       );
-      checkbox.classList.toggle('_1v5cvwv4');
-      // console.log(checkbox.classList.toggle('_1v5cvwv4'));
+      iconWrapper.classList.toggle('form__check-icon-wrapper--active');
+      iconWrapper.innerHTML = `<span class="form__check-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></span>`
     });
   });
 }
 
-checkboxFilter();
+handleActiveCheckInput();
 
 function showMoreFilter() {
   document.querySelectorAll('.show-more').forEach((target) => {
@@ -1142,3 +1143,15 @@ document
         .innerText.toLowerCase()}`;
     });
   });
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    document
+      .querySelector('.header-filter__container')
+      .classList.add('header-filter__container--scrolled');
+  } else {
+    document
+      .querySelector('.header-filter__container')
+      .classList.remove('header-filter__container--scrolled');
+  }
+});

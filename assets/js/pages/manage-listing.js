@@ -71,12 +71,12 @@ function checkbox() {
         const trigger = document.querySelectorAll('.explore-filter-menu__list-content');
         trigger.forEach(element => {
             element.addEventListener('click', (e) => {
-                if(element.children[1].classList.contains('explore-filter-menu__list-checkbox')){
-                    element.children[1].classList.remove('explore-filter-menu__list-checkbox')
-                    element.children[1].classList.add('_1v5cvwv4')
+                if(element.children[1].classList.contains('form__check-icon-wrapper')){
+                    element.children[1].classList.remove('form__check-icon-wrapper')
+                    element.children[1].classList.add('form__check-icon-wrapper--active')
                 } else {
-                    element.children[1].classList.add('explore-filter-menu__list-checkbox')
-                    element.children[1].classList.remove('_1v5cvwv4')
+                    element.children[1].classList.add('form__check-icon-wrapper')
+                    element.children[1].classList.remove('form__check-icon-wrapper--active')
                 }
             });
         });
