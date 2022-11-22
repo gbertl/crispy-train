@@ -250,7 +250,7 @@ document
   });
 
 document.addEventListener('click', (e) => {
-  const modalBody = document.querySelector('.h1wqqi3k');
+  const modalBody = document.querySelector('.header-wrapper');
   if (
     !modalBody.contains(e.target) ||
     e.target.classList.contains('header__search-backdrop')

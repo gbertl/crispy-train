@@ -6168,6 +6168,19 @@ html :where(img[class*='wp-image-']) {
 }
 
 /*! HEADER COMPONENT */
+.header-wrapper[class][class] {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+  contain: size style layout;
+}
+@media (min-width: 744px) {
+  .header-wrapper[class][class] {
+    height: 80px;
+  }
+}
 .header[class][class] {
   height: 80px;
   width: 100%;
