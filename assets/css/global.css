@@ -11419,6 +11419,9 @@ html :where(img[class*='wp-image-']) {
     transition: none;
   }
 }
+.dir.header-filter__container--scrolled[class][class]::after {
+    box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
+}
 
 /*! CARD ALT 1 */
 @keyframes fade-in-card-alt-1__nav-btn-wrapper {

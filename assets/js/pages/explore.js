@@ -1142,3 +1142,15 @@ document
         .innerText.toLowerCase()}`;
     });
   });
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    document
+      .querySelector('.header-filter__container')
+      .classList.add('header-filter__container--scrolled');
+  } else {
+    document
+      .querySelector('.header-filter__container')
+      .classList.remove('header-filter__container--scrolled');
+  }
+});
