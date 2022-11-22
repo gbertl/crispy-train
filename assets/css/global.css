@@ -13709,7 +13709,6 @@ html :where(img[class*='wp-image-']) {
   height: 100%;
   min-width: 0;
   position: unset;
-  padding: 0 1.5rem;
 }
 @supports not (aspect-ratio: 1 / 1) {
   .card__slides-wrapper[class][class] {
