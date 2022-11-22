@@ -11687,7 +11687,7 @@
   align-self: end;
 }
 .dir.explore-container__showmap-mb-40[class][class] {
-  margin-bottom: 75px;
+  margin-bottom: 140px;
 }
 @media (min-width: 744px) {
   .dir.explore-container__showmap-mb-40[class][class] {
@@ -66096,4 +66096,44 @@ label {
 }
 .mv1im3i[class][class] {
 	display: none;
+}
+
+.f1wdmv7q[class][class] {
+  bottom: 0;
+  position: fixed;
+  z-index: 1999;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+@supports (margin-bottom:env(safe-area-inset-bottom)) {
+  .dir.f1wdmv7q[class][class] {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+}
+.dir.f1wdmv7q[class][class] {
+  inset-inline: 0;
+  transform: translateY(-65px);
+  transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+._11eqlma4 {
+  cursor: pointer !important;
+  position: relative !important;
+  touch-action: manipulation !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  -webkit-tap-highlight-color: transparent !important;
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  display: block !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  text-align: inherit !important;
+  text-decoration: none !important;
+  height: 100% !important;
+  width: 100% !important;
 }
