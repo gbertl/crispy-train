@@ -575,3 +575,19 @@ const handleSwitchToggle = () =>{
 }
 
 handleSwitchToggle();
+
+const handleCheckboxToggle = () => {
+  document.querySelectorAll('.form__check-input').forEach((el) => {
+    const parent = el.closest('.flex')
+    parent.addEventListener('click', (e) => {
+      e.preventDefault();
+      const iconWrapper = parent.querySelector(
+        '.form__check-icon-wrapper'
+      );
+      iconWrapper.classList.toggle('form__check-icon-wrapper--active');
+      iconWrapper.innerHTML = `<span class="form__check-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></span>`
+    });
+  });
+}
+
+handleCheckboxToggle();
