@@ -155,6 +155,7 @@ let sitemap = [
       'payments/resolutions.html',
       'payments/resolutions_pay.html',
       'payments/your-payments.html',
+      'payments/payment-success.html',
     ],
   },
   {
