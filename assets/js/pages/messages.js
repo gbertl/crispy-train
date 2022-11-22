@@ -1,8 +1,8 @@
 document.querySelectorAll('#filter-menu').forEach((e) => {
-    e.addEventListener('click', function () {
+    e.addEventListener('click', function (e) {
         this.classList.toggle('inbox-container__inbox-btn-filter');
         this.classList.toggle('inbox-container__filter-menu-btn');
-        document.querySelector('#filter-menu-dropdown').classList.toggle('hidden');
+        e.currentTarget.closest('#filter-menu-wrapper').querySelector('#filter-menu-dropdown').classList.toggle('hidden');
     })
 });
 
