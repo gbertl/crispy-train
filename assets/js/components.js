@@ -524,7 +524,8 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
 document.querySelectorAll('.radio__button, .radio__button-active').forEach((el) => {
   el.addEventListener('click', (el) => {
-    const parent = el.currentTarget.closest('.modal__container')
+    // add radio-buttons-wrapper to make this work
+    const parent = el.currentTarget.closest('.radio-buttons-wrapper')
 
     parent.querySelectorAll('.radio__button-active').forEach((el) => el.classList.replace('radio__button-active', 'radio__button'))
 
