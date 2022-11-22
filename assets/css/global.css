@@ -19671,6 +19671,45 @@ input[type='button'].btn-block {
   font-weight: 400 !important;
   color: #717171 !important;
 }
+.form__check-icon-wrapper {
+  display: inline-block !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #b0b0b0 !important;
+  height: 24px !important;
+  width: 24px !important;
+  background: #fff !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  vertical-align: top !important;
+  border-radius: 4px !important;
+}
+.form__check-icon-wrapper--active {
+  display: inline-block !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  height: 24px !important;
+  width: 24px !important;
+  text-align: center !important;
+  overflow: hidden !important;
+  vertical-align: top !important;
+  border-radius: 4px !important;
+  background: #222 !important;
+  color: #fff !important;
+  border-color: #222 !important;
+}
+.form__check-icon {
+  -webkit-box-pack: center !important;
+  -webkit-box-align: center !important;
+  display: block !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 2px !important;
+  margin-left: 3px !important;
+  color: #fff !important;
+}
 
 /*! HERO BANNER */
 .hero-banner {
