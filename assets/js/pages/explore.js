@@ -704,29 +704,6 @@ function propertyTypeFilter() {
 
 propertyTypeFilter();
 
-function toggleSwitchFilter() {
-  document.querySelectorAll('.toggle-switch').forEach((target) => {
-    target.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (target.classList.contains('form__switch')) {
-        target.classList.add('form__switch--checked');
-        target.classList.remove('form__switch');
-        target.children[0].classList.add('form__switch-toggle-checked');
-        target.children[0].classList.remove('form__switch-toggle');
-        target.children[0].children[0].classList.remove('hidden');
-      } else if (target.classList.contains('form__switch--checked')) {
-        target.classList.add('form__switch');
-        target.classList.remove('form__switch--checked');
-        target.children[0].classList.add('form__switch-toggle');
-        target.children[0].classList.remove('form__switch-toggle-checked');
-        target.children[0].children[0].classList.add('hidden');
-      }
-    });
-  });
-}
-
-toggleSwitchFilter();
-
 function multipleSelectFilter(selector) {
   document.querySelectorAll(selector).forEach((target) => {
     target.addEventListener('click', (e) => {
