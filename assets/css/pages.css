@@ -65915,17 +65915,6 @@ label {
     background-image: none !important;
   }
 }
-._6tbg2q {
-  height: 0 !important;
-  width: 0 !important;
-  position: absolute !important;
-}
-@supports (object-fit: cover) {
-  ._6tbg2q {
-    height: 100% !important;
-    width: 100% !important;
-  }
-}
 .review-banner__stars[class][class] {
   display: flex;
   align-items: center;
@@ -66056,15 +66045,6 @@ label {
     flex: 0 0 calc(50% + 8px);
   }
 }
-.dir.tkmrifx[class][class] {
-  margin: 24px;
-}
-.dir.t1fl57ov[class][class] {
-  margin-bottom: 24px;
-}
-.dir.t1x7kc86[class][class] {
-  margin-bottom: 0;
-}
 .mobile-banner__text {
   white-space: pre-line !important;
   max-width: 100% !important;
@@ -66074,9 +66054,6 @@ label {
   line-height: var(--tl-line-height, 18px) !important;
   color: var(--tl-color, #222) !important;
   -webkit-line-clamp: var(--tl-line-clamp) !important;
-}
-.dir.sgctd8i[class][class] {
-  margin-top: 6px;
 }
 .hero-card__footer[class][class] {
   display: flex;
@@ -66107,30 +66084,6 @@ label {
   .dir-ltr.hero-card__margin[class][class] {
     margin-right: 24px;
   }
-}
-._6mwb4c {
-  white-space: pre-line !important;
-  max-width: 100% !important;
-  font-size: var(--tl-font-size, 14px) !important;
-  font-weight: var(--tl-font-weight, 400) !important;
-  letter-spacing: var(--tl-letter-spacing, 0) !important;
-  line-height: var(--tl-line-height, 18px) !important;
-  color: var(--tl-color, #717171) !important;
-  -webkit-line-clamp: var(--tl-line-clamp) !important;
-}
-._158ouaov {
-  white-space: pre-line !important;
-  max-width: 100% !important;
-  font-size: var(--tl-font-size, 14px) !important;
-  font-weight: var(--tl-font-weight, 400) !important;
-  letter-spacing: var(--tl-letter-spacing, 0) !important;
-  line-height: var(--tl-line-height, 18px) !important;
-  color: var(--tl-color, #717171) !important;
-  -webkit-line-clamp: var(--tl-line-clamp) !important;
-  overflow: hidden !important;
-  display: -webkit-box !important;
-  -moz-box-orient: vertical !important;
-  text-overflow: ellipsis !important;
 }
 .hero-card__right[class][class] {
   flex: 1 1 auto;
