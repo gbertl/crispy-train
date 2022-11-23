@@ -65708,22 +65708,22 @@ label {
   align-items: center;
   overflow: hidden;
 }
-.s6w8jfw[class][class] {
+.banner-wrapper[class][class] {
   z-index: 11;
   width: 100%;
   height: 64px;
   overflow: clip;
   position: relative;
 }
-.dir.s6w8jfw[class][class] {
+.dir.banner-wrapper[class][class] {
   background-color: #f7f7f7;
   transition: 0.4s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.06) 0 -1px 0 inset;
 }
-.dir-ltr.c1naj2se[class][class] {
+.dir-ltr.banner[class][class] {
   margin-left: 40px;
 }
-.c1naj2se[class][class] {
+.banner[class][class] {
   position: relative;
   height: 100%;
   display: flex;
@@ -65735,49 +65735,49 @@ label {
   line-height: 20px;
 }
 @media (min-width: 1128px) {
-  .dir-ltr.c1naj2se[class][class] {
+  .dir-ltr.banner[class][class] {
     padding-left: 40px;
   }
 }
 @media (min-width: 1128px) {
-  .dir.c1naj2se[class][class] {
+  .dir.banner[class][class] {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (min-width: 1128px) {
-  .c1naj2se[class][class] {
+  .banner[class][class] {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.02em;
     max-width: 1760px;
   }
 }
-.dir.t1wkpltb[class][class] {
+.dir.banner__title-text[class][class] {
   padding-top: 23px;
   padding-bottom: 21px;
 }
 @media (min-width: 1128px) {
-  .dir.t1wkpltb[class][class] {
+  .dir.banner__title-text[class][class] {
     padding-top: 22px;
     padding-bottom: 20px;
   }
 }
-.b1w995we[class][class] {
+.banner__right[class][class] {
   display: flex;
   align-items: center;
   position: absolute;
   height: 100%;
   top: 0;
 }
-.dir.b1w995we[class][class] {
+.dir.banner__right[class][class] {
   padding-top: 23px;
   padding-bottom: 21px;
 }
-.dir-ltr.b1w995we[class][class] {
+.dir-ltr.banner__right[class][class] {
   right: 24px;
 }
-.dir.h1qkh9f0[class][class] {
+.dir.banner__btn[class][class] {
   cursor: pointer;
   margin: 0;
   text-align: center;
@@ -65786,7 +65786,7 @@ label {
   border: none;
   border-radius: 8px;
 }
-.h1qkh9f0[class][class] {
+.banner__btn[class][class] {
   position: relative;
   text-decoration: none;
   width: auto;
@@ -65803,10 +65803,6 @@ label {
   line-height: 1.125rem;
   font-weight: 400;
 }
-.t191gapj[class][class] {
-  display: flex;
-  align-items: center;
-}
 .dir-ltr.t1adyqdh[class][class] {
   margin-left: -8px;
   margin-right: 16px;
@@ -65814,10 +65810,10 @@ label {
 .dir.t1adyqdh[class][class] {
   border-radius: 5px;
 }
-.dnpws99[class][class] {
+.banner__separator[class][class] {
   height: 30px;
 }
-.dir-ltr.dnpws99[class][class] {
+.dir-ltr.banner__separator[class][class] {
   border-left: 1px solid #ddd;
 }
 .a2qffic[class][class] {
