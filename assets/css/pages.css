@@ -22051,7 +22051,7 @@ tr.hide {
     padding-right: 45% !important;
   }
 }
-._goqbqk {
+.mobile-banner__text-wrapper {
   -webkit-box-align: var(--ehl-align-items, center) !important;
   -ms-flex-align: var(--ehl-align-items, center) !important;
   -webkit-box-pack: var(--ehl-justify-content, flex-start) !important;
@@ -65693,13 +65693,13 @@ label {
     line-height: 24px !important;
   }
 }
-.dir.a1oc84kc[class][class] {
+.dir.mobile-banner[class][class] {
   background-color: #f7f7f7;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
   transition: 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transform: translate(0, 1px);
 }
-.a1oc84kc[class][class] {
+.mobile-banner[class][class] {
   z-index: 10;
   width: 100%;
   --action-row_height: 48px;
@@ -65803,11 +65803,11 @@ label {
   line-height: 1.125rem;
   font-weight: 400;
 }
-.dir-ltr.t1adyqdh[class][class] {
+.dir-ltr.banner__btn-img[class][class] {
   margin-left: -8px;
   margin-right: 16px;
 }
-.dir.t1adyqdh[class][class] {
+.dir.banner__btn-img[class][class] {
   border-radius: 5px;
 }
 .banner__separator[class][class] {
@@ -65816,7 +65816,7 @@ label {
 .dir-ltr.banner__separator[class][class] {
   border-left: 1px solid #ddd;
 }
-.a2qffic[class][class] {
+.mobile-banner__body[class][class] {
   height: 100%;
   width: 100%;
   display: flex;
@@ -65824,11 +65824,11 @@ label {
   align-items: center;
 }
 @media screen {
-  ._goqbqk {
+  .mobile-banner__text-wrapper {
     background: var(--ehl-background-style, undefined) !important;
   }
 }
-._goqbqk {
+.mobile-banner__text-wrapper {
   -moz-box-align: var(--ehl-align-items, center) !important;
   -moz-box-pack: var(--ehl-justify-content, flex-start) !important;
   display: flex !important;
@@ -65843,7 +65843,7 @@ label {
   max-width: var(--ehl-max-width) !important;
   background-color: var(--ehl-background-color, undefined) !important;
 }
-.f1wdmv7q[class][class] {
+.mobile-banner-wrapper[class][class] {
   bottom: 0;
   position: fixed;
   z-index: 1999;
@@ -65851,11 +65851,11 @@ label {
     cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 @supports (margin-bottom: env(safe-area-inset-bottom)) {
-  .dir.f1wdmv7q[class][class] {
+  .dir.mobile-banner-wrapper[class][class] {
     margin-bottom: env(safe-area-inset-bottom);
   }
 }
-.dir.f1wdmv7q[class][class] {
+.dir.mobile-banner-wrapper[class][class] {
   inset-inline: 0;
   transform: translateY(-65px);
   transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -66065,7 +66065,7 @@ label {
 .dir.t1x7kc86[class][class] {
   margin-bottom: 0;
 }
-._y9cbsa {
+.mobile-banner__text {
   white-space: pre-line !important;
   max-width: 100% !important;
   font-size: var(--tl-font-size, 14px) !important;
