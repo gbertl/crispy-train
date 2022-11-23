@@ -11015,7 +11015,7 @@
   margin-top: 16px !important;
   margin-left: 0 !important;
 }
-._expepa {
+.heading-lg {
   max-width: 100%;
   font-size: var(--tl-font-size, 32px) !important;
   font-weight: var(--tl-font-weight, 800) !important;
@@ -40463,7 +40463,7 @@ video::cue {
 ._bzfhend:hover {
   text-decoration: none !important;
 }
-._expepa {
+.heading-lg {
   white-space: pre-line !important;
   max-width: 100% !important;
   font-size: var(--tl-font-size, 32px) !important;
@@ -65869,39 +65869,39 @@ label {
   top: 0;
   bottom: 0;
 }
-.dir.cw2jl8z[class][class] {
+.dir.review-banner[class][class] {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.cw2jl8z[class][class] {
+.review-banner[class][class] {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
 }
 @media (min-width: 744px) {
-  .cw2jl8z[class][class] {
+  .review-banner[class][class] {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 }
-.tra1v2p[class][class] {
+.review-banner__card[class][class] {
   display: flex;
   align-items: center;
 }
-.dir-ltr.i1ldgrtx[class][class] {
+.dir-ltr.review-banner__card-img[class][class] {
   margin-right: 16px;
 }
-.dir.i1ldgrtx[class][class] {
+.dir.review-banner__card-img[class][class] {
   border-radius: 8px;
 }
-.i1ldgrtx[class][class] {
+.review-banner__card-img[class][class] {
   flex: 0 0 auto;
   overflow: hidden;
   position: relative;
 }
-._15p4g025 {
+.background__img-position-center {
   display: inline-block !important;
   vertical-align: bottom !important;
   height: 100% !important;
@@ -65910,7 +65910,7 @@ label {
   background-repeat: no-repeat !important;
 }
 @supports (object-fit: cover) {
-  ._15p4g025 {
+  .background__img-position-center {
     display: none !important;
     background-image: none !important;
   }
@@ -65926,27 +65926,27 @@ label {
     width: 100% !important;
   }
 }
-.b1t0qutr[class][class] {
+.review-banner__stars[class][class] {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.dir.b1t0qutr[class][class] {
+.dir.review-banner__stars[class][class] {
   margin-top: 24px;
 }
 @media (min-width: 744px) {
-  .dir.b1t0qutr[class][class] {
+  .dir.review-banner__stars[class][class] {
     margin-top: 0;
   }
 }
-.dir.c1cjmhqs[class][class] {
+.dir.review-banner__star[class][class] {
   margin: 0 10px;
 }
-.dir-ltr.c1cjmhqs[class][class]:first-of-type {
+.dir-ltr.review-banner__star[class][class]:first-of-type {
   margin-left: 0;
 }
 @media (min-width: 744px) {
-  .dir.c1cjmhqs[class][class] {
+  .dir.review-banner__star[class][class] {
     margin: 0 8px;
   }
 }
