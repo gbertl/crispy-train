@@ -5496,7 +5496,7 @@ html :where(img[class*='wp-image-']) {
   margin-top: 0 !important;
 }
 .relative {
-  position: relative;
+  position: relative !important;
 }
 .m-6 {
   margin: 24px;
@@ -25043,4 +25043,114 @@ input[type='button'].btn-block {
   display: grid !important;
   gap: 8px !important;
   grid-template-columns: 1fr !important;
+}
+
+/*! BANNER */
+.banner-wrapper[class][class] {
+  z-index: 11;
+  width: 100%;
+  height: 64px;
+  overflow: clip;
+  position: relative;
+}
+.dir.banner-wrapper[class][class] {
+  background-color: #f7f7f7;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 -1px 0 inset;
+}
+.dir-ltr.banner[class][class] {
+  margin-left: 40px;
+}
+.banner[class][class] {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 1664px;
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (min-width: 1128px) {
+  .dir-ltr.banner[class][class] {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1128px) {
+  .dir.banner[class][class] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1128px) {
+  .banner[class][class] {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    max-width: 1760px;
+  }
+}
+.dir.banner__title-text[class][class] {
+  padding-top: 23px;
+  padding-bottom: 21px;
+}
+@media (min-width: 1128px) {
+  .dir.banner__title-text[class][class] {
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+}
+.banner__right[class][class] {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.dir.banner__right[class][class] {
+  padding-top: 23px;
+  padding-bottom: 21px;
+}
+.dir-ltr.banner__right[class][class] {
+  right: 24px;
+}
+.dir.banner__btn[class][class] {
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+  padding: 4px 16px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+}
+.banner__btn[class][class] {
+  position: relative;
+  text-decoration: none;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: #d3d3d3;
+  font-family: inherit;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  color: #222;
+  height: 46px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+.dir-ltr.banner__btn-img[class][class] {
+  margin-left: -8px;
+  margin-right: 16px;
+}
+.dir.banner__btn-img[class][class] {
+  border-radius: 5px;
+}
+.banner__separator[class][class] {
+  height: 30px;
+}
+.dir-ltr.banner__separator[class][class] {
+  border-left: 1px solid #ddd;
 }
