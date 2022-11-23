@@ -5507,6 +5507,15 @@ html :where(img[class*='wp-image-']) {
 .mt-1\.5 {
   margin-top: 6px;
 }
+.heading-lg {
+  max-width: 100%;
+  font-size: var(--tl-font-size, 32px) !important;
+  font-weight: var(--tl-font-weight, 800) !important;
+  letter-spacing: var(--tl-letter-spacing, 0) !important;
+  line-height: var(--tl-line-height, 36px) !important;
+  color: var(--tl-color, #222) !important;
+  -webkit-line-clamp: var(--tl-line-clamp) !important;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
