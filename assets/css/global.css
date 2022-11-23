@@ -5498,6 +5498,15 @@ html :where(img[class*='wp-image-']) {
 .relative {
   position: relative;
 }
+.m-6 {
+  margin: 24px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-1\.5 {
+  margin-top: 6px;
+}
 
 /*! FOOTER COMPONENT */
 .footer__links:not(last-child) {
