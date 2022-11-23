@@ -18148,42 +18148,6 @@ input[type='button'].btn-block {
     ) !important;
   }
 }
-.btn-primary-small {
-  cursor: pointer !important;
-  display: inline-block !important;
-  margin: 0 !important;
-  position: relative !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  width: auto !important;
-  touch-action: manipulation !important;
-  font-family: var(--font-family) !important;
-  font-size: var(--font-size-sm) !important;
-  line-height: var(--line-height-sm) !important;
-  font-weight: var(--font-weight-semibold) !important;
-  border-radius: var(--border-radius) !important;
-  outline: 0 !important;
-  padding: 8px 16px !important;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
-    transform 0.1s !important;
-  -webkit-tap-highlight-color: transparent !important;
-  border: none !important;
-  background: linear-gradient(
-    to right,
-    #e61e4d 0,
-    #e31c5f 50%,
-    #d70466 100%
-  ) !important;
-  color: #fff !important;
-}
-@supports (--custom: properties) {
-  .btn-primary-small {
-    background: var(
-      --dls19-brand-gradient,
-      linear-gradient(to right, #e61e4d 0, #e31c5f 50%, #d70466 100%)
-    ) !important;
-  }
-}
 .btn-mask-image[class][class] {
   position: absolute;
   top: 0;
@@ -18668,7 +18632,7 @@ input[type='button'].btn-block {
 .calendar__day-month-header {
   font-size: 16px !important;
   line-height: 20px !important;
-  color: rgb(34, 34, 34) !important;
+  color: #222 !important;
   text-align: center !important;
   padding-top: 22px !important;
   padding-bottom: 49px !important;
@@ -18692,12 +18656,12 @@ input[type='button'].btn-block {
   font-size: 14px !important;
   line-height: 18px !important;
   font-weight: 600 !important;
-  color: rgb(34, 34, 34) !important;
-  border: 1.5px solid rgb(255, 255, 255) !important;
+  color: #222 !important;
+  border: 1.5px solid #fff !important;
 }
 .calendar__day-text:hover {
-  background: rgb(255, 255, 255) !important;
-  border: 1.5px solid rgb(34, 34, 34) !important;
+  background: #fff !important;
+  border: 1.5px solid #222 !important;
 }
 .calendar__day-off-text {
   -webkit-box-direction: normal !important;
@@ -18714,8 +18678,8 @@ input[type='button'].btn-block {
   position: relative !important;
   font-size: 14px !important;
   line-height: 18px !important;
-  border: 1.5px solid rgb(255, 255, 255) !important;
-  color: rgb(72, 72, 72) !important;
+  border: 1.5px solid #fff !important;
+  color: #484848 !important;
   font-weight: 600 !important;
   text-decoration: none !important;
   opacity: 0.25 !important;
