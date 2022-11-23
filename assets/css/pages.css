@@ -65820,11 +65820,6 @@ label {
 .dir-ltr.dnpws99[class][class] {
   border-left: 1px solid #ddd;
 }
-._11eqlma4::-moz-focus-inner {
-  border: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
 .a2qffic[class][class] {
   height: 100%;
   width: 100%;
@@ -65868,30 +65863,6 @@ label {
   inset-inline: 0;
   transform: translateY(-65px);
   transition: transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-._11eqlma4 {
-  cursor: pointer !important;
-  position: relative !important;
-  touch-action: manipulation !important;
-  font-family: inherit !important;
-  font-size: inherit !important;
-  line-height: inherit !important;
-  font-weight: inherit !important;
-  border-radius: 0 !important;
-  outline: 0 !important;
-  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
-    transform 0.1s !important;
-  -webkit-tap-highlight-color: transparent !important;
-  background: 0 0 !important;
-  border: none !important;
-  color: inherit !important;
-  display: block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  text-align: inherit !important;
-  text-decoration: none !important;
-  height: 100% !important;
-  width: 100% !important;
 }
 .dir.p1c4i207[class][class] {
   left: 0;
@@ -65999,20 +65970,6 @@ label {
 .dir.i1c0h3vv[class][class]:last-of-type {
   margin-bottom: 0;
 }
-._151wof4v {
-  white-space: pre-line !important;
-  max-width: 100% !important;
-  font-size: var(--tl-font-size, 32px) !important;
-  font-weight: var(--tl-font-weight, 800) !important;
-  letter-spacing: var(--tl-letter-spacing, 0) !important;
-  line-height: var(--tl-line-height, 36px) !important;
-  color: var(--tl-color, #222) !important;
-  -webkit-line-clamp: var(--tl-line-clamp) !important;
-  overflow: hidden !important;
-  display: -webkit-box !important;
-  -moz-box-orient: vertical !important;
-  text-overflow: ellipsis !important;
-}
 .dir.ccf8p5q[class][class] {
   margin-top: 24px;
 }
@@ -66094,10 +66051,6 @@ label {
   ._e8yefda {
     overflow: clip !important;
   }
-}
-._npr0qi {
-  border-top-width: 1px !important;
-  border-top-style: solid !important;
 }
 .t15kgfic[class][class] {
   flex: 0 0 50%;
