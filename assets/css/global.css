@@ -2453,7 +2453,12 @@
   --font-weight-bold: 800;
   --gray-900: #222222;
   --border-radius: 8px;
-  --gradient-alt-7: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+  --gradient-alt-7: linear-gradient(
+    to right,
+    #e61e4d 0%,
+    #e31c5f 50%,
+    #d70466 100%
+  );
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   :root {
@@ -11420,7 +11425,7 @@ html :where(img[class*='wp-image-']) {
   }
 }
 .dir.header-filter__container--scrolled[class][class]::after {
-    box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
+  box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
 }
 
 /*! CARD ALT 1 */
@@ -18433,7 +18438,7 @@ input[type='button'].btn-block {
   left: 0;
   right: 0;
   border-radius: var(--border-radius);
-} 
+}
 
 /*! CALENDAR COMPONENT */
 .calendar__next-month {
@@ -18661,7 +18666,8 @@ input[type='button'].btn-block {
   text-align: center !important;
   padding-top: 22px !important;
   padding-bottom: 49px !important;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif !important;
   font-weight: 600 !important;
 }
 .calendar__day-text {
@@ -22068,7 +22074,6 @@ input[type='button'].btn-block {
 .modal__padding-xs {
   padding: 5px !important;
 }
-
 
 /*! PAGE SHELL COMPONENT */
 .page-shell-mobile__container {
