@@ -4176,6 +4176,9 @@ html :where(img[class*='wp-image-']) {
   .inline-md {
     display: inline !important;
   }
+  .contents-md {
+    display: contents !important;
+  }
 }
 @media (max-width: 744px) {
   .row-reverse-xs {
@@ -5491,6 +5494,9 @@ html :where(img[class*='wp-image-']) {
 .my-0 {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
+}
+.relative {
+  position: relative;
 }
 
 /*! FOOTER COMPONENT */
