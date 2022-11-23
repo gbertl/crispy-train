@@ -524,7 +524,8 @@ const handleModal = ({ btnOpenSelector, btnCloseSelector, modalSelector }) => {
 
 document.querySelectorAll('.radio__button, .radio__button-active').forEach((el) => {
   el.addEventListener('click', (el) => {
-    const parent = el.currentTarget.closest('.modal__container')
+    // add radio-buttons-wrapper to make this work
+    const parent = el.currentTarget.closest('.radio-buttons-wrapper')
 
     parent.querySelectorAll('.radio__button-active').forEach((el) => el.classList.replace('radio__button-active', 'radio__button'))
 
@@ -539,3 +540,55 @@ document.querySelector('#report-this-next')?.addEventListener('click', (el) => {
   el.currentTarget.closest('#report-this-modal').classList.add('hidden')
   document.querySelector('#we-got-your-report-modal').classList.remove('hidden')
 })
+
+const handleSwitchToggle = () =>{
+  document.querySelectorAll('.form__switch, .form__switch--checked').forEach((target) => {
+    target.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (target.classList.contains('form__switch')) {
+        target.classList.add('form__switch--checked');
+        target.classList.remove('form__switch');
+        target.children[0].classList.add('form__switch-toggle-checked');
+        target.children[0].innerHTML = `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="
+                                                      display: block;
+                                                      fill: none;
+                                                      height: 12px;
+                                                      width: 12px;
+                                                      stroke: currentcolor;
+                                                      stroke-width: 5.33333;
+                                                      overflow: visible;
+                                                    ">
+                                                    <path fill="none" d="m4 16.5 8 8 16-16"></path>
+                                                  </svg>`;
+        target.children[0].classList.remove('form__switch-toggle');
+        target.children[0].children[0].classList.remove('hidden');
+
+      } else if (target.classList.contains('form__switch--checked')) {
+        target.classList.add('form__switch');
+        target.classList.remove('form__switch--checked');
+        target.children[0].innerHTML = '';
+        target.children[0].classList.add('form__switch-toggle');
+        target.children[0].classList.remove('form__switch-toggle-checked');
+        target.children[0].children[0].classList.add('hidden');
+      }
+    });
+  });
+}
+
+handleSwitchToggle();
+
+const handleCheckboxToggle = () => {
+  document.querySelectorAll('.form__check-input').forEach((el) => {
+    const parent = el.closest('.flex')
+    parent.addEventListener('click', (e) => {
+      e.preventDefault();
+      const iconWrapper = parent.querySelector(
+        '.form__check-icon-wrapper'
+      );
+      iconWrapper.classList.toggle('form__check-icon-wrapper--active');
+      iconWrapper.innerHTML = `<span class="form__check-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></span>`
+    });
+  });
+}
+
+handleCheckboxToggle();

@@ -653,22 +653,6 @@ const cardAltCarousel = () => {
 
 cardAltCarousel();
 
-const handleActiveCheckInput = () => {
-  document.querySelectorAll('.form__check-input').forEach((el) => {
-    const parent = el.closest('.flex')
-    parent.addEventListener('click', (e) => {
-      e.preventDefault();
-      const iconWrapper = parent.querySelector(
-        '.form__check-icon-wrapper'
-      );
-      iconWrapper.classList.toggle('form__check-icon-wrapper--active');
-      iconWrapper.innerHTML = `<span class="form__check-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg></span>`
-    });
-  });
-}
-
-handleActiveCheckInput();
-
 function showMoreFilter() {
   document.querySelectorAll('.show-more').forEach((target) => {
     target.addEventListener('click', (e) => {
@@ -703,29 +687,6 @@ function propertyTypeFilter() {
 }
 
 propertyTypeFilter();
-
-function toggleSwitchFilter() {
-  document.querySelectorAll('.toggle-switch').forEach((target) => {
-    target.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (target.classList.contains('form__switch')) {
-        target.classList.add('form__switch--checked');
-        target.classList.remove('form__switch');
-        target.children[0].classList.add('form__switch-toggle-checked');
-        target.children[0].classList.remove('form__switch-toggle');
-        target.children[0].children[0].classList.remove('hidden');
-      } else if (target.classList.contains('form__switch--checked')) {
-        target.classList.add('form__switch');
-        target.classList.remove('form__switch--checked');
-        target.children[0].classList.add('form__switch-toggle');
-        target.children[0].classList.remove('form__switch-toggle-checked');
-        target.children[0].children[0].classList.add('hidden');
-      }
-    });
-  });
-}
-
-toggleSwitchFilter();
 
 function multipleSelectFilter(selector) {
   document.querySelectorAll(selector).forEach((target) => {
